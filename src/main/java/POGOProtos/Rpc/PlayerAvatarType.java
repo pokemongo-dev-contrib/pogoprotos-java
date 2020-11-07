@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum PlayerAvatarType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>PLAYER_AVATAR_MALE = 0;</code>
+   * <code>PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE = 0;</code>
    */
-  PLAYER_AVATAR_MALE(0),
+  PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE(0),
   /**
-   * <code>PLAYER_AVATAR_FEMALE = 1;</code>
+   * <code>PLAYER_AVATAR_TYPE_PLAYER_AVATAR_FEMALE = 1;</code>
    */
-  PLAYER_AVATAR_FEMALE(1),
+  PLAYER_AVATAR_TYPE_PLAYER_AVATAR_FEMALE(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>PLAYER_AVATAR_MALE = 0;</code>
+   * <code>PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE = 0;</code>
    */
-  public static final int PLAYER_AVATAR_MALE_VALUE = 0;
+  public static final int PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE_VALUE = 0;
   /**
-   * <code>PLAYER_AVATAR_FEMALE = 1;</code>
+   * <code>PLAYER_AVATAR_TYPE_PLAYER_AVATAR_FEMALE = 1;</code>
    */
-  public static final int PLAYER_AVATAR_FEMALE_VALUE = 1;
+  public static final int PLAYER_AVATAR_TYPE_PLAYER_AVATAR_FEMALE_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum PlayerAvatarType
    */
   public static PlayerAvatarType forNumber(int value) {
     switch (value) {
-      case 0: return PLAYER_AVATAR_MALE;
-      case 1: return PLAYER_AVATAR_FEMALE;
+      case 0: return PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE;
+      case 1: return PLAYER_AVATAR_TYPE_PLAYER_AVATAR_FEMALE;
       default: return null;
     }
   }
@@ -73,6 +73,10 @@ public enum PlayerAvatarType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -81,7 +85,7 @@ public enum PlayerAvatarType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(102);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(98);
   }
 
   private static final PlayerAvatarType[] VALUES = values();

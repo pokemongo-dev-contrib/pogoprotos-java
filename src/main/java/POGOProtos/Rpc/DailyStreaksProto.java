@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.DailyStreaksProto}
  */
-public  final class DailyStreaksProto extends
+public final class DailyStreaksProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.DailyStreaksProto)
     DailyStreaksProtoOrBuilder {
@@ -16,7 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private DailyStreaksProto() {
-    iphllkhapkg_ = java.util.Collections.emptyList();
+    streaks_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -52,11 +52,11 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              iphllkhapkg_ = new java.util.ArrayList<POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK>();
+              streaks_ = new java.util.ArrayList<POGOProtos.Rpc.DailyStreaksProto.StreakProto>();
               mutable_bitField0_ |= 0x00000001;
             }
-            iphllkhapkg_.add(
-                input.readMessage(POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.parser(), extensionRegistry));
+            streaks_.add(
+                input.readMessage(POGOProtos.Rpc.DailyStreaksProto.StreakProto.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -75,7 +75,7 @@ private static final long serialVersionUID = 0L;
           e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        iphllkhapkg_ = java.util.Collections.unmodifiableList(iphllkhapkg_);
+        streaks_ = java.util.Collections.unmodifiableList(streaks_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -94,64 +94,60 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.DailyStreaksProto.class, POGOProtos.Rpc.DailyStreaksProto.Builder.class);
   }
 
-  public interface HDLDGDJADDKOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK)
+  public interface StreakProtoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.DailyStreaksProto.StreakProto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-     * @return The enum numeric value on the wire for afnakjnnani.
+     * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+     * @return The enum numeric value on the wire for questType.
      */
-    int getAfnakjnnaniValue();
+    int getQuestTypeValue();
     /**
-     * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-     * @return The afnakjnnani.
+     * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+     * @return The questType.
      */
-    POGOProtos.Rpc.QuestType getAfnakjnnani();
+    POGOProtos.Rpc.QuestType getQuestType();
 
     /**
-     * <code>int32 aihjjphknom = 2;</code>
-     * @return The aihjjphknom.
+     * <code>int32 count = 2;</code>
+     * @return The count.
      */
-    int getAihjjphknom();
+    int getCount();
 
     /**
-     * <code>int32 gphpanpleig = 3;</code>
-     * @return The gphpanpleig.
+     * <code>int32 target = 3;</code>
+     * @return The target.
      */
-    int getGphpanpleig();
+    int getTarget();
 
     /**
-     * <code>int32 ldnamdilphm = 4;</code>
-     * @return The ldnamdilphm.
+     * <code>int32 remaining_today = 4;</code>
+     * @return The remainingToday.
      */
-    int getLdnamdilphm();
+    int getRemainingToday();
   }
   /**
-   * <pre>
-   * ref: DailyStreaksProto/ECGIEAOHAHH/HDLDGDJADDK
-   * </pre>
-   *
-   * Protobuf type {@code POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK}
+   * Protobuf type {@code POGOProtos.Rpc.DailyStreaksProto.StreakProto}
    */
-  public  static final class HDLDGDJADDK extends
+  public static final class StreakProto extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK)
-      HDLDGDJADDKOrBuilder {
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.DailyStreaksProto.StreakProto)
+      StreakProtoOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use HDLDGDJADDK.newBuilder() to construct.
-    private HDLDGDJADDK(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use StreakProto.newBuilder() to construct.
+    private StreakProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private HDLDGDJADDK() {
-      afnakjnnani_ = 0;
+    private StreakProto() {
+      questType_ = 0;
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new HDLDGDJADDK();
+      return new StreakProto();
     }
 
     @java.lang.Override
@@ -159,7 +155,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields() {
       return this.unknownFields;
     }
-    private HDLDGDJADDK(
+    private StreakProto(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -180,22 +176,22 @@ private static final long serialVersionUID = 0L;
             case 8: {
               int rawValue = input.readEnum();
 
-              afnakjnnani_ = rawValue;
+              questType_ = rawValue;
               break;
             }
             case 16: {
 
-              aihjjphknom_ = input.readInt32();
+              count_ = input.readInt32();
               break;
             }
             case 24: {
 
-              gphpanpleig_ = input.readInt32();
+              target_ = input.readInt32();
               break;
             }
             case 32: {
 
-              ldnamdilphm_ = input.readInt32();
+              remainingToday_ = input.readInt32();
               break;
             }
             default: {
@@ -219,64 +215,67 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DailyStreaksProto_HDLDGDJADDK_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DailyStreaksProto_StreakProto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DailyStreaksProto_HDLDGDJADDK_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DailyStreaksProto_StreakProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.class, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder.class);
+              POGOProtos.Rpc.DailyStreaksProto.StreakProto.class, POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder.class);
     }
 
-    public static final int AFNAKJNNANI_FIELD_NUMBER = 1;
-    private int afnakjnnani_;
+    public static final int QUEST_TYPE_FIELD_NUMBER = 1;
+    private int questType_;
     /**
-     * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-     * @return The enum numeric value on the wire for afnakjnnani.
+     * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+     * @return The enum numeric value on the wire for questType.
      */
-    public int getAfnakjnnaniValue() {
-      return afnakjnnani_;
+    @java.lang.Override public int getQuestTypeValue() {
+      return questType_;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-     * @return The afnakjnnani.
+     * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+     * @return The questType.
      */
-    public POGOProtos.Rpc.QuestType getAfnakjnnani() {
+    @java.lang.Override public POGOProtos.Rpc.QuestType getQuestType() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(afnakjnnani_);
+      POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(questType_);
       return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
     }
 
-    public static final int AIHJJPHKNOM_FIELD_NUMBER = 2;
-    private int aihjjphknom_;
+    public static final int COUNT_FIELD_NUMBER = 2;
+    private int count_;
     /**
-     * <code>int32 aihjjphknom = 2;</code>
-     * @return The aihjjphknom.
+     * <code>int32 count = 2;</code>
+     * @return The count.
      */
-    public int getAihjjphknom() {
-      return aihjjphknom_;
+    @java.lang.Override
+    public int getCount() {
+      return count_;
     }
 
-    public static final int GPHPANPLEIG_FIELD_NUMBER = 3;
-    private int gphpanpleig_;
+    public static final int TARGET_FIELD_NUMBER = 3;
+    private int target_;
     /**
-     * <code>int32 gphpanpleig = 3;</code>
-     * @return The gphpanpleig.
+     * <code>int32 target = 3;</code>
+     * @return The target.
      */
-    public int getGphpanpleig() {
-      return gphpanpleig_;
+    @java.lang.Override
+    public int getTarget() {
+      return target_;
     }
 
-    public static final int LDNAMDILPHM_FIELD_NUMBER = 4;
-    private int ldnamdilphm_;
+    public static final int REMAINING_TODAY_FIELD_NUMBER = 4;
+    private int remainingToday_;
     /**
-     * <code>int32 ldnamdilphm = 4;</code>
-     * @return The ldnamdilphm.
+     * <code>int32 remaining_today = 4;</code>
+     * @return The remainingToday.
      */
-    public int getLdnamdilphm() {
-      return ldnamdilphm_;
+    @java.lang.Override
+    public int getRemainingToday() {
+      return remainingToday_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -293,17 +292,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (afnakjnnani_ != POGOProtos.Rpc.QuestType.QUEST_UNSET.getNumber()) {
-        output.writeEnum(1, afnakjnnani_);
+      if (questType_ != POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET.getNumber()) {
+        output.writeEnum(1, questType_);
       }
-      if (aihjjphknom_ != 0) {
-        output.writeInt32(2, aihjjphknom_);
+      if (count_ != 0) {
+        output.writeInt32(2, count_);
       }
-      if (gphpanpleig_ != 0) {
-        output.writeInt32(3, gphpanpleig_);
+      if (target_ != 0) {
+        output.writeInt32(3, target_);
       }
-      if (ldnamdilphm_ != 0) {
-        output.writeInt32(4, ldnamdilphm_);
+      if (remainingToday_ != 0) {
+        output.writeInt32(4, remainingToday_);
       }
       unknownFields.writeTo(output);
     }
@@ -314,21 +313,21 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (afnakjnnani_ != POGOProtos.Rpc.QuestType.QUEST_UNSET.getNumber()) {
+      if (questType_ != POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, afnakjnnani_);
+          .computeEnumSize(1, questType_);
       }
-      if (aihjjphknom_ != 0) {
+      if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, aihjjphknom_);
+          .computeInt32Size(2, count_);
       }
-      if (gphpanpleig_ != 0) {
+      if (target_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, gphpanpleig_);
+          .computeInt32Size(3, target_);
       }
-      if (ldnamdilphm_ != 0) {
+      if (remainingToday_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, ldnamdilphm_);
+          .computeInt32Size(4, remainingToday_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -340,18 +339,18 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK)) {
+      if (!(obj instanceof POGOProtos.Rpc.DailyStreaksProto.StreakProto)) {
         return super.equals(obj);
       }
-      POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK other = (POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK) obj;
+      POGOProtos.Rpc.DailyStreaksProto.StreakProto other = (POGOProtos.Rpc.DailyStreaksProto.StreakProto) obj;
 
-      if (afnakjnnani_ != other.afnakjnnani_) return false;
-      if (getAihjjphknom()
-          != other.getAihjjphknom()) return false;
-      if (getGphpanpleig()
-          != other.getGphpanpleig()) return false;
-      if (getLdnamdilphm()
-          != other.getLdnamdilphm()) return false;
+      if (questType_ != other.questType_) return false;
+      if (getCount()
+          != other.getCount()) return false;
+      if (getTarget()
+          != other.getTarget()) return false;
+      if (getRemainingToday()
+          != other.getRemainingToday()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -363,82 +362,82 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AFNAKJNNANI_FIELD_NUMBER;
-      hash = (53 * hash) + afnakjnnani_;
-      hash = (37 * hash) + AIHJJPHKNOM_FIELD_NUMBER;
-      hash = (53 * hash) + getAihjjphknom();
-      hash = (37 * hash) + GPHPANPLEIG_FIELD_NUMBER;
-      hash = (53 * hash) + getGphpanpleig();
-      hash = (37 * hash) + LDNAMDILPHM_FIELD_NUMBER;
-      hash = (53 * hash) + getLdnamdilphm();
+      hash = (37 * hash) + QUEST_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + questType_;
+      hash = (37 * hash) + COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getCount();
+      hash = (37 * hash) + TARGET_FIELD_NUMBER;
+      hash = (53 * hash) + getTarget();
+      hash = (37 * hash) + REMAINING_TODAY_FIELD_NUMBER;
+      hash = (53 * hash) + getRemainingToday();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseFrom(
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseFrom(
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseFrom(
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseFrom(
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseFrom(byte[] data)
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseFrom(
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseFrom(
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseDelimitedFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseDelimitedFrom(
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseFrom(
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parseFrom(
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -451,7 +450,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK prototype) {
+    public static Builder newBuilder(POGOProtos.Rpc.DailyStreaksProto.StreakProto prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -467,30 +466,26 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * <pre>
-     * ref: DailyStreaksProto/ECGIEAOHAHH/HDLDGDJADDK
-     * </pre>
-     *
-     * Protobuf type {@code POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK}
+     * Protobuf type {@code POGOProtos.Rpc.DailyStreaksProto.StreakProto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK)
-        POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDKOrBuilder {
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.DailyStreaksProto.StreakProto)
+        POGOProtos.Rpc.DailyStreaksProto.StreakProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DailyStreaksProto_HDLDGDJADDK_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DailyStreaksProto_StreakProto_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DailyStreaksProto_HDLDGDJADDK_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DailyStreaksProto_StreakProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.class, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder.class);
+                POGOProtos.Rpc.DailyStreaksProto.StreakProto.class, POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder.class);
       }
 
-      // Construct using POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.newBuilder()
+      // Construct using POGOProtos.Rpc.DailyStreaksProto.StreakProto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -508,13 +503,13 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        afnakjnnani_ = 0;
+        questType_ = 0;
 
-        aihjjphknom_ = 0;
+        count_ = 0;
 
-        gphpanpleig_ = 0;
+        target_ = 0;
 
-        ldnamdilphm_ = 0;
+        remainingToday_ = 0;
 
         return this;
       }
@@ -522,17 +517,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DailyStreaksProto_HDLDGDJADDK_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DailyStreaksProto_StreakProto_descriptor;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK getDefaultInstanceForType() {
-        return POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.getDefaultInstance();
+      public POGOProtos.Rpc.DailyStreaksProto.StreakProto getDefaultInstanceForType() {
+        return POGOProtos.Rpc.DailyStreaksProto.StreakProto.getDefaultInstance();
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK build() {
-        POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK result = buildPartial();
+      public POGOProtos.Rpc.DailyStreaksProto.StreakProto build() {
+        POGOProtos.Rpc.DailyStreaksProto.StreakProto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -540,12 +535,12 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK buildPartial() {
-        POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK result = new POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK(this);
-        result.afnakjnnani_ = afnakjnnani_;
-        result.aihjjphknom_ = aihjjphknom_;
-        result.gphpanpleig_ = gphpanpleig_;
-        result.ldnamdilphm_ = ldnamdilphm_;
+      public POGOProtos.Rpc.DailyStreaksProto.StreakProto buildPartial() {
+        POGOProtos.Rpc.DailyStreaksProto.StreakProto result = new POGOProtos.Rpc.DailyStreaksProto.StreakProto(this);
+        result.questType_ = questType_;
+        result.count_ = count_;
+        result.target_ = target_;
+        result.remainingToday_ = remainingToday_;
         onBuilt();
         return result;
       }
@@ -584,27 +579,27 @@ private static final long serialVersionUID = 0L;
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK) {
-          return mergeFrom((POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK)other);
+        if (other instanceof POGOProtos.Rpc.DailyStreaksProto.StreakProto) {
+          return mergeFrom((POGOProtos.Rpc.DailyStreaksProto.StreakProto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK other) {
-        if (other == POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.getDefaultInstance()) return this;
-        if (other.afnakjnnani_ != 0) {
-          setAfnakjnnaniValue(other.getAfnakjnnaniValue());
+      public Builder mergeFrom(POGOProtos.Rpc.DailyStreaksProto.StreakProto other) {
+        if (other == POGOProtos.Rpc.DailyStreaksProto.StreakProto.getDefaultInstance()) return this;
+        if (other.questType_ != 0) {
+          setQuestTypeValue(other.getQuestTypeValue());
         }
-        if (other.getAihjjphknom() != 0) {
-          setAihjjphknom(other.getAihjjphknom());
+        if (other.getCount() != 0) {
+          setCount(other.getCount());
         }
-        if (other.getGphpanpleig() != 0) {
-          setGphpanpleig(other.getGphpanpleig());
+        if (other.getTarget() != 0) {
+          setTarget(other.getTarget());
         }
-        if (other.getLdnamdilphm() != 0) {
-          setLdnamdilphm(other.getLdnamdilphm());
+        if (other.getRemainingToday() != 0) {
+          setRemainingToday(other.getRemainingToday());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -621,11 +616,11 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK parsedMessage = null;
+        POGOProtos.Rpc.DailyStreaksProto.StreakProto parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK) e.getUnfinishedMessage();
+          parsedMessage = (POGOProtos.Rpc.DailyStreaksProto.StreakProto) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -635,144 +630,149 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      private int afnakjnnani_ = 0;
+      private int questType_ = 0;
       /**
-       * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-       * @return The enum numeric value on the wire for afnakjnnani.
+       * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+       * @return The enum numeric value on the wire for questType.
        */
-      public int getAfnakjnnaniValue() {
-        return afnakjnnani_;
+      @java.lang.Override public int getQuestTypeValue() {
+        return questType_;
       }
       /**
-       * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-       * @param value The enum numeric value on the wire for afnakjnnani to set.
+       * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+       * @param value The enum numeric value on the wire for questType to set.
        * @return This builder for chaining.
        */
-      public Builder setAfnakjnnaniValue(int value) {
-        afnakjnnani_ = value;
+      public Builder setQuestTypeValue(int value) {
+        
+        questType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-       * @return The afnakjnnani.
+       * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+       * @return The questType.
        */
-      public POGOProtos.Rpc.QuestType getAfnakjnnani() {
+      @java.lang.Override
+      public POGOProtos.Rpc.QuestType getQuestType() {
         @SuppressWarnings("deprecation")
-        POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(afnakjnnani_);
+        POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(questType_);
         return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-       * @param value The afnakjnnani to set.
+       * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+       * @param value The questType to set.
        * @return This builder for chaining.
        */
-      public Builder setAfnakjnnani(POGOProtos.Rpc.QuestType value) {
+      public Builder setQuestType(POGOProtos.Rpc.QuestType value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        afnakjnnani_ = value.getNumber();
+        questType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
+       * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAfnakjnnani() {
+      public Builder clearQuestType() {
         
-        afnakjnnani_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int aihjjphknom_ ;
-      /**
-       * <code>int32 aihjjphknom = 2;</code>
-       * @return The aihjjphknom.
-       */
-      public int getAihjjphknom() {
-        return aihjjphknom_;
-      }
-      /**
-       * <code>int32 aihjjphknom = 2;</code>
-       * @param value The aihjjphknom to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAihjjphknom(int value) {
-        
-        aihjjphknom_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 aihjjphknom = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAihjjphknom() {
-        
-        aihjjphknom_ = 0;
+        questType_ = 0;
         onChanged();
         return this;
       }
 
-      private int gphpanpleig_ ;
+      private int count_ ;
       /**
-       * <code>int32 gphpanpleig = 3;</code>
-       * @return The gphpanpleig.
+       * <code>int32 count = 2;</code>
+       * @return The count.
        */
-      public int getGphpanpleig() {
-        return gphpanpleig_;
+      @java.lang.Override
+      public int getCount() {
+        return count_;
       }
       /**
-       * <code>int32 gphpanpleig = 3;</code>
-       * @param value The gphpanpleig to set.
+       * <code>int32 count = 2;</code>
+       * @param value The count to set.
        * @return This builder for chaining.
        */
-      public Builder setGphpanpleig(int value) {
+      public Builder setCount(int value) {
         
-        gphpanpleig_ = value;
+        count_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 gphpanpleig = 3;</code>
+       * <code>int32 count = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGphpanpleig() {
+      public Builder clearCount() {
         
-        gphpanpleig_ = 0;
+        count_ = 0;
         onChanged();
         return this;
       }
 
-      private int ldnamdilphm_ ;
+      private int target_ ;
       /**
-       * <code>int32 ldnamdilphm = 4;</code>
-       * @return The ldnamdilphm.
+       * <code>int32 target = 3;</code>
+       * @return The target.
        */
-      public int getLdnamdilphm() {
-        return ldnamdilphm_;
+      @java.lang.Override
+      public int getTarget() {
+        return target_;
       }
       /**
-       * <code>int32 ldnamdilphm = 4;</code>
-       * @param value The ldnamdilphm to set.
+       * <code>int32 target = 3;</code>
+       * @param value The target to set.
        * @return This builder for chaining.
        */
-      public Builder setLdnamdilphm(int value) {
+      public Builder setTarget(int value) {
         
-        ldnamdilphm_ = value;
+        target_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 ldnamdilphm = 4;</code>
+       * <code>int32 target = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLdnamdilphm() {
+      public Builder clearTarget() {
         
-        ldnamdilphm_ = 0;
+        target_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int remainingToday_ ;
+      /**
+       * <code>int32 remaining_today = 4;</code>
+       * @return The remainingToday.
+       */
+      @java.lang.Override
+      public int getRemainingToday() {
+        return remainingToday_;
+      }
+      /**
+       * <code>int32 remaining_today = 4;</code>
+       * @param value The remainingToday to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRemainingToday(int value) {
+        
+        remainingToday_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 remaining_today = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRemainingToday() {
+        
+        remainingToday_ = 0;
         onChanged();
         return this;
       }
@@ -789,79 +789,84 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK)
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.DailyStreaksProto.StreakProto)
     }
 
-    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK)
-    private static final POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.DailyStreaksProto.StreakProto)
+    private static final POGOProtos.Rpc.DailyStreaksProto.StreakProto DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK();
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.DailyStreaksProto.StreakProto();
     }
 
-    public static POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK getDefaultInstance() {
+    public static POGOProtos.Rpc.DailyStreaksProto.StreakProto getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<HDLDGDJADDK>
-        PARSER = new com.google.protobuf.AbstractParser<HDLDGDJADDK>() {
+    private static final com.google.protobuf.Parser<StreakProto>
+        PARSER = new com.google.protobuf.AbstractParser<StreakProto>() {
       @java.lang.Override
-      public HDLDGDJADDK parsePartialFrom(
+      public StreakProto parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HDLDGDJADDK(input, extensionRegistry);
+        return new StreakProto(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<HDLDGDJADDK> parser() {
+    public static com.google.protobuf.Parser<StreakProto> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<HDLDGDJADDK> getParserForType() {
+    public com.google.protobuf.Parser<StreakProto> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK getDefaultInstanceForType() {
+    public POGOProtos.Rpc.DailyStreaksProto.StreakProto getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public static final int IPHLLKHAPKG_FIELD_NUMBER = 1;
-  private java.util.List<POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK> iphllkhapkg_;
+  public static final int STREAKS_FIELD_NUMBER = 1;
+  private java.util.List<POGOProtos.Rpc.DailyStreaksProto.StreakProto> streaks_;
   /**
-   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
    */
-  public java.util.List<POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK> getIphllkhapkgList() {
-    return iphllkhapkg_;
+  @java.lang.Override
+  public java.util.List<POGOProtos.Rpc.DailyStreaksProto.StreakProto> getStreaksList() {
+    return streaks_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
    */
-  public java.util.List<? extends POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDKOrBuilder> 
-      getIphllkhapkgOrBuilderList() {
-    return iphllkhapkg_;
+  @java.lang.Override
+  public java.util.List<? extends POGOProtos.Rpc.DailyStreaksProto.StreakProtoOrBuilder> 
+      getStreaksOrBuilderList() {
+    return streaks_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
    */
-  public int getIphllkhapkgCount() {
-    return iphllkhapkg_.size();
+  @java.lang.Override
+  public int getStreaksCount() {
+    return streaks_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
    */
-  public POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK getIphllkhapkg(int index) {
-    return iphllkhapkg_.get(index);
+  @java.lang.Override
+  public POGOProtos.Rpc.DailyStreaksProto.StreakProto getStreaks(int index) {
+    return streaks_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
    */
-  public POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDKOrBuilder getIphllkhapkgOrBuilder(
+  @java.lang.Override
+  public POGOProtos.Rpc.DailyStreaksProto.StreakProtoOrBuilder getStreaksOrBuilder(
       int index) {
-    return iphllkhapkg_.get(index);
+    return streaks_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
@@ -878,8 +883,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    for (int i = 0; i < iphllkhapkg_.size(); i++) {
-      output.writeMessage(1, iphllkhapkg_.get(i));
+    for (int i = 0; i < streaks_.size(); i++) {
+      output.writeMessage(1, streaks_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -890,9 +895,9 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    for (int i = 0; i < iphllkhapkg_.size(); i++) {
+    for (int i = 0; i < streaks_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, iphllkhapkg_.get(i));
+        .computeMessageSize(1, streaks_.get(i));
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -909,8 +914,8 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.DailyStreaksProto other = (POGOProtos.Rpc.DailyStreaksProto) obj;
 
-    if (!getIphllkhapkgList()
-        .equals(other.getIphllkhapkgList())) return false;
+    if (!getStreaksList()
+        .equals(other.getStreaksList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -922,9 +927,9 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (getIphllkhapkgCount() > 0) {
-      hash = (37 * hash) + IPHLLKHAPKG_FIELD_NUMBER;
-      hash = (53 * hash) + getIphllkhapkgList().hashCode();
+    if (getStreaksCount() > 0) {
+      hash = (37 * hash) + STREAKS_FIELD_NUMBER;
+      hash = (53 * hash) + getStreaksList().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -1054,17 +1059,17 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
-        getIphllkhapkgFieldBuilder();
+        getStreaksFieldBuilder();
       }
     }
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (iphllkhapkgBuilder_ == null) {
-        iphllkhapkg_ = java.util.Collections.emptyList();
+      if (streaksBuilder_ == null) {
+        streaks_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
       } else {
-        iphllkhapkgBuilder_.clear();
+        streaksBuilder_.clear();
       }
       return this;
     }
@@ -1093,14 +1098,14 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.DailyStreaksProto buildPartial() {
       POGOProtos.Rpc.DailyStreaksProto result = new POGOProtos.Rpc.DailyStreaksProto(this);
       int from_bitField0_ = bitField0_;
-      if (iphllkhapkgBuilder_ == null) {
+      if (streaksBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
-          iphllkhapkg_ = java.util.Collections.unmodifiableList(iphllkhapkg_);
+          streaks_ = java.util.Collections.unmodifiableList(streaks_);
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.iphllkhapkg_ = iphllkhapkg_;
+        result.streaks_ = streaks_;
       } else {
-        result.iphllkhapkg_ = iphllkhapkgBuilder_.build();
+        result.streaks_ = streaksBuilder_.build();
       }
       onBuilt();
       return result;
@@ -1150,29 +1155,29 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.DailyStreaksProto other) {
       if (other == POGOProtos.Rpc.DailyStreaksProto.getDefaultInstance()) return this;
-      if (iphllkhapkgBuilder_ == null) {
-        if (!other.iphllkhapkg_.isEmpty()) {
-          if (iphllkhapkg_.isEmpty()) {
-            iphllkhapkg_ = other.iphllkhapkg_;
+      if (streaksBuilder_ == null) {
+        if (!other.streaks_.isEmpty()) {
+          if (streaks_.isEmpty()) {
+            streaks_ = other.streaks_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureIphllkhapkgIsMutable();
-            iphllkhapkg_.addAll(other.iphllkhapkg_);
+            ensureStreaksIsMutable();
+            streaks_.addAll(other.streaks_);
           }
           onChanged();
         }
       } else {
-        if (!other.iphllkhapkg_.isEmpty()) {
-          if (iphllkhapkgBuilder_.isEmpty()) {
-            iphllkhapkgBuilder_.dispose();
-            iphllkhapkgBuilder_ = null;
-            iphllkhapkg_ = other.iphllkhapkg_;
+        if (!other.streaks_.isEmpty()) {
+          if (streaksBuilder_.isEmpty()) {
+            streaksBuilder_.dispose();
+            streaksBuilder_ = null;
+            streaks_ = other.streaks_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            iphllkhapkgBuilder_ = 
+            streaksBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getIphllkhapkgFieldBuilder() : null;
+                 getStreaksFieldBuilder() : null;
           } else {
-            iphllkhapkgBuilder_.addAllMessages(other.iphllkhapkg_);
+            streaksBuilder_.addAllMessages(other.streaks_);
           }
         }
       }
@@ -1206,244 +1211,244 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK> iphllkhapkg_ =
+    private java.util.List<POGOProtos.Rpc.DailyStreaksProto.StreakProto> streaks_ =
       java.util.Collections.emptyList();
-    private void ensureIphllkhapkgIsMutable() {
+    private void ensureStreaksIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        iphllkhapkg_ = new java.util.ArrayList<POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK>(iphllkhapkg_);
+        streaks_ = new java.util.ArrayList<POGOProtos.Rpc.DailyStreaksProto.StreakProto>(streaks_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDKOrBuilder> iphllkhapkgBuilder_;
+        POGOProtos.Rpc.DailyStreaksProto.StreakProto, POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder, POGOProtos.Rpc.DailyStreaksProto.StreakProtoOrBuilder> streaksBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public java.util.List<POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK> getIphllkhapkgList() {
-      if (iphllkhapkgBuilder_ == null) {
-        return java.util.Collections.unmodifiableList(iphllkhapkg_);
+    public java.util.List<POGOProtos.Rpc.DailyStreaksProto.StreakProto> getStreaksList() {
+      if (streaksBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(streaks_);
       } else {
-        return iphllkhapkgBuilder_.getMessageList();
+        return streaksBuilder_.getMessageList();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public int getIphllkhapkgCount() {
-      if (iphllkhapkgBuilder_ == null) {
-        return iphllkhapkg_.size();
+    public int getStreaksCount() {
+      if (streaksBuilder_ == null) {
+        return streaks_.size();
       } else {
-        return iphllkhapkgBuilder_.getCount();
+        return streaksBuilder_.getCount();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK getIphllkhapkg(int index) {
-      if (iphllkhapkgBuilder_ == null) {
-        return iphllkhapkg_.get(index);
+    public POGOProtos.Rpc.DailyStreaksProto.StreakProto getStreaks(int index) {
+      if (streaksBuilder_ == null) {
+        return streaks_.get(index);
       } else {
-        return iphllkhapkgBuilder_.getMessage(index);
+        return streaksBuilder_.getMessage(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public Builder setIphllkhapkg(
-        int index, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK value) {
-      if (iphllkhapkgBuilder_ == null) {
+    public Builder setStreaks(
+        int index, POGOProtos.Rpc.DailyStreaksProto.StreakProto value) {
+      if (streaksBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureIphllkhapkgIsMutable();
-        iphllkhapkg_.set(index, value);
+        ensureStreaksIsMutable();
+        streaks_.set(index, value);
         onChanged();
       } else {
-        iphllkhapkgBuilder_.setMessage(index, value);
+        streaksBuilder_.setMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public Builder setIphllkhapkg(
-        int index, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder builderForValue) {
-      if (iphllkhapkgBuilder_ == null) {
-        ensureIphllkhapkgIsMutable();
-        iphllkhapkg_.set(index, builderForValue.build());
+    public Builder setStreaks(
+        int index, POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder builderForValue) {
+      if (streaksBuilder_ == null) {
+        ensureStreaksIsMutable();
+        streaks_.set(index, builderForValue.build());
         onChanged();
       } else {
-        iphllkhapkgBuilder_.setMessage(index, builderForValue.build());
+        streaksBuilder_.setMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public Builder addIphllkhapkg(POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK value) {
-      if (iphllkhapkgBuilder_ == null) {
+    public Builder addStreaks(POGOProtos.Rpc.DailyStreaksProto.StreakProto value) {
+      if (streaksBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureIphllkhapkgIsMutable();
-        iphllkhapkg_.add(value);
+        ensureStreaksIsMutable();
+        streaks_.add(value);
         onChanged();
       } else {
-        iphllkhapkgBuilder_.addMessage(value);
+        streaksBuilder_.addMessage(value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public Builder addIphllkhapkg(
-        int index, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK value) {
-      if (iphllkhapkgBuilder_ == null) {
+    public Builder addStreaks(
+        int index, POGOProtos.Rpc.DailyStreaksProto.StreakProto value) {
+      if (streaksBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureIphllkhapkgIsMutable();
-        iphllkhapkg_.add(index, value);
+        ensureStreaksIsMutable();
+        streaks_.add(index, value);
         onChanged();
       } else {
-        iphllkhapkgBuilder_.addMessage(index, value);
+        streaksBuilder_.addMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public Builder addIphllkhapkg(
-        POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder builderForValue) {
-      if (iphllkhapkgBuilder_ == null) {
-        ensureIphllkhapkgIsMutable();
-        iphllkhapkg_.add(builderForValue.build());
+    public Builder addStreaks(
+        POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder builderForValue) {
+      if (streaksBuilder_ == null) {
+        ensureStreaksIsMutable();
+        streaks_.add(builderForValue.build());
         onChanged();
       } else {
-        iphllkhapkgBuilder_.addMessage(builderForValue.build());
+        streaksBuilder_.addMessage(builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public Builder addIphllkhapkg(
-        int index, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder builderForValue) {
-      if (iphllkhapkgBuilder_ == null) {
-        ensureIphllkhapkgIsMutable();
-        iphllkhapkg_.add(index, builderForValue.build());
+    public Builder addStreaks(
+        int index, POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder builderForValue) {
+      if (streaksBuilder_ == null) {
+        ensureStreaksIsMutable();
+        streaks_.add(index, builderForValue.build());
         onChanged();
       } else {
-        iphllkhapkgBuilder_.addMessage(index, builderForValue.build());
+        streaksBuilder_.addMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public Builder addAllIphllkhapkg(
-        java.lang.Iterable<? extends POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK> values) {
-      if (iphllkhapkgBuilder_ == null) {
-        ensureIphllkhapkgIsMutable();
+    public Builder addAllStreaks(
+        java.lang.Iterable<? extends POGOProtos.Rpc.DailyStreaksProto.StreakProto> values) {
+      if (streaksBuilder_ == null) {
+        ensureStreaksIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, iphllkhapkg_);
+            values, streaks_);
         onChanged();
       } else {
-        iphllkhapkgBuilder_.addAllMessages(values);
+        streaksBuilder_.addAllMessages(values);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public Builder clearIphllkhapkg() {
-      if (iphllkhapkgBuilder_ == null) {
-        iphllkhapkg_ = java.util.Collections.emptyList();
+    public Builder clearStreaks() {
+      if (streaksBuilder_ == null) {
+        streaks_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
-        iphllkhapkgBuilder_.clear();
+        streaksBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public Builder removeIphllkhapkg(int index) {
-      if (iphllkhapkgBuilder_ == null) {
-        ensureIphllkhapkgIsMutable();
-        iphllkhapkg_.remove(index);
+    public Builder removeStreaks(int index) {
+      if (streaksBuilder_ == null) {
+        ensureStreaksIsMutable();
+        streaks_.remove(index);
         onChanged();
       } else {
-        iphllkhapkgBuilder_.remove(index);
+        streaksBuilder_.remove(index);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder getIphllkhapkgBuilder(
+    public POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder getStreaksBuilder(
         int index) {
-      return getIphllkhapkgFieldBuilder().getBuilder(index);
+      return getStreaksFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDKOrBuilder getIphllkhapkgOrBuilder(
+    public POGOProtos.Rpc.DailyStreaksProto.StreakProtoOrBuilder getStreaksOrBuilder(
         int index) {
-      if (iphllkhapkgBuilder_ == null) {
-        return iphllkhapkg_.get(index);  } else {
-        return iphllkhapkgBuilder_.getMessageOrBuilder(index);
+      if (streaksBuilder_ == null) {
+        return streaks_.get(index);  } else {
+        return streaksBuilder_.getMessageOrBuilder(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDKOrBuilder> 
-         getIphllkhapkgOrBuilderList() {
-      if (iphllkhapkgBuilder_ != null) {
-        return iphllkhapkgBuilder_.getMessageOrBuilderList();
+    public java.util.List<? extends POGOProtos.Rpc.DailyStreaksProto.StreakProtoOrBuilder> 
+         getStreaksOrBuilderList() {
+      if (streaksBuilder_ != null) {
+        return streaksBuilder_.getMessageOrBuilderList();
       } else {
-        return java.util.Collections.unmodifiableList(iphllkhapkg_);
+        return java.util.Collections.unmodifiableList(streaks_);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder addIphllkhapkgBuilder() {
-      return getIphllkhapkgFieldBuilder().addBuilder(
-          POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.getDefaultInstance());
+    public POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder addStreaksBuilder() {
+      return getStreaksFieldBuilder().addBuilder(
+          POGOProtos.Rpc.DailyStreaksProto.StreakProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder addIphllkhapkgBuilder(
+    public POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder addStreaksBuilder(
         int index) {
-      return getIphllkhapkgFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.getDefaultInstance());
+      return getStreaksFieldBuilder().addBuilder(
+          index, POGOProtos.Rpc.DailyStreaksProto.StreakProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
      */
-    public java.util.List<POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder> 
-         getIphllkhapkgBuilderList() {
-      return getIphllkhapkgFieldBuilder().getBuilderList();
+    public java.util.List<POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder> 
+         getStreaksBuilderList() {
+      return getStreaksFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDKOrBuilder> 
-        getIphllkhapkgFieldBuilder() {
-      if (iphllkhapkgBuilder_ == null) {
-        iphllkhapkgBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK.Builder, POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDKOrBuilder>(
-                iphllkhapkg_,
+        POGOProtos.Rpc.DailyStreaksProto.StreakProto, POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder, POGOProtos.Rpc.DailyStreaksProto.StreakProtoOrBuilder> 
+        getStreaksFieldBuilder() {
+      if (streaksBuilder_ == null) {
+        streaksBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            POGOProtos.Rpc.DailyStreaksProto.StreakProto, POGOProtos.Rpc.DailyStreaksProto.StreakProto.Builder, POGOProtos.Rpc.DailyStreaksProto.StreakProtoOrBuilder>(
+                streaks_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
-        iphllkhapkg_ = null;
+        streaks_ = null;
       }
-      return iphllkhapkgBuilder_;
+      return streaksBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.PokestopIncidentDisplayProto}
  */
-public  final class PokestopIncidentDisplayProto extends
+public final class PokestopIncidentDisplayProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PokestopIncidentDisplayProto)
     PokestopIncidentDisplayProtoOrBuilder {
@@ -16,8 +16,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PokestopIncidentDisplayProto() {
-    cjfmakbjoie_ = "";
-    gneepeippkc_ = 0;
+    incidentId_ = "";
+    incidentDisplayType_ = 0;
   }
 
   @java.lang.Override
@@ -53,71 +53,71 @@ private static final long serialVersionUID = 0L;
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            cjfmakbjoie_ = s;
+            incidentId_ = s;
             break;
           }
           case 16: {
 
-            infikjlocfb_ = input.readInt64();
+            incidentStartMs_ = input.readInt64();
             break;
           }
           case 24: {
 
-            anppdjdmnan_ = input.readInt64();
+            incidentExpirationMs_ = input.readInt64();
             break;
           }
           case 32: {
 
-            mflkpnpldjl_ = input.readBool();
+            hideIncident_ = input.readBool();
             break;
           }
           case 40: {
 
-            eblachhpabm_ = input.readBool();
+            incidentCompleted_ = input.readBool();
             break;
           }
           case 48: {
             int rawValue = input.readEnum();
 
-            gneepeippkc_ = rawValue;
+            incidentDisplayType_ = rawValue;
             break;
           }
           case 56: {
 
-            jpfekeiimig_ = input.readInt32();
+            incidentDisplayOrderPriority_ = input.readInt32();
             break;
           }
           case 64: {
 
-            bebcjnakjod_ = input.readBool();
+            continueDisplayingIncident_ = input.readBool();
             break;
           }
           case 82: {
-            POGOProtos.Rpc.HDLEOGLECNM.Builder subBuilder = null;
-            if (cCPOJAKMAPCCase_ == 10) {
-              subBuilder = ((POGOProtos.Rpc.HDLEOGLECNM) cCPOJAKMAPC_).toBuilder();
+            POGOProtos.Rpc.CharacterDisplayProto.Builder subBuilder = null;
+            if (mapDisplayCase_ == 10) {
+              subBuilder = ((POGOProtos.Rpc.CharacterDisplayProto) mapDisplay_).toBuilder();
             }
-            cCPOJAKMAPC_ =
-                input.readMessage(POGOProtos.Rpc.HDLEOGLECNM.parser(), extensionRegistry);
+            mapDisplay_ =
+                input.readMessage(POGOProtos.Rpc.CharacterDisplayProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.HDLEOGLECNM) cCPOJAKMAPC_);
-              cCPOJAKMAPC_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CharacterDisplayProto) mapDisplay_);
+              mapDisplay_ = subBuilder.buildPartial();
             }
-            cCPOJAKMAPCCase_ = 10;
+            mapDisplayCase_ = 10;
             break;
           }
           case 90: {
-            POGOProtos.Rpc.LHILOEDGDOB.Builder subBuilder = null;
-            if (cCPOJAKMAPCCase_ == 11) {
-              subBuilder = ((POGOProtos.Rpc.LHILOEDGDOB) cCPOJAKMAPC_).toBuilder();
+            POGOProtos.Rpc.InvasionFinishedDisplayProto.Builder subBuilder = null;
+            if (mapDisplayCase_ == 11) {
+              subBuilder = ((POGOProtos.Rpc.InvasionFinishedDisplayProto) mapDisplay_).toBuilder();
             }
-            cCPOJAKMAPC_ =
-                input.readMessage(POGOProtos.Rpc.LHILOEDGDOB.parser(), extensionRegistry);
+            mapDisplay_ =
+                input.readMessage(POGOProtos.Rpc.InvasionFinishedDisplayProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.LHILOEDGDOB) cCPOJAKMAPC_);
-              cCPOJAKMAPC_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.InvasionFinishedDisplayProto) mapDisplay_);
+              mapDisplay_ = subBuilder.buildPartial();
             }
-            cCPOJAKMAPCCase_ = 11;
+            mapDisplayCase_ = 11;
             break;
           }
           default: {
@@ -152,16 +152,16 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.PokestopIncidentDisplayProto.class, POGOProtos.Rpc.PokestopIncidentDisplayProto.Builder.class);
   }
 
-  private int cCPOJAKMAPCCase_ = 0;
-  private java.lang.Object cCPOJAKMAPC_;
-  public enum CCPOJAKMAPCCase
+  private int mapDisplayCase_ = 0;
+  private java.lang.Object mapDisplay_;
+  public enum MapDisplayCase
       implements com.google.protobuf.Internal.EnumLite,
           com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     CHARACTER_DISPLAY(10),
     INVASION_FINISHED(11),
-    CCPOJAKMAPC_NOT_SET(0);
+    MAPDISPLAY_NOT_SET(0);
     private final int value;
-    private CCPOJAKMAPCCase(int value) {
+    private MapDisplayCase(int value) {
       this.value = value;
     }
     /**
@@ -170,15 +170,15 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static CCPOJAKMAPCCase valueOf(int value) {
+    public static MapDisplayCase valueOf(int value) {
       return forNumber(value);
     }
 
-    public static CCPOJAKMAPCCase forNumber(int value) {
+    public static MapDisplayCase forNumber(int value) {
       switch (value) {
         case 10: return CHARACTER_DISPLAY;
         case 11: return INVASION_FINISHED;
-        case 0: return CCPOJAKMAPC_NOT_SET;
+        case 0: return MAPDISPLAY_NOT_SET;
         default: return null;
       }
     }
@@ -187,181 +187,195 @@ private static final long serialVersionUID = 0L;
     }
   };
 
-  public CCPOJAKMAPCCase
-  getCCPOJAKMAPCCase() {
-    return CCPOJAKMAPCCase.forNumber(
-        cCPOJAKMAPCCase_);
+  public MapDisplayCase
+  getMapDisplayCase() {
+    return MapDisplayCase.forNumber(
+        mapDisplayCase_);
   }
 
   public static final int CHARACTER_DISPLAY_FIELD_NUMBER = 10;
   /**
-   * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
    * @return Whether the characterDisplay field is set.
    */
+  @java.lang.Override
   public boolean hasCharacterDisplay() {
-    return cCPOJAKMAPCCase_ == 10;
+    return mapDisplayCase_ == 10;
   }
   /**
-   * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
    * @return The characterDisplay.
    */
-  public POGOProtos.Rpc.HDLEOGLECNM getCharacterDisplay() {
-    if (cCPOJAKMAPCCase_ == 10) {
-       return (POGOProtos.Rpc.HDLEOGLECNM) cCPOJAKMAPC_;
+  @java.lang.Override
+  public POGOProtos.Rpc.CharacterDisplayProto getCharacterDisplay() {
+    if (mapDisplayCase_ == 10) {
+       return (POGOProtos.Rpc.CharacterDisplayProto) mapDisplay_;
     }
-    return POGOProtos.Rpc.HDLEOGLECNM.getDefaultInstance();
+    return POGOProtos.Rpc.CharacterDisplayProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
    */
-  public POGOProtos.Rpc.HDLEOGLECNMOrBuilder getCharacterDisplayOrBuilder() {
-    if (cCPOJAKMAPCCase_ == 10) {
-       return (POGOProtos.Rpc.HDLEOGLECNM) cCPOJAKMAPC_;
+  @java.lang.Override
+  public POGOProtos.Rpc.CharacterDisplayProtoOrBuilder getCharacterDisplayOrBuilder() {
+    if (mapDisplayCase_ == 10) {
+       return (POGOProtos.Rpc.CharacterDisplayProto) mapDisplay_;
     }
-    return POGOProtos.Rpc.HDLEOGLECNM.getDefaultInstance();
+    return POGOProtos.Rpc.CharacterDisplayProto.getDefaultInstance();
   }
 
   public static final int INVASION_FINISHED_FIELD_NUMBER = 11;
   /**
-   * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
    * @return Whether the invasionFinished field is set.
    */
+  @java.lang.Override
   public boolean hasInvasionFinished() {
-    return cCPOJAKMAPCCase_ == 11;
+    return mapDisplayCase_ == 11;
   }
   /**
-   * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
    * @return The invasionFinished.
    */
-  public POGOProtos.Rpc.LHILOEDGDOB getInvasionFinished() {
-    if (cCPOJAKMAPCCase_ == 11) {
-       return (POGOProtos.Rpc.LHILOEDGDOB) cCPOJAKMAPC_;
+  @java.lang.Override
+  public POGOProtos.Rpc.InvasionFinishedDisplayProto getInvasionFinished() {
+    if (mapDisplayCase_ == 11) {
+       return (POGOProtos.Rpc.InvasionFinishedDisplayProto) mapDisplay_;
     }
-    return POGOProtos.Rpc.LHILOEDGDOB.getDefaultInstance();
+    return POGOProtos.Rpc.InvasionFinishedDisplayProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
    */
-  public POGOProtos.Rpc.LHILOEDGDOBOrBuilder getInvasionFinishedOrBuilder() {
-    if (cCPOJAKMAPCCase_ == 11) {
-       return (POGOProtos.Rpc.LHILOEDGDOB) cCPOJAKMAPC_;
+  @java.lang.Override
+  public POGOProtos.Rpc.InvasionFinishedDisplayProtoOrBuilder getInvasionFinishedOrBuilder() {
+    if (mapDisplayCase_ == 11) {
+       return (POGOProtos.Rpc.InvasionFinishedDisplayProto) mapDisplay_;
     }
-    return POGOProtos.Rpc.LHILOEDGDOB.getDefaultInstance();
+    return POGOProtos.Rpc.InvasionFinishedDisplayProto.getDefaultInstance();
   }
 
-  public static final int CJFMAKBJOIE_FIELD_NUMBER = 1;
-  private volatile java.lang.Object cjfmakbjoie_;
+  public static final int INCIDENT_ID_FIELD_NUMBER = 1;
+  private volatile java.lang.Object incidentId_;
   /**
-   * <code>string cjfmakbjoie = 1;</code>
-   * @return The cjfmakbjoie.
+   * <code>string incident_id = 1;</code>
+   * @return The incidentId.
    */
-  public java.lang.String getCjfmakbjoie() {
-    java.lang.Object ref = cjfmakbjoie_;
+  @java.lang.Override
+  public java.lang.String getIncidentId() {
+    java.lang.Object ref = incidentId_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      cjfmakbjoie_ = s;
+      incidentId_ = s;
       return s;
     }
   }
   /**
-   * <code>string cjfmakbjoie = 1;</code>
-   * @return The bytes for cjfmakbjoie.
+   * <code>string incident_id = 1;</code>
+   * @return The bytes for incidentId.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
-      getCjfmakbjoieBytes() {
-    java.lang.Object ref = cjfmakbjoie_;
+      getIncidentIdBytes() {
+    java.lang.Object ref = incidentId_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      cjfmakbjoie_ = b;
+      incidentId_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int INFIKJLOCFB_FIELD_NUMBER = 2;
-  private long infikjlocfb_;
+  public static final int INCIDENT_START_MS_FIELD_NUMBER = 2;
+  private long incidentStartMs_;
   /**
-   * <code>int64 infikjlocfb = 2;</code>
-   * @return The infikjlocfb.
+   * <code>int64 incident_start_ms = 2;</code>
+   * @return The incidentStartMs.
    */
-  public long getInfikjlocfb() {
-    return infikjlocfb_;
+  @java.lang.Override
+  public long getIncidentStartMs() {
+    return incidentStartMs_;
   }
 
-  public static final int ANPPDJDMNAN_FIELD_NUMBER = 3;
-  private long anppdjdmnan_;
+  public static final int INCIDENT_EXPIRATION_MS_FIELD_NUMBER = 3;
+  private long incidentExpirationMs_;
   /**
-   * <code>int64 anppdjdmnan = 3;</code>
-   * @return The anppdjdmnan.
+   * <code>int64 incident_expiration_ms = 3;</code>
+   * @return The incidentExpirationMs.
    */
-  public long getAnppdjdmnan() {
-    return anppdjdmnan_;
+  @java.lang.Override
+  public long getIncidentExpirationMs() {
+    return incidentExpirationMs_;
   }
 
-  public static final int MFLKPNPLDJL_FIELD_NUMBER = 4;
-  private boolean mflkpnpldjl_;
+  public static final int HIDE_INCIDENT_FIELD_NUMBER = 4;
+  private boolean hideIncident_;
   /**
-   * <code>bool mflkpnpldjl = 4;</code>
-   * @return The mflkpnpldjl.
+   * <code>bool hide_incident = 4;</code>
+   * @return The hideIncident.
    */
-  public boolean getMflkpnpldjl() {
-    return mflkpnpldjl_;
+  @java.lang.Override
+  public boolean getHideIncident() {
+    return hideIncident_;
   }
 
-  public static final int EBLACHHPABM_FIELD_NUMBER = 5;
-  private boolean eblachhpabm_;
+  public static final int INCIDENT_COMPLETED_FIELD_NUMBER = 5;
+  private boolean incidentCompleted_;
   /**
-   * <code>bool eblachhpabm = 5;</code>
-   * @return The eblachhpabm.
+   * <code>bool incident_completed = 5;</code>
+   * @return The incidentCompleted.
    */
-  public boolean getEblachhpabm() {
-    return eblachhpabm_;
+  @java.lang.Override
+  public boolean getIncidentCompleted() {
+    return incidentCompleted_;
   }
 
-  public static final int GNEEPEIPPKC_FIELD_NUMBER = 6;
-  private int gneepeippkc_;
+  public static final int INCIDENT_DISPLAY_TYPE_FIELD_NUMBER = 6;
+  private int incidentDisplayType_;
   /**
-   * <code>.POGOProtos.Rpc.IncidentDisplayType gneepeippkc = 6;</code>
-   * @return The enum numeric value on the wire for gneepeippkc.
+   * <code>.POGOProtos.Rpc.IncidentDisplayType incident_display_type = 6;</code>
+   * @return The enum numeric value on the wire for incidentDisplayType.
    */
-  public int getGneepeippkcValue() {
-    return gneepeippkc_;
+  @java.lang.Override public int getIncidentDisplayTypeValue() {
+    return incidentDisplayType_;
   }
   /**
-   * <code>.POGOProtos.Rpc.IncidentDisplayType gneepeippkc = 6;</code>
-   * @return The gneepeippkc.
+   * <code>.POGOProtos.Rpc.IncidentDisplayType incident_display_type = 6;</code>
+   * @return The incidentDisplayType.
    */
-  public POGOProtos.Rpc.IncidentDisplayType getGneepeippkc() {
+  @java.lang.Override public POGOProtos.Rpc.IncidentDisplayType getIncidentDisplayType() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.IncidentDisplayType result = POGOProtos.Rpc.IncidentDisplayType.valueOf(gneepeippkc_);
+    POGOProtos.Rpc.IncidentDisplayType result = POGOProtos.Rpc.IncidentDisplayType.valueOf(incidentDisplayType_);
     return result == null ? POGOProtos.Rpc.IncidentDisplayType.UNRECOGNIZED : result;
   }
 
-  public static final int JPFEKEIIMIG_FIELD_NUMBER = 7;
-  private int jpfekeiimig_;
+  public static final int INCIDENT_DISPLAY_ORDER_PRIORITY_FIELD_NUMBER = 7;
+  private int incidentDisplayOrderPriority_;
   /**
-   * <code>int32 jpfekeiimig = 7;</code>
-   * @return The jpfekeiimig.
+   * <code>int32 incident_display_order_priority = 7;</code>
+   * @return The incidentDisplayOrderPriority.
    */
-  public int getJpfekeiimig() {
-    return jpfekeiimig_;
+  @java.lang.Override
+  public int getIncidentDisplayOrderPriority() {
+    return incidentDisplayOrderPriority_;
   }
 
-  public static final int BEBCJNAKJOD_FIELD_NUMBER = 8;
-  private boolean bebcjnakjod_;
+  public static final int CONTINUE_DISPLAYING_INCIDENT_FIELD_NUMBER = 8;
+  private boolean continueDisplayingIncident_;
   /**
-   * <code>bool bebcjnakjod = 8;</code>
-   * @return The bebcjnakjod.
+   * <code>bool continue_displaying_incident = 8;</code>
+   * @return The continueDisplayingIncident.
    */
-  public boolean getBebcjnakjod() {
-    return bebcjnakjod_;
+  @java.lang.Override
+  public boolean getContinueDisplayingIncident() {
+    return continueDisplayingIncident_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -378,35 +392,35 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getCjfmakbjoieBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, cjfmakbjoie_);
+    if (!getIncidentIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, incidentId_);
     }
-    if (infikjlocfb_ != 0L) {
-      output.writeInt64(2, infikjlocfb_);
+    if (incidentStartMs_ != 0L) {
+      output.writeInt64(2, incidentStartMs_);
     }
-    if (anppdjdmnan_ != 0L) {
-      output.writeInt64(3, anppdjdmnan_);
+    if (incidentExpirationMs_ != 0L) {
+      output.writeInt64(3, incidentExpirationMs_);
     }
-    if (mflkpnpldjl_ != false) {
-      output.writeBool(4, mflkpnpldjl_);
+    if (hideIncident_ != false) {
+      output.writeBool(4, hideIncident_);
     }
-    if (eblachhpabm_ != false) {
-      output.writeBool(5, eblachhpabm_);
+    if (incidentCompleted_ != false) {
+      output.writeBool(5, incidentCompleted_);
     }
-    if (gneepeippkc_ != POGOProtos.Rpc.IncidentDisplayType.INCIDENT_DISPLAY_TYPE_NONE.getNumber()) {
-      output.writeEnum(6, gneepeippkc_);
+    if (incidentDisplayType_ != POGOProtos.Rpc.IncidentDisplayType.INCIDENT_DISPLAY_TYPE_NONE.getNumber()) {
+      output.writeEnum(6, incidentDisplayType_);
     }
-    if (jpfekeiimig_ != 0) {
-      output.writeInt32(7, jpfekeiimig_);
+    if (incidentDisplayOrderPriority_ != 0) {
+      output.writeInt32(7, incidentDisplayOrderPriority_);
     }
-    if (bebcjnakjod_ != false) {
-      output.writeBool(8, bebcjnakjod_);
+    if (continueDisplayingIncident_ != false) {
+      output.writeBool(8, continueDisplayingIncident_);
     }
-    if (cCPOJAKMAPCCase_ == 10) {
-      output.writeMessage(10, (POGOProtos.Rpc.HDLEOGLECNM) cCPOJAKMAPC_);
+    if (mapDisplayCase_ == 10) {
+      output.writeMessage(10, (POGOProtos.Rpc.CharacterDisplayProto) mapDisplay_);
     }
-    if (cCPOJAKMAPCCase_ == 11) {
-      output.writeMessage(11, (POGOProtos.Rpc.LHILOEDGDOB) cCPOJAKMAPC_);
+    if (mapDisplayCase_ == 11) {
+      output.writeMessage(11, (POGOProtos.Rpc.InvasionFinishedDisplayProto) mapDisplay_);
     }
     unknownFields.writeTo(output);
   }
@@ -417,44 +431,44 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!getCjfmakbjoieBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, cjfmakbjoie_);
+    if (!getIncidentIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, incidentId_);
     }
-    if (infikjlocfb_ != 0L) {
+    if (incidentStartMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(2, infikjlocfb_);
+        .computeInt64Size(2, incidentStartMs_);
     }
-    if (anppdjdmnan_ != 0L) {
+    if (incidentExpirationMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(3, anppdjdmnan_);
+        .computeInt64Size(3, incidentExpirationMs_);
     }
-    if (mflkpnpldjl_ != false) {
+    if (hideIncident_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(4, mflkpnpldjl_);
+        .computeBoolSize(4, hideIncident_);
     }
-    if (eblachhpabm_ != false) {
+    if (incidentCompleted_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(5, eblachhpabm_);
+        .computeBoolSize(5, incidentCompleted_);
     }
-    if (gneepeippkc_ != POGOProtos.Rpc.IncidentDisplayType.INCIDENT_DISPLAY_TYPE_NONE.getNumber()) {
+    if (incidentDisplayType_ != POGOProtos.Rpc.IncidentDisplayType.INCIDENT_DISPLAY_TYPE_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(6, gneepeippkc_);
+        .computeEnumSize(6, incidentDisplayType_);
     }
-    if (jpfekeiimig_ != 0) {
+    if (incidentDisplayOrderPriority_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(7, jpfekeiimig_);
+        .computeInt32Size(7, incidentDisplayOrderPriority_);
     }
-    if (bebcjnakjod_ != false) {
+    if (continueDisplayingIncident_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(8, bebcjnakjod_);
+        .computeBoolSize(8, continueDisplayingIncident_);
     }
-    if (cCPOJAKMAPCCase_ == 10) {
+    if (mapDisplayCase_ == 10) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, (POGOProtos.Rpc.HDLEOGLECNM) cCPOJAKMAPC_);
+        .computeMessageSize(10, (POGOProtos.Rpc.CharacterDisplayProto) mapDisplay_);
     }
-    if (cCPOJAKMAPCCase_ == 11) {
+    if (mapDisplayCase_ == 11) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(11, (POGOProtos.Rpc.LHILOEDGDOB) cCPOJAKMAPC_);
+        .computeMessageSize(11, (POGOProtos.Rpc.InvasionFinishedDisplayProto) mapDisplay_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -471,23 +485,23 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PokestopIncidentDisplayProto other = (POGOProtos.Rpc.PokestopIncidentDisplayProto) obj;
 
-    if (!getCjfmakbjoie()
-        .equals(other.getCjfmakbjoie())) return false;
-    if (getInfikjlocfb()
-        != other.getInfikjlocfb()) return false;
-    if (getAnppdjdmnan()
-        != other.getAnppdjdmnan()) return false;
-    if (getMflkpnpldjl()
-        != other.getMflkpnpldjl()) return false;
-    if (getEblachhpabm()
-        != other.getEblachhpabm()) return false;
-    if (gneepeippkc_ != other.gneepeippkc_) return false;
-    if (getJpfekeiimig()
-        != other.getJpfekeiimig()) return false;
-    if (getBebcjnakjod()
-        != other.getBebcjnakjod()) return false;
-    if (!getCCPOJAKMAPCCase().equals(other.getCCPOJAKMAPCCase())) return false;
-    switch (cCPOJAKMAPCCase_) {
+    if (!getIncidentId()
+        .equals(other.getIncidentId())) return false;
+    if (getIncidentStartMs()
+        != other.getIncidentStartMs()) return false;
+    if (getIncidentExpirationMs()
+        != other.getIncidentExpirationMs()) return false;
+    if (getHideIncident()
+        != other.getHideIncident()) return false;
+    if (getIncidentCompleted()
+        != other.getIncidentCompleted()) return false;
+    if (incidentDisplayType_ != other.incidentDisplayType_) return false;
+    if (getIncidentDisplayOrderPriority()
+        != other.getIncidentDisplayOrderPriority()) return false;
+    if (getContinueDisplayingIncident()
+        != other.getContinueDisplayingIncident()) return false;
+    if (!getMapDisplayCase().equals(other.getMapDisplayCase())) return false;
+    switch (mapDisplayCase_) {
       case 10:
         if (!getCharacterDisplay()
             .equals(other.getCharacterDisplay())) return false;
@@ -510,28 +524,28 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + CJFMAKBJOIE_FIELD_NUMBER;
-    hash = (53 * hash) + getCjfmakbjoie().hashCode();
-    hash = (37 * hash) + INFIKJLOCFB_FIELD_NUMBER;
+    hash = (37 * hash) + INCIDENT_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getIncidentId().hashCode();
+    hash = (37 * hash) + INCIDENT_START_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getInfikjlocfb());
-    hash = (37 * hash) + ANPPDJDMNAN_FIELD_NUMBER;
+        getIncidentStartMs());
+    hash = (37 * hash) + INCIDENT_EXPIRATION_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getAnppdjdmnan());
-    hash = (37 * hash) + MFLKPNPLDJL_FIELD_NUMBER;
+        getIncidentExpirationMs());
+    hash = (37 * hash) + HIDE_INCIDENT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getMflkpnpldjl());
-    hash = (37 * hash) + EBLACHHPABM_FIELD_NUMBER;
+        getHideIncident());
+    hash = (37 * hash) + INCIDENT_COMPLETED_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getEblachhpabm());
-    hash = (37 * hash) + GNEEPEIPPKC_FIELD_NUMBER;
-    hash = (53 * hash) + gneepeippkc_;
-    hash = (37 * hash) + JPFEKEIIMIG_FIELD_NUMBER;
-    hash = (53 * hash) + getJpfekeiimig();
-    hash = (37 * hash) + BEBCJNAKJOD_FIELD_NUMBER;
+        getIncidentCompleted());
+    hash = (37 * hash) + INCIDENT_DISPLAY_TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + incidentDisplayType_;
+    hash = (37 * hash) + INCIDENT_DISPLAY_ORDER_PRIORITY_FIELD_NUMBER;
+    hash = (53 * hash) + getIncidentDisplayOrderPriority();
+    hash = (37 * hash) + CONTINUE_DISPLAYING_INCIDENT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getBebcjnakjod());
-    switch (cCPOJAKMAPCCase_) {
+        getContinueDisplayingIncident());
+    switch (mapDisplayCase_) {
       case 10:
         hash = (37 * hash) + CHARACTER_DISPLAY_FIELD_NUMBER;
         hash = (53 * hash) + getCharacterDisplay().hashCode();
@@ -676,24 +690,24 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      cjfmakbjoie_ = "";
+      incidentId_ = "";
 
-      infikjlocfb_ = 0L;
+      incidentStartMs_ = 0L;
 
-      anppdjdmnan_ = 0L;
+      incidentExpirationMs_ = 0L;
 
-      mflkpnpldjl_ = false;
+      hideIncident_ = false;
 
-      eblachhpabm_ = false;
+      incidentCompleted_ = false;
 
-      gneepeippkc_ = 0;
+      incidentDisplayType_ = 0;
 
-      jpfekeiimig_ = 0;
+      incidentDisplayOrderPriority_ = 0;
 
-      bebcjnakjod_ = false;
+      continueDisplayingIncident_ = false;
 
-      cCPOJAKMAPCCase_ = 0;
-      cCPOJAKMAPC_ = null;
+      mapDisplayCase_ = 0;
+      mapDisplay_ = null;
       return this;
     }
 
@@ -720,29 +734,29 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.PokestopIncidentDisplayProto buildPartial() {
       POGOProtos.Rpc.PokestopIncidentDisplayProto result = new POGOProtos.Rpc.PokestopIncidentDisplayProto(this);
-      if (cCPOJAKMAPCCase_ == 10) {
+      if (mapDisplayCase_ == 10) {
         if (characterDisplayBuilder_ == null) {
-          result.cCPOJAKMAPC_ = cCPOJAKMAPC_;
+          result.mapDisplay_ = mapDisplay_;
         } else {
-          result.cCPOJAKMAPC_ = characterDisplayBuilder_.build();
+          result.mapDisplay_ = characterDisplayBuilder_.build();
         }
       }
-      if (cCPOJAKMAPCCase_ == 11) {
+      if (mapDisplayCase_ == 11) {
         if (invasionFinishedBuilder_ == null) {
-          result.cCPOJAKMAPC_ = cCPOJAKMAPC_;
+          result.mapDisplay_ = mapDisplay_;
         } else {
-          result.cCPOJAKMAPC_ = invasionFinishedBuilder_.build();
+          result.mapDisplay_ = invasionFinishedBuilder_.build();
         }
       }
-      result.cjfmakbjoie_ = cjfmakbjoie_;
-      result.infikjlocfb_ = infikjlocfb_;
-      result.anppdjdmnan_ = anppdjdmnan_;
-      result.mflkpnpldjl_ = mflkpnpldjl_;
-      result.eblachhpabm_ = eblachhpabm_;
-      result.gneepeippkc_ = gneepeippkc_;
-      result.jpfekeiimig_ = jpfekeiimig_;
-      result.bebcjnakjod_ = bebcjnakjod_;
-      result.cCPOJAKMAPCCase_ = cCPOJAKMAPCCase_;
+      result.incidentId_ = incidentId_;
+      result.incidentStartMs_ = incidentStartMs_;
+      result.incidentExpirationMs_ = incidentExpirationMs_;
+      result.hideIncident_ = hideIncident_;
+      result.incidentCompleted_ = incidentCompleted_;
+      result.incidentDisplayType_ = incidentDisplayType_;
+      result.incidentDisplayOrderPriority_ = incidentDisplayOrderPriority_;
+      result.continueDisplayingIncident_ = continueDisplayingIncident_;
+      result.mapDisplayCase_ = mapDisplayCase_;
       onBuilt();
       return result;
     }
@@ -791,32 +805,32 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PokestopIncidentDisplayProto other) {
       if (other == POGOProtos.Rpc.PokestopIncidentDisplayProto.getDefaultInstance()) return this;
-      if (!other.getCjfmakbjoie().isEmpty()) {
-        cjfmakbjoie_ = other.cjfmakbjoie_;
+      if (!other.getIncidentId().isEmpty()) {
+        incidentId_ = other.incidentId_;
         onChanged();
       }
-      if (other.getInfikjlocfb() != 0L) {
-        setInfikjlocfb(other.getInfikjlocfb());
+      if (other.getIncidentStartMs() != 0L) {
+        setIncidentStartMs(other.getIncidentStartMs());
       }
-      if (other.getAnppdjdmnan() != 0L) {
-        setAnppdjdmnan(other.getAnppdjdmnan());
+      if (other.getIncidentExpirationMs() != 0L) {
+        setIncidentExpirationMs(other.getIncidentExpirationMs());
       }
-      if (other.getMflkpnpldjl() != false) {
-        setMflkpnpldjl(other.getMflkpnpldjl());
+      if (other.getHideIncident() != false) {
+        setHideIncident(other.getHideIncident());
       }
-      if (other.getEblachhpabm() != false) {
-        setEblachhpabm(other.getEblachhpabm());
+      if (other.getIncidentCompleted() != false) {
+        setIncidentCompleted(other.getIncidentCompleted());
       }
-      if (other.gneepeippkc_ != 0) {
-        setGneepeippkcValue(other.getGneepeippkcValue());
+      if (other.incidentDisplayType_ != 0) {
+        setIncidentDisplayTypeValue(other.getIncidentDisplayTypeValue());
       }
-      if (other.getJpfekeiimig() != 0) {
-        setJpfekeiimig(other.getJpfekeiimig());
+      if (other.getIncidentDisplayOrderPriority() != 0) {
+        setIncidentDisplayOrderPriority(other.getIncidentDisplayOrderPriority());
       }
-      if (other.getBebcjnakjod() != false) {
-        setBebcjnakjod(other.getBebcjnakjod());
+      if (other.getContinueDisplayingIncident() != false) {
+        setContinueDisplayingIncident(other.getContinueDisplayingIncident());
       }
-      switch (other.getCCPOJAKMAPCCase()) {
+      switch (other.getMapDisplayCase()) {
         case CHARACTER_DISPLAY: {
           mergeCharacterDisplay(other.getCharacterDisplay());
           break;
@@ -825,7 +839,7 @@ private static final long serialVersionUID = 0L;
           mergeInvasionFinished(other.getInvasionFinished());
           break;
         }
-        case CCPOJAKMAPC_NOT_SET: {
+        case MAPDISPLAY_NOT_SET: {
           break;
         }
       }
@@ -857,602 +871,616 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
-    private int cCPOJAKMAPCCase_ = 0;
-    private java.lang.Object cCPOJAKMAPC_;
-    public CCPOJAKMAPCCase
-        getCCPOJAKMAPCCase() {
-      return CCPOJAKMAPCCase.forNumber(
-          cCPOJAKMAPCCase_);
+    private int mapDisplayCase_ = 0;
+    private java.lang.Object mapDisplay_;
+    public MapDisplayCase
+        getMapDisplayCase() {
+      return MapDisplayCase.forNumber(
+          mapDisplayCase_);
     }
 
-    public Builder clearCCPOJAKMAPC() {
-      cCPOJAKMAPCCase_ = 0;
-      cCPOJAKMAPC_ = null;
+    public Builder clearMapDisplay() {
+      mapDisplayCase_ = 0;
+      mapDisplay_ = null;
       onChanged();
       return this;
     }
 
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HDLEOGLECNM, POGOProtos.Rpc.HDLEOGLECNM.Builder, POGOProtos.Rpc.HDLEOGLECNMOrBuilder> characterDisplayBuilder_;
+        POGOProtos.Rpc.CharacterDisplayProto, POGOProtos.Rpc.CharacterDisplayProto.Builder, POGOProtos.Rpc.CharacterDisplayProtoOrBuilder> characterDisplayBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+     * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
      * @return Whether the characterDisplay field is set.
      */
+    @java.lang.Override
     public boolean hasCharacterDisplay() {
-      return cCPOJAKMAPCCase_ == 10;
+      return mapDisplayCase_ == 10;
     }
     /**
-     * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+     * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
      * @return The characterDisplay.
      */
-    public POGOProtos.Rpc.HDLEOGLECNM getCharacterDisplay() {
+    @java.lang.Override
+    public POGOProtos.Rpc.CharacterDisplayProto getCharacterDisplay() {
       if (characterDisplayBuilder_ == null) {
-        if (cCPOJAKMAPCCase_ == 10) {
-          return (POGOProtos.Rpc.HDLEOGLECNM) cCPOJAKMAPC_;
+        if (mapDisplayCase_ == 10) {
+          return (POGOProtos.Rpc.CharacterDisplayProto) mapDisplay_;
         }
-        return POGOProtos.Rpc.HDLEOGLECNM.getDefaultInstance();
+        return POGOProtos.Rpc.CharacterDisplayProto.getDefaultInstance();
       } else {
-        if (cCPOJAKMAPCCase_ == 10) {
+        if (mapDisplayCase_ == 10) {
           return characterDisplayBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.HDLEOGLECNM.getDefaultInstance();
+        return POGOProtos.Rpc.CharacterDisplayProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+     * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
      */
-    public Builder setCharacterDisplay(POGOProtos.Rpc.HDLEOGLECNM value) {
+    public Builder setCharacterDisplay(POGOProtos.Rpc.CharacterDisplayProto value) {
       if (characterDisplayBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        cCPOJAKMAPC_ = value;
+        mapDisplay_ = value;
         onChanged();
       } else {
         characterDisplayBuilder_.setMessage(value);
       }
-      cCPOJAKMAPCCase_ = 10;
+      mapDisplayCase_ = 10;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+     * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
      */
     public Builder setCharacterDisplay(
-        POGOProtos.Rpc.HDLEOGLECNM.Builder builderForValue) {
+        POGOProtos.Rpc.CharacterDisplayProto.Builder builderForValue) {
       if (characterDisplayBuilder_ == null) {
-        cCPOJAKMAPC_ = builderForValue.build();
+        mapDisplay_ = builderForValue.build();
         onChanged();
       } else {
         characterDisplayBuilder_.setMessage(builderForValue.build());
       }
-      cCPOJAKMAPCCase_ = 10;
+      mapDisplayCase_ = 10;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+     * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
      */
-    public Builder mergeCharacterDisplay(POGOProtos.Rpc.HDLEOGLECNM value) {
+    public Builder mergeCharacterDisplay(POGOProtos.Rpc.CharacterDisplayProto value) {
       if (characterDisplayBuilder_ == null) {
-        if (cCPOJAKMAPCCase_ == 10 &&
-            cCPOJAKMAPC_ != POGOProtos.Rpc.HDLEOGLECNM.getDefaultInstance()) {
-          cCPOJAKMAPC_ = POGOProtos.Rpc.HDLEOGLECNM.newBuilder((POGOProtos.Rpc.HDLEOGLECNM) cCPOJAKMAPC_)
+        if (mapDisplayCase_ == 10 &&
+            mapDisplay_ != POGOProtos.Rpc.CharacterDisplayProto.getDefaultInstance()) {
+          mapDisplay_ = POGOProtos.Rpc.CharacterDisplayProto.newBuilder((POGOProtos.Rpc.CharacterDisplayProto) mapDisplay_)
               .mergeFrom(value).buildPartial();
         } else {
-          cCPOJAKMAPC_ = value;
+          mapDisplay_ = value;
         }
         onChanged();
       } else {
-        if (cCPOJAKMAPCCase_ == 10) {
+        if (mapDisplayCase_ == 10) {
           characterDisplayBuilder_.mergeFrom(value);
         }
         characterDisplayBuilder_.setMessage(value);
       }
-      cCPOJAKMAPCCase_ = 10;
+      mapDisplayCase_ = 10;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+     * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
      */
     public Builder clearCharacterDisplay() {
       if (characterDisplayBuilder_ == null) {
-        if (cCPOJAKMAPCCase_ == 10) {
-          cCPOJAKMAPCCase_ = 0;
-          cCPOJAKMAPC_ = null;
+        if (mapDisplayCase_ == 10) {
+          mapDisplayCase_ = 0;
+          mapDisplay_ = null;
           onChanged();
         }
       } else {
-        if (cCPOJAKMAPCCase_ == 10) {
-          cCPOJAKMAPCCase_ = 0;
-          cCPOJAKMAPC_ = null;
+        if (mapDisplayCase_ == 10) {
+          mapDisplayCase_ = 0;
+          mapDisplay_ = null;
         }
         characterDisplayBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+     * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
      */
-    public POGOProtos.Rpc.HDLEOGLECNM.Builder getCharacterDisplayBuilder() {
+    public POGOProtos.Rpc.CharacterDisplayProto.Builder getCharacterDisplayBuilder() {
       return getCharacterDisplayFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+     * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
      */
-    public POGOProtos.Rpc.HDLEOGLECNMOrBuilder getCharacterDisplayOrBuilder() {
-      if ((cCPOJAKMAPCCase_ == 10) && (characterDisplayBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.CharacterDisplayProtoOrBuilder getCharacterDisplayOrBuilder() {
+      if ((mapDisplayCase_ == 10) && (characterDisplayBuilder_ != null)) {
         return characterDisplayBuilder_.getMessageOrBuilder();
       } else {
-        if (cCPOJAKMAPCCase_ == 10) {
-          return (POGOProtos.Rpc.HDLEOGLECNM) cCPOJAKMAPC_;
+        if (mapDisplayCase_ == 10) {
+          return (POGOProtos.Rpc.CharacterDisplayProto) mapDisplay_;
         }
-        return POGOProtos.Rpc.HDLEOGLECNM.getDefaultInstance();
+        return POGOProtos.Rpc.CharacterDisplayProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+     * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HDLEOGLECNM, POGOProtos.Rpc.HDLEOGLECNM.Builder, POGOProtos.Rpc.HDLEOGLECNMOrBuilder> 
+        POGOProtos.Rpc.CharacterDisplayProto, POGOProtos.Rpc.CharacterDisplayProto.Builder, POGOProtos.Rpc.CharacterDisplayProtoOrBuilder> 
         getCharacterDisplayFieldBuilder() {
       if (characterDisplayBuilder_ == null) {
-        if (!(cCPOJAKMAPCCase_ == 10)) {
-          cCPOJAKMAPC_ = POGOProtos.Rpc.HDLEOGLECNM.getDefaultInstance();
+        if (!(mapDisplayCase_ == 10)) {
+          mapDisplay_ = POGOProtos.Rpc.CharacterDisplayProto.getDefaultInstance();
         }
         characterDisplayBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.HDLEOGLECNM, POGOProtos.Rpc.HDLEOGLECNM.Builder, POGOProtos.Rpc.HDLEOGLECNMOrBuilder>(
-                (POGOProtos.Rpc.HDLEOGLECNM) cCPOJAKMAPC_,
+            POGOProtos.Rpc.CharacterDisplayProto, POGOProtos.Rpc.CharacterDisplayProto.Builder, POGOProtos.Rpc.CharacterDisplayProtoOrBuilder>(
+                (POGOProtos.Rpc.CharacterDisplayProto) mapDisplay_,
                 getParentForChildren(),
                 isClean());
-        cCPOJAKMAPC_ = null;
+        mapDisplay_ = null;
       }
-      cCPOJAKMAPCCase_ = 10;
+      mapDisplayCase_ = 10;
       onChanged();;
       return characterDisplayBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LHILOEDGDOB, POGOProtos.Rpc.LHILOEDGDOB.Builder, POGOProtos.Rpc.LHILOEDGDOBOrBuilder> invasionFinishedBuilder_;
+        POGOProtos.Rpc.InvasionFinishedDisplayProto, POGOProtos.Rpc.InvasionFinishedDisplayProto.Builder, POGOProtos.Rpc.InvasionFinishedDisplayProtoOrBuilder> invasionFinishedBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+     * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
      * @return Whether the invasionFinished field is set.
      */
+    @java.lang.Override
     public boolean hasInvasionFinished() {
-      return cCPOJAKMAPCCase_ == 11;
+      return mapDisplayCase_ == 11;
     }
     /**
-     * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+     * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
      * @return The invasionFinished.
      */
-    public POGOProtos.Rpc.LHILOEDGDOB getInvasionFinished() {
+    @java.lang.Override
+    public POGOProtos.Rpc.InvasionFinishedDisplayProto getInvasionFinished() {
       if (invasionFinishedBuilder_ == null) {
-        if (cCPOJAKMAPCCase_ == 11) {
-          return (POGOProtos.Rpc.LHILOEDGDOB) cCPOJAKMAPC_;
+        if (mapDisplayCase_ == 11) {
+          return (POGOProtos.Rpc.InvasionFinishedDisplayProto) mapDisplay_;
         }
-        return POGOProtos.Rpc.LHILOEDGDOB.getDefaultInstance();
+        return POGOProtos.Rpc.InvasionFinishedDisplayProto.getDefaultInstance();
       } else {
-        if (cCPOJAKMAPCCase_ == 11) {
+        if (mapDisplayCase_ == 11) {
           return invasionFinishedBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.LHILOEDGDOB.getDefaultInstance();
+        return POGOProtos.Rpc.InvasionFinishedDisplayProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+     * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
      */
-    public Builder setInvasionFinished(POGOProtos.Rpc.LHILOEDGDOB value) {
+    public Builder setInvasionFinished(POGOProtos.Rpc.InvasionFinishedDisplayProto value) {
       if (invasionFinishedBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        cCPOJAKMAPC_ = value;
+        mapDisplay_ = value;
         onChanged();
       } else {
         invasionFinishedBuilder_.setMessage(value);
       }
-      cCPOJAKMAPCCase_ = 11;
+      mapDisplayCase_ = 11;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+     * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
      */
     public Builder setInvasionFinished(
-        POGOProtos.Rpc.LHILOEDGDOB.Builder builderForValue) {
+        POGOProtos.Rpc.InvasionFinishedDisplayProto.Builder builderForValue) {
       if (invasionFinishedBuilder_ == null) {
-        cCPOJAKMAPC_ = builderForValue.build();
+        mapDisplay_ = builderForValue.build();
         onChanged();
       } else {
         invasionFinishedBuilder_.setMessage(builderForValue.build());
       }
-      cCPOJAKMAPCCase_ = 11;
+      mapDisplayCase_ = 11;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+     * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
      */
-    public Builder mergeInvasionFinished(POGOProtos.Rpc.LHILOEDGDOB value) {
+    public Builder mergeInvasionFinished(POGOProtos.Rpc.InvasionFinishedDisplayProto value) {
       if (invasionFinishedBuilder_ == null) {
-        if (cCPOJAKMAPCCase_ == 11 &&
-            cCPOJAKMAPC_ != POGOProtos.Rpc.LHILOEDGDOB.getDefaultInstance()) {
-          cCPOJAKMAPC_ = POGOProtos.Rpc.LHILOEDGDOB.newBuilder((POGOProtos.Rpc.LHILOEDGDOB) cCPOJAKMAPC_)
+        if (mapDisplayCase_ == 11 &&
+            mapDisplay_ != POGOProtos.Rpc.InvasionFinishedDisplayProto.getDefaultInstance()) {
+          mapDisplay_ = POGOProtos.Rpc.InvasionFinishedDisplayProto.newBuilder((POGOProtos.Rpc.InvasionFinishedDisplayProto) mapDisplay_)
               .mergeFrom(value).buildPartial();
         } else {
-          cCPOJAKMAPC_ = value;
+          mapDisplay_ = value;
         }
         onChanged();
       } else {
-        if (cCPOJAKMAPCCase_ == 11) {
+        if (mapDisplayCase_ == 11) {
           invasionFinishedBuilder_.mergeFrom(value);
         }
         invasionFinishedBuilder_.setMessage(value);
       }
-      cCPOJAKMAPCCase_ = 11;
+      mapDisplayCase_ = 11;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+     * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
      */
     public Builder clearInvasionFinished() {
       if (invasionFinishedBuilder_ == null) {
-        if (cCPOJAKMAPCCase_ == 11) {
-          cCPOJAKMAPCCase_ = 0;
-          cCPOJAKMAPC_ = null;
+        if (mapDisplayCase_ == 11) {
+          mapDisplayCase_ = 0;
+          mapDisplay_ = null;
           onChanged();
         }
       } else {
-        if (cCPOJAKMAPCCase_ == 11) {
-          cCPOJAKMAPCCase_ = 0;
-          cCPOJAKMAPC_ = null;
+        if (mapDisplayCase_ == 11) {
+          mapDisplayCase_ = 0;
+          mapDisplay_ = null;
         }
         invasionFinishedBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+     * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
      */
-    public POGOProtos.Rpc.LHILOEDGDOB.Builder getInvasionFinishedBuilder() {
+    public POGOProtos.Rpc.InvasionFinishedDisplayProto.Builder getInvasionFinishedBuilder() {
       return getInvasionFinishedFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+     * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
      */
-    public POGOProtos.Rpc.LHILOEDGDOBOrBuilder getInvasionFinishedOrBuilder() {
-      if ((cCPOJAKMAPCCase_ == 11) && (invasionFinishedBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.InvasionFinishedDisplayProtoOrBuilder getInvasionFinishedOrBuilder() {
+      if ((mapDisplayCase_ == 11) && (invasionFinishedBuilder_ != null)) {
         return invasionFinishedBuilder_.getMessageOrBuilder();
       } else {
-        if (cCPOJAKMAPCCase_ == 11) {
-          return (POGOProtos.Rpc.LHILOEDGDOB) cCPOJAKMAPC_;
+        if (mapDisplayCase_ == 11) {
+          return (POGOProtos.Rpc.InvasionFinishedDisplayProto) mapDisplay_;
         }
-        return POGOProtos.Rpc.LHILOEDGDOB.getDefaultInstance();
+        return POGOProtos.Rpc.InvasionFinishedDisplayProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+     * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LHILOEDGDOB, POGOProtos.Rpc.LHILOEDGDOB.Builder, POGOProtos.Rpc.LHILOEDGDOBOrBuilder> 
+        POGOProtos.Rpc.InvasionFinishedDisplayProto, POGOProtos.Rpc.InvasionFinishedDisplayProto.Builder, POGOProtos.Rpc.InvasionFinishedDisplayProtoOrBuilder> 
         getInvasionFinishedFieldBuilder() {
       if (invasionFinishedBuilder_ == null) {
-        if (!(cCPOJAKMAPCCase_ == 11)) {
-          cCPOJAKMAPC_ = POGOProtos.Rpc.LHILOEDGDOB.getDefaultInstance();
+        if (!(mapDisplayCase_ == 11)) {
+          mapDisplay_ = POGOProtos.Rpc.InvasionFinishedDisplayProto.getDefaultInstance();
         }
         invasionFinishedBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.LHILOEDGDOB, POGOProtos.Rpc.LHILOEDGDOB.Builder, POGOProtos.Rpc.LHILOEDGDOBOrBuilder>(
-                (POGOProtos.Rpc.LHILOEDGDOB) cCPOJAKMAPC_,
+            POGOProtos.Rpc.InvasionFinishedDisplayProto, POGOProtos.Rpc.InvasionFinishedDisplayProto.Builder, POGOProtos.Rpc.InvasionFinishedDisplayProtoOrBuilder>(
+                (POGOProtos.Rpc.InvasionFinishedDisplayProto) mapDisplay_,
                 getParentForChildren(),
                 isClean());
-        cCPOJAKMAPC_ = null;
+        mapDisplay_ = null;
       }
-      cCPOJAKMAPCCase_ = 11;
+      mapDisplayCase_ = 11;
       onChanged();;
       return invasionFinishedBuilder_;
     }
 
-    private java.lang.Object cjfmakbjoie_ = "";
+    private java.lang.Object incidentId_ = "";
     /**
-     * <code>string cjfmakbjoie = 1;</code>
-     * @return The cjfmakbjoie.
+     * <code>string incident_id = 1;</code>
+     * @return The incidentId.
      */
-    public java.lang.String getCjfmakbjoie() {
-      java.lang.Object ref = cjfmakbjoie_;
+    public java.lang.String getIncidentId() {
+      java.lang.Object ref = incidentId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        cjfmakbjoie_ = s;
+        incidentId_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string cjfmakbjoie = 1;</code>
-     * @return The bytes for cjfmakbjoie.
+     * <code>string incident_id = 1;</code>
+     * @return The bytes for incidentId.
      */
     public com.google.protobuf.ByteString
-        getCjfmakbjoieBytes() {
-      java.lang.Object ref = cjfmakbjoie_;
+        getIncidentIdBytes() {
+      java.lang.Object ref = incidentId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        cjfmakbjoie_ = b;
+        incidentId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string cjfmakbjoie = 1;</code>
-     * @param value The cjfmakbjoie to set.
+     * <code>string incident_id = 1;</code>
+     * @param value The incidentId to set.
      * @return This builder for chaining.
      */
-    public Builder setCjfmakbjoie(
+    public Builder setIncidentId(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      cjfmakbjoie_ = value;
+      incidentId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string cjfmakbjoie = 1;</code>
+     * <code>string incident_id = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearCjfmakbjoie() {
+    public Builder clearIncidentId() {
       
-      cjfmakbjoie_ = getDefaultInstance().getCjfmakbjoie();
+      incidentId_ = getDefaultInstance().getIncidentId();
       onChanged();
       return this;
     }
     /**
-     * <code>string cjfmakbjoie = 1;</code>
-     * @param value The bytes for cjfmakbjoie to set.
+     * <code>string incident_id = 1;</code>
+     * @param value The bytes for incidentId to set.
      * @return This builder for chaining.
      */
-    public Builder setCjfmakbjoieBytes(
+    public Builder setIncidentIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      cjfmakbjoie_ = value;
+      incidentId_ = value;
       onChanged();
       return this;
     }
 
-    private long infikjlocfb_ ;
+    private long incidentStartMs_ ;
     /**
-     * <code>int64 infikjlocfb = 2;</code>
-     * @return The infikjlocfb.
+     * <code>int64 incident_start_ms = 2;</code>
+     * @return The incidentStartMs.
      */
-    public long getInfikjlocfb() {
-      return infikjlocfb_;
+    @java.lang.Override
+    public long getIncidentStartMs() {
+      return incidentStartMs_;
     }
     /**
-     * <code>int64 infikjlocfb = 2;</code>
-     * @param value The infikjlocfb to set.
+     * <code>int64 incident_start_ms = 2;</code>
+     * @param value The incidentStartMs to set.
      * @return This builder for chaining.
      */
-    public Builder setInfikjlocfb(long value) {
+    public Builder setIncidentStartMs(long value) {
       
-      infikjlocfb_ = value;
+      incidentStartMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 infikjlocfb = 2;</code>
+     * <code>int64 incident_start_ms = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearInfikjlocfb() {
+    public Builder clearIncidentStartMs() {
       
-      infikjlocfb_ = 0L;
+      incidentStartMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private long anppdjdmnan_ ;
+    private long incidentExpirationMs_ ;
     /**
-     * <code>int64 anppdjdmnan = 3;</code>
-     * @return The anppdjdmnan.
+     * <code>int64 incident_expiration_ms = 3;</code>
+     * @return The incidentExpirationMs.
      */
-    public long getAnppdjdmnan() {
-      return anppdjdmnan_;
+    @java.lang.Override
+    public long getIncidentExpirationMs() {
+      return incidentExpirationMs_;
     }
     /**
-     * <code>int64 anppdjdmnan = 3;</code>
-     * @param value The anppdjdmnan to set.
+     * <code>int64 incident_expiration_ms = 3;</code>
+     * @param value The incidentExpirationMs to set.
      * @return This builder for chaining.
      */
-    public Builder setAnppdjdmnan(long value) {
+    public Builder setIncidentExpirationMs(long value) {
       
-      anppdjdmnan_ = value;
+      incidentExpirationMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 anppdjdmnan = 3;</code>
+     * <code>int64 incident_expiration_ms = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAnppdjdmnan() {
+    public Builder clearIncidentExpirationMs() {
       
-      anppdjdmnan_ = 0L;
+      incidentExpirationMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private boolean mflkpnpldjl_ ;
+    private boolean hideIncident_ ;
     /**
-     * <code>bool mflkpnpldjl = 4;</code>
-     * @return The mflkpnpldjl.
+     * <code>bool hide_incident = 4;</code>
+     * @return The hideIncident.
      */
-    public boolean getMflkpnpldjl() {
-      return mflkpnpldjl_;
+    @java.lang.Override
+    public boolean getHideIncident() {
+      return hideIncident_;
     }
     /**
-     * <code>bool mflkpnpldjl = 4;</code>
-     * @param value The mflkpnpldjl to set.
+     * <code>bool hide_incident = 4;</code>
+     * @param value The hideIncident to set.
      * @return This builder for chaining.
      */
-    public Builder setMflkpnpldjl(boolean value) {
+    public Builder setHideIncident(boolean value) {
       
-      mflkpnpldjl_ = value;
+      hideIncident_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool mflkpnpldjl = 4;</code>
+     * <code>bool hide_incident = 4;</code>
      * @return This builder for chaining.
      */
-    public Builder clearMflkpnpldjl() {
+    public Builder clearHideIncident() {
       
-      mflkpnpldjl_ = false;
+      hideIncident_ = false;
       onChanged();
       return this;
     }
 
-    private boolean eblachhpabm_ ;
+    private boolean incidentCompleted_ ;
     /**
-     * <code>bool eblachhpabm = 5;</code>
-     * @return The eblachhpabm.
+     * <code>bool incident_completed = 5;</code>
+     * @return The incidentCompleted.
      */
-    public boolean getEblachhpabm() {
-      return eblachhpabm_;
+    @java.lang.Override
+    public boolean getIncidentCompleted() {
+      return incidentCompleted_;
     }
     /**
-     * <code>bool eblachhpabm = 5;</code>
-     * @param value The eblachhpabm to set.
+     * <code>bool incident_completed = 5;</code>
+     * @param value The incidentCompleted to set.
      * @return This builder for chaining.
      */
-    public Builder setEblachhpabm(boolean value) {
+    public Builder setIncidentCompleted(boolean value) {
       
-      eblachhpabm_ = value;
+      incidentCompleted_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool eblachhpabm = 5;</code>
+     * <code>bool incident_completed = 5;</code>
      * @return This builder for chaining.
      */
-    public Builder clearEblachhpabm() {
+    public Builder clearIncidentCompleted() {
       
-      eblachhpabm_ = false;
+      incidentCompleted_ = false;
       onChanged();
       return this;
     }
 
-    private int gneepeippkc_ = 0;
+    private int incidentDisplayType_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.IncidentDisplayType gneepeippkc = 6;</code>
-     * @return The enum numeric value on the wire for gneepeippkc.
+     * <code>.POGOProtos.Rpc.IncidentDisplayType incident_display_type = 6;</code>
+     * @return The enum numeric value on the wire for incidentDisplayType.
      */
-    public int getGneepeippkcValue() {
-      return gneepeippkc_;
+    @java.lang.Override public int getIncidentDisplayTypeValue() {
+      return incidentDisplayType_;
     }
     /**
-     * <code>.POGOProtos.Rpc.IncidentDisplayType gneepeippkc = 6;</code>
-     * @param value The enum numeric value on the wire for gneepeippkc to set.
+     * <code>.POGOProtos.Rpc.IncidentDisplayType incident_display_type = 6;</code>
+     * @param value The enum numeric value on the wire for incidentDisplayType to set.
      * @return This builder for chaining.
      */
-    public Builder setGneepeippkcValue(int value) {
-      gneepeippkc_ = value;
+    public Builder setIncidentDisplayTypeValue(int value) {
+      
+      incidentDisplayType_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.IncidentDisplayType gneepeippkc = 6;</code>
-     * @return The gneepeippkc.
+     * <code>.POGOProtos.Rpc.IncidentDisplayType incident_display_type = 6;</code>
+     * @return The incidentDisplayType.
      */
-    public POGOProtos.Rpc.IncidentDisplayType getGneepeippkc() {
+    @java.lang.Override
+    public POGOProtos.Rpc.IncidentDisplayType getIncidentDisplayType() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.IncidentDisplayType result = POGOProtos.Rpc.IncidentDisplayType.valueOf(gneepeippkc_);
+      POGOProtos.Rpc.IncidentDisplayType result = POGOProtos.Rpc.IncidentDisplayType.valueOf(incidentDisplayType_);
       return result == null ? POGOProtos.Rpc.IncidentDisplayType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.IncidentDisplayType gneepeippkc = 6;</code>
-     * @param value The gneepeippkc to set.
+     * <code>.POGOProtos.Rpc.IncidentDisplayType incident_display_type = 6;</code>
+     * @param value The incidentDisplayType to set.
      * @return This builder for chaining.
      */
-    public Builder setGneepeippkc(POGOProtos.Rpc.IncidentDisplayType value) {
+    public Builder setIncidentDisplayType(POGOProtos.Rpc.IncidentDisplayType value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      gneepeippkc_ = value.getNumber();
+      incidentDisplayType_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.IncidentDisplayType gneepeippkc = 6;</code>
+     * <code>.POGOProtos.Rpc.IncidentDisplayType incident_display_type = 6;</code>
      * @return This builder for chaining.
      */
-    public Builder clearGneepeippkc() {
+    public Builder clearIncidentDisplayType() {
       
-      gneepeippkc_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private int jpfekeiimig_ ;
-    /**
-     * <code>int32 jpfekeiimig = 7;</code>
-     * @return The jpfekeiimig.
-     */
-    public int getJpfekeiimig() {
-      return jpfekeiimig_;
-    }
-    /**
-     * <code>int32 jpfekeiimig = 7;</code>
-     * @param value The jpfekeiimig to set.
-     * @return This builder for chaining.
-     */
-    public Builder setJpfekeiimig(int value) {
-      
-      jpfekeiimig_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 jpfekeiimig = 7;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearJpfekeiimig() {
-      
-      jpfekeiimig_ = 0;
+      incidentDisplayType_ = 0;
       onChanged();
       return this;
     }
 
-    private boolean bebcjnakjod_ ;
+    private int incidentDisplayOrderPriority_ ;
     /**
-     * <code>bool bebcjnakjod = 8;</code>
-     * @return The bebcjnakjod.
+     * <code>int32 incident_display_order_priority = 7;</code>
+     * @return The incidentDisplayOrderPriority.
      */
-    public boolean getBebcjnakjod() {
-      return bebcjnakjod_;
+    @java.lang.Override
+    public int getIncidentDisplayOrderPriority() {
+      return incidentDisplayOrderPriority_;
     }
     /**
-     * <code>bool bebcjnakjod = 8;</code>
-     * @param value The bebcjnakjod to set.
+     * <code>int32 incident_display_order_priority = 7;</code>
+     * @param value The incidentDisplayOrderPriority to set.
      * @return This builder for chaining.
      */
-    public Builder setBebcjnakjod(boolean value) {
+    public Builder setIncidentDisplayOrderPriority(int value) {
       
-      bebcjnakjod_ = value;
+      incidentDisplayOrderPriority_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool bebcjnakjod = 8;</code>
+     * <code>int32 incident_display_order_priority = 7;</code>
      * @return This builder for chaining.
      */
-    public Builder clearBebcjnakjod() {
+    public Builder clearIncidentDisplayOrderPriority() {
       
-      bebcjnakjod_ = false;
+      incidentDisplayOrderPriority_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private boolean continueDisplayingIncident_ ;
+    /**
+     * <code>bool continue_displaying_incident = 8;</code>
+     * @return The continueDisplayingIncident.
+     */
+    @java.lang.Override
+    public boolean getContinueDisplayingIncident() {
+      return continueDisplayingIncident_;
+    }
+    /**
+     * <code>bool continue_displaying_incident = 8;</code>
+     * @param value The continueDisplayingIncident to set.
+     * @return This builder for chaining.
+     */
+    public Builder setContinueDisplayingIncident(boolean value) {
+      
+      continueDisplayingIncident_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool continue_displaying_incident = 8;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearContinueDisplayingIncident() {
+      
+      continueDisplayingIncident_ = false;
       onChanged();
       return this;
     }

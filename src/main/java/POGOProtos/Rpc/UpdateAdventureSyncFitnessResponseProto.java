@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto}
  */
-public  final class UpdateAdventureSyncFitnessResponseProto extends
+public final class UpdateAdventureSyncFitnessResponseProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto)
     UpdateAdventureSyncFitnessResponseProtoOrBuilder {
@@ -88,10 +88,6 @@ private static final long serialVersionUID = 0L;
   }
 
   /**
-   * <pre>
-   * ref: UpdateAdventureSyncFitnessResponseProto.Types.Status
-   * </pre>
-   *
    * Protobuf enum {@code POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status}
    */
   public enum Status
@@ -170,6 +166,10 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -210,14 +210,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status status = 1;</code>
    * @return The enum numeric value on the wire for status.
    */
-  public int getStatusValue() {
+  @java.lang.Override public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status status = 1;</code>
    * @return The status.
    */
-  public POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status getStatus() {
+  @java.lang.Override public POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status getStatus() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status result = POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status.valueOf(status_);
     return result == null ? POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status.UNRECOGNIZED : result;
@@ -529,7 +529,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
-    public int getStatusValue() {
+    @java.lang.Override public int getStatusValue() {
       return status_;
     }
     /**
@@ -538,6 +538,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
+      
       status_ = value;
       onChanged();
       return this;
@@ -546,6 +547,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status status = 1;</code>
      * @return The status.
      */
+    @java.lang.Override
     public POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status getStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status result = POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status.valueOf(status_);

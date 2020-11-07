@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.ClientWeatherProto}
  */
-public  final class ClientWeatherProto extends
+public final class ClientWeatherProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ClientWeatherProto)
     ClientWeatherProtoOrBuilder {
@@ -131,6 +131,7 @@ private static final long serialVersionUID = 0L;
    * <code>int64 s2_cell_id = 1;</code>
    * @return The s2CellId.
    */
+  @java.lang.Override
   public long getS2CellId() {
     return s2CellId_;
   }
@@ -141,6 +142,7 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.DisplayWeatherProto display_weather = 2;</code>
    * @return Whether the displayWeather field is set.
    */
+  @java.lang.Override
   public boolean hasDisplayWeather() {
     return displayWeather_ != null;
   }
@@ -148,12 +150,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.DisplayWeatherProto display_weather = 2;</code>
    * @return The displayWeather.
    */
+  @java.lang.Override
   public POGOProtos.Rpc.DisplayWeatherProto getDisplayWeather() {
     return displayWeather_ == null ? POGOProtos.Rpc.DisplayWeatherProto.getDefaultInstance() : displayWeather_;
   }
   /**
    * <code>.POGOProtos.Rpc.DisplayWeatherProto display_weather = 2;</code>
    */
+  @java.lang.Override
   public POGOProtos.Rpc.DisplayWeatherProtoOrBuilder getDisplayWeatherOrBuilder() {
     return getDisplayWeather();
   }
@@ -164,6 +168,7 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GameplayWeatherProto gameplay_weather = 3;</code>
    * @return Whether the gameplayWeather field is set.
    */
+  @java.lang.Override
   public boolean hasGameplayWeather() {
     return gameplayWeather_ != null;
   }
@@ -171,12 +176,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GameplayWeatherProto gameplay_weather = 3;</code>
    * @return The gameplayWeather.
    */
+  @java.lang.Override
   public POGOProtos.Rpc.GameplayWeatherProto getGameplayWeather() {
     return gameplayWeather_ == null ? POGOProtos.Rpc.GameplayWeatherProto.getDefaultInstance() : gameplayWeather_;
   }
   /**
    * <code>.POGOProtos.Rpc.GameplayWeatherProto gameplay_weather = 3;</code>
    */
+  @java.lang.Override
   public POGOProtos.Rpc.GameplayWeatherProtoOrBuilder getGameplayWeatherOrBuilder() {
     return getGameplayWeather();
   }
@@ -186,12 +193,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.WeatherAlertProto alerts = 4;</code>
    */
+  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.WeatherAlertProto> getAlertsList() {
     return alerts_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.WeatherAlertProto alerts = 4;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.WeatherAlertProtoOrBuilder> 
       getAlertsOrBuilderList() {
     return alerts_;
@@ -199,18 +208,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.WeatherAlertProto alerts = 4;</code>
    */
+  @java.lang.Override
   public int getAlertsCount() {
     return alerts_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.WeatherAlertProto alerts = 4;</code>
    */
+  @java.lang.Override
   public POGOProtos.Rpc.WeatherAlertProto getAlerts(int index) {
     return alerts_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.WeatherAlertProto alerts = 4;</code>
    */
+  @java.lang.Override
   public POGOProtos.Rpc.WeatherAlertProtoOrBuilder getAlertsOrBuilder(
       int index) {
     return alerts_.get(index);
@@ -641,6 +653,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 s2_cell_id = 1;</code>
      * @return The s2CellId.
      */
+    @java.lang.Override
     public long getS2CellId() {
       return s2CellId_;
     }

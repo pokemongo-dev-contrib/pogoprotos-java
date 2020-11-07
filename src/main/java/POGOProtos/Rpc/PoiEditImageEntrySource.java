@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum PoiEditImageEntrySource
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU = 0;</code>
+   * <code>TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU = 0;</code>
    */
-  POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU(0),
+  TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU(0),
   /**
-   * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY = 1;</code>
+   * <code>TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY = 1;</code>
    */
-  POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY(1),
+  TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU = 0;</code>
+   * <code>TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU = 0;</code>
    */
-  public static final int POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU_VALUE = 0;
+  public static final int TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU_VALUE = 0;
   /**
-   * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY = 1;</code>
+   * <code>TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY = 1;</code>
    */
-  public static final int POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY_VALUE = 1;
+  public static final int TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum PoiEditImageEntrySource
    */
   public static PoiEditImageEntrySource forNumber(int value) {
     switch (value) {
-      case 0: return POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU;
-      case 1: return POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY;
+      case 0: return TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU;
+      case 1: return TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY;
       default: return null;
     }
   }
@@ -73,6 +73,10 @@ public enum PoiEditImageEntrySource
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -81,7 +85,7 @@ public enum PoiEditImageEntrySource
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(107);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(103);
   }
 
   private static final PoiEditImageEntrySource[] VALUES = values();

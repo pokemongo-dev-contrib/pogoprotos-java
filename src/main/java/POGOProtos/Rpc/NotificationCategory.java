@@ -9,9 +9,9 @@ package POGOProtos.Rpc;
 public enum NotificationCategory
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>NOTIFICATION_CATEGORY_UNSET = 0;</code>
+   * <code>NOTIFICATION_CATEGORY_unset__notification_category = 0;</code>
    */
-  NOTIFICATION_CATEGORY_UNSET(0),
+  NOTIFICATION_CATEGORY_unset__notification_category(0),
   /**
    * <code>NOTIFICATION_CATEGORY_GYM_REMOVAL = 1;</code>
    */
@@ -216,9 +216,9 @@ public enum NotificationCategory
   ;
 
   /**
-   * <code>NOTIFICATION_CATEGORY_UNSET = 0;</code>
+   * <code>NOTIFICATION_CATEGORY_unset__notification_category = 0;</code>
    */
-  public static final int NOTIFICATION_CATEGORY_UNSET_VALUE = 0;
+  public static final int NOTIFICATION_CATEGORY_unset__notification_category_VALUE = 0;
   /**
    * <code>NOTIFICATION_CATEGORY_GYM_REMOVAL = 1;</code>
    */
@@ -445,7 +445,7 @@ public enum NotificationCategory
    */
   public static NotificationCategory forNumber(int value) {
     switch (value) {
-      case 0: return NOTIFICATION_CATEGORY_UNSET;
+      case 0: return NOTIFICATION_CATEGORY_unset__notification_category;
       case 1: return NOTIFICATION_CATEGORY_GYM_REMOVAL;
       case 2: return NOTIFICATION_CATEGORY_POKEMON_HUNGRY;
       case 3: return NOTIFICATION_CATEGORY_POKEMON_WON;
@@ -514,6 +514,10 @@ public enum NotificationCategory
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -522,7 +526,7 @@ public enum NotificationCategory
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(83);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(81);
   }
 
   private static final NotificationCategory[] VALUES = values();

@@ -7,10 +7,10 @@ import org.junit.*;
 import java.io.*;
 
 public class AssetsDigestDecodeTest {
-	//0.191.0 binary
+	//0.191.2 binary
 	@Test
 	public void TestAssetsDigestDecode() throws Exception {
-		/*try (InputStream is = getClass().getResourceAsStream("/ASSET_DIGEST"))
+		try (InputStream is = getClass().getResourceAsStream("/ASSET_DIGEST"))
         {
 			AssetDigestOutProto response = AssetDigestOutProto.parseFrom(is);
 			JsonFormat.Printer printer = JsonFormat.printer();
@@ -18,6 +18,6 @@ public class AssetsDigestDecodeTest {
             {
 				printer.appendTo(response, writer);
 			}
-		}*/
+		}
 	}
 }

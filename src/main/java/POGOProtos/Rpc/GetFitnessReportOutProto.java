@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.GetFitnessReportOutProto}
  */
-public  final class GetFitnessReportOutProto extends
+public final class GetFitnessReportOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFitnessReportOutProto)
     GetFitnessReportOutProtoOrBuilder {
@@ -120,10 +120,6 @@ private static final long serialVersionUID = 0L;
   }
 
   /**
-   * <pre>
-   * ref: GetFitnessReportOutProto.Types.Status
-   * </pre>
-   *
    * Protobuf enum {@code POGOProtos.Rpc.GetFitnessReportOutProto.Status}
    */
   public enum Status
@@ -229,6 +225,10 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -269,14 +269,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
    * @return The enum numeric value on the wire for status.
    */
-  public int getStatusValue() {
+  @java.lang.Override public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
    * @return The status.
    */
-  public POGOProtos.Rpc.GetFitnessReportOutProto.Status getStatus() {
+  @java.lang.Override public POGOProtos.Rpc.GetFitnessReportOutProto.Status getStatus() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.GetFitnessReportOutProto.Status result = POGOProtos.Rpc.GetFitnessReportOutProto.Status.valueOf(status_);
     return result == null ? POGOProtos.Rpc.GetFitnessReportOutProto.Status.UNRECOGNIZED : result;
@@ -287,12 +287,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
+  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.FitnessReportProto> getDailyReportsList() {
     return dailyReports_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.FitnessReportProtoOrBuilder> 
       getDailyReportsOrBuilderList() {
     return dailyReports_;
@@ -300,18 +302,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
+  @java.lang.Override
   public int getDailyReportsCount() {
     return dailyReports_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
+  @java.lang.Override
   public POGOProtos.Rpc.FitnessReportProto getDailyReports(int index) {
     return dailyReports_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
+  @java.lang.Override
   public POGOProtos.Rpc.FitnessReportProtoOrBuilder getDailyReportsOrBuilder(
       int index) {
     return dailyReports_.get(index);
@@ -322,12 +327,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
+  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.FitnessReportProto> getWeeklyReportsList() {
     return weeklyReports_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.FitnessReportProtoOrBuilder> 
       getWeeklyReportsOrBuilderList() {
     return weeklyReports_;
@@ -335,18 +342,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
+  @java.lang.Override
   public int getWeeklyReportsCount() {
     return weeklyReports_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
+  @java.lang.Override
   public POGOProtos.Rpc.FitnessReportProto getWeeklyReports(int index) {
     return weeklyReports_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
+  @java.lang.Override
   public POGOProtos.Rpc.FitnessReportProtoOrBuilder getWeeklyReportsOrBuilder(
       int index) {
     return weeklyReports_.get(index);
@@ -358,6 +368,7 @@ private static final long serialVersionUID = 0L;
    * <code>int64 week_reset_timestamp_since_monday_ms = 4;</code>
    * @return The weekResetTimestampSinceMondayMs.
    */
+  @java.lang.Override
   public long getWeekResetTimestampSinceMondayMs() {
     return weekResetTimestampSinceMondayMs_;
   }
@@ -798,7 +809,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
-    public int getStatusValue() {
+    @java.lang.Override public int getStatusValue() {
       return status_;
     }
     /**
@@ -807,6 +818,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
+      
       status_ = value;
       onChanged();
       return this;
@@ -815,6 +827,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
      * @return The status.
      */
+    @java.lang.Override
     public POGOProtos.Rpc.GetFitnessReportOutProto.Status getStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetFitnessReportOutProto.Status result = POGOProtos.Rpc.GetFitnessReportOutProto.Status.valueOf(status_);
@@ -1330,6 +1343,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 week_reset_timestamp_since_monday_ms = 4;</code>
      * @return The weekResetTimestampSinceMondayMs.
      */
+    @java.lang.Override
     public long getWeekResetTimestampSinceMondayMs() {
       return weekResetTimestampSinceMondayMs_;
     }

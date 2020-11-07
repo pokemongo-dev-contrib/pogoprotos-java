@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.RedeemPasscodeResponseProto}
  */
-public  final class RedeemPasscodeResponseProto extends
+public final class RedeemPasscodeResponseProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.RedeemPasscodeResponseProto)
     RedeemPasscodeResponseProtoOrBuilder {
@@ -115,10 +115,6 @@ private static final long serialVersionUID = 0L;
   }
 
   /**
-   * <pre>
-   * ref: RedeemPasscodeResponseProto.Types.Result
-   * </pre>
-   *
    * Protobuf enum {@code POGOProtos.Rpc.RedeemPasscodeResponseProto.Result}
    */
   public enum Result
@@ -224,6 +220,10 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -281,13 +281,9 @@ private static final long serialVersionUID = 0L;
     long getCount();
   }
   /**
-   * <pre>
-   * ref: RedeemPasscodeResponseProto.Types.AcquiredItem
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem}
    */
-  public  static final class AcquiredItem extends
+  public static final class AcquiredItem extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem)
       AcquiredItemOrBuilder {
@@ -379,6 +375,7 @@ private static final long serialVersionUID = 0L;
      * <code>string item = 1;</code>
      * @return The item.
      */
+    @java.lang.Override
     public java.lang.String getItem() {
       java.lang.Object ref = item_;
       if (ref instanceof java.lang.String) {
@@ -395,6 +392,7 @@ private static final long serialVersionUID = 0L;
      * <code>string item = 1;</code>
      * @return The bytes for item.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getItemBytes() {
       java.lang.Object ref = item_;
@@ -415,6 +413,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 count = 2;</code>
      * @return The count.
      */
+    @java.lang.Override
     public long getCount() {
       return count_;
     }
@@ -586,10 +585,6 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * <pre>
-     * ref: RedeemPasscodeResponseProto.Types.AcquiredItem
-     * </pre>
-     *
      * Protobuf type {@code POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem}
      */
     public static final class Builder extends
@@ -824,6 +819,7 @@ private static final long serialVersionUID = 0L;
        * <code>int64 count = 2;</code>
        * @return The count.
        */
+      @java.lang.Override
       public long getCount() {
         return count_;
       }
@@ -907,14 +903,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
    * @return The enum numeric value on the wire for result.
    */
-  public int getResultValue() {
+  @java.lang.Override public int getResultValue() {
     return result_;
   }
   /**
    * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
    * @return The result.
    */
-  public POGOProtos.Rpc.RedeemPasscodeResponseProto.Result getResult() {
+  @java.lang.Override public POGOProtos.Rpc.RedeemPasscodeResponseProto.Result getResult() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = POGOProtos.Rpc.RedeemPasscodeResponseProto.Result.valueOf(result_);
     return result == null ? POGOProtos.Rpc.RedeemPasscodeResponseProto.Result.UNRECOGNIZED : result;
@@ -925,12 +921,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
+  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem> getAcquiredItemList() {
     return acquiredItem_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItemOrBuilder> 
       getAcquiredItemOrBuilderList() {
     return acquiredItem_;
@@ -938,18 +936,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
+  @java.lang.Override
   public int getAcquiredItemCount() {
     return acquiredItem_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
+  @java.lang.Override
   public POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem getAcquiredItem(int index) {
     return acquiredItem_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
+  @java.lang.Override
   public POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItemOrBuilder getAcquiredItemOrBuilder(
       int index) {
     return acquiredItem_.get(index);
@@ -961,6 +962,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes acquired_items_proto = 3;</code>
    * @return The acquiredItemsProto.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getAcquiredItemsProto() {
     return acquiredItemsProto_;
   }
@@ -971,6 +973,7 @@ private static final long serialVersionUID = 0L;
    * <code>string passcode = 4;</code>
    * @return The passcode.
    */
+  @java.lang.Override
   public java.lang.String getPasscode() {
     java.lang.Object ref = passcode_;
     if (ref instanceof java.lang.String) {
@@ -987,6 +990,7 @@ private static final long serialVersionUID = 0L;
    * <code>string passcode = 4;</code>
    * @return The bytes for passcode.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getPasscodeBytes() {
     java.lang.Object ref = passcode_;
@@ -1398,7 +1402,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
      * @return The enum numeric value on the wire for result.
      */
-    public int getResultValue() {
+    @java.lang.Override public int getResultValue() {
       return result_;
     }
     /**
@@ -1407,6 +1411,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setResultValue(int value) {
+      
       result_ = value;
       onChanged();
       return this;
@@ -1415,6 +1420,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
      * @return The result.
      */
+    @java.lang.Override
     public POGOProtos.Rpc.RedeemPasscodeResponseProto.Result getResult() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = POGOProtos.Rpc.RedeemPasscodeResponseProto.Result.valueOf(result_);
@@ -1690,6 +1696,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes acquired_items_proto = 3;</code>
      * @return The acquiredItemsProto.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAcquiredItemsProto() {
       return acquiredItemsProto_;
     }

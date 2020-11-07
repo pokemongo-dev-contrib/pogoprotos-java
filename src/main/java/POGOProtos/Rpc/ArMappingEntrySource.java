@@ -9,72 +9,72 @@ package POGOProtos.Rpc;
 public enum ArMappingEntrySource
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_EDIT_MENU = 0;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_MENU = 0;</code>
    */
-  AR_MAPPING_ENTRY_SOURCE_EDIT_MENU(0),
+  TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_MENU(0),
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_EDIT_TITLE = 1;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_TITLE = 1;</code>
    */
-  AR_MAPPING_ENTRY_SOURCE_EDIT_TITLE(1),
+  TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_TITLE(1),
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_EDIT_DESCRIPTION = 2;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_DESCRIPTION = 2;</code>
    */
-  AR_MAPPING_ENTRY_SOURCE_EDIT_DESCRIPTION(2),
+  TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_DESCRIPTION(2),
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_EDIT_PHOTO = 3;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_PHOTO = 3;</code>
    */
-  AR_MAPPING_ENTRY_SOURCE_EDIT_PHOTO(3),
+  TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_PHOTO(3),
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_EDIT_LOCATION = 4;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_LOCATION = 4;</code>
    */
-  AR_MAPPING_ENTRY_SOURCE_EDIT_LOCATION(4),
+  TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_LOCATION(4),
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_POI_SUBMISSION = 5;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_POI_SUBMISSION = 5;</code>
    */
-  AR_MAPPING_ENTRY_SOURCE_POI_SUBMISSION(5),
+  TITAN_AR_MAPPING_ENTRY_SOURCE_POI_SUBMISSION(5),
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_INSPECTION = 6;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_INSPECTION = 6;</code>
    */
-  AR_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_INSPECTION(6),
+  TITAN_AR_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_INSPECTION(6),
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS = 7;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS = 7;</code>
    */
-  AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS(7),
+  TITAN_AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS(7),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_EDIT_MENU = 0;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_MENU = 0;</code>
    */
-  public static final int AR_MAPPING_ENTRY_SOURCE_EDIT_MENU_VALUE = 0;
+  public static final int TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_MENU_VALUE = 0;
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_EDIT_TITLE = 1;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_TITLE = 1;</code>
    */
-  public static final int AR_MAPPING_ENTRY_SOURCE_EDIT_TITLE_VALUE = 1;
+  public static final int TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_TITLE_VALUE = 1;
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_EDIT_DESCRIPTION = 2;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_DESCRIPTION = 2;</code>
    */
-  public static final int AR_MAPPING_ENTRY_SOURCE_EDIT_DESCRIPTION_VALUE = 2;
+  public static final int TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_DESCRIPTION_VALUE = 2;
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_EDIT_PHOTO = 3;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_PHOTO = 3;</code>
    */
-  public static final int AR_MAPPING_ENTRY_SOURCE_EDIT_PHOTO_VALUE = 3;
+  public static final int TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_PHOTO_VALUE = 3;
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_EDIT_LOCATION = 4;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_LOCATION = 4;</code>
    */
-  public static final int AR_MAPPING_ENTRY_SOURCE_EDIT_LOCATION_VALUE = 4;
+  public static final int TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_LOCATION_VALUE = 4;
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_POI_SUBMISSION = 5;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_POI_SUBMISSION = 5;</code>
    */
-  public static final int AR_MAPPING_ENTRY_SOURCE_POI_SUBMISSION_VALUE = 5;
+  public static final int TITAN_AR_MAPPING_ENTRY_SOURCE_POI_SUBMISSION_VALUE = 5;
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_INSPECTION = 6;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_INSPECTION = 6;</code>
    */
-  public static final int AR_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_INSPECTION_VALUE = 6;
+  public static final int TITAN_AR_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_INSPECTION_VALUE = 6;
   /**
-   * <code>AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS = 7;</code>
+   * <code>TITAN_AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS = 7;</code>
    */
-  public static final int AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS_VALUE = 7;
+  public static final int TITAN_AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS_VALUE = 7;
 
 
   public final int getNumber() {
@@ -101,14 +101,14 @@ public enum ArMappingEntrySource
    */
   public static ArMappingEntrySource forNumber(int value) {
     switch (value) {
-      case 0: return AR_MAPPING_ENTRY_SOURCE_EDIT_MENU;
-      case 1: return AR_MAPPING_ENTRY_SOURCE_EDIT_TITLE;
-      case 2: return AR_MAPPING_ENTRY_SOURCE_EDIT_DESCRIPTION;
-      case 3: return AR_MAPPING_ENTRY_SOURCE_EDIT_PHOTO;
-      case 4: return AR_MAPPING_ENTRY_SOURCE_EDIT_LOCATION;
-      case 5: return AR_MAPPING_ENTRY_SOURCE_POI_SUBMISSION;
-      case 6: return AR_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_INSPECTION;
-      case 7: return AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS;
+      case 0: return TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_MENU;
+      case 1: return TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_TITLE;
+      case 2: return TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_DESCRIPTION;
+      case 3: return TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_PHOTO;
+      case 4: return TITAN_AR_MAPPING_ENTRY_SOURCE_EDIT_LOCATION;
+      case 5: return TITAN_AR_MAPPING_ENTRY_SOURCE_POI_SUBMISSION;
+      case 6: return TITAN_AR_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_INSPECTION;
+      case 7: return TITAN_AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS;
       default: return null;
     }
   }
@@ -127,6 +127,10 @@ public enum ArMappingEntrySource
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

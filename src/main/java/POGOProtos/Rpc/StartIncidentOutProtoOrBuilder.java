@@ -8,28 +8,28 @@ public interface StartIncidentOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ oemhknkemca = 1;</code>
-   * @return The enum numeric value on the wire for oemhknkemca.
+   * <code>.POGOProtos.Rpc.StartIncidentOutProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
    */
-  int getOemhknkemcaValue();
+  int getStatusValue();
   /**
-   * <code>.POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ oemhknkemca = 1;</code>
-   * @return The oemhknkemca.
+   * <code>.POGOProtos.Rpc.StartIncidentOutProto.Status status = 1;</code>
+   * @return The status.
    */
-  POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ getOemhknkemca();
+  POGOProtos.Rpc.StartIncidentOutProto.Status getStatus();
 
   /**
-   * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
-   * @return Whether the jdgbhhhkokj field is set.
+   * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
+   * @return Whether the incident field is set.
    */
-  boolean hasJdgbhhhkokj();
+  boolean hasIncident();
   /**
-   * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
-   * @return The jdgbhhhkokj.
+   * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
+   * @return The incident.
    */
-  POGOProtos.Rpc.ELJEECJBPAJ getJdgbhhhkokj();
+  POGOProtos.Rpc.ClientIncidentProto getIncident();
   /**
-   * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
+   * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
    */
-  POGOProtos.Rpc.ELJEECJBPAJOrBuilder getJdgbhhhkokjOrBuilder();
+  POGOProtos.Rpc.ClientIncidentProtoOrBuilder getIncidentOrBuilder();
 }

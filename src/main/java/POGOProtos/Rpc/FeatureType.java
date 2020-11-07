@@ -9,40 +9,40 @@ package POGOProtos.Rpc;
 public enum FeatureType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>FEATURE_TYPE_UNSET = 0;</code>
+   * <code>PLATFORM_FEATURE_TYPE_UNSET = 0;</code>
    */
-  FEATURE_TYPE_UNSET(0),
+  PLATFORM_FEATURE_TYPE_UNSET(0),
   /**
-   * <code>FEATURE_TYPE_ONLINE_STATUS = 1;</code>
+   * <code>PLATFORM_FEATURE_TYPE_ONLINE_STATUS = 1;</code>
    */
-  FEATURE_TYPE_ONLINE_STATUS(1),
+  PLATFORM_FEATURE_TYPE_ONLINE_STATUS(1),
   /**
-   * <code>FEATURE_TYPE_NIANTIC_PROFILE = 2;</code>
+   * <code>PLATFORM_FEATURE_TYPE_NIANTIC_PROFILE = 2;</code>
    */
-  FEATURE_TYPE_NIANTIC_PROFILE(2),
+  PLATFORM_FEATURE_TYPE_NIANTIC_PROFILE(2),
   /**
-   * <code>FEATURE_TYPE_FRIENDS_LIST = 3;</code>
+   * <code>PLATFORM_FEATURE_TYPE_FRIENDS_LIST = 3;</code>
    */
-  FEATURE_TYPE_FRIENDS_LIST(3),
+  PLATFORM_FEATURE_TYPE_FRIENDS_LIST(3),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>FEATURE_TYPE_UNSET = 0;</code>
+   * <code>PLATFORM_FEATURE_TYPE_UNSET = 0;</code>
    */
-  public static final int FEATURE_TYPE_UNSET_VALUE = 0;
+  public static final int PLATFORM_FEATURE_TYPE_UNSET_VALUE = 0;
   /**
-   * <code>FEATURE_TYPE_ONLINE_STATUS = 1;</code>
+   * <code>PLATFORM_FEATURE_TYPE_ONLINE_STATUS = 1;</code>
    */
-  public static final int FEATURE_TYPE_ONLINE_STATUS_VALUE = 1;
+  public static final int PLATFORM_FEATURE_TYPE_ONLINE_STATUS_VALUE = 1;
   /**
-   * <code>FEATURE_TYPE_NIANTIC_PROFILE = 2;</code>
+   * <code>PLATFORM_FEATURE_TYPE_NIANTIC_PROFILE = 2;</code>
    */
-  public static final int FEATURE_TYPE_NIANTIC_PROFILE_VALUE = 2;
+  public static final int PLATFORM_FEATURE_TYPE_NIANTIC_PROFILE_VALUE = 2;
   /**
-   * <code>FEATURE_TYPE_FRIENDS_LIST = 3;</code>
+   * <code>PLATFORM_FEATURE_TYPE_FRIENDS_LIST = 3;</code>
    */
-  public static final int FEATURE_TYPE_FRIENDS_LIST_VALUE = 3;
+  public static final int PLATFORM_FEATURE_TYPE_FRIENDS_LIST_VALUE = 3;
 
 
   public final int getNumber() {
@@ -69,10 +69,10 @@ public enum FeatureType
    */
   public static FeatureType forNumber(int value) {
     switch (value) {
-      case 0: return FEATURE_TYPE_UNSET;
-      case 1: return FEATURE_TYPE_ONLINE_STATUS;
-      case 2: return FEATURE_TYPE_NIANTIC_PROFILE;
-      case 3: return FEATURE_TYPE_FRIENDS_LIST;
+      case 0: return PLATFORM_FEATURE_TYPE_UNSET;
+      case 1: return PLATFORM_FEATURE_TYPE_ONLINE_STATUS;
+      case 2: return PLATFORM_FEATURE_TYPE_NIANTIC_PROFILE;
+      case 3: return PLATFORM_FEATURE_TYPE_FRIENDS_LIST;
       default: return null;
     }
   }
@@ -91,6 +91,10 @@ public enum FeatureType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

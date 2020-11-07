@@ -8,7 +8,7 @@ public interface HoloInventoryKeyProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>uint64 pokemon_id = 1;</code>
+   * <code>fixed64 pokemon_id = 1;</code>
    * @return The pokemonId.
    */
   long getPokemonId();
@@ -167,5 +167,5 @@ public interface HoloInventoryKeyProtoOrBuilder extends
    */
   long getUnknownKey();
 
-  public POGOProtos.Rpc.HoloInventoryKeyProto.HLGNPDPAJHECase getHLGNPDPAJHECase();
+  public POGOProtos.Rpc.HoloInventoryKeyProto.TypeCase getTypeCase();
 }

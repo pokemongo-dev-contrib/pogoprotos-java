@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.RegisterBackgroundDeviceActionProto}
  */
-public  final class RegisterBackgroundDeviceActionProto extends
+public final class RegisterBackgroundDeviceActionProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.RegisterBackgroundDeviceActionProto)
     RegisterBackgroundDeviceActionProtoOrBuilder {
@@ -100,6 +100,7 @@ private static final long serialVersionUID = 0L;
    * <code>string device_type = 1;</code>
    * @return The deviceType.
    */
+  @java.lang.Override
   public java.lang.String getDeviceType() {
     java.lang.Object ref = deviceType_;
     if (ref instanceof java.lang.String) {
@@ -116,6 +117,7 @@ private static final long serialVersionUID = 0L;
    * <code>string device_type = 1;</code>
    * @return The bytes for deviceType.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDeviceTypeBytes() {
     java.lang.Object ref = deviceType_;
@@ -136,6 +138,7 @@ private static final long serialVersionUID = 0L;
    * <code>string device_id = 2;</code>
    * @return The deviceId.
    */
+  @java.lang.Override
   public java.lang.String getDeviceId() {
     java.lang.Object ref = deviceId_;
     if (ref instanceof java.lang.String) {
@@ -152,6 +155,7 @@ private static final long serialVersionUID = 0L;
    * <code>string device_id = 2;</code>
    * @return The bytes for deviceId.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDeviceIdBytes() {
     java.lang.Object ref = deviceId_;

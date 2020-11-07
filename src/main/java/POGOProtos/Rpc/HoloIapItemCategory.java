@@ -9,120 +9,120 @@ package POGOProtos.Rpc;
 public enum HoloIapItemCategory
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>IAP_CATEGORY_NONE = 0;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_NONE = 0;</code>
    */
-  IAP_CATEGORY_NONE(0),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_NONE(0),
   /**
-   * <code>IAP_CATEGORY_BUNDLE = 1;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_BUNDLE = 1;</code>
    */
-  IAP_CATEGORY_BUNDLE(1),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_BUNDLE(1),
   /**
-   * <code>IAP_CATEGORY_ITEMS = 2;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_ITEMS = 2;</code>
    */
-  IAP_CATEGORY_ITEMS(2),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_ITEMS(2),
   /**
-   * <code>IAP_CATEGORY_UPGRADES = 3;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_UPGRADES = 3;</code>
    */
-  IAP_CATEGORY_UPGRADES(3),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_UPGRADES(3),
   /**
-   * <code>IAP_CATEGORY_POKECOINS = 4;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_POKECOINS = 4;</code>
    */
-  IAP_CATEGORY_POKECOINS(4),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_POKECOINS(4),
   /**
-   * <code>IAP_CATEGORY_AVATAR = 5;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_AVATAR = 5;</code>
    */
-  IAP_CATEGORY_AVATAR(5),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_AVATAR(5),
   /**
-   * <code>IAP_CATEGORY_AVATAR_STORE_LINK = 6;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_AVATAR_STORE_LINK = 6;</code>
    */
-  IAP_CATEGORY_AVATAR_STORE_LINK(6),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_AVATAR_STORE_LINK(6),
   /**
-   * <code>IAP_CATEGORY_TEAM_CHANGE = 7;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_TEAM_CHANGE = 7;</code>
    */
-  IAP_CATEGORY_TEAM_CHANGE(7),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_TEAM_CHANGE(7),
   /**
-   * <code>IAP_CATEGORY_GLOBAL_EVENT_TICKET = 10;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_GLOBAL_EVENT_TICKET = 10;</code>
    */
-  IAP_CATEGORY_GLOBAL_EVENT_TICKET(10),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_GLOBAL_EVENT_TICKET(10),
   /**
-   * <code>IAP_CATEGORY_VS_SEEKER = 11;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_VS_SEEKER = 11;</code>
    */
-  IAP_CATEGORY_VS_SEEKER(11),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_VS_SEEKER(11),
   /**
-   * <code>IAP_CATEGORY_STICKER = 12;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_STICKER = 12;</code>
    */
-  IAP_CATEGORY_STICKER(12),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_STICKER(12),
   /**
-   * <code>IAP_CATEGORY_FREE = 13;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_FREE = 13;</code>
    */
-  IAP_CATEGORY_FREE(13),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_FREE(13),
   /**
-   * <code>IAP_CATEGORY_SUBSCRIPTION = 14;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_SUBSCRIPTION = 14;</code>
    */
-  IAP_CATEGORY_SUBSCRIPTION(14),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_SUBSCRIPTION(14),
   /**
-   * <code>IAP_CATEGORY_TRANSPORTER_ENERGY = 15;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_TRANSPORTER_ENERGY = 15;</code>
    */
-  IAP_CATEGORY_TRANSPORTER_ENERGY(15),
+  HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_TRANSPORTER_ENERGY(15),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>IAP_CATEGORY_NONE = 0;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_NONE = 0;</code>
    */
-  public static final int IAP_CATEGORY_NONE_VALUE = 0;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_NONE_VALUE = 0;
   /**
-   * <code>IAP_CATEGORY_BUNDLE = 1;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_BUNDLE = 1;</code>
    */
-  public static final int IAP_CATEGORY_BUNDLE_VALUE = 1;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_BUNDLE_VALUE = 1;
   /**
-   * <code>IAP_CATEGORY_ITEMS = 2;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_ITEMS = 2;</code>
    */
-  public static final int IAP_CATEGORY_ITEMS_VALUE = 2;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_ITEMS_VALUE = 2;
   /**
-   * <code>IAP_CATEGORY_UPGRADES = 3;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_UPGRADES = 3;</code>
    */
-  public static final int IAP_CATEGORY_UPGRADES_VALUE = 3;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_UPGRADES_VALUE = 3;
   /**
-   * <code>IAP_CATEGORY_POKECOINS = 4;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_POKECOINS = 4;</code>
    */
-  public static final int IAP_CATEGORY_POKECOINS_VALUE = 4;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_POKECOINS_VALUE = 4;
   /**
-   * <code>IAP_CATEGORY_AVATAR = 5;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_AVATAR = 5;</code>
    */
-  public static final int IAP_CATEGORY_AVATAR_VALUE = 5;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_AVATAR_VALUE = 5;
   /**
-   * <code>IAP_CATEGORY_AVATAR_STORE_LINK = 6;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_AVATAR_STORE_LINK = 6;</code>
    */
-  public static final int IAP_CATEGORY_AVATAR_STORE_LINK_VALUE = 6;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_AVATAR_STORE_LINK_VALUE = 6;
   /**
-   * <code>IAP_CATEGORY_TEAM_CHANGE = 7;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_TEAM_CHANGE = 7;</code>
    */
-  public static final int IAP_CATEGORY_TEAM_CHANGE_VALUE = 7;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_TEAM_CHANGE_VALUE = 7;
   /**
-   * <code>IAP_CATEGORY_GLOBAL_EVENT_TICKET = 10;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_GLOBAL_EVENT_TICKET = 10;</code>
    */
-  public static final int IAP_CATEGORY_GLOBAL_EVENT_TICKET_VALUE = 10;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_GLOBAL_EVENT_TICKET_VALUE = 10;
   /**
-   * <code>IAP_CATEGORY_VS_SEEKER = 11;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_VS_SEEKER = 11;</code>
    */
-  public static final int IAP_CATEGORY_VS_SEEKER_VALUE = 11;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_VS_SEEKER_VALUE = 11;
   /**
-   * <code>IAP_CATEGORY_STICKER = 12;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_STICKER = 12;</code>
    */
-  public static final int IAP_CATEGORY_STICKER_VALUE = 12;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_STICKER_VALUE = 12;
   /**
-   * <code>IAP_CATEGORY_FREE = 13;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_FREE = 13;</code>
    */
-  public static final int IAP_CATEGORY_FREE_VALUE = 13;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_FREE_VALUE = 13;
   /**
-   * <code>IAP_CATEGORY_SUBSCRIPTION = 14;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_SUBSCRIPTION = 14;</code>
    */
-  public static final int IAP_CATEGORY_SUBSCRIPTION_VALUE = 14;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_SUBSCRIPTION_VALUE = 14;
   /**
-   * <code>IAP_CATEGORY_TRANSPORTER_ENERGY = 15;</code>
+   * <code>HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_TRANSPORTER_ENERGY = 15;</code>
    */
-  public static final int IAP_CATEGORY_TRANSPORTER_ENERGY_VALUE = 15;
+  public static final int HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_TRANSPORTER_ENERGY_VALUE = 15;
 
 
   public final int getNumber() {
@@ -149,20 +149,20 @@ public enum HoloIapItemCategory
    */
   public static HoloIapItemCategory forNumber(int value) {
     switch (value) {
-      case 0: return IAP_CATEGORY_NONE;
-      case 1: return IAP_CATEGORY_BUNDLE;
-      case 2: return IAP_CATEGORY_ITEMS;
-      case 3: return IAP_CATEGORY_UPGRADES;
-      case 4: return IAP_CATEGORY_POKECOINS;
-      case 5: return IAP_CATEGORY_AVATAR;
-      case 6: return IAP_CATEGORY_AVATAR_STORE_LINK;
-      case 7: return IAP_CATEGORY_TEAM_CHANGE;
-      case 10: return IAP_CATEGORY_GLOBAL_EVENT_TICKET;
-      case 11: return IAP_CATEGORY_VS_SEEKER;
-      case 12: return IAP_CATEGORY_STICKER;
-      case 13: return IAP_CATEGORY_FREE;
-      case 14: return IAP_CATEGORY_SUBSCRIPTION;
-      case 15: return IAP_CATEGORY_TRANSPORTER_ENERGY;
+      case 0: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_NONE;
+      case 1: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_BUNDLE;
+      case 2: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_ITEMS;
+      case 3: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_UPGRADES;
+      case 4: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_POKECOINS;
+      case 5: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_AVATAR;
+      case 6: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_AVATAR_STORE_LINK;
+      case 7: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_TEAM_CHANGE;
+      case 10: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_GLOBAL_EVENT_TICKET;
+      case 11: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_VS_SEEKER;
+      case 12: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_STICKER;
+      case 13: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_FREE;
+      case 14: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_SUBSCRIPTION;
+      case 15: return HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_TRANSPORTER_ENERGY;
       default: return null;
     }
   }
@@ -181,6 +181,10 @@ public enum HoloIapItemCategory
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

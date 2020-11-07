@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.GetFitnessReportProto}
  */
-public  final class GetFitnessReportProto extends
+public final class GetFitnessReportProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFitnessReportProto)
     GetFitnessReportProtoOrBuilder {
@@ -96,6 +96,7 @@ private static final long serialVersionUID = 0L;
    * <code>int32 num_of_days = 1;</code>
    * @return The numOfDays.
    */
+  @java.lang.Override
   public int getNumOfDays() {
     return numOfDays_;
   }
@@ -106,6 +107,7 @@ private static final long serialVersionUID = 0L;
    * <code>int32 num_of_weeks = 2;</code>
    * @return The numOfWeeks.
    */
+  @java.lang.Override
   public int getNumOfWeeks() {
     return numOfWeeks_;
   }
@@ -434,6 +436,7 @@ private static final long serialVersionUID = 0L;
      * <code>int32 num_of_days = 1;</code>
      * @return The numOfDays.
      */
+    @java.lang.Override
     public int getNumOfDays() {
       return numOfDays_;
     }
@@ -464,6 +467,7 @@ private static final long serialVersionUID = 0L;
      * <code>int32 num_of_weeks = 2;</code>
      * @return The numOfWeeks.
      */
+    @java.lang.Override
     public int getNumOfWeeks() {
       return numOfWeeks_;
     }

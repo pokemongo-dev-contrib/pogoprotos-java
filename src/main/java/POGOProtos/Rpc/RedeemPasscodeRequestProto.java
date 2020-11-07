@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.RedeemPasscodeRequestProto}
  */
-public  final class RedeemPasscodeRequestProto extends
+public final class RedeemPasscodeRequestProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.RedeemPasscodeRequestProto)
     RedeemPasscodeRequestProtoOrBuilder {
@@ -93,6 +93,7 @@ private static final long serialVersionUID = 0L;
    * <code>string passcode = 1;</code>
    * @return The passcode.
    */
+  @java.lang.Override
   public java.lang.String getPasscode() {
     java.lang.Object ref = passcode_;
     if (ref instanceof java.lang.String) {
@@ -109,6 +110,7 @@ private static final long serialVersionUID = 0L;
    * <code>string passcode = 1;</code>
    * @return The bytes for passcode.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getPasscodeBytes() {
     java.lang.Object ref = passcode_;

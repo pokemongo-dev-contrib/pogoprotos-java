@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.AdventureSyncSettingsProto}
  */
-public  final class AdventureSyncSettingsProto extends
+public final class AdventureSyncSettingsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.AdventureSyncSettingsProto)
     AdventureSyncSettingsProtoOrBuilder {
@@ -96,6 +96,7 @@ private static final long serialVersionUID = 0L;
    * <code>bool fitness_service_enabled = 1;</code>
    * @return The fitnessServiceEnabled.
    */
+  @java.lang.Override
   public boolean getFitnessServiceEnabled() {
     return fitnessServiceEnabled_;
   }
@@ -106,6 +107,7 @@ private static final long serialVersionUID = 0L;
    * <code>bool awareness_service_enabled = 2;</code>
    * @return The awarenessServiceEnabled.
    */
+  @java.lang.Override
   public boolean getAwarenessServiceEnabled() {
     return awarenessServiceEnabled_;
   }
@@ -436,6 +438,7 @@ private static final long serialVersionUID = 0L;
      * <code>bool fitness_service_enabled = 1;</code>
      * @return The fitnessServiceEnabled.
      */
+    @java.lang.Override
     public boolean getFitnessServiceEnabled() {
       return fitnessServiceEnabled_;
     }
@@ -466,6 +469,7 @@ private static final long serialVersionUID = 0L;
      * <code>bool awareness_service_enabled = 2;</code>
      * @return The awarenessServiceEnabled.
      */
+    @java.lang.Override
     public boolean getAwarenessServiceEnabled() {
       return awarenessServiceEnabled_;
     }

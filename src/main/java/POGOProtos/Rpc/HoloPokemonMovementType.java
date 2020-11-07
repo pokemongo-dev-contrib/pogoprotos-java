@@ -9,64 +9,64 @@ package POGOProtos.Rpc;
 public enum HoloPokemonMovementType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>MOVEMENT_STATIC = 0;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_STATIC = 0;</code>
    */
-  MOVEMENT_STATIC(0),
+  HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_STATIC(0),
   /**
-   * <code>MOVEMENT_JUMP = 1;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_JUMP = 1;</code>
    */
-  MOVEMENT_JUMP(1),
+  HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_JUMP(1),
   /**
-   * <code>MOVEMENT_VERTICAL = 2;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_VERTICAL = 2;</code>
    */
-  MOVEMENT_VERTICAL(2),
+  HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_VERTICAL(2),
   /**
-   * <code>MOVEMENT_PSYCHIC = 3;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_PSYCHIC = 3;</code>
    */
-  MOVEMENT_PSYCHIC(3),
+  HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_PSYCHIC(3),
   /**
-   * <code>MOVEMENT_ELECTRIC = 4;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_ELECTRIC = 4;</code>
    */
-  MOVEMENT_ELECTRIC(4),
+  HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_ELECTRIC(4),
   /**
-   * <code>MOVEMENT_FLYING = 5;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_FLYING = 5;</code>
    */
-  MOVEMENT_FLYING(5),
+  HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_FLYING(5),
   /**
-   * <code>MOVEMENT_HOVERING = 6;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_HOVERING = 6;</code>
    */
-  MOVEMENT_HOVERING(6),
+  HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_HOVERING(6),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>MOVEMENT_STATIC = 0;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_STATIC = 0;</code>
    */
-  public static final int MOVEMENT_STATIC_VALUE = 0;
+  public static final int HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_STATIC_VALUE = 0;
   /**
-   * <code>MOVEMENT_JUMP = 1;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_JUMP = 1;</code>
    */
-  public static final int MOVEMENT_JUMP_VALUE = 1;
+  public static final int HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_JUMP_VALUE = 1;
   /**
-   * <code>MOVEMENT_VERTICAL = 2;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_VERTICAL = 2;</code>
    */
-  public static final int MOVEMENT_VERTICAL_VALUE = 2;
+  public static final int HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_VERTICAL_VALUE = 2;
   /**
-   * <code>MOVEMENT_PSYCHIC = 3;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_PSYCHIC = 3;</code>
    */
-  public static final int MOVEMENT_PSYCHIC_VALUE = 3;
+  public static final int HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_PSYCHIC_VALUE = 3;
   /**
-   * <code>MOVEMENT_ELECTRIC = 4;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_ELECTRIC = 4;</code>
    */
-  public static final int MOVEMENT_ELECTRIC_VALUE = 4;
+  public static final int HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_ELECTRIC_VALUE = 4;
   /**
-   * <code>MOVEMENT_FLYING = 5;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_FLYING = 5;</code>
    */
-  public static final int MOVEMENT_FLYING_VALUE = 5;
+  public static final int HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_FLYING_VALUE = 5;
   /**
-   * <code>MOVEMENT_HOVERING = 6;</code>
+   * <code>HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_HOVERING = 6;</code>
    */
-  public static final int MOVEMENT_HOVERING_VALUE = 6;
+  public static final int HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_HOVERING_VALUE = 6;
 
 
   public final int getNumber() {
@@ -93,13 +93,13 @@ public enum HoloPokemonMovementType
    */
   public static HoloPokemonMovementType forNumber(int value) {
     switch (value) {
-      case 0: return MOVEMENT_STATIC;
-      case 1: return MOVEMENT_JUMP;
-      case 2: return MOVEMENT_VERTICAL;
-      case 3: return MOVEMENT_PSYCHIC;
-      case 4: return MOVEMENT_ELECTRIC;
-      case 5: return MOVEMENT_FLYING;
-      case 6: return MOVEMENT_HOVERING;
+      case 0: return HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_STATIC;
+      case 1: return HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_JUMP;
+      case 2: return HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_VERTICAL;
+      case 3: return HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_PSYCHIC;
+      case 4: return HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_ELECTRIC;
+      case 5: return HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_FLYING;
+      case 6: return HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_HOVERING;
       default: return null;
     }
   }
@@ -118,6 +118,10 @@ public enum HoloPokemonMovementType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

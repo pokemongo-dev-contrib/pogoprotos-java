@@ -9,32 +9,32 @@ package POGOProtos.Rpc;
 public enum PoiImageType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POI_IMAGE_TYPE_UNSET = 0;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_UNSET = 0;</code>
    */
-  POI_IMAGE_TYPE_UNSET(0),
+  PLATFORM_POI_IMAGE_TYPE_UNSET(0),
   /**
-   * <code>POI_IMAGE_TYPE_MAIN = 1;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_MAIN = 1;</code>
    */
-  POI_IMAGE_TYPE_MAIN(1),
+  PLATFORM_POI_IMAGE_TYPE_MAIN(1),
   /**
-   * <code>POI_IMAGE_TYPE_SURROUNDING = 2;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_SURROUNDING = 2;</code>
    */
-  POI_IMAGE_TYPE_SURROUNDING(2),
+  PLATFORM_POI_IMAGE_TYPE_SURROUNDING(2),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>POI_IMAGE_TYPE_UNSET = 0;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_UNSET = 0;</code>
    */
-  public static final int POI_IMAGE_TYPE_UNSET_VALUE = 0;
+  public static final int PLATFORM_POI_IMAGE_TYPE_UNSET_VALUE = 0;
   /**
-   * <code>POI_IMAGE_TYPE_MAIN = 1;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_MAIN = 1;</code>
    */
-  public static final int POI_IMAGE_TYPE_MAIN_VALUE = 1;
+  public static final int PLATFORM_POI_IMAGE_TYPE_MAIN_VALUE = 1;
   /**
-   * <code>POI_IMAGE_TYPE_SURROUNDING = 2;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_SURROUNDING = 2;</code>
    */
-  public static final int POI_IMAGE_TYPE_SURROUNDING_VALUE = 2;
+  public static final int PLATFORM_POI_IMAGE_TYPE_SURROUNDING_VALUE = 2;
 
 
   public final int getNumber() {
@@ -61,9 +61,9 @@ public enum PoiImageType
    */
   public static PoiImageType forNumber(int value) {
     switch (value) {
-      case 0: return POI_IMAGE_TYPE_UNSET;
-      case 1: return POI_IMAGE_TYPE_MAIN;
-      case 2: return POI_IMAGE_TYPE_SURROUNDING;
+      case 0: return PLATFORM_POI_IMAGE_TYPE_UNSET;
+      case 1: return PLATFORM_POI_IMAGE_TYPE_MAIN;
+      case 2: return PLATFORM_POI_IMAGE_TYPE_SURROUNDING;
       default: return null;
     }
   }
@@ -82,6 +82,10 @@ public enum PoiImageType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -90,7 +94,7 @@ public enum PoiImageType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(108);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(104);
   }
 
   private static final PoiImageType[] VALUES = values();

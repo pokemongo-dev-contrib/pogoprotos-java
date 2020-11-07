@@ -8,67 +8,67 @@ public interface DistributionOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int64 aihjjphknom = 1;</code>
-   * @return The aihjjphknom.
+   * <code>int64 count = 1;</code>
+   * @return The count.
    */
-  long getAihjjphknom();
+  long getCount();
 
   /**
-   * <code>float aomahjohbck = 2;</code>
-   * @return The aomahjohbck.
+   * <code>float mean = 2;</code>
+   * @return The mean.
    */
-  float getAomahjohbck();
+  float getMean();
 
   /**
-   * <code>double hgmgodopggi = 3;</code>
-   * @return The hgmgodopggi.
+   * <code>double sum_of_squared_deviation = 3;</code>
+   * @return The sumOfSquaredDeviation.
    */
-  double getHgmgodopggi();
+  double getSumOfSquaredDeviation();
 
   /**
-   * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
-   * @return Whether the lpjkbabbpdd field is set.
+   * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
+   * @return Whether the range field is set.
    */
-  boolean hasLpjkbabbpdd();
+  boolean hasRange();
   /**
-   * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
-   * @return The lpjkbabbpdd.
+   * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
+   * @return The range.
    */
-  POGOProtos.Rpc.Distribution.KDJNFIHPPHE getLpjkbabbpdd();
+  POGOProtos.Rpc.Distribution.Range getRange();
   /**
-   * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
+   * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
    */
-  POGOProtos.Rpc.Distribution.KDJNFIHPPHEOrBuilder getLpjkbabbpddOrBuilder();
+  POGOProtos.Rpc.Distribution.RangeOrBuilder getRangeOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
-   * @return Whether the aljmnfihoml field is set.
+   * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
+   * @return Whether the bucketOptions field is set.
    */
-  boolean hasAljmnfihoml();
+  boolean hasBucketOptions();
   /**
-   * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
-   * @return The aljmnfihoml.
+   * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
+   * @return The bucketOptions.
    */
-  POGOProtos.Rpc.Distribution.ONAOLNOFLKC getAljmnfihoml();
+  POGOProtos.Rpc.Distribution.BucketOptions getBucketOptions();
   /**
-   * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
+   * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
    */
-  POGOProtos.Rpc.Distribution.ONAOLNOFLKCOrBuilder getAljmnfihomlOrBuilder();
+  POGOProtos.Rpc.Distribution.BucketOptionsOrBuilder getBucketOptionsOrBuilder();
 
   /**
-   * <code>repeated int64 naochkkocio = 6;</code>
-   * @return A list containing the naochkkocio.
+   * <code>repeated int64 bucket_counts = 6;</code>
+   * @return A list containing the bucketCounts.
    */
-  java.util.List<java.lang.Long> getNaochkkocioList();
+  java.util.List<java.lang.Long> getBucketCountsList();
   /**
-   * <code>repeated int64 naochkkocio = 6;</code>
-   * @return The count of naochkkocio.
+   * <code>repeated int64 bucket_counts = 6;</code>
+   * @return The count of bucketCounts.
    */
-  int getNaochkkocioCount();
+  int getBucketCountsCount();
   /**
-   * <code>repeated int64 naochkkocio = 6;</code>
+   * <code>repeated int64 bucket_counts = 6;</code>
    * @param index The index of the element to return.
-   * @return The naochkkocio at the given index.
+   * @return The bucketCounts at the given index.
    */
-  long getNaochkkocio(int index);
+  long getBucketCounts(int index);
 }

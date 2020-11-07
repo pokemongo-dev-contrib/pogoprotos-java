@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.LocationPingProto}
  */
-public  final class LocationPingProto extends
+public final class LocationPingProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.LocationPingProto)
     LocationPingProtoOrBuilder {
@@ -88,10 +88,6 @@ private static final long serialVersionUID = 0L;
   }
 
   /**
-   * <pre>
-   * ref: LocationPingProto.Types.PingReason
-   * </pre>
-   *
    * Protobuf enum {@code POGOProtos.Rpc.LocationPingProto.PingReason}
    */
   public enum PingReason
@@ -206,6 +202,10 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -246,6 +246,7 @@ private static final long serialVersionUID = 0L;
    * <code>string geofence_identifier = 1;</code>
    * @return The geofenceIdentifier.
    */
+  @java.lang.Override
   public java.lang.String getGeofenceIdentifier() {
     java.lang.Object ref = geofenceIdentifier_;
     if (ref instanceof java.lang.String) {
@@ -262,6 +263,7 @@ private static final long serialVersionUID = 0L;
    * <code>string geofence_identifier = 1;</code>
    * @return The bytes for geofenceIdentifier.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getGeofenceIdentifierBytes() {
     java.lang.Object ref = geofenceIdentifier_;

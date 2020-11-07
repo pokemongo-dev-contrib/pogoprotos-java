@@ -8,406 +8,406 @@ public interface QuestProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
    * @return Whether the dailyQuest field is set.
    */
   boolean hasDailyQuest();
   /**
-   * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
    * @return The dailyQuest.
    */
-  POGOProtos.Rpc.JOMMCIINFPO getDailyQuest();
+  POGOProtos.Rpc.DailyQuestProto getDailyQuest();
   /**
-   * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
    */
-  POGOProtos.Rpc.JOMMCIINFPOOrBuilder getDailyQuestOrBuilder();
+  POGOProtos.Rpc.DailyQuestProtoOrBuilder getDailyQuestOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
    * @return Whether the multiPart field is set.
    */
   boolean hasMultiPart();
   /**
-   * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
    * @return The multiPart.
    */
-  POGOProtos.Rpc.DGJEIPAEOLI getMultiPart();
+  POGOProtos.Rpc.MultiPartQuestProto getMultiPart();
   /**
-   * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
    */
-  POGOProtos.Rpc.DGJEIPAEOLIOrBuilder getMultiPartOrBuilder();
+  POGOProtos.Rpc.MultiPartQuestProtoOrBuilder getMultiPartOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
    * @return Whether the catchPokemon field is set.
    */
   boolean hasCatchPokemon();
   /**
-   * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
    * @return The catchPokemon.
    */
-  POGOProtos.Rpc.PFEHACFLHEH getCatchPokemon();
+  POGOProtos.Rpc.CatchPokemonQuestProto getCatchPokemon();
   /**
-   * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
    */
-  POGOProtos.Rpc.PFEHACFLHEHOrBuilder getCatchPokemonOrBuilder();
+  POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder getCatchPokemonOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
    * @return Whether the addFriend field is set.
    */
   boolean hasAddFriend();
   /**
-   * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
    * @return The addFriend.
    */
-  POGOProtos.Rpc.IJJLNCOJHKI getAddFriend();
+  POGOProtos.Rpc.AddFriendQuestProto getAddFriend();
   /**
-   * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
    */
-  POGOProtos.Rpc.IJJLNCOJHKIOrBuilder getAddFriendOrBuilder();
+  POGOProtos.Rpc.AddFriendQuestProtoOrBuilder getAddFriendOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
    * @return Whether the tradePokemon field is set.
    */
   boolean hasTradePokemon();
   /**
-   * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
    * @return The tradePokemon.
    */
-  POGOProtos.Rpc.JDMMPJAPEII getTradePokemon();
+  POGOProtos.Rpc.TradePokemonQuestProto getTradePokemon();
   /**
-   * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
    */
-  POGOProtos.Rpc.JDMMPJAPEIIOrBuilder getTradePokemonOrBuilder();
+  POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder getTradePokemonOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
    * @return Whether the dailyBuddyAffection field is set.
    */
   boolean hasDailyBuddyAffection();
   /**
-   * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
    * @return The dailyBuddyAffection.
    */
-  POGOProtos.Rpc.BNEFOIMHJNC getDailyBuddyAffection();
+  POGOProtos.Rpc.DailyBuddyAffectionQuestProto getDailyBuddyAffection();
   /**
-   * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
    */
-  POGOProtos.Rpc.BNEFOIMHJNCOrBuilder getDailyBuddyAffectionOrBuilder();
+  POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder getDailyBuddyAffectionOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
    * @return Whether the questWalk field is set.
    */
   boolean hasQuestWalk();
   /**
-   * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
    * @return The questWalk.
    */
-  POGOProtos.Rpc.HMOEEJNFGOF getQuestWalk();
+  POGOProtos.Rpc.QuestWalkProto getQuestWalk();
   /**
-   * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
    */
-  POGOProtos.Rpc.HMOEEJNFGOFOrBuilder getQuestWalkOrBuilder();
+  POGOProtos.Rpc.QuestWalkProtoOrBuilder getQuestWalkOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
    * @return Whether the evolveIntoPokemon field is set.
    */
   boolean hasEvolveIntoPokemon();
   /**
-   * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
    * @return The evolveIntoPokemon.
    */
-  POGOProtos.Rpc.PHJBMIIJKCH getEvolveIntoPokemon();
+  POGOProtos.Rpc.EvolveIntoPokemonQuestProto getEvolveIntoPokemon();
   /**
-   * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
    */
-  POGOProtos.Rpc.PHJBMIIJKCHOrBuilder getEvolveIntoPokemonOrBuilder();
+  POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder getEvolveIntoPokemonOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+   * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
    * @return Whether the getStardust field is set.
    */
   boolean hasGetStardust();
   /**
-   * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+   * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
    * @return The getStardust.
    */
-  POGOProtos.Rpc.JENEKIKOHLB getGetStardust();
+  POGOProtos.Rpc.GetStardustQuestProto getGetStardust();
   /**
-   * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+   * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
    */
-  POGOProtos.Rpc.JENEKIKOHLBOrBuilder getGetStardustOrBuilder();
+  POGOProtos.Rpc.GetStardustQuestProtoOrBuilder getGetStardustOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+   * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
    * @return Whether the geotargetedQuest field is set.
    */
   boolean hasGeotargetedQuest();
   /**
-   * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+   * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
    * @return The geotargetedQuest.
    */
-  POGOProtos.Rpc.FMCBCIMFFBI getGeotargetedQuest();
+  POGOProtos.Rpc.GeotargetedQuestProto getGeotargetedQuest();
   /**
-   * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+   * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
    */
-  POGOProtos.Rpc.FMCBCIMFFBIOrBuilder getGeotargetedQuestOrBuilder();
+  POGOProtos.Rpc.GeotargetedQuestProtoOrBuilder getGeotargetedQuestOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+   * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
    * @return Whether the buddyEvolutionWalk field is set.
    */
   boolean hasBuddyEvolutionWalk();
   /**
-   * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+   * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
    * @return The buddyEvolutionWalk.
    */
-  POGOProtos.Rpc.MJGCDOLJOFF getBuddyEvolutionWalk();
+  POGOProtos.Rpc.BuddyEvolutionWalkQuestProto getBuddyEvolutionWalk();
   /**
-   * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+   * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
    */
-  POGOProtos.Rpc.MJGCDOLJOFFOrBuilder getBuddyEvolutionWalkOrBuilder();
+  POGOProtos.Rpc.BuddyEvolutionWalkQuestProtoOrBuilder getBuddyEvolutionWalkOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-   * @return The enum numeric value on the wire for afnakjnnani.
+   * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+   * @return The enum numeric value on the wire for questType.
    */
-  int getAfnakjnnaniValue();
+  int getQuestTypeValue();
   /**
-   * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-   * @return The afnakjnnani.
+   * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+   * @return The questType.
    */
-  POGOProtos.Rpc.QuestType getAfnakjnnani();
+  POGOProtos.Rpc.QuestType getQuestType();
 
   /**
-   * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
-   * @return Whether the kcaedekdinf field is set.
+   * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
+   * @return Whether the withSingleDay field is set.
    */
-  boolean hasKcaedekdinf();
+  boolean hasWithSingleDay();
   /**
-   * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
-   * @return The kcaedekdinf.
+   * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
+   * @return The withSingleDay.
    */
-  POGOProtos.Rpc.KLHFIIILBHK getKcaedekdinf();
+  POGOProtos.Rpc.WithSingleDayProto getWithSingleDay();
   /**
-   * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
+   * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
    */
-  POGOProtos.Rpc.KLHFIIILBHKOrBuilder getKcaedekdinfOrBuilder();
+  POGOProtos.Rpc.WithSingleDayProtoOrBuilder getWithSingleDayOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
-   * @return Whether the phahedfolbe field is set.
+   * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
+   * @return Whether the daysInArow field is set.
    */
-  boolean hasPhahedfolbe();
+  boolean hasDaysInArow();
   /**
-   * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
-   * @return The phahedfolbe.
+   * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
+   * @return The daysInArow.
    */
-  POGOProtos.Rpc.NDGDBNJKBON getPhahedfolbe();
+  POGOProtos.Rpc.DaysWithARowQuestProto getDaysInArow();
   /**
-   * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
+   * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
    */
-  POGOProtos.Rpc.NDGDBNJKBONOrBuilder getPhahedfolbeOrBuilder();
+  POGOProtos.Rpc.DaysWithARowQuestProtoOrBuilder getDaysInArowOrBuilder();
 
   /**
-   * <code>string lpcmifggigl = 100;</code>
-   * @return The lpcmifggigl.
+   * <code>string quest_id = 100;</code>
+   * @return The questId.
    */
-  java.lang.String getLpcmifggigl();
+  java.lang.String getQuestId();
   /**
-   * <code>string lpcmifggigl = 100;</code>
-   * @return The bytes for lpcmifggigl.
+   * <code>string quest_id = 100;</code>
+   * @return The bytes for questId.
    */
   com.google.protobuf.ByteString
-      getLpcmifggiglBytes();
+      getQuestIdBytes();
 
   /**
-   * <code>int64 jifnahbilfm = 101;</code>
-   * @return The jifnahbilfm.
+   * <code>int64 quest_seed = 101;</code>
+   * @return The questSeed.
    */
-  long getJifnahbilfm();
+  long getQuestSeed();
 
   /**
-   * <code>.POGOProtos.Rpc.QuestProto.EGGDDOBICIL jbganbdeodh = 102;</code>
-   * @return The enum numeric value on the wire for jbganbdeodh.
+   * <code>.POGOProtos.Rpc.QuestProto.Context quest_context = 102;</code>
+   * @return The enum numeric value on the wire for questContext.
    */
-  int getJbganbdeodhValue();
+  int getQuestContextValue();
   /**
-   * <code>.POGOProtos.Rpc.QuestProto.EGGDDOBICIL jbganbdeodh = 102;</code>
-   * @return The jbganbdeodh.
+   * <code>.POGOProtos.Rpc.QuestProto.Context quest_context = 102;</code>
+   * @return The questContext.
    */
-  POGOProtos.Rpc.QuestProto.EGGDDOBICIL getJbganbdeodh();
+  POGOProtos.Rpc.QuestProto.Context getQuestContext();
 
   /**
-   * <code>string jolfandfilb = 103;</code>
-   * @return The jolfandfilb.
+   * <code>string template_id = 103;</code>
+   * @return The templateId.
    */
-  java.lang.String getJolfandfilb();
+  java.lang.String getTemplateId();
   /**
-   * <code>string jolfandfilb = 103;</code>
-   * @return The bytes for jolfandfilb.
+   * <code>string template_id = 103;</code>
+   * @return The bytes for templateId.
    */
   com.google.protobuf.ByteString
-      getJolfandfilbBytes();
+      getTemplateIdBytes();
 
   /**
-   * <code>int32 logbdoecccg = 104;</code>
-   * @return The logbdoecccg.
+   * <code>int32 progress = 104;</code>
+   * @return The progress.
    */
-  int getLogbdoecccg();
+  int getProgress();
 
   /**
-   * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
-   * @return Whether the phjdlkbadke field is set.
+   * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
+   * @return Whether the goal field is set.
    */
-  boolean hasPhjdlkbadke();
+  boolean hasGoal();
   /**
-   * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
-   * @return The phjdlkbadke.
+   * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
+   * @return The goal.
    */
-  POGOProtos.Rpc.ICGBHPDMKPI getPhjdlkbadke();
+  POGOProtos.Rpc.QuestGoalProto getGoal();
   /**
-   * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
+   * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
    */
-  POGOProtos.Rpc.ICGBHPDMKPIOrBuilder getPhjdlkbadkeOrBuilder();
+  POGOProtos.Rpc.QuestGoalProtoOrBuilder getGoalOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.QuestProto.DAHCDGKHIII oemhknkemca = 106;</code>
-   * @return The enum numeric value on the wire for oemhknkemca.
+   * <code>.POGOProtos.Rpc.QuestProto.Status status = 106;</code>
+   * @return The enum numeric value on the wire for status.
    */
-  int getOemhknkemcaValue();
+  int getStatusValue();
   /**
-   * <code>.POGOProtos.Rpc.QuestProto.DAHCDGKHIII oemhknkemca = 106;</code>
-   * @return The oemhknkemca.
+   * <code>.POGOProtos.Rpc.QuestProto.Status status = 106;</code>
+   * @return The status.
    */
-  POGOProtos.Rpc.QuestProto.DAHCDGKHIII getOemhknkemca();
+  POGOProtos.Rpc.QuestProto.Status getStatus();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
    */
-  java.util.List<POGOProtos.Rpc.FOPBILPGNKF> 
-      getFhpgnphjmloList();
+  java.util.List<POGOProtos.Rpc.QuestRewardProto> 
+      getQuestRewardsList();
   /**
-   * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
    */
-  POGOProtos.Rpc.FOPBILPGNKF getFhpgnphjmlo(int index);
+  POGOProtos.Rpc.QuestRewardProto getQuestRewards(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
    */
-  int getFhpgnphjmloCount();
+  int getQuestRewardsCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.FOPBILPGNKFOrBuilder> 
-      getFhpgnphjmloOrBuilderList();
+  java.util.List<? extends POGOProtos.Rpc.QuestRewardProtoOrBuilder> 
+      getQuestRewardsOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
    */
-  POGOProtos.Rpc.FOPBILPGNKFOrBuilder getFhpgnphjmloOrBuilder(
+  POGOProtos.Rpc.QuestRewardProtoOrBuilder getQuestRewardsOrBuilder(
       int index);
 
   /**
-   * <code>int64 ieilnkilhck = 108;</code>
-   * @return The ieilnkilhck.
+   * <code>int64 creation_timestamp_ms = 108;</code>
+   * @return The creationTimestampMs.
    */
-  long getIeilnkilhck();
+  long getCreationTimestampMs();
 
   /**
-   * <code>int64 pdncmodpaan = 109;</code>
-   * @return The pdncmodpaan.
+   * <code>int64 last_update_timestamp_ms = 109;</code>
+   * @return The lastUpdateTimestampMs.
    */
-  long getPdncmodpaan();
+  long getLastUpdateTimestampMs();
 
   /**
-   * <code>int64 cnjdonojmpg = 110;</code>
-   * @return The cnjdonojmpg.
+   * <code>int64 completion_timestamp_ms = 110;</code>
+   * @return The completionTimestampMs.
    */
-  long getCnjdonojmpg();
+  long getCompletionTimestampMs();
 
   /**
-   * <code>string dlangcndbfi = 111;</code>
-   * @return The dlangcndbfi.
+   * <code>string fort_id = 111;</code>
+   * @return The fortId.
    */
-  java.lang.String getDlangcndbfi();
+  java.lang.String getFortId();
   /**
-   * <code>string dlangcndbfi = 111;</code>
-   * @return The bytes for dlangcndbfi.
+   * <code>string fort_id = 111;</code>
+   * @return The bytes for fortId.
    */
   com.google.protobuf.ByteString
-      getDlangcndbfiBytes();
+      getFortIdBytes();
 
   /**
-   * <code>bool iaghmalcdnj = 112;</code>
-   * @return The iaghmalcdnj.
+   * <code>bool admin_generated = 112;</code>
+   * @return The adminGenerated.
    */
-  boolean getIaghmalcdnj();
+  boolean getAdminGenerated();
 
   /**
-   * <code>bool cpglhicleeb = 113;</code>
-   * @return The cpglhicleeb.
+   * <code>bool stamp_count_override_enabled = 113;</code>
+   * @return The stampCountOverrideEnabled.
    */
-  boolean getCpglhicleeb();
+  boolean getStampCountOverrideEnabled();
 
   /**
-   * <code>int32 pkkfjkjdgei = 114;</code>
-   * @return The pkkfjkjdgei.
+   * <code>int32 stamp_count_override = 114;</code>
+   * @return The stampCountOverride.
    */
-  int getPkkfjkjdgei();
+  int getStampCountOverride();
 
   /**
-   * <code>int64 feacpfogjkf = 115;</code>
-   * @return The feacpfogjkf.
+   * <code>int64 s2_cell_id = 115;</code>
+   * @return The s2CellId.
    */
-  long getFeacpfogjkf();
+  long getS2CellId();
 
   /**
-   * <code>int32 dnhpekmopil = 116;</code>
-   * @return The dnhpekmopil.
+   * <code>int32 story_quest_template_version = 116;</code>
+   * @return The storyQuestTemplateVersion.
    */
-  int getDnhpekmopil();
+  int getStoryQuestTemplateVersion();
 
   /**
-   * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
-   * @return Whether the ijchjdcbbnl field is set.
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
+   * @return Whether the dailyCounter field is set.
    */
-  boolean hasIjchjdcbbnl();
+  boolean hasDailyCounter();
   /**
-   * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
-   * @return The ijchjdcbbnl.
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
+   * @return The dailyCounter.
    */
-  POGOProtos.Rpc.JKJPEEMNCDK getIjchjdcbbnl();
+  POGOProtos.Rpc.DailyCounterProto getDailyCounter();
   /**
-   * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
    */
-  POGOProtos.Rpc.JKJPEEMNCDKOrBuilder getIjchjdcbbnlOrBuilder();
+  POGOProtos.Rpc.DailyCounterProtoOrBuilder getDailyCounterOrBuilder();
 
   /**
-   * <code>string dhajhgcpdig = 118;</code>
-   * @return The dhajhgcpdig.
+   * <code>string reward_pokemon_icon_url = 118;</code>
+   * @return The rewardPokemonIconUrl.
    */
-  java.lang.String getDhajhgcpdig();
+  java.lang.String getRewardPokemonIconUrl();
   /**
-   * <code>string dhajhgcpdig = 118;</code>
-   * @return The bytes for dhajhgcpdig.
+   * <code>string reward_pokemon_icon_url = 118;</code>
+   * @return The bytes for rewardPokemonIconUrl.
    */
   com.google.protobuf.ByteString
-      getDhajhgcpdigBytes();
+      getRewardPokemonIconUrlBytes();
 
   /**
-   * <code>int64 cbnpjdealil = 119;</code>
-   * @return The cbnpjdealil.
+   * <code>int64 end_timestamp_ms = 119;</code>
+   * @return The endTimestampMs.
    */
-  long getCbnpjdealil();
+  long getEndTimestampMs();
 
   /**
-   * <code>bool bcndeeailal = 120;</code>
-   * @return The bcndeeailal.
+   * <code>bool is_bonus_challenge = 120;</code>
+   * @return The isBonusChallenge.
    */
-  boolean getBcndeeailal();
+  boolean getIsBonusChallenge();
 
-  public POGOProtos.Rpc.QuestProto.ENAEHOOCEJGCase getENAEHOOCEJGCase();
+  public POGOProtos.Rpc.QuestProto.QuestCase getQuestCase();
 }

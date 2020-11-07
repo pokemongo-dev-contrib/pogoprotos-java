@@ -73,6 +73,10 @@ public enum VsSeekerRewardTrack
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -81,7 +85,7 @@ public enum VsSeekerRewardTrack
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(147);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(143);
   }
 
   private static final VsSeekerRewardTrack[] VALUES = values();

@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.QuestProto}
  */
-public  final class QuestProto extends
+public final class QuestProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.QuestProto)
     QuestProtoOrBuilder {
@@ -16,14 +16,14 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private QuestProto() {
-    afnakjnnani_ = 0;
-    lpcmifggigl_ = "";
-    jbganbdeodh_ = 0;
-    jolfandfilb_ = "";
-    oemhknkemca_ = 0;
-    fhpgnphjmlo_ = java.util.Collections.emptyList();
-    dlangcndbfi_ = "";
-    dhajhgcpdig_ = "";
+    questType_ = 0;
+    questId_ = "";
+    questContext_ = 0;
+    templateId_ = "";
+    status_ = 0;
+    questRewards_ = java.util.Collections.emptyList();
+    fortId_ = "";
+    rewardPokemonIconUrl_ = "";
   }
 
   @java.lang.Override
@@ -60,185 +60,185 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            afnakjnnani_ = rawValue;
+            questType_ = rawValue;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.JOMMCIINFPO.Builder subBuilder = null;
-            if (eNAEHOOCEJGCase_ == 2) {
-              subBuilder = ((POGOProtos.Rpc.JOMMCIINFPO) eNAEHOOCEJG_).toBuilder();
+            POGOProtos.Rpc.DailyQuestProto.Builder subBuilder = null;
+            if (questCase_ == 2) {
+              subBuilder = ((POGOProtos.Rpc.DailyQuestProto) quest_).toBuilder();
             }
-            eNAEHOOCEJG_ =
-                input.readMessage(POGOProtos.Rpc.JOMMCIINFPO.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.DailyQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.JOMMCIINFPO) eNAEHOOCEJG_);
-              eNAEHOOCEJG_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.DailyQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-            eNAEHOOCEJGCase_ = 2;
+            questCase_ = 2;
             break;
           }
           case 26: {
-            POGOProtos.Rpc.DGJEIPAEOLI.Builder subBuilder = null;
-            if (eNAEHOOCEJGCase_ == 3) {
-              subBuilder = ((POGOProtos.Rpc.DGJEIPAEOLI) eNAEHOOCEJG_).toBuilder();
+            POGOProtos.Rpc.MultiPartQuestProto.Builder subBuilder = null;
+            if (questCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.MultiPartQuestProto) quest_).toBuilder();
             }
-            eNAEHOOCEJG_ =
-                input.readMessage(POGOProtos.Rpc.DGJEIPAEOLI.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.MultiPartQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.DGJEIPAEOLI) eNAEHOOCEJG_);
-              eNAEHOOCEJG_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.MultiPartQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-            eNAEHOOCEJGCase_ = 3;
+            questCase_ = 3;
             break;
           }
           case 34: {
-            POGOProtos.Rpc.PFEHACFLHEH.Builder subBuilder = null;
-            if (eNAEHOOCEJGCase_ == 4) {
-              subBuilder = ((POGOProtos.Rpc.PFEHACFLHEH) eNAEHOOCEJG_).toBuilder();
+            POGOProtos.Rpc.CatchPokemonQuestProto.Builder subBuilder = null;
+            if (questCase_ == 4) {
+              subBuilder = ((POGOProtos.Rpc.CatchPokemonQuestProto) quest_).toBuilder();
             }
-            eNAEHOOCEJG_ =
-                input.readMessage(POGOProtos.Rpc.PFEHACFLHEH.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.CatchPokemonQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.PFEHACFLHEH) eNAEHOOCEJG_);
-              eNAEHOOCEJG_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CatchPokemonQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-            eNAEHOOCEJGCase_ = 4;
+            questCase_ = 4;
             break;
           }
           case 42: {
-            POGOProtos.Rpc.IJJLNCOJHKI.Builder subBuilder = null;
-            if (eNAEHOOCEJGCase_ == 5) {
-              subBuilder = ((POGOProtos.Rpc.IJJLNCOJHKI) eNAEHOOCEJG_).toBuilder();
+            POGOProtos.Rpc.AddFriendQuestProto.Builder subBuilder = null;
+            if (questCase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.AddFriendQuestProto) quest_).toBuilder();
             }
-            eNAEHOOCEJG_ =
-                input.readMessage(POGOProtos.Rpc.IJJLNCOJHKI.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.AddFriendQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.IJJLNCOJHKI) eNAEHOOCEJG_);
-              eNAEHOOCEJG_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.AddFriendQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-            eNAEHOOCEJGCase_ = 5;
+            questCase_ = 5;
             break;
           }
           case 50: {
-            POGOProtos.Rpc.JDMMPJAPEII.Builder subBuilder = null;
-            if (eNAEHOOCEJGCase_ == 6) {
-              subBuilder = ((POGOProtos.Rpc.JDMMPJAPEII) eNAEHOOCEJG_).toBuilder();
+            POGOProtos.Rpc.TradePokemonQuestProto.Builder subBuilder = null;
+            if (questCase_ == 6) {
+              subBuilder = ((POGOProtos.Rpc.TradePokemonQuestProto) quest_).toBuilder();
             }
-            eNAEHOOCEJG_ =
-                input.readMessage(POGOProtos.Rpc.JDMMPJAPEII.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.TradePokemonQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.JDMMPJAPEII) eNAEHOOCEJG_);
-              eNAEHOOCEJG_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.TradePokemonQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-            eNAEHOOCEJGCase_ = 6;
+            questCase_ = 6;
             break;
           }
           case 58: {
-            POGOProtos.Rpc.BNEFOIMHJNC.Builder subBuilder = null;
-            if (eNAEHOOCEJGCase_ == 7) {
-              subBuilder = ((POGOProtos.Rpc.BNEFOIMHJNC) eNAEHOOCEJG_).toBuilder();
+            POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder subBuilder = null;
+            if (questCase_ == 7) {
+              subBuilder = ((POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_).toBuilder();
             }
-            eNAEHOOCEJG_ =
-                input.readMessage(POGOProtos.Rpc.BNEFOIMHJNC.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.DailyBuddyAffectionQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.BNEFOIMHJNC) eNAEHOOCEJG_);
-              eNAEHOOCEJG_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-            eNAEHOOCEJGCase_ = 7;
+            questCase_ = 7;
             break;
           }
           case 66: {
-            POGOProtos.Rpc.HMOEEJNFGOF.Builder subBuilder = null;
-            if (eNAEHOOCEJGCase_ == 8) {
-              subBuilder = ((POGOProtos.Rpc.HMOEEJNFGOF) eNAEHOOCEJG_).toBuilder();
+            POGOProtos.Rpc.QuestWalkProto.Builder subBuilder = null;
+            if (questCase_ == 8) {
+              subBuilder = ((POGOProtos.Rpc.QuestWalkProto) quest_).toBuilder();
             }
-            eNAEHOOCEJG_ =
-                input.readMessage(POGOProtos.Rpc.HMOEEJNFGOF.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.QuestWalkProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.HMOEEJNFGOF) eNAEHOOCEJG_);
-              eNAEHOOCEJG_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.QuestWalkProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-            eNAEHOOCEJGCase_ = 8;
+            questCase_ = 8;
             break;
           }
           case 74: {
-            POGOProtos.Rpc.PHJBMIIJKCH.Builder subBuilder = null;
-            if (eNAEHOOCEJGCase_ == 9) {
-              subBuilder = ((POGOProtos.Rpc.PHJBMIIJKCH) eNAEHOOCEJG_).toBuilder();
+            POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder subBuilder = null;
+            if (questCase_ == 9) {
+              subBuilder = ((POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_).toBuilder();
             }
-            eNAEHOOCEJG_ =
-                input.readMessage(POGOProtos.Rpc.PHJBMIIJKCH.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.EvolveIntoPokemonQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.PHJBMIIJKCH) eNAEHOOCEJG_);
-              eNAEHOOCEJG_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-            eNAEHOOCEJGCase_ = 9;
+            questCase_ = 9;
             break;
           }
           case 82: {
-            POGOProtos.Rpc.JENEKIKOHLB.Builder subBuilder = null;
-            if (eNAEHOOCEJGCase_ == 10) {
-              subBuilder = ((POGOProtos.Rpc.JENEKIKOHLB) eNAEHOOCEJG_).toBuilder();
+            POGOProtos.Rpc.GetStardustQuestProto.Builder subBuilder = null;
+            if (questCase_ == 10) {
+              subBuilder = ((POGOProtos.Rpc.GetStardustQuestProto) quest_).toBuilder();
             }
-            eNAEHOOCEJG_ =
-                input.readMessage(POGOProtos.Rpc.JENEKIKOHLB.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.GetStardustQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.JENEKIKOHLB) eNAEHOOCEJG_);
-              eNAEHOOCEJG_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.GetStardustQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-            eNAEHOOCEJGCase_ = 10;
+            questCase_ = 10;
             break;
           }
           case 98: {
-            POGOProtos.Rpc.FMCBCIMFFBI.Builder subBuilder = null;
-            if (eNAEHOOCEJGCase_ == 12) {
-              subBuilder = ((POGOProtos.Rpc.FMCBCIMFFBI) eNAEHOOCEJG_).toBuilder();
+            POGOProtos.Rpc.GeotargetedQuestProto.Builder subBuilder = null;
+            if (questCase_ == 12) {
+              subBuilder = ((POGOProtos.Rpc.GeotargetedQuestProto) quest_).toBuilder();
             }
-            eNAEHOOCEJG_ =
-                input.readMessage(POGOProtos.Rpc.FMCBCIMFFBI.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.GeotargetedQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.FMCBCIMFFBI) eNAEHOOCEJG_);
-              eNAEHOOCEJG_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.GeotargetedQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-            eNAEHOOCEJGCase_ = 12;
+            questCase_ = 12;
             break;
           }
           case 106: {
-            POGOProtos.Rpc.MJGCDOLJOFF.Builder subBuilder = null;
-            if (eNAEHOOCEJGCase_ == 13) {
-              subBuilder = ((POGOProtos.Rpc.MJGCDOLJOFF) eNAEHOOCEJG_).toBuilder();
+            POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.Builder subBuilder = null;
+            if (questCase_ == 13) {
+              subBuilder = ((POGOProtos.Rpc.BuddyEvolutionWalkQuestProto) quest_).toBuilder();
             }
-            eNAEHOOCEJG_ =
-                input.readMessage(POGOProtos.Rpc.MJGCDOLJOFF.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.MJGCDOLJOFF) eNAEHOOCEJG_);
-              eNAEHOOCEJG_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyEvolutionWalkQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-            eNAEHOOCEJGCase_ = 13;
+            questCase_ = 13;
             break;
           }
           case 786: {
-            POGOProtos.Rpc.KLHFIIILBHK.Builder subBuilder = null;
-            if (kcaedekdinf_ != null) {
-              subBuilder = kcaedekdinf_.toBuilder();
+            POGOProtos.Rpc.WithSingleDayProto.Builder subBuilder = null;
+            if (withSingleDay_ != null) {
+              subBuilder = withSingleDay_.toBuilder();
             }
-            kcaedekdinf_ = input.readMessage(POGOProtos.Rpc.KLHFIIILBHK.parser(), extensionRegistry);
+            withSingleDay_ = input.readMessage(POGOProtos.Rpc.WithSingleDayProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(kcaedekdinf_);
-              kcaedekdinf_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(withSingleDay_);
+              withSingleDay_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 794: {
-            POGOProtos.Rpc.NDGDBNJKBON.Builder subBuilder = null;
-            if (phahedfolbe_ != null) {
-              subBuilder = phahedfolbe_.toBuilder();
+            POGOProtos.Rpc.DaysWithARowQuestProto.Builder subBuilder = null;
+            if (daysInArow_ != null) {
+              subBuilder = daysInArow_.toBuilder();
             }
-            phahedfolbe_ = input.readMessage(POGOProtos.Rpc.NDGDBNJKBON.parser(), extensionRegistry);
+            daysInArow_ = input.readMessage(POGOProtos.Rpc.DaysWithARowQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(phahedfolbe_);
-              phahedfolbe_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(daysInArow_);
+              daysInArow_ = subBuilder.buildPartial();
             }
 
             break;
@@ -246,40 +246,40 @@ private static final long serialVersionUID = 0L;
           case 802: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            lpcmifggigl_ = s;
+            questId_ = s;
             break;
           }
           case 808: {
 
-            jifnahbilfm_ = input.readInt64();
+            questSeed_ = input.readInt64();
             break;
           }
           case 816: {
             int rawValue = input.readEnum();
 
-            jbganbdeodh_ = rawValue;
+            questContext_ = rawValue;
             break;
           }
           case 826: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            jolfandfilb_ = s;
+            templateId_ = s;
             break;
           }
           case 832: {
 
-            logbdoecccg_ = input.readInt32();
+            progress_ = input.readInt32();
             break;
           }
           case 842: {
-            POGOProtos.Rpc.ICGBHPDMKPI.Builder subBuilder = null;
-            if (phjdlkbadke_ != null) {
-              subBuilder = phjdlkbadke_.toBuilder();
+            POGOProtos.Rpc.QuestGoalProto.Builder subBuilder = null;
+            if (goal_ != null) {
+              subBuilder = goal_.toBuilder();
             }
-            phjdlkbadke_ = input.readMessage(POGOProtos.Rpc.ICGBHPDMKPI.parser(), extensionRegistry);
+            goal_ = input.readMessage(POGOProtos.Rpc.QuestGoalProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(phjdlkbadke_);
-              phjdlkbadke_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(goal_);
+              goal_ = subBuilder.buildPartial();
             }
 
             break;
@@ -287,73 +287,73 @@ private static final long serialVersionUID = 0L;
           case 848: {
             int rawValue = input.readEnum();
 
-            oemhknkemca_ = rawValue;
+            status_ = rawValue;
             break;
           }
           case 858: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              fhpgnphjmlo_ = new java.util.ArrayList<POGOProtos.Rpc.FOPBILPGNKF>();
+              questRewards_ = new java.util.ArrayList<POGOProtos.Rpc.QuestRewardProto>();
               mutable_bitField0_ |= 0x00000001;
             }
-            fhpgnphjmlo_.add(
-                input.readMessage(POGOProtos.Rpc.FOPBILPGNKF.parser(), extensionRegistry));
+            questRewards_.add(
+                input.readMessage(POGOProtos.Rpc.QuestRewardProto.parser(), extensionRegistry));
             break;
           }
           case 864: {
 
-            ieilnkilhck_ = input.readInt64();
+            creationTimestampMs_ = input.readInt64();
             break;
           }
           case 872: {
 
-            pdncmodpaan_ = input.readInt64();
+            lastUpdateTimestampMs_ = input.readInt64();
             break;
           }
           case 880: {
 
-            cnjdonojmpg_ = input.readInt64();
+            completionTimestampMs_ = input.readInt64();
             break;
           }
           case 890: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            dlangcndbfi_ = s;
+            fortId_ = s;
             break;
           }
           case 896: {
 
-            iaghmalcdnj_ = input.readBool();
+            adminGenerated_ = input.readBool();
             break;
           }
           case 904: {
 
-            cpglhicleeb_ = input.readBool();
+            stampCountOverrideEnabled_ = input.readBool();
             break;
           }
           case 912: {
 
-            pkkfjkjdgei_ = input.readInt32();
+            stampCountOverride_ = input.readInt32();
             break;
           }
           case 920: {
 
-            feacpfogjkf_ = input.readInt64();
+            s2CellId_ = input.readInt64();
             break;
           }
           case 928: {
 
-            dnhpekmopil_ = input.readInt32();
+            storyQuestTemplateVersion_ = input.readInt32();
             break;
           }
           case 938: {
-            POGOProtos.Rpc.JKJPEEMNCDK.Builder subBuilder = null;
-            if (ijchjdcbbnl_ != null) {
-              subBuilder = ijchjdcbbnl_.toBuilder();
+            POGOProtos.Rpc.DailyCounterProto.Builder subBuilder = null;
+            if (dailyCounter_ != null) {
+              subBuilder = dailyCounter_.toBuilder();
             }
-            ijchjdcbbnl_ = input.readMessage(POGOProtos.Rpc.JKJPEEMNCDK.parser(), extensionRegistry);
+            dailyCounter_ = input.readMessage(POGOProtos.Rpc.DailyCounterProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(ijchjdcbbnl_);
-              ijchjdcbbnl_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(dailyCounter_);
+              dailyCounter_ = subBuilder.buildPartial();
             }
 
             break;
@@ -361,17 +361,17 @@ private static final long serialVersionUID = 0L;
           case 946: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            dhajhgcpdig_ = s;
+            rewardPokemonIconUrl_ = s;
             break;
           }
           case 952: {
 
-            cbnpjdealil_ = input.readInt64();
+            endTimestampMs_ = input.readInt64();
             break;
           }
           case 960: {
 
-            bcndeeailal_ = input.readBool();
+            isBonusChallenge_ = input.readBool();
             break;
           }
           default: {
@@ -390,7 +390,7 @@ private static final long serialVersionUID = 0L;
           e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        fhpgnphjmlo_ = java.util.Collections.unmodifiableList(fhpgnphjmlo_);
+        questRewards_ = java.util.Collections.unmodifiableList(questRewards_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -410,13 +410,9 @@ private static final long serialVersionUID = 0L;
   }
 
   /**
-   * <pre>
-   * ref: QuestProto/PLGLHKDEEKC/DAHCDGKHIII
-   * </pre>
-   *
-   * Protobuf enum {@code POGOProtos.Rpc.QuestProto.DAHCDGKHIII}
+   * Protobuf enum {@code POGOProtos.Rpc.QuestProto.Status}
    */
-  public enum DAHCDGKHIII
+  public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>STATUS_UNDEFINED = 0;</code>
@@ -461,7 +457,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static DAHCDGKHIII valueOf(int value) {
+    public static Status valueOf(int value) {
       return forNumber(value);
     }
 
@@ -469,7 +465,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static DAHCDGKHIII forNumber(int value) {
+    public static Status forNumber(int value) {
       switch (value) {
         case 0: return STATUS_UNDEFINED;
         case 1: return STATUS_ACTIVE;
@@ -478,20 +474,24 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<DAHCDGKHIII>
+    public static com.google.protobuf.Internal.EnumLiteMap<Status>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        DAHCDGKHIII> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<DAHCDGKHIII>() {
-            public DAHCDGKHIII findValueByNumber(int number) {
-              return DAHCDGKHIII.forNumber(number);
+        Status> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<Status>() {
+            public Status findValueByNumber(int number) {
+              return Status.forNumber(number);
             }
           };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -503,9 +503,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.QuestProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final DAHCDGKHIII[] VALUES = values();
+    private static final Status[] VALUES = values();
 
-    public static DAHCDGKHIII valueOf(
+    public static Status valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -519,21 +519,17 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private DAHCDGKHIII(int value) {
+    private Status(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.QuestProto.DAHCDGKHIII)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.QuestProto.Status)
   }
 
   /**
-   * <pre>
-   * ref: QuestProto/PLGLHKDEEKC/EGGDDOBICIL
-   * </pre>
-   *
-   * Protobuf enum {@code POGOProtos.Rpc.QuestProto.EGGDDOBICIL}
+   * Protobuf enum {@code POGOProtos.Rpc.QuestProto.Context}
    */
-  public enum EGGDDOBICIL
+  public enum Context
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNSET = 0;</code>
@@ -626,7 +622,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static EGGDDOBICIL valueOf(int value) {
+    public static Context valueOf(int value) {
       return forNumber(value);
     }
 
@@ -634,7 +630,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static EGGDDOBICIL forNumber(int value) {
+    public static Context forNumber(int value) {
       switch (value) {
         case 0: return UNSET;
         case 1: return STORY_QUEST;
@@ -649,20 +645,24 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<EGGDDOBICIL>
+    public static com.google.protobuf.Internal.EnumLiteMap<Context>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        EGGDDOBICIL> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<EGGDDOBICIL>() {
-            public EGGDDOBICIL findValueByNumber(int number) {
-              return EGGDDOBICIL.forNumber(number);
+        Context> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<Context>() {
+            public Context findValueByNumber(int number) {
+              return Context.forNumber(number);
             }
           };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -674,9 +674,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.QuestProto.getDescriptor().getEnumTypes().get(1);
     }
 
-    private static final EGGDDOBICIL[] VALUES = values();
+    private static final Context[] VALUES = values();
 
-    public static EGGDDOBICIL valueOf(
+    public static Context valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -690,16 +690,16 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private EGGDDOBICIL(int value) {
+    private Context(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.QuestProto.EGGDDOBICIL)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.QuestProto.Context)
   }
 
-  private int eNAEHOOCEJGCase_ = 0;
-  private java.lang.Object eNAEHOOCEJG_;
-  public enum ENAEHOOCEJGCase
+  private int questCase_ = 0;
+  private java.lang.Object quest_;
+  public enum QuestCase
       implements com.google.protobuf.Internal.EnumLite,
           com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     DAILY_QUEST(2),
@@ -713,9 +713,9 @@ private static final long serialVersionUID = 0L;
     GET_STARDUST(10),
     GEOTARGETED_QUEST(12),
     BUDDY_EVOLUTION_WALK(13),
-    ENAEHOOCEJG_NOT_SET(0);
+    QUEST_NOT_SET(0);
     private final int value;
-    private ENAEHOOCEJGCase(int value) {
+    private QuestCase(int value) {
       this.value = value;
     }
     /**
@@ -724,11 +724,11 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static ENAEHOOCEJGCase valueOf(int value) {
+    public static QuestCase valueOf(int value) {
       return forNumber(value);
     }
 
-    public static ENAEHOOCEJGCase forNumber(int value) {
+    public static QuestCase forNumber(int value) {
       switch (value) {
         case 2: return DAILY_QUEST;
         case 3: return MULTI_PART;
@@ -741,7 +741,7 @@ private static final long serialVersionUID = 0L;
         case 10: return GET_STARDUST;
         case 12: return GEOTARGETED_QUEST;
         case 13: return BUDDY_EVOLUTION_WALK;
-        case 0: return ENAEHOOCEJG_NOT_SET;
+        case 0: return QUEST_NOT_SET;
         default: return null;
       }
     }
@@ -750,766 +750,836 @@ private static final long serialVersionUID = 0L;
     }
   };
 
-  public ENAEHOOCEJGCase
-  getENAEHOOCEJGCase() {
-    return ENAEHOOCEJGCase.forNumber(
-        eNAEHOOCEJGCase_);
+  public QuestCase
+  getQuestCase() {
+    return QuestCase.forNumber(
+        questCase_);
   }
 
   public static final int DAILY_QUEST_FIELD_NUMBER = 2;
   /**
-   * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
    * @return Whether the dailyQuest field is set.
    */
+  @java.lang.Override
   public boolean hasDailyQuest() {
-    return eNAEHOOCEJGCase_ == 2;
+    return questCase_ == 2;
   }
   /**
-   * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
    * @return The dailyQuest.
    */
-  public POGOProtos.Rpc.JOMMCIINFPO getDailyQuest() {
-    if (eNAEHOOCEJGCase_ == 2) {
-       return (POGOProtos.Rpc.JOMMCIINFPO) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.DailyQuestProto getDailyQuest() {
+    if (questCase_ == 2) {
+       return (POGOProtos.Rpc.DailyQuestProto) quest_;
     }
-    return POGOProtos.Rpc.JOMMCIINFPO.getDefaultInstance();
+    return POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
    */
-  public POGOProtos.Rpc.JOMMCIINFPOOrBuilder getDailyQuestOrBuilder() {
-    if (eNAEHOOCEJGCase_ == 2) {
-       return (POGOProtos.Rpc.JOMMCIINFPO) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.DailyQuestProtoOrBuilder getDailyQuestOrBuilder() {
+    if (questCase_ == 2) {
+       return (POGOProtos.Rpc.DailyQuestProto) quest_;
     }
-    return POGOProtos.Rpc.JOMMCIINFPO.getDefaultInstance();
+    return POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
   }
 
   public static final int MULTI_PART_FIELD_NUMBER = 3;
   /**
-   * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
    * @return Whether the multiPart field is set.
    */
+  @java.lang.Override
   public boolean hasMultiPart() {
-    return eNAEHOOCEJGCase_ == 3;
+    return questCase_ == 3;
   }
   /**
-   * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
    * @return The multiPart.
    */
-  public POGOProtos.Rpc.DGJEIPAEOLI getMultiPart() {
-    if (eNAEHOOCEJGCase_ == 3) {
-       return (POGOProtos.Rpc.DGJEIPAEOLI) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.MultiPartQuestProto getMultiPart() {
+    if (questCase_ == 3) {
+       return (POGOProtos.Rpc.MultiPartQuestProto) quest_;
     }
-    return POGOProtos.Rpc.DGJEIPAEOLI.getDefaultInstance();
+    return POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
    */
-  public POGOProtos.Rpc.DGJEIPAEOLIOrBuilder getMultiPartOrBuilder() {
-    if (eNAEHOOCEJGCase_ == 3) {
-       return (POGOProtos.Rpc.DGJEIPAEOLI) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.MultiPartQuestProtoOrBuilder getMultiPartOrBuilder() {
+    if (questCase_ == 3) {
+       return (POGOProtos.Rpc.MultiPartQuestProto) quest_;
     }
-    return POGOProtos.Rpc.DGJEIPAEOLI.getDefaultInstance();
+    return POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
   }
 
   public static final int CATCH_POKEMON_FIELD_NUMBER = 4;
   /**
-   * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
    * @return Whether the catchPokemon field is set.
    */
+  @java.lang.Override
   public boolean hasCatchPokemon() {
-    return eNAEHOOCEJGCase_ == 4;
+    return questCase_ == 4;
   }
   /**
-   * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
    * @return The catchPokemon.
    */
-  public POGOProtos.Rpc.PFEHACFLHEH getCatchPokemon() {
-    if (eNAEHOOCEJGCase_ == 4) {
-       return (POGOProtos.Rpc.PFEHACFLHEH) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.CatchPokemonQuestProto getCatchPokemon() {
+    if (questCase_ == 4) {
+       return (POGOProtos.Rpc.CatchPokemonQuestProto) quest_;
     }
-    return POGOProtos.Rpc.PFEHACFLHEH.getDefaultInstance();
+    return POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
    */
-  public POGOProtos.Rpc.PFEHACFLHEHOrBuilder getCatchPokemonOrBuilder() {
-    if (eNAEHOOCEJGCase_ == 4) {
-       return (POGOProtos.Rpc.PFEHACFLHEH) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder getCatchPokemonOrBuilder() {
+    if (questCase_ == 4) {
+       return (POGOProtos.Rpc.CatchPokemonQuestProto) quest_;
     }
-    return POGOProtos.Rpc.PFEHACFLHEH.getDefaultInstance();
+    return POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
   }
 
   public static final int ADD_FRIEND_FIELD_NUMBER = 5;
   /**
-   * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
    * @return Whether the addFriend field is set.
    */
+  @java.lang.Override
   public boolean hasAddFriend() {
-    return eNAEHOOCEJGCase_ == 5;
+    return questCase_ == 5;
   }
   /**
-   * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
    * @return The addFriend.
    */
-  public POGOProtos.Rpc.IJJLNCOJHKI getAddFriend() {
-    if (eNAEHOOCEJGCase_ == 5) {
-       return (POGOProtos.Rpc.IJJLNCOJHKI) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.AddFriendQuestProto getAddFriend() {
+    if (questCase_ == 5) {
+       return (POGOProtos.Rpc.AddFriendQuestProto) quest_;
     }
-    return POGOProtos.Rpc.IJJLNCOJHKI.getDefaultInstance();
+    return POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
    */
-  public POGOProtos.Rpc.IJJLNCOJHKIOrBuilder getAddFriendOrBuilder() {
-    if (eNAEHOOCEJGCase_ == 5) {
-       return (POGOProtos.Rpc.IJJLNCOJHKI) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.AddFriendQuestProtoOrBuilder getAddFriendOrBuilder() {
+    if (questCase_ == 5) {
+       return (POGOProtos.Rpc.AddFriendQuestProto) quest_;
     }
-    return POGOProtos.Rpc.IJJLNCOJHKI.getDefaultInstance();
+    return POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
   }
 
   public static final int TRADE_POKEMON_FIELD_NUMBER = 6;
   /**
-   * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
    * @return Whether the tradePokemon field is set.
    */
+  @java.lang.Override
   public boolean hasTradePokemon() {
-    return eNAEHOOCEJGCase_ == 6;
+    return questCase_ == 6;
   }
   /**
-   * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
    * @return The tradePokemon.
    */
-  public POGOProtos.Rpc.JDMMPJAPEII getTradePokemon() {
-    if (eNAEHOOCEJGCase_ == 6) {
-       return (POGOProtos.Rpc.JDMMPJAPEII) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.TradePokemonQuestProto getTradePokemon() {
+    if (questCase_ == 6) {
+       return (POGOProtos.Rpc.TradePokemonQuestProto) quest_;
     }
-    return POGOProtos.Rpc.JDMMPJAPEII.getDefaultInstance();
+    return POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
    */
-  public POGOProtos.Rpc.JDMMPJAPEIIOrBuilder getTradePokemonOrBuilder() {
-    if (eNAEHOOCEJGCase_ == 6) {
-       return (POGOProtos.Rpc.JDMMPJAPEII) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder getTradePokemonOrBuilder() {
+    if (questCase_ == 6) {
+       return (POGOProtos.Rpc.TradePokemonQuestProto) quest_;
     }
-    return POGOProtos.Rpc.JDMMPJAPEII.getDefaultInstance();
+    return POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
   }
 
   public static final int DAILY_BUDDY_AFFECTION_FIELD_NUMBER = 7;
   /**
-   * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
    * @return Whether the dailyBuddyAffection field is set.
    */
+  @java.lang.Override
   public boolean hasDailyBuddyAffection() {
-    return eNAEHOOCEJGCase_ == 7;
+    return questCase_ == 7;
   }
   /**
-   * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
    * @return The dailyBuddyAffection.
    */
-  public POGOProtos.Rpc.BNEFOIMHJNC getDailyBuddyAffection() {
-    if (eNAEHOOCEJGCase_ == 7) {
-       return (POGOProtos.Rpc.BNEFOIMHJNC) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.DailyBuddyAffectionQuestProto getDailyBuddyAffection() {
+    if (questCase_ == 7) {
+       return (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_;
     }
-    return POGOProtos.Rpc.BNEFOIMHJNC.getDefaultInstance();
+    return POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
    */
-  public POGOProtos.Rpc.BNEFOIMHJNCOrBuilder getDailyBuddyAffectionOrBuilder() {
-    if (eNAEHOOCEJGCase_ == 7) {
-       return (POGOProtos.Rpc.BNEFOIMHJNC) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder getDailyBuddyAffectionOrBuilder() {
+    if (questCase_ == 7) {
+       return (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_;
     }
-    return POGOProtos.Rpc.BNEFOIMHJNC.getDefaultInstance();
+    return POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
   }
 
   public static final int QUEST_WALK_FIELD_NUMBER = 8;
   /**
-   * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
    * @return Whether the questWalk field is set.
    */
+  @java.lang.Override
   public boolean hasQuestWalk() {
-    return eNAEHOOCEJGCase_ == 8;
+    return questCase_ == 8;
   }
   /**
-   * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
    * @return The questWalk.
    */
-  public POGOProtos.Rpc.HMOEEJNFGOF getQuestWalk() {
-    if (eNAEHOOCEJGCase_ == 8) {
-       return (POGOProtos.Rpc.HMOEEJNFGOF) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.QuestWalkProto getQuestWalk() {
+    if (questCase_ == 8) {
+       return (POGOProtos.Rpc.QuestWalkProto) quest_;
     }
-    return POGOProtos.Rpc.HMOEEJNFGOF.getDefaultInstance();
+    return POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
    */
-  public POGOProtos.Rpc.HMOEEJNFGOFOrBuilder getQuestWalkOrBuilder() {
-    if (eNAEHOOCEJGCase_ == 8) {
-       return (POGOProtos.Rpc.HMOEEJNFGOF) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.QuestWalkProtoOrBuilder getQuestWalkOrBuilder() {
+    if (questCase_ == 8) {
+       return (POGOProtos.Rpc.QuestWalkProto) quest_;
     }
-    return POGOProtos.Rpc.HMOEEJNFGOF.getDefaultInstance();
+    return POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
   }
 
   public static final int EVOLVE_INTO_POKEMON_FIELD_NUMBER = 9;
   /**
-   * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
    * @return Whether the evolveIntoPokemon field is set.
    */
+  @java.lang.Override
   public boolean hasEvolveIntoPokemon() {
-    return eNAEHOOCEJGCase_ == 9;
+    return questCase_ == 9;
   }
   /**
-   * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
    * @return The evolveIntoPokemon.
    */
-  public POGOProtos.Rpc.PHJBMIIJKCH getEvolveIntoPokemon() {
-    if (eNAEHOOCEJGCase_ == 9) {
-       return (POGOProtos.Rpc.PHJBMIIJKCH) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.EvolveIntoPokemonQuestProto getEvolveIntoPokemon() {
+    if (questCase_ == 9) {
+       return (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_;
     }
-    return POGOProtos.Rpc.PHJBMIIJKCH.getDefaultInstance();
+    return POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
    */
-  public POGOProtos.Rpc.PHJBMIIJKCHOrBuilder getEvolveIntoPokemonOrBuilder() {
-    if (eNAEHOOCEJGCase_ == 9) {
-       return (POGOProtos.Rpc.PHJBMIIJKCH) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder getEvolveIntoPokemonOrBuilder() {
+    if (questCase_ == 9) {
+       return (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_;
     }
-    return POGOProtos.Rpc.PHJBMIIJKCH.getDefaultInstance();
+    return POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
   }
 
   public static final int GET_STARDUST_FIELD_NUMBER = 10;
   /**
-   * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+   * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
    * @return Whether the getStardust field is set.
    */
+  @java.lang.Override
   public boolean hasGetStardust() {
-    return eNAEHOOCEJGCase_ == 10;
+    return questCase_ == 10;
   }
   /**
-   * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+   * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
    * @return The getStardust.
    */
-  public POGOProtos.Rpc.JENEKIKOHLB getGetStardust() {
-    if (eNAEHOOCEJGCase_ == 10) {
-       return (POGOProtos.Rpc.JENEKIKOHLB) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.GetStardustQuestProto getGetStardust() {
+    if (questCase_ == 10) {
+       return (POGOProtos.Rpc.GetStardustQuestProto) quest_;
     }
-    return POGOProtos.Rpc.JENEKIKOHLB.getDefaultInstance();
+    return POGOProtos.Rpc.GetStardustQuestProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+   * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
    */
-  public POGOProtos.Rpc.JENEKIKOHLBOrBuilder getGetStardustOrBuilder() {
-    if (eNAEHOOCEJGCase_ == 10) {
-       return (POGOProtos.Rpc.JENEKIKOHLB) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.GetStardustQuestProtoOrBuilder getGetStardustOrBuilder() {
+    if (questCase_ == 10) {
+       return (POGOProtos.Rpc.GetStardustQuestProto) quest_;
     }
-    return POGOProtos.Rpc.JENEKIKOHLB.getDefaultInstance();
+    return POGOProtos.Rpc.GetStardustQuestProto.getDefaultInstance();
   }
 
   public static final int GEOTARGETED_QUEST_FIELD_NUMBER = 12;
   /**
-   * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+   * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
    * @return Whether the geotargetedQuest field is set.
    */
+  @java.lang.Override
   public boolean hasGeotargetedQuest() {
-    return eNAEHOOCEJGCase_ == 12;
+    return questCase_ == 12;
   }
   /**
-   * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+   * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
    * @return The geotargetedQuest.
    */
-  public POGOProtos.Rpc.FMCBCIMFFBI getGeotargetedQuest() {
-    if (eNAEHOOCEJGCase_ == 12) {
-       return (POGOProtos.Rpc.FMCBCIMFFBI) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.GeotargetedQuestProto getGeotargetedQuest() {
+    if (questCase_ == 12) {
+       return (POGOProtos.Rpc.GeotargetedQuestProto) quest_;
     }
-    return POGOProtos.Rpc.FMCBCIMFFBI.getDefaultInstance();
+    return POGOProtos.Rpc.GeotargetedQuestProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+   * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
    */
-  public POGOProtos.Rpc.FMCBCIMFFBIOrBuilder getGeotargetedQuestOrBuilder() {
-    if (eNAEHOOCEJGCase_ == 12) {
-       return (POGOProtos.Rpc.FMCBCIMFFBI) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.GeotargetedQuestProtoOrBuilder getGeotargetedQuestOrBuilder() {
+    if (questCase_ == 12) {
+       return (POGOProtos.Rpc.GeotargetedQuestProto) quest_;
     }
-    return POGOProtos.Rpc.FMCBCIMFFBI.getDefaultInstance();
+    return POGOProtos.Rpc.GeotargetedQuestProto.getDefaultInstance();
   }
 
   public static final int BUDDY_EVOLUTION_WALK_FIELD_NUMBER = 13;
   /**
-   * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+   * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
    * @return Whether the buddyEvolutionWalk field is set.
    */
+  @java.lang.Override
   public boolean hasBuddyEvolutionWalk() {
-    return eNAEHOOCEJGCase_ == 13;
+    return questCase_ == 13;
   }
   /**
-   * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+   * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
    * @return The buddyEvolutionWalk.
    */
-  public POGOProtos.Rpc.MJGCDOLJOFF getBuddyEvolutionWalk() {
-    if (eNAEHOOCEJGCase_ == 13) {
-       return (POGOProtos.Rpc.MJGCDOLJOFF) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.BuddyEvolutionWalkQuestProto getBuddyEvolutionWalk() {
+    if (questCase_ == 13) {
+       return (POGOProtos.Rpc.BuddyEvolutionWalkQuestProto) quest_;
     }
-    return POGOProtos.Rpc.MJGCDOLJOFF.getDefaultInstance();
+    return POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+   * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
    */
-  public POGOProtos.Rpc.MJGCDOLJOFFOrBuilder getBuddyEvolutionWalkOrBuilder() {
-    if (eNAEHOOCEJGCase_ == 13) {
-       return (POGOProtos.Rpc.MJGCDOLJOFF) eNAEHOOCEJG_;
+  @java.lang.Override
+  public POGOProtos.Rpc.BuddyEvolutionWalkQuestProtoOrBuilder getBuddyEvolutionWalkOrBuilder() {
+    if (questCase_ == 13) {
+       return (POGOProtos.Rpc.BuddyEvolutionWalkQuestProto) quest_;
     }
-    return POGOProtos.Rpc.MJGCDOLJOFF.getDefaultInstance();
+    return POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.getDefaultInstance();
   }
 
-  public static final int AFNAKJNNANI_FIELD_NUMBER = 1;
-  private int afnakjnnani_;
+  public static final int QUEST_TYPE_FIELD_NUMBER = 1;
+  private int questType_;
   /**
-   * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-   * @return The enum numeric value on the wire for afnakjnnani.
+   * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+   * @return The enum numeric value on the wire for questType.
    */
-  public int getAfnakjnnaniValue() {
-    return afnakjnnani_;
+  @java.lang.Override public int getQuestTypeValue() {
+    return questType_;
   }
   /**
-   * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-   * @return The afnakjnnani.
+   * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+   * @return The questType.
    */
-  public POGOProtos.Rpc.QuestType getAfnakjnnani() {
+  @java.lang.Override public POGOProtos.Rpc.QuestType getQuestType() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(afnakjnnani_);
+    POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(questType_);
     return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
   }
 
-  public static final int KCAEDEKDINF_FIELD_NUMBER = 98;
-  private POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf_;
+  public static final int WITH_SINGLE_DAY_FIELD_NUMBER = 98;
+  private POGOProtos.Rpc.WithSingleDayProto withSingleDay_;
   /**
-   * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
-   * @return Whether the kcaedekdinf field is set.
+   * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
+   * @return Whether the withSingleDay field is set.
    */
-  public boolean hasKcaedekdinf() {
-    return kcaedekdinf_ != null;
+  @java.lang.Override
+  public boolean hasWithSingleDay() {
+    return withSingleDay_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
-   * @return The kcaedekdinf.
+   * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
+   * @return The withSingleDay.
    */
-  public POGOProtos.Rpc.KLHFIIILBHK getKcaedekdinf() {
-    return kcaedekdinf_ == null ? POGOProtos.Rpc.KLHFIIILBHK.getDefaultInstance() : kcaedekdinf_;
+  @java.lang.Override
+  public POGOProtos.Rpc.WithSingleDayProto getWithSingleDay() {
+    return withSingleDay_ == null ? POGOProtos.Rpc.WithSingleDayProto.getDefaultInstance() : withSingleDay_;
   }
   /**
-   * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
+   * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
    */
-  public POGOProtos.Rpc.KLHFIIILBHKOrBuilder getKcaedekdinfOrBuilder() {
-    return getKcaedekdinf();
-  }
-
-  public static final int PHAHEDFOLBE_FIELD_NUMBER = 99;
-  private POGOProtos.Rpc.NDGDBNJKBON phahedfolbe_;
-  /**
-   * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
-   * @return Whether the phahedfolbe field is set.
-   */
-  public boolean hasPhahedfolbe() {
-    return phahedfolbe_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
-   * @return The phahedfolbe.
-   */
-  public POGOProtos.Rpc.NDGDBNJKBON getPhahedfolbe() {
-    return phahedfolbe_ == null ? POGOProtos.Rpc.NDGDBNJKBON.getDefaultInstance() : phahedfolbe_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
-   */
-  public POGOProtos.Rpc.NDGDBNJKBONOrBuilder getPhahedfolbeOrBuilder() {
-    return getPhahedfolbe();
+  @java.lang.Override
+  public POGOProtos.Rpc.WithSingleDayProtoOrBuilder getWithSingleDayOrBuilder() {
+    return getWithSingleDay();
   }
 
-  public static final int LPCMIFGGIGL_FIELD_NUMBER = 100;
-  private volatile java.lang.Object lpcmifggigl_;
+  public static final int DAYS_IN_AROW_FIELD_NUMBER = 99;
+  private POGOProtos.Rpc.DaysWithARowQuestProto daysInArow_;
   /**
-   * <code>string lpcmifggigl = 100;</code>
-   * @return The lpcmifggigl.
+   * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
+   * @return Whether the daysInArow field is set.
    */
-  public java.lang.String getLpcmifggigl() {
-    java.lang.Object ref = lpcmifggigl_;
+  @java.lang.Override
+  public boolean hasDaysInArow() {
+    return daysInArow_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
+   * @return The daysInArow.
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.DaysWithARowQuestProto getDaysInArow() {
+    return daysInArow_ == null ? POGOProtos.Rpc.DaysWithARowQuestProto.getDefaultInstance() : daysInArow_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.DaysWithARowQuestProtoOrBuilder getDaysInArowOrBuilder() {
+    return getDaysInArow();
+  }
+
+  public static final int QUEST_ID_FIELD_NUMBER = 100;
+  private volatile java.lang.Object questId_;
+  /**
+   * <code>string quest_id = 100;</code>
+   * @return The questId.
+   */
+  @java.lang.Override
+  public java.lang.String getQuestId() {
+    java.lang.Object ref = questId_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      lpcmifggigl_ = s;
+      questId_ = s;
       return s;
     }
   }
   /**
-   * <code>string lpcmifggigl = 100;</code>
-   * @return The bytes for lpcmifggigl.
+   * <code>string quest_id = 100;</code>
+   * @return The bytes for questId.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
-      getLpcmifggiglBytes() {
-    java.lang.Object ref = lpcmifggigl_;
+      getQuestIdBytes() {
+    java.lang.Object ref = questId_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      lpcmifggigl_ = b;
+      questId_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int JIFNAHBILFM_FIELD_NUMBER = 101;
-  private long jifnahbilfm_;
+  public static final int QUEST_SEED_FIELD_NUMBER = 101;
+  private long questSeed_;
   /**
-   * <code>int64 jifnahbilfm = 101;</code>
-   * @return The jifnahbilfm.
+   * <code>int64 quest_seed = 101;</code>
+   * @return The questSeed.
    */
-  public long getJifnahbilfm() {
-    return jifnahbilfm_;
+  @java.lang.Override
+  public long getQuestSeed() {
+    return questSeed_;
   }
 
-  public static final int JBGANBDEODH_FIELD_NUMBER = 102;
-  private int jbganbdeodh_;
+  public static final int QUEST_CONTEXT_FIELD_NUMBER = 102;
+  private int questContext_;
   /**
-   * <code>.POGOProtos.Rpc.QuestProto.EGGDDOBICIL jbganbdeodh = 102;</code>
-   * @return The enum numeric value on the wire for jbganbdeodh.
+   * <code>.POGOProtos.Rpc.QuestProto.Context quest_context = 102;</code>
+   * @return The enum numeric value on the wire for questContext.
    */
-  public int getJbganbdeodhValue() {
-    return jbganbdeodh_;
+  @java.lang.Override public int getQuestContextValue() {
+    return questContext_;
   }
   /**
-   * <code>.POGOProtos.Rpc.QuestProto.EGGDDOBICIL jbganbdeodh = 102;</code>
-   * @return The jbganbdeodh.
+   * <code>.POGOProtos.Rpc.QuestProto.Context quest_context = 102;</code>
+   * @return The questContext.
    */
-  public POGOProtos.Rpc.QuestProto.EGGDDOBICIL getJbganbdeodh() {
+  @java.lang.Override public POGOProtos.Rpc.QuestProto.Context getQuestContext() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.QuestProto.EGGDDOBICIL result = POGOProtos.Rpc.QuestProto.EGGDDOBICIL.valueOf(jbganbdeodh_);
-    return result == null ? POGOProtos.Rpc.QuestProto.EGGDDOBICIL.UNRECOGNIZED : result;
+    POGOProtos.Rpc.QuestProto.Context result = POGOProtos.Rpc.QuestProto.Context.valueOf(questContext_);
+    return result == null ? POGOProtos.Rpc.QuestProto.Context.UNRECOGNIZED : result;
   }
 
-  public static final int JOLFANDFILB_FIELD_NUMBER = 103;
-  private volatile java.lang.Object jolfandfilb_;
+  public static final int TEMPLATE_ID_FIELD_NUMBER = 103;
+  private volatile java.lang.Object templateId_;
   /**
-   * <code>string jolfandfilb = 103;</code>
-   * @return The jolfandfilb.
+   * <code>string template_id = 103;</code>
+   * @return The templateId.
    */
-  public java.lang.String getJolfandfilb() {
-    java.lang.Object ref = jolfandfilb_;
+  @java.lang.Override
+  public java.lang.String getTemplateId() {
+    java.lang.Object ref = templateId_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      jolfandfilb_ = s;
+      templateId_ = s;
       return s;
     }
   }
   /**
-   * <code>string jolfandfilb = 103;</code>
-   * @return The bytes for jolfandfilb.
+   * <code>string template_id = 103;</code>
+   * @return The bytes for templateId.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
-      getJolfandfilbBytes() {
-    java.lang.Object ref = jolfandfilb_;
+      getTemplateIdBytes() {
+    java.lang.Object ref = templateId_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      jolfandfilb_ = b;
+      templateId_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int LOGBDOECCCG_FIELD_NUMBER = 104;
-  private int logbdoecccg_;
+  public static final int PROGRESS_FIELD_NUMBER = 104;
+  private int progress_;
   /**
-   * <code>int32 logbdoecccg = 104;</code>
-   * @return The logbdoecccg.
+   * <code>int32 progress = 104;</code>
+   * @return The progress.
    */
-  public int getLogbdoecccg() {
-    return logbdoecccg_;
+  @java.lang.Override
+  public int getProgress() {
+    return progress_;
   }
 
-  public static final int PHJDLKBADKE_FIELD_NUMBER = 105;
-  private POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke_;
+  public static final int GOAL_FIELD_NUMBER = 105;
+  private POGOProtos.Rpc.QuestGoalProto goal_;
   /**
-   * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
-   * @return Whether the phjdlkbadke field is set.
+   * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
+   * @return Whether the goal field is set.
    */
-  public boolean hasPhjdlkbadke() {
-    return phjdlkbadke_ != null;
+  @java.lang.Override
+  public boolean hasGoal() {
+    return goal_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
-   * @return The phjdlkbadke.
+   * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
+   * @return The goal.
    */
-  public POGOProtos.Rpc.ICGBHPDMKPI getPhjdlkbadke() {
-    return phjdlkbadke_ == null ? POGOProtos.Rpc.ICGBHPDMKPI.getDefaultInstance() : phjdlkbadke_;
+  @java.lang.Override
+  public POGOProtos.Rpc.QuestGoalProto getGoal() {
+    return goal_ == null ? POGOProtos.Rpc.QuestGoalProto.getDefaultInstance() : goal_;
   }
   /**
-   * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
+   * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
    */
-  public POGOProtos.Rpc.ICGBHPDMKPIOrBuilder getPhjdlkbadkeOrBuilder() {
-    return getPhjdlkbadke();
+  @java.lang.Override
+  public POGOProtos.Rpc.QuestGoalProtoOrBuilder getGoalOrBuilder() {
+    return getGoal();
   }
 
-  public static final int OEMHKNKEMCA_FIELD_NUMBER = 106;
-  private int oemhknkemca_;
+  public static final int STATUS_FIELD_NUMBER = 106;
+  private int status_;
   /**
-   * <code>.POGOProtos.Rpc.QuestProto.DAHCDGKHIII oemhknkemca = 106;</code>
-   * @return The enum numeric value on the wire for oemhknkemca.
+   * <code>.POGOProtos.Rpc.QuestProto.Status status = 106;</code>
+   * @return The enum numeric value on the wire for status.
    */
-  public int getOemhknkemcaValue() {
-    return oemhknkemca_;
+  @java.lang.Override public int getStatusValue() {
+    return status_;
   }
   /**
-   * <code>.POGOProtos.Rpc.QuestProto.DAHCDGKHIII oemhknkemca = 106;</code>
-   * @return The oemhknkemca.
+   * <code>.POGOProtos.Rpc.QuestProto.Status status = 106;</code>
+   * @return The status.
    */
-  public POGOProtos.Rpc.QuestProto.DAHCDGKHIII getOemhknkemca() {
+  @java.lang.Override public POGOProtos.Rpc.QuestProto.Status getStatus() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.QuestProto.DAHCDGKHIII result = POGOProtos.Rpc.QuestProto.DAHCDGKHIII.valueOf(oemhknkemca_);
-    return result == null ? POGOProtos.Rpc.QuestProto.DAHCDGKHIII.UNRECOGNIZED : result;
+    POGOProtos.Rpc.QuestProto.Status result = POGOProtos.Rpc.QuestProto.Status.valueOf(status_);
+    return result == null ? POGOProtos.Rpc.QuestProto.Status.UNRECOGNIZED : result;
   }
 
-  public static final int FHPGNPHJMLO_FIELD_NUMBER = 107;
-  private java.util.List<POGOProtos.Rpc.FOPBILPGNKF> fhpgnphjmlo_;
+  public static final int QUEST_REWARDS_FIELD_NUMBER = 107;
+  private java.util.List<POGOProtos.Rpc.QuestRewardProto> questRewards_;
   /**
-   * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
    */
-  public java.util.List<POGOProtos.Rpc.FOPBILPGNKF> getFhpgnphjmloList() {
-    return fhpgnphjmlo_;
+  @java.lang.Override
+  public java.util.List<POGOProtos.Rpc.QuestRewardProto> getQuestRewardsList() {
+    return questRewards_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
    */
-  public java.util.List<? extends POGOProtos.Rpc.FOPBILPGNKFOrBuilder> 
-      getFhpgnphjmloOrBuilderList() {
-    return fhpgnphjmlo_;
+  @java.lang.Override
+  public java.util.List<? extends POGOProtos.Rpc.QuestRewardProtoOrBuilder> 
+      getQuestRewardsOrBuilderList() {
+    return questRewards_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
    */
-  public int getFhpgnphjmloCount() {
-    return fhpgnphjmlo_.size();
+  @java.lang.Override
+  public int getQuestRewardsCount() {
+    return questRewards_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
    */
-  public POGOProtos.Rpc.FOPBILPGNKF getFhpgnphjmlo(int index) {
-    return fhpgnphjmlo_.get(index);
+  @java.lang.Override
+  public POGOProtos.Rpc.QuestRewardProto getQuestRewards(int index) {
+    return questRewards_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
    */
-  public POGOProtos.Rpc.FOPBILPGNKFOrBuilder getFhpgnphjmloOrBuilder(
+  @java.lang.Override
+  public POGOProtos.Rpc.QuestRewardProtoOrBuilder getQuestRewardsOrBuilder(
       int index) {
-    return fhpgnphjmlo_.get(index);
+    return questRewards_.get(index);
   }
 
-  public static final int IEILNKILHCK_FIELD_NUMBER = 108;
-  private long ieilnkilhck_;
+  public static final int CREATION_TIMESTAMP_MS_FIELD_NUMBER = 108;
+  private long creationTimestampMs_;
   /**
-   * <code>int64 ieilnkilhck = 108;</code>
-   * @return The ieilnkilhck.
+   * <code>int64 creation_timestamp_ms = 108;</code>
+   * @return The creationTimestampMs.
    */
-  public long getIeilnkilhck() {
-    return ieilnkilhck_;
+  @java.lang.Override
+  public long getCreationTimestampMs() {
+    return creationTimestampMs_;
   }
 
-  public static final int PDNCMODPAAN_FIELD_NUMBER = 109;
-  private long pdncmodpaan_;
+  public static final int LAST_UPDATE_TIMESTAMP_MS_FIELD_NUMBER = 109;
+  private long lastUpdateTimestampMs_;
   /**
-   * <code>int64 pdncmodpaan = 109;</code>
-   * @return The pdncmodpaan.
+   * <code>int64 last_update_timestamp_ms = 109;</code>
+   * @return The lastUpdateTimestampMs.
    */
-  public long getPdncmodpaan() {
-    return pdncmodpaan_;
+  @java.lang.Override
+  public long getLastUpdateTimestampMs() {
+    return lastUpdateTimestampMs_;
   }
 
-  public static final int CNJDONOJMPG_FIELD_NUMBER = 110;
-  private long cnjdonojmpg_;
+  public static final int COMPLETION_TIMESTAMP_MS_FIELD_NUMBER = 110;
+  private long completionTimestampMs_;
   /**
-   * <code>int64 cnjdonojmpg = 110;</code>
-   * @return The cnjdonojmpg.
+   * <code>int64 completion_timestamp_ms = 110;</code>
+   * @return The completionTimestampMs.
    */
-  public long getCnjdonojmpg() {
-    return cnjdonojmpg_;
+  @java.lang.Override
+  public long getCompletionTimestampMs() {
+    return completionTimestampMs_;
   }
 
-  public static final int DLANGCNDBFI_FIELD_NUMBER = 111;
-  private volatile java.lang.Object dlangcndbfi_;
+  public static final int FORT_ID_FIELD_NUMBER = 111;
+  private volatile java.lang.Object fortId_;
   /**
-   * <code>string dlangcndbfi = 111;</code>
-   * @return The dlangcndbfi.
+   * <code>string fort_id = 111;</code>
+   * @return The fortId.
    */
-  public java.lang.String getDlangcndbfi() {
-    java.lang.Object ref = dlangcndbfi_;
+  @java.lang.Override
+  public java.lang.String getFortId() {
+    java.lang.Object ref = fortId_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      dlangcndbfi_ = s;
+      fortId_ = s;
       return s;
     }
   }
   /**
-   * <code>string dlangcndbfi = 111;</code>
-   * @return The bytes for dlangcndbfi.
+   * <code>string fort_id = 111;</code>
+   * @return The bytes for fortId.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
-      getDlangcndbfiBytes() {
-    java.lang.Object ref = dlangcndbfi_;
+      getFortIdBytes() {
+    java.lang.Object ref = fortId_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      dlangcndbfi_ = b;
+      fortId_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int IAGHMALCDNJ_FIELD_NUMBER = 112;
-  private boolean iaghmalcdnj_;
+  public static final int ADMIN_GENERATED_FIELD_NUMBER = 112;
+  private boolean adminGenerated_;
   /**
-   * <code>bool iaghmalcdnj = 112;</code>
-   * @return The iaghmalcdnj.
+   * <code>bool admin_generated = 112;</code>
+   * @return The adminGenerated.
    */
-  public boolean getIaghmalcdnj() {
-    return iaghmalcdnj_;
+  @java.lang.Override
+  public boolean getAdminGenerated() {
+    return adminGenerated_;
   }
 
-  public static final int CPGLHICLEEB_FIELD_NUMBER = 113;
-  private boolean cpglhicleeb_;
+  public static final int STAMP_COUNT_OVERRIDE_ENABLED_FIELD_NUMBER = 113;
+  private boolean stampCountOverrideEnabled_;
   /**
-   * <code>bool cpglhicleeb = 113;</code>
-   * @return The cpglhicleeb.
+   * <code>bool stamp_count_override_enabled = 113;</code>
+   * @return The stampCountOverrideEnabled.
    */
-  public boolean getCpglhicleeb() {
-    return cpglhicleeb_;
+  @java.lang.Override
+  public boolean getStampCountOverrideEnabled() {
+    return stampCountOverrideEnabled_;
   }
 
-  public static final int PKKFJKJDGEI_FIELD_NUMBER = 114;
-  private int pkkfjkjdgei_;
+  public static final int STAMP_COUNT_OVERRIDE_FIELD_NUMBER = 114;
+  private int stampCountOverride_;
   /**
-   * <code>int32 pkkfjkjdgei = 114;</code>
-   * @return The pkkfjkjdgei.
+   * <code>int32 stamp_count_override = 114;</code>
+   * @return The stampCountOverride.
    */
-  public int getPkkfjkjdgei() {
-    return pkkfjkjdgei_;
+  @java.lang.Override
+  public int getStampCountOverride() {
+    return stampCountOverride_;
   }
 
-  public static final int FEACPFOGJKF_FIELD_NUMBER = 115;
-  private long feacpfogjkf_;
+  public static final int S2_CELL_ID_FIELD_NUMBER = 115;
+  private long s2CellId_;
   /**
-   * <code>int64 feacpfogjkf = 115;</code>
-   * @return The feacpfogjkf.
+   * <code>int64 s2_cell_id = 115;</code>
+   * @return The s2CellId.
    */
-  public long getFeacpfogjkf() {
-    return feacpfogjkf_;
+  @java.lang.Override
+  public long getS2CellId() {
+    return s2CellId_;
   }
 
-  public static final int DNHPEKMOPIL_FIELD_NUMBER = 116;
-  private int dnhpekmopil_;
+  public static final int STORY_QUEST_TEMPLATE_VERSION_FIELD_NUMBER = 116;
+  private int storyQuestTemplateVersion_;
   /**
-   * <code>int32 dnhpekmopil = 116;</code>
-   * @return The dnhpekmopil.
+   * <code>int32 story_quest_template_version = 116;</code>
+   * @return The storyQuestTemplateVersion.
    */
-  public int getDnhpekmopil() {
-    return dnhpekmopil_;
+  @java.lang.Override
+  public int getStoryQuestTemplateVersion() {
+    return storyQuestTemplateVersion_;
   }
 
-  public static final int IJCHJDCBBNL_FIELD_NUMBER = 117;
-  private POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl_;
+  public static final int DAILY_COUNTER_FIELD_NUMBER = 117;
+  private POGOProtos.Rpc.DailyCounterProto dailyCounter_;
   /**
-   * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
-   * @return Whether the ijchjdcbbnl field is set.
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
+   * @return Whether the dailyCounter field is set.
    */
-  public boolean hasIjchjdcbbnl() {
-    return ijchjdcbbnl_ != null;
+  @java.lang.Override
+  public boolean hasDailyCounter() {
+    return dailyCounter_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
-   * @return The ijchjdcbbnl.
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
+   * @return The dailyCounter.
    */
-  public POGOProtos.Rpc.JKJPEEMNCDK getIjchjdcbbnl() {
-    return ijchjdcbbnl_ == null ? POGOProtos.Rpc.JKJPEEMNCDK.getDefaultInstance() : ijchjdcbbnl_;
+  @java.lang.Override
+  public POGOProtos.Rpc.DailyCounterProto getDailyCounter() {
+    return dailyCounter_ == null ? POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : dailyCounter_;
   }
   /**
-   * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
    */
-  public POGOProtos.Rpc.JKJPEEMNCDKOrBuilder getIjchjdcbbnlOrBuilder() {
-    return getIjchjdcbbnl();
+  @java.lang.Override
+  public POGOProtos.Rpc.DailyCounterProtoOrBuilder getDailyCounterOrBuilder() {
+    return getDailyCounter();
   }
 
-  public static final int DHAJHGCPDIG_FIELD_NUMBER = 118;
-  private volatile java.lang.Object dhajhgcpdig_;
+  public static final int REWARD_POKEMON_ICON_URL_FIELD_NUMBER = 118;
+  private volatile java.lang.Object rewardPokemonIconUrl_;
   /**
-   * <code>string dhajhgcpdig = 118;</code>
-   * @return The dhajhgcpdig.
+   * <code>string reward_pokemon_icon_url = 118;</code>
+   * @return The rewardPokemonIconUrl.
    */
-  public java.lang.String getDhajhgcpdig() {
-    java.lang.Object ref = dhajhgcpdig_;
+  @java.lang.Override
+  public java.lang.String getRewardPokemonIconUrl() {
+    java.lang.Object ref = rewardPokemonIconUrl_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      dhajhgcpdig_ = s;
+      rewardPokemonIconUrl_ = s;
       return s;
     }
   }
   /**
-   * <code>string dhajhgcpdig = 118;</code>
-   * @return The bytes for dhajhgcpdig.
+   * <code>string reward_pokemon_icon_url = 118;</code>
+   * @return The bytes for rewardPokemonIconUrl.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
-      getDhajhgcpdigBytes() {
-    java.lang.Object ref = dhajhgcpdig_;
+      getRewardPokemonIconUrlBytes() {
+    java.lang.Object ref = rewardPokemonIconUrl_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      dhajhgcpdig_ = b;
+      rewardPokemonIconUrl_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int CBNPJDEALIL_FIELD_NUMBER = 119;
-  private long cbnpjdealil_;
+  public static final int END_TIMESTAMP_MS_FIELD_NUMBER = 119;
+  private long endTimestampMs_;
   /**
-   * <code>int64 cbnpjdealil = 119;</code>
-   * @return The cbnpjdealil.
+   * <code>int64 end_timestamp_ms = 119;</code>
+   * @return The endTimestampMs.
    */
-  public long getCbnpjdealil() {
-    return cbnpjdealil_;
+  @java.lang.Override
+  public long getEndTimestampMs() {
+    return endTimestampMs_;
   }
 
-  public static final int BCNDEEAILAL_FIELD_NUMBER = 120;
-  private boolean bcndeeailal_;
+  public static final int IS_BONUS_CHALLENGE_FIELD_NUMBER = 120;
+  private boolean isBonusChallenge_;
   /**
-   * <code>bool bcndeeailal = 120;</code>
-   * @return The bcndeeailal.
+   * <code>bool is_bonus_challenge = 120;</code>
+   * @return The isBonusChallenge.
    */
-  public boolean getBcndeeailal() {
-    return bcndeeailal_;
+  @java.lang.Override
+  public boolean getIsBonusChallenge() {
+    return isBonusChallenge_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -1526,110 +1596,110 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (afnakjnnani_ != POGOProtos.Rpc.QuestType.QUEST_UNSET.getNumber()) {
-      output.writeEnum(1, afnakjnnani_);
+    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET.getNumber()) {
+      output.writeEnum(1, questType_);
     }
-    if (eNAEHOOCEJGCase_ == 2) {
-      output.writeMessage(2, (POGOProtos.Rpc.JOMMCIINFPO) eNAEHOOCEJG_);
+    if (questCase_ == 2) {
+      output.writeMessage(2, (POGOProtos.Rpc.DailyQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 3) {
-      output.writeMessage(3, (POGOProtos.Rpc.DGJEIPAEOLI) eNAEHOOCEJG_);
+    if (questCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.MultiPartQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 4) {
-      output.writeMessage(4, (POGOProtos.Rpc.PFEHACFLHEH) eNAEHOOCEJG_);
+    if (questCase_ == 4) {
+      output.writeMessage(4, (POGOProtos.Rpc.CatchPokemonQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 5) {
-      output.writeMessage(5, (POGOProtos.Rpc.IJJLNCOJHKI) eNAEHOOCEJG_);
+    if (questCase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.AddFriendQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 6) {
-      output.writeMessage(6, (POGOProtos.Rpc.JDMMPJAPEII) eNAEHOOCEJG_);
+    if (questCase_ == 6) {
+      output.writeMessage(6, (POGOProtos.Rpc.TradePokemonQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 7) {
-      output.writeMessage(7, (POGOProtos.Rpc.BNEFOIMHJNC) eNAEHOOCEJG_);
+    if (questCase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 8) {
-      output.writeMessage(8, (POGOProtos.Rpc.HMOEEJNFGOF) eNAEHOOCEJG_);
+    if (questCase_ == 8) {
+      output.writeMessage(8, (POGOProtos.Rpc.QuestWalkProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 9) {
-      output.writeMessage(9, (POGOProtos.Rpc.PHJBMIIJKCH) eNAEHOOCEJG_);
+    if (questCase_ == 9) {
+      output.writeMessage(9, (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 10) {
-      output.writeMessage(10, (POGOProtos.Rpc.JENEKIKOHLB) eNAEHOOCEJG_);
+    if (questCase_ == 10) {
+      output.writeMessage(10, (POGOProtos.Rpc.GetStardustQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 12) {
-      output.writeMessage(12, (POGOProtos.Rpc.FMCBCIMFFBI) eNAEHOOCEJG_);
+    if (questCase_ == 12) {
+      output.writeMessage(12, (POGOProtos.Rpc.GeotargetedQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 13) {
-      output.writeMessage(13, (POGOProtos.Rpc.MJGCDOLJOFF) eNAEHOOCEJG_);
+    if (questCase_ == 13) {
+      output.writeMessage(13, (POGOProtos.Rpc.BuddyEvolutionWalkQuestProto) quest_);
     }
-    if (kcaedekdinf_ != null) {
-      output.writeMessage(98, getKcaedekdinf());
+    if (withSingleDay_ != null) {
+      output.writeMessage(98, getWithSingleDay());
     }
-    if (phahedfolbe_ != null) {
-      output.writeMessage(99, getPhahedfolbe());
+    if (daysInArow_ != null) {
+      output.writeMessage(99, getDaysInArow());
     }
-    if (!getLpcmifggiglBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 100, lpcmifggigl_);
+    if (!getQuestIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 100, questId_);
     }
-    if (jifnahbilfm_ != 0L) {
-      output.writeInt64(101, jifnahbilfm_);
+    if (questSeed_ != 0L) {
+      output.writeInt64(101, questSeed_);
     }
-    if (jbganbdeodh_ != POGOProtos.Rpc.QuestProto.EGGDDOBICIL.UNSET.getNumber()) {
-      output.writeEnum(102, jbganbdeodh_);
+    if (questContext_ != POGOProtos.Rpc.QuestProto.Context.UNSET.getNumber()) {
+      output.writeEnum(102, questContext_);
     }
-    if (!getJolfandfilbBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 103, jolfandfilb_);
+    if (!getTemplateIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 103, templateId_);
     }
-    if (logbdoecccg_ != 0) {
-      output.writeInt32(104, logbdoecccg_);
+    if (progress_ != 0) {
+      output.writeInt32(104, progress_);
     }
-    if (phjdlkbadke_ != null) {
-      output.writeMessage(105, getPhjdlkbadke());
+    if (goal_ != null) {
+      output.writeMessage(105, getGoal());
     }
-    if (oemhknkemca_ != POGOProtos.Rpc.QuestProto.DAHCDGKHIII.STATUS_UNDEFINED.getNumber()) {
-      output.writeEnum(106, oemhknkemca_);
+    if (status_ != POGOProtos.Rpc.QuestProto.Status.STATUS_UNDEFINED.getNumber()) {
+      output.writeEnum(106, status_);
     }
-    for (int i = 0; i < fhpgnphjmlo_.size(); i++) {
-      output.writeMessage(107, fhpgnphjmlo_.get(i));
+    for (int i = 0; i < questRewards_.size(); i++) {
+      output.writeMessage(107, questRewards_.get(i));
     }
-    if (ieilnkilhck_ != 0L) {
-      output.writeInt64(108, ieilnkilhck_);
+    if (creationTimestampMs_ != 0L) {
+      output.writeInt64(108, creationTimestampMs_);
     }
-    if (pdncmodpaan_ != 0L) {
-      output.writeInt64(109, pdncmodpaan_);
+    if (lastUpdateTimestampMs_ != 0L) {
+      output.writeInt64(109, lastUpdateTimestampMs_);
     }
-    if (cnjdonojmpg_ != 0L) {
-      output.writeInt64(110, cnjdonojmpg_);
+    if (completionTimestampMs_ != 0L) {
+      output.writeInt64(110, completionTimestampMs_);
     }
-    if (!getDlangcndbfiBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 111, dlangcndbfi_);
+    if (!getFortIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 111, fortId_);
     }
-    if (iaghmalcdnj_ != false) {
-      output.writeBool(112, iaghmalcdnj_);
+    if (adminGenerated_ != false) {
+      output.writeBool(112, adminGenerated_);
     }
-    if (cpglhicleeb_ != false) {
-      output.writeBool(113, cpglhicleeb_);
+    if (stampCountOverrideEnabled_ != false) {
+      output.writeBool(113, stampCountOverrideEnabled_);
     }
-    if (pkkfjkjdgei_ != 0) {
-      output.writeInt32(114, pkkfjkjdgei_);
+    if (stampCountOverride_ != 0) {
+      output.writeInt32(114, stampCountOverride_);
     }
-    if (feacpfogjkf_ != 0L) {
-      output.writeInt64(115, feacpfogjkf_);
+    if (s2CellId_ != 0L) {
+      output.writeInt64(115, s2CellId_);
     }
-    if (dnhpekmopil_ != 0) {
-      output.writeInt32(116, dnhpekmopil_);
+    if (storyQuestTemplateVersion_ != 0) {
+      output.writeInt32(116, storyQuestTemplateVersion_);
     }
-    if (ijchjdcbbnl_ != null) {
-      output.writeMessage(117, getIjchjdcbbnl());
+    if (dailyCounter_ != null) {
+      output.writeMessage(117, getDailyCounter());
     }
-    if (!getDhajhgcpdigBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 118, dhajhgcpdig_);
+    if (!getRewardPokemonIconUrlBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 118, rewardPokemonIconUrl_);
     }
-    if (cbnpjdealil_ != 0L) {
-      output.writeInt64(119, cbnpjdealil_);
+    if (endTimestampMs_ != 0L) {
+      output.writeInt64(119, endTimestampMs_);
     }
-    if (bcndeeailal_ != false) {
-      output.writeBool(120, bcndeeailal_);
+    if (isBonusChallenge_ != false) {
+      output.writeBool(120, isBonusChallenge_);
     }
     unknownFields.writeTo(output);
   }
@@ -1640,141 +1710,141 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (afnakjnnani_ != POGOProtos.Rpc.QuestType.QUEST_UNSET.getNumber()) {
+    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, afnakjnnani_);
+        .computeEnumSize(1, questType_);
     }
-    if (eNAEHOOCEJGCase_ == 2) {
+    if (questCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, (POGOProtos.Rpc.JOMMCIINFPO) eNAEHOOCEJG_);
+        .computeMessageSize(2, (POGOProtos.Rpc.DailyQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 3) {
+    if (questCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, (POGOProtos.Rpc.DGJEIPAEOLI) eNAEHOOCEJG_);
+        .computeMessageSize(3, (POGOProtos.Rpc.MultiPartQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 4) {
+    if (questCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, (POGOProtos.Rpc.PFEHACFLHEH) eNAEHOOCEJG_);
+        .computeMessageSize(4, (POGOProtos.Rpc.CatchPokemonQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 5) {
+    if (questCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, (POGOProtos.Rpc.IJJLNCOJHKI) eNAEHOOCEJG_);
+        .computeMessageSize(5, (POGOProtos.Rpc.AddFriendQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 6) {
+    if (questCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, (POGOProtos.Rpc.JDMMPJAPEII) eNAEHOOCEJG_);
+        .computeMessageSize(6, (POGOProtos.Rpc.TradePokemonQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 7) {
+    if (questCase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, (POGOProtos.Rpc.BNEFOIMHJNC) eNAEHOOCEJG_);
+        .computeMessageSize(7, (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 8) {
+    if (questCase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, (POGOProtos.Rpc.HMOEEJNFGOF) eNAEHOOCEJG_);
+        .computeMessageSize(8, (POGOProtos.Rpc.QuestWalkProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 9) {
+    if (questCase_ == 9) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, (POGOProtos.Rpc.PHJBMIIJKCH) eNAEHOOCEJG_);
+        .computeMessageSize(9, (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 10) {
+    if (questCase_ == 10) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, (POGOProtos.Rpc.JENEKIKOHLB) eNAEHOOCEJG_);
+        .computeMessageSize(10, (POGOProtos.Rpc.GetStardustQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 12) {
+    if (questCase_ == 12) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(12, (POGOProtos.Rpc.FMCBCIMFFBI) eNAEHOOCEJG_);
+        .computeMessageSize(12, (POGOProtos.Rpc.GeotargetedQuestProto) quest_);
     }
-    if (eNAEHOOCEJGCase_ == 13) {
+    if (questCase_ == 13) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(13, (POGOProtos.Rpc.MJGCDOLJOFF) eNAEHOOCEJG_);
+        .computeMessageSize(13, (POGOProtos.Rpc.BuddyEvolutionWalkQuestProto) quest_);
     }
-    if (kcaedekdinf_ != null) {
+    if (withSingleDay_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(98, getKcaedekdinf());
+        .computeMessageSize(98, getWithSingleDay());
     }
-    if (phahedfolbe_ != null) {
+    if (daysInArow_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(99, getPhahedfolbe());
+        .computeMessageSize(99, getDaysInArow());
     }
-    if (!getLpcmifggiglBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(100, lpcmifggigl_);
+    if (!getQuestIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(100, questId_);
     }
-    if (jifnahbilfm_ != 0L) {
+    if (questSeed_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(101, jifnahbilfm_);
+        .computeInt64Size(101, questSeed_);
     }
-    if (jbganbdeodh_ != POGOProtos.Rpc.QuestProto.EGGDDOBICIL.UNSET.getNumber()) {
+    if (questContext_ != POGOProtos.Rpc.QuestProto.Context.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(102, jbganbdeodh_);
+        .computeEnumSize(102, questContext_);
     }
-    if (!getJolfandfilbBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(103, jolfandfilb_);
+    if (!getTemplateIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(103, templateId_);
     }
-    if (logbdoecccg_ != 0) {
+    if (progress_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(104, logbdoecccg_);
+        .computeInt32Size(104, progress_);
     }
-    if (phjdlkbadke_ != null) {
+    if (goal_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(105, getPhjdlkbadke());
+        .computeMessageSize(105, getGoal());
     }
-    if (oemhknkemca_ != POGOProtos.Rpc.QuestProto.DAHCDGKHIII.STATUS_UNDEFINED.getNumber()) {
+    if (status_ != POGOProtos.Rpc.QuestProto.Status.STATUS_UNDEFINED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(106, oemhknkemca_);
+        .computeEnumSize(106, status_);
     }
-    for (int i = 0; i < fhpgnphjmlo_.size(); i++) {
+    for (int i = 0; i < questRewards_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(107, fhpgnphjmlo_.get(i));
+        .computeMessageSize(107, questRewards_.get(i));
     }
-    if (ieilnkilhck_ != 0L) {
+    if (creationTimestampMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(108, ieilnkilhck_);
+        .computeInt64Size(108, creationTimestampMs_);
     }
-    if (pdncmodpaan_ != 0L) {
+    if (lastUpdateTimestampMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(109, pdncmodpaan_);
+        .computeInt64Size(109, lastUpdateTimestampMs_);
     }
-    if (cnjdonojmpg_ != 0L) {
+    if (completionTimestampMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(110, cnjdonojmpg_);
+        .computeInt64Size(110, completionTimestampMs_);
     }
-    if (!getDlangcndbfiBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(111, dlangcndbfi_);
+    if (!getFortIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(111, fortId_);
     }
-    if (iaghmalcdnj_ != false) {
+    if (adminGenerated_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(112, iaghmalcdnj_);
+        .computeBoolSize(112, adminGenerated_);
     }
-    if (cpglhicleeb_ != false) {
+    if (stampCountOverrideEnabled_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(113, cpglhicleeb_);
+        .computeBoolSize(113, stampCountOverrideEnabled_);
     }
-    if (pkkfjkjdgei_ != 0) {
+    if (stampCountOverride_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(114, pkkfjkjdgei_);
+        .computeInt32Size(114, stampCountOverride_);
     }
-    if (feacpfogjkf_ != 0L) {
+    if (s2CellId_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(115, feacpfogjkf_);
+        .computeInt64Size(115, s2CellId_);
     }
-    if (dnhpekmopil_ != 0) {
+    if (storyQuestTemplateVersion_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(116, dnhpekmopil_);
+        .computeInt32Size(116, storyQuestTemplateVersion_);
     }
-    if (ijchjdcbbnl_ != null) {
+    if (dailyCounter_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(117, getIjchjdcbbnl());
+        .computeMessageSize(117, getDailyCounter());
     }
-    if (!getDhajhgcpdigBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(118, dhajhgcpdig_);
+    if (!getRewardPokemonIconUrlBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(118, rewardPokemonIconUrl_);
     }
-    if (cbnpjdealil_ != 0L) {
+    if (endTimestampMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(119, cbnpjdealil_);
+        .computeInt64Size(119, endTimestampMs_);
     }
-    if (bcndeeailal_ != false) {
+    if (isBonusChallenge_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(120, bcndeeailal_);
+        .computeBoolSize(120, isBonusChallenge_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -1791,65 +1861,65 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.QuestProto other = (POGOProtos.Rpc.QuestProto) obj;
 
-    if (afnakjnnani_ != other.afnakjnnani_) return false;
-    if (hasKcaedekdinf() != other.hasKcaedekdinf()) return false;
-    if (hasKcaedekdinf()) {
-      if (!getKcaedekdinf()
-          .equals(other.getKcaedekdinf())) return false;
+    if (questType_ != other.questType_) return false;
+    if (hasWithSingleDay() != other.hasWithSingleDay()) return false;
+    if (hasWithSingleDay()) {
+      if (!getWithSingleDay()
+          .equals(other.getWithSingleDay())) return false;
     }
-    if (hasPhahedfolbe() != other.hasPhahedfolbe()) return false;
-    if (hasPhahedfolbe()) {
-      if (!getPhahedfolbe()
-          .equals(other.getPhahedfolbe())) return false;
+    if (hasDaysInArow() != other.hasDaysInArow()) return false;
+    if (hasDaysInArow()) {
+      if (!getDaysInArow()
+          .equals(other.getDaysInArow())) return false;
     }
-    if (!getLpcmifggigl()
-        .equals(other.getLpcmifggigl())) return false;
-    if (getJifnahbilfm()
-        != other.getJifnahbilfm()) return false;
-    if (jbganbdeodh_ != other.jbganbdeodh_) return false;
-    if (!getJolfandfilb()
-        .equals(other.getJolfandfilb())) return false;
-    if (getLogbdoecccg()
-        != other.getLogbdoecccg()) return false;
-    if (hasPhjdlkbadke() != other.hasPhjdlkbadke()) return false;
-    if (hasPhjdlkbadke()) {
-      if (!getPhjdlkbadke()
-          .equals(other.getPhjdlkbadke())) return false;
+    if (!getQuestId()
+        .equals(other.getQuestId())) return false;
+    if (getQuestSeed()
+        != other.getQuestSeed()) return false;
+    if (questContext_ != other.questContext_) return false;
+    if (!getTemplateId()
+        .equals(other.getTemplateId())) return false;
+    if (getProgress()
+        != other.getProgress()) return false;
+    if (hasGoal() != other.hasGoal()) return false;
+    if (hasGoal()) {
+      if (!getGoal()
+          .equals(other.getGoal())) return false;
     }
-    if (oemhknkemca_ != other.oemhknkemca_) return false;
-    if (!getFhpgnphjmloList()
-        .equals(other.getFhpgnphjmloList())) return false;
-    if (getIeilnkilhck()
-        != other.getIeilnkilhck()) return false;
-    if (getPdncmodpaan()
-        != other.getPdncmodpaan()) return false;
-    if (getCnjdonojmpg()
-        != other.getCnjdonojmpg()) return false;
-    if (!getDlangcndbfi()
-        .equals(other.getDlangcndbfi())) return false;
-    if (getIaghmalcdnj()
-        != other.getIaghmalcdnj()) return false;
-    if (getCpglhicleeb()
-        != other.getCpglhicleeb()) return false;
-    if (getPkkfjkjdgei()
-        != other.getPkkfjkjdgei()) return false;
-    if (getFeacpfogjkf()
-        != other.getFeacpfogjkf()) return false;
-    if (getDnhpekmopil()
-        != other.getDnhpekmopil()) return false;
-    if (hasIjchjdcbbnl() != other.hasIjchjdcbbnl()) return false;
-    if (hasIjchjdcbbnl()) {
-      if (!getIjchjdcbbnl()
-          .equals(other.getIjchjdcbbnl())) return false;
+    if (status_ != other.status_) return false;
+    if (!getQuestRewardsList()
+        .equals(other.getQuestRewardsList())) return false;
+    if (getCreationTimestampMs()
+        != other.getCreationTimestampMs()) return false;
+    if (getLastUpdateTimestampMs()
+        != other.getLastUpdateTimestampMs()) return false;
+    if (getCompletionTimestampMs()
+        != other.getCompletionTimestampMs()) return false;
+    if (!getFortId()
+        .equals(other.getFortId())) return false;
+    if (getAdminGenerated()
+        != other.getAdminGenerated()) return false;
+    if (getStampCountOverrideEnabled()
+        != other.getStampCountOverrideEnabled()) return false;
+    if (getStampCountOverride()
+        != other.getStampCountOverride()) return false;
+    if (getS2CellId()
+        != other.getS2CellId()) return false;
+    if (getStoryQuestTemplateVersion()
+        != other.getStoryQuestTemplateVersion()) return false;
+    if (hasDailyCounter() != other.hasDailyCounter()) return false;
+    if (hasDailyCounter()) {
+      if (!getDailyCounter()
+          .equals(other.getDailyCounter())) return false;
     }
-    if (!getDhajhgcpdig()
-        .equals(other.getDhajhgcpdig())) return false;
-    if (getCbnpjdealil()
-        != other.getCbnpjdealil()) return false;
-    if (getBcndeeailal()
-        != other.getBcndeeailal()) return false;
-    if (!getENAEHOOCEJGCase().equals(other.getENAEHOOCEJGCase())) return false;
-    switch (eNAEHOOCEJGCase_) {
+    if (!getRewardPokemonIconUrl()
+        .equals(other.getRewardPokemonIconUrl())) return false;
+    if (getEndTimestampMs()
+        != other.getEndTimestampMs()) return false;
+    if (getIsBonusChallenge()
+        != other.getIsBonusChallenge()) return false;
+    if (!getQuestCase().equals(other.getQuestCase())) return false;
+    switch (questCase_) {
       case 2:
         if (!getDailyQuest()
             .equals(other.getDailyQuest())) return false;
@@ -1908,74 +1978,74 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + AFNAKJNNANI_FIELD_NUMBER;
-    hash = (53 * hash) + afnakjnnani_;
-    if (hasKcaedekdinf()) {
-      hash = (37 * hash) + KCAEDEKDINF_FIELD_NUMBER;
-      hash = (53 * hash) + getKcaedekdinf().hashCode();
+    hash = (37 * hash) + QUEST_TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + questType_;
+    if (hasWithSingleDay()) {
+      hash = (37 * hash) + WITH_SINGLE_DAY_FIELD_NUMBER;
+      hash = (53 * hash) + getWithSingleDay().hashCode();
     }
-    if (hasPhahedfolbe()) {
-      hash = (37 * hash) + PHAHEDFOLBE_FIELD_NUMBER;
-      hash = (53 * hash) + getPhahedfolbe().hashCode();
+    if (hasDaysInArow()) {
+      hash = (37 * hash) + DAYS_IN_AROW_FIELD_NUMBER;
+      hash = (53 * hash) + getDaysInArow().hashCode();
     }
-    hash = (37 * hash) + LPCMIFGGIGL_FIELD_NUMBER;
-    hash = (53 * hash) + getLpcmifggigl().hashCode();
-    hash = (37 * hash) + JIFNAHBILFM_FIELD_NUMBER;
+    hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getQuestId().hashCode();
+    hash = (37 * hash) + QUEST_SEED_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getJifnahbilfm());
-    hash = (37 * hash) + JBGANBDEODH_FIELD_NUMBER;
-    hash = (53 * hash) + jbganbdeodh_;
-    hash = (37 * hash) + JOLFANDFILB_FIELD_NUMBER;
-    hash = (53 * hash) + getJolfandfilb().hashCode();
-    hash = (37 * hash) + LOGBDOECCCG_FIELD_NUMBER;
-    hash = (53 * hash) + getLogbdoecccg();
-    if (hasPhjdlkbadke()) {
-      hash = (37 * hash) + PHJDLKBADKE_FIELD_NUMBER;
-      hash = (53 * hash) + getPhjdlkbadke().hashCode();
+        getQuestSeed());
+    hash = (37 * hash) + QUEST_CONTEXT_FIELD_NUMBER;
+    hash = (53 * hash) + questContext_;
+    hash = (37 * hash) + TEMPLATE_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getTemplateId().hashCode();
+    hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
+    hash = (53 * hash) + getProgress();
+    if (hasGoal()) {
+      hash = (37 * hash) + GOAL_FIELD_NUMBER;
+      hash = (53 * hash) + getGoal().hashCode();
     }
-    hash = (37 * hash) + OEMHKNKEMCA_FIELD_NUMBER;
-    hash = (53 * hash) + oemhknkemca_;
-    if (getFhpgnphjmloCount() > 0) {
-      hash = (37 * hash) + FHPGNPHJMLO_FIELD_NUMBER;
-      hash = (53 * hash) + getFhpgnphjmloList().hashCode();
+    hash = (37 * hash) + STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + status_;
+    if (getQuestRewardsCount() > 0) {
+      hash = (37 * hash) + QUEST_REWARDS_FIELD_NUMBER;
+      hash = (53 * hash) + getQuestRewardsList().hashCode();
     }
-    hash = (37 * hash) + IEILNKILHCK_FIELD_NUMBER;
+    hash = (37 * hash) + CREATION_TIMESTAMP_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getIeilnkilhck());
-    hash = (37 * hash) + PDNCMODPAAN_FIELD_NUMBER;
+        getCreationTimestampMs());
+    hash = (37 * hash) + LAST_UPDATE_TIMESTAMP_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getPdncmodpaan());
-    hash = (37 * hash) + CNJDONOJMPG_FIELD_NUMBER;
+        getLastUpdateTimestampMs());
+    hash = (37 * hash) + COMPLETION_TIMESTAMP_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getCnjdonojmpg());
-    hash = (37 * hash) + DLANGCNDBFI_FIELD_NUMBER;
-    hash = (53 * hash) + getDlangcndbfi().hashCode();
-    hash = (37 * hash) + IAGHMALCDNJ_FIELD_NUMBER;
+        getCompletionTimestampMs());
+    hash = (37 * hash) + FORT_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getFortId().hashCode();
+    hash = (37 * hash) + ADMIN_GENERATED_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getIaghmalcdnj());
-    hash = (37 * hash) + CPGLHICLEEB_FIELD_NUMBER;
+        getAdminGenerated());
+    hash = (37 * hash) + STAMP_COUNT_OVERRIDE_ENABLED_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getCpglhicleeb());
-    hash = (37 * hash) + PKKFJKJDGEI_FIELD_NUMBER;
-    hash = (53 * hash) + getPkkfjkjdgei();
-    hash = (37 * hash) + FEACPFOGJKF_FIELD_NUMBER;
+        getStampCountOverrideEnabled());
+    hash = (37 * hash) + STAMP_COUNT_OVERRIDE_FIELD_NUMBER;
+    hash = (53 * hash) + getStampCountOverride();
+    hash = (37 * hash) + S2_CELL_ID_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getFeacpfogjkf());
-    hash = (37 * hash) + DNHPEKMOPIL_FIELD_NUMBER;
-    hash = (53 * hash) + getDnhpekmopil();
-    if (hasIjchjdcbbnl()) {
-      hash = (37 * hash) + IJCHJDCBBNL_FIELD_NUMBER;
-      hash = (53 * hash) + getIjchjdcbbnl().hashCode();
+        getS2CellId());
+    hash = (37 * hash) + STORY_QUEST_TEMPLATE_VERSION_FIELD_NUMBER;
+    hash = (53 * hash) + getStoryQuestTemplateVersion();
+    if (hasDailyCounter()) {
+      hash = (37 * hash) + DAILY_COUNTER_FIELD_NUMBER;
+      hash = (53 * hash) + getDailyCounter().hashCode();
     }
-    hash = (37 * hash) + DHAJHGCPDIG_FIELD_NUMBER;
-    hash = (53 * hash) + getDhajhgcpdig().hashCode();
-    hash = (37 * hash) + CBNPJDEALIL_FIELD_NUMBER;
+    hash = (37 * hash) + REWARD_POKEMON_ICON_URL_FIELD_NUMBER;
+    hash = (53 * hash) + getRewardPokemonIconUrl().hashCode();
+    hash = (37 * hash) + END_TIMESTAMP_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getCbnpjdealil());
-    hash = (37 * hash) + BCNDEEAILAL_FIELD_NUMBER;
+        getEndTimestampMs());
+    hash = (37 * hash) + IS_BONUS_CHALLENGE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getBcndeeailal());
-    switch (eNAEHOOCEJGCase_) {
+        getIsBonusChallenge());
+    switch (questCase_) {
       case 2:
         hash = (37 * hash) + DAILY_QUEST_FIELD_NUMBER;
         hash = (53 * hash) + getDailyQuest().hashCode();
@@ -2151,82 +2221,82 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
-        getFhpgnphjmloFieldBuilder();
+        getQuestRewardsFieldBuilder();
       }
     }
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      afnakjnnani_ = 0;
+      questType_ = 0;
 
-      if (kcaedekdinfBuilder_ == null) {
-        kcaedekdinf_ = null;
+      if (withSingleDayBuilder_ == null) {
+        withSingleDay_ = null;
       } else {
-        kcaedekdinf_ = null;
-        kcaedekdinfBuilder_ = null;
+        withSingleDay_ = null;
+        withSingleDayBuilder_ = null;
       }
-      if (phahedfolbeBuilder_ == null) {
-        phahedfolbe_ = null;
+      if (daysInArowBuilder_ == null) {
+        daysInArow_ = null;
       } else {
-        phahedfolbe_ = null;
-        phahedfolbeBuilder_ = null;
+        daysInArow_ = null;
+        daysInArowBuilder_ = null;
       }
-      lpcmifggigl_ = "";
+      questId_ = "";
 
-      jifnahbilfm_ = 0L;
+      questSeed_ = 0L;
 
-      jbganbdeodh_ = 0;
+      questContext_ = 0;
 
-      jolfandfilb_ = "";
+      templateId_ = "";
 
-      logbdoecccg_ = 0;
+      progress_ = 0;
 
-      if (phjdlkbadkeBuilder_ == null) {
-        phjdlkbadke_ = null;
+      if (goalBuilder_ == null) {
+        goal_ = null;
       } else {
-        phjdlkbadke_ = null;
-        phjdlkbadkeBuilder_ = null;
+        goal_ = null;
+        goalBuilder_ = null;
       }
-      oemhknkemca_ = 0;
+      status_ = 0;
 
-      if (fhpgnphjmloBuilder_ == null) {
-        fhpgnphjmlo_ = java.util.Collections.emptyList();
+      if (questRewardsBuilder_ == null) {
+        questRewards_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
       } else {
-        fhpgnphjmloBuilder_.clear();
+        questRewardsBuilder_.clear();
       }
-      ieilnkilhck_ = 0L;
+      creationTimestampMs_ = 0L;
 
-      pdncmodpaan_ = 0L;
+      lastUpdateTimestampMs_ = 0L;
 
-      cnjdonojmpg_ = 0L;
+      completionTimestampMs_ = 0L;
 
-      dlangcndbfi_ = "";
+      fortId_ = "";
 
-      iaghmalcdnj_ = false;
+      adminGenerated_ = false;
 
-      cpglhicleeb_ = false;
+      stampCountOverrideEnabled_ = false;
 
-      pkkfjkjdgei_ = 0;
+      stampCountOverride_ = 0;
 
-      feacpfogjkf_ = 0L;
+      s2CellId_ = 0L;
 
-      dnhpekmopil_ = 0;
+      storyQuestTemplateVersion_ = 0;
 
-      if (ijchjdcbbnlBuilder_ == null) {
-        ijchjdcbbnl_ = null;
+      if (dailyCounterBuilder_ == null) {
+        dailyCounter_ = null;
       } else {
-        ijchjdcbbnl_ = null;
-        ijchjdcbbnlBuilder_ = null;
+        dailyCounter_ = null;
+        dailyCounterBuilder_ = null;
       }
-      dhajhgcpdig_ = "";
+      rewardPokemonIconUrl_ = "";
 
-      cbnpjdealil_ = 0L;
+      endTimestampMs_ = 0L;
 
-      bcndeeailal_ = false;
+      isBonusChallenge_ = false;
 
-      eNAEHOOCEJGCase_ = 0;
-      eNAEHOOCEJG_ = null;
+      questCase_ = 0;
+      quest_ = null;
       return this;
     }
 
@@ -2254,132 +2324,132 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.QuestProto buildPartial() {
       POGOProtos.Rpc.QuestProto result = new POGOProtos.Rpc.QuestProto(this);
       int from_bitField0_ = bitField0_;
-      if (eNAEHOOCEJGCase_ == 2) {
+      if (questCase_ == 2) {
         if (dailyQuestBuilder_ == null) {
-          result.eNAEHOOCEJG_ = eNAEHOOCEJG_;
+          result.quest_ = quest_;
         } else {
-          result.eNAEHOOCEJG_ = dailyQuestBuilder_.build();
+          result.quest_ = dailyQuestBuilder_.build();
         }
       }
-      if (eNAEHOOCEJGCase_ == 3) {
+      if (questCase_ == 3) {
         if (multiPartBuilder_ == null) {
-          result.eNAEHOOCEJG_ = eNAEHOOCEJG_;
+          result.quest_ = quest_;
         } else {
-          result.eNAEHOOCEJG_ = multiPartBuilder_.build();
+          result.quest_ = multiPartBuilder_.build();
         }
       }
-      if (eNAEHOOCEJGCase_ == 4) {
+      if (questCase_ == 4) {
         if (catchPokemonBuilder_ == null) {
-          result.eNAEHOOCEJG_ = eNAEHOOCEJG_;
+          result.quest_ = quest_;
         } else {
-          result.eNAEHOOCEJG_ = catchPokemonBuilder_.build();
+          result.quest_ = catchPokemonBuilder_.build();
         }
       }
-      if (eNAEHOOCEJGCase_ == 5) {
+      if (questCase_ == 5) {
         if (addFriendBuilder_ == null) {
-          result.eNAEHOOCEJG_ = eNAEHOOCEJG_;
+          result.quest_ = quest_;
         } else {
-          result.eNAEHOOCEJG_ = addFriendBuilder_.build();
+          result.quest_ = addFriendBuilder_.build();
         }
       }
-      if (eNAEHOOCEJGCase_ == 6) {
+      if (questCase_ == 6) {
         if (tradePokemonBuilder_ == null) {
-          result.eNAEHOOCEJG_ = eNAEHOOCEJG_;
+          result.quest_ = quest_;
         } else {
-          result.eNAEHOOCEJG_ = tradePokemonBuilder_.build();
+          result.quest_ = tradePokemonBuilder_.build();
         }
       }
-      if (eNAEHOOCEJGCase_ == 7) {
+      if (questCase_ == 7) {
         if (dailyBuddyAffectionBuilder_ == null) {
-          result.eNAEHOOCEJG_ = eNAEHOOCEJG_;
+          result.quest_ = quest_;
         } else {
-          result.eNAEHOOCEJG_ = dailyBuddyAffectionBuilder_.build();
+          result.quest_ = dailyBuddyAffectionBuilder_.build();
         }
       }
-      if (eNAEHOOCEJGCase_ == 8) {
+      if (questCase_ == 8) {
         if (questWalkBuilder_ == null) {
-          result.eNAEHOOCEJG_ = eNAEHOOCEJG_;
+          result.quest_ = quest_;
         } else {
-          result.eNAEHOOCEJG_ = questWalkBuilder_.build();
+          result.quest_ = questWalkBuilder_.build();
         }
       }
-      if (eNAEHOOCEJGCase_ == 9) {
+      if (questCase_ == 9) {
         if (evolveIntoPokemonBuilder_ == null) {
-          result.eNAEHOOCEJG_ = eNAEHOOCEJG_;
+          result.quest_ = quest_;
         } else {
-          result.eNAEHOOCEJG_ = evolveIntoPokemonBuilder_.build();
+          result.quest_ = evolveIntoPokemonBuilder_.build();
         }
       }
-      if (eNAEHOOCEJGCase_ == 10) {
+      if (questCase_ == 10) {
         if (getStardustBuilder_ == null) {
-          result.eNAEHOOCEJG_ = eNAEHOOCEJG_;
+          result.quest_ = quest_;
         } else {
-          result.eNAEHOOCEJG_ = getStardustBuilder_.build();
+          result.quest_ = getStardustBuilder_.build();
         }
       }
-      if (eNAEHOOCEJGCase_ == 12) {
+      if (questCase_ == 12) {
         if (geotargetedQuestBuilder_ == null) {
-          result.eNAEHOOCEJG_ = eNAEHOOCEJG_;
+          result.quest_ = quest_;
         } else {
-          result.eNAEHOOCEJG_ = geotargetedQuestBuilder_.build();
+          result.quest_ = geotargetedQuestBuilder_.build();
         }
       }
-      if (eNAEHOOCEJGCase_ == 13) {
+      if (questCase_ == 13) {
         if (buddyEvolutionWalkBuilder_ == null) {
-          result.eNAEHOOCEJG_ = eNAEHOOCEJG_;
+          result.quest_ = quest_;
         } else {
-          result.eNAEHOOCEJG_ = buddyEvolutionWalkBuilder_.build();
+          result.quest_ = buddyEvolutionWalkBuilder_.build();
         }
       }
-      result.afnakjnnani_ = afnakjnnani_;
-      if (kcaedekdinfBuilder_ == null) {
-        result.kcaedekdinf_ = kcaedekdinf_;
+      result.questType_ = questType_;
+      if (withSingleDayBuilder_ == null) {
+        result.withSingleDay_ = withSingleDay_;
       } else {
-        result.kcaedekdinf_ = kcaedekdinfBuilder_.build();
+        result.withSingleDay_ = withSingleDayBuilder_.build();
       }
-      if (phahedfolbeBuilder_ == null) {
-        result.phahedfolbe_ = phahedfolbe_;
+      if (daysInArowBuilder_ == null) {
+        result.daysInArow_ = daysInArow_;
       } else {
-        result.phahedfolbe_ = phahedfolbeBuilder_.build();
+        result.daysInArow_ = daysInArowBuilder_.build();
       }
-      result.lpcmifggigl_ = lpcmifggigl_;
-      result.jifnahbilfm_ = jifnahbilfm_;
-      result.jbganbdeodh_ = jbganbdeodh_;
-      result.jolfandfilb_ = jolfandfilb_;
-      result.logbdoecccg_ = logbdoecccg_;
-      if (phjdlkbadkeBuilder_ == null) {
-        result.phjdlkbadke_ = phjdlkbadke_;
+      result.questId_ = questId_;
+      result.questSeed_ = questSeed_;
+      result.questContext_ = questContext_;
+      result.templateId_ = templateId_;
+      result.progress_ = progress_;
+      if (goalBuilder_ == null) {
+        result.goal_ = goal_;
       } else {
-        result.phjdlkbadke_ = phjdlkbadkeBuilder_.build();
+        result.goal_ = goalBuilder_.build();
       }
-      result.oemhknkemca_ = oemhknkemca_;
-      if (fhpgnphjmloBuilder_ == null) {
+      result.status_ = status_;
+      if (questRewardsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
-          fhpgnphjmlo_ = java.util.Collections.unmodifiableList(fhpgnphjmlo_);
+          questRewards_ = java.util.Collections.unmodifiableList(questRewards_);
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.fhpgnphjmlo_ = fhpgnphjmlo_;
+        result.questRewards_ = questRewards_;
       } else {
-        result.fhpgnphjmlo_ = fhpgnphjmloBuilder_.build();
+        result.questRewards_ = questRewardsBuilder_.build();
       }
-      result.ieilnkilhck_ = ieilnkilhck_;
-      result.pdncmodpaan_ = pdncmodpaan_;
-      result.cnjdonojmpg_ = cnjdonojmpg_;
-      result.dlangcndbfi_ = dlangcndbfi_;
-      result.iaghmalcdnj_ = iaghmalcdnj_;
-      result.cpglhicleeb_ = cpglhicleeb_;
-      result.pkkfjkjdgei_ = pkkfjkjdgei_;
-      result.feacpfogjkf_ = feacpfogjkf_;
-      result.dnhpekmopil_ = dnhpekmopil_;
-      if (ijchjdcbbnlBuilder_ == null) {
-        result.ijchjdcbbnl_ = ijchjdcbbnl_;
+      result.creationTimestampMs_ = creationTimestampMs_;
+      result.lastUpdateTimestampMs_ = lastUpdateTimestampMs_;
+      result.completionTimestampMs_ = completionTimestampMs_;
+      result.fortId_ = fortId_;
+      result.adminGenerated_ = adminGenerated_;
+      result.stampCountOverrideEnabled_ = stampCountOverrideEnabled_;
+      result.stampCountOverride_ = stampCountOverride_;
+      result.s2CellId_ = s2CellId_;
+      result.storyQuestTemplateVersion_ = storyQuestTemplateVersion_;
+      if (dailyCounterBuilder_ == null) {
+        result.dailyCounter_ = dailyCounter_;
       } else {
-        result.ijchjdcbbnl_ = ijchjdcbbnlBuilder_.build();
+        result.dailyCounter_ = dailyCounterBuilder_.build();
       }
-      result.dhajhgcpdig_ = dhajhgcpdig_;
-      result.cbnpjdealil_ = cbnpjdealil_;
-      result.bcndeeailal_ = bcndeeailal_;
-      result.eNAEHOOCEJGCase_ = eNAEHOOCEJGCase_;
+      result.rewardPokemonIconUrl_ = rewardPokemonIconUrl_;
+      result.endTimestampMs_ = endTimestampMs_;
+      result.isBonusChallenge_ = isBonusChallenge_;
+      result.questCase_ = questCase_;
       onBuilt();
       return result;
     }
@@ -2428,106 +2498,106 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.QuestProto other) {
       if (other == POGOProtos.Rpc.QuestProto.getDefaultInstance()) return this;
-      if (other.afnakjnnani_ != 0) {
-        setAfnakjnnaniValue(other.getAfnakjnnaniValue());
+      if (other.questType_ != 0) {
+        setQuestTypeValue(other.getQuestTypeValue());
       }
-      if (other.hasKcaedekdinf()) {
-        mergeKcaedekdinf(other.getKcaedekdinf());
+      if (other.hasWithSingleDay()) {
+        mergeWithSingleDay(other.getWithSingleDay());
       }
-      if (other.hasPhahedfolbe()) {
-        mergePhahedfolbe(other.getPhahedfolbe());
+      if (other.hasDaysInArow()) {
+        mergeDaysInArow(other.getDaysInArow());
       }
-      if (!other.getLpcmifggigl().isEmpty()) {
-        lpcmifggigl_ = other.lpcmifggigl_;
+      if (!other.getQuestId().isEmpty()) {
+        questId_ = other.questId_;
         onChanged();
       }
-      if (other.getJifnahbilfm() != 0L) {
-        setJifnahbilfm(other.getJifnahbilfm());
+      if (other.getQuestSeed() != 0L) {
+        setQuestSeed(other.getQuestSeed());
       }
-      if (other.jbganbdeodh_ != 0) {
-        setJbganbdeodhValue(other.getJbganbdeodhValue());
+      if (other.questContext_ != 0) {
+        setQuestContextValue(other.getQuestContextValue());
       }
-      if (!other.getJolfandfilb().isEmpty()) {
-        jolfandfilb_ = other.jolfandfilb_;
+      if (!other.getTemplateId().isEmpty()) {
+        templateId_ = other.templateId_;
         onChanged();
       }
-      if (other.getLogbdoecccg() != 0) {
-        setLogbdoecccg(other.getLogbdoecccg());
+      if (other.getProgress() != 0) {
+        setProgress(other.getProgress());
       }
-      if (other.hasPhjdlkbadke()) {
-        mergePhjdlkbadke(other.getPhjdlkbadke());
+      if (other.hasGoal()) {
+        mergeGoal(other.getGoal());
       }
-      if (other.oemhknkemca_ != 0) {
-        setOemhknkemcaValue(other.getOemhknkemcaValue());
+      if (other.status_ != 0) {
+        setStatusValue(other.getStatusValue());
       }
-      if (fhpgnphjmloBuilder_ == null) {
-        if (!other.fhpgnphjmlo_.isEmpty()) {
-          if (fhpgnphjmlo_.isEmpty()) {
-            fhpgnphjmlo_ = other.fhpgnphjmlo_;
+      if (questRewardsBuilder_ == null) {
+        if (!other.questRewards_.isEmpty()) {
+          if (questRewards_.isEmpty()) {
+            questRewards_ = other.questRewards_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureFhpgnphjmloIsMutable();
-            fhpgnphjmlo_.addAll(other.fhpgnphjmlo_);
+            ensureQuestRewardsIsMutable();
+            questRewards_.addAll(other.questRewards_);
           }
           onChanged();
         }
       } else {
-        if (!other.fhpgnphjmlo_.isEmpty()) {
-          if (fhpgnphjmloBuilder_.isEmpty()) {
-            fhpgnphjmloBuilder_.dispose();
-            fhpgnphjmloBuilder_ = null;
-            fhpgnphjmlo_ = other.fhpgnphjmlo_;
+        if (!other.questRewards_.isEmpty()) {
+          if (questRewardsBuilder_.isEmpty()) {
+            questRewardsBuilder_.dispose();
+            questRewardsBuilder_ = null;
+            questRewards_ = other.questRewards_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            fhpgnphjmloBuilder_ = 
+            questRewardsBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getFhpgnphjmloFieldBuilder() : null;
+                 getQuestRewardsFieldBuilder() : null;
           } else {
-            fhpgnphjmloBuilder_.addAllMessages(other.fhpgnphjmlo_);
+            questRewardsBuilder_.addAllMessages(other.questRewards_);
           }
         }
       }
-      if (other.getIeilnkilhck() != 0L) {
-        setIeilnkilhck(other.getIeilnkilhck());
+      if (other.getCreationTimestampMs() != 0L) {
+        setCreationTimestampMs(other.getCreationTimestampMs());
       }
-      if (other.getPdncmodpaan() != 0L) {
-        setPdncmodpaan(other.getPdncmodpaan());
+      if (other.getLastUpdateTimestampMs() != 0L) {
+        setLastUpdateTimestampMs(other.getLastUpdateTimestampMs());
       }
-      if (other.getCnjdonojmpg() != 0L) {
-        setCnjdonojmpg(other.getCnjdonojmpg());
+      if (other.getCompletionTimestampMs() != 0L) {
+        setCompletionTimestampMs(other.getCompletionTimestampMs());
       }
-      if (!other.getDlangcndbfi().isEmpty()) {
-        dlangcndbfi_ = other.dlangcndbfi_;
+      if (!other.getFortId().isEmpty()) {
+        fortId_ = other.fortId_;
         onChanged();
       }
-      if (other.getIaghmalcdnj() != false) {
-        setIaghmalcdnj(other.getIaghmalcdnj());
+      if (other.getAdminGenerated() != false) {
+        setAdminGenerated(other.getAdminGenerated());
       }
-      if (other.getCpglhicleeb() != false) {
-        setCpglhicleeb(other.getCpglhicleeb());
+      if (other.getStampCountOverrideEnabled() != false) {
+        setStampCountOverrideEnabled(other.getStampCountOverrideEnabled());
       }
-      if (other.getPkkfjkjdgei() != 0) {
-        setPkkfjkjdgei(other.getPkkfjkjdgei());
+      if (other.getStampCountOverride() != 0) {
+        setStampCountOverride(other.getStampCountOverride());
       }
-      if (other.getFeacpfogjkf() != 0L) {
-        setFeacpfogjkf(other.getFeacpfogjkf());
+      if (other.getS2CellId() != 0L) {
+        setS2CellId(other.getS2CellId());
       }
-      if (other.getDnhpekmopil() != 0) {
-        setDnhpekmopil(other.getDnhpekmopil());
+      if (other.getStoryQuestTemplateVersion() != 0) {
+        setStoryQuestTemplateVersion(other.getStoryQuestTemplateVersion());
       }
-      if (other.hasIjchjdcbbnl()) {
-        mergeIjchjdcbbnl(other.getIjchjdcbbnl());
+      if (other.hasDailyCounter()) {
+        mergeDailyCounter(other.getDailyCounter());
       }
-      if (!other.getDhajhgcpdig().isEmpty()) {
-        dhajhgcpdig_ = other.dhajhgcpdig_;
+      if (!other.getRewardPokemonIconUrl().isEmpty()) {
+        rewardPokemonIconUrl_ = other.rewardPokemonIconUrl_;
         onChanged();
       }
-      if (other.getCbnpjdealil() != 0L) {
-        setCbnpjdealil(other.getCbnpjdealil());
+      if (other.getEndTimestampMs() != 0L) {
+        setEndTimestampMs(other.getEndTimestampMs());
       }
-      if (other.getBcndeeailal() != false) {
-        setBcndeeailal(other.getBcndeeailal());
+      if (other.getIsBonusChallenge() != false) {
+        setIsBonusChallenge(other.getIsBonusChallenge());
       }
-      switch (other.getENAEHOOCEJGCase()) {
+      switch (other.getQuestCase()) {
         case DAILY_QUEST: {
           mergeDailyQuest(other.getDailyQuest());
           break;
@@ -2572,7 +2642,7 @@ private static final long serialVersionUID = 0L;
           mergeBuddyEvolutionWalk(other.getBuddyEvolutionWalk());
           break;
         }
-        case ENAEHOOCEJG_NOT_SET: {
+        case QUEST_NOT_SET: {
           break;
         }
       }
@@ -2604,17 +2674,17 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
-    private int eNAEHOOCEJGCase_ = 0;
-    private java.lang.Object eNAEHOOCEJG_;
-    public ENAEHOOCEJGCase
-        getENAEHOOCEJGCase() {
-      return ENAEHOOCEJGCase.forNumber(
-          eNAEHOOCEJGCase_);
+    private int questCase_ = 0;
+    private java.lang.Object quest_;
+    public QuestCase
+        getQuestCase() {
+      return QuestCase.forNumber(
+          questCase_);
     }
 
-    public Builder clearENAEHOOCEJG() {
-      eNAEHOOCEJGCase_ = 0;
-      eNAEHOOCEJG_ = null;
+    public Builder clearQuest() {
+      questCase_ = 0;
+      quest_ = null;
       onChanged();
       return this;
     }
@@ -2622,3055 +2692,3106 @@ private static final long serialVersionUID = 0L;
     private int bitField0_;
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JOMMCIINFPO, POGOProtos.Rpc.JOMMCIINFPO.Builder, POGOProtos.Rpc.JOMMCIINFPOOrBuilder> dailyQuestBuilder_;
+        POGOProtos.Rpc.DailyQuestProto, POGOProtos.Rpc.DailyQuestProto.Builder, POGOProtos.Rpc.DailyQuestProtoOrBuilder> dailyQuestBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
      * @return Whether the dailyQuest field is set.
      */
+    @java.lang.Override
     public boolean hasDailyQuest() {
-      return eNAEHOOCEJGCase_ == 2;
+      return questCase_ == 2;
     }
     /**
-     * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
      * @return The dailyQuest.
      */
-    public POGOProtos.Rpc.JOMMCIINFPO getDailyQuest() {
+    @java.lang.Override
+    public POGOProtos.Rpc.DailyQuestProto getDailyQuest() {
       if (dailyQuestBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 2) {
-          return (POGOProtos.Rpc.JOMMCIINFPO) eNAEHOOCEJG_;
+        if (questCase_ == 2) {
+          return (POGOProtos.Rpc.DailyQuestProto) quest_;
         }
-        return POGOProtos.Rpc.JOMMCIINFPO.getDefaultInstance();
+        return POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
       } else {
-        if (eNAEHOOCEJGCase_ == 2) {
+        if (questCase_ == 2) {
           return dailyQuestBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.JOMMCIINFPO.getDefaultInstance();
+        return POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
      */
-    public Builder setDailyQuest(POGOProtos.Rpc.JOMMCIINFPO value) {
+    public Builder setDailyQuest(POGOProtos.Rpc.DailyQuestProto value) {
       if (dailyQuestBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eNAEHOOCEJG_ = value;
+        quest_ = value;
         onChanged();
       } else {
         dailyQuestBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 2;
+      questCase_ = 2;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
      */
     public Builder setDailyQuest(
-        POGOProtos.Rpc.JOMMCIINFPO.Builder builderForValue) {
+        POGOProtos.Rpc.DailyQuestProto.Builder builderForValue) {
       if (dailyQuestBuilder_ == null) {
-        eNAEHOOCEJG_ = builderForValue.build();
+        quest_ = builderForValue.build();
         onChanged();
       } else {
         dailyQuestBuilder_.setMessage(builderForValue.build());
       }
-      eNAEHOOCEJGCase_ = 2;
+      questCase_ = 2;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
      */
-    public Builder mergeDailyQuest(POGOProtos.Rpc.JOMMCIINFPO value) {
+    public Builder mergeDailyQuest(POGOProtos.Rpc.DailyQuestProto value) {
       if (dailyQuestBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 2 &&
-            eNAEHOOCEJG_ != POGOProtos.Rpc.JOMMCIINFPO.getDefaultInstance()) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.JOMMCIINFPO.newBuilder((POGOProtos.Rpc.JOMMCIINFPO) eNAEHOOCEJG_)
+        if (questCase_ == 2 &&
+            quest_ != POGOProtos.Rpc.DailyQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.DailyQuestProto.newBuilder((POGOProtos.Rpc.DailyQuestProto) quest_)
               .mergeFrom(value).buildPartial();
         } else {
-          eNAEHOOCEJG_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        if (eNAEHOOCEJGCase_ == 2) {
+        if (questCase_ == 2) {
           dailyQuestBuilder_.mergeFrom(value);
         }
         dailyQuestBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 2;
+      questCase_ = 2;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
      */
     public Builder clearDailyQuest() {
       if (dailyQuestBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 2) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 2) {
+          questCase_ = 0;
+          quest_ = null;
           onChanged();
         }
       } else {
-        if (eNAEHOOCEJGCase_ == 2) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 2) {
+          questCase_ = 0;
+          quest_ = null;
         }
         dailyQuestBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
      */
-    public POGOProtos.Rpc.JOMMCIINFPO.Builder getDailyQuestBuilder() {
+    public POGOProtos.Rpc.DailyQuestProto.Builder getDailyQuestBuilder() {
       return getDailyQuestFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
      */
-    public POGOProtos.Rpc.JOMMCIINFPOOrBuilder getDailyQuestOrBuilder() {
-      if ((eNAEHOOCEJGCase_ == 2) && (dailyQuestBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.DailyQuestProtoOrBuilder getDailyQuestOrBuilder() {
+      if ((questCase_ == 2) && (dailyQuestBuilder_ != null)) {
         return dailyQuestBuilder_.getMessageOrBuilder();
       } else {
-        if (eNAEHOOCEJGCase_ == 2) {
-          return (POGOProtos.Rpc.JOMMCIINFPO) eNAEHOOCEJG_;
+        if (questCase_ == 2) {
+          return (POGOProtos.Rpc.DailyQuestProto) quest_;
         }
-        return POGOProtos.Rpc.JOMMCIINFPO.getDefaultInstance();
+        return POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JOMMCIINFPO daily_quest = 2;</code>
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JOMMCIINFPO, POGOProtos.Rpc.JOMMCIINFPO.Builder, POGOProtos.Rpc.JOMMCIINFPOOrBuilder> 
+        POGOProtos.Rpc.DailyQuestProto, POGOProtos.Rpc.DailyQuestProto.Builder, POGOProtos.Rpc.DailyQuestProtoOrBuilder> 
         getDailyQuestFieldBuilder() {
       if (dailyQuestBuilder_ == null) {
-        if (!(eNAEHOOCEJGCase_ == 2)) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.JOMMCIINFPO.getDefaultInstance();
+        if (!(questCase_ == 2)) {
+          quest_ = POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
         }
         dailyQuestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.JOMMCIINFPO, POGOProtos.Rpc.JOMMCIINFPO.Builder, POGOProtos.Rpc.JOMMCIINFPOOrBuilder>(
-                (POGOProtos.Rpc.JOMMCIINFPO) eNAEHOOCEJG_,
+            POGOProtos.Rpc.DailyQuestProto, POGOProtos.Rpc.DailyQuestProto.Builder, POGOProtos.Rpc.DailyQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.DailyQuestProto) quest_,
                 getParentForChildren(),
                 isClean());
-        eNAEHOOCEJG_ = null;
+        quest_ = null;
       }
-      eNAEHOOCEJGCase_ = 2;
+      questCase_ = 2;
       onChanged();;
       return dailyQuestBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DGJEIPAEOLI, POGOProtos.Rpc.DGJEIPAEOLI.Builder, POGOProtos.Rpc.DGJEIPAEOLIOrBuilder> multiPartBuilder_;
+        POGOProtos.Rpc.MultiPartQuestProto, POGOProtos.Rpc.MultiPartQuestProto.Builder, POGOProtos.Rpc.MultiPartQuestProtoOrBuilder> multiPartBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
      * @return Whether the multiPart field is set.
      */
+    @java.lang.Override
     public boolean hasMultiPart() {
-      return eNAEHOOCEJGCase_ == 3;
+      return questCase_ == 3;
     }
     /**
-     * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
      * @return The multiPart.
      */
-    public POGOProtos.Rpc.DGJEIPAEOLI getMultiPart() {
+    @java.lang.Override
+    public POGOProtos.Rpc.MultiPartQuestProto getMultiPart() {
       if (multiPartBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 3) {
-          return (POGOProtos.Rpc.DGJEIPAEOLI) eNAEHOOCEJG_;
+        if (questCase_ == 3) {
+          return (POGOProtos.Rpc.MultiPartQuestProto) quest_;
         }
-        return POGOProtos.Rpc.DGJEIPAEOLI.getDefaultInstance();
+        return POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
       } else {
-        if (eNAEHOOCEJGCase_ == 3) {
+        if (questCase_ == 3) {
           return multiPartBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.DGJEIPAEOLI.getDefaultInstance();
+        return POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
      */
-    public Builder setMultiPart(POGOProtos.Rpc.DGJEIPAEOLI value) {
+    public Builder setMultiPart(POGOProtos.Rpc.MultiPartQuestProto value) {
       if (multiPartBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eNAEHOOCEJG_ = value;
+        quest_ = value;
         onChanged();
       } else {
         multiPartBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 3;
+      questCase_ = 3;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
      */
     public Builder setMultiPart(
-        POGOProtos.Rpc.DGJEIPAEOLI.Builder builderForValue) {
+        POGOProtos.Rpc.MultiPartQuestProto.Builder builderForValue) {
       if (multiPartBuilder_ == null) {
-        eNAEHOOCEJG_ = builderForValue.build();
+        quest_ = builderForValue.build();
         onChanged();
       } else {
         multiPartBuilder_.setMessage(builderForValue.build());
       }
-      eNAEHOOCEJGCase_ = 3;
+      questCase_ = 3;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
      */
-    public Builder mergeMultiPart(POGOProtos.Rpc.DGJEIPAEOLI value) {
+    public Builder mergeMultiPart(POGOProtos.Rpc.MultiPartQuestProto value) {
       if (multiPartBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 3 &&
-            eNAEHOOCEJG_ != POGOProtos.Rpc.DGJEIPAEOLI.getDefaultInstance()) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.DGJEIPAEOLI.newBuilder((POGOProtos.Rpc.DGJEIPAEOLI) eNAEHOOCEJG_)
+        if (questCase_ == 3 &&
+            quest_ != POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.MultiPartQuestProto.newBuilder((POGOProtos.Rpc.MultiPartQuestProto) quest_)
               .mergeFrom(value).buildPartial();
         } else {
-          eNAEHOOCEJG_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        if (eNAEHOOCEJGCase_ == 3) {
+        if (questCase_ == 3) {
           multiPartBuilder_.mergeFrom(value);
         }
         multiPartBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 3;
+      questCase_ = 3;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
      */
     public Builder clearMultiPart() {
       if (multiPartBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 3) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 3) {
+          questCase_ = 0;
+          quest_ = null;
           onChanged();
         }
       } else {
-        if (eNAEHOOCEJGCase_ == 3) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 3) {
+          questCase_ = 0;
+          quest_ = null;
         }
         multiPartBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
      */
-    public POGOProtos.Rpc.DGJEIPAEOLI.Builder getMultiPartBuilder() {
+    public POGOProtos.Rpc.MultiPartQuestProto.Builder getMultiPartBuilder() {
       return getMultiPartFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
      */
-    public POGOProtos.Rpc.DGJEIPAEOLIOrBuilder getMultiPartOrBuilder() {
-      if ((eNAEHOOCEJGCase_ == 3) && (multiPartBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.MultiPartQuestProtoOrBuilder getMultiPartOrBuilder() {
+      if ((questCase_ == 3) && (multiPartBuilder_ != null)) {
         return multiPartBuilder_.getMessageOrBuilder();
       } else {
-        if (eNAEHOOCEJGCase_ == 3) {
-          return (POGOProtos.Rpc.DGJEIPAEOLI) eNAEHOOCEJG_;
+        if (questCase_ == 3) {
+          return (POGOProtos.Rpc.MultiPartQuestProto) quest_;
         }
-        return POGOProtos.Rpc.DGJEIPAEOLI.getDefaultInstance();
+        return POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DGJEIPAEOLI multi_part = 3;</code>
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DGJEIPAEOLI, POGOProtos.Rpc.DGJEIPAEOLI.Builder, POGOProtos.Rpc.DGJEIPAEOLIOrBuilder> 
+        POGOProtos.Rpc.MultiPartQuestProto, POGOProtos.Rpc.MultiPartQuestProto.Builder, POGOProtos.Rpc.MultiPartQuestProtoOrBuilder> 
         getMultiPartFieldBuilder() {
       if (multiPartBuilder_ == null) {
-        if (!(eNAEHOOCEJGCase_ == 3)) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.DGJEIPAEOLI.getDefaultInstance();
+        if (!(questCase_ == 3)) {
+          quest_ = POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
         }
         multiPartBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.DGJEIPAEOLI, POGOProtos.Rpc.DGJEIPAEOLI.Builder, POGOProtos.Rpc.DGJEIPAEOLIOrBuilder>(
-                (POGOProtos.Rpc.DGJEIPAEOLI) eNAEHOOCEJG_,
+            POGOProtos.Rpc.MultiPartQuestProto, POGOProtos.Rpc.MultiPartQuestProto.Builder, POGOProtos.Rpc.MultiPartQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.MultiPartQuestProto) quest_,
                 getParentForChildren(),
                 isClean());
-        eNAEHOOCEJG_ = null;
+        quest_ = null;
       }
-      eNAEHOOCEJGCase_ = 3;
+      questCase_ = 3;
       onChanged();;
       return multiPartBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PFEHACFLHEH, POGOProtos.Rpc.PFEHACFLHEH.Builder, POGOProtos.Rpc.PFEHACFLHEHOrBuilder> catchPokemonBuilder_;
+        POGOProtos.Rpc.CatchPokemonQuestProto, POGOProtos.Rpc.CatchPokemonQuestProto.Builder, POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder> catchPokemonBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
      * @return Whether the catchPokemon field is set.
      */
+    @java.lang.Override
     public boolean hasCatchPokemon() {
-      return eNAEHOOCEJGCase_ == 4;
+      return questCase_ == 4;
     }
     /**
-     * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
      * @return The catchPokemon.
      */
-    public POGOProtos.Rpc.PFEHACFLHEH getCatchPokemon() {
+    @java.lang.Override
+    public POGOProtos.Rpc.CatchPokemonQuestProto getCatchPokemon() {
       if (catchPokemonBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 4) {
-          return (POGOProtos.Rpc.PFEHACFLHEH) eNAEHOOCEJG_;
+        if (questCase_ == 4) {
+          return (POGOProtos.Rpc.CatchPokemonQuestProto) quest_;
         }
-        return POGOProtos.Rpc.PFEHACFLHEH.getDefaultInstance();
+        return POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
       } else {
-        if (eNAEHOOCEJGCase_ == 4) {
+        if (questCase_ == 4) {
           return catchPokemonBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.PFEHACFLHEH.getDefaultInstance();
+        return POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
      */
-    public Builder setCatchPokemon(POGOProtos.Rpc.PFEHACFLHEH value) {
+    public Builder setCatchPokemon(POGOProtos.Rpc.CatchPokemonQuestProto value) {
       if (catchPokemonBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eNAEHOOCEJG_ = value;
+        quest_ = value;
         onChanged();
       } else {
         catchPokemonBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 4;
+      questCase_ = 4;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
      */
     public Builder setCatchPokemon(
-        POGOProtos.Rpc.PFEHACFLHEH.Builder builderForValue) {
+        POGOProtos.Rpc.CatchPokemonQuestProto.Builder builderForValue) {
       if (catchPokemonBuilder_ == null) {
-        eNAEHOOCEJG_ = builderForValue.build();
+        quest_ = builderForValue.build();
         onChanged();
       } else {
         catchPokemonBuilder_.setMessage(builderForValue.build());
       }
-      eNAEHOOCEJGCase_ = 4;
+      questCase_ = 4;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
      */
-    public Builder mergeCatchPokemon(POGOProtos.Rpc.PFEHACFLHEH value) {
+    public Builder mergeCatchPokemon(POGOProtos.Rpc.CatchPokemonQuestProto value) {
       if (catchPokemonBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 4 &&
-            eNAEHOOCEJG_ != POGOProtos.Rpc.PFEHACFLHEH.getDefaultInstance()) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.PFEHACFLHEH.newBuilder((POGOProtos.Rpc.PFEHACFLHEH) eNAEHOOCEJG_)
+        if (questCase_ == 4 &&
+            quest_ != POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.CatchPokemonQuestProto.newBuilder((POGOProtos.Rpc.CatchPokemonQuestProto) quest_)
               .mergeFrom(value).buildPartial();
         } else {
-          eNAEHOOCEJG_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        if (eNAEHOOCEJGCase_ == 4) {
+        if (questCase_ == 4) {
           catchPokemonBuilder_.mergeFrom(value);
         }
         catchPokemonBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 4;
+      questCase_ = 4;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
      */
     public Builder clearCatchPokemon() {
       if (catchPokemonBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 4) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 4) {
+          questCase_ = 0;
+          quest_ = null;
           onChanged();
         }
       } else {
-        if (eNAEHOOCEJGCase_ == 4) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 4) {
+          questCase_ = 0;
+          quest_ = null;
         }
         catchPokemonBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
      */
-    public POGOProtos.Rpc.PFEHACFLHEH.Builder getCatchPokemonBuilder() {
+    public POGOProtos.Rpc.CatchPokemonQuestProto.Builder getCatchPokemonBuilder() {
       return getCatchPokemonFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
      */
-    public POGOProtos.Rpc.PFEHACFLHEHOrBuilder getCatchPokemonOrBuilder() {
-      if ((eNAEHOOCEJGCase_ == 4) && (catchPokemonBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder getCatchPokemonOrBuilder() {
+      if ((questCase_ == 4) && (catchPokemonBuilder_ != null)) {
         return catchPokemonBuilder_.getMessageOrBuilder();
       } else {
-        if (eNAEHOOCEJGCase_ == 4) {
-          return (POGOProtos.Rpc.PFEHACFLHEH) eNAEHOOCEJG_;
+        if (questCase_ == 4) {
+          return (POGOProtos.Rpc.CatchPokemonQuestProto) quest_;
         }
-        return POGOProtos.Rpc.PFEHACFLHEH.getDefaultInstance();
+        return POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PFEHACFLHEH catch_pokemon = 4;</code>
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PFEHACFLHEH, POGOProtos.Rpc.PFEHACFLHEH.Builder, POGOProtos.Rpc.PFEHACFLHEHOrBuilder> 
+        POGOProtos.Rpc.CatchPokemonQuestProto, POGOProtos.Rpc.CatchPokemonQuestProto.Builder, POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder> 
         getCatchPokemonFieldBuilder() {
       if (catchPokemonBuilder_ == null) {
-        if (!(eNAEHOOCEJGCase_ == 4)) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.PFEHACFLHEH.getDefaultInstance();
+        if (!(questCase_ == 4)) {
+          quest_ = POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
         }
         catchPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PFEHACFLHEH, POGOProtos.Rpc.PFEHACFLHEH.Builder, POGOProtos.Rpc.PFEHACFLHEHOrBuilder>(
-                (POGOProtos.Rpc.PFEHACFLHEH) eNAEHOOCEJG_,
+            POGOProtos.Rpc.CatchPokemonQuestProto, POGOProtos.Rpc.CatchPokemonQuestProto.Builder, POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.CatchPokemonQuestProto) quest_,
                 getParentForChildren(),
                 isClean());
-        eNAEHOOCEJG_ = null;
+        quest_ = null;
       }
-      eNAEHOOCEJGCase_ = 4;
+      questCase_ = 4;
       onChanged();;
       return catchPokemonBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.IJJLNCOJHKI, POGOProtos.Rpc.IJJLNCOJHKI.Builder, POGOProtos.Rpc.IJJLNCOJHKIOrBuilder> addFriendBuilder_;
+        POGOProtos.Rpc.AddFriendQuestProto, POGOProtos.Rpc.AddFriendQuestProto.Builder, POGOProtos.Rpc.AddFriendQuestProtoOrBuilder> addFriendBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
      * @return Whether the addFriend field is set.
      */
+    @java.lang.Override
     public boolean hasAddFriend() {
-      return eNAEHOOCEJGCase_ == 5;
+      return questCase_ == 5;
     }
     /**
-     * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
      * @return The addFriend.
      */
-    public POGOProtos.Rpc.IJJLNCOJHKI getAddFriend() {
+    @java.lang.Override
+    public POGOProtos.Rpc.AddFriendQuestProto getAddFriend() {
       if (addFriendBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 5) {
-          return (POGOProtos.Rpc.IJJLNCOJHKI) eNAEHOOCEJG_;
+        if (questCase_ == 5) {
+          return (POGOProtos.Rpc.AddFriendQuestProto) quest_;
         }
-        return POGOProtos.Rpc.IJJLNCOJHKI.getDefaultInstance();
+        return POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
       } else {
-        if (eNAEHOOCEJGCase_ == 5) {
+        if (questCase_ == 5) {
           return addFriendBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.IJJLNCOJHKI.getDefaultInstance();
+        return POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
      */
-    public Builder setAddFriend(POGOProtos.Rpc.IJJLNCOJHKI value) {
+    public Builder setAddFriend(POGOProtos.Rpc.AddFriendQuestProto value) {
       if (addFriendBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eNAEHOOCEJG_ = value;
+        quest_ = value;
         onChanged();
       } else {
         addFriendBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 5;
+      questCase_ = 5;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
      */
     public Builder setAddFriend(
-        POGOProtos.Rpc.IJJLNCOJHKI.Builder builderForValue) {
+        POGOProtos.Rpc.AddFriendQuestProto.Builder builderForValue) {
       if (addFriendBuilder_ == null) {
-        eNAEHOOCEJG_ = builderForValue.build();
+        quest_ = builderForValue.build();
         onChanged();
       } else {
         addFriendBuilder_.setMessage(builderForValue.build());
       }
-      eNAEHOOCEJGCase_ = 5;
+      questCase_ = 5;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
      */
-    public Builder mergeAddFriend(POGOProtos.Rpc.IJJLNCOJHKI value) {
+    public Builder mergeAddFriend(POGOProtos.Rpc.AddFriendQuestProto value) {
       if (addFriendBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 5 &&
-            eNAEHOOCEJG_ != POGOProtos.Rpc.IJJLNCOJHKI.getDefaultInstance()) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.IJJLNCOJHKI.newBuilder((POGOProtos.Rpc.IJJLNCOJHKI) eNAEHOOCEJG_)
+        if (questCase_ == 5 &&
+            quest_ != POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.AddFriendQuestProto.newBuilder((POGOProtos.Rpc.AddFriendQuestProto) quest_)
               .mergeFrom(value).buildPartial();
         } else {
-          eNAEHOOCEJG_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        if (eNAEHOOCEJGCase_ == 5) {
+        if (questCase_ == 5) {
           addFriendBuilder_.mergeFrom(value);
         }
         addFriendBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 5;
+      questCase_ = 5;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
      */
     public Builder clearAddFriend() {
       if (addFriendBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 5) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 5) {
+          questCase_ = 0;
+          quest_ = null;
           onChanged();
         }
       } else {
-        if (eNAEHOOCEJGCase_ == 5) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 5) {
+          questCase_ = 0;
+          quest_ = null;
         }
         addFriendBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
      */
-    public POGOProtos.Rpc.IJJLNCOJHKI.Builder getAddFriendBuilder() {
+    public POGOProtos.Rpc.AddFriendQuestProto.Builder getAddFriendBuilder() {
       return getAddFriendFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
      */
-    public POGOProtos.Rpc.IJJLNCOJHKIOrBuilder getAddFriendOrBuilder() {
-      if ((eNAEHOOCEJGCase_ == 5) && (addFriendBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.AddFriendQuestProtoOrBuilder getAddFriendOrBuilder() {
+      if ((questCase_ == 5) && (addFriendBuilder_ != null)) {
         return addFriendBuilder_.getMessageOrBuilder();
       } else {
-        if (eNAEHOOCEJGCase_ == 5) {
-          return (POGOProtos.Rpc.IJJLNCOJHKI) eNAEHOOCEJG_;
+        if (questCase_ == 5) {
+          return (POGOProtos.Rpc.AddFriendQuestProto) quest_;
         }
-        return POGOProtos.Rpc.IJJLNCOJHKI.getDefaultInstance();
+        return POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.IJJLNCOJHKI add_friend = 5;</code>
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.IJJLNCOJHKI, POGOProtos.Rpc.IJJLNCOJHKI.Builder, POGOProtos.Rpc.IJJLNCOJHKIOrBuilder> 
+        POGOProtos.Rpc.AddFriendQuestProto, POGOProtos.Rpc.AddFriendQuestProto.Builder, POGOProtos.Rpc.AddFriendQuestProtoOrBuilder> 
         getAddFriendFieldBuilder() {
       if (addFriendBuilder_ == null) {
-        if (!(eNAEHOOCEJGCase_ == 5)) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.IJJLNCOJHKI.getDefaultInstance();
+        if (!(questCase_ == 5)) {
+          quest_ = POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
         }
         addFriendBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.IJJLNCOJHKI, POGOProtos.Rpc.IJJLNCOJHKI.Builder, POGOProtos.Rpc.IJJLNCOJHKIOrBuilder>(
-                (POGOProtos.Rpc.IJJLNCOJHKI) eNAEHOOCEJG_,
+            POGOProtos.Rpc.AddFriendQuestProto, POGOProtos.Rpc.AddFriendQuestProto.Builder, POGOProtos.Rpc.AddFriendQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.AddFriendQuestProto) quest_,
                 getParentForChildren(),
                 isClean());
-        eNAEHOOCEJG_ = null;
+        quest_ = null;
       }
-      eNAEHOOCEJGCase_ = 5;
+      questCase_ = 5;
       onChanged();;
       return addFriendBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JDMMPJAPEII, POGOProtos.Rpc.JDMMPJAPEII.Builder, POGOProtos.Rpc.JDMMPJAPEIIOrBuilder> tradePokemonBuilder_;
+        POGOProtos.Rpc.TradePokemonQuestProto, POGOProtos.Rpc.TradePokemonQuestProto.Builder, POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder> tradePokemonBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
      * @return Whether the tradePokemon field is set.
      */
+    @java.lang.Override
     public boolean hasTradePokemon() {
-      return eNAEHOOCEJGCase_ == 6;
+      return questCase_ == 6;
     }
     /**
-     * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
      * @return The tradePokemon.
      */
-    public POGOProtos.Rpc.JDMMPJAPEII getTradePokemon() {
+    @java.lang.Override
+    public POGOProtos.Rpc.TradePokemonQuestProto getTradePokemon() {
       if (tradePokemonBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 6) {
-          return (POGOProtos.Rpc.JDMMPJAPEII) eNAEHOOCEJG_;
+        if (questCase_ == 6) {
+          return (POGOProtos.Rpc.TradePokemonQuestProto) quest_;
         }
-        return POGOProtos.Rpc.JDMMPJAPEII.getDefaultInstance();
+        return POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
       } else {
-        if (eNAEHOOCEJGCase_ == 6) {
+        if (questCase_ == 6) {
           return tradePokemonBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.JDMMPJAPEII.getDefaultInstance();
+        return POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
      */
-    public Builder setTradePokemon(POGOProtos.Rpc.JDMMPJAPEII value) {
+    public Builder setTradePokemon(POGOProtos.Rpc.TradePokemonQuestProto value) {
       if (tradePokemonBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eNAEHOOCEJG_ = value;
+        quest_ = value;
         onChanged();
       } else {
         tradePokemonBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 6;
+      questCase_ = 6;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
      */
     public Builder setTradePokemon(
-        POGOProtos.Rpc.JDMMPJAPEII.Builder builderForValue) {
+        POGOProtos.Rpc.TradePokemonQuestProto.Builder builderForValue) {
       if (tradePokemonBuilder_ == null) {
-        eNAEHOOCEJG_ = builderForValue.build();
+        quest_ = builderForValue.build();
         onChanged();
       } else {
         tradePokemonBuilder_.setMessage(builderForValue.build());
       }
-      eNAEHOOCEJGCase_ = 6;
+      questCase_ = 6;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
      */
-    public Builder mergeTradePokemon(POGOProtos.Rpc.JDMMPJAPEII value) {
+    public Builder mergeTradePokemon(POGOProtos.Rpc.TradePokemonQuestProto value) {
       if (tradePokemonBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 6 &&
-            eNAEHOOCEJG_ != POGOProtos.Rpc.JDMMPJAPEII.getDefaultInstance()) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.JDMMPJAPEII.newBuilder((POGOProtos.Rpc.JDMMPJAPEII) eNAEHOOCEJG_)
+        if (questCase_ == 6 &&
+            quest_ != POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.TradePokemonQuestProto.newBuilder((POGOProtos.Rpc.TradePokemonQuestProto) quest_)
               .mergeFrom(value).buildPartial();
         } else {
-          eNAEHOOCEJG_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        if (eNAEHOOCEJGCase_ == 6) {
+        if (questCase_ == 6) {
           tradePokemonBuilder_.mergeFrom(value);
         }
         tradePokemonBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 6;
+      questCase_ = 6;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
      */
     public Builder clearTradePokemon() {
       if (tradePokemonBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 6) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 6) {
+          questCase_ = 0;
+          quest_ = null;
           onChanged();
         }
       } else {
-        if (eNAEHOOCEJGCase_ == 6) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 6) {
+          questCase_ = 0;
+          quest_ = null;
         }
         tradePokemonBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
      */
-    public POGOProtos.Rpc.JDMMPJAPEII.Builder getTradePokemonBuilder() {
+    public POGOProtos.Rpc.TradePokemonQuestProto.Builder getTradePokemonBuilder() {
       return getTradePokemonFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
      */
-    public POGOProtos.Rpc.JDMMPJAPEIIOrBuilder getTradePokemonOrBuilder() {
-      if ((eNAEHOOCEJGCase_ == 6) && (tradePokemonBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder getTradePokemonOrBuilder() {
+      if ((questCase_ == 6) && (tradePokemonBuilder_ != null)) {
         return tradePokemonBuilder_.getMessageOrBuilder();
       } else {
-        if (eNAEHOOCEJGCase_ == 6) {
-          return (POGOProtos.Rpc.JDMMPJAPEII) eNAEHOOCEJG_;
+        if (questCase_ == 6) {
+          return (POGOProtos.Rpc.TradePokemonQuestProto) quest_;
         }
-        return POGOProtos.Rpc.JDMMPJAPEII.getDefaultInstance();
+        return POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JDMMPJAPEII trade_pokemon = 6;</code>
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JDMMPJAPEII, POGOProtos.Rpc.JDMMPJAPEII.Builder, POGOProtos.Rpc.JDMMPJAPEIIOrBuilder> 
+        POGOProtos.Rpc.TradePokemonQuestProto, POGOProtos.Rpc.TradePokemonQuestProto.Builder, POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder> 
         getTradePokemonFieldBuilder() {
       if (tradePokemonBuilder_ == null) {
-        if (!(eNAEHOOCEJGCase_ == 6)) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.JDMMPJAPEII.getDefaultInstance();
+        if (!(questCase_ == 6)) {
+          quest_ = POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
         }
         tradePokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.JDMMPJAPEII, POGOProtos.Rpc.JDMMPJAPEII.Builder, POGOProtos.Rpc.JDMMPJAPEIIOrBuilder>(
-                (POGOProtos.Rpc.JDMMPJAPEII) eNAEHOOCEJG_,
+            POGOProtos.Rpc.TradePokemonQuestProto, POGOProtos.Rpc.TradePokemonQuestProto.Builder, POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.TradePokemonQuestProto) quest_,
                 getParentForChildren(),
                 isClean());
-        eNAEHOOCEJG_ = null;
+        quest_ = null;
       }
-      eNAEHOOCEJGCase_ = 6;
+      questCase_ = 6;
       onChanged();;
       return tradePokemonBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BNEFOIMHJNC, POGOProtos.Rpc.BNEFOIMHJNC.Builder, POGOProtos.Rpc.BNEFOIMHJNCOrBuilder> dailyBuddyAffectionBuilder_;
+        POGOProtos.Rpc.DailyBuddyAffectionQuestProto, POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder, POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder> dailyBuddyAffectionBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
      * @return Whether the dailyBuddyAffection field is set.
      */
+    @java.lang.Override
     public boolean hasDailyBuddyAffection() {
-      return eNAEHOOCEJGCase_ == 7;
+      return questCase_ == 7;
     }
     /**
-     * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
      * @return The dailyBuddyAffection.
      */
-    public POGOProtos.Rpc.BNEFOIMHJNC getDailyBuddyAffection() {
+    @java.lang.Override
+    public POGOProtos.Rpc.DailyBuddyAffectionQuestProto getDailyBuddyAffection() {
       if (dailyBuddyAffectionBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 7) {
-          return (POGOProtos.Rpc.BNEFOIMHJNC) eNAEHOOCEJG_;
+        if (questCase_ == 7) {
+          return (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_;
         }
-        return POGOProtos.Rpc.BNEFOIMHJNC.getDefaultInstance();
+        return POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
       } else {
-        if (eNAEHOOCEJGCase_ == 7) {
+        if (questCase_ == 7) {
           return dailyBuddyAffectionBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.BNEFOIMHJNC.getDefaultInstance();
+        return POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
      */
-    public Builder setDailyBuddyAffection(POGOProtos.Rpc.BNEFOIMHJNC value) {
+    public Builder setDailyBuddyAffection(POGOProtos.Rpc.DailyBuddyAffectionQuestProto value) {
       if (dailyBuddyAffectionBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eNAEHOOCEJG_ = value;
+        quest_ = value;
         onChanged();
       } else {
         dailyBuddyAffectionBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 7;
+      questCase_ = 7;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
      */
     public Builder setDailyBuddyAffection(
-        POGOProtos.Rpc.BNEFOIMHJNC.Builder builderForValue) {
+        POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder builderForValue) {
       if (dailyBuddyAffectionBuilder_ == null) {
-        eNAEHOOCEJG_ = builderForValue.build();
+        quest_ = builderForValue.build();
         onChanged();
       } else {
         dailyBuddyAffectionBuilder_.setMessage(builderForValue.build());
       }
-      eNAEHOOCEJGCase_ = 7;
+      questCase_ = 7;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
      */
-    public Builder mergeDailyBuddyAffection(POGOProtos.Rpc.BNEFOIMHJNC value) {
+    public Builder mergeDailyBuddyAffection(POGOProtos.Rpc.DailyBuddyAffectionQuestProto value) {
       if (dailyBuddyAffectionBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 7 &&
-            eNAEHOOCEJG_ != POGOProtos.Rpc.BNEFOIMHJNC.getDefaultInstance()) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.BNEFOIMHJNC.newBuilder((POGOProtos.Rpc.BNEFOIMHJNC) eNAEHOOCEJG_)
+        if (questCase_ == 7 &&
+            quest_ != POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.DailyBuddyAffectionQuestProto.newBuilder((POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_)
               .mergeFrom(value).buildPartial();
         } else {
-          eNAEHOOCEJG_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        if (eNAEHOOCEJGCase_ == 7) {
+        if (questCase_ == 7) {
           dailyBuddyAffectionBuilder_.mergeFrom(value);
         }
         dailyBuddyAffectionBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 7;
+      questCase_ = 7;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
      */
     public Builder clearDailyBuddyAffection() {
       if (dailyBuddyAffectionBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 7) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 7) {
+          questCase_ = 0;
+          quest_ = null;
           onChanged();
         }
       } else {
-        if (eNAEHOOCEJGCase_ == 7) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 7) {
+          questCase_ = 0;
+          quest_ = null;
         }
         dailyBuddyAffectionBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
      */
-    public POGOProtos.Rpc.BNEFOIMHJNC.Builder getDailyBuddyAffectionBuilder() {
+    public POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder getDailyBuddyAffectionBuilder() {
       return getDailyBuddyAffectionFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
      */
-    public POGOProtos.Rpc.BNEFOIMHJNCOrBuilder getDailyBuddyAffectionOrBuilder() {
-      if ((eNAEHOOCEJGCase_ == 7) && (dailyBuddyAffectionBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder getDailyBuddyAffectionOrBuilder() {
+      if ((questCase_ == 7) && (dailyBuddyAffectionBuilder_ != null)) {
         return dailyBuddyAffectionBuilder_.getMessageOrBuilder();
       } else {
-        if (eNAEHOOCEJGCase_ == 7) {
-          return (POGOProtos.Rpc.BNEFOIMHJNC) eNAEHOOCEJG_;
+        if (questCase_ == 7) {
+          return (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_;
         }
-        return POGOProtos.Rpc.BNEFOIMHJNC.getDefaultInstance();
+        return POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BNEFOIMHJNC daily_buddy_affection = 7;</code>
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BNEFOIMHJNC, POGOProtos.Rpc.BNEFOIMHJNC.Builder, POGOProtos.Rpc.BNEFOIMHJNCOrBuilder> 
+        POGOProtos.Rpc.DailyBuddyAffectionQuestProto, POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder, POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder> 
         getDailyBuddyAffectionFieldBuilder() {
       if (dailyBuddyAffectionBuilder_ == null) {
-        if (!(eNAEHOOCEJGCase_ == 7)) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.BNEFOIMHJNC.getDefaultInstance();
+        if (!(questCase_ == 7)) {
+          quest_ = POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
         }
         dailyBuddyAffectionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.BNEFOIMHJNC, POGOProtos.Rpc.BNEFOIMHJNC.Builder, POGOProtos.Rpc.BNEFOIMHJNCOrBuilder>(
-                (POGOProtos.Rpc.BNEFOIMHJNC) eNAEHOOCEJG_,
+            POGOProtos.Rpc.DailyBuddyAffectionQuestProto, POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder, POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_,
                 getParentForChildren(),
                 isClean());
-        eNAEHOOCEJG_ = null;
+        quest_ = null;
       }
-      eNAEHOOCEJGCase_ = 7;
+      questCase_ = 7;
       onChanged();;
       return dailyBuddyAffectionBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HMOEEJNFGOF, POGOProtos.Rpc.HMOEEJNFGOF.Builder, POGOProtos.Rpc.HMOEEJNFGOFOrBuilder> questWalkBuilder_;
+        POGOProtos.Rpc.QuestWalkProto, POGOProtos.Rpc.QuestWalkProto.Builder, POGOProtos.Rpc.QuestWalkProtoOrBuilder> questWalkBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
      * @return Whether the questWalk field is set.
      */
+    @java.lang.Override
     public boolean hasQuestWalk() {
-      return eNAEHOOCEJGCase_ == 8;
+      return questCase_ == 8;
     }
     /**
-     * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
      * @return The questWalk.
      */
-    public POGOProtos.Rpc.HMOEEJNFGOF getQuestWalk() {
+    @java.lang.Override
+    public POGOProtos.Rpc.QuestWalkProto getQuestWalk() {
       if (questWalkBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 8) {
-          return (POGOProtos.Rpc.HMOEEJNFGOF) eNAEHOOCEJG_;
+        if (questCase_ == 8) {
+          return (POGOProtos.Rpc.QuestWalkProto) quest_;
         }
-        return POGOProtos.Rpc.HMOEEJNFGOF.getDefaultInstance();
+        return POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
       } else {
-        if (eNAEHOOCEJGCase_ == 8) {
+        if (questCase_ == 8) {
           return questWalkBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.HMOEEJNFGOF.getDefaultInstance();
+        return POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
      */
-    public Builder setQuestWalk(POGOProtos.Rpc.HMOEEJNFGOF value) {
+    public Builder setQuestWalk(POGOProtos.Rpc.QuestWalkProto value) {
       if (questWalkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eNAEHOOCEJG_ = value;
+        quest_ = value;
         onChanged();
       } else {
         questWalkBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 8;
+      questCase_ = 8;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
      */
     public Builder setQuestWalk(
-        POGOProtos.Rpc.HMOEEJNFGOF.Builder builderForValue) {
+        POGOProtos.Rpc.QuestWalkProto.Builder builderForValue) {
       if (questWalkBuilder_ == null) {
-        eNAEHOOCEJG_ = builderForValue.build();
+        quest_ = builderForValue.build();
         onChanged();
       } else {
         questWalkBuilder_.setMessage(builderForValue.build());
       }
-      eNAEHOOCEJGCase_ = 8;
+      questCase_ = 8;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
      */
-    public Builder mergeQuestWalk(POGOProtos.Rpc.HMOEEJNFGOF value) {
+    public Builder mergeQuestWalk(POGOProtos.Rpc.QuestWalkProto value) {
       if (questWalkBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 8 &&
-            eNAEHOOCEJG_ != POGOProtos.Rpc.HMOEEJNFGOF.getDefaultInstance()) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.HMOEEJNFGOF.newBuilder((POGOProtos.Rpc.HMOEEJNFGOF) eNAEHOOCEJG_)
+        if (questCase_ == 8 &&
+            quest_ != POGOProtos.Rpc.QuestWalkProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.QuestWalkProto.newBuilder((POGOProtos.Rpc.QuestWalkProto) quest_)
               .mergeFrom(value).buildPartial();
         } else {
-          eNAEHOOCEJG_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        if (eNAEHOOCEJGCase_ == 8) {
+        if (questCase_ == 8) {
           questWalkBuilder_.mergeFrom(value);
         }
         questWalkBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 8;
+      questCase_ = 8;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
      */
     public Builder clearQuestWalk() {
       if (questWalkBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 8) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 8) {
+          questCase_ = 0;
+          quest_ = null;
           onChanged();
         }
       } else {
-        if (eNAEHOOCEJGCase_ == 8) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 8) {
+          questCase_ = 0;
+          quest_ = null;
         }
         questWalkBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
      */
-    public POGOProtos.Rpc.HMOEEJNFGOF.Builder getQuestWalkBuilder() {
+    public POGOProtos.Rpc.QuestWalkProto.Builder getQuestWalkBuilder() {
       return getQuestWalkFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
      */
-    public POGOProtos.Rpc.HMOEEJNFGOFOrBuilder getQuestWalkOrBuilder() {
-      if ((eNAEHOOCEJGCase_ == 8) && (questWalkBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.QuestWalkProtoOrBuilder getQuestWalkOrBuilder() {
+      if ((questCase_ == 8) && (questWalkBuilder_ != null)) {
         return questWalkBuilder_.getMessageOrBuilder();
       } else {
-        if (eNAEHOOCEJGCase_ == 8) {
-          return (POGOProtos.Rpc.HMOEEJNFGOF) eNAEHOOCEJG_;
+        if (questCase_ == 8) {
+          return (POGOProtos.Rpc.QuestWalkProto) quest_;
         }
-        return POGOProtos.Rpc.HMOEEJNFGOF.getDefaultInstance();
+        return POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HMOEEJNFGOF quest_walk = 8;</code>
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HMOEEJNFGOF, POGOProtos.Rpc.HMOEEJNFGOF.Builder, POGOProtos.Rpc.HMOEEJNFGOFOrBuilder> 
+        POGOProtos.Rpc.QuestWalkProto, POGOProtos.Rpc.QuestWalkProto.Builder, POGOProtos.Rpc.QuestWalkProtoOrBuilder> 
         getQuestWalkFieldBuilder() {
       if (questWalkBuilder_ == null) {
-        if (!(eNAEHOOCEJGCase_ == 8)) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.HMOEEJNFGOF.getDefaultInstance();
+        if (!(questCase_ == 8)) {
+          quest_ = POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
         }
         questWalkBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.HMOEEJNFGOF, POGOProtos.Rpc.HMOEEJNFGOF.Builder, POGOProtos.Rpc.HMOEEJNFGOFOrBuilder>(
-                (POGOProtos.Rpc.HMOEEJNFGOF) eNAEHOOCEJG_,
+            POGOProtos.Rpc.QuestWalkProto, POGOProtos.Rpc.QuestWalkProto.Builder, POGOProtos.Rpc.QuestWalkProtoOrBuilder>(
+                (POGOProtos.Rpc.QuestWalkProto) quest_,
                 getParentForChildren(),
                 isClean());
-        eNAEHOOCEJG_ = null;
+        quest_ = null;
       }
-      eNAEHOOCEJGCase_ = 8;
+      questCase_ = 8;
       onChanged();;
       return questWalkBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PHJBMIIJKCH, POGOProtos.Rpc.PHJBMIIJKCH.Builder, POGOProtos.Rpc.PHJBMIIJKCHOrBuilder> evolveIntoPokemonBuilder_;
+        POGOProtos.Rpc.EvolveIntoPokemonQuestProto, POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder, POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder> evolveIntoPokemonBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
      * @return Whether the evolveIntoPokemon field is set.
      */
+    @java.lang.Override
     public boolean hasEvolveIntoPokemon() {
-      return eNAEHOOCEJGCase_ == 9;
+      return questCase_ == 9;
     }
     /**
-     * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
      * @return The evolveIntoPokemon.
      */
-    public POGOProtos.Rpc.PHJBMIIJKCH getEvolveIntoPokemon() {
+    @java.lang.Override
+    public POGOProtos.Rpc.EvolveIntoPokemonQuestProto getEvolveIntoPokemon() {
       if (evolveIntoPokemonBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 9) {
-          return (POGOProtos.Rpc.PHJBMIIJKCH) eNAEHOOCEJG_;
+        if (questCase_ == 9) {
+          return (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_;
         }
-        return POGOProtos.Rpc.PHJBMIIJKCH.getDefaultInstance();
+        return POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
       } else {
-        if (eNAEHOOCEJGCase_ == 9) {
+        if (questCase_ == 9) {
           return evolveIntoPokemonBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.PHJBMIIJKCH.getDefaultInstance();
+        return POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
      */
-    public Builder setEvolveIntoPokemon(POGOProtos.Rpc.PHJBMIIJKCH value) {
+    public Builder setEvolveIntoPokemon(POGOProtos.Rpc.EvolveIntoPokemonQuestProto value) {
       if (evolveIntoPokemonBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eNAEHOOCEJG_ = value;
+        quest_ = value;
         onChanged();
       } else {
         evolveIntoPokemonBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 9;
+      questCase_ = 9;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
      */
     public Builder setEvolveIntoPokemon(
-        POGOProtos.Rpc.PHJBMIIJKCH.Builder builderForValue) {
+        POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder builderForValue) {
       if (evolveIntoPokemonBuilder_ == null) {
-        eNAEHOOCEJG_ = builderForValue.build();
+        quest_ = builderForValue.build();
         onChanged();
       } else {
         evolveIntoPokemonBuilder_.setMessage(builderForValue.build());
       }
-      eNAEHOOCEJGCase_ = 9;
+      questCase_ = 9;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
      */
-    public Builder mergeEvolveIntoPokemon(POGOProtos.Rpc.PHJBMIIJKCH value) {
+    public Builder mergeEvolveIntoPokemon(POGOProtos.Rpc.EvolveIntoPokemonQuestProto value) {
       if (evolveIntoPokemonBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 9 &&
-            eNAEHOOCEJG_ != POGOProtos.Rpc.PHJBMIIJKCH.getDefaultInstance()) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.PHJBMIIJKCH.newBuilder((POGOProtos.Rpc.PHJBMIIJKCH) eNAEHOOCEJG_)
+        if (questCase_ == 9 &&
+            quest_ != POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.EvolveIntoPokemonQuestProto.newBuilder((POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_)
               .mergeFrom(value).buildPartial();
         } else {
-          eNAEHOOCEJG_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        if (eNAEHOOCEJGCase_ == 9) {
+        if (questCase_ == 9) {
           evolveIntoPokemonBuilder_.mergeFrom(value);
         }
         evolveIntoPokemonBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 9;
+      questCase_ = 9;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
      */
     public Builder clearEvolveIntoPokemon() {
       if (evolveIntoPokemonBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 9) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 9) {
+          questCase_ = 0;
+          quest_ = null;
           onChanged();
         }
       } else {
-        if (eNAEHOOCEJGCase_ == 9) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 9) {
+          questCase_ = 0;
+          quest_ = null;
         }
         evolveIntoPokemonBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
      */
-    public POGOProtos.Rpc.PHJBMIIJKCH.Builder getEvolveIntoPokemonBuilder() {
+    public POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder getEvolveIntoPokemonBuilder() {
       return getEvolveIntoPokemonFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
      */
-    public POGOProtos.Rpc.PHJBMIIJKCHOrBuilder getEvolveIntoPokemonOrBuilder() {
-      if ((eNAEHOOCEJGCase_ == 9) && (evolveIntoPokemonBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder getEvolveIntoPokemonOrBuilder() {
+      if ((questCase_ == 9) && (evolveIntoPokemonBuilder_ != null)) {
         return evolveIntoPokemonBuilder_.getMessageOrBuilder();
       } else {
-        if (eNAEHOOCEJGCase_ == 9) {
-          return (POGOProtos.Rpc.PHJBMIIJKCH) eNAEHOOCEJG_;
+        if (questCase_ == 9) {
+          return (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_;
         }
-        return POGOProtos.Rpc.PHJBMIIJKCH.getDefaultInstance();
+        return POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PHJBMIIJKCH evolve_into_pokemon = 9;</code>
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PHJBMIIJKCH, POGOProtos.Rpc.PHJBMIIJKCH.Builder, POGOProtos.Rpc.PHJBMIIJKCHOrBuilder> 
+        POGOProtos.Rpc.EvolveIntoPokemonQuestProto, POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder, POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder> 
         getEvolveIntoPokemonFieldBuilder() {
       if (evolveIntoPokemonBuilder_ == null) {
-        if (!(eNAEHOOCEJGCase_ == 9)) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.PHJBMIIJKCH.getDefaultInstance();
+        if (!(questCase_ == 9)) {
+          quest_ = POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
         }
         evolveIntoPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PHJBMIIJKCH, POGOProtos.Rpc.PHJBMIIJKCH.Builder, POGOProtos.Rpc.PHJBMIIJKCHOrBuilder>(
-                (POGOProtos.Rpc.PHJBMIIJKCH) eNAEHOOCEJG_,
+            POGOProtos.Rpc.EvolveIntoPokemonQuestProto, POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder, POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_,
                 getParentForChildren(),
                 isClean());
-        eNAEHOOCEJG_ = null;
+        quest_ = null;
       }
-      eNAEHOOCEJGCase_ = 9;
+      questCase_ = 9;
       onChanged();;
       return evolveIntoPokemonBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JENEKIKOHLB, POGOProtos.Rpc.JENEKIKOHLB.Builder, POGOProtos.Rpc.JENEKIKOHLBOrBuilder> getStardustBuilder_;
+        POGOProtos.Rpc.GetStardustQuestProto, POGOProtos.Rpc.GetStardustQuestProto.Builder, POGOProtos.Rpc.GetStardustQuestProtoOrBuilder> getStardustBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+     * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
      * @return Whether the getStardust field is set.
      */
+    @java.lang.Override
     public boolean hasGetStardust() {
-      return eNAEHOOCEJGCase_ == 10;
+      return questCase_ == 10;
     }
     /**
-     * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+     * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
      * @return The getStardust.
      */
-    public POGOProtos.Rpc.JENEKIKOHLB getGetStardust() {
+    @java.lang.Override
+    public POGOProtos.Rpc.GetStardustQuestProto getGetStardust() {
       if (getStardustBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 10) {
-          return (POGOProtos.Rpc.JENEKIKOHLB) eNAEHOOCEJG_;
+        if (questCase_ == 10) {
+          return (POGOProtos.Rpc.GetStardustQuestProto) quest_;
         }
-        return POGOProtos.Rpc.JENEKIKOHLB.getDefaultInstance();
+        return POGOProtos.Rpc.GetStardustQuestProto.getDefaultInstance();
       } else {
-        if (eNAEHOOCEJGCase_ == 10) {
+        if (questCase_ == 10) {
           return getStardustBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.JENEKIKOHLB.getDefaultInstance();
+        return POGOProtos.Rpc.GetStardustQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+     * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
      */
-    public Builder setGetStardust(POGOProtos.Rpc.JENEKIKOHLB value) {
+    public Builder setGetStardust(POGOProtos.Rpc.GetStardustQuestProto value) {
       if (getStardustBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eNAEHOOCEJG_ = value;
+        quest_ = value;
         onChanged();
       } else {
         getStardustBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 10;
+      questCase_ = 10;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+     * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
      */
     public Builder setGetStardust(
-        POGOProtos.Rpc.JENEKIKOHLB.Builder builderForValue) {
+        POGOProtos.Rpc.GetStardustQuestProto.Builder builderForValue) {
       if (getStardustBuilder_ == null) {
-        eNAEHOOCEJG_ = builderForValue.build();
+        quest_ = builderForValue.build();
         onChanged();
       } else {
         getStardustBuilder_.setMessage(builderForValue.build());
       }
-      eNAEHOOCEJGCase_ = 10;
+      questCase_ = 10;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+     * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
      */
-    public Builder mergeGetStardust(POGOProtos.Rpc.JENEKIKOHLB value) {
+    public Builder mergeGetStardust(POGOProtos.Rpc.GetStardustQuestProto value) {
       if (getStardustBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 10 &&
-            eNAEHOOCEJG_ != POGOProtos.Rpc.JENEKIKOHLB.getDefaultInstance()) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.JENEKIKOHLB.newBuilder((POGOProtos.Rpc.JENEKIKOHLB) eNAEHOOCEJG_)
+        if (questCase_ == 10 &&
+            quest_ != POGOProtos.Rpc.GetStardustQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.GetStardustQuestProto.newBuilder((POGOProtos.Rpc.GetStardustQuestProto) quest_)
               .mergeFrom(value).buildPartial();
         } else {
-          eNAEHOOCEJG_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        if (eNAEHOOCEJGCase_ == 10) {
+        if (questCase_ == 10) {
           getStardustBuilder_.mergeFrom(value);
         }
         getStardustBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 10;
+      questCase_ = 10;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+     * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
      */
     public Builder clearGetStardust() {
       if (getStardustBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 10) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 10) {
+          questCase_ = 0;
+          quest_ = null;
           onChanged();
         }
       } else {
-        if (eNAEHOOCEJGCase_ == 10) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 10) {
+          questCase_ = 0;
+          quest_ = null;
         }
         getStardustBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+     * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
      */
-    public POGOProtos.Rpc.JENEKIKOHLB.Builder getGetStardustBuilder() {
+    public POGOProtos.Rpc.GetStardustQuestProto.Builder getGetStardustBuilder() {
       return getGetStardustFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+     * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
      */
-    public POGOProtos.Rpc.JENEKIKOHLBOrBuilder getGetStardustOrBuilder() {
-      if ((eNAEHOOCEJGCase_ == 10) && (getStardustBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.GetStardustQuestProtoOrBuilder getGetStardustOrBuilder() {
+      if ((questCase_ == 10) && (getStardustBuilder_ != null)) {
         return getStardustBuilder_.getMessageOrBuilder();
       } else {
-        if (eNAEHOOCEJGCase_ == 10) {
-          return (POGOProtos.Rpc.JENEKIKOHLB) eNAEHOOCEJG_;
+        if (questCase_ == 10) {
+          return (POGOProtos.Rpc.GetStardustQuestProto) quest_;
         }
-        return POGOProtos.Rpc.JENEKIKOHLB.getDefaultInstance();
+        return POGOProtos.Rpc.GetStardustQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JENEKIKOHLB get_stardust = 10;</code>
+     * <code>.POGOProtos.Rpc.GetStardustQuestProto get_stardust = 10;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JENEKIKOHLB, POGOProtos.Rpc.JENEKIKOHLB.Builder, POGOProtos.Rpc.JENEKIKOHLBOrBuilder> 
+        POGOProtos.Rpc.GetStardustQuestProto, POGOProtos.Rpc.GetStardustQuestProto.Builder, POGOProtos.Rpc.GetStardustQuestProtoOrBuilder> 
         getGetStardustFieldBuilder() {
       if (getStardustBuilder_ == null) {
-        if (!(eNAEHOOCEJGCase_ == 10)) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.JENEKIKOHLB.getDefaultInstance();
+        if (!(questCase_ == 10)) {
+          quest_ = POGOProtos.Rpc.GetStardustQuestProto.getDefaultInstance();
         }
         getStardustBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.JENEKIKOHLB, POGOProtos.Rpc.JENEKIKOHLB.Builder, POGOProtos.Rpc.JENEKIKOHLBOrBuilder>(
-                (POGOProtos.Rpc.JENEKIKOHLB) eNAEHOOCEJG_,
+            POGOProtos.Rpc.GetStardustQuestProto, POGOProtos.Rpc.GetStardustQuestProto.Builder, POGOProtos.Rpc.GetStardustQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.GetStardustQuestProto) quest_,
                 getParentForChildren(),
                 isClean());
-        eNAEHOOCEJG_ = null;
+        quest_ = null;
       }
-      eNAEHOOCEJGCase_ = 10;
+      questCase_ = 10;
       onChanged();;
       return getStardustBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.FMCBCIMFFBI, POGOProtos.Rpc.FMCBCIMFFBI.Builder, POGOProtos.Rpc.FMCBCIMFFBIOrBuilder> geotargetedQuestBuilder_;
+        POGOProtos.Rpc.GeotargetedQuestProto, POGOProtos.Rpc.GeotargetedQuestProto.Builder, POGOProtos.Rpc.GeotargetedQuestProtoOrBuilder> geotargetedQuestBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+     * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
      * @return Whether the geotargetedQuest field is set.
      */
+    @java.lang.Override
     public boolean hasGeotargetedQuest() {
-      return eNAEHOOCEJGCase_ == 12;
+      return questCase_ == 12;
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+     * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
      * @return The geotargetedQuest.
      */
-    public POGOProtos.Rpc.FMCBCIMFFBI getGeotargetedQuest() {
+    @java.lang.Override
+    public POGOProtos.Rpc.GeotargetedQuestProto getGeotargetedQuest() {
       if (geotargetedQuestBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 12) {
-          return (POGOProtos.Rpc.FMCBCIMFFBI) eNAEHOOCEJG_;
+        if (questCase_ == 12) {
+          return (POGOProtos.Rpc.GeotargetedQuestProto) quest_;
         }
-        return POGOProtos.Rpc.FMCBCIMFFBI.getDefaultInstance();
+        return POGOProtos.Rpc.GeotargetedQuestProto.getDefaultInstance();
       } else {
-        if (eNAEHOOCEJGCase_ == 12) {
+        if (questCase_ == 12) {
           return geotargetedQuestBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.FMCBCIMFFBI.getDefaultInstance();
+        return POGOProtos.Rpc.GeotargetedQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+     * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
      */
-    public Builder setGeotargetedQuest(POGOProtos.Rpc.FMCBCIMFFBI value) {
+    public Builder setGeotargetedQuest(POGOProtos.Rpc.GeotargetedQuestProto value) {
       if (geotargetedQuestBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eNAEHOOCEJG_ = value;
+        quest_ = value;
         onChanged();
       } else {
         geotargetedQuestBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 12;
+      questCase_ = 12;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+     * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
      */
     public Builder setGeotargetedQuest(
-        POGOProtos.Rpc.FMCBCIMFFBI.Builder builderForValue) {
+        POGOProtos.Rpc.GeotargetedQuestProto.Builder builderForValue) {
       if (geotargetedQuestBuilder_ == null) {
-        eNAEHOOCEJG_ = builderForValue.build();
+        quest_ = builderForValue.build();
         onChanged();
       } else {
         geotargetedQuestBuilder_.setMessage(builderForValue.build());
       }
-      eNAEHOOCEJGCase_ = 12;
+      questCase_ = 12;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+     * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
      */
-    public Builder mergeGeotargetedQuest(POGOProtos.Rpc.FMCBCIMFFBI value) {
+    public Builder mergeGeotargetedQuest(POGOProtos.Rpc.GeotargetedQuestProto value) {
       if (geotargetedQuestBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 12 &&
-            eNAEHOOCEJG_ != POGOProtos.Rpc.FMCBCIMFFBI.getDefaultInstance()) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.FMCBCIMFFBI.newBuilder((POGOProtos.Rpc.FMCBCIMFFBI) eNAEHOOCEJG_)
+        if (questCase_ == 12 &&
+            quest_ != POGOProtos.Rpc.GeotargetedQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.GeotargetedQuestProto.newBuilder((POGOProtos.Rpc.GeotargetedQuestProto) quest_)
               .mergeFrom(value).buildPartial();
         } else {
-          eNAEHOOCEJG_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        if (eNAEHOOCEJGCase_ == 12) {
+        if (questCase_ == 12) {
           geotargetedQuestBuilder_.mergeFrom(value);
         }
         geotargetedQuestBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 12;
+      questCase_ = 12;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+     * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
      */
     public Builder clearGeotargetedQuest() {
       if (geotargetedQuestBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 12) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 12) {
+          questCase_ = 0;
+          quest_ = null;
           onChanged();
         }
       } else {
-        if (eNAEHOOCEJGCase_ == 12) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 12) {
+          questCase_ = 0;
+          quest_ = null;
         }
         geotargetedQuestBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+     * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
      */
-    public POGOProtos.Rpc.FMCBCIMFFBI.Builder getGeotargetedQuestBuilder() {
+    public POGOProtos.Rpc.GeotargetedQuestProto.Builder getGeotargetedQuestBuilder() {
       return getGeotargetedQuestFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+     * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
      */
-    public POGOProtos.Rpc.FMCBCIMFFBIOrBuilder getGeotargetedQuestOrBuilder() {
-      if ((eNAEHOOCEJGCase_ == 12) && (geotargetedQuestBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.GeotargetedQuestProtoOrBuilder getGeotargetedQuestOrBuilder() {
+      if ((questCase_ == 12) && (geotargetedQuestBuilder_ != null)) {
         return geotargetedQuestBuilder_.getMessageOrBuilder();
       } else {
-        if (eNAEHOOCEJGCase_ == 12) {
-          return (POGOProtos.Rpc.FMCBCIMFFBI) eNAEHOOCEJG_;
+        if (questCase_ == 12) {
+          return (POGOProtos.Rpc.GeotargetedQuestProto) quest_;
         }
-        return POGOProtos.Rpc.FMCBCIMFFBI.getDefaultInstance();
+        return POGOProtos.Rpc.GeotargetedQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCBCIMFFBI geotargeted_quest = 12;</code>
+     * <code>.POGOProtos.Rpc.GeotargetedQuestProto geotargeted_quest = 12;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.FMCBCIMFFBI, POGOProtos.Rpc.FMCBCIMFFBI.Builder, POGOProtos.Rpc.FMCBCIMFFBIOrBuilder> 
+        POGOProtos.Rpc.GeotargetedQuestProto, POGOProtos.Rpc.GeotargetedQuestProto.Builder, POGOProtos.Rpc.GeotargetedQuestProtoOrBuilder> 
         getGeotargetedQuestFieldBuilder() {
       if (geotargetedQuestBuilder_ == null) {
-        if (!(eNAEHOOCEJGCase_ == 12)) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.FMCBCIMFFBI.getDefaultInstance();
+        if (!(questCase_ == 12)) {
+          quest_ = POGOProtos.Rpc.GeotargetedQuestProto.getDefaultInstance();
         }
         geotargetedQuestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.FMCBCIMFFBI, POGOProtos.Rpc.FMCBCIMFFBI.Builder, POGOProtos.Rpc.FMCBCIMFFBIOrBuilder>(
-                (POGOProtos.Rpc.FMCBCIMFFBI) eNAEHOOCEJG_,
+            POGOProtos.Rpc.GeotargetedQuestProto, POGOProtos.Rpc.GeotargetedQuestProto.Builder, POGOProtos.Rpc.GeotargetedQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.GeotargetedQuestProto) quest_,
                 getParentForChildren(),
                 isClean());
-        eNAEHOOCEJG_ = null;
+        quest_ = null;
       }
-      eNAEHOOCEJGCase_ = 12;
+      questCase_ = 12;
       onChanged();;
       return geotargetedQuestBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.MJGCDOLJOFF, POGOProtos.Rpc.MJGCDOLJOFF.Builder, POGOProtos.Rpc.MJGCDOLJOFFOrBuilder> buddyEvolutionWalkBuilder_;
+        POGOProtos.Rpc.BuddyEvolutionWalkQuestProto, POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.Builder, POGOProtos.Rpc.BuddyEvolutionWalkQuestProtoOrBuilder> buddyEvolutionWalkBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+     * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
      * @return Whether the buddyEvolutionWalk field is set.
      */
+    @java.lang.Override
     public boolean hasBuddyEvolutionWalk() {
-      return eNAEHOOCEJGCase_ == 13;
+      return questCase_ == 13;
     }
     /**
-     * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+     * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
      * @return The buddyEvolutionWalk.
      */
-    public POGOProtos.Rpc.MJGCDOLJOFF getBuddyEvolutionWalk() {
+    @java.lang.Override
+    public POGOProtos.Rpc.BuddyEvolutionWalkQuestProto getBuddyEvolutionWalk() {
       if (buddyEvolutionWalkBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 13) {
-          return (POGOProtos.Rpc.MJGCDOLJOFF) eNAEHOOCEJG_;
+        if (questCase_ == 13) {
+          return (POGOProtos.Rpc.BuddyEvolutionWalkQuestProto) quest_;
         }
-        return POGOProtos.Rpc.MJGCDOLJOFF.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.getDefaultInstance();
       } else {
-        if (eNAEHOOCEJGCase_ == 13) {
+        if (questCase_ == 13) {
           return buddyEvolutionWalkBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.MJGCDOLJOFF.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+     * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
      */
-    public Builder setBuddyEvolutionWalk(POGOProtos.Rpc.MJGCDOLJOFF value) {
+    public Builder setBuddyEvolutionWalk(POGOProtos.Rpc.BuddyEvolutionWalkQuestProto value) {
       if (buddyEvolutionWalkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eNAEHOOCEJG_ = value;
+        quest_ = value;
         onChanged();
       } else {
         buddyEvolutionWalkBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 13;
+      questCase_ = 13;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+     * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
      */
     public Builder setBuddyEvolutionWalk(
-        POGOProtos.Rpc.MJGCDOLJOFF.Builder builderForValue) {
+        POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.Builder builderForValue) {
       if (buddyEvolutionWalkBuilder_ == null) {
-        eNAEHOOCEJG_ = builderForValue.build();
+        quest_ = builderForValue.build();
         onChanged();
       } else {
         buddyEvolutionWalkBuilder_.setMessage(builderForValue.build());
       }
-      eNAEHOOCEJGCase_ = 13;
+      questCase_ = 13;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+     * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
      */
-    public Builder mergeBuddyEvolutionWalk(POGOProtos.Rpc.MJGCDOLJOFF value) {
+    public Builder mergeBuddyEvolutionWalk(POGOProtos.Rpc.BuddyEvolutionWalkQuestProto value) {
       if (buddyEvolutionWalkBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 13 &&
-            eNAEHOOCEJG_ != POGOProtos.Rpc.MJGCDOLJOFF.getDefaultInstance()) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.MJGCDOLJOFF.newBuilder((POGOProtos.Rpc.MJGCDOLJOFF) eNAEHOOCEJG_)
+        if (questCase_ == 13 &&
+            quest_ != POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.newBuilder((POGOProtos.Rpc.BuddyEvolutionWalkQuestProto) quest_)
               .mergeFrom(value).buildPartial();
         } else {
-          eNAEHOOCEJG_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        if (eNAEHOOCEJGCase_ == 13) {
+        if (questCase_ == 13) {
           buddyEvolutionWalkBuilder_.mergeFrom(value);
         }
         buddyEvolutionWalkBuilder_.setMessage(value);
       }
-      eNAEHOOCEJGCase_ = 13;
+      questCase_ = 13;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+     * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
      */
     public Builder clearBuddyEvolutionWalk() {
       if (buddyEvolutionWalkBuilder_ == null) {
-        if (eNAEHOOCEJGCase_ == 13) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 13) {
+          questCase_ = 0;
+          quest_ = null;
           onChanged();
         }
       } else {
-        if (eNAEHOOCEJGCase_ == 13) {
-          eNAEHOOCEJGCase_ = 0;
-          eNAEHOOCEJG_ = null;
+        if (questCase_ == 13) {
+          questCase_ = 0;
+          quest_ = null;
         }
         buddyEvolutionWalkBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+     * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
      */
-    public POGOProtos.Rpc.MJGCDOLJOFF.Builder getBuddyEvolutionWalkBuilder() {
+    public POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.Builder getBuddyEvolutionWalkBuilder() {
       return getBuddyEvolutionWalkFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+     * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
      */
-    public POGOProtos.Rpc.MJGCDOLJOFFOrBuilder getBuddyEvolutionWalkOrBuilder() {
-      if ((eNAEHOOCEJGCase_ == 13) && (buddyEvolutionWalkBuilder_ != null)) {
+    @java.lang.Override
+    public POGOProtos.Rpc.BuddyEvolutionWalkQuestProtoOrBuilder getBuddyEvolutionWalkOrBuilder() {
+      if ((questCase_ == 13) && (buddyEvolutionWalkBuilder_ != null)) {
         return buddyEvolutionWalkBuilder_.getMessageOrBuilder();
       } else {
-        if (eNAEHOOCEJGCase_ == 13) {
-          return (POGOProtos.Rpc.MJGCDOLJOFF) eNAEHOOCEJG_;
+        if (questCase_ == 13) {
+          return (POGOProtos.Rpc.BuddyEvolutionWalkQuestProto) quest_;
         }
-        return POGOProtos.Rpc.MJGCDOLJOFF.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.MJGCDOLJOFF buddy_evolution_walk = 13;</code>
+     * <code>.POGOProtos.Rpc.BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.MJGCDOLJOFF, POGOProtos.Rpc.MJGCDOLJOFF.Builder, POGOProtos.Rpc.MJGCDOLJOFFOrBuilder> 
+        POGOProtos.Rpc.BuddyEvolutionWalkQuestProto, POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.Builder, POGOProtos.Rpc.BuddyEvolutionWalkQuestProtoOrBuilder> 
         getBuddyEvolutionWalkFieldBuilder() {
       if (buddyEvolutionWalkBuilder_ == null) {
-        if (!(eNAEHOOCEJGCase_ == 13)) {
-          eNAEHOOCEJG_ = POGOProtos.Rpc.MJGCDOLJOFF.getDefaultInstance();
+        if (!(questCase_ == 13)) {
+          quest_ = POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.getDefaultInstance();
         }
         buddyEvolutionWalkBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.MJGCDOLJOFF, POGOProtos.Rpc.MJGCDOLJOFF.Builder, POGOProtos.Rpc.MJGCDOLJOFFOrBuilder>(
-                (POGOProtos.Rpc.MJGCDOLJOFF) eNAEHOOCEJG_,
+            POGOProtos.Rpc.BuddyEvolutionWalkQuestProto, POGOProtos.Rpc.BuddyEvolutionWalkQuestProto.Builder, POGOProtos.Rpc.BuddyEvolutionWalkQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.BuddyEvolutionWalkQuestProto) quest_,
                 getParentForChildren(),
                 isClean());
-        eNAEHOOCEJG_ = null;
+        quest_ = null;
       }
-      eNAEHOOCEJGCase_ = 13;
+      questCase_ = 13;
       onChanged();;
       return buddyEvolutionWalkBuilder_;
     }
 
-    private int afnakjnnani_ = 0;
+    private int questType_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-     * @return The enum numeric value on the wire for afnakjnnani.
+     * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+     * @return The enum numeric value on the wire for questType.
      */
-    public int getAfnakjnnaniValue() {
-      return afnakjnnani_;
+    @java.lang.Override public int getQuestTypeValue() {
+      return questType_;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-     * @param value The enum numeric value on the wire for afnakjnnani to set.
+     * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+     * @param value The enum numeric value on the wire for questType to set.
      * @return This builder for chaining.
      */
-    public Builder setAfnakjnnaniValue(int value) {
-      afnakjnnani_ = value;
+    public Builder setQuestTypeValue(int value) {
+      
+      questType_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-     * @return The afnakjnnani.
+     * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+     * @return The questType.
      */
-    public POGOProtos.Rpc.QuestType getAfnakjnnani() {
+    @java.lang.Override
+    public POGOProtos.Rpc.QuestType getQuestType() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(afnakjnnani_);
+      POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(questType_);
       return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
-     * @param value The afnakjnnani to set.
+     * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+     * @param value The questType to set.
      * @return This builder for chaining.
      */
-    public Builder setAfnakjnnani(POGOProtos.Rpc.QuestType value) {
+    public Builder setQuestType(POGOProtos.Rpc.QuestType value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      afnakjnnani_ = value.getNumber();
+      questType_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestType afnakjnnani = 1;</code>
+     * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAfnakjnnani() {
+    public Builder clearQuestType() {
       
-      afnakjnnani_ = 0;
+      questType_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf_;
+    private POGOProtos.Rpc.WithSingleDayProto withSingleDay_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.KLHFIIILBHK, POGOProtos.Rpc.KLHFIIILBHK.Builder, POGOProtos.Rpc.KLHFIIILBHKOrBuilder> kcaedekdinfBuilder_;
+        POGOProtos.Rpc.WithSingleDayProto, POGOProtos.Rpc.WithSingleDayProto.Builder, POGOProtos.Rpc.WithSingleDayProtoOrBuilder> withSingleDayBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
-     * @return Whether the kcaedekdinf field is set.
+     * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
+     * @return Whether the withSingleDay field is set.
      */
-    public boolean hasKcaedekdinf() {
-      return kcaedekdinfBuilder_ != null || kcaedekdinf_ != null;
+    public boolean hasWithSingleDay() {
+      return withSingleDayBuilder_ != null || withSingleDay_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
-     * @return The kcaedekdinf.
+     * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
+     * @return The withSingleDay.
      */
-    public POGOProtos.Rpc.KLHFIIILBHK getKcaedekdinf() {
-      if (kcaedekdinfBuilder_ == null) {
-        return kcaedekdinf_ == null ? POGOProtos.Rpc.KLHFIIILBHK.getDefaultInstance() : kcaedekdinf_;
+    public POGOProtos.Rpc.WithSingleDayProto getWithSingleDay() {
+      if (withSingleDayBuilder_ == null) {
+        return withSingleDay_ == null ? POGOProtos.Rpc.WithSingleDayProto.getDefaultInstance() : withSingleDay_;
       } else {
-        return kcaedekdinfBuilder_.getMessage();
+        return withSingleDayBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
+     * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
      */
-    public Builder setKcaedekdinf(POGOProtos.Rpc.KLHFIIILBHK value) {
-      if (kcaedekdinfBuilder_ == null) {
+    public Builder setWithSingleDay(POGOProtos.Rpc.WithSingleDayProto value) {
+      if (withSingleDayBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        kcaedekdinf_ = value;
+        withSingleDay_ = value;
         onChanged();
       } else {
-        kcaedekdinfBuilder_.setMessage(value);
+        withSingleDayBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
+     * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
      */
-    public Builder setKcaedekdinf(
-        POGOProtos.Rpc.KLHFIIILBHK.Builder builderForValue) {
-      if (kcaedekdinfBuilder_ == null) {
-        kcaedekdinf_ = builderForValue.build();
+    public Builder setWithSingleDay(
+        POGOProtos.Rpc.WithSingleDayProto.Builder builderForValue) {
+      if (withSingleDayBuilder_ == null) {
+        withSingleDay_ = builderForValue.build();
         onChanged();
       } else {
-        kcaedekdinfBuilder_.setMessage(builderForValue.build());
+        withSingleDayBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
+     * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
      */
-    public Builder mergeKcaedekdinf(POGOProtos.Rpc.KLHFIIILBHK value) {
-      if (kcaedekdinfBuilder_ == null) {
-        if (kcaedekdinf_ != null) {
-          kcaedekdinf_ =
-            POGOProtos.Rpc.KLHFIIILBHK.newBuilder(kcaedekdinf_).mergeFrom(value).buildPartial();
+    public Builder mergeWithSingleDay(POGOProtos.Rpc.WithSingleDayProto value) {
+      if (withSingleDayBuilder_ == null) {
+        if (withSingleDay_ != null) {
+          withSingleDay_ =
+            POGOProtos.Rpc.WithSingleDayProto.newBuilder(withSingleDay_).mergeFrom(value).buildPartial();
         } else {
-          kcaedekdinf_ = value;
+          withSingleDay_ = value;
         }
         onChanged();
       } else {
-        kcaedekdinfBuilder_.mergeFrom(value);
+        withSingleDayBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
+     * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
      */
-    public Builder clearKcaedekdinf() {
-      if (kcaedekdinfBuilder_ == null) {
-        kcaedekdinf_ = null;
+    public Builder clearWithSingleDay() {
+      if (withSingleDayBuilder_ == null) {
+        withSingleDay_ = null;
         onChanged();
       } else {
-        kcaedekdinf_ = null;
-        kcaedekdinfBuilder_ = null;
+        withSingleDay_ = null;
+        withSingleDayBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
+     * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
      */
-    public POGOProtos.Rpc.KLHFIIILBHK.Builder getKcaedekdinfBuilder() {
+    public POGOProtos.Rpc.WithSingleDayProto.Builder getWithSingleDayBuilder() {
       
       onChanged();
-      return getKcaedekdinfFieldBuilder().getBuilder();
+      return getWithSingleDayFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
+     * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
      */
-    public POGOProtos.Rpc.KLHFIIILBHKOrBuilder getKcaedekdinfOrBuilder() {
-      if (kcaedekdinfBuilder_ != null) {
-        return kcaedekdinfBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.WithSingleDayProtoOrBuilder getWithSingleDayOrBuilder() {
+      if (withSingleDayBuilder_ != null) {
+        return withSingleDayBuilder_.getMessageOrBuilder();
       } else {
-        return kcaedekdinf_ == null ?
-            POGOProtos.Rpc.KLHFIIILBHK.getDefaultInstance() : kcaedekdinf_;
+        return withSingleDay_ == null ?
+            POGOProtos.Rpc.WithSingleDayProto.getDefaultInstance() : withSingleDay_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.KLHFIIILBHK kcaedekdinf = 98;</code>
+     * <code>.POGOProtos.Rpc.WithSingleDayProto with_single_day = 98;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.KLHFIIILBHK, POGOProtos.Rpc.KLHFIIILBHK.Builder, POGOProtos.Rpc.KLHFIIILBHKOrBuilder> 
-        getKcaedekdinfFieldBuilder() {
-      if (kcaedekdinfBuilder_ == null) {
-        kcaedekdinfBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.KLHFIIILBHK, POGOProtos.Rpc.KLHFIIILBHK.Builder, POGOProtos.Rpc.KLHFIIILBHKOrBuilder>(
-                getKcaedekdinf(),
+        POGOProtos.Rpc.WithSingleDayProto, POGOProtos.Rpc.WithSingleDayProto.Builder, POGOProtos.Rpc.WithSingleDayProtoOrBuilder> 
+        getWithSingleDayFieldBuilder() {
+      if (withSingleDayBuilder_ == null) {
+        withSingleDayBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithSingleDayProto, POGOProtos.Rpc.WithSingleDayProto.Builder, POGOProtos.Rpc.WithSingleDayProtoOrBuilder>(
+                getWithSingleDay(),
                 getParentForChildren(),
                 isClean());
-        kcaedekdinf_ = null;
+        withSingleDay_ = null;
       }
-      return kcaedekdinfBuilder_;
+      return withSingleDayBuilder_;
     }
 
-    private POGOProtos.Rpc.NDGDBNJKBON phahedfolbe_;
+    private POGOProtos.Rpc.DaysWithARowQuestProto daysInArow_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NDGDBNJKBON, POGOProtos.Rpc.NDGDBNJKBON.Builder, POGOProtos.Rpc.NDGDBNJKBONOrBuilder> phahedfolbeBuilder_;
+        POGOProtos.Rpc.DaysWithARowQuestProto, POGOProtos.Rpc.DaysWithARowQuestProto.Builder, POGOProtos.Rpc.DaysWithARowQuestProtoOrBuilder> daysInArowBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
-     * @return Whether the phahedfolbe field is set.
+     * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
+     * @return Whether the daysInArow field is set.
      */
-    public boolean hasPhahedfolbe() {
-      return phahedfolbeBuilder_ != null || phahedfolbe_ != null;
+    public boolean hasDaysInArow() {
+      return daysInArowBuilder_ != null || daysInArow_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
-     * @return The phahedfolbe.
+     * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
+     * @return The daysInArow.
      */
-    public POGOProtos.Rpc.NDGDBNJKBON getPhahedfolbe() {
-      if (phahedfolbeBuilder_ == null) {
-        return phahedfolbe_ == null ? POGOProtos.Rpc.NDGDBNJKBON.getDefaultInstance() : phahedfolbe_;
+    public POGOProtos.Rpc.DaysWithARowQuestProto getDaysInArow() {
+      if (daysInArowBuilder_ == null) {
+        return daysInArow_ == null ? POGOProtos.Rpc.DaysWithARowQuestProto.getDefaultInstance() : daysInArow_;
       } else {
-        return phahedfolbeBuilder_.getMessage();
+        return daysInArowBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
+     * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
      */
-    public Builder setPhahedfolbe(POGOProtos.Rpc.NDGDBNJKBON value) {
-      if (phahedfolbeBuilder_ == null) {
+    public Builder setDaysInArow(POGOProtos.Rpc.DaysWithARowQuestProto value) {
+      if (daysInArowBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        phahedfolbe_ = value;
+        daysInArow_ = value;
         onChanged();
       } else {
-        phahedfolbeBuilder_.setMessage(value);
+        daysInArowBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
+     * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
      */
-    public Builder setPhahedfolbe(
-        POGOProtos.Rpc.NDGDBNJKBON.Builder builderForValue) {
-      if (phahedfolbeBuilder_ == null) {
-        phahedfolbe_ = builderForValue.build();
+    public Builder setDaysInArow(
+        POGOProtos.Rpc.DaysWithARowQuestProto.Builder builderForValue) {
+      if (daysInArowBuilder_ == null) {
+        daysInArow_ = builderForValue.build();
         onChanged();
       } else {
-        phahedfolbeBuilder_.setMessage(builderForValue.build());
+        daysInArowBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
+     * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
      */
-    public Builder mergePhahedfolbe(POGOProtos.Rpc.NDGDBNJKBON value) {
-      if (phahedfolbeBuilder_ == null) {
-        if (phahedfolbe_ != null) {
-          phahedfolbe_ =
-            POGOProtos.Rpc.NDGDBNJKBON.newBuilder(phahedfolbe_).mergeFrom(value).buildPartial();
+    public Builder mergeDaysInArow(POGOProtos.Rpc.DaysWithARowQuestProto value) {
+      if (daysInArowBuilder_ == null) {
+        if (daysInArow_ != null) {
+          daysInArow_ =
+            POGOProtos.Rpc.DaysWithARowQuestProto.newBuilder(daysInArow_).mergeFrom(value).buildPartial();
         } else {
-          phahedfolbe_ = value;
+          daysInArow_ = value;
         }
         onChanged();
       } else {
-        phahedfolbeBuilder_.mergeFrom(value);
+        daysInArowBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
+     * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
      */
-    public Builder clearPhahedfolbe() {
-      if (phahedfolbeBuilder_ == null) {
-        phahedfolbe_ = null;
+    public Builder clearDaysInArow() {
+      if (daysInArowBuilder_ == null) {
+        daysInArow_ = null;
         onChanged();
       } else {
-        phahedfolbe_ = null;
-        phahedfolbeBuilder_ = null;
+        daysInArow_ = null;
+        daysInArowBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
+     * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
      */
-    public POGOProtos.Rpc.NDGDBNJKBON.Builder getPhahedfolbeBuilder() {
+    public POGOProtos.Rpc.DaysWithARowQuestProto.Builder getDaysInArowBuilder() {
       
       onChanged();
-      return getPhahedfolbeFieldBuilder().getBuilder();
+      return getDaysInArowFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
+     * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
      */
-    public POGOProtos.Rpc.NDGDBNJKBONOrBuilder getPhahedfolbeOrBuilder() {
-      if (phahedfolbeBuilder_ != null) {
-        return phahedfolbeBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.DaysWithARowQuestProtoOrBuilder getDaysInArowOrBuilder() {
+      if (daysInArowBuilder_ != null) {
+        return daysInArowBuilder_.getMessageOrBuilder();
       } else {
-        return phahedfolbe_ == null ?
-            POGOProtos.Rpc.NDGDBNJKBON.getDefaultInstance() : phahedfolbe_;
+        return daysInArow_ == null ?
+            POGOProtos.Rpc.DaysWithARowQuestProto.getDefaultInstance() : daysInArow_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NDGDBNJKBON phahedfolbe = 99;</code>
+     * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NDGDBNJKBON, POGOProtos.Rpc.NDGDBNJKBON.Builder, POGOProtos.Rpc.NDGDBNJKBONOrBuilder> 
-        getPhahedfolbeFieldBuilder() {
-      if (phahedfolbeBuilder_ == null) {
-        phahedfolbeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.NDGDBNJKBON, POGOProtos.Rpc.NDGDBNJKBON.Builder, POGOProtos.Rpc.NDGDBNJKBONOrBuilder>(
-                getPhahedfolbe(),
+        POGOProtos.Rpc.DaysWithARowQuestProto, POGOProtos.Rpc.DaysWithARowQuestProto.Builder, POGOProtos.Rpc.DaysWithARowQuestProtoOrBuilder> 
+        getDaysInArowFieldBuilder() {
+      if (daysInArowBuilder_ == null) {
+        daysInArowBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.DaysWithARowQuestProto, POGOProtos.Rpc.DaysWithARowQuestProto.Builder, POGOProtos.Rpc.DaysWithARowQuestProtoOrBuilder>(
+                getDaysInArow(),
                 getParentForChildren(),
                 isClean());
-        phahedfolbe_ = null;
+        daysInArow_ = null;
       }
-      return phahedfolbeBuilder_;
+      return daysInArowBuilder_;
     }
 
-    private java.lang.Object lpcmifggigl_ = "";
+    private java.lang.Object questId_ = "";
     /**
-     * <code>string lpcmifggigl = 100;</code>
-     * @return The lpcmifggigl.
+     * <code>string quest_id = 100;</code>
+     * @return The questId.
      */
-    public java.lang.String getLpcmifggigl() {
-      java.lang.Object ref = lpcmifggigl_;
+    public java.lang.String getQuestId() {
+      java.lang.Object ref = questId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        lpcmifggigl_ = s;
+        questId_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string lpcmifggigl = 100;</code>
-     * @return The bytes for lpcmifggigl.
+     * <code>string quest_id = 100;</code>
+     * @return The bytes for questId.
      */
     public com.google.protobuf.ByteString
-        getLpcmifggiglBytes() {
-      java.lang.Object ref = lpcmifggigl_;
+        getQuestIdBytes() {
+      java.lang.Object ref = questId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        lpcmifggigl_ = b;
+        questId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string lpcmifggigl = 100;</code>
-     * @param value The lpcmifggigl to set.
+     * <code>string quest_id = 100;</code>
+     * @param value The questId to set.
      * @return This builder for chaining.
      */
-    public Builder setLpcmifggigl(
+    public Builder setQuestId(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      lpcmifggigl_ = value;
+      questId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string lpcmifggigl = 100;</code>
+     * <code>string quest_id = 100;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLpcmifggigl() {
+    public Builder clearQuestId() {
       
-      lpcmifggigl_ = getDefaultInstance().getLpcmifggigl();
+      questId_ = getDefaultInstance().getQuestId();
       onChanged();
       return this;
     }
     /**
-     * <code>string lpcmifggigl = 100;</code>
-     * @param value The bytes for lpcmifggigl to set.
+     * <code>string quest_id = 100;</code>
+     * @param value The bytes for questId to set.
      * @return This builder for chaining.
      */
-    public Builder setLpcmifggiglBytes(
+    public Builder setQuestIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      lpcmifggigl_ = value;
+      questId_ = value;
       onChanged();
       return this;
     }
 
-    private long jifnahbilfm_ ;
+    private long questSeed_ ;
     /**
-     * <code>int64 jifnahbilfm = 101;</code>
-     * @return The jifnahbilfm.
+     * <code>int64 quest_seed = 101;</code>
+     * @return The questSeed.
      */
-    public long getJifnahbilfm() {
-      return jifnahbilfm_;
+    @java.lang.Override
+    public long getQuestSeed() {
+      return questSeed_;
     }
     /**
-     * <code>int64 jifnahbilfm = 101;</code>
-     * @param value The jifnahbilfm to set.
+     * <code>int64 quest_seed = 101;</code>
+     * @param value The questSeed to set.
      * @return This builder for chaining.
      */
-    public Builder setJifnahbilfm(long value) {
+    public Builder setQuestSeed(long value) {
       
-      jifnahbilfm_ = value;
+      questSeed_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 jifnahbilfm = 101;</code>
+     * <code>int64 quest_seed = 101;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJifnahbilfm() {
+    public Builder clearQuestSeed() {
       
-      jifnahbilfm_ = 0L;
+      questSeed_ = 0L;
       onChanged();
       return this;
     }
 
-    private int jbganbdeodh_ = 0;
+    private int questContext_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.QuestProto.EGGDDOBICIL jbganbdeodh = 102;</code>
-     * @return The enum numeric value on the wire for jbganbdeodh.
+     * <code>.POGOProtos.Rpc.QuestProto.Context quest_context = 102;</code>
+     * @return The enum numeric value on the wire for questContext.
      */
-    public int getJbganbdeodhValue() {
-      return jbganbdeodh_;
+    @java.lang.Override public int getQuestContextValue() {
+      return questContext_;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto.EGGDDOBICIL jbganbdeodh = 102;</code>
-     * @param value The enum numeric value on the wire for jbganbdeodh to set.
+     * <code>.POGOProtos.Rpc.QuestProto.Context quest_context = 102;</code>
+     * @param value The enum numeric value on the wire for questContext to set.
      * @return This builder for chaining.
      */
-    public Builder setJbganbdeodhValue(int value) {
-      jbganbdeodh_ = value;
+    public Builder setQuestContextValue(int value) {
+      
+      questContext_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto.EGGDDOBICIL jbganbdeodh = 102;</code>
-     * @return The jbganbdeodh.
+     * <code>.POGOProtos.Rpc.QuestProto.Context quest_context = 102;</code>
+     * @return The questContext.
      */
-    public POGOProtos.Rpc.QuestProto.EGGDDOBICIL getJbganbdeodh() {
+    @java.lang.Override
+    public POGOProtos.Rpc.QuestProto.Context getQuestContext() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.QuestProto.EGGDDOBICIL result = POGOProtos.Rpc.QuestProto.EGGDDOBICIL.valueOf(jbganbdeodh_);
-      return result == null ? POGOProtos.Rpc.QuestProto.EGGDDOBICIL.UNRECOGNIZED : result;
+      POGOProtos.Rpc.QuestProto.Context result = POGOProtos.Rpc.QuestProto.Context.valueOf(questContext_);
+      return result == null ? POGOProtos.Rpc.QuestProto.Context.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto.EGGDDOBICIL jbganbdeodh = 102;</code>
-     * @param value The jbganbdeodh to set.
+     * <code>.POGOProtos.Rpc.QuestProto.Context quest_context = 102;</code>
+     * @param value The questContext to set.
      * @return This builder for chaining.
      */
-    public Builder setJbganbdeodh(POGOProtos.Rpc.QuestProto.EGGDDOBICIL value) {
+    public Builder setQuestContext(POGOProtos.Rpc.QuestProto.Context value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      jbganbdeodh_ = value.getNumber();
+      questContext_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto.EGGDDOBICIL jbganbdeodh = 102;</code>
+     * <code>.POGOProtos.Rpc.QuestProto.Context quest_context = 102;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJbganbdeodh() {
+    public Builder clearQuestContext() {
       
-      jbganbdeodh_ = 0;
+      questContext_ = 0;
       onChanged();
       return this;
     }
 
-    private java.lang.Object jolfandfilb_ = "";
+    private java.lang.Object templateId_ = "";
     /**
-     * <code>string jolfandfilb = 103;</code>
-     * @return The jolfandfilb.
+     * <code>string template_id = 103;</code>
+     * @return The templateId.
      */
-    public java.lang.String getJolfandfilb() {
-      java.lang.Object ref = jolfandfilb_;
+    public java.lang.String getTemplateId() {
+      java.lang.Object ref = templateId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        jolfandfilb_ = s;
+        templateId_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string jolfandfilb = 103;</code>
-     * @return The bytes for jolfandfilb.
+     * <code>string template_id = 103;</code>
+     * @return The bytes for templateId.
      */
     public com.google.protobuf.ByteString
-        getJolfandfilbBytes() {
-      java.lang.Object ref = jolfandfilb_;
+        getTemplateIdBytes() {
+      java.lang.Object ref = templateId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        jolfandfilb_ = b;
+        templateId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string jolfandfilb = 103;</code>
-     * @param value The jolfandfilb to set.
+     * <code>string template_id = 103;</code>
+     * @param value The templateId to set.
      * @return This builder for chaining.
      */
-    public Builder setJolfandfilb(
+    public Builder setTemplateId(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      jolfandfilb_ = value;
+      templateId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string jolfandfilb = 103;</code>
+     * <code>string template_id = 103;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJolfandfilb() {
+    public Builder clearTemplateId() {
       
-      jolfandfilb_ = getDefaultInstance().getJolfandfilb();
+      templateId_ = getDefaultInstance().getTemplateId();
       onChanged();
       return this;
     }
     /**
-     * <code>string jolfandfilb = 103;</code>
-     * @param value The bytes for jolfandfilb to set.
+     * <code>string template_id = 103;</code>
+     * @param value The bytes for templateId to set.
      * @return This builder for chaining.
      */
-    public Builder setJolfandfilbBytes(
+    public Builder setTemplateIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      jolfandfilb_ = value;
+      templateId_ = value;
       onChanged();
       return this;
     }
 
-    private int logbdoecccg_ ;
+    private int progress_ ;
     /**
-     * <code>int32 logbdoecccg = 104;</code>
-     * @return The logbdoecccg.
+     * <code>int32 progress = 104;</code>
+     * @return The progress.
      */
-    public int getLogbdoecccg() {
-      return logbdoecccg_;
+    @java.lang.Override
+    public int getProgress() {
+      return progress_;
     }
     /**
-     * <code>int32 logbdoecccg = 104;</code>
-     * @param value The logbdoecccg to set.
+     * <code>int32 progress = 104;</code>
+     * @param value The progress to set.
      * @return This builder for chaining.
      */
-    public Builder setLogbdoecccg(int value) {
+    public Builder setProgress(int value) {
       
-      logbdoecccg_ = value;
+      progress_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 logbdoecccg = 104;</code>
+     * <code>int32 progress = 104;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLogbdoecccg() {
+    public Builder clearProgress() {
       
-      logbdoecccg_ = 0;
+      progress_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke_;
+    private POGOProtos.Rpc.QuestGoalProto goal_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ICGBHPDMKPI, POGOProtos.Rpc.ICGBHPDMKPI.Builder, POGOProtos.Rpc.ICGBHPDMKPIOrBuilder> phjdlkbadkeBuilder_;
+        POGOProtos.Rpc.QuestGoalProto, POGOProtos.Rpc.QuestGoalProto.Builder, POGOProtos.Rpc.QuestGoalProtoOrBuilder> goalBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
-     * @return Whether the phjdlkbadke field is set.
+     * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
+     * @return Whether the goal field is set.
      */
-    public boolean hasPhjdlkbadke() {
-      return phjdlkbadkeBuilder_ != null || phjdlkbadke_ != null;
+    public boolean hasGoal() {
+      return goalBuilder_ != null || goal_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
-     * @return The phjdlkbadke.
+     * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
+     * @return The goal.
      */
-    public POGOProtos.Rpc.ICGBHPDMKPI getPhjdlkbadke() {
-      if (phjdlkbadkeBuilder_ == null) {
-        return phjdlkbadke_ == null ? POGOProtos.Rpc.ICGBHPDMKPI.getDefaultInstance() : phjdlkbadke_;
+    public POGOProtos.Rpc.QuestGoalProto getGoal() {
+      if (goalBuilder_ == null) {
+        return goal_ == null ? POGOProtos.Rpc.QuestGoalProto.getDefaultInstance() : goal_;
       } else {
-        return phjdlkbadkeBuilder_.getMessage();
+        return goalBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
      */
-    public Builder setPhjdlkbadke(POGOProtos.Rpc.ICGBHPDMKPI value) {
-      if (phjdlkbadkeBuilder_ == null) {
+    public Builder setGoal(POGOProtos.Rpc.QuestGoalProto value) {
+      if (goalBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        phjdlkbadke_ = value;
+        goal_ = value;
         onChanged();
       } else {
-        phjdlkbadkeBuilder_.setMessage(value);
+        goalBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
      */
-    public Builder setPhjdlkbadke(
-        POGOProtos.Rpc.ICGBHPDMKPI.Builder builderForValue) {
-      if (phjdlkbadkeBuilder_ == null) {
-        phjdlkbadke_ = builderForValue.build();
+    public Builder setGoal(
+        POGOProtos.Rpc.QuestGoalProto.Builder builderForValue) {
+      if (goalBuilder_ == null) {
+        goal_ = builderForValue.build();
         onChanged();
       } else {
-        phjdlkbadkeBuilder_.setMessage(builderForValue.build());
+        goalBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
      */
-    public Builder mergePhjdlkbadke(POGOProtos.Rpc.ICGBHPDMKPI value) {
-      if (phjdlkbadkeBuilder_ == null) {
-        if (phjdlkbadke_ != null) {
-          phjdlkbadke_ =
-            POGOProtos.Rpc.ICGBHPDMKPI.newBuilder(phjdlkbadke_).mergeFrom(value).buildPartial();
+    public Builder mergeGoal(POGOProtos.Rpc.QuestGoalProto value) {
+      if (goalBuilder_ == null) {
+        if (goal_ != null) {
+          goal_ =
+            POGOProtos.Rpc.QuestGoalProto.newBuilder(goal_).mergeFrom(value).buildPartial();
         } else {
-          phjdlkbadke_ = value;
+          goal_ = value;
         }
         onChanged();
       } else {
-        phjdlkbadkeBuilder_.mergeFrom(value);
+        goalBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
      */
-    public Builder clearPhjdlkbadke() {
-      if (phjdlkbadkeBuilder_ == null) {
-        phjdlkbadke_ = null;
+    public Builder clearGoal() {
+      if (goalBuilder_ == null) {
+        goal_ = null;
         onChanged();
       } else {
-        phjdlkbadke_ = null;
-        phjdlkbadkeBuilder_ = null;
+        goal_ = null;
+        goalBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
      */
-    public POGOProtos.Rpc.ICGBHPDMKPI.Builder getPhjdlkbadkeBuilder() {
+    public POGOProtos.Rpc.QuestGoalProto.Builder getGoalBuilder() {
       
       onChanged();
-      return getPhjdlkbadkeFieldBuilder().getBuilder();
+      return getGoalFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
      */
-    public POGOProtos.Rpc.ICGBHPDMKPIOrBuilder getPhjdlkbadkeOrBuilder() {
-      if (phjdlkbadkeBuilder_ != null) {
-        return phjdlkbadkeBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.QuestGoalProtoOrBuilder getGoalOrBuilder() {
+      if (goalBuilder_ != null) {
+        return goalBuilder_.getMessageOrBuilder();
       } else {
-        return phjdlkbadke_ == null ?
-            POGOProtos.Rpc.ICGBHPDMKPI.getDefaultInstance() : phjdlkbadke_;
+        return goal_ == null ?
+            POGOProtos.Rpc.QuestGoalProto.getDefaultInstance() : goal_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ICGBHPDMKPI phjdlkbadke = 105;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto goal = 105;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ICGBHPDMKPI, POGOProtos.Rpc.ICGBHPDMKPI.Builder, POGOProtos.Rpc.ICGBHPDMKPIOrBuilder> 
-        getPhjdlkbadkeFieldBuilder() {
-      if (phjdlkbadkeBuilder_ == null) {
-        phjdlkbadkeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ICGBHPDMKPI, POGOProtos.Rpc.ICGBHPDMKPI.Builder, POGOProtos.Rpc.ICGBHPDMKPIOrBuilder>(
-                getPhjdlkbadke(),
+        POGOProtos.Rpc.QuestGoalProto, POGOProtos.Rpc.QuestGoalProto.Builder, POGOProtos.Rpc.QuestGoalProtoOrBuilder> 
+        getGoalFieldBuilder() {
+      if (goalBuilder_ == null) {
+        goalBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.QuestGoalProto, POGOProtos.Rpc.QuestGoalProto.Builder, POGOProtos.Rpc.QuestGoalProtoOrBuilder>(
+                getGoal(),
                 getParentForChildren(),
                 isClean());
-        phjdlkbadke_ = null;
+        goal_ = null;
       }
-      return phjdlkbadkeBuilder_;
+      return goalBuilder_;
     }
 
-    private int oemhknkemca_ = 0;
+    private int status_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.QuestProto.DAHCDGKHIII oemhknkemca = 106;</code>
-     * @return The enum numeric value on the wire for oemhknkemca.
+     * <code>.POGOProtos.Rpc.QuestProto.Status status = 106;</code>
+     * @return The enum numeric value on the wire for status.
      */
-    public int getOemhknkemcaValue() {
-      return oemhknkemca_;
+    @java.lang.Override public int getStatusValue() {
+      return status_;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto.DAHCDGKHIII oemhknkemca = 106;</code>
-     * @param value The enum numeric value on the wire for oemhknkemca to set.
+     * <code>.POGOProtos.Rpc.QuestProto.Status status = 106;</code>
+     * @param value The enum numeric value on the wire for status to set.
      * @return This builder for chaining.
      */
-    public Builder setOemhknkemcaValue(int value) {
-      oemhknkemca_ = value;
+    public Builder setStatusValue(int value) {
+      
+      status_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto.DAHCDGKHIII oemhknkemca = 106;</code>
-     * @return The oemhknkemca.
+     * <code>.POGOProtos.Rpc.QuestProto.Status status = 106;</code>
+     * @return The status.
      */
-    public POGOProtos.Rpc.QuestProto.DAHCDGKHIII getOemhknkemca() {
+    @java.lang.Override
+    public POGOProtos.Rpc.QuestProto.Status getStatus() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.QuestProto.DAHCDGKHIII result = POGOProtos.Rpc.QuestProto.DAHCDGKHIII.valueOf(oemhknkemca_);
-      return result == null ? POGOProtos.Rpc.QuestProto.DAHCDGKHIII.UNRECOGNIZED : result;
+      POGOProtos.Rpc.QuestProto.Status result = POGOProtos.Rpc.QuestProto.Status.valueOf(status_);
+      return result == null ? POGOProtos.Rpc.QuestProto.Status.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto.DAHCDGKHIII oemhknkemca = 106;</code>
-     * @param value The oemhknkemca to set.
+     * <code>.POGOProtos.Rpc.QuestProto.Status status = 106;</code>
+     * @param value The status to set.
      * @return This builder for chaining.
      */
-    public Builder setOemhknkemca(POGOProtos.Rpc.QuestProto.DAHCDGKHIII value) {
+    public Builder setStatus(POGOProtos.Rpc.QuestProto.Status value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      oemhknkemca_ = value.getNumber();
+      status_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto.DAHCDGKHIII oemhknkemca = 106;</code>
+     * <code>.POGOProtos.Rpc.QuestProto.Status status = 106;</code>
      * @return This builder for chaining.
      */
-    public Builder clearOemhknkemca() {
+    public Builder clearStatus() {
       
-      oemhknkemca_ = 0;
+      status_ = 0;
       onChanged();
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.FOPBILPGNKF> fhpgnphjmlo_ =
+    private java.util.List<POGOProtos.Rpc.QuestRewardProto> questRewards_ =
       java.util.Collections.emptyList();
-    private void ensureFhpgnphjmloIsMutable() {
+    private void ensureQuestRewardsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        fhpgnphjmlo_ = new java.util.ArrayList<POGOProtos.Rpc.FOPBILPGNKF>(fhpgnphjmlo_);
+        questRewards_ = new java.util.ArrayList<POGOProtos.Rpc.QuestRewardProto>(questRewards_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.FOPBILPGNKF, POGOProtos.Rpc.FOPBILPGNKF.Builder, POGOProtos.Rpc.FOPBILPGNKFOrBuilder> fhpgnphjmloBuilder_;
+        POGOProtos.Rpc.QuestRewardProto, POGOProtos.Rpc.QuestRewardProto.Builder, POGOProtos.Rpc.QuestRewardProtoOrBuilder> questRewardsBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public java.util.List<POGOProtos.Rpc.FOPBILPGNKF> getFhpgnphjmloList() {
-      if (fhpgnphjmloBuilder_ == null) {
-        return java.util.Collections.unmodifiableList(fhpgnphjmlo_);
+    public java.util.List<POGOProtos.Rpc.QuestRewardProto> getQuestRewardsList() {
+      if (questRewardsBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(questRewards_);
       } else {
-        return fhpgnphjmloBuilder_.getMessageList();
+        return questRewardsBuilder_.getMessageList();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public int getFhpgnphjmloCount() {
-      if (fhpgnphjmloBuilder_ == null) {
-        return fhpgnphjmlo_.size();
+    public int getQuestRewardsCount() {
+      if (questRewardsBuilder_ == null) {
+        return questRewards_.size();
       } else {
-        return fhpgnphjmloBuilder_.getCount();
+        return questRewardsBuilder_.getCount();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public POGOProtos.Rpc.FOPBILPGNKF getFhpgnphjmlo(int index) {
-      if (fhpgnphjmloBuilder_ == null) {
-        return fhpgnphjmlo_.get(index);
+    public POGOProtos.Rpc.QuestRewardProto getQuestRewards(int index) {
+      if (questRewardsBuilder_ == null) {
+        return questRewards_.get(index);
       } else {
-        return fhpgnphjmloBuilder_.getMessage(index);
+        return questRewardsBuilder_.getMessage(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public Builder setFhpgnphjmlo(
-        int index, POGOProtos.Rpc.FOPBILPGNKF value) {
-      if (fhpgnphjmloBuilder_ == null) {
+    public Builder setQuestRewards(
+        int index, POGOProtos.Rpc.QuestRewardProto value) {
+      if (questRewardsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureFhpgnphjmloIsMutable();
-        fhpgnphjmlo_.set(index, value);
+        ensureQuestRewardsIsMutable();
+        questRewards_.set(index, value);
         onChanged();
       } else {
-        fhpgnphjmloBuilder_.setMessage(index, value);
+        questRewardsBuilder_.setMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public Builder setFhpgnphjmlo(
-        int index, POGOProtos.Rpc.FOPBILPGNKF.Builder builderForValue) {
-      if (fhpgnphjmloBuilder_ == null) {
-        ensureFhpgnphjmloIsMutable();
-        fhpgnphjmlo_.set(index, builderForValue.build());
+    public Builder setQuestRewards(
+        int index, POGOProtos.Rpc.QuestRewardProto.Builder builderForValue) {
+      if (questRewardsBuilder_ == null) {
+        ensureQuestRewardsIsMutable();
+        questRewards_.set(index, builderForValue.build());
         onChanged();
       } else {
-        fhpgnphjmloBuilder_.setMessage(index, builderForValue.build());
+        questRewardsBuilder_.setMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public Builder addFhpgnphjmlo(POGOProtos.Rpc.FOPBILPGNKF value) {
-      if (fhpgnphjmloBuilder_ == null) {
+    public Builder addQuestRewards(POGOProtos.Rpc.QuestRewardProto value) {
+      if (questRewardsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureFhpgnphjmloIsMutable();
-        fhpgnphjmlo_.add(value);
+        ensureQuestRewardsIsMutable();
+        questRewards_.add(value);
         onChanged();
       } else {
-        fhpgnphjmloBuilder_.addMessage(value);
+        questRewardsBuilder_.addMessage(value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public Builder addFhpgnphjmlo(
-        int index, POGOProtos.Rpc.FOPBILPGNKF value) {
-      if (fhpgnphjmloBuilder_ == null) {
+    public Builder addQuestRewards(
+        int index, POGOProtos.Rpc.QuestRewardProto value) {
+      if (questRewardsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureFhpgnphjmloIsMutable();
-        fhpgnphjmlo_.add(index, value);
+        ensureQuestRewardsIsMutable();
+        questRewards_.add(index, value);
         onChanged();
       } else {
-        fhpgnphjmloBuilder_.addMessage(index, value);
+        questRewardsBuilder_.addMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public Builder addFhpgnphjmlo(
-        POGOProtos.Rpc.FOPBILPGNKF.Builder builderForValue) {
-      if (fhpgnphjmloBuilder_ == null) {
-        ensureFhpgnphjmloIsMutable();
-        fhpgnphjmlo_.add(builderForValue.build());
+    public Builder addQuestRewards(
+        POGOProtos.Rpc.QuestRewardProto.Builder builderForValue) {
+      if (questRewardsBuilder_ == null) {
+        ensureQuestRewardsIsMutable();
+        questRewards_.add(builderForValue.build());
         onChanged();
       } else {
-        fhpgnphjmloBuilder_.addMessage(builderForValue.build());
+        questRewardsBuilder_.addMessage(builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public Builder addFhpgnphjmlo(
-        int index, POGOProtos.Rpc.FOPBILPGNKF.Builder builderForValue) {
-      if (fhpgnphjmloBuilder_ == null) {
-        ensureFhpgnphjmloIsMutable();
-        fhpgnphjmlo_.add(index, builderForValue.build());
+    public Builder addQuestRewards(
+        int index, POGOProtos.Rpc.QuestRewardProto.Builder builderForValue) {
+      if (questRewardsBuilder_ == null) {
+        ensureQuestRewardsIsMutable();
+        questRewards_.add(index, builderForValue.build());
         onChanged();
       } else {
-        fhpgnphjmloBuilder_.addMessage(index, builderForValue.build());
+        questRewardsBuilder_.addMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public Builder addAllFhpgnphjmlo(
-        java.lang.Iterable<? extends POGOProtos.Rpc.FOPBILPGNKF> values) {
-      if (fhpgnphjmloBuilder_ == null) {
-        ensureFhpgnphjmloIsMutable();
+    public Builder addAllQuestRewards(
+        java.lang.Iterable<? extends POGOProtos.Rpc.QuestRewardProto> values) {
+      if (questRewardsBuilder_ == null) {
+        ensureQuestRewardsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, fhpgnphjmlo_);
+            values, questRewards_);
         onChanged();
       } else {
-        fhpgnphjmloBuilder_.addAllMessages(values);
+        questRewardsBuilder_.addAllMessages(values);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public Builder clearFhpgnphjmlo() {
-      if (fhpgnphjmloBuilder_ == null) {
-        fhpgnphjmlo_ = java.util.Collections.emptyList();
+    public Builder clearQuestRewards() {
+      if (questRewardsBuilder_ == null) {
+        questRewards_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
-        fhpgnphjmloBuilder_.clear();
+        questRewardsBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public Builder removeFhpgnphjmlo(int index) {
-      if (fhpgnphjmloBuilder_ == null) {
-        ensureFhpgnphjmloIsMutable();
-        fhpgnphjmlo_.remove(index);
+    public Builder removeQuestRewards(int index) {
+      if (questRewardsBuilder_ == null) {
+        ensureQuestRewardsIsMutable();
+        questRewards_.remove(index);
         onChanged();
       } else {
-        fhpgnphjmloBuilder_.remove(index);
+        questRewardsBuilder_.remove(index);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public POGOProtos.Rpc.FOPBILPGNKF.Builder getFhpgnphjmloBuilder(
+    public POGOProtos.Rpc.QuestRewardProto.Builder getQuestRewardsBuilder(
         int index) {
-      return getFhpgnphjmloFieldBuilder().getBuilder(index);
+      return getQuestRewardsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public POGOProtos.Rpc.FOPBILPGNKFOrBuilder getFhpgnphjmloOrBuilder(
+    public POGOProtos.Rpc.QuestRewardProtoOrBuilder getQuestRewardsOrBuilder(
         int index) {
-      if (fhpgnphjmloBuilder_ == null) {
-        return fhpgnphjmlo_.get(index);  } else {
-        return fhpgnphjmloBuilder_.getMessageOrBuilder(index);
+      if (questRewardsBuilder_ == null) {
+        return questRewards_.get(index);  } else {
+        return questRewardsBuilder_.getMessageOrBuilder(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.FOPBILPGNKFOrBuilder> 
-         getFhpgnphjmloOrBuilderList() {
-      if (fhpgnphjmloBuilder_ != null) {
-        return fhpgnphjmloBuilder_.getMessageOrBuilderList();
+    public java.util.List<? extends POGOProtos.Rpc.QuestRewardProtoOrBuilder> 
+         getQuestRewardsOrBuilderList() {
+      if (questRewardsBuilder_ != null) {
+        return questRewardsBuilder_.getMessageOrBuilderList();
       } else {
-        return java.util.Collections.unmodifiableList(fhpgnphjmlo_);
+        return java.util.Collections.unmodifiableList(questRewards_);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public POGOProtos.Rpc.FOPBILPGNKF.Builder addFhpgnphjmloBuilder() {
-      return getFhpgnphjmloFieldBuilder().addBuilder(
-          POGOProtos.Rpc.FOPBILPGNKF.getDefaultInstance());
+    public POGOProtos.Rpc.QuestRewardProto.Builder addQuestRewardsBuilder() {
+      return getQuestRewardsFieldBuilder().addBuilder(
+          POGOProtos.Rpc.QuestRewardProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public POGOProtos.Rpc.FOPBILPGNKF.Builder addFhpgnphjmloBuilder(
+    public POGOProtos.Rpc.QuestRewardProto.Builder addQuestRewardsBuilder(
         int index) {
-      return getFhpgnphjmloFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.FOPBILPGNKF.getDefaultInstance());
+      return getQuestRewardsFieldBuilder().addBuilder(
+          index, POGOProtos.Rpc.QuestRewardProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FOPBILPGNKF fhpgnphjmlo = 107;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestRewardProto quest_rewards = 107;</code>
      */
-    public java.util.List<POGOProtos.Rpc.FOPBILPGNKF.Builder> 
-         getFhpgnphjmloBuilderList() {
-      return getFhpgnphjmloFieldBuilder().getBuilderList();
+    public java.util.List<POGOProtos.Rpc.QuestRewardProto.Builder> 
+         getQuestRewardsBuilderList() {
+      return getQuestRewardsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.FOPBILPGNKF, POGOProtos.Rpc.FOPBILPGNKF.Builder, POGOProtos.Rpc.FOPBILPGNKFOrBuilder> 
-        getFhpgnphjmloFieldBuilder() {
-      if (fhpgnphjmloBuilder_ == null) {
-        fhpgnphjmloBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.FOPBILPGNKF, POGOProtos.Rpc.FOPBILPGNKF.Builder, POGOProtos.Rpc.FOPBILPGNKFOrBuilder>(
-                fhpgnphjmlo_,
+        POGOProtos.Rpc.QuestRewardProto, POGOProtos.Rpc.QuestRewardProto.Builder, POGOProtos.Rpc.QuestRewardProtoOrBuilder> 
+        getQuestRewardsFieldBuilder() {
+      if (questRewardsBuilder_ == null) {
+        questRewardsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            POGOProtos.Rpc.QuestRewardProto, POGOProtos.Rpc.QuestRewardProto.Builder, POGOProtos.Rpc.QuestRewardProtoOrBuilder>(
+                questRewards_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
-        fhpgnphjmlo_ = null;
+        questRewards_ = null;
       }
-      return fhpgnphjmloBuilder_;
+      return questRewardsBuilder_;
     }
 
-    private long ieilnkilhck_ ;
+    private long creationTimestampMs_ ;
     /**
-     * <code>int64 ieilnkilhck = 108;</code>
-     * @return The ieilnkilhck.
+     * <code>int64 creation_timestamp_ms = 108;</code>
+     * @return The creationTimestampMs.
      */
-    public long getIeilnkilhck() {
-      return ieilnkilhck_;
+    @java.lang.Override
+    public long getCreationTimestampMs() {
+      return creationTimestampMs_;
     }
     /**
-     * <code>int64 ieilnkilhck = 108;</code>
-     * @param value The ieilnkilhck to set.
+     * <code>int64 creation_timestamp_ms = 108;</code>
+     * @param value The creationTimestampMs to set.
      * @return This builder for chaining.
      */
-    public Builder setIeilnkilhck(long value) {
+    public Builder setCreationTimestampMs(long value) {
       
-      ieilnkilhck_ = value;
+      creationTimestampMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 ieilnkilhck = 108;</code>
+     * <code>int64 creation_timestamp_ms = 108;</code>
      * @return This builder for chaining.
      */
-    public Builder clearIeilnkilhck() {
+    public Builder clearCreationTimestampMs() {
       
-      ieilnkilhck_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private long pdncmodpaan_ ;
-    /**
-     * <code>int64 pdncmodpaan = 109;</code>
-     * @return The pdncmodpaan.
-     */
-    public long getPdncmodpaan() {
-      return pdncmodpaan_;
-    }
-    /**
-     * <code>int64 pdncmodpaan = 109;</code>
-     * @param value The pdncmodpaan to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPdncmodpaan(long value) {
-      
-      pdncmodpaan_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 pdncmodpaan = 109;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPdncmodpaan() {
-      
-      pdncmodpaan_ = 0L;
+      creationTimestampMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private long cnjdonojmpg_ ;
+    private long lastUpdateTimestampMs_ ;
     /**
-     * <code>int64 cnjdonojmpg = 110;</code>
-     * @return The cnjdonojmpg.
+     * <code>int64 last_update_timestamp_ms = 109;</code>
+     * @return The lastUpdateTimestampMs.
      */
-    public long getCnjdonojmpg() {
-      return cnjdonojmpg_;
+    @java.lang.Override
+    public long getLastUpdateTimestampMs() {
+      return lastUpdateTimestampMs_;
     }
     /**
-     * <code>int64 cnjdonojmpg = 110;</code>
-     * @param value The cnjdonojmpg to set.
+     * <code>int64 last_update_timestamp_ms = 109;</code>
+     * @param value The lastUpdateTimestampMs to set.
      * @return This builder for chaining.
      */
-    public Builder setCnjdonojmpg(long value) {
+    public Builder setLastUpdateTimestampMs(long value) {
       
-      cnjdonojmpg_ = value;
+      lastUpdateTimestampMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 cnjdonojmpg = 110;</code>
+     * <code>int64 last_update_timestamp_ms = 109;</code>
      * @return This builder for chaining.
      */
-    public Builder clearCnjdonojmpg() {
+    public Builder clearLastUpdateTimestampMs() {
       
-      cnjdonojmpg_ = 0L;
+      lastUpdateTimestampMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private java.lang.Object dlangcndbfi_ = "";
+    private long completionTimestampMs_ ;
     /**
-     * <code>string dlangcndbfi = 111;</code>
-     * @return The dlangcndbfi.
+     * <code>int64 completion_timestamp_ms = 110;</code>
+     * @return The completionTimestampMs.
      */
-    public java.lang.String getDlangcndbfi() {
-      java.lang.Object ref = dlangcndbfi_;
+    @java.lang.Override
+    public long getCompletionTimestampMs() {
+      return completionTimestampMs_;
+    }
+    /**
+     * <code>int64 completion_timestamp_ms = 110;</code>
+     * @param value The completionTimestampMs to set.
+     * @return This builder for chaining.
+     */
+    public Builder setCompletionTimestampMs(long value) {
+      
+      completionTimestampMs_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int64 completion_timestamp_ms = 110;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearCompletionTimestampMs() {
+      
+      completionTimestampMs_ = 0L;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object fortId_ = "";
+    /**
+     * <code>string fort_id = 111;</code>
+     * @return The fortId.
+     */
+    public java.lang.String getFortId() {
+      java.lang.Object ref = fortId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        dlangcndbfi_ = s;
+        fortId_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string dlangcndbfi = 111;</code>
-     * @return The bytes for dlangcndbfi.
+     * <code>string fort_id = 111;</code>
+     * @return The bytes for fortId.
      */
     public com.google.protobuf.ByteString
-        getDlangcndbfiBytes() {
-      java.lang.Object ref = dlangcndbfi_;
+        getFortIdBytes() {
+      java.lang.Object ref = fortId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        dlangcndbfi_ = b;
+        fortId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string dlangcndbfi = 111;</code>
-     * @param value The dlangcndbfi to set.
+     * <code>string fort_id = 111;</code>
+     * @param value The fortId to set.
      * @return This builder for chaining.
      */
-    public Builder setDlangcndbfi(
+    public Builder setFortId(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      dlangcndbfi_ = value;
+      fortId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string dlangcndbfi = 111;</code>
+     * <code>string fort_id = 111;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDlangcndbfi() {
+    public Builder clearFortId() {
       
-      dlangcndbfi_ = getDefaultInstance().getDlangcndbfi();
+      fortId_ = getDefaultInstance().getFortId();
       onChanged();
       return this;
     }
     /**
-     * <code>string dlangcndbfi = 111;</code>
-     * @param value The bytes for dlangcndbfi to set.
+     * <code>string fort_id = 111;</code>
+     * @param value The bytes for fortId to set.
      * @return This builder for chaining.
      */
-    public Builder setDlangcndbfiBytes(
+    public Builder setFortIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      dlangcndbfi_ = value;
+      fortId_ = value;
       onChanged();
       return this;
     }
 
-    private boolean iaghmalcdnj_ ;
+    private boolean adminGenerated_ ;
     /**
-     * <code>bool iaghmalcdnj = 112;</code>
-     * @return The iaghmalcdnj.
+     * <code>bool admin_generated = 112;</code>
+     * @return The adminGenerated.
      */
-    public boolean getIaghmalcdnj() {
-      return iaghmalcdnj_;
+    @java.lang.Override
+    public boolean getAdminGenerated() {
+      return adminGenerated_;
     }
     /**
-     * <code>bool iaghmalcdnj = 112;</code>
-     * @param value The iaghmalcdnj to set.
+     * <code>bool admin_generated = 112;</code>
+     * @param value The adminGenerated to set.
      * @return This builder for chaining.
      */
-    public Builder setIaghmalcdnj(boolean value) {
+    public Builder setAdminGenerated(boolean value) {
       
-      iaghmalcdnj_ = value;
+      adminGenerated_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool iaghmalcdnj = 112;</code>
+     * <code>bool admin_generated = 112;</code>
      * @return This builder for chaining.
      */
-    public Builder clearIaghmalcdnj() {
+    public Builder clearAdminGenerated() {
       
-      iaghmalcdnj_ = false;
-      onChanged();
-      return this;
-    }
-
-    private boolean cpglhicleeb_ ;
-    /**
-     * <code>bool cpglhicleeb = 113;</code>
-     * @return The cpglhicleeb.
-     */
-    public boolean getCpglhicleeb() {
-      return cpglhicleeb_;
-    }
-    /**
-     * <code>bool cpglhicleeb = 113;</code>
-     * @param value The cpglhicleeb to set.
-     * @return This builder for chaining.
-     */
-    public Builder setCpglhicleeb(boolean value) {
-      
-      cpglhicleeb_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>bool cpglhicleeb = 113;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearCpglhicleeb() {
-      
-      cpglhicleeb_ = false;
+      adminGenerated_ = false;
       onChanged();
       return this;
     }
 
-    private int pkkfjkjdgei_ ;
+    private boolean stampCountOverrideEnabled_ ;
     /**
-     * <code>int32 pkkfjkjdgei = 114;</code>
-     * @return The pkkfjkjdgei.
+     * <code>bool stamp_count_override_enabled = 113;</code>
+     * @return The stampCountOverrideEnabled.
      */
-    public int getPkkfjkjdgei() {
-      return pkkfjkjdgei_;
+    @java.lang.Override
+    public boolean getStampCountOverrideEnabled() {
+      return stampCountOverrideEnabled_;
     }
     /**
-     * <code>int32 pkkfjkjdgei = 114;</code>
-     * @param value The pkkfjkjdgei to set.
+     * <code>bool stamp_count_override_enabled = 113;</code>
+     * @param value The stampCountOverrideEnabled to set.
      * @return This builder for chaining.
      */
-    public Builder setPkkfjkjdgei(int value) {
+    public Builder setStampCountOverrideEnabled(boolean value) {
       
-      pkkfjkjdgei_ = value;
+      stampCountOverrideEnabled_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 pkkfjkjdgei = 114;</code>
+     * <code>bool stamp_count_override_enabled = 113;</code>
      * @return This builder for chaining.
      */
-    public Builder clearPkkfjkjdgei() {
+    public Builder clearStampCountOverrideEnabled() {
       
-      pkkfjkjdgei_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private long feacpfogjkf_ ;
-    /**
-     * <code>int64 feacpfogjkf = 115;</code>
-     * @return The feacpfogjkf.
-     */
-    public long getFeacpfogjkf() {
-      return feacpfogjkf_;
-    }
-    /**
-     * <code>int64 feacpfogjkf = 115;</code>
-     * @param value The feacpfogjkf to set.
-     * @return This builder for chaining.
-     */
-    public Builder setFeacpfogjkf(long value) {
-      
-      feacpfogjkf_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 feacpfogjkf = 115;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearFeacpfogjkf() {
-      
-      feacpfogjkf_ = 0L;
+      stampCountOverrideEnabled_ = false;
       onChanged();
       return this;
     }
 
-    private int dnhpekmopil_ ;
+    private int stampCountOverride_ ;
     /**
-     * <code>int32 dnhpekmopil = 116;</code>
-     * @return The dnhpekmopil.
+     * <code>int32 stamp_count_override = 114;</code>
+     * @return The stampCountOverride.
      */
-    public int getDnhpekmopil() {
-      return dnhpekmopil_;
+    @java.lang.Override
+    public int getStampCountOverride() {
+      return stampCountOverride_;
     }
     /**
-     * <code>int32 dnhpekmopil = 116;</code>
-     * @param value The dnhpekmopil to set.
+     * <code>int32 stamp_count_override = 114;</code>
+     * @param value The stampCountOverride to set.
      * @return This builder for chaining.
      */
-    public Builder setDnhpekmopil(int value) {
+    public Builder setStampCountOverride(int value) {
       
-      dnhpekmopil_ = value;
+      stampCountOverride_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 dnhpekmopil = 116;</code>
+     * <code>int32 stamp_count_override = 114;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDnhpekmopil() {
+    public Builder clearStampCountOverride() {
       
-      dnhpekmopil_ = 0;
+      stampCountOverride_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl_;
+    private long s2CellId_ ;
+    /**
+     * <code>int64 s2_cell_id = 115;</code>
+     * @return The s2CellId.
+     */
+    @java.lang.Override
+    public long getS2CellId() {
+      return s2CellId_;
+    }
+    /**
+     * <code>int64 s2_cell_id = 115;</code>
+     * @param value The s2CellId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setS2CellId(long value) {
+      
+      s2CellId_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int64 s2_cell_id = 115;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearS2CellId() {
+      
+      s2CellId_ = 0L;
+      onChanged();
+      return this;
+    }
+
+    private int storyQuestTemplateVersion_ ;
+    /**
+     * <code>int32 story_quest_template_version = 116;</code>
+     * @return The storyQuestTemplateVersion.
+     */
+    @java.lang.Override
+    public int getStoryQuestTemplateVersion() {
+      return storyQuestTemplateVersion_;
+    }
+    /**
+     * <code>int32 story_quest_template_version = 116;</code>
+     * @param value The storyQuestTemplateVersion to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStoryQuestTemplateVersion(int value) {
+      
+      storyQuestTemplateVersion_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 story_quest_template_version = 116;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStoryQuestTemplateVersion() {
+      
+      storyQuestTemplateVersion_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private POGOProtos.Rpc.DailyCounterProto dailyCounter_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JKJPEEMNCDK, POGOProtos.Rpc.JKJPEEMNCDK.Builder, POGOProtos.Rpc.JKJPEEMNCDKOrBuilder> ijchjdcbbnlBuilder_;
+        POGOProtos.Rpc.DailyCounterProto, POGOProtos.Rpc.DailyCounterProto.Builder, POGOProtos.Rpc.DailyCounterProtoOrBuilder> dailyCounterBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
-     * @return Whether the ijchjdcbbnl field is set.
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
+     * @return Whether the dailyCounter field is set.
      */
-    public boolean hasIjchjdcbbnl() {
-      return ijchjdcbbnlBuilder_ != null || ijchjdcbbnl_ != null;
+    public boolean hasDailyCounter() {
+      return dailyCounterBuilder_ != null || dailyCounter_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
-     * @return The ijchjdcbbnl.
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
+     * @return The dailyCounter.
      */
-    public POGOProtos.Rpc.JKJPEEMNCDK getIjchjdcbbnl() {
-      if (ijchjdcbbnlBuilder_ == null) {
-        return ijchjdcbbnl_ == null ? POGOProtos.Rpc.JKJPEEMNCDK.getDefaultInstance() : ijchjdcbbnl_;
+    public POGOProtos.Rpc.DailyCounterProto getDailyCounter() {
+      if (dailyCounterBuilder_ == null) {
+        return dailyCounter_ == null ? POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : dailyCounter_;
       } else {
-        return ijchjdcbbnlBuilder_.getMessage();
+        return dailyCounterBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
      */
-    public Builder setIjchjdcbbnl(POGOProtos.Rpc.JKJPEEMNCDK value) {
-      if (ijchjdcbbnlBuilder_ == null) {
+    public Builder setDailyCounter(POGOProtos.Rpc.DailyCounterProto value) {
+      if (dailyCounterBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ijchjdcbbnl_ = value;
+        dailyCounter_ = value;
         onChanged();
       } else {
-        ijchjdcbbnlBuilder_.setMessage(value);
+        dailyCounterBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
      */
-    public Builder setIjchjdcbbnl(
-        POGOProtos.Rpc.JKJPEEMNCDK.Builder builderForValue) {
-      if (ijchjdcbbnlBuilder_ == null) {
-        ijchjdcbbnl_ = builderForValue.build();
+    public Builder setDailyCounter(
+        POGOProtos.Rpc.DailyCounterProto.Builder builderForValue) {
+      if (dailyCounterBuilder_ == null) {
+        dailyCounter_ = builderForValue.build();
         onChanged();
       } else {
-        ijchjdcbbnlBuilder_.setMessage(builderForValue.build());
+        dailyCounterBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
      */
-    public Builder mergeIjchjdcbbnl(POGOProtos.Rpc.JKJPEEMNCDK value) {
-      if (ijchjdcbbnlBuilder_ == null) {
-        if (ijchjdcbbnl_ != null) {
-          ijchjdcbbnl_ =
-            POGOProtos.Rpc.JKJPEEMNCDK.newBuilder(ijchjdcbbnl_).mergeFrom(value).buildPartial();
+    public Builder mergeDailyCounter(POGOProtos.Rpc.DailyCounterProto value) {
+      if (dailyCounterBuilder_ == null) {
+        if (dailyCounter_ != null) {
+          dailyCounter_ =
+            POGOProtos.Rpc.DailyCounterProto.newBuilder(dailyCounter_).mergeFrom(value).buildPartial();
         } else {
-          ijchjdcbbnl_ = value;
+          dailyCounter_ = value;
         }
         onChanged();
       } else {
-        ijchjdcbbnlBuilder_.mergeFrom(value);
+        dailyCounterBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
      */
-    public Builder clearIjchjdcbbnl() {
-      if (ijchjdcbbnlBuilder_ == null) {
-        ijchjdcbbnl_ = null;
+    public Builder clearDailyCounter() {
+      if (dailyCounterBuilder_ == null) {
+        dailyCounter_ = null;
         onChanged();
       } else {
-        ijchjdcbbnl_ = null;
-        ijchjdcbbnlBuilder_ = null;
+        dailyCounter_ = null;
+        dailyCounterBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
      */
-    public POGOProtos.Rpc.JKJPEEMNCDK.Builder getIjchjdcbbnlBuilder() {
+    public POGOProtos.Rpc.DailyCounterProto.Builder getDailyCounterBuilder() {
       
       onChanged();
-      return getIjchjdcbbnlFieldBuilder().getBuilder();
+      return getDailyCounterFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
      */
-    public POGOProtos.Rpc.JKJPEEMNCDKOrBuilder getIjchjdcbbnlOrBuilder() {
-      if (ijchjdcbbnlBuilder_ != null) {
-        return ijchjdcbbnlBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.DailyCounterProtoOrBuilder getDailyCounterOrBuilder() {
+      if (dailyCounterBuilder_ != null) {
+        return dailyCounterBuilder_.getMessageOrBuilder();
       } else {
-        return ijchjdcbbnl_ == null ?
-            POGOProtos.Rpc.JKJPEEMNCDK.getDefaultInstance() : ijchjdcbbnl_;
+        return dailyCounter_ == null ?
+            POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : dailyCounter_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JKJPEEMNCDK ijchjdcbbnl = 117;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_counter = 117;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JKJPEEMNCDK, POGOProtos.Rpc.JKJPEEMNCDK.Builder, POGOProtos.Rpc.JKJPEEMNCDKOrBuilder> 
-        getIjchjdcbbnlFieldBuilder() {
-      if (ijchjdcbbnlBuilder_ == null) {
-        ijchjdcbbnlBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.JKJPEEMNCDK, POGOProtos.Rpc.JKJPEEMNCDK.Builder, POGOProtos.Rpc.JKJPEEMNCDKOrBuilder>(
-                getIjchjdcbbnl(),
+        POGOProtos.Rpc.DailyCounterProto, POGOProtos.Rpc.DailyCounterProto.Builder, POGOProtos.Rpc.DailyCounterProtoOrBuilder> 
+        getDailyCounterFieldBuilder() {
+      if (dailyCounterBuilder_ == null) {
+        dailyCounterBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.DailyCounterProto, POGOProtos.Rpc.DailyCounterProto.Builder, POGOProtos.Rpc.DailyCounterProtoOrBuilder>(
+                getDailyCounter(),
                 getParentForChildren(),
                 isClean());
-        ijchjdcbbnl_ = null;
+        dailyCounter_ = null;
       }
-      return ijchjdcbbnlBuilder_;
+      return dailyCounterBuilder_;
     }
 
-    private java.lang.Object dhajhgcpdig_ = "";
+    private java.lang.Object rewardPokemonIconUrl_ = "";
     /**
-     * <code>string dhajhgcpdig = 118;</code>
-     * @return The dhajhgcpdig.
+     * <code>string reward_pokemon_icon_url = 118;</code>
+     * @return The rewardPokemonIconUrl.
      */
-    public java.lang.String getDhajhgcpdig() {
-      java.lang.Object ref = dhajhgcpdig_;
+    public java.lang.String getRewardPokemonIconUrl() {
+      java.lang.Object ref = rewardPokemonIconUrl_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        dhajhgcpdig_ = s;
+        rewardPokemonIconUrl_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string dhajhgcpdig = 118;</code>
-     * @return The bytes for dhajhgcpdig.
+     * <code>string reward_pokemon_icon_url = 118;</code>
+     * @return The bytes for rewardPokemonIconUrl.
      */
     public com.google.protobuf.ByteString
-        getDhajhgcpdigBytes() {
-      java.lang.Object ref = dhajhgcpdig_;
+        getRewardPokemonIconUrlBytes() {
+      java.lang.Object ref = rewardPokemonIconUrl_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        dhajhgcpdig_ = b;
+        rewardPokemonIconUrl_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string dhajhgcpdig = 118;</code>
-     * @param value The dhajhgcpdig to set.
+     * <code>string reward_pokemon_icon_url = 118;</code>
+     * @param value The rewardPokemonIconUrl to set.
      * @return This builder for chaining.
      */
-    public Builder setDhajhgcpdig(
+    public Builder setRewardPokemonIconUrl(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      dhajhgcpdig_ = value;
+      rewardPokemonIconUrl_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string dhajhgcpdig = 118;</code>
+     * <code>string reward_pokemon_icon_url = 118;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDhajhgcpdig() {
+    public Builder clearRewardPokemonIconUrl() {
       
-      dhajhgcpdig_ = getDefaultInstance().getDhajhgcpdig();
+      rewardPokemonIconUrl_ = getDefaultInstance().getRewardPokemonIconUrl();
       onChanged();
       return this;
     }
     /**
-     * <code>string dhajhgcpdig = 118;</code>
-     * @param value The bytes for dhajhgcpdig to set.
+     * <code>string reward_pokemon_icon_url = 118;</code>
+     * @param value The bytes for rewardPokemonIconUrl to set.
      * @return This builder for chaining.
      */
-    public Builder setDhajhgcpdigBytes(
+    public Builder setRewardPokemonIconUrlBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      dhajhgcpdig_ = value;
+      rewardPokemonIconUrl_ = value;
       onChanged();
       return this;
     }
 
-    private long cbnpjdealil_ ;
+    private long endTimestampMs_ ;
     /**
-     * <code>int64 cbnpjdealil = 119;</code>
-     * @return The cbnpjdealil.
+     * <code>int64 end_timestamp_ms = 119;</code>
+     * @return The endTimestampMs.
      */
-    public long getCbnpjdealil() {
-      return cbnpjdealil_;
+    @java.lang.Override
+    public long getEndTimestampMs() {
+      return endTimestampMs_;
     }
     /**
-     * <code>int64 cbnpjdealil = 119;</code>
-     * @param value The cbnpjdealil to set.
+     * <code>int64 end_timestamp_ms = 119;</code>
+     * @param value The endTimestampMs to set.
      * @return This builder for chaining.
      */
-    public Builder setCbnpjdealil(long value) {
+    public Builder setEndTimestampMs(long value) {
       
-      cbnpjdealil_ = value;
+      endTimestampMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 cbnpjdealil = 119;</code>
+     * <code>int64 end_timestamp_ms = 119;</code>
      * @return This builder for chaining.
      */
-    public Builder clearCbnpjdealil() {
+    public Builder clearEndTimestampMs() {
       
-      cbnpjdealil_ = 0L;
+      endTimestampMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private boolean bcndeeailal_ ;
+    private boolean isBonusChallenge_ ;
     /**
-     * <code>bool bcndeeailal = 120;</code>
-     * @return The bcndeeailal.
+     * <code>bool is_bonus_challenge = 120;</code>
+     * @return The isBonusChallenge.
      */
-    public boolean getBcndeeailal() {
-      return bcndeeailal_;
+    @java.lang.Override
+    public boolean getIsBonusChallenge() {
+      return isBonusChallenge_;
     }
     /**
-     * <code>bool bcndeeailal = 120;</code>
-     * @param value The bcndeeailal to set.
+     * <code>bool is_bonus_challenge = 120;</code>
+     * @param value The isBonusChallenge to set.
      * @return This builder for chaining.
      */
-    public Builder setBcndeeailal(boolean value) {
+    public Builder setIsBonusChallenge(boolean value) {
       
-      bcndeeailal_ = value;
+      isBonusChallenge_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool bcndeeailal = 120;</code>
+     * <code>bool is_bonus_challenge = 120;</code>
      * @return This builder for chaining.
      */
-    public Builder clearBcndeeailal() {
+    public Builder clearIsBonusChallenge() {
       
-      bcndeeailal_ = false;
+      isBonusChallenge_ = false;
       onChanged();
       return this;
     }

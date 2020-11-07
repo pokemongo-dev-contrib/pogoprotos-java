@@ -19,17 +19,17 @@ public interface RegisterBackgroundDeviceResponseProtoOrBuilder extends
   POGOProtos.Rpc.RegisterBackgroundDeviceResponseProto.Status getStatus();
 
   /**
-   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
    * @return Whether the token field is set.
    */
   boolean hasToken();
   /**
-   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
    * @return The token.
    */
-  POGOProtos.Rpc.BackgroundToken getToken();
+  POGOProtos.Rpc.PlatformBackgroundToken getToken();
   /**
-   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
    */
-  POGOProtos.Rpc.BackgroundTokenOrBuilder getTokenOrBuilder();
+  POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder getTokenOrBuilder();
 }

@@ -13,17 +13,17 @@ public enum Team
    */
   TEAM_UNSET(0),
   /**
-   * <code>TEAM_BLUE = 1;</code>
+   * <code>TEAM_TEAM_BLUE = 1;</code>
    */
-  TEAM_BLUE(1),
+  TEAM_TEAM_BLUE(1),
   /**
-   * <code>TEAM_RED = 2;</code>
+   * <code>TEAM_TEAM_RED = 2;</code>
    */
-  TEAM_RED(2),
+  TEAM_TEAM_RED(2),
   /**
-   * <code>TEAM_YELLOW = 3;</code>
+   * <code>TEAM_TEAM_YELLOW = 3;</code>
    */
-  TEAM_YELLOW(3),
+  TEAM_TEAM_YELLOW(3),
   UNRECOGNIZED(-1),
   ;
 
@@ -32,17 +32,17 @@ public enum Team
    */
   public static final int TEAM_UNSET_VALUE = 0;
   /**
-   * <code>TEAM_BLUE = 1;</code>
+   * <code>TEAM_TEAM_BLUE = 1;</code>
    */
-  public static final int TEAM_BLUE_VALUE = 1;
+  public static final int TEAM_TEAM_BLUE_VALUE = 1;
   /**
-   * <code>TEAM_RED = 2;</code>
+   * <code>TEAM_TEAM_RED = 2;</code>
    */
-  public static final int TEAM_RED_VALUE = 2;
+  public static final int TEAM_TEAM_RED_VALUE = 2;
   /**
-   * <code>TEAM_YELLOW = 3;</code>
+   * <code>TEAM_TEAM_YELLOW = 3;</code>
    */
-  public static final int TEAM_YELLOW_VALUE = 3;
+  public static final int TEAM_TEAM_YELLOW_VALUE = 3;
 
 
   public final int getNumber() {
@@ -70,9 +70,9 @@ public enum Team
   public static Team forNumber(int value) {
     switch (value) {
       case 0: return TEAM_UNSET;
-      case 1: return TEAM_BLUE;
-      case 2: return TEAM_RED;
-      case 3: return TEAM_YELLOW;
+      case 1: return TEAM_TEAM_BLUE;
+      case 2: return TEAM_TEAM_RED;
+      case 3: return TEAM_TEAM_YELLOW;
       default: return null;
     }
   }
@@ -91,6 +91,10 @@ public enum Team
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -99,7 +103,7 @@ public enum Team
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(140);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(136);
   }
 
   private static final Team[] VALUES = values();

@@ -9,40 +9,40 @@ package POGOProtos.Rpc;
 public enum HoloTemporaryEvolutionId
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>TEMP_EVOLUTION_UNSET = 0;</code>
+   * <code>HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET = 0;</code>
    */
-  TEMP_EVOLUTION_UNSET(0),
+  HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET(0),
   /**
-   * <code>TEMP_EVOLUTION_MEGA = 1;</code>
+   * <code>HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA = 1;</code>
    */
-  TEMP_EVOLUTION_MEGA(1),
+  HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA(1),
   /**
-   * <code>TEMP_EVOLUTION_MEGA_X = 2;</code>
+   * <code>HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_X = 2;</code>
    */
-  TEMP_EVOLUTION_MEGA_X(2),
+  HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_X(2),
   /**
-   * <code>TEMP_EVOLUTION_MEGA_Y = 3;</code>
+   * <code>HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_Y = 3;</code>
    */
-  TEMP_EVOLUTION_MEGA_Y(3),
+  HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_Y(3),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>TEMP_EVOLUTION_UNSET = 0;</code>
+   * <code>HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET = 0;</code>
    */
-  public static final int TEMP_EVOLUTION_UNSET_VALUE = 0;
+  public static final int HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET_VALUE = 0;
   /**
-   * <code>TEMP_EVOLUTION_MEGA = 1;</code>
+   * <code>HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA = 1;</code>
    */
-  public static final int TEMP_EVOLUTION_MEGA_VALUE = 1;
+  public static final int HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_VALUE = 1;
   /**
-   * <code>TEMP_EVOLUTION_MEGA_X = 2;</code>
+   * <code>HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_X = 2;</code>
    */
-  public static final int TEMP_EVOLUTION_MEGA_X_VALUE = 2;
+  public static final int HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_X_VALUE = 2;
   /**
-   * <code>TEMP_EVOLUTION_MEGA_Y = 3;</code>
+   * <code>HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_Y = 3;</code>
    */
-  public static final int TEMP_EVOLUTION_MEGA_Y_VALUE = 3;
+  public static final int HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_Y_VALUE = 3;
 
 
   public final int getNumber() {
@@ -69,10 +69,10 @@ public enum HoloTemporaryEvolutionId
    */
   public static HoloTemporaryEvolutionId forNumber(int value) {
     switch (value) {
-      case 0: return TEMP_EVOLUTION_UNSET;
-      case 1: return TEMP_EVOLUTION_MEGA;
-      case 2: return TEMP_EVOLUTION_MEGA_X;
-      case 3: return TEMP_EVOLUTION_MEGA_Y;
+      case 0: return HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET;
+      case 1: return HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA;
+      case 2: return HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_X;
+      case 3: return HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_Y;
       default: return null;
     }
   }
@@ -91,6 +91,10 @@ public enum HoloTemporaryEvolutionId
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

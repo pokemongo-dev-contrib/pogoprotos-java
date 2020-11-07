@@ -9,9 +9,9 @@ package POGOProtos.Rpc;
 public enum CombatType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>COMBAT_TYPE_UNSET = 0;</code>
+   * <code>COMBAT_TYPE_COMBAT_TYPE_UNSET = 0;</code>
    */
-  COMBAT_TYPE_UNSET(0),
+  COMBAT_TYPE_COMBAT_TYPE_UNSET(0),
   /**
    * <code>COMBAT_TYPE_SOLO = 1;</code>
    */
@@ -40,9 +40,9 @@ public enum CombatType
   ;
 
   /**
-   * <code>COMBAT_TYPE_UNSET = 0;</code>
+   * <code>COMBAT_TYPE_COMBAT_TYPE_UNSET = 0;</code>
    */
-  public static final int COMBAT_TYPE_UNSET_VALUE = 0;
+  public static final int COMBAT_TYPE_COMBAT_TYPE_UNSET_VALUE = 0;
   /**
    * <code>COMBAT_TYPE_SOLO = 1;</code>
    */
@@ -93,7 +93,7 @@ public enum CombatType
    */
   public static CombatType forNumber(int value) {
     switch (value) {
-      case 0: return COMBAT_TYPE_UNSET;
+      case 0: return COMBAT_TYPE_COMBAT_TYPE_UNSET;
       case 1: return COMBAT_TYPE_SOLO;
       case 2: return COMBAT_TYPE_QR_CODE;
       case 3: return COMBAT_TYPE_FRIENDS;
@@ -118,6 +118,10 @@ public enum CombatType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

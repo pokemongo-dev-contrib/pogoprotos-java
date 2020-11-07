@@ -100,6 +100,10 @@ public enum VfxLevel
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -108,7 +112,7 @@ public enum VfxLevel
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(146);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(142);
   }
 
   private static final VfxLevel[] VALUES = values();

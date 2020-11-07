@@ -48,19 +48,19 @@ public interface LootItemProtoOrBuilder extends
   boolean getExperience();
 
   /**
-   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
+   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
    * @return Whether the pokemonEgg field is set.
    */
   boolean hasPokemonEgg();
   /**
-   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
+   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
    * @return The pokemonEgg.
    */
-  POGOProtos.Rpc.KHNLPGENFBI getPokemonEgg();
+  POGOProtos.Rpc.PokemonProto getPokemonEgg();
   /**
-   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
+   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
    */
-  POGOProtos.Rpc.KHNLPGENFBIOrBuilder getPokemonEggOrBuilder();
+  POGOProtos.Rpc.PokemonProtoOrBuilder getPokemonEggOrBuilder();
 
   /**
    * <code>string avatar_template_id = 8;</code>
@@ -109,10 +109,10 @@ public interface LootItemProtoOrBuilder extends
   POGOProtos.Rpc.HoloPokemonId getXlCandy();
 
   /**
-   * <code>int32 aihjjphknom = 5;</code>
-   * @return The aihjjphknom.
+   * <code>int32 count = 5;</code>
+   * @return The count.
    */
-  int getAihjjphknom();
+  int getCount();
 
-  public POGOProtos.Rpc.LootItemProto.AMCFNCJDNHJCase getAMCFNCJDNHJCase();
+  public POGOProtos.Rpc.LootItemProto.TypeCase getTypeCase();
 }

@@ -7,11 +7,11 @@ import org.junit.*;
 import java.io.*;
 
 public class GameMasterDecodeTest {
-	//0.191.0 binary
+	//0.191.2 binary
 	@Test
 	public void TestFirmwareGameMasterDecode() throws Exception {
 		try (InputStream is = getClass().getResourceAsStream("/v2_GAME_MASTER")) {
-			DownloadGmTemplatesResponseProto response = DownloadGmTemplatesResponseProto.parseFrom(is);
+			PlatformDownloadGmTemplatesResponseProto response = PlatformDownloadGmTemplatesResponseProto.parseFrom(is);
 		    JsonFormat.Printer printer = JsonFormat.printer();
 			try (OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream("target/test-classes/v2_GAME_MASTER.json")))
 			{

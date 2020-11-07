@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.StartIncidentOutProto}
  */
-public  final class StartIncidentOutProto extends
+public final class StartIncidentOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.StartIncidentOutProto)
     StartIncidentOutProtoOrBuilder {
@@ -16,7 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private StartIncidentOutProto() {
-    oemhknkemca_ = 0;
+    status_ = 0;
   }
 
   @java.lang.Override
@@ -52,18 +52,18 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            oemhknkemca_ = rawValue;
+            status_ = rawValue;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.ELJEECJBPAJ.Builder subBuilder = null;
-            if (jdgbhhhkokj_ != null) {
-              subBuilder = jdgbhhhkokj_.toBuilder();
+            POGOProtos.Rpc.ClientIncidentProto.Builder subBuilder = null;
+            if (incident_ != null) {
+              subBuilder = incident_.toBuilder();
             }
-            jdgbhhhkokj_ = input.readMessage(POGOProtos.Rpc.ELJEECJBPAJ.parser(), extensionRegistry);
+            incident_ = input.readMessage(POGOProtos.Rpc.ClientIncidentProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(jdgbhhhkokj_);
-              jdgbhhhkokj_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(incident_);
+              incident_ = subBuilder.buildPartial();
             }
 
             break;
@@ -101,13 +101,9 @@ private static final long serialVersionUID = 0L;
   }
 
   /**
-   * <pre>
-   * ref: StartIncidentOutProto/OMACOJIGNPK/BLHJNGDAHJJ
-   * </pre>
-   *
-   * Protobuf enum {@code POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ}
+   * Protobuf enum {@code POGOProtos.Rpc.StartIncidentOutProto.Status}
    */
-  public enum BLHJNGDAHJJ
+  public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNSET = 0;</code>
@@ -184,7 +180,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static BLHJNGDAHJJ valueOf(int value) {
+    public static Status valueOf(int value) {
       return forNumber(value);
     }
 
@@ -192,7 +188,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static BLHJNGDAHJJ forNumber(int value) {
+    public static Status forNumber(int value) {
       switch (value) {
         case 0: return UNSET;
         case 1: return SUCCESS;
@@ -205,20 +201,24 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<BLHJNGDAHJJ>
+    public static com.google.protobuf.Internal.EnumLiteMap<Status>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        BLHJNGDAHJJ> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<BLHJNGDAHJJ>() {
-            public BLHJNGDAHJJ findValueByNumber(int number) {
-              return BLHJNGDAHJJ.forNumber(number);
+        Status> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<Status>() {
+            public Status findValueByNumber(int number) {
+              return Status.forNumber(number);
             }
           };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -230,9 +230,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.StartIncidentOutProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final BLHJNGDAHJJ[] VALUES = values();
+    private static final Status[] VALUES = values();
 
-    public static BLHJNGDAHJJ valueOf(
+    public static Status valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -246,53 +246,56 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private BLHJNGDAHJJ(int value) {
+    private Status(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.StartIncidentOutProto.Status)
   }
 
-  public static final int OEMHKNKEMCA_FIELD_NUMBER = 1;
-  private int oemhknkemca_;
+  public static final int STATUS_FIELD_NUMBER = 1;
+  private int status_;
   /**
-   * <code>.POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ oemhknkemca = 1;</code>
-   * @return The enum numeric value on the wire for oemhknkemca.
+   * <code>.POGOProtos.Rpc.StartIncidentOutProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
    */
-  public int getOemhknkemcaValue() {
-    return oemhknkemca_;
+  @java.lang.Override public int getStatusValue() {
+    return status_;
   }
   /**
-   * <code>.POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ oemhknkemca = 1;</code>
-   * @return The oemhknkemca.
+   * <code>.POGOProtos.Rpc.StartIncidentOutProto.Status status = 1;</code>
+   * @return The status.
    */
-  public POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ getOemhknkemca() {
+  @java.lang.Override public POGOProtos.Rpc.StartIncidentOutProto.Status getStatus() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ result = POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ.valueOf(oemhknkemca_);
-    return result == null ? POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ.UNRECOGNIZED : result;
+    POGOProtos.Rpc.StartIncidentOutProto.Status result = POGOProtos.Rpc.StartIncidentOutProto.Status.valueOf(status_);
+    return result == null ? POGOProtos.Rpc.StartIncidentOutProto.Status.UNRECOGNIZED : result;
   }
 
-  public static final int JDGBHHHKOKJ_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj_;
+  public static final int INCIDENT_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.ClientIncidentProto incident_;
   /**
-   * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
-   * @return Whether the jdgbhhhkokj field is set.
+   * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
+   * @return Whether the incident field is set.
    */
-  public boolean hasJdgbhhhkokj() {
-    return jdgbhhhkokj_ != null;
+  @java.lang.Override
+  public boolean hasIncident() {
+    return incident_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
-   * @return The jdgbhhhkokj.
+   * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
+   * @return The incident.
    */
-  public POGOProtos.Rpc.ELJEECJBPAJ getJdgbhhhkokj() {
-    return jdgbhhhkokj_ == null ? POGOProtos.Rpc.ELJEECJBPAJ.getDefaultInstance() : jdgbhhhkokj_;
+  @java.lang.Override
+  public POGOProtos.Rpc.ClientIncidentProto getIncident() {
+    return incident_ == null ? POGOProtos.Rpc.ClientIncidentProto.getDefaultInstance() : incident_;
   }
   /**
-   * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
+   * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
    */
-  public POGOProtos.Rpc.ELJEECJBPAJOrBuilder getJdgbhhhkokjOrBuilder() {
-    return getJdgbhhhkokj();
+  @java.lang.Override
+  public POGOProtos.Rpc.ClientIncidentProtoOrBuilder getIncidentOrBuilder() {
+    return getIncident();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -309,11 +312,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (oemhknkemca_ != POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ.UNSET.getNumber()) {
-      output.writeEnum(1, oemhknkemca_);
+    if (status_ != POGOProtos.Rpc.StartIncidentOutProto.Status.UNSET.getNumber()) {
+      output.writeEnum(1, status_);
     }
-    if (jdgbhhhkokj_ != null) {
-      output.writeMessage(2, getJdgbhhhkokj());
+    if (incident_ != null) {
+      output.writeMessage(2, getIncident());
     }
     unknownFields.writeTo(output);
   }
@@ -324,13 +327,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (oemhknkemca_ != POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ.UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.StartIncidentOutProto.Status.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, oemhknkemca_);
+        .computeEnumSize(1, status_);
     }
-    if (jdgbhhhkokj_ != null) {
+    if (incident_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getJdgbhhhkokj());
+        .computeMessageSize(2, getIncident());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -347,11 +350,11 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.StartIncidentOutProto other = (POGOProtos.Rpc.StartIncidentOutProto) obj;
 
-    if (oemhknkemca_ != other.oemhknkemca_) return false;
-    if (hasJdgbhhhkokj() != other.hasJdgbhhhkokj()) return false;
-    if (hasJdgbhhhkokj()) {
-      if (!getJdgbhhhkokj()
-          .equals(other.getJdgbhhhkokj())) return false;
+    if (status_ != other.status_) return false;
+    if (hasIncident() != other.hasIncident()) return false;
+    if (hasIncident()) {
+      if (!getIncident()
+          .equals(other.getIncident())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -364,11 +367,11 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + OEMHKNKEMCA_FIELD_NUMBER;
-    hash = (53 * hash) + oemhknkemca_;
-    if (hasJdgbhhhkokj()) {
-      hash = (37 * hash) + JDGBHHHKOKJ_FIELD_NUMBER;
-      hash = (53 * hash) + getJdgbhhhkokj().hashCode();
+    hash = (37 * hash) + STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + status_;
+    if (hasIncident()) {
+      hash = (37 * hash) + INCIDENT_FIELD_NUMBER;
+      hash = (53 * hash) + getIncident().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -503,13 +506,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      oemhknkemca_ = 0;
+      status_ = 0;
 
-      if (jdgbhhhkokjBuilder_ == null) {
-        jdgbhhhkokj_ = null;
+      if (incidentBuilder_ == null) {
+        incident_ = null;
       } else {
-        jdgbhhhkokj_ = null;
-        jdgbhhhkokjBuilder_ = null;
+        incident_ = null;
+        incidentBuilder_ = null;
       }
       return this;
     }
@@ -537,11 +540,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.StartIncidentOutProto buildPartial() {
       POGOProtos.Rpc.StartIncidentOutProto result = new POGOProtos.Rpc.StartIncidentOutProto(this);
-      result.oemhknkemca_ = oemhknkemca_;
-      if (jdgbhhhkokjBuilder_ == null) {
-        result.jdgbhhhkokj_ = jdgbhhhkokj_;
+      result.status_ = status_;
+      if (incidentBuilder_ == null) {
+        result.incident_ = incident_;
       } else {
-        result.jdgbhhhkokj_ = jdgbhhhkokjBuilder_.build();
+        result.incident_ = incidentBuilder_.build();
       }
       onBuilt();
       return result;
@@ -591,11 +594,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.StartIncidentOutProto other) {
       if (other == POGOProtos.Rpc.StartIncidentOutProto.getDefaultInstance()) return this;
-      if (other.oemhknkemca_ != 0) {
-        setOemhknkemcaValue(other.getOemhknkemcaValue());
+      if (other.status_ != 0) {
+        setStatusValue(other.getStatusValue());
       }
-      if (other.hasJdgbhhhkokj()) {
-        mergeJdgbhhhkokj(other.getJdgbhhhkokj());
+      if (other.hasIncident()) {
+        mergeIncident(other.getIncident());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -626,175 +629,177 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int oemhknkemca_ = 0;
+    private int status_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ oemhknkemca = 1;</code>
-     * @return The enum numeric value on the wire for oemhknkemca.
+     * <code>.POGOProtos.Rpc.StartIncidentOutProto.Status status = 1;</code>
+     * @return The enum numeric value on the wire for status.
      */
-    public int getOemhknkemcaValue() {
-      return oemhknkemca_;
+    @java.lang.Override public int getStatusValue() {
+      return status_;
     }
     /**
-     * <code>.POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ oemhknkemca = 1;</code>
-     * @param value The enum numeric value on the wire for oemhknkemca to set.
+     * <code>.POGOProtos.Rpc.StartIncidentOutProto.Status status = 1;</code>
+     * @param value The enum numeric value on the wire for status to set.
      * @return This builder for chaining.
      */
-    public Builder setOemhknkemcaValue(int value) {
-      oemhknkemca_ = value;
+    public Builder setStatusValue(int value) {
+      
+      status_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ oemhknkemca = 1;</code>
-     * @return The oemhknkemca.
+     * <code>.POGOProtos.Rpc.StartIncidentOutProto.Status status = 1;</code>
+     * @return The status.
      */
-    public POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ getOemhknkemca() {
+    @java.lang.Override
+    public POGOProtos.Rpc.StartIncidentOutProto.Status getStatus() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ result = POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ.valueOf(oemhknkemca_);
-      return result == null ? POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ.UNRECOGNIZED : result;
+      POGOProtos.Rpc.StartIncidentOutProto.Status result = POGOProtos.Rpc.StartIncidentOutProto.Status.valueOf(status_);
+      return result == null ? POGOProtos.Rpc.StartIncidentOutProto.Status.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ oemhknkemca = 1;</code>
-     * @param value The oemhknkemca to set.
+     * <code>.POGOProtos.Rpc.StartIncidentOutProto.Status status = 1;</code>
+     * @param value The status to set.
      * @return This builder for chaining.
      */
-    public Builder setOemhknkemca(POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ value) {
+    public Builder setStatus(POGOProtos.Rpc.StartIncidentOutProto.Status value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      oemhknkemca_ = value.getNumber();
+      status_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.StartIncidentOutProto.BLHJNGDAHJJ oemhknkemca = 1;</code>
+     * <code>.POGOProtos.Rpc.StartIncidentOutProto.Status status = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearOemhknkemca() {
+    public Builder clearStatus() {
       
-      oemhknkemca_ = 0;
+      status_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj_;
+    private POGOProtos.Rpc.ClientIncidentProto incident_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ELJEECJBPAJ, POGOProtos.Rpc.ELJEECJBPAJ.Builder, POGOProtos.Rpc.ELJEECJBPAJOrBuilder> jdgbhhhkokjBuilder_;
+        POGOProtos.Rpc.ClientIncidentProto, POGOProtos.Rpc.ClientIncidentProto.Builder, POGOProtos.Rpc.ClientIncidentProtoOrBuilder> incidentBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
-     * @return Whether the jdgbhhhkokj field is set.
+     * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
+     * @return Whether the incident field is set.
      */
-    public boolean hasJdgbhhhkokj() {
-      return jdgbhhhkokjBuilder_ != null || jdgbhhhkokj_ != null;
+    public boolean hasIncident() {
+      return incidentBuilder_ != null || incident_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
-     * @return The jdgbhhhkokj.
+     * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
+     * @return The incident.
      */
-    public POGOProtos.Rpc.ELJEECJBPAJ getJdgbhhhkokj() {
-      if (jdgbhhhkokjBuilder_ == null) {
-        return jdgbhhhkokj_ == null ? POGOProtos.Rpc.ELJEECJBPAJ.getDefaultInstance() : jdgbhhhkokj_;
+    public POGOProtos.Rpc.ClientIncidentProto getIncident() {
+      if (incidentBuilder_ == null) {
+        return incident_ == null ? POGOProtos.Rpc.ClientIncidentProto.getDefaultInstance() : incident_;
       } else {
-        return jdgbhhhkokjBuilder_.getMessage();
+        return incidentBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
      */
-    public Builder setJdgbhhhkokj(POGOProtos.Rpc.ELJEECJBPAJ value) {
-      if (jdgbhhhkokjBuilder_ == null) {
+    public Builder setIncident(POGOProtos.Rpc.ClientIncidentProto value) {
+      if (incidentBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        jdgbhhhkokj_ = value;
+        incident_ = value;
         onChanged();
       } else {
-        jdgbhhhkokjBuilder_.setMessage(value);
+        incidentBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
      */
-    public Builder setJdgbhhhkokj(
-        POGOProtos.Rpc.ELJEECJBPAJ.Builder builderForValue) {
-      if (jdgbhhhkokjBuilder_ == null) {
-        jdgbhhhkokj_ = builderForValue.build();
+    public Builder setIncident(
+        POGOProtos.Rpc.ClientIncidentProto.Builder builderForValue) {
+      if (incidentBuilder_ == null) {
+        incident_ = builderForValue.build();
         onChanged();
       } else {
-        jdgbhhhkokjBuilder_.setMessage(builderForValue.build());
+        incidentBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
      */
-    public Builder mergeJdgbhhhkokj(POGOProtos.Rpc.ELJEECJBPAJ value) {
-      if (jdgbhhhkokjBuilder_ == null) {
-        if (jdgbhhhkokj_ != null) {
-          jdgbhhhkokj_ =
-            POGOProtos.Rpc.ELJEECJBPAJ.newBuilder(jdgbhhhkokj_).mergeFrom(value).buildPartial();
+    public Builder mergeIncident(POGOProtos.Rpc.ClientIncidentProto value) {
+      if (incidentBuilder_ == null) {
+        if (incident_ != null) {
+          incident_ =
+            POGOProtos.Rpc.ClientIncidentProto.newBuilder(incident_).mergeFrom(value).buildPartial();
         } else {
-          jdgbhhhkokj_ = value;
+          incident_ = value;
         }
         onChanged();
       } else {
-        jdgbhhhkokjBuilder_.mergeFrom(value);
+        incidentBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
      */
-    public Builder clearJdgbhhhkokj() {
-      if (jdgbhhhkokjBuilder_ == null) {
-        jdgbhhhkokj_ = null;
+    public Builder clearIncident() {
+      if (incidentBuilder_ == null) {
+        incident_ = null;
         onChanged();
       } else {
-        jdgbhhhkokj_ = null;
-        jdgbhhhkokjBuilder_ = null;
+        incident_ = null;
+        incidentBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
      */
-    public POGOProtos.Rpc.ELJEECJBPAJ.Builder getJdgbhhhkokjBuilder() {
+    public POGOProtos.Rpc.ClientIncidentProto.Builder getIncidentBuilder() {
       
       onChanged();
-      return getJdgbhhhkokjFieldBuilder().getBuilder();
+      return getIncidentFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
      */
-    public POGOProtos.Rpc.ELJEECJBPAJOrBuilder getJdgbhhhkokjOrBuilder() {
-      if (jdgbhhhkokjBuilder_ != null) {
-        return jdgbhhhkokjBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.ClientIncidentProtoOrBuilder getIncidentOrBuilder() {
+      if (incidentBuilder_ != null) {
+        return incidentBuilder_.getMessageOrBuilder();
       } else {
-        return jdgbhhhkokj_ == null ?
-            POGOProtos.Rpc.ELJEECJBPAJ.getDefaultInstance() : jdgbhhhkokj_;
+        return incident_ == null ?
+            POGOProtos.Rpc.ClientIncidentProto.getDefaultInstance() : incident_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ELJEECJBPAJ jdgbhhhkokj = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientIncidentProto incident = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ELJEECJBPAJ, POGOProtos.Rpc.ELJEECJBPAJ.Builder, POGOProtos.Rpc.ELJEECJBPAJOrBuilder> 
-        getJdgbhhhkokjFieldBuilder() {
-      if (jdgbhhhkokjBuilder_ == null) {
-        jdgbhhhkokjBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ELJEECJBPAJ, POGOProtos.Rpc.ELJEECJBPAJ.Builder, POGOProtos.Rpc.ELJEECJBPAJOrBuilder>(
-                getJdgbhhhkokj(),
+        POGOProtos.Rpc.ClientIncidentProto, POGOProtos.Rpc.ClientIncidentProto.Builder, POGOProtos.Rpc.ClientIncidentProtoOrBuilder> 
+        getIncidentFieldBuilder() {
+      if (incidentBuilder_ == null) {
+        incidentBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.ClientIncidentProto, POGOProtos.Rpc.ClientIncidentProto.Builder, POGOProtos.Rpc.ClientIncidentProtoOrBuilder>(
+                getIncident(),
                 getParentForChildren(),
                 isClean());
-        jdgbhhhkokj_ = null;
+        incident_ = null;
       }
-      return jdgbhhhkokjBuilder_;
+      return incidentBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

@@ -9,56 +9,56 @@ package POGOProtos.Rpc;
 public enum BattleHubSubsection
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>SUBSECTION_UNSET = 0;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_UNSET = 0;</code>
    */
-  SUBSECTION_UNSET(0),
+  BATTLE_HUB_SUBSECTION_SUBSECTION_UNSET(0),
   /**
-   * <code>SUBSECTION_VS_CHARGING = 1;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_VS_CHARGING = 1;</code>
    */
-  SUBSECTION_VS_CHARGING(1),
+  BATTLE_HUB_SUBSECTION_SUBSECTION_VS_CHARGING(1),
   /**
-   * <code>SUBSECTION_VS_FREE = 2;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_VS_FREE = 2;</code>
    */
-  SUBSECTION_VS_FREE(2),
+  BATTLE_HUB_SUBSECTION_SUBSECTION_VS_FREE(2),
   /**
-   * <code>SUBSECTION_VS_PREMIUM = 3;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_VS_PREMIUM = 3;</code>
    */
-  SUBSECTION_VS_PREMIUM(3),
+  BATTLE_HUB_SUBSECTION_SUBSECTION_VS_PREMIUM(3),
   /**
-   * <code>SUBSECTION_NEARBY_TEAM_LEADERS = 4;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_NEARBY_TEAM_LEADERS = 4;</code>
    */
-  SUBSECTION_NEARBY_TEAM_LEADERS(4),
+  BATTLE_HUB_SUBSECTION_SUBSECTION_NEARBY_TEAM_LEADERS(4),
   /**
-   * <code>SUBSECTION_NEARBY_QR_CODE = 5;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_NEARBY_QR_CODE = 5;</code>
    */
-  SUBSECTION_NEARBY_QR_CODE(5),
+  BATTLE_HUB_SUBSECTION_SUBSECTION_NEARBY_QR_CODE(5),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>SUBSECTION_UNSET = 0;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_UNSET = 0;</code>
    */
-  public static final int SUBSECTION_UNSET_VALUE = 0;
+  public static final int BATTLE_HUB_SUBSECTION_SUBSECTION_UNSET_VALUE = 0;
   /**
-   * <code>SUBSECTION_VS_CHARGING = 1;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_VS_CHARGING = 1;</code>
    */
-  public static final int SUBSECTION_VS_CHARGING_VALUE = 1;
+  public static final int BATTLE_HUB_SUBSECTION_SUBSECTION_VS_CHARGING_VALUE = 1;
   /**
-   * <code>SUBSECTION_VS_FREE = 2;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_VS_FREE = 2;</code>
    */
-  public static final int SUBSECTION_VS_FREE_VALUE = 2;
+  public static final int BATTLE_HUB_SUBSECTION_SUBSECTION_VS_FREE_VALUE = 2;
   /**
-   * <code>SUBSECTION_VS_PREMIUM = 3;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_VS_PREMIUM = 3;</code>
    */
-  public static final int SUBSECTION_VS_PREMIUM_VALUE = 3;
+  public static final int BATTLE_HUB_SUBSECTION_SUBSECTION_VS_PREMIUM_VALUE = 3;
   /**
-   * <code>SUBSECTION_NEARBY_TEAM_LEADERS = 4;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_NEARBY_TEAM_LEADERS = 4;</code>
    */
-  public static final int SUBSECTION_NEARBY_TEAM_LEADERS_VALUE = 4;
+  public static final int BATTLE_HUB_SUBSECTION_SUBSECTION_NEARBY_TEAM_LEADERS_VALUE = 4;
   /**
-   * <code>SUBSECTION_NEARBY_QR_CODE = 5;</code>
+   * <code>BATTLE_HUB_SUBSECTION_SUBSECTION_NEARBY_QR_CODE = 5;</code>
    */
-  public static final int SUBSECTION_NEARBY_QR_CODE_VALUE = 5;
+  public static final int BATTLE_HUB_SUBSECTION_SUBSECTION_NEARBY_QR_CODE_VALUE = 5;
 
 
   public final int getNumber() {
@@ -85,12 +85,12 @@ public enum BattleHubSubsection
    */
   public static BattleHubSubsection forNumber(int value) {
     switch (value) {
-      case 0: return SUBSECTION_UNSET;
-      case 1: return SUBSECTION_VS_CHARGING;
-      case 2: return SUBSECTION_VS_FREE;
-      case 3: return SUBSECTION_VS_PREMIUM;
-      case 4: return SUBSECTION_NEARBY_TEAM_LEADERS;
-      case 5: return SUBSECTION_NEARBY_QR_CODE;
+      case 0: return BATTLE_HUB_SUBSECTION_SUBSECTION_UNSET;
+      case 1: return BATTLE_HUB_SUBSECTION_SUBSECTION_VS_CHARGING;
+      case 2: return BATTLE_HUB_SUBSECTION_SUBSECTION_VS_FREE;
+      case 3: return BATTLE_HUB_SUBSECTION_SUBSECTION_VS_PREMIUM;
+      case 4: return BATTLE_HUB_SUBSECTION_SUBSECTION_NEARBY_TEAM_LEADERS;
+      case 5: return BATTLE_HUB_SUBSECTION_SUBSECTION_NEARBY_QR_CODE;
       default: return null;
     }
   }
@@ -109,6 +109,10 @@ public enum BattleHubSubsection
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

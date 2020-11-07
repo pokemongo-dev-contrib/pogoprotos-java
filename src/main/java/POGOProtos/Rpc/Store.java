@@ -9,40 +9,40 @@ package POGOProtos.Rpc;
 public enum Store
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>STORE_UNSET = 0;</code>
+   * <code>STORE_STORE_UNSET = 0;</code>
    */
-  STORE_UNSET(0),
+  STORE_STORE_UNSET(0),
   /**
-   * <code>STORE_APPLE = 1;</code>
+   * <code>STORE_STORE_APPLE = 1;</code>
    */
-  STORE_APPLE(1),
+  STORE_STORE_APPLE(1),
   /**
-   * <code>STORE_GOOGLE = 2;</code>
+   * <code>STORE_STORE_GOOGLE = 2;</code>
    */
-  STORE_GOOGLE(2),
+  STORE_STORE_GOOGLE(2),
   /**
-   * <code>STORE_SAMSUNG = 3;</code>
+   * <code>STORE_STORE_SAMSUNG = 3;</code>
    */
-  STORE_SAMSUNG(3),
+  STORE_STORE_SAMSUNG(3),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>STORE_UNSET = 0;</code>
+   * <code>STORE_STORE_UNSET = 0;</code>
    */
-  public static final int STORE_UNSET_VALUE = 0;
+  public static final int STORE_STORE_UNSET_VALUE = 0;
   /**
-   * <code>STORE_APPLE = 1;</code>
+   * <code>STORE_STORE_APPLE = 1;</code>
    */
-  public static final int STORE_APPLE_VALUE = 1;
+  public static final int STORE_STORE_APPLE_VALUE = 1;
   /**
-   * <code>STORE_GOOGLE = 2;</code>
+   * <code>STORE_STORE_GOOGLE = 2;</code>
    */
-  public static final int STORE_GOOGLE_VALUE = 2;
+  public static final int STORE_STORE_GOOGLE_VALUE = 2;
   /**
-   * <code>STORE_SAMSUNG = 3;</code>
+   * <code>STORE_STORE_SAMSUNG = 3;</code>
    */
-  public static final int STORE_SAMSUNG_VALUE = 3;
+  public static final int STORE_STORE_SAMSUNG_VALUE = 3;
 
 
   public final int getNumber() {
@@ -69,10 +69,10 @@ public enum Store
    */
   public static Store forNumber(int value) {
     switch (value) {
-      case 0: return STORE_UNSET;
-      case 1: return STORE_APPLE;
-      case 2: return STORE_GOOGLE;
-      case 3: return STORE_SAMSUNG;
+      case 0: return STORE_STORE_UNSET;
+      case 1: return STORE_STORE_APPLE;
+      case 2: return STORE_STORE_GOOGLE;
+      case 3: return STORE_STORE_SAMSUNG;
       default: return null;
     }
   }
@@ -91,6 +91,10 @@ public enum Store
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -99,7 +103,7 @@ public enum Store
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(139);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(135);
   }
 
   private static final Store[] VALUES = values();

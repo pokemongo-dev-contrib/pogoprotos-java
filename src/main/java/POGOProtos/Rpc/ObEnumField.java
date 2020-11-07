@@ -100,6 +100,10 @@ public enum ObEnumField
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -108,7 +112,7 @@ public enum ObEnumField
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(86);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(84);
   }
 
   private static final ObEnumField[] VALUES = values();

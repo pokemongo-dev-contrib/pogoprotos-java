@@ -9,64 +9,64 @@ package POGOProtos.Rpc;
 public enum PoiInvalidReason
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POI_INVALID_REASON_INVALID_REASON_UNSPECIFIED = 0;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_INVALID_REASON_UNSPECIFIED = 0;</code>
    */
-  POI_INVALID_REASON_INVALID_REASON_UNSPECIFIED(0),
+  PLATFORM_POI_INVALID_REASON_INVALID_REASON_UNSPECIFIED(0),
   /**
-   * <code>POI_INVALID_REASON_NO_PEDESTRIAN_ACCESS = 1;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_NO_PEDESTRIAN_ACCESS = 1;</code>
    */
-  POI_INVALID_REASON_NO_PEDESTRIAN_ACCESS(1),
+  PLATFORM_POI_INVALID_REASON_NO_PEDESTRIAN_ACCESS(1),
   /**
-   * <code>POI_INVALID_REASON_OBSTRUCTS_EMERGENCY_SERVICES = 2;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_OBSTRUCTS_EMERGENCY_SERVICES = 2;</code>
    */
-  POI_INVALID_REASON_OBSTRUCTS_EMERGENCY_SERVICES(2),
+  PLATFORM_POI_INVALID_REASON_OBSTRUCTS_EMERGENCY_SERVICES(2),
   /**
-   * <code>POI_INVALID_REASON_PRIVATE_RESIDENTIAL_PROPERTY = 3;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_PRIVATE_RESIDENTIAL_PROPERTY = 3;</code>
    */
-  POI_INVALID_REASON_PRIVATE_RESIDENTIAL_PROPERTY(3),
+  PLATFORM_POI_INVALID_REASON_PRIVATE_RESIDENTIAL_PROPERTY(3),
   /**
-   * <code>POI_INVALID_REASON_SCHOOL = 4;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_SCHOOL = 4;</code>
    */
-  POI_INVALID_REASON_SCHOOL(4),
+  PLATFORM_POI_INVALID_REASON_SCHOOL(4),
   /**
-   * <code>POI_INVALID_REASON_PERMANENTLY_REMOVED = 5;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_PERMANENTLY_REMOVED = 5;</code>
    */
-  POI_INVALID_REASON_PERMANENTLY_REMOVED(5),
+  PLATFORM_POI_INVALID_REASON_PERMANENTLY_REMOVED(5),
   /**
-   * <code>POI_INVALID_REASON_DUPLICATE = 6;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_DUPLICATE = 6;</code>
    */
-  POI_INVALID_REASON_DUPLICATE(6),
+  PLATFORM_POI_INVALID_REASON_DUPLICATE(6),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>POI_INVALID_REASON_INVALID_REASON_UNSPECIFIED = 0;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_INVALID_REASON_UNSPECIFIED = 0;</code>
    */
-  public static final int POI_INVALID_REASON_INVALID_REASON_UNSPECIFIED_VALUE = 0;
+  public static final int PLATFORM_POI_INVALID_REASON_INVALID_REASON_UNSPECIFIED_VALUE = 0;
   /**
-   * <code>POI_INVALID_REASON_NO_PEDESTRIAN_ACCESS = 1;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_NO_PEDESTRIAN_ACCESS = 1;</code>
    */
-  public static final int POI_INVALID_REASON_NO_PEDESTRIAN_ACCESS_VALUE = 1;
+  public static final int PLATFORM_POI_INVALID_REASON_NO_PEDESTRIAN_ACCESS_VALUE = 1;
   /**
-   * <code>POI_INVALID_REASON_OBSTRUCTS_EMERGENCY_SERVICES = 2;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_OBSTRUCTS_EMERGENCY_SERVICES = 2;</code>
    */
-  public static final int POI_INVALID_REASON_OBSTRUCTS_EMERGENCY_SERVICES_VALUE = 2;
+  public static final int PLATFORM_POI_INVALID_REASON_OBSTRUCTS_EMERGENCY_SERVICES_VALUE = 2;
   /**
-   * <code>POI_INVALID_REASON_PRIVATE_RESIDENTIAL_PROPERTY = 3;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_PRIVATE_RESIDENTIAL_PROPERTY = 3;</code>
    */
-  public static final int POI_INVALID_REASON_PRIVATE_RESIDENTIAL_PROPERTY_VALUE = 3;
+  public static final int PLATFORM_POI_INVALID_REASON_PRIVATE_RESIDENTIAL_PROPERTY_VALUE = 3;
   /**
-   * <code>POI_INVALID_REASON_SCHOOL = 4;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_SCHOOL = 4;</code>
    */
-  public static final int POI_INVALID_REASON_SCHOOL_VALUE = 4;
+  public static final int PLATFORM_POI_INVALID_REASON_SCHOOL_VALUE = 4;
   /**
-   * <code>POI_INVALID_REASON_PERMANENTLY_REMOVED = 5;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_PERMANENTLY_REMOVED = 5;</code>
    */
-  public static final int POI_INVALID_REASON_PERMANENTLY_REMOVED_VALUE = 5;
+  public static final int PLATFORM_POI_INVALID_REASON_PERMANENTLY_REMOVED_VALUE = 5;
   /**
-   * <code>POI_INVALID_REASON_DUPLICATE = 6;</code>
+   * <code>PLATFORM_POI_INVALID_REASON_DUPLICATE = 6;</code>
    */
-  public static final int POI_INVALID_REASON_DUPLICATE_VALUE = 6;
+  public static final int PLATFORM_POI_INVALID_REASON_DUPLICATE_VALUE = 6;
 
 
   public final int getNumber() {
@@ -93,13 +93,13 @@ public enum PoiInvalidReason
    */
   public static PoiInvalidReason forNumber(int value) {
     switch (value) {
-      case 0: return POI_INVALID_REASON_INVALID_REASON_UNSPECIFIED;
-      case 1: return POI_INVALID_REASON_NO_PEDESTRIAN_ACCESS;
-      case 2: return POI_INVALID_REASON_OBSTRUCTS_EMERGENCY_SERVICES;
-      case 3: return POI_INVALID_REASON_PRIVATE_RESIDENTIAL_PROPERTY;
-      case 4: return POI_INVALID_REASON_SCHOOL;
-      case 5: return POI_INVALID_REASON_PERMANENTLY_REMOVED;
-      case 6: return POI_INVALID_REASON_DUPLICATE;
+      case 0: return PLATFORM_POI_INVALID_REASON_INVALID_REASON_UNSPECIFIED;
+      case 1: return PLATFORM_POI_INVALID_REASON_NO_PEDESTRIAN_ACCESS;
+      case 2: return PLATFORM_POI_INVALID_REASON_OBSTRUCTS_EMERGENCY_SERVICES;
+      case 3: return PLATFORM_POI_INVALID_REASON_PRIVATE_RESIDENTIAL_PROPERTY;
+      case 4: return PLATFORM_POI_INVALID_REASON_SCHOOL;
+      case 5: return PLATFORM_POI_INVALID_REASON_PERMANENTLY_REMOVED;
+      case 6: return PLATFORM_POI_INVALID_REASON_DUPLICATE;
       default: return null;
     }
   }
@@ -118,6 +118,10 @@ public enum PoiInvalidReason
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -126,7 +130,7 @@ public enum PoiInvalidReason
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(109);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(105);
   }
 
   private static final PoiInvalidReason[] VALUES = values();

@@ -8,26 +8,26 @@ public interface DailyStreaksProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
    */
-  java.util.List<POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK> 
-      getIphllkhapkgList();
+  java.util.List<POGOProtos.Rpc.DailyStreaksProto.StreakProto> 
+      getStreaksList();
   /**
-   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
    */
-  POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK getIphllkhapkg(int index);
+  POGOProtos.Rpc.DailyStreaksProto.StreakProto getStreaks(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
    */
-  int getIphllkhapkgCount();
+  int getStreaksCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDKOrBuilder> 
-      getIphllkhapkgOrBuilderList();
+  java.util.List<? extends POGOProtos.Rpc.DailyStreaksProto.StreakProtoOrBuilder> 
+      getStreaksOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDK iphllkhapkg = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.DailyStreaksProto.StreakProto streaks = 1;</code>
    */
-  POGOProtos.Rpc.DailyStreaksProto.HDLDGDJADDKOrBuilder getIphllkhapkgOrBuilder(
+  POGOProtos.Rpc.DailyStreaksProto.StreakProtoOrBuilder getStreaksOrBuilder(
       int index);
 }

@@ -9,16 +9,16 @@ package POGOProtos.Rpc;
 public enum ArMappingTutorialPage
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS = 0;</code>
+   * <code>TITAN_AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS = 0;</code>
    */
-  AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS(0),
+  TITAN_AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS(0),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS = 0;</code>
+   * <code>TITAN_AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS = 0;</code>
    */
-  public static final int AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS_VALUE = 0;
+  public static final int TITAN_AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS_VALUE = 0;
 
 
   public final int getNumber() {
@@ -45,7 +45,7 @@ public enum ArMappingTutorialPage
    */
   public static ArMappingTutorialPage forNumber(int value) {
     switch (value) {
-      case 0: return AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS;
+      case 0: return TITAN_AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS;
       default: return null;
     }
   }
@@ -64,6 +64,10 @@ public enum ArMappingTutorialPage
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

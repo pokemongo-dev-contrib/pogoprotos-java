@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.CurrencyQuantityProto}
  */
-public  final class CurrencyQuantityProto extends
+public final class CurrencyQuantityProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.CurrencyQuantityProto)
     CurrencyQuantityProtoOrBuilder {
@@ -17,6 +17,7 @@ private static final long serialVersionUID = 0L;
   }
   private CurrencyQuantityProto() {
     currencyType_ = "";
+    fiatCurrencyType_ = "";
   }
 
   @java.lang.Override
@@ -60,6 +61,22 @@ private static final long serialVersionUID = 0L;
             quantity_ = input.readInt32();
             break;
           }
+          case 24: {
+
+            fiatPurchasedQuantity_ = input.readInt32();
+            break;
+          }
+          case 34: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            fiatCurrencyType_ = s;
+            break;
+          }
+          case 40: {
+
+            fiatCurrencyCostE6_ = input.readInt64();
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -98,6 +115,7 @@ private static final long serialVersionUID = 0L;
    * <code>string currency_type = 1;</code>
    * @return The currencyType.
    */
+  @java.lang.Override
   public java.lang.String getCurrencyType() {
     java.lang.Object ref = currencyType_;
     if (ref instanceof java.lang.String) {
@@ -114,6 +132,7 @@ private static final long serialVersionUID = 0L;
    * <code>string currency_type = 1;</code>
    * @return The bytes for currencyType.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getCurrencyTypeBytes() {
     java.lang.Object ref = currencyType_;
@@ -134,8 +153,69 @@ private static final long serialVersionUID = 0L;
    * <code>int32 quantity = 2;</code>
    * @return The quantity.
    */
+  @java.lang.Override
   public int getQuantity() {
     return quantity_;
+  }
+
+  public static final int FIAT_PURCHASED_QUANTITY_FIELD_NUMBER = 3;
+  private int fiatPurchasedQuantity_;
+  /**
+   * <code>int32 fiat_purchased_quantity = 3;</code>
+   * @return The fiatPurchasedQuantity.
+   */
+  @java.lang.Override
+  public int getFiatPurchasedQuantity() {
+    return fiatPurchasedQuantity_;
+  }
+
+  public static final int FIAT_CURRENCY_TYPE_FIELD_NUMBER = 4;
+  private volatile java.lang.Object fiatCurrencyType_;
+  /**
+   * <code>string fiat_currency_type = 4;</code>
+   * @return The fiatCurrencyType.
+   */
+  @java.lang.Override
+  public java.lang.String getFiatCurrencyType() {
+    java.lang.Object ref = fiatCurrencyType_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      fiatCurrencyType_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string fiat_currency_type = 4;</code>
+   * @return The bytes for fiatCurrencyType.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getFiatCurrencyTypeBytes() {
+    java.lang.Object ref = fiatCurrencyType_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      fiatCurrencyType_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int FIAT_CURRENCY_COST_E6_FIELD_NUMBER = 5;
+  private long fiatCurrencyCostE6_;
+  /**
+   * <code>int64 fiat_currency_cost_e6 = 5;</code>
+   * @return The fiatCurrencyCostE6.
+   */
+  @java.lang.Override
+  public long getFiatCurrencyCostE6() {
+    return fiatCurrencyCostE6_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -158,6 +238,15 @@ private static final long serialVersionUID = 0L;
     if (quantity_ != 0) {
       output.writeInt32(2, quantity_);
     }
+    if (fiatPurchasedQuantity_ != 0) {
+      output.writeInt32(3, fiatPurchasedQuantity_);
+    }
+    if (!getFiatCurrencyTypeBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, fiatCurrencyType_);
+    }
+    if (fiatCurrencyCostE6_ != 0L) {
+      output.writeInt64(5, fiatCurrencyCostE6_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -173,6 +262,17 @@ private static final long serialVersionUID = 0L;
     if (quantity_ != 0) {
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(2, quantity_);
+    }
+    if (fiatPurchasedQuantity_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(3, fiatPurchasedQuantity_);
+    }
+    if (!getFiatCurrencyTypeBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, fiatCurrencyType_);
+    }
+    if (fiatCurrencyCostE6_ != 0L) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt64Size(5, fiatCurrencyCostE6_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -193,6 +293,12 @@ private static final long serialVersionUID = 0L;
         .equals(other.getCurrencyType())) return false;
     if (getQuantity()
         != other.getQuantity()) return false;
+    if (getFiatPurchasedQuantity()
+        != other.getFiatPurchasedQuantity()) return false;
+    if (!getFiatCurrencyType()
+        .equals(other.getFiatCurrencyType())) return false;
+    if (getFiatCurrencyCostE6()
+        != other.getFiatCurrencyCostE6()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -208,6 +314,13 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getCurrencyType().hashCode();
     hash = (37 * hash) + QUANTITY_FIELD_NUMBER;
     hash = (53 * hash) + getQuantity();
+    hash = (37 * hash) + FIAT_PURCHASED_QUANTITY_FIELD_NUMBER;
+    hash = (53 * hash) + getFiatPurchasedQuantity();
+    hash = (37 * hash) + FIAT_CURRENCY_TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + getFiatCurrencyType().hashCode();
+    hash = (37 * hash) + FIAT_CURRENCY_COST_E6_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+        getFiatCurrencyCostE6());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -345,6 +458,12 @@ private static final long serialVersionUID = 0L;
 
       quantity_ = 0;
 
+      fiatPurchasedQuantity_ = 0;
+
+      fiatCurrencyType_ = "";
+
+      fiatCurrencyCostE6_ = 0L;
+
       return this;
     }
 
@@ -373,6 +492,9 @@ private static final long serialVersionUID = 0L;
       POGOProtos.Rpc.CurrencyQuantityProto result = new POGOProtos.Rpc.CurrencyQuantityProto(this);
       result.currencyType_ = currencyType_;
       result.quantity_ = quantity_;
+      result.fiatPurchasedQuantity_ = fiatPurchasedQuantity_;
+      result.fiatCurrencyType_ = fiatCurrencyType_;
+      result.fiatCurrencyCostE6_ = fiatCurrencyCostE6_;
       onBuilt();
       return result;
     }
@@ -427,6 +549,16 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getQuantity() != 0) {
         setQuantity(other.getQuantity());
+      }
+      if (other.getFiatPurchasedQuantity() != 0) {
+        setFiatPurchasedQuantity(other.getFiatPurchasedQuantity());
+      }
+      if (!other.getFiatCurrencyType().isEmpty()) {
+        fiatCurrencyType_ = other.fiatCurrencyType_;
+        onChanged();
+      }
+      if (other.getFiatCurrencyCostE6() != 0L) {
+        setFiatCurrencyCostE6(other.getFiatCurrencyCostE6());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -538,6 +670,7 @@ private static final long serialVersionUID = 0L;
      * <code>int32 quantity = 2;</code>
      * @return The quantity.
      */
+    @java.lang.Override
     public int getQuantity() {
       return quantity_;
     }
@@ -559,6 +692,144 @@ private static final long serialVersionUID = 0L;
     public Builder clearQuantity() {
       
       quantity_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private int fiatPurchasedQuantity_ ;
+    /**
+     * <code>int32 fiat_purchased_quantity = 3;</code>
+     * @return The fiatPurchasedQuantity.
+     */
+    @java.lang.Override
+    public int getFiatPurchasedQuantity() {
+      return fiatPurchasedQuantity_;
+    }
+    /**
+     * <code>int32 fiat_purchased_quantity = 3;</code>
+     * @param value The fiatPurchasedQuantity to set.
+     * @return This builder for chaining.
+     */
+    public Builder setFiatPurchasedQuantity(int value) {
+      
+      fiatPurchasedQuantity_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 fiat_purchased_quantity = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearFiatPurchasedQuantity() {
+      
+      fiatPurchasedQuantity_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object fiatCurrencyType_ = "";
+    /**
+     * <code>string fiat_currency_type = 4;</code>
+     * @return The fiatCurrencyType.
+     */
+    public java.lang.String getFiatCurrencyType() {
+      java.lang.Object ref = fiatCurrencyType_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        fiatCurrencyType_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string fiat_currency_type = 4;</code>
+     * @return The bytes for fiatCurrencyType.
+     */
+    public com.google.protobuf.ByteString
+        getFiatCurrencyTypeBytes() {
+      java.lang.Object ref = fiatCurrencyType_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        fiatCurrencyType_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string fiat_currency_type = 4;</code>
+     * @param value The fiatCurrencyType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setFiatCurrencyType(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      fiatCurrencyType_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string fiat_currency_type = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearFiatCurrencyType() {
+      
+      fiatCurrencyType_ = getDefaultInstance().getFiatCurrencyType();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string fiat_currency_type = 4;</code>
+     * @param value The bytes for fiatCurrencyType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setFiatCurrencyTypeBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      fiatCurrencyType_ = value;
+      onChanged();
+      return this;
+    }
+
+    private long fiatCurrencyCostE6_ ;
+    /**
+     * <code>int64 fiat_currency_cost_e6 = 5;</code>
+     * @return The fiatCurrencyCostE6.
+     */
+    @java.lang.Override
+    public long getFiatCurrencyCostE6() {
+      return fiatCurrencyCostE6_;
+    }
+    /**
+     * <code>int64 fiat_currency_cost_e6 = 5;</code>
+     * @param value The fiatCurrencyCostE6 to set.
+     * @return This builder for chaining.
+     */
+    public Builder setFiatCurrencyCostE6(long value) {
+      
+      fiatCurrencyCostE6_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int64 fiat_currency_cost_e6 = 5;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearFiatCurrencyCostE6() {
+      
+      fiatCurrencyCostE6_ = 0L;
       onChanged();
       return this;
     }

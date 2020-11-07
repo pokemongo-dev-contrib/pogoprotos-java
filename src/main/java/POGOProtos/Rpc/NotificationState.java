@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum NotificationState
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>NOTIFICATION_STATE_UNSET_STATE = 0;</code>
+   * <code>PLATFORM_NOTIFICATION_STATE_UNSET_STATE = 0;</code>
    */
-  NOTIFICATION_STATE_UNSET_STATE(0),
+  PLATFORM_NOTIFICATION_STATE_UNSET_STATE(0),
   /**
-   * <code>NOTIFICATION_STATE_VIEWED = 1;</code>
+   * <code>PLATFORM_NOTIFICATION_STATE_VIEWED = 1;</code>
    */
-  NOTIFICATION_STATE_VIEWED(1),
+  PLATFORM_NOTIFICATION_STATE_VIEWED(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>NOTIFICATION_STATE_UNSET_STATE = 0;</code>
+   * <code>PLATFORM_NOTIFICATION_STATE_UNSET_STATE = 0;</code>
    */
-  public static final int NOTIFICATION_STATE_UNSET_STATE_VALUE = 0;
+  public static final int PLATFORM_NOTIFICATION_STATE_UNSET_STATE_VALUE = 0;
   /**
-   * <code>NOTIFICATION_STATE_VIEWED = 1;</code>
+   * <code>PLATFORM_NOTIFICATION_STATE_VIEWED = 1;</code>
    */
-  public static final int NOTIFICATION_STATE_VIEWED_VALUE = 1;
+  public static final int PLATFORM_NOTIFICATION_STATE_VIEWED_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum NotificationState
    */
   public static NotificationState forNumber(int value) {
     switch (value) {
-      case 0: return NOTIFICATION_STATE_UNSET_STATE;
-      case 1: return NOTIFICATION_STATE_VIEWED;
+      case 0: return PLATFORM_NOTIFICATION_STATE_UNSET_STATE;
+      case 1: return PLATFORM_NOTIFICATION_STATE_VIEWED;
       default: return null;
     }
   }
@@ -73,6 +73,10 @@ public enum NotificationState
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -81,7 +85,7 @@ public enum NotificationState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(84);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(82);
   }
 
   private static final NotificationState[] VALUES = values();

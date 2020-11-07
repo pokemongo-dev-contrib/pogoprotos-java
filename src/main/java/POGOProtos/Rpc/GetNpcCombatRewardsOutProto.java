@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.GetNpcCombatRewardsOutProto}
  */
-public  final class GetNpcCombatRewardsOutProto extends
+public final class GetNpcCombatRewardsOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetNpcCombatRewardsOutProto)
     GetNpcCombatRewardsOutProtoOrBuilder {
@@ -16,8 +16,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private GetNpcCombatRewardsOutProto() {
-    jbflkcdndlp_ = 0;
-    kefbliennnk_ = 0;
+    result_ = 0;
+    rewardStatus_ = 0;
   }
 
   @java.lang.Override
@@ -53,31 +53,31 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            jbflkcdndlp_ = rawValue;
+            result_ = rawValue;
             break;
           }
           case 16: {
             int rawValue = input.readEnum();
 
-            kefbliennnk_ = rawValue;
+            rewardStatus_ = rawValue;
             break;
           }
           case 26: {
-            POGOProtos.Rpc.JMFCJOMHILG.Builder subBuilder = null;
-            if (decnioaacdg_ != null) {
-              subBuilder = decnioaacdg_.toBuilder();
+            POGOProtos.Rpc.LootProto.Builder subBuilder = null;
+            if (rewards_ != null) {
+              subBuilder = rewards_.toBuilder();
             }
-            decnioaacdg_ = input.readMessage(POGOProtos.Rpc.JMFCJOMHILG.parser(), extensionRegistry);
+            rewards_ = input.readMessage(POGOProtos.Rpc.LootProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(decnioaacdg_);
-              decnioaacdg_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(rewards_);
+              rewards_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 32: {
 
-            idjojldglhi_ = input.readInt32();
+            numberRewardedNpcBattlesToday_ = input.readInt32();
             break;
           }
           default: {
@@ -113,13 +113,9 @@ private static final long serialVersionUID = 0L;
   }
 
   /**
-   * <pre>
-   * ref: GetNpcCombatRewardsOutProto/LFFADHJAKHH/KLOJLCLKIIA
-   * </pre>
-   *
-   * Protobuf enum {@code POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA}
+   * Protobuf enum {@code POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result}
    */
-  public enum KLOJLCLKIIA
+  public enum Result
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNSET = 0;</code>
@@ -164,7 +160,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static KLOJLCLKIIA valueOf(int value) {
+    public static Result valueOf(int value) {
       return forNumber(value);
     }
 
@@ -172,7 +168,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static KLOJLCLKIIA forNumber(int value) {
+    public static Result forNumber(int value) {
       switch (value) {
         case 0: return UNSET;
         case 1: return SUCCESS;
@@ -181,20 +177,24 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<KLOJLCLKIIA>
+    public static com.google.protobuf.Internal.EnumLiteMap<Result>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        KLOJLCLKIIA> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<KLOJLCLKIIA>() {
-            public KLOJLCLKIIA findValueByNumber(int number) {
-              return KLOJLCLKIIA.forNumber(number);
+        Result> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<Result>() {
+            public Result findValueByNumber(int number) {
+              return Result.forNumber(number);
             }
           };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -206,9 +206,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.GetNpcCombatRewardsOutProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final KLOJLCLKIIA[] VALUES = values();
+    private static final Result[] VALUES = values();
 
-    public static KLOJLCLKIIA valueOf(
+    public static Result valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -222,82 +222,86 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private KLOJLCLKIIA(int value) {
+    private Result(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result)
   }
 
-  public static final int JBFLKCDNDLP_FIELD_NUMBER = 1;
-  private int jbflkcdndlp_;
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
   /**
-   * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA jbflkcdndlp = 1;</code>
-   * @return The enum numeric value on the wire for jbflkcdndlp.
+   * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
    */
-  public int getJbflkcdndlpValue() {
-    return jbflkcdndlp_;
+  @java.lang.Override public int getResultValue() {
+    return result_;
   }
   /**
-   * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA jbflkcdndlp = 1;</code>
-   * @return The jbflkcdndlp.
+   * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result result = 1;</code>
+   * @return The result.
    */
-  public POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA getJbflkcdndlp() {
+  @java.lang.Override public POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result getResult() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA result = POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA.valueOf(jbflkcdndlp_);
-    return result == null ? POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA.UNRECOGNIZED : result;
+    POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result result = POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result.UNRECOGNIZED : result;
   }
 
-  public static final int KEFBLIENNNK_FIELD_NUMBER = 2;
-  private int kefbliennnk_;
+  public static final int REWARD_STATUS_FIELD_NUMBER = 2;
+  private int rewardStatus_;
   /**
-   * <code>.POGOProtos.Rpc.CombatRewardStatus kefbliennnk = 2;</code>
-   * @return The enum numeric value on the wire for kefbliennnk.
+   * <code>.POGOProtos.Rpc.CombatRewardStatus reward_status = 2;</code>
+   * @return The enum numeric value on the wire for rewardStatus.
    */
-  public int getKefbliennnkValue() {
-    return kefbliennnk_;
+  @java.lang.Override public int getRewardStatusValue() {
+    return rewardStatus_;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatRewardStatus kefbliennnk = 2;</code>
-   * @return The kefbliennnk.
+   * <code>.POGOProtos.Rpc.CombatRewardStatus reward_status = 2;</code>
+   * @return The rewardStatus.
    */
-  public POGOProtos.Rpc.CombatRewardStatus getKefbliennnk() {
+  @java.lang.Override public POGOProtos.Rpc.CombatRewardStatus getRewardStatus() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.CombatRewardStatus result = POGOProtos.Rpc.CombatRewardStatus.valueOf(kefbliennnk_);
+    POGOProtos.Rpc.CombatRewardStatus result = POGOProtos.Rpc.CombatRewardStatus.valueOf(rewardStatus_);
     return result == null ? POGOProtos.Rpc.CombatRewardStatus.UNRECOGNIZED : result;
   }
 
-  public static final int DECNIOAACDG_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.JMFCJOMHILG decnioaacdg_;
+  public static final int REWARDS_FIELD_NUMBER = 3;
+  private POGOProtos.Rpc.LootProto rewards_;
   /**
-   * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
-   * @return Whether the decnioaacdg field is set.
+   * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
+   * @return Whether the rewards field is set.
    */
-  public boolean hasDecnioaacdg() {
-    return decnioaacdg_ != null;
+  @java.lang.Override
+  public boolean hasRewards() {
+    return rewards_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
-   * @return The decnioaacdg.
+   * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
+   * @return The rewards.
    */
-  public POGOProtos.Rpc.JMFCJOMHILG getDecnioaacdg() {
-    return decnioaacdg_ == null ? POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : decnioaacdg_;
+  @java.lang.Override
+  public POGOProtos.Rpc.LootProto getRewards() {
+    return rewards_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : rewards_;
   }
   /**
-   * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
+   * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
    */
-  public POGOProtos.Rpc.JMFCJOMHILGOrBuilder getDecnioaacdgOrBuilder() {
-    return getDecnioaacdg();
+  @java.lang.Override
+  public POGOProtos.Rpc.LootProtoOrBuilder getRewardsOrBuilder() {
+    return getRewards();
   }
 
-  public static final int IDJOJLDGLHI_FIELD_NUMBER = 4;
-  private int idjojldglhi_;
+  public static final int NUMBER_REWARDED_NPC_BATTLES_TODAY_FIELD_NUMBER = 4;
+  private int numberRewardedNpcBattlesToday_;
   /**
-   * <code>int32 idjojldglhi = 4;</code>
-   * @return The idjojldglhi.
+   * <code>int32 number_rewarded_npc_battles_today = 4;</code>
+   * @return The numberRewardedNpcBattlesToday.
    */
-  public int getIdjojldglhi() {
-    return idjojldglhi_;
+  @java.lang.Override
+  public int getNumberRewardedNpcBattlesToday() {
+    return numberRewardedNpcBattlesToday_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -314,17 +318,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (jbflkcdndlp_ != POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA.UNSET.getNumber()) {
-      output.writeEnum(1, jbflkcdndlp_);
+    if (result_ != POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
     }
-    if (kefbliennnk_ != POGOProtos.Rpc.CombatRewardStatus.COMBAT_REWARD_STATUS_UNSET_REWARD_STATUS.getNumber()) {
-      output.writeEnum(2, kefbliennnk_);
+    if (rewardStatus_ != POGOProtos.Rpc.CombatRewardStatus.COMBAT_REWARD_STATUS_UNSET_REWARD_STATUS.getNumber()) {
+      output.writeEnum(2, rewardStatus_);
     }
-    if (decnioaacdg_ != null) {
-      output.writeMessage(3, getDecnioaacdg());
+    if (rewards_ != null) {
+      output.writeMessage(3, getRewards());
     }
-    if (idjojldglhi_ != 0) {
-      output.writeInt32(4, idjojldglhi_);
+    if (numberRewardedNpcBattlesToday_ != 0) {
+      output.writeInt32(4, numberRewardedNpcBattlesToday_);
     }
     unknownFields.writeTo(output);
   }
@@ -335,21 +339,21 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (jbflkcdndlp_ != POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA.UNSET.getNumber()) {
+    if (result_ != POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, jbflkcdndlp_);
+        .computeEnumSize(1, result_);
     }
-    if (kefbliennnk_ != POGOProtos.Rpc.CombatRewardStatus.COMBAT_REWARD_STATUS_UNSET_REWARD_STATUS.getNumber()) {
+    if (rewardStatus_ != POGOProtos.Rpc.CombatRewardStatus.COMBAT_REWARD_STATUS_UNSET_REWARD_STATUS.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, kefbliennnk_);
+        .computeEnumSize(2, rewardStatus_);
     }
-    if (decnioaacdg_ != null) {
+    if (rewards_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getDecnioaacdg());
+        .computeMessageSize(3, getRewards());
     }
-    if (idjojldglhi_ != 0) {
+    if (numberRewardedNpcBattlesToday_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(4, idjojldglhi_);
+        .computeInt32Size(4, numberRewardedNpcBattlesToday_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -366,15 +370,15 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.GetNpcCombatRewardsOutProto other = (POGOProtos.Rpc.GetNpcCombatRewardsOutProto) obj;
 
-    if (jbflkcdndlp_ != other.jbflkcdndlp_) return false;
-    if (kefbliennnk_ != other.kefbliennnk_) return false;
-    if (hasDecnioaacdg() != other.hasDecnioaacdg()) return false;
-    if (hasDecnioaacdg()) {
-      if (!getDecnioaacdg()
-          .equals(other.getDecnioaacdg())) return false;
+    if (result_ != other.result_) return false;
+    if (rewardStatus_ != other.rewardStatus_) return false;
+    if (hasRewards() != other.hasRewards()) return false;
+    if (hasRewards()) {
+      if (!getRewards()
+          .equals(other.getRewards())) return false;
     }
-    if (getIdjojldglhi()
-        != other.getIdjojldglhi()) return false;
+    if (getNumberRewardedNpcBattlesToday()
+        != other.getNumberRewardedNpcBattlesToday()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -386,16 +390,16 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + JBFLKCDNDLP_FIELD_NUMBER;
-    hash = (53 * hash) + jbflkcdndlp_;
-    hash = (37 * hash) + KEFBLIENNNK_FIELD_NUMBER;
-    hash = (53 * hash) + kefbliennnk_;
-    if (hasDecnioaacdg()) {
-      hash = (37 * hash) + DECNIOAACDG_FIELD_NUMBER;
-      hash = (53 * hash) + getDecnioaacdg().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
+    hash = (37 * hash) + REWARD_STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + rewardStatus_;
+    if (hasRewards()) {
+      hash = (37 * hash) + REWARDS_FIELD_NUMBER;
+      hash = (53 * hash) + getRewards().hashCode();
     }
-    hash = (37 * hash) + IDJOJLDGLHI_FIELD_NUMBER;
-    hash = (53 * hash) + getIdjojldglhi();
+    hash = (37 * hash) + NUMBER_REWARDED_NPC_BATTLES_TODAY_FIELD_NUMBER;
+    hash = (53 * hash) + getNumberRewardedNpcBattlesToday();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -529,17 +533,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      jbflkcdndlp_ = 0;
+      result_ = 0;
 
-      kefbliennnk_ = 0;
+      rewardStatus_ = 0;
 
-      if (decnioaacdgBuilder_ == null) {
-        decnioaacdg_ = null;
+      if (rewardsBuilder_ == null) {
+        rewards_ = null;
       } else {
-        decnioaacdg_ = null;
-        decnioaacdgBuilder_ = null;
+        rewards_ = null;
+        rewardsBuilder_ = null;
       }
-      idjojldglhi_ = 0;
+      numberRewardedNpcBattlesToday_ = 0;
 
       return this;
     }
@@ -567,14 +571,14 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.GetNpcCombatRewardsOutProto buildPartial() {
       POGOProtos.Rpc.GetNpcCombatRewardsOutProto result = new POGOProtos.Rpc.GetNpcCombatRewardsOutProto(this);
-      result.jbflkcdndlp_ = jbflkcdndlp_;
-      result.kefbliennnk_ = kefbliennnk_;
-      if (decnioaacdgBuilder_ == null) {
-        result.decnioaacdg_ = decnioaacdg_;
+      result.result_ = result_;
+      result.rewardStatus_ = rewardStatus_;
+      if (rewardsBuilder_ == null) {
+        result.rewards_ = rewards_;
       } else {
-        result.decnioaacdg_ = decnioaacdgBuilder_.build();
+        result.rewards_ = rewardsBuilder_.build();
       }
-      result.idjojldglhi_ = idjojldglhi_;
+      result.numberRewardedNpcBattlesToday_ = numberRewardedNpcBattlesToday_;
       onBuilt();
       return result;
     }
@@ -623,17 +627,17 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.GetNpcCombatRewardsOutProto other) {
       if (other == POGOProtos.Rpc.GetNpcCombatRewardsOutProto.getDefaultInstance()) return this;
-      if (other.jbflkcdndlp_ != 0) {
-        setJbflkcdndlpValue(other.getJbflkcdndlpValue());
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
       }
-      if (other.kefbliennnk_ != 0) {
-        setKefbliennnkValue(other.getKefbliennnkValue());
+      if (other.rewardStatus_ != 0) {
+        setRewardStatusValue(other.getRewardStatusValue());
       }
-      if (other.hasDecnioaacdg()) {
-        mergeDecnioaacdg(other.getDecnioaacdg());
+      if (other.hasRewards()) {
+        mergeRewards(other.getRewards());
       }
-      if (other.getIdjojldglhi() != 0) {
-        setIdjojldglhi(other.getIdjojldglhi());
+      if (other.getNumberRewardedNpcBattlesToday() != 0) {
+        setNumberRewardedNpcBattlesToday(other.getNumberRewardedNpcBattlesToday());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -664,255 +668,260 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int jbflkcdndlp_ = 0;
+    private int result_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA jbflkcdndlp = 1;</code>
-     * @return The enum numeric value on the wire for jbflkcdndlp.
+     * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
      */
-    public int getJbflkcdndlpValue() {
-      return jbflkcdndlp_;
+    @java.lang.Override public int getResultValue() {
+      return result_;
     }
     /**
-     * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA jbflkcdndlp = 1;</code>
-     * @param value The enum numeric value on the wire for jbflkcdndlp to set.
+     * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
      * @return This builder for chaining.
      */
-    public Builder setJbflkcdndlpValue(int value) {
-      jbflkcdndlp_ = value;
+    public Builder setResultValue(int value) {
+      
+      result_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA jbflkcdndlp = 1;</code>
-     * @return The jbflkcdndlp.
+     * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result result = 1;</code>
+     * @return The result.
      */
-    public POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA getJbflkcdndlp() {
+    @java.lang.Override
+    public POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result getResult() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA result = POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA.valueOf(jbflkcdndlp_);
-      return result == null ? POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA.UNRECOGNIZED : result;
+      POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result result = POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA jbflkcdndlp = 1;</code>
-     * @param value The jbflkcdndlp to set.
+     * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result result = 1;</code>
+     * @param value The result to set.
      * @return This builder for chaining.
      */
-    public Builder setJbflkcdndlp(POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA value) {
+    public Builder setResult(POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      jbflkcdndlp_ = value.getNumber();
+      result_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA jbflkcdndlp = 1;</code>
+     * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result result = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJbflkcdndlp() {
+    public Builder clearResult() {
       
-      jbflkcdndlp_ = 0;
+      result_ = 0;
       onChanged();
       return this;
     }
 
-    private int kefbliennnk_ = 0;
+    private int rewardStatus_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.CombatRewardStatus kefbliennnk = 2;</code>
-     * @return The enum numeric value on the wire for kefbliennnk.
+     * <code>.POGOProtos.Rpc.CombatRewardStatus reward_status = 2;</code>
+     * @return The enum numeric value on the wire for rewardStatus.
      */
-    public int getKefbliennnkValue() {
-      return kefbliennnk_;
+    @java.lang.Override public int getRewardStatusValue() {
+      return rewardStatus_;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatRewardStatus kefbliennnk = 2;</code>
-     * @param value The enum numeric value on the wire for kefbliennnk to set.
+     * <code>.POGOProtos.Rpc.CombatRewardStatus reward_status = 2;</code>
+     * @param value The enum numeric value on the wire for rewardStatus to set.
      * @return This builder for chaining.
      */
-    public Builder setKefbliennnkValue(int value) {
-      kefbliennnk_ = value;
+    public Builder setRewardStatusValue(int value) {
+      
+      rewardStatus_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatRewardStatus kefbliennnk = 2;</code>
-     * @return The kefbliennnk.
+     * <code>.POGOProtos.Rpc.CombatRewardStatus reward_status = 2;</code>
+     * @return The rewardStatus.
      */
-    public POGOProtos.Rpc.CombatRewardStatus getKefbliennnk() {
+    @java.lang.Override
+    public POGOProtos.Rpc.CombatRewardStatus getRewardStatus() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.CombatRewardStatus result = POGOProtos.Rpc.CombatRewardStatus.valueOf(kefbliennnk_);
+      POGOProtos.Rpc.CombatRewardStatus result = POGOProtos.Rpc.CombatRewardStatus.valueOf(rewardStatus_);
       return result == null ? POGOProtos.Rpc.CombatRewardStatus.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatRewardStatus kefbliennnk = 2;</code>
-     * @param value The kefbliennnk to set.
+     * <code>.POGOProtos.Rpc.CombatRewardStatus reward_status = 2;</code>
+     * @param value The rewardStatus to set.
      * @return This builder for chaining.
      */
-    public Builder setKefbliennnk(POGOProtos.Rpc.CombatRewardStatus value) {
+    public Builder setRewardStatus(POGOProtos.Rpc.CombatRewardStatus value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      kefbliennnk_ = value.getNumber();
+      rewardStatus_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatRewardStatus kefbliennnk = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatRewardStatus reward_status = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearKefbliennnk() {
+    public Builder clearRewardStatus() {
       
-      kefbliennnk_ = 0;
+      rewardStatus_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.JMFCJOMHILG decnioaacdg_;
+    private POGOProtos.Rpc.LootProto rewards_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder> decnioaacdgBuilder_;
+        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> rewardsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
-     * @return Whether the decnioaacdg field is set.
+     * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
+     * @return Whether the rewards field is set.
      */
-    public boolean hasDecnioaacdg() {
-      return decnioaacdgBuilder_ != null || decnioaacdg_ != null;
+    public boolean hasRewards() {
+      return rewardsBuilder_ != null || rewards_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
-     * @return The decnioaacdg.
+     * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
+     * @return The rewards.
      */
-    public POGOProtos.Rpc.JMFCJOMHILG getDecnioaacdg() {
-      if (decnioaacdgBuilder_ == null) {
-        return decnioaacdg_ == null ? POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : decnioaacdg_;
+    public POGOProtos.Rpc.LootProto getRewards() {
+      if (rewardsBuilder_ == null) {
+        return rewards_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : rewards_;
       } else {
-        return decnioaacdgBuilder_.getMessage();
+        return rewardsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
      */
-    public Builder setDecnioaacdg(POGOProtos.Rpc.JMFCJOMHILG value) {
-      if (decnioaacdgBuilder_ == null) {
+    public Builder setRewards(POGOProtos.Rpc.LootProto value) {
+      if (rewardsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        decnioaacdg_ = value;
+        rewards_ = value;
         onChanged();
       } else {
-        decnioaacdgBuilder_.setMessage(value);
+        rewardsBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
      */
-    public Builder setDecnioaacdg(
-        POGOProtos.Rpc.JMFCJOMHILG.Builder builderForValue) {
-      if (decnioaacdgBuilder_ == null) {
-        decnioaacdg_ = builderForValue.build();
+    public Builder setRewards(
+        POGOProtos.Rpc.LootProto.Builder builderForValue) {
+      if (rewardsBuilder_ == null) {
+        rewards_ = builderForValue.build();
         onChanged();
       } else {
-        decnioaacdgBuilder_.setMessage(builderForValue.build());
+        rewardsBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
      */
-    public Builder mergeDecnioaacdg(POGOProtos.Rpc.JMFCJOMHILG value) {
-      if (decnioaacdgBuilder_ == null) {
-        if (decnioaacdg_ != null) {
-          decnioaacdg_ =
-            POGOProtos.Rpc.JMFCJOMHILG.newBuilder(decnioaacdg_).mergeFrom(value).buildPartial();
+    public Builder mergeRewards(POGOProtos.Rpc.LootProto value) {
+      if (rewardsBuilder_ == null) {
+        if (rewards_ != null) {
+          rewards_ =
+            POGOProtos.Rpc.LootProto.newBuilder(rewards_).mergeFrom(value).buildPartial();
         } else {
-          decnioaacdg_ = value;
+          rewards_ = value;
         }
         onChanged();
       } else {
-        decnioaacdgBuilder_.mergeFrom(value);
+        rewardsBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
      */
-    public Builder clearDecnioaacdg() {
-      if (decnioaacdgBuilder_ == null) {
-        decnioaacdg_ = null;
+    public Builder clearRewards() {
+      if (rewardsBuilder_ == null) {
+        rewards_ = null;
         onChanged();
       } else {
-        decnioaacdg_ = null;
-        decnioaacdgBuilder_ = null;
+        rewards_ = null;
+        rewardsBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
      */
-    public POGOProtos.Rpc.JMFCJOMHILG.Builder getDecnioaacdgBuilder() {
+    public POGOProtos.Rpc.LootProto.Builder getRewardsBuilder() {
       
       onChanged();
-      return getDecnioaacdgFieldBuilder().getBuilder();
+      return getRewardsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
      */
-    public POGOProtos.Rpc.JMFCJOMHILGOrBuilder getDecnioaacdgOrBuilder() {
-      if (decnioaacdgBuilder_ != null) {
-        return decnioaacdgBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.LootProtoOrBuilder getRewardsOrBuilder() {
+      if (rewardsBuilder_ != null) {
+        return rewardsBuilder_.getMessageOrBuilder();
       } else {
-        return decnioaacdg_ == null ?
-            POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : decnioaacdg_;
+        return rewards_ == null ?
+            POGOProtos.Rpc.LootProto.getDefaultInstance() : rewards_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder> 
-        getDecnioaacdgFieldBuilder() {
-      if (decnioaacdgBuilder_ == null) {
-        decnioaacdgBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder>(
-                getDecnioaacdg(),
+        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> 
+        getRewardsFieldBuilder() {
+      if (rewardsBuilder_ == null) {
+        rewardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder>(
+                getRewards(),
                 getParentForChildren(),
                 isClean());
-        decnioaacdg_ = null;
+        rewards_ = null;
       }
-      return decnioaacdgBuilder_;
+      return rewardsBuilder_;
     }
 
-    private int idjojldglhi_ ;
+    private int numberRewardedNpcBattlesToday_ ;
     /**
-     * <code>int32 idjojldglhi = 4;</code>
-     * @return The idjojldglhi.
+     * <code>int32 number_rewarded_npc_battles_today = 4;</code>
+     * @return The numberRewardedNpcBattlesToday.
      */
-    public int getIdjojldglhi() {
-      return idjojldglhi_;
+    @java.lang.Override
+    public int getNumberRewardedNpcBattlesToday() {
+      return numberRewardedNpcBattlesToday_;
     }
     /**
-     * <code>int32 idjojldglhi = 4;</code>
-     * @param value The idjojldglhi to set.
+     * <code>int32 number_rewarded_npc_battles_today = 4;</code>
+     * @param value The numberRewardedNpcBattlesToday to set.
      * @return This builder for chaining.
      */
-    public Builder setIdjojldglhi(int value) {
+    public Builder setNumberRewardedNpcBattlesToday(int value) {
       
-      idjojldglhi_ = value;
+      numberRewardedNpcBattlesToday_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 idjojldglhi = 4;</code>
+     * <code>int32 number_rewarded_npc_battles_today = 4;</code>
      * @return This builder for chaining.
      */
-    public Builder clearIdjojldglhi() {
+    public Builder clearNumberRewardedNpcBattlesToday() {
       
-      idjojldglhi_ = 0;
+      numberRewardedNpcBattlesToday_ = 0;
       onChanged();
       return this;
     }

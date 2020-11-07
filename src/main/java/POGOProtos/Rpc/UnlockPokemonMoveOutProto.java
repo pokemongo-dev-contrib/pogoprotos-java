@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.UnlockPokemonMoveOutProto}
  */
-public  final class UnlockPokemonMoveOutProto extends
+public final class UnlockPokemonMoveOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.UnlockPokemonMoveOutProto)
     UnlockPokemonMoveOutProtoOrBuilder {
@@ -16,7 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private UnlockPokemonMoveOutProto() {
-    jbflkcdndlp_ = 0;
+    result_ = 0;
   }
 
   @java.lang.Override
@@ -52,18 +52,18 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            jbflkcdndlp_ = rawValue;
+            result_ = rawValue;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.KHNLPGENFBI.Builder subBuilder = null;
-            if (hbpgnfpgied_ != null) {
-              subBuilder = hbpgnfpgied_.toBuilder();
+            POGOProtos.Rpc.PokemonProto.Builder subBuilder = null;
+            if (unlockedPokemon_ != null) {
+              subBuilder = unlockedPokemon_.toBuilder();
             }
-            hbpgnfpgied_ = input.readMessage(POGOProtos.Rpc.KHNLPGENFBI.parser(), extensionRegistry);
+            unlockedPokemon_ = input.readMessage(POGOProtos.Rpc.PokemonProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(hbpgnfpgied_);
-              hbpgnfpgied_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(unlockedPokemon_);
+              unlockedPokemon_ = subBuilder.buildPartial();
             }
 
             break;
@@ -101,13 +101,9 @@ private static final long serialVersionUID = 0L;
   }
 
   /**
-   * <pre>
-   * ref: UnlockPokemonMoveOutProto/HNGOBPKNFMD/FOLHCFAOOKJ
-   * </pre>
-   *
-   * Protobuf enum {@code POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ}
+   * Protobuf enum {@code POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result}
    */
-  public enum FOLHCFAOOKJ
+  public enum Result
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNSET = 0;</code>
@@ -184,7 +180,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static FOLHCFAOOKJ valueOf(int value) {
+    public static Result valueOf(int value) {
       return forNumber(value);
     }
 
@@ -192,7 +188,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static FOLHCFAOOKJ forNumber(int value) {
+    public static Result forNumber(int value) {
       switch (value) {
         case 0: return UNSET;
         case 1: return SUCCESS;
@@ -205,20 +201,24 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<FOLHCFAOOKJ>
+    public static com.google.protobuf.Internal.EnumLiteMap<Result>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        FOLHCFAOOKJ> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<FOLHCFAOOKJ>() {
-            public FOLHCFAOOKJ findValueByNumber(int number) {
-              return FOLHCFAOOKJ.forNumber(number);
+        Result> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<Result>() {
+            public Result findValueByNumber(int number) {
+              return Result.forNumber(number);
             }
           };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -230,9 +230,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.UnlockPokemonMoveOutProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final FOLHCFAOOKJ[] VALUES = values();
+    private static final Result[] VALUES = values();
 
-    public static FOLHCFAOOKJ valueOf(
+    public static Result valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -246,53 +246,56 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private FOLHCFAOOKJ(int value) {
+    private Result(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result)
   }
 
-  public static final int JBFLKCDNDLP_FIELD_NUMBER = 1;
-  private int jbflkcdndlp_;
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
   /**
-   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
-   * @return The enum numeric value on the wire for jbflkcdndlp.
+   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
    */
-  public int getJbflkcdndlpValue() {
-    return jbflkcdndlp_;
+  @java.lang.Override public int getResultValue() {
+    return result_;
   }
   /**
-   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
-   * @return The jbflkcdndlp.
+   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
+   * @return The result.
    */
-  public POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ getJbflkcdndlp() {
+  @java.lang.Override public POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result getResult() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ result = POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.valueOf(jbflkcdndlp_);
-    return result == null ? POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.UNRECOGNIZED : result;
+    POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.UNRECOGNIZED : result;
   }
 
-  public static final int HBPGNFPGIED_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied_;
+  public static final int UNLOCKED_POKEMON_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.PokemonProto unlockedPokemon_;
   /**
-   * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
-   * @return Whether the hbpgnfpgied field is set.
+   * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
+   * @return Whether the unlockedPokemon field is set.
    */
-  public boolean hasHbpgnfpgied() {
-    return hbpgnfpgied_ != null;
+  @java.lang.Override
+  public boolean hasUnlockedPokemon() {
+    return unlockedPokemon_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
-   * @return The hbpgnfpgied.
+   * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
+   * @return The unlockedPokemon.
    */
-  public POGOProtos.Rpc.KHNLPGENFBI getHbpgnfpgied() {
-    return hbpgnfpgied_ == null ? POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance() : hbpgnfpgied_;
+  @java.lang.Override
+  public POGOProtos.Rpc.PokemonProto getUnlockedPokemon() {
+    return unlockedPokemon_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : unlockedPokemon_;
   }
   /**
-   * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+   * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
    */
-  public POGOProtos.Rpc.KHNLPGENFBIOrBuilder getHbpgnfpgiedOrBuilder() {
-    return getHbpgnfpgied();
+  @java.lang.Override
+  public POGOProtos.Rpc.PokemonProtoOrBuilder getUnlockedPokemonOrBuilder() {
+    return getUnlockedPokemon();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -309,11 +312,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (jbflkcdndlp_ != POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.UNSET.getNumber()) {
-      output.writeEnum(1, jbflkcdndlp_);
+    if (result_ != POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
     }
-    if (hbpgnfpgied_ != null) {
-      output.writeMessage(2, getHbpgnfpgied());
+    if (unlockedPokemon_ != null) {
+      output.writeMessage(2, getUnlockedPokemon());
     }
     unknownFields.writeTo(output);
   }
@@ -324,13 +327,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (jbflkcdndlp_ != POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.UNSET.getNumber()) {
+    if (result_ != POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, jbflkcdndlp_);
+        .computeEnumSize(1, result_);
     }
-    if (hbpgnfpgied_ != null) {
+    if (unlockedPokemon_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getHbpgnfpgied());
+        .computeMessageSize(2, getUnlockedPokemon());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -347,11 +350,11 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.UnlockPokemonMoveOutProto other = (POGOProtos.Rpc.UnlockPokemonMoveOutProto) obj;
 
-    if (jbflkcdndlp_ != other.jbflkcdndlp_) return false;
-    if (hasHbpgnfpgied() != other.hasHbpgnfpgied()) return false;
-    if (hasHbpgnfpgied()) {
-      if (!getHbpgnfpgied()
-          .equals(other.getHbpgnfpgied())) return false;
+    if (result_ != other.result_) return false;
+    if (hasUnlockedPokemon() != other.hasUnlockedPokemon()) return false;
+    if (hasUnlockedPokemon()) {
+      if (!getUnlockedPokemon()
+          .equals(other.getUnlockedPokemon())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -364,11 +367,11 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + JBFLKCDNDLP_FIELD_NUMBER;
-    hash = (53 * hash) + jbflkcdndlp_;
-    if (hasHbpgnfpgied()) {
-      hash = (37 * hash) + HBPGNFPGIED_FIELD_NUMBER;
-      hash = (53 * hash) + getHbpgnfpgied().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
+    if (hasUnlockedPokemon()) {
+      hash = (37 * hash) + UNLOCKED_POKEMON_FIELD_NUMBER;
+      hash = (53 * hash) + getUnlockedPokemon().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -503,13 +506,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      jbflkcdndlp_ = 0;
+      result_ = 0;
 
-      if (hbpgnfpgiedBuilder_ == null) {
-        hbpgnfpgied_ = null;
+      if (unlockedPokemonBuilder_ == null) {
+        unlockedPokemon_ = null;
       } else {
-        hbpgnfpgied_ = null;
-        hbpgnfpgiedBuilder_ = null;
+        unlockedPokemon_ = null;
+        unlockedPokemonBuilder_ = null;
       }
       return this;
     }
@@ -537,11 +540,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.UnlockPokemonMoveOutProto buildPartial() {
       POGOProtos.Rpc.UnlockPokemonMoveOutProto result = new POGOProtos.Rpc.UnlockPokemonMoveOutProto(this);
-      result.jbflkcdndlp_ = jbflkcdndlp_;
-      if (hbpgnfpgiedBuilder_ == null) {
-        result.hbpgnfpgied_ = hbpgnfpgied_;
+      result.result_ = result_;
+      if (unlockedPokemonBuilder_ == null) {
+        result.unlockedPokemon_ = unlockedPokemon_;
       } else {
-        result.hbpgnfpgied_ = hbpgnfpgiedBuilder_.build();
+        result.unlockedPokemon_ = unlockedPokemonBuilder_.build();
       }
       onBuilt();
       return result;
@@ -591,11 +594,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.UnlockPokemonMoveOutProto other) {
       if (other == POGOProtos.Rpc.UnlockPokemonMoveOutProto.getDefaultInstance()) return this;
-      if (other.jbflkcdndlp_ != 0) {
-        setJbflkcdndlpValue(other.getJbflkcdndlpValue());
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
       }
-      if (other.hasHbpgnfpgied()) {
-        mergeHbpgnfpgied(other.getHbpgnfpgied());
+      if (other.hasUnlockedPokemon()) {
+        mergeUnlockedPokemon(other.getUnlockedPokemon());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -626,175 +629,177 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int jbflkcdndlp_ = 0;
+    private int result_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
-     * @return The enum numeric value on the wire for jbflkcdndlp.
+     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
      */
-    public int getJbflkcdndlpValue() {
-      return jbflkcdndlp_;
+    @java.lang.Override public int getResultValue() {
+      return result_;
     }
     /**
-     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
-     * @param value The enum numeric value on the wire for jbflkcdndlp to set.
+     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
      * @return This builder for chaining.
      */
-    public Builder setJbflkcdndlpValue(int value) {
-      jbflkcdndlp_ = value;
+    public Builder setResultValue(int value) {
+      
+      result_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
-     * @return The jbflkcdndlp.
+     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
+     * @return The result.
      */
-    public POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ getJbflkcdndlp() {
+    @java.lang.Override
+    public POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result getResult() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ result = POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.valueOf(jbflkcdndlp_);
-      return result == null ? POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.UNRECOGNIZED : result;
+      POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
-     * @param value The jbflkcdndlp to set.
+     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
+     * @param value The result to set.
      * @return This builder for chaining.
      */
-    public Builder setJbflkcdndlp(POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ value) {
+    public Builder setResult(POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      jbflkcdndlp_ = value.getNumber();
+      result_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
+     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJbflkcdndlp() {
+    public Builder clearResult() {
       
-      jbflkcdndlp_ = 0;
+      result_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied_;
+    private POGOProtos.Rpc.PokemonProto unlockedPokemon_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder> hbpgnfpgiedBuilder_;
+        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> unlockedPokemonBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
-     * @return Whether the hbpgnfpgied field is set.
+     * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
+     * @return Whether the unlockedPokemon field is set.
      */
-    public boolean hasHbpgnfpgied() {
-      return hbpgnfpgiedBuilder_ != null || hbpgnfpgied_ != null;
+    public boolean hasUnlockedPokemon() {
+      return unlockedPokemonBuilder_ != null || unlockedPokemon_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
-     * @return The hbpgnfpgied.
+     * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
+     * @return The unlockedPokemon.
      */
-    public POGOProtos.Rpc.KHNLPGENFBI getHbpgnfpgied() {
-      if (hbpgnfpgiedBuilder_ == null) {
-        return hbpgnfpgied_ == null ? POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance() : hbpgnfpgied_;
+    public POGOProtos.Rpc.PokemonProto getUnlockedPokemon() {
+      if (unlockedPokemonBuilder_ == null) {
+        return unlockedPokemon_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : unlockedPokemon_;
       } else {
-        return hbpgnfpgiedBuilder_.getMessage();
+        return unlockedPokemonBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
      */
-    public Builder setHbpgnfpgied(POGOProtos.Rpc.KHNLPGENFBI value) {
-      if (hbpgnfpgiedBuilder_ == null) {
+    public Builder setUnlockedPokemon(POGOProtos.Rpc.PokemonProto value) {
+      if (unlockedPokemonBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        hbpgnfpgied_ = value;
+        unlockedPokemon_ = value;
         onChanged();
       } else {
-        hbpgnfpgiedBuilder_.setMessage(value);
+        unlockedPokemonBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
      */
-    public Builder setHbpgnfpgied(
-        POGOProtos.Rpc.KHNLPGENFBI.Builder builderForValue) {
-      if (hbpgnfpgiedBuilder_ == null) {
-        hbpgnfpgied_ = builderForValue.build();
+    public Builder setUnlockedPokemon(
+        POGOProtos.Rpc.PokemonProto.Builder builderForValue) {
+      if (unlockedPokemonBuilder_ == null) {
+        unlockedPokemon_ = builderForValue.build();
         onChanged();
       } else {
-        hbpgnfpgiedBuilder_.setMessage(builderForValue.build());
+        unlockedPokemonBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
      */
-    public Builder mergeHbpgnfpgied(POGOProtos.Rpc.KHNLPGENFBI value) {
-      if (hbpgnfpgiedBuilder_ == null) {
-        if (hbpgnfpgied_ != null) {
-          hbpgnfpgied_ =
-            POGOProtos.Rpc.KHNLPGENFBI.newBuilder(hbpgnfpgied_).mergeFrom(value).buildPartial();
+    public Builder mergeUnlockedPokemon(POGOProtos.Rpc.PokemonProto value) {
+      if (unlockedPokemonBuilder_ == null) {
+        if (unlockedPokemon_ != null) {
+          unlockedPokemon_ =
+            POGOProtos.Rpc.PokemonProto.newBuilder(unlockedPokemon_).mergeFrom(value).buildPartial();
         } else {
-          hbpgnfpgied_ = value;
+          unlockedPokemon_ = value;
         }
         onChanged();
       } else {
-        hbpgnfpgiedBuilder_.mergeFrom(value);
+        unlockedPokemonBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
      */
-    public Builder clearHbpgnfpgied() {
-      if (hbpgnfpgiedBuilder_ == null) {
-        hbpgnfpgied_ = null;
+    public Builder clearUnlockedPokemon() {
+      if (unlockedPokemonBuilder_ == null) {
+        unlockedPokemon_ = null;
         onChanged();
       } else {
-        hbpgnfpgied_ = null;
-        hbpgnfpgiedBuilder_ = null;
+        unlockedPokemon_ = null;
+        unlockedPokemonBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
      */
-    public POGOProtos.Rpc.KHNLPGENFBI.Builder getHbpgnfpgiedBuilder() {
+    public POGOProtos.Rpc.PokemonProto.Builder getUnlockedPokemonBuilder() {
       
       onChanged();
-      return getHbpgnfpgiedFieldBuilder().getBuilder();
+      return getUnlockedPokemonFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
      */
-    public POGOProtos.Rpc.KHNLPGENFBIOrBuilder getHbpgnfpgiedOrBuilder() {
-      if (hbpgnfpgiedBuilder_ != null) {
-        return hbpgnfpgiedBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.PokemonProtoOrBuilder getUnlockedPokemonOrBuilder() {
+      if (unlockedPokemonBuilder_ != null) {
+        return unlockedPokemonBuilder_.getMessageOrBuilder();
       } else {
-        return hbpgnfpgied_ == null ?
-            POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance() : hbpgnfpgied_;
+        return unlockedPokemon_ == null ?
+            POGOProtos.Rpc.PokemonProto.getDefaultInstance() : unlockedPokemon_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto unlocked_pokemon = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder> 
-        getHbpgnfpgiedFieldBuilder() {
-      if (hbpgnfpgiedBuilder_ == null) {
-        hbpgnfpgiedBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder>(
-                getHbpgnfpgied(),
+        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> 
+        getUnlockedPokemonFieldBuilder() {
+      if (unlockedPokemonBuilder_ == null) {
+        unlockedPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder>(
+                getUnlockedPokemon(),
                 getParentForChildren(),
                 isClean());
-        hbpgnfpgied_ = null;
+        unlockedPokemon_ = null;
       }
-      return hbpgnfpgiedBuilder_;
+      return unlockedPokemonBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

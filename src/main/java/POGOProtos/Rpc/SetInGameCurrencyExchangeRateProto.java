@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.SetInGameCurrencyExchangeRateProto}
  */
-public  final class SetInGameCurrencyExchangeRateProto extends
+public final class SetInGameCurrencyExchangeRateProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SetInGameCurrencyExchangeRateProto)
     SetInGameCurrencyExchangeRateProtoOrBuilder {
@@ -105,6 +105,7 @@ private static final long serialVersionUID = 0L;
    * <code>string in_game_currency = 1;</code>
    * @return The inGameCurrency.
    */
+  @java.lang.Override
   public java.lang.String getInGameCurrency() {
     java.lang.Object ref = inGameCurrency_;
     if (ref instanceof java.lang.String) {
@@ -121,6 +122,7 @@ private static final long serialVersionUID = 0L;
    * <code>string in_game_currency = 1;</code>
    * @return The bytes for inGameCurrency.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getInGameCurrencyBytes() {
     java.lang.Object ref = inGameCurrency_;
@@ -141,6 +143,7 @@ private static final long serialVersionUID = 0L;
    * <code>string fiat_currency = 2;</code>
    * @return The fiatCurrency.
    */
+  @java.lang.Override
   public java.lang.String getFiatCurrency() {
     java.lang.Object ref = fiatCurrency_;
     if (ref instanceof java.lang.String) {
@@ -157,6 +160,7 @@ private static final long serialVersionUID = 0L;
    * <code>string fiat_currency = 2;</code>
    * @return The bytes for fiatCurrency.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getFiatCurrencyBytes() {
     java.lang.Object ref = fiatCurrency_;
@@ -177,6 +181,7 @@ private static final long serialVersionUID = 0L;
    * <code>int64 fiat_currency_cost_e6_per_in_game_unit = 3;</code>
    * @return The fiatCurrencyCostE6PerInGameUnit.
    */
+  @java.lang.Override
   public long getFiatCurrencyCostE6PerInGameUnit() {
     return fiatCurrencyCostE6PerInGameUnit_;
   }
@@ -675,6 +680,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 fiat_currency_cost_e6_per_in_game_unit = 3;</code>
      * @return The fiatCurrencyCostE6PerInGameUnit.
      */
+    @java.lang.Override
     public long getFiatCurrencyCostE6PerInGameUnit() {
       return fiatCurrencyCostE6PerInGameUnit_;
     }

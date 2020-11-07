@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.GetAdventureSyncSettingsRequestProto}
  */
-public  final class GetAdventureSyncSettingsRequestProto extends
+public final class GetAdventureSyncSettingsRequestProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetAdventureSyncSettingsRequestProto)
     GetAdventureSyncSettingsRequestProtoOrBuilder {

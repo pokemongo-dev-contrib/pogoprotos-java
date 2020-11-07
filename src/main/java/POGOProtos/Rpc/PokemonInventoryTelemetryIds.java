@@ -91,6 +91,10 @@ public enum PokemonInventoryTelemetryIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -99,7 +103,7 @@ public enum PokemonInventoryTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(117);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(113);
   }
 
   private static final PokemonInventoryTelemetryIds[] VALUES = values();

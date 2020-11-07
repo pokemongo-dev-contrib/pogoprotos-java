@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.Distribution}
  */
-public  final class Distribution extends
+public final class Distribution extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.Distribution)
     DistributionOrBuilder {
@@ -16,7 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private Distribution() {
-    naochkkocio_ = emptyLongList();
+    bucketCounts_ = emptyLongList();
   }
 
   @java.lang.Override
@@ -52,62 +52,62 @@ private static final long serialVersionUID = 0L;
             break;
           case 8: {
 
-            aihjjphknom_ = input.readInt64();
+            count_ = input.readInt64();
             break;
           }
           case 21: {
 
-            aomahjohbck_ = input.readFloat();
+            mean_ = input.readFloat();
             break;
           }
           case 25: {
 
-            hgmgodopggi_ = input.readDouble();
+            sumOfSquaredDeviation_ = input.readDouble();
             break;
           }
           case 34: {
-            POGOProtos.Rpc.Distribution.KDJNFIHPPHE.Builder subBuilder = null;
-            if (lpjkbabbpdd_ != null) {
-              subBuilder = lpjkbabbpdd_.toBuilder();
+            POGOProtos.Rpc.Distribution.Range.Builder subBuilder = null;
+            if (range_ != null) {
+              subBuilder = range_.toBuilder();
             }
-            lpjkbabbpdd_ = input.readMessage(POGOProtos.Rpc.Distribution.KDJNFIHPPHE.parser(), extensionRegistry);
+            range_ = input.readMessage(POGOProtos.Rpc.Distribution.Range.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(lpjkbabbpdd_);
-              lpjkbabbpdd_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(range_);
+              range_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 42: {
-            POGOProtos.Rpc.Distribution.ONAOLNOFLKC.Builder subBuilder = null;
-            if (aljmnfihoml_ != null) {
-              subBuilder = aljmnfihoml_.toBuilder();
+            POGOProtos.Rpc.Distribution.BucketOptions.Builder subBuilder = null;
+            if (bucketOptions_ != null) {
+              subBuilder = bucketOptions_.toBuilder();
             }
-            aljmnfihoml_ = input.readMessage(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.parser(), extensionRegistry);
+            bucketOptions_ = input.readMessage(POGOProtos.Rpc.Distribution.BucketOptions.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(aljmnfihoml_);
-              aljmnfihoml_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(bucketOptions_);
+              bucketOptions_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 48: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              naochkkocio_ = newLongList();
+              bucketCounts_ = newLongList();
               mutable_bitField0_ |= 0x00000001;
             }
-            naochkkocio_.addLong(input.readInt64());
+            bucketCounts_.addLong(input.readInt64());
             break;
           }
           case 50: {
             int length = input.readRawVarint32();
             int limit = input.pushLimit(length);
             if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-              naochkkocio_ = newLongList();
+              bucketCounts_ = newLongList();
               mutable_bitField0_ |= 0x00000001;
             }
             while (input.getBytesUntilLimit() > 0) {
-              naochkkocio_.addLong(input.readInt64());
+              bucketCounts_.addLong(input.readInt64());
             }
             input.popLimit(limit);
             break;
@@ -128,7 +128,7 @@ private static final long serialVersionUID = 0L;
           e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        naochkkocio_.makeImmutable(); // C
+        bucketCounts_.makeImmutable(); // C
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -147,46 +147,42 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.Distribution.class, POGOProtos.Rpc.Distribution.Builder.class);
   }
 
-  public interface KDJNFIHPPHEOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.Distribution.KDJNFIHPPHE)
+  public interface RangeOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.Distribution.Range)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int64 cnphhjbdcaj = 1;</code>
-     * @return The cnphhjbdcaj.
+     * <code>int64 min = 1;</code>
+     * @return The min.
      */
-    long getCnphhjbdcaj();
+    long getMin();
 
     /**
-     * <code>int64 dlclmangbkl = 2;</code>
-     * @return The dlclmangbkl.
+     * <code>int64 max = 2;</code>
+     * @return The max.
      */
-    long getDlclmangbkl();
+    long getMax();
   }
   /**
-   * <pre>
-   * ref: Distribution/JKODMEBEGCJ/KDJNFIHPPHE
-   * </pre>
-   *
-   * Protobuf type {@code POGOProtos.Rpc.Distribution.KDJNFIHPPHE}
+   * Protobuf type {@code POGOProtos.Rpc.Distribution.Range}
    */
-  public  static final class KDJNFIHPPHE extends
+  public static final class Range extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.Distribution.KDJNFIHPPHE)
-      KDJNFIHPPHEOrBuilder {
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.Distribution.Range)
+      RangeOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use KDJNFIHPPHE.newBuilder() to construct.
-    private KDJNFIHPPHE(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use Range.newBuilder() to construct.
+    private Range(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private KDJNFIHPPHE() {
+    private Range() {
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new KDJNFIHPPHE();
+      return new Range();
     }
 
     @java.lang.Override
@@ -194,7 +190,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields() {
       return this.unknownFields;
     }
-    private KDJNFIHPPHE(
+    private Range(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -214,12 +210,12 @@ private static final long serialVersionUID = 0L;
               break;
             case 8: {
 
-              cnphhjbdcaj_ = input.readInt64();
+              min_ = input.readInt64();
               break;
             }
             case 16: {
 
-              dlclmangbkl_ = input.readInt64();
+              max_ = input.readInt64();
               break;
             }
             default: {
@@ -243,35 +239,37 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_KDJNFIHPPHE_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_Range_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_KDJNFIHPPHE_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_Range_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.Distribution.KDJNFIHPPHE.class, POGOProtos.Rpc.Distribution.KDJNFIHPPHE.Builder.class);
+              POGOProtos.Rpc.Distribution.Range.class, POGOProtos.Rpc.Distribution.Range.Builder.class);
     }
 
-    public static final int CNPHHJBDCAJ_FIELD_NUMBER = 1;
-    private long cnphhjbdcaj_;
+    public static final int MIN_FIELD_NUMBER = 1;
+    private long min_;
     /**
-     * <code>int64 cnphhjbdcaj = 1;</code>
-     * @return The cnphhjbdcaj.
+     * <code>int64 min = 1;</code>
+     * @return The min.
      */
-    public long getCnphhjbdcaj() {
-      return cnphhjbdcaj_;
+    @java.lang.Override
+    public long getMin() {
+      return min_;
     }
 
-    public static final int DLCLMANGBKL_FIELD_NUMBER = 2;
-    private long dlclmangbkl_;
+    public static final int MAX_FIELD_NUMBER = 2;
+    private long max_;
     /**
-     * <code>int64 dlclmangbkl = 2;</code>
-     * @return The dlclmangbkl.
+     * <code>int64 max = 2;</code>
+     * @return The max.
      */
-    public long getDlclmangbkl() {
-      return dlclmangbkl_;
+    @java.lang.Override
+    public long getMax() {
+      return max_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -288,11 +286,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cnphhjbdcaj_ != 0L) {
-        output.writeInt64(1, cnphhjbdcaj_);
+      if (min_ != 0L) {
+        output.writeInt64(1, min_);
       }
-      if (dlclmangbkl_ != 0L) {
-        output.writeInt64(2, dlclmangbkl_);
+      if (max_ != 0L) {
+        output.writeInt64(2, max_);
       }
       unknownFields.writeTo(output);
     }
@@ -303,13 +301,13 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (cnphhjbdcaj_ != 0L) {
+      if (min_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, cnphhjbdcaj_);
+          .computeInt64Size(1, min_);
       }
-      if (dlclmangbkl_ != 0L) {
+      if (max_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(2, dlclmangbkl_);
+          .computeInt64Size(2, max_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -321,15 +319,15 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof POGOProtos.Rpc.Distribution.KDJNFIHPPHE)) {
+      if (!(obj instanceof POGOProtos.Rpc.Distribution.Range)) {
         return super.equals(obj);
       }
-      POGOProtos.Rpc.Distribution.KDJNFIHPPHE other = (POGOProtos.Rpc.Distribution.KDJNFIHPPHE) obj;
+      POGOProtos.Rpc.Distribution.Range other = (POGOProtos.Rpc.Distribution.Range) obj;
 
-      if (getCnphhjbdcaj()
-          != other.getCnphhjbdcaj()) return false;
-      if (getDlclmangbkl()
-          != other.getDlclmangbkl()) return false;
+      if (getMin()
+          != other.getMin()) return false;
+      if (getMax()
+          != other.getMax()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -341,80 +339,80 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CNPHHJBDCAJ_FIELD_NUMBER;
+      hash = (37 * hash) + MIN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getCnphhjbdcaj());
-      hash = (37 * hash) + DLCLMANGBKL_FIELD_NUMBER;
+          getMin());
+      hash = (37 * hash) + MAX_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getDlclmangbkl());
+          getMax());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseFrom(
+    public static POGOProtos.Rpc.Distribution.Range parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseFrom(
+    public static POGOProtos.Rpc.Distribution.Range parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseFrom(
+    public static POGOProtos.Rpc.Distribution.Range parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseFrom(
+    public static POGOProtos.Rpc.Distribution.Range parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseFrom(byte[] data)
+    public static POGOProtos.Rpc.Distribution.Range parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseFrom(
+    public static POGOProtos.Rpc.Distribution.Range parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.Distribution.Range parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseFrom(
+    public static POGOProtos.Rpc.Distribution.Range parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseDelimitedFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.Distribution.Range parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseDelimitedFrom(
+    public static POGOProtos.Rpc.Distribution.Range parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseFrom(
+    public static POGOProtos.Rpc.Distribution.Range parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE parseFrom(
+    public static POGOProtos.Rpc.Distribution.Range parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -427,7 +425,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(POGOProtos.Rpc.Distribution.KDJNFIHPPHE prototype) {
+    public static Builder newBuilder(POGOProtos.Rpc.Distribution.Range prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -443,30 +441,26 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * <pre>
-     * ref: Distribution/JKODMEBEGCJ/KDJNFIHPPHE
-     * </pre>
-     *
-     * Protobuf type {@code POGOProtos.Rpc.Distribution.KDJNFIHPPHE}
+     * Protobuf type {@code POGOProtos.Rpc.Distribution.Range}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.Distribution.KDJNFIHPPHE)
-        POGOProtos.Rpc.Distribution.KDJNFIHPPHEOrBuilder {
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.Distribution.Range)
+        POGOProtos.Rpc.Distribution.RangeOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_KDJNFIHPPHE_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_Range_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_KDJNFIHPPHE_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_Range_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.Distribution.KDJNFIHPPHE.class, POGOProtos.Rpc.Distribution.KDJNFIHPPHE.Builder.class);
+                POGOProtos.Rpc.Distribution.Range.class, POGOProtos.Rpc.Distribution.Range.Builder.class);
       }
 
-      // Construct using POGOProtos.Rpc.Distribution.KDJNFIHPPHE.newBuilder()
+      // Construct using POGOProtos.Rpc.Distribution.Range.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -484,9 +478,9 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cnphhjbdcaj_ = 0L;
+        min_ = 0L;
 
-        dlclmangbkl_ = 0L;
+        max_ = 0L;
 
         return this;
       }
@@ -494,17 +488,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_KDJNFIHPPHE_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_Range_descriptor;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.Distribution.KDJNFIHPPHE getDefaultInstanceForType() {
-        return POGOProtos.Rpc.Distribution.KDJNFIHPPHE.getDefaultInstance();
+      public POGOProtos.Rpc.Distribution.Range getDefaultInstanceForType() {
+        return POGOProtos.Rpc.Distribution.Range.getDefaultInstance();
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.Distribution.KDJNFIHPPHE build() {
-        POGOProtos.Rpc.Distribution.KDJNFIHPPHE result = buildPartial();
+      public POGOProtos.Rpc.Distribution.Range build() {
+        POGOProtos.Rpc.Distribution.Range result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -512,10 +506,10 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.Distribution.KDJNFIHPPHE buildPartial() {
-        POGOProtos.Rpc.Distribution.KDJNFIHPPHE result = new POGOProtos.Rpc.Distribution.KDJNFIHPPHE(this);
-        result.cnphhjbdcaj_ = cnphhjbdcaj_;
-        result.dlclmangbkl_ = dlclmangbkl_;
+      public POGOProtos.Rpc.Distribution.Range buildPartial() {
+        POGOProtos.Rpc.Distribution.Range result = new POGOProtos.Rpc.Distribution.Range(this);
+        result.min_ = min_;
+        result.max_ = max_;
         onBuilt();
         return result;
       }
@@ -554,21 +548,21 @@ private static final long serialVersionUID = 0L;
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Rpc.Distribution.KDJNFIHPPHE) {
-          return mergeFrom((POGOProtos.Rpc.Distribution.KDJNFIHPPHE)other);
+        if (other instanceof POGOProtos.Rpc.Distribution.Range) {
+          return mergeFrom((POGOProtos.Rpc.Distribution.Range)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(POGOProtos.Rpc.Distribution.KDJNFIHPPHE other) {
-        if (other == POGOProtos.Rpc.Distribution.KDJNFIHPPHE.getDefaultInstance()) return this;
-        if (other.getCnphhjbdcaj() != 0L) {
-          setCnphhjbdcaj(other.getCnphhjbdcaj());
+      public Builder mergeFrom(POGOProtos.Rpc.Distribution.Range other) {
+        if (other == POGOProtos.Rpc.Distribution.Range.getDefaultInstance()) return this;
+        if (other.getMin() != 0L) {
+          setMin(other.getMin());
         }
-        if (other.getDlclmangbkl() != 0L) {
-          setDlclmangbkl(other.getDlclmangbkl());
+        if (other.getMax() != 0L) {
+          setMax(other.getMax());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -585,11 +579,11 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        POGOProtos.Rpc.Distribution.KDJNFIHPPHE parsedMessage = null;
+        POGOProtos.Rpc.Distribution.Range parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Rpc.Distribution.KDJNFIHPPHE) e.getUnfinishedMessage();
+          parsedMessage = (POGOProtos.Rpc.Distribution.Range) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -599,62 +593,64 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      private long cnphhjbdcaj_ ;
+      private long min_ ;
       /**
-       * <code>int64 cnphhjbdcaj = 1;</code>
-       * @return The cnphhjbdcaj.
+       * <code>int64 min = 1;</code>
+       * @return The min.
        */
-      public long getCnphhjbdcaj() {
-        return cnphhjbdcaj_;
+      @java.lang.Override
+      public long getMin() {
+        return min_;
       }
       /**
-       * <code>int64 cnphhjbdcaj = 1;</code>
-       * @param value The cnphhjbdcaj to set.
+       * <code>int64 min = 1;</code>
+       * @param value The min to set.
        * @return This builder for chaining.
        */
-      public Builder setCnphhjbdcaj(long value) {
+      public Builder setMin(long value) {
         
-        cnphhjbdcaj_ = value;
+        min_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 cnphhjbdcaj = 1;</code>
+       * <code>int64 min = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCnphhjbdcaj() {
+      public Builder clearMin() {
         
-        cnphhjbdcaj_ = 0L;
+        min_ = 0L;
         onChanged();
         return this;
       }
 
-      private long dlclmangbkl_ ;
+      private long max_ ;
       /**
-       * <code>int64 dlclmangbkl = 2;</code>
-       * @return The dlclmangbkl.
+       * <code>int64 max = 2;</code>
+       * @return The max.
        */
-      public long getDlclmangbkl() {
-        return dlclmangbkl_;
+      @java.lang.Override
+      public long getMax() {
+        return max_;
       }
       /**
-       * <code>int64 dlclmangbkl = 2;</code>
-       * @param value The dlclmangbkl to set.
+       * <code>int64 max = 2;</code>
+       * @param value The max to set.
        * @return This builder for chaining.
        */
-      public Builder setDlclmangbkl(long value) {
+      public Builder setMax(long value) {
         
-        dlclmangbkl_ = value;
+        max_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 dlclmangbkl = 2;</code>
+       * <code>int64 max = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDlclmangbkl() {
+      public Builder clearMax() {
         
-        dlclmangbkl_ = 0L;
+        max_ = 0L;
         onChanged();
         return this;
       }
@@ -671,121 +667,117 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.Distribution.KDJNFIHPPHE)
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.Distribution.Range)
     }
 
-    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.Distribution.KDJNFIHPPHE)
-    private static final POGOProtos.Rpc.Distribution.KDJNFIHPPHE DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.Distribution.Range)
+    private static final POGOProtos.Rpc.Distribution.Range DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new POGOProtos.Rpc.Distribution.KDJNFIHPPHE();
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.Distribution.Range();
     }
 
-    public static POGOProtos.Rpc.Distribution.KDJNFIHPPHE getDefaultInstance() {
+    public static POGOProtos.Rpc.Distribution.Range getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<KDJNFIHPPHE>
-        PARSER = new com.google.protobuf.AbstractParser<KDJNFIHPPHE>() {
+    private static final com.google.protobuf.Parser<Range>
+        PARSER = new com.google.protobuf.AbstractParser<Range>() {
       @java.lang.Override
-      public KDJNFIHPPHE parsePartialFrom(
+      public Range parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new KDJNFIHPPHE(input, extensionRegistry);
+        return new Range(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<KDJNFIHPPHE> parser() {
+    public static com.google.protobuf.Parser<Range> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<KDJNFIHPPHE> getParserForType() {
+    public com.google.protobuf.Parser<Range> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.Distribution.KDJNFIHPPHE getDefaultInstanceForType() {
+    public POGOProtos.Rpc.Distribution.Range getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface ONAOLNOFLKCOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.Distribution.ONAOLNOFLKC)
+  public interface BucketOptionsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.Distribution.BucketOptions)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
      * @return Whether the linearBuckets field is set.
      */
     boolean hasLinearBuckets();
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
      * @return The linearBuckets.
      */
-    POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF getLinearBuckets();
+    POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets getLinearBuckets();
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
      */
-    POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDFOrBuilder getLinearBucketsOrBuilder();
+    POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder getLinearBucketsOrBuilder();
 
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
      * @return Whether the exponentialBuckets field is set.
      */
     boolean hasExponentialBuckets();
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
      * @return The exponentialBuckets.
      */
-    POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO getExponentialBuckets();
+    POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets getExponentialBuckets();
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
      */
-    POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKOOrBuilder getExponentialBucketsOrBuilder();
+    POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder getExponentialBucketsOrBuilder();
 
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
      * @return Whether the explicitBuckets field is set.
      */
     boolean hasExplicitBuckets();
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
      * @return The explicitBuckets.
      */
-    POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH getExplicitBuckets();
+    POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets getExplicitBuckets();
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
      */
-    POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFHOrBuilder getExplicitBucketsOrBuilder();
+    POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder getExplicitBucketsOrBuilder();
 
-    public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHIFNECKMHGCase getPHIFNECKMHGCase();
+    public POGOProtos.Rpc.Distribution.BucketOptions.BucketTypeCase getBucketTypeCase();
   }
   /**
-   * <pre>
-   * ref: Distribution/JKODMEBEGCJ/ONAOLNOFLKC
-   * </pre>
-   *
-   * Protobuf type {@code POGOProtos.Rpc.Distribution.ONAOLNOFLKC}
+   * Protobuf type {@code POGOProtos.Rpc.Distribution.BucketOptions}
    */
-  public  static final class ONAOLNOFLKC extends
+  public static final class BucketOptions extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.Distribution.ONAOLNOFLKC)
-      ONAOLNOFLKCOrBuilder {
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.Distribution.BucketOptions)
+      BucketOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use ONAOLNOFLKC.newBuilder() to construct.
-    private ONAOLNOFLKC(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use BucketOptions.newBuilder() to construct.
+    private BucketOptions(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private ONAOLNOFLKC() {
+    private BucketOptions() {
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new ONAOLNOFLKC();
+      return new BucketOptions();
     }
 
     @java.lang.Override
@@ -793,7 +785,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ONAOLNOFLKC(
+    private BucketOptions(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -812,45 +804,45 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.Builder subBuilder = null;
-              if (pHIFNECKMHGCase_ == 1) {
-                subBuilder = ((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) pHIFNECKMHG_).toBuilder();
+              POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder subBuilder = null;
+              if (bucketTypeCase_ == 1) {
+                subBuilder = ((POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_).toBuilder();
               }
-              pHIFNECKMHG_ =
-                  input.readMessage(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.parser(), extensionRegistry);
+              bucketType_ =
+                  input.readMessage(POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) pHIFNECKMHG_);
-                pHIFNECKMHG_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_);
+                bucketType_ = subBuilder.buildPartial();
               }
-              pHIFNECKMHGCase_ = 1;
+              bucketTypeCase_ = 1;
               break;
             }
             case 18: {
-              POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.Builder subBuilder = null;
-              if (pHIFNECKMHGCase_ == 2) {
-                subBuilder = ((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) pHIFNECKMHG_).toBuilder();
+              POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder subBuilder = null;
+              if (bucketTypeCase_ == 2) {
+                subBuilder = ((POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_).toBuilder();
               }
-              pHIFNECKMHG_ =
-                  input.readMessage(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.parser(), extensionRegistry);
+              bucketType_ =
+                  input.readMessage(POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) pHIFNECKMHG_);
-                pHIFNECKMHG_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_);
+                bucketType_ = subBuilder.buildPartial();
               }
-              pHIFNECKMHGCase_ = 2;
+              bucketTypeCase_ = 2;
               break;
             }
             case 26: {
-              POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.Builder subBuilder = null;
-              if (pHIFNECKMHGCase_ == 3) {
-                subBuilder = ((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) pHIFNECKMHG_).toBuilder();
+              POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder subBuilder = null;
+              if (bucketTypeCase_ == 3) {
+                subBuilder = ((POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_).toBuilder();
               }
-              pHIFNECKMHG_ =
-                  input.readMessage(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.parser(), extensionRegistry);
+              bucketType_ =
+                  input.readMessage(POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) pHIFNECKMHG_);
-                pHIFNECKMHG_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_);
+                bucketType_ = subBuilder.buildPartial();
               }
-              pHIFNECKMHGCase_ = 3;
+              bucketTypeCase_ = 3;
               break;
             }
             default: {
@@ -874,63 +866,59 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.Distribution.ONAOLNOFLKC.class, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.Builder.class);
+              POGOProtos.Rpc.Distribution.BucketOptions.class, POGOProtos.Rpc.Distribution.BucketOptions.Builder.class);
     }
 
-    public interface ADFLBDHOHDFOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF)
+    public interface ExponentialBucketsOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets)
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>int64 foicdkponcd = 1;</code>
-       * @return The foicdkponcd.
+       * <code>int64 num_finite_buckets = 1;</code>
+       * @return The numFiniteBuckets.
        */
-      long getFoicdkponcd();
+      long getNumFiniteBuckets();
 
       /**
-       * <code>int64 hhbkelboifg = 2;</code>
-       * @return The hhbkelboifg.
+       * <code>float growth_factor = 2;</code>
+       * @return The growthFactor.
        */
-      long getHhbkelboifg();
+      float getGrowthFactor();
 
       /**
-       * <code>int64 kcddafhcacm = 3;</code>
-       * @return The kcddafhcacm.
+       * <code>float scale = 3;</code>
+       * @return The scale.
        */
-      long getKcddafhcacm();
+      float getScale();
     }
     /**
-     * <pre>
-     * ref: Distribution/JKODMEBEGCJ/ONAOLNOFLKC/JANEMHLMNGO/ADFLBDHOHDF
-     * </pre>
-     *
-     * Protobuf type {@code POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF}
+     * Protobuf type {@code POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets}
      */
-    public  static final class ADFLBDHOHDF extends
+    public static final class ExponentialBuckets extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF)
-        ADFLBDHOHDFOrBuilder {
+        // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets)
+        ExponentialBucketsOrBuilder {
     private static final long serialVersionUID = 0L;
-      // Use ADFLBDHOHDF.newBuilder() to construct.
-      private ADFLBDHOHDF(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // Use ExponentialBuckets.newBuilder() to construct.
+      private ExponentialBuckets(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
       }
-      private ADFLBDHOHDF() {
+      private ExponentialBuckets() {
       }
 
       @java.lang.Override
       @SuppressWarnings({"unused"})
       protected java.lang.Object newInstance(
           UnusedPrivateParameter unused) {
-        return new ADFLBDHOHDF();
+        return new ExponentialBuckets();
       }
 
       @java.lang.Override
@@ -938,7 +926,7 @@ private static final long serialVersionUID = 0L;
       getUnknownFields() {
         return this.unknownFields;
       }
-      private ADFLBDHOHDF(
+      private ExponentialBuckets(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -958,650 +946,17 @@ private static final long serialVersionUID = 0L;
                 break;
               case 8: {
 
-                foicdkponcd_ = input.readInt64();
-                break;
-              }
-              case 16: {
-
-                hhbkelboifg_ = input.readInt64();
-                break;
-              }
-              case 24: {
-
-                kcddafhcacm_ = input.readInt64();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_ADFLBDHOHDF_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_ADFLBDHOHDF_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.class, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.Builder.class);
-      }
-
-      public static final int FOICDKPONCD_FIELD_NUMBER = 1;
-      private long foicdkponcd_;
-      /**
-       * <code>int64 foicdkponcd = 1;</code>
-       * @return The foicdkponcd.
-       */
-      public long getFoicdkponcd() {
-        return foicdkponcd_;
-      }
-
-      public static final int HHBKELBOIFG_FIELD_NUMBER = 2;
-      private long hhbkelboifg_;
-      /**
-       * <code>int64 hhbkelboifg = 2;</code>
-       * @return The hhbkelboifg.
-       */
-      public long getHhbkelboifg() {
-        return hhbkelboifg_;
-      }
-
-      public static final int KCDDAFHCACM_FIELD_NUMBER = 3;
-      private long kcddafhcacm_;
-      /**
-       * <code>int64 kcddafhcacm = 3;</code>
-       * @return The kcddafhcacm.
-       */
-      public long getKcddafhcacm() {
-        return kcddafhcacm_;
-      }
-
-      private byte memoizedIsInitialized = -1;
-      @java.lang.Override
-      public final boolean isInitialized() {
-        byte isInitialized = memoizedIsInitialized;
-        if (isInitialized == 1) return true;
-        if (isInitialized == 0) return false;
-
-        memoizedIsInitialized = 1;
-        return true;
-      }
-
-      @java.lang.Override
-      public void writeTo(com.google.protobuf.CodedOutputStream output)
-                          throws java.io.IOException {
-        if (foicdkponcd_ != 0L) {
-          output.writeInt64(1, foicdkponcd_);
-        }
-        if (hhbkelboifg_ != 0L) {
-          output.writeInt64(2, hhbkelboifg_);
-        }
-        if (kcddafhcacm_ != 0L) {
-          output.writeInt64(3, kcddafhcacm_);
-        }
-        unknownFields.writeTo(output);
-      }
-
-      @java.lang.Override
-      public int getSerializedSize() {
-        int size = memoizedSize;
-        if (size != -1) return size;
-
-        size = 0;
-        if (foicdkponcd_ != 0L) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeInt64Size(1, foicdkponcd_);
-        }
-        if (hhbkelboifg_ != 0L) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeInt64Size(2, hhbkelboifg_);
-        }
-        if (kcddafhcacm_ != 0L) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeInt64Size(3, kcddafhcacm_);
-        }
-        size += unknownFields.getSerializedSize();
-        memoizedSize = size;
-        return size;
-      }
-
-      @java.lang.Override
-      public boolean equals(final java.lang.Object obj) {
-        if (obj == this) {
-         return true;
-        }
-        if (!(obj instanceof POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF)) {
-          return super.equals(obj);
-        }
-        POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF other = (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) obj;
-
-        if (getFoicdkponcd()
-            != other.getFoicdkponcd()) return false;
-        if (getHhbkelboifg()
-            != other.getHhbkelboifg()) return false;
-        if (getKcddafhcacm()
-            != other.getKcddafhcacm()) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
-        return true;
-      }
-
-      @java.lang.Override
-      public int hashCode() {
-        if (memoizedHashCode != 0) {
-          return memoizedHashCode;
-        }
-        int hash = 41;
-        hash = (19 * hash) + getDescriptor().hashCode();
-        hash = (37 * hash) + FOICDKPONCD_FIELD_NUMBER;
-        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getFoicdkponcd());
-        hash = (37 * hash) + HHBKELBOIFG_FIELD_NUMBER;
-        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getHhbkelboifg());
-        hash = (37 * hash) + KCDDAFHCACM_FIELD_NUMBER;
-        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getKcddafhcacm());
-        hash = (29 * hash) + unknownFields.hashCode();
-        memoizedHashCode = hash;
-        return hash;
-      }
-
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
-      }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
-      }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
-      }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-      }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
-      }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
-      }
-
-      @java.lang.Override
-      public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder() {
-        return DEFAULT_INSTANCE.toBuilder();
-      }
-      public static Builder newBuilder(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF prototype) {
-        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-      }
-      @java.lang.Override
-      public Builder toBuilder() {
-        return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
-      }
-
-      @java.lang.Override
-      protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        Builder builder = new Builder(parent);
-        return builder;
-      }
-      /**
-       * <pre>
-       * ref: Distribution/JKODMEBEGCJ/ONAOLNOFLKC/JANEMHLMNGO/ADFLBDHOHDF
-       * </pre>
-       *
-       * Protobuf type {@code POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF}
-       */
-      public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF)
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDFOrBuilder {
-        public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_ADFLBDHOHDF_descriptor;
-        }
-
-        @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_ADFLBDHOHDF_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                  POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.class, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.Builder.class);
-        }
-
-        // Construct using POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.newBuilder()
-        private Builder() {
-          maybeForceBuilderInitialization();
-        }
-
-        private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-          super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
-        }
-        @java.lang.Override
-        public Builder clear() {
-          super.clear();
-          foicdkponcd_ = 0L;
-
-          hhbkelboifg_ = 0L;
-
-          kcddafhcacm_ = 0L;
-
-          return this;
-        }
-
-        @java.lang.Override
-        public com.google.protobuf.Descriptors.Descriptor
-            getDescriptorForType() {
-          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_ADFLBDHOHDF_descriptor;
-        }
-
-        @java.lang.Override
-        public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF getDefaultInstanceForType() {
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.getDefaultInstance();
-        }
-
-        @java.lang.Override
-        public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF build() {
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF result = buildPartial();
-          if (!result.isInitialized()) {
-            throw newUninitializedMessageException(result);
-          }
-          return result;
-        }
-
-        @java.lang.Override
-        public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF buildPartial() {
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF result = new POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF(this);
-          result.foicdkponcd_ = foicdkponcd_;
-          result.hhbkelboifg_ = hhbkelboifg_;
-          result.kcddafhcacm_ = kcddafhcacm_;
-          onBuilt();
-          return result;
-        }
-
-        @java.lang.Override
-        public Builder clone() {
-          return super.clone();
-        }
-        @java.lang.Override
-        public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
-          return super.setField(field, value);
-        }
-        @java.lang.Override
-        public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
-          return super.clearField(field);
-        }
-        @java.lang.Override
-        public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-          return super.clearOneof(oneof);
-        }
-        @java.lang.Override
-        public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
-          return super.setRepeatedField(field, index, value);
-        }
-        @java.lang.Override
-        public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
-          return super.addRepeatedField(field, value);
-        }
-        @java.lang.Override
-        public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) {
-            return mergeFrom((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF)other);
-          } else {
-            super.mergeFrom(other);
-            return this;
-          }
-        }
-
-        public Builder mergeFrom(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF other) {
-          if (other == POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.getDefaultInstance()) return this;
-          if (other.getFoicdkponcd() != 0L) {
-            setFoicdkponcd(other.getFoicdkponcd());
-          }
-          if (other.getHhbkelboifg() != 0L) {
-            setHhbkelboifg(other.getHhbkelboifg());
-          }
-          if (other.getKcddafhcacm() != 0L) {
-            setKcddafhcacm(other.getKcddafhcacm());
-          }
-          this.mergeUnknownFields(other.unknownFields);
-          onChanged();
-          return this;
-        }
-
-        @java.lang.Override
-        public final boolean isInitialized() {
-          return true;
-        }
-
-        @java.lang.Override
-        public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF parsedMessage = null;
-          try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) e.getUnfinishedMessage();
-            throw e.unwrapIOException();
-          } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
-          return this;
-        }
-
-        private long foicdkponcd_ ;
-        /**
-         * <code>int64 foicdkponcd = 1;</code>
-         * @return The foicdkponcd.
-         */
-        public long getFoicdkponcd() {
-          return foicdkponcd_;
-        }
-        /**
-         * <code>int64 foicdkponcd = 1;</code>
-         * @param value The foicdkponcd to set.
-         * @return This builder for chaining.
-         */
-        public Builder setFoicdkponcd(long value) {
-          
-          foicdkponcd_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>int64 foicdkponcd = 1;</code>
-         * @return This builder for chaining.
-         */
-        public Builder clearFoicdkponcd() {
-          
-          foicdkponcd_ = 0L;
-          onChanged();
-          return this;
-        }
-
-        private long hhbkelboifg_ ;
-        /**
-         * <code>int64 hhbkelboifg = 2;</code>
-         * @return The hhbkelboifg.
-         */
-        public long getHhbkelboifg() {
-          return hhbkelboifg_;
-        }
-        /**
-         * <code>int64 hhbkelboifg = 2;</code>
-         * @param value The hhbkelboifg to set.
-         * @return This builder for chaining.
-         */
-        public Builder setHhbkelboifg(long value) {
-          
-          hhbkelboifg_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>int64 hhbkelboifg = 2;</code>
-         * @return This builder for chaining.
-         */
-        public Builder clearHhbkelboifg() {
-          
-          hhbkelboifg_ = 0L;
-          onChanged();
-          return this;
-        }
-
-        private long kcddafhcacm_ ;
-        /**
-         * <code>int64 kcddafhcacm = 3;</code>
-         * @return The kcddafhcacm.
-         */
-        public long getKcddafhcacm() {
-          return kcddafhcacm_;
-        }
-        /**
-         * <code>int64 kcddafhcacm = 3;</code>
-         * @param value The kcddafhcacm to set.
-         * @return This builder for chaining.
-         */
-        public Builder setKcddafhcacm(long value) {
-          
-          kcddafhcacm_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>int64 kcddafhcacm = 3;</code>
-         * @return This builder for chaining.
-         */
-        public Builder clearKcddafhcacm() {
-          
-          kcddafhcacm_ = 0L;
-          onChanged();
-          return this;
-        }
-        @java.lang.Override
-        public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.setUnknownFields(unknownFields);
-        }
-
-        @java.lang.Override
-        public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.mergeUnknownFields(unknownFields);
-        }
-
-
-        // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF)
-      }
-
-      // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF)
-      private static final POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF DEFAULT_INSTANCE;
-      static {
-        DEFAULT_INSTANCE = new POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF();
-      }
-
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF getDefaultInstance() {
-        return DEFAULT_INSTANCE;
-      }
-
-      private static final com.google.protobuf.Parser<ADFLBDHOHDF>
-          PARSER = new com.google.protobuf.AbstractParser<ADFLBDHOHDF>() {
-        @java.lang.Override
-        public ADFLBDHOHDF parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ADFLBDHOHDF(input, extensionRegistry);
-        }
-      };
-
-      public static com.google.protobuf.Parser<ADFLBDHOHDF> parser() {
-        return PARSER;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Parser<ADFLBDHOHDF> getParserForType() {
-        return PARSER;
-      }
-
-      @java.lang.Override
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF getDefaultInstanceForType() {
-        return DEFAULT_INSTANCE;
-      }
-
-    }
-
-    public interface PHPLOGGOHKOOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO)
-        com.google.protobuf.MessageOrBuilder {
-
-      /**
-       * <code>int64 foicdkponcd = 1;</code>
-       * @return The foicdkponcd.
-       */
-      long getFoicdkponcd();
-
-      /**
-       * <code>float memdbegocji = 2;</code>
-       * @return The memdbegocji.
-       */
-      float getMemdbegocji();
-
-      /**
-       * <code>float dnkjlbfenpe = 3;</code>
-       * @return The dnkjlbfenpe.
-       */
-      float getDnkjlbfenpe();
-    }
-    /**
-     * <pre>
-     * ref: Distribution/JKODMEBEGCJ/ONAOLNOFLKC/JANEMHLMNGO/PHPLOGGOHKO
-     * </pre>
-     *
-     * Protobuf type {@code POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO}
-     */
-    public  static final class PHPLOGGOHKO extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO)
-        PHPLOGGOHKOOrBuilder {
-    private static final long serialVersionUID = 0L;
-      // Use PHPLOGGOHKO.newBuilder() to construct.
-      private PHPLOGGOHKO(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-        super(builder);
-      }
-      private PHPLOGGOHKO() {
-      }
-
-      @java.lang.Override
-      @SuppressWarnings({"unused"})
-      protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
-        return new PHPLOGGOHKO();
-      }
-
-      @java.lang.Override
-      public final com.google.protobuf.UnknownFieldSet
-      getUnknownFields() {
-        return this.unknownFields;
-      }
-      private PHPLOGGOHKO(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 8: {
-
-                foicdkponcd_ = input.readInt64();
+                numFiniteBuckets_ = input.readInt64();
                 break;
               }
               case 21: {
 
-                memdbegocji_ = input.readFloat();
+                growthFactor_ = input.readFloat();
                 break;
               }
               case 29: {
 
-                dnkjlbfenpe_ = input.readFloat();
+                scale_ = input.readFloat();
                 break;
               }
               default: {
@@ -1625,45 +980,48 @@ private static final long serialVersionUID = 0L;
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_PHPLOGGOHKO_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_ExponentialBuckets_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_PHPLOGGOHKO_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_ExponentialBuckets_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.class, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.Builder.class);
+                POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.class, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder.class);
       }
 
-      public static final int FOICDKPONCD_FIELD_NUMBER = 1;
-      private long foicdkponcd_;
+      public static final int NUM_FINITE_BUCKETS_FIELD_NUMBER = 1;
+      private long numFiniteBuckets_;
       /**
-       * <code>int64 foicdkponcd = 1;</code>
-       * @return The foicdkponcd.
+       * <code>int64 num_finite_buckets = 1;</code>
+       * @return The numFiniteBuckets.
        */
-      public long getFoicdkponcd() {
-        return foicdkponcd_;
+      @java.lang.Override
+      public long getNumFiniteBuckets() {
+        return numFiniteBuckets_;
       }
 
-      public static final int MEMDBEGOCJI_FIELD_NUMBER = 2;
-      private float memdbegocji_;
+      public static final int GROWTH_FACTOR_FIELD_NUMBER = 2;
+      private float growthFactor_;
       /**
-       * <code>float memdbegocji = 2;</code>
-       * @return The memdbegocji.
+       * <code>float growth_factor = 2;</code>
+       * @return The growthFactor.
        */
-      public float getMemdbegocji() {
-        return memdbegocji_;
+      @java.lang.Override
+      public float getGrowthFactor() {
+        return growthFactor_;
       }
 
-      public static final int DNKJLBFENPE_FIELD_NUMBER = 3;
-      private float dnkjlbfenpe_;
+      public static final int SCALE_FIELD_NUMBER = 3;
+      private float scale_;
       /**
-       * <code>float dnkjlbfenpe = 3;</code>
-       * @return The dnkjlbfenpe.
+       * <code>float scale = 3;</code>
+       * @return The scale.
        */
-      public float getDnkjlbfenpe() {
-        return dnkjlbfenpe_;
+      @java.lang.Override
+      public float getScale() {
+        return scale_;
       }
 
       private byte memoizedIsInitialized = -1;
@@ -1680,14 +1038,14 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
-        if (foicdkponcd_ != 0L) {
-          output.writeInt64(1, foicdkponcd_);
+        if (numFiniteBuckets_ != 0L) {
+          output.writeInt64(1, numFiniteBuckets_);
         }
-        if (memdbegocji_ != 0F) {
-          output.writeFloat(2, memdbegocji_);
+        if (growthFactor_ != 0F) {
+          output.writeFloat(2, growthFactor_);
         }
-        if (dnkjlbfenpe_ != 0F) {
-          output.writeFloat(3, dnkjlbfenpe_);
+        if (scale_ != 0F) {
+          output.writeFloat(3, scale_);
         }
         unknownFields.writeTo(output);
       }
@@ -1698,17 +1056,17 @@ private static final long serialVersionUID = 0L;
         if (size != -1) return size;
 
         size = 0;
-        if (foicdkponcd_ != 0L) {
+        if (numFiniteBuckets_ != 0L) {
           size += com.google.protobuf.CodedOutputStream
-            .computeInt64Size(1, foicdkponcd_);
+            .computeInt64Size(1, numFiniteBuckets_);
         }
-        if (memdbegocji_ != 0F) {
+        if (growthFactor_ != 0F) {
           size += com.google.protobuf.CodedOutputStream
-            .computeFloatSize(2, memdbegocji_);
+            .computeFloatSize(2, growthFactor_);
         }
-        if (dnkjlbfenpe_ != 0F) {
+        if (scale_ != 0F) {
           size += com.google.protobuf.CodedOutputStream
-            .computeFloatSize(3, dnkjlbfenpe_);
+            .computeFloatSize(3, scale_);
         }
         size += unknownFields.getSerializedSize();
         memoizedSize = size;
@@ -1720,19 +1078,19 @@ private static final long serialVersionUID = 0L;
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO)) {
+        if (!(obj instanceof POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets)) {
           return super.equals(obj);
         }
-        POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO other = (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) obj;
+        POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets other = (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) obj;
 
-        if (getFoicdkponcd()
-            != other.getFoicdkponcd()) return false;
-        if (java.lang.Float.floatToIntBits(getMemdbegocji())
+        if (getNumFiniteBuckets()
+            != other.getNumFiniteBuckets()) return false;
+        if (java.lang.Float.floatToIntBits(getGrowthFactor())
             != java.lang.Float.floatToIntBits(
-                other.getMemdbegocji())) return false;
-        if (java.lang.Float.floatToIntBits(getDnkjlbfenpe())
+                other.getGrowthFactor())) return false;
+        if (java.lang.Float.floatToIntBits(getScale())
             != java.lang.Float.floatToIntBits(
-                other.getDnkjlbfenpe())) return false;
+                other.getScale())) return false;
         if (!unknownFields.equals(other.unknownFields)) return false;
         return true;
       }
@@ -1744,83 +1102,83 @@ private static final long serialVersionUID = 0L;
         }
         int hash = 41;
         hash = (19 * hash) + getDescriptor().hashCode();
-        hash = (37 * hash) + FOICDKPONCD_FIELD_NUMBER;
+        hash = (37 * hash) + NUM_FINITE_BUCKETS_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getFoicdkponcd());
-        hash = (37 * hash) + MEMDBEGOCJI_FIELD_NUMBER;
+            getNumFiniteBuckets());
+        hash = (37 * hash) + GROWTH_FACTOR_FIELD_NUMBER;
         hash = (53 * hash) + java.lang.Float.floatToIntBits(
-            getMemdbegocji());
-        hash = (37 * hash) + DNKJLBFENPE_FIELD_NUMBER;
+            getGrowthFactor());
+        hash = (37 * hash) + SCALE_FIELD_NUMBER;
         hash = (53 * hash) + java.lang.Float.floatToIntBits(
-            getDnkjlbfenpe());
+            getScale());
         hash = (29 * hash) + unknownFields.hashCode();
         memoizedHashCode = hash;
         return hash;
       }
 
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseFrom(byte[] data)
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseFrom(java.io.InputStream input)
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseDelimitedFrom(java.io.InputStream input)
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseDelimitedFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -1833,7 +1191,7 @@ private static final long serialVersionUID = 0L;
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO prototype) {
+      public static Builder newBuilder(POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -1849,30 +1207,26 @@ private static final long serialVersionUID = 0L;
         return builder;
       }
       /**
-       * <pre>
-       * ref: Distribution/JKODMEBEGCJ/ONAOLNOFLKC/JANEMHLMNGO/PHPLOGGOHKO
-       * </pre>
-       *
-       * Protobuf type {@code POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO}
+       * Protobuf type {@code POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO)
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKOOrBuilder {
+          // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets)
+          POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_PHPLOGGOHKO_descriptor;
+          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_ExponentialBuckets_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_PHPLOGGOHKO_fieldAccessorTable
+          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_ExponentialBuckets_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.class, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.Builder.class);
+                  POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.class, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder.class);
         }
 
-        // Construct using POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.newBuilder()
+        // Construct using POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.newBuilder()
         private Builder() {
           maybeForceBuilderInitialization();
         }
@@ -1890,11 +1244,11 @@ private static final long serialVersionUID = 0L;
         @java.lang.Override
         public Builder clear() {
           super.clear();
-          foicdkponcd_ = 0L;
+          numFiniteBuckets_ = 0L;
 
-          memdbegocji_ = 0F;
+          growthFactor_ = 0F;
 
-          dnkjlbfenpe_ = 0F;
+          scale_ = 0F;
 
           return this;
         }
@@ -1902,17 +1256,17 @@ private static final long serialVersionUID = 0L;
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_PHPLOGGOHKO_descriptor;
+          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_ExponentialBuckets_descriptor;
         }
 
         @java.lang.Override
-        public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO getDefaultInstanceForType() {
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.getDefaultInstance();
+        public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets getDefaultInstanceForType() {
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
         }
 
         @java.lang.Override
-        public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO build() {
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO result = buildPartial();
+        public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets build() {
+          POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -1920,11 +1274,11 @@ private static final long serialVersionUID = 0L;
         }
 
         @java.lang.Override
-        public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO buildPartial() {
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO result = new POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO(this);
-          result.foicdkponcd_ = foicdkponcd_;
-          result.memdbegocji_ = memdbegocji_;
-          result.dnkjlbfenpe_ = dnkjlbfenpe_;
+        public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets buildPartial() {
+          POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets result = new POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets(this);
+          result.numFiniteBuckets_ = numFiniteBuckets_;
+          result.growthFactor_ = growthFactor_;
+          result.scale_ = scale_;
           onBuilt();
           return result;
         }
@@ -1963,24 +1317,24 @@ private static final long serialVersionUID = 0L;
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) {
-            return mergeFrom((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO)other);
+          if (other instanceof POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) {
+            return mergeFrom((POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO other) {
-          if (other == POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.getDefaultInstance()) return this;
-          if (other.getFoicdkponcd() != 0L) {
-            setFoicdkponcd(other.getFoicdkponcd());
+        public Builder mergeFrom(POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets other) {
+          if (other == POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance()) return this;
+          if (other.getNumFiniteBuckets() != 0L) {
+            setNumFiniteBuckets(other.getNumFiniteBuckets());
           }
-          if (other.getMemdbegocji() != 0F) {
-            setMemdbegocji(other.getMemdbegocji());
+          if (other.getGrowthFactor() != 0F) {
+            setGrowthFactor(other.getGrowthFactor());
           }
-          if (other.getDnkjlbfenpe() != 0F) {
-            setDnkjlbfenpe(other.getDnkjlbfenpe());
+          if (other.getScale() != 0F) {
+            setScale(other.getScale());
           }
           this.mergeUnknownFields(other.unknownFields);
           onChanged();
@@ -1997,11 +1351,11 @@ private static final long serialVersionUID = 0L;
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO parsedMessage = null;
+          POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) e.getUnfinishedMessage();
+            parsedMessage = (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -2011,92 +1365,95 @@ private static final long serialVersionUID = 0L;
           return this;
         }
 
-        private long foicdkponcd_ ;
+        private long numFiniteBuckets_ ;
         /**
-         * <code>int64 foicdkponcd = 1;</code>
-         * @return The foicdkponcd.
+         * <code>int64 num_finite_buckets = 1;</code>
+         * @return The numFiniteBuckets.
          */
-        public long getFoicdkponcd() {
-          return foicdkponcd_;
+        @java.lang.Override
+        public long getNumFiniteBuckets() {
+          return numFiniteBuckets_;
         }
         /**
-         * <code>int64 foicdkponcd = 1;</code>
-         * @param value The foicdkponcd to set.
+         * <code>int64 num_finite_buckets = 1;</code>
+         * @param value The numFiniteBuckets to set.
          * @return This builder for chaining.
          */
-        public Builder setFoicdkponcd(long value) {
+        public Builder setNumFiniteBuckets(long value) {
           
-          foicdkponcd_ = value;
+          numFiniteBuckets_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>int64 foicdkponcd = 1;</code>
+         * <code>int64 num_finite_buckets = 1;</code>
          * @return This builder for chaining.
          */
-        public Builder clearFoicdkponcd() {
+        public Builder clearNumFiniteBuckets() {
           
-          foicdkponcd_ = 0L;
-          onChanged();
-          return this;
-        }
-
-        private float memdbegocji_ ;
-        /**
-         * <code>float memdbegocji = 2;</code>
-         * @return The memdbegocji.
-         */
-        public float getMemdbegocji() {
-          return memdbegocji_;
-        }
-        /**
-         * <code>float memdbegocji = 2;</code>
-         * @param value The memdbegocji to set.
-         * @return This builder for chaining.
-         */
-        public Builder setMemdbegocji(float value) {
-          
-          memdbegocji_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>float memdbegocji = 2;</code>
-         * @return This builder for chaining.
-         */
-        public Builder clearMemdbegocji() {
-          
-          memdbegocji_ = 0F;
+          numFiniteBuckets_ = 0L;
           onChanged();
           return this;
         }
 
-        private float dnkjlbfenpe_ ;
+        private float growthFactor_ ;
         /**
-         * <code>float dnkjlbfenpe = 3;</code>
-         * @return The dnkjlbfenpe.
+         * <code>float growth_factor = 2;</code>
+         * @return The growthFactor.
          */
-        public float getDnkjlbfenpe() {
-          return dnkjlbfenpe_;
+        @java.lang.Override
+        public float getGrowthFactor() {
+          return growthFactor_;
         }
         /**
-         * <code>float dnkjlbfenpe = 3;</code>
-         * @param value The dnkjlbfenpe to set.
+         * <code>float growth_factor = 2;</code>
+         * @param value The growthFactor to set.
          * @return This builder for chaining.
          */
-        public Builder setDnkjlbfenpe(float value) {
+        public Builder setGrowthFactor(float value) {
           
-          dnkjlbfenpe_ = value;
+          growthFactor_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>float dnkjlbfenpe = 3;</code>
+         * <code>float growth_factor = 2;</code>
          * @return This builder for chaining.
          */
-        public Builder clearDnkjlbfenpe() {
+        public Builder clearGrowthFactor() {
           
-          dnkjlbfenpe_ = 0F;
+          growthFactor_ = 0F;
+          onChanged();
+          return this;
+        }
+
+        private float scale_ ;
+        /**
+         * <code>float scale = 3;</code>
+         * @return The scale.
+         */
+        @java.lang.Override
+        public float getScale() {
+          return scale_;
+        }
+        /**
+         * <code>float scale = 3;</code>
+         * @param value The scale to set.
+         * @return This builder for chaining.
+         */
+        public Builder setScale(float value) {
+          
+          scale_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>float scale = 3;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearScale() {
+          
+          scale_ = 0F;
           onChanged();
           return this;
         }
@@ -2113,92 +1470,88 @@ private static final long serialVersionUID = 0L;
         }
 
 
-        // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO)
+        // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets)
       }
 
-      // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO)
-      private static final POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets)
+      private static final POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO();
+        DEFAULT_INSTANCE = new POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets();
       }
 
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO getDefaultInstance() {
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
-      private static final com.google.protobuf.Parser<PHPLOGGOHKO>
-          PARSER = new com.google.protobuf.AbstractParser<PHPLOGGOHKO>() {
+      private static final com.google.protobuf.Parser<ExponentialBuckets>
+          PARSER = new com.google.protobuf.AbstractParser<ExponentialBuckets>() {
         @java.lang.Override
-        public PHPLOGGOHKO parsePartialFrom(
+        public ExponentialBuckets parsePartialFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new PHPLOGGOHKO(input, extensionRegistry);
+          return new ExponentialBuckets(input, extensionRegistry);
         }
       };
 
-      public static com.google.protobuf.Parser<PHPLOGGOHKO> parser() {
+      public static com.google.protobuf.Parser<ExponentialBuckets> parser() {
         return PARSER;
       }
 
       @java.lang.Override
-      public com.google.protobuf.Parser<PHPLOGGOHKO> getParserForType() {
+      public com.google.protobuf.Parser<ExponentialBuckets> getParserForType() {
         return PARSER;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO getDefaultInstanceForType() {
+      public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
-    public interface PIJGOOJOHFHOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH)
+    public interface LinearBucketsOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets)
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>repeated int64 nidjcpjpcce = 1;</code>
-       * @return A list containing the nidjcpjpcce.
+       * <code>int64 num_finite_buckets = 1;</code>
+       * @return The numFiniteBuckets.
        */
-      java.util.List<java.lang.Long> getNidjcpjpcceList();
+      long getNumFiniteBuckets();
+
       /**
-       * <code>repeated int64 nidjcpjpcce = 1;</code>
-       * @return The count of nidjcpjpcce.
+       * <code>int64 width = 2;</code>
+       * @return The width.
        */
-      int getNidjcpjpcceCount();
+      long getWidth();
+
       /**
-       * <code>repeated int64 nidjcpjpcce = 1;</code>
-       * @param index The index of the element to return.
-       * @return The nidjcpjpcce at the given index.
+       * <code>int64 offset = 3;</code>
+       * @return The offset.
        */
-      long getNidjcpjpcce(int index);
+      long getOffset();
     }
     /**
-     * <pre>
-     * ref: Distribution/JKODMEBEGCJ/ONAOLNOFLKC/JANEMHLMNGO/PIJGOOJOHFH
-     * </pre>
-     *
-     * Protobuf type {@code POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH}
+     * Protobuf type {@code POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets}
      */
-    public  static final class PIJGOOJOHFH extends
+    public static final class LinearBuckets extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH)
-        PIJGOOJOHFHOrBuilder {
+        // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets)
+        LinearBucketsOrBuilder {
     private static final long serialVersionUID = 0L;
-      // Use PIJGOOJOHFH.newBuilder() to construct.
-      private PIJGOOJOHFH(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // Use LinearBuckets.newBuilder() to construct.
+      private LinearBuckets(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
       }
-      private PIJGOOJOHFH() {
-        nidjcpjpcce_ = emptyLongList();
+      private LinearBuckets() {
       }
 
       @java.lang.Override
       @SuppressWarnings({"unused"})
       protected java.lang.Object newInstance(
           UnusedPrivateParameter unused) {
-        return new PIJGOOJOHFH();
+        return new LinearBuckets();
       }
 
       @java.lang.Override
@@ -2206,7 +1559,638 @@ private static final long serialVersionUID = 0L;
       getUnknownFields() {
         return this.unknownFields;
       }
-      private PIJGOOJOHFH(
+      private LinearBuckets(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+
+                numFiniteBuckets_ = input.readInt64();
+                break;
+              }
+              case 16: {
+
+                width_ = input.readInt64();
+                break;
+              }
+              case 24: {
+
+                offset_ = input.readInt64();
+                break;
+              }
+              default: {
+                if (!parseUnknownField(
+                    input, unknownFields, extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e).setUnfinishedMessage(this);
+        } finally {
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_LinearBuckets_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_LinearBuckets_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.class, POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder.class);
+      }
+
+      public static final int NUM_FINITE_BUCKETS_FIELD_NUMBER = 1;
+      private long numFiniteBuckets_;
+      /**
+       * <code>int64 num_finite_buckets = 1;</code>
+       * @return The numFiniteBuckets.
+       */
+      @java.lang.Override
+      public long getNumFiniteBuckets() {
+        return numFiniteBuckets_;
+      }
+
+      public static final int WIDTH_FIELD_NUMBER = 2;
+      private long width_;
+      /**
+       * <code>int64 width = 2;</code>
+       * @return The width.
+       */
+      @java.lang.Override
+      public long getWidth() {
+        return width_;
+      }
+
+      public static final int OFFSET_FIELD_NUMBER = 3;
+      private long offset_;
+      /**
+       * <code>int64 offset = 3;</code>
+       * @return The offset.
+       */
+      @java.lang.Override
+      public long getOffset() {
+        return offset_;
+      }
+
+      private byte memoizedIsInitialized = -1;
+      @java.lang.Override
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      @java.lang.Override
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        if (numFiniteBuckets_ != 0L) {
+          output.writeInt64(1, numFiniteBuckets_);
+        }
+        if (width_ != 0L) {
+          output.writeInt64(2, width_);
+        }
+        if (offset_ != 0L) {
+          output.writeInt64(3, offset_);
+        }
+        unknownFields.writeTo(output);
+      }
+
+      @java.lang.Override
+      public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (numFiniteBuckets_ != 0L) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt64Size(1, numFiniteBuckets_);
+        }
+        if (width_ != 0L) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt64Size(2, width_);
+        }
+        if (offset_ != 0L) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt64Size(3, offset_);
+        }
+        size += unknownFields.getSerializedSize();
+        memoizedSize = size;
+        return size;
+      }
+
+      @java.lang.Override
+      public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+         return true;
+        }
+        if (!(obj instanceof POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets)) {
+          return super.equals(obj);
+        }
+        POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets other = (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) obj;
+
+        if (getNumFiniteBuckets()
+            != other.getNumFiniteBuckets()) return false;
+        if (getWidth()
+            != other.getWidth()) return false;
+        if (getOffset()
+            != other.getOffset()) return false;
+        if (!unknownFields.equals(other.unknownFields)) return false;
+        return true;
+      }
+
+      @java.lang.Override
+      public int hashCode() {
+        if (memoizedHashCode != 0) {
+          return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptor().hashCode();
+        hash = (37 * hash) + NUM_FINITE_BUCKETS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            getNumFiniteBuckets());
+        hash = (37 * hash) + WIDTH_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            getWidth());
+        hash = (37 * hash) + OFFSET_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            getOffset());
+        hash = (29 * hash) + unknownFields.hashCode();
+        memoizedHashCode = hash;
+        return hash;
+      }
+
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseFrom(
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseFrom(
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input);
+      }
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+
+      @java.lang.Override
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+      }
+      public static Builder newBuilder(POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+      }
+      @java.lang.Override
+      public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE
+            ? new Builder() : new Builder().mergeFrom(this);
+      }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets)
+          POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_LinearBuckets_descriptor;
+        }
+
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_LinearBuckets_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.class, POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder.class);
+        }
+
+        // Construct using POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessageV3
+                  .alwaysUseFieldBuilders) {
+          }
+        }
+        @java.lang.Override
+        public Builder clear() {
+          super.clear();
+          numFiniteBuckets_ = 0L;
+
+          width_ = 0L;
+
+          offset_ = 0L;
+
+          return this;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_LinearBuckets_descriptor;
+        }
+
+        @java.lang.Override
+        public POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets getDefaultInstanceForType() {
+          return POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
+        }
+
+        @java.lang.Override
+        public POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets build() {
+          POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        @java.lang.Override
+        public POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets buildPartial() {
+          POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets result = new POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets(this);
+          result.numFiniteBuckets_ = numFiniteBuckets_;
+          result.width_ = width_;
+          result.offset_ = offset_;
+          onBuilt();
+          return result;
+        }
+
+        @java.lang.Override
+        public Builder clone() {
+          return super.clone();
+        }
+        @java.lang.Override
+        public Builder setField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
+          return super.setField(field, value);
+        }
+        @java.lang.Override
+        public Builder clearField(
+            com.google.protobuf.Descriptors.FieldDescriptor field) {
+          return super.clearField(field);
+        }
+        @java.lang.Override
+        public Builder clearOneof(
+            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          return super.clearOneof(oneof);
+        }
+        @java.lang.Override
+        public Builder setRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            int index, java.lang.Object value) {
+          return super.setRepeatedField(field, index, value);
+        }
+        @java.lang.Override
+        public Builder addRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
+          return super.addRepeatedField(field, value);
+        }
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) {
+            return mergeFrom((POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets other) {
+          if (other == POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance()) return this;
+          if (other.getNumFiniteBuckets() != 0L) {
+            setNumFiniteBuckets(other.getNumFiniteBuckets());
+          }
+          if (other.getWidth() != 0L) {
+            setWidth(other.getWidth());
+          }
+          if (other.getOffset() != 0L) {
+            setOffset(other.getOffset());
+          }
+          this.mergeUnknownFields(other.unknownFields);
+          onChanged();
+          return this;
+        }
+
+        @java.lang.Override
+        public final boolean isInitialized() {
+          return true;
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) e.getUnfinishedMessage();
+            throw e.unwrapIOException();
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+
+        private long numFiniteBuckets_ ;
+        /**
+         * <code>int64 num_finite_buckets = 1;</code>
+         * @return The numFiniteBuckets.
+         */
+        @java.lang.Override
+        public long getNumFiniteBuckets() {
+          return numFiniteBuckets_;
+        }
+        /**
+         * <code>int64 num_finite_buckets = 1;</code>
+         * @param value The numFiniteBuckets to set.
+         * @return This builder for chaining.
+         */
+        public Builder setNumFiniteBuckets(long value) {
+          
+          numFiniteBuckets_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>int64 num_finite_buckets = 1;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearNumFiniteBuckets() {
+          
+          numFiniteBuckets_ = 0L;
+          onChanged();
+          return this;
+        }
+
+        private long width_ ;
+        /**
+         * <code>int64 width = 2;</code>
+         * @return The width.
+         */
+        @java.lang.Override
+        public long getWidth() {
+          return width_;
+        }
+        /**
+         * <code>int64 width = 2;</code>
+         * @param value The width to set.
+         * @return This builder for chaining.
+         */
+        public Builder setWidth(long value) {
+          
+          width_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>int64 width = 2;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearWidth() {
+          
+          width_ = 0L;
+          onChanged();
+          return this;
+        }
+
+        private long offset_ ;
+        /**
+         * <code>int64 offset = 3;</code>
+         * @return The offset.
+         */
+        @java.lang.Override
+        public long getOffset() {
+          return offset_;
+        }
+        /**
+         * <code>int64 offset = 3;</code>
+         * @param value The offset to set.
+         * @return This builder for chaining.
+         */
+        public Builder setOffset(long value) {
+          
+          offset_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>int64 offset = 3;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearOffset() {
+          
+          offset_ = 0L;
+          onChanged();
+          return this;
+        }
+        @java.lang.Override
+        public final Builder setUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return super.setUnknownFields(unknownFields);
+        }
+
+        @java.lang.Override
+        public final Builder mergeUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return super.mergeUnknownFields(unknownFields);
+        }
+
+
+        // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets)
+      }
+
+      // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets)
+      private static final POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets DEFAULT_INSTANCE;
+      static {
+        DEFAULT_INSTANCE = new POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets();
+      }
+
+      public static POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+      }
+
+      private static final com.google.protobuf.Parser<LinearBuckets>
+          PARSER = new com.google.protobuf.AbstractParser<LinearBuckets>() {
+        @java.lang.Override
+        public LinearBuckets parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new LinearBuckets(input, extensionRegistry);
+        }
+      };
+
+      public static com.google.protobuf.Parser<LinearBuckets> parser() {
+        return PARSER;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<LinearBuckets> getParserForType() {
+        return PARSER;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
+      }
+
+    }
+
+    public interface ExplicitBucketsOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets)
+        com.google.protobuf.MessageOrBuilder {
+
+      /**
+       * <code>repeated int64 bounds = 1;</code>
+       * @return A list containing the bounds.
+       */
+      java.util.List<java.lang.Long> getBoundsList();
+      /**
+       * <code>repeated int64 bounds = 1;</code>
+       * @return The count of bounds.
+       */
+      int getBoundsCount();
+      /**
+       * <code>repeated int64 bounds = 1;</code>
+       * @param index The index of the element to return.
+       * @return The bounds at the given index.
+       */
+      long getBounds(int index);
+    }
+    /**
+     * Protobuf type {@code POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets}
+     */
+    public static final class ExplicitBuckets extends
+        com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets)
+        ExplicitBucketsOrBuilder {
+    private static final long serialVersionUID = 0L;
+      // Use ExplicitBuckets.newBuilder() to construct.
+      private ExplicitBuckets(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
+      }
+      private ExplicitBuckets() {
+        bounds_ = emptyLongList();
+      }
+
+      @java.lang.Override
+      @SuppressWarnings({"unused"})
+      protected java.lang.Object newInstance(
+          UnusedPrivateParameter unused) {
+        return new ExplicitBuckets();
+      }
+
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+      getUnknownFields() {
+        return this.unknownFields;
+      }
+      private ExplicitBuckets(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2227,21 +2211,21 @@ private static final long serialVersionUID = 0L;
                 break;
               case 8: {
                 if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  nidjcpjpcce_ = newLongList();
+                  bounds_ = newLongList();
                   mutable_bitField0_ |= 0x00000001;
                 }
-                nidjcpjpcce_.addLong(input.readInt64());
+                bounds_.addLong(input.readInt64());
                 break;
               }
               case 10: {
                 int length = input.readRawVarint32();
                 int limit = input.pushLimit(length);
                 if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                  nidjcpjpcce_ = newLongList();
+                  bounds_ = newLongList();
                   mutable_bitField0_ |= 0x00000001;
                 }
                 while (input.getBytesUntilLimit() > 0) {
-                  nidjcpjpcce_.addLong(input.readInt64());
+                  bounds_.addLong(input.readInt64());
                 }
                 input.popLimit(limit);
                 break;
@@ -2262,7 +2246,7 @@ private static final long serialVersionUID = 0L;
               e).setUnfinishedMessage(this);
         } finally {
           if (((mutable_bitField0_ & 0x00000001) != 0)) {
-            nidjcpjpcce_.makeImmutable(); // C
+            bounds_.makeImmutable(); // C
           }
           this.unknownFields = unknownFields.build();
           makeExtensionsImmutable();
@@ -2270,43 +2254,44 @@ private static final long serialVersionUID = 0L;
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_PIJGOOJOHFH_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_ExplicitBuckets_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_PIJGOOJOHFH_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_ExplicitBuckets_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.class, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.Builder.class);
+                POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.class, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder.class);
       }
 
-      public static final int NIDJCPJPCCE_FIELD_NUMBER = 1;
-      private com.google.protobuf.Internal.LongList nidjcpjpcce_;
+      public static final int BOUNDS_FIELD_NUMBER = 1;
+      private com.google.protobuf.Internal.LongList bounds_;
       /**
-       * <code>repeated int64 nidjcpjpcce = 1;</code>
-       * @return A list containing the nidjcpjpcce.
+       * <code>repeated int64 bounds = 1;</code>
+       * @return A list containing the bounds.
        */
+      @java.lang.Override
       public java.util.List<java.lang.Long>
-          getNidjcpjpcceList() {
-        return nidjcpjpcce_;
+          getBoundsList() {
+        return bounds_;
       }
       /**
-       * <code>repeated int64 nidjcpjpcce = 1;</code>
-       * @return The count of nidjcpjpcce.
+       * <code>repeated int64 bounds = 1;</code>
+       * @return The count of bounds.
        */
-      public int getNidjcpjpcceCount() {
-        return nidjcpjpcce_.size();
+      public int getBoundsCount() {
+        return bounds_.size();
       }
       /**
-       * <code>repeated int64 nidjcpjpcce = 1;</code>
+       * <code>repeated int64 bounds = 1;</code>
        * @param index The index of the element to return.
-       * @return The nidjcpjpcce at the given index.
+       * @return The bounds at the given index.
        */
-      public long getNidjcpjpcce(int index) {
-        return nidjcpjpcce_.getLong(index);
+      public long getBounds(int index) {
+        return bounds_.getLong(index);
       }
-      private int nidjcpjpcceMemoizedSerializedSize = -1;
+      private int boundsMemoizedSerializedSize = -1;
 
       private byte memoizedIsInitialized = -1;
       @java.lang.Override
@@ -2323,12 +2308,12 @@ private static final long serialVersionUID = 0L;
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
         getSerializedSize();
-        if (getNidjcpjpcceList().size() > 0) {
+        if (getBoundsList().size() > 0) {
           output.writeUInt32NoTag(10);
-          output.writeUInt32NoTag(nidjcpjpcceMemoizedSerializedSize);
+          output.writeUInt32NoTag(boundsMemoizedSerializedSize);
         }
-        for (int i = 0; i < nidjcpjpcce_.size(); i++) {
-          output.writeInt64NoTag(nidjcpjpcce_.getLong(i));
+        for (int i = 0; i < bounds_.size(); i++) {
+          output.writeInt64NoTag(bounds_.getLong(i));
         }
         unknownFields.writeTo(output);
       }
@@ -2341,17 +2326,17 @@ private static final long serialVersionUID = 0L;
         size = 0;
         {
           int dataSize = 0;
-          for (int i = 0; i < nidjcpjpcce_.size(); i++) {
+          for (int i = 0; i < bounds_.size(); i++) {
             dataSize += com.google.protobuf.CodedOutputStream
-              .computeInt64SizeNoTag(nidjcpjpcce_.getLong(i));
+              .computeInt64SizeNoTag(bounds_.getLong(i));
           }
           size += dataSize;
-          if (!getNidjcpjpcceList().isEmpty()) {
+          if (!getBoundsList().isEmpty()) {
             size += 1;
             size += com.google.protobuf.CodedOutputStream
                 .computeInt32SizeNoTag(dataSize);
           }
-          nidjcpjpcceMemoizedSerializedSize = dataSize;
+          boundsMemoizedSerializedSize = dataSize;
         }
         size += unknownFields.getSerializedSize();
         memoizedSize = size;
@@ -2363,13 +2348,13 @@ private static final long serialVersionUID = 0L;
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH)) {
+        if (!(obj instanceof POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets)) {
           return super.equals(obj);
         }
-        POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH other = (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) obj;
+        POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets other = (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) obj;
 
-        if (!getNidjcpjpcceList()
-            .equals(other.getNidjcpjpcceList())) return false;
+        if (!getBoundsList()
+            .equals(other.getBoundsList())) return false;
         if (!unknownFields.equals(other.unknownFields)) return false;
         return true;
       }
@@ -2381,78 +2366,78 @@ private static final long serialVersionUID = 0L;
         }
         int hash = 41;
         hash = (19 * hash) + getDescriptor().hashCode();
-        if (getNidjcpjpcceCount() > 0) {
-          hash = (37 * hash) + NIDJCPJPCCE_FIELD_NUMBER;
-          hash = (53 * hash) + getNidjcpjpcceList().hashCode();
+        if (getBoundsCount() > 0) {
+          hash = (37 * hash) + BOUNDS_FIELD_NUMBER;
+          hash = (53 * hash) + getBoundsList().hashCode();
         }
         hash = (29 * hash) + unknownFields.hashCode();
         memoizedHashCode = hash;
         return hash;
       }
 
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseFrom(byte[] data)
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseFrom(java.io.InputStream input)
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseDelimitedFrom(java.io.InputStream input)
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseDelimitedFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parseFrom(
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -2465,7 +2450,7 @@ private static final long serialVersionUID = 0L;
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH prototype) {
+      public static Builder newBuilder(POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -2481,30 +2466,26 @@ private static final long serialVersionUID = 0L;
         return builder;
       }
       /**
-       * <pre>
-       * ref: Distribution/JKODMEBEGCJ/ONAOLNOFLKC/JANEMHLMNGO/PIJGOOJOHFH
-       * </pre>
-       *
-       * Protobuf type {@code POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH}
+       * Protobuf type {@code POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH)
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFHOrBuilder {
+          // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets)
+          POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_PIJGOOJOHFH_descriptor;
+          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_ExplicitBuckets_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_PIJGOOJOHFH_fieldAccessorTable
+          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_ExplicitBuckets_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.class, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.Builder.class);
+                  POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.class, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder.class);
         }
 
-        // Construct using POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.newBuilder()
+        // Construct using POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.newBuilder()
         private Builder() {
           maybeForceBuilderInitialization();
         }
@@ -2522,7 +2503,7 @@ private static final long serialVersionUID = 0L;
         @java.lang.Override
         public Builder clear() {
           super.clear();
-          nidjcpjpcce_ = emptyLongList();
+          bounds_ = emptyLongList();
           bitField0_ = (bitField0_ & ~0x00000001);
           return this;
         }
@@ -2530,17 +2511,17 @@ private static final long serialVersionUID = 0L;
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_PIJGOOJOHFH_descriptor;
+          return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_ExplicitBuckets_descriptor;
         }
 
         @java.lang.Override
-        public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH getDefaultInstanceForType() {
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.getDefaultInstance();
+        public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets getDefaultInstanceForType() {
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
         }
 
         @java.lang.Override
-        public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH build() {
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH result = buildPartial();
+        public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets build() {
+          POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -2548,14 +2529,14 @@ private static final long serialVersionUID = 0L;
         }
 
         @java.lang.Override
-        public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH buildPartial() {
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH result = new POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH(this);
+        public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets buildPartial() {
+          POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets result = new POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets(this);
           int from_bitField0_ = bitField0_;
           if (((bitField0_ & 0x00000001) != 0)) {
-            nidjcpjpcce_.makeImmutable();
+            bounds_.makeImmutable();
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.nidjcpjpcce_ = nidjcpjpcce_;
+          result.bounds_ = bounds_;
           onBuilt();
           return result;
         }
@@ -2594,23 +2575,23 @@ private static final long serialVersionUID = 0L;
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) {
-            return mergeFrom((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH)other);
+          if (other instanceof POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) {
+            return mergeFrom((POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH other) {
-          if (other == POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.getDefaultInstance()) return this;
-          if (!other.nidjcpjpcce_.isEmpty()) {
-            if (nidjcpjpcce_.isEmpty()) {
-              nidjcpjpcce_ = other.nidjcpjpcce_;
+        public Builder mergeFrom(POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets other) {
+          if (other == POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance()) return this;
+          if (!other.bounds_.isEmpty()) {
+            if (bounds_.isEmpty()) {
+              bounds_ = other.bounds_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureNidjcpjpcceIsMutable();
-              nidjcpjpcce_.addAll(other.nidjcpjpcce_);
+              ensureBoundsIsMutable();
+              bounds_.addAll(other.bounds_);
             }
             onChanged();
           }
@@ -2629,11 +2610,11 @@ private static final long serialVersionUID = 0L;
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH parsedMessage = null;
+          POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) e.getUnfinishedMessage();
+            parsedMessage = (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -2644,80 +2625,80 @@ private static final long serialVersionUID = 0L;
         }
         private int bitField0_;
 
-        private com.google.protobuf.Internal.LongList nidjcpjpcce_ = emptyLongList();
-        private void ensureNidjcpjpcceIsMutable() {
+        private com.google.protobuf.Internal.LongList bounds_ = emptyLongList();
+        private void ensureBoundsIsMutable() {
           if (!((bitField0_ & 0x00000001) != 0)) {
-            nidjcpjpcce_ = mutableCopy(nidjcpjpcce_);
+            bounds_ = mutableCopy(bounds_);
             bitField0_ |= 0x00000001;
            }
         }
         /**
-         * <code>repeated int64 nidjcpjpcce = 1;</code>
-         * @return A list containing the nidjcpjpcce.
+         * <code>repeated int64 bounds = 1;</code>
+         * @return A list containing the bounds.
          */
         public java.util.List<java.lang.Long>
-            getNidjcpjpcceList() {
+            getBoundsList() {
           return ((bitField0_ & 0x00000001) != 0) ?
-                   java.util.Collections.unmodifiableList(nidjcpjpcce_) : nidjcpjpcce_;
+                   java.util.Collections.unmodifiableList(bounds_) : bounds_;
         }
         /**
-         * <code>repeated int64 nidjcpjpcce = 1;</code>
-         * @return The count of nidjcpjpcce.
+         * <code>repeated int64 bounds = 1;</code>
+         * @return The count of bounds.
          */
-        public int getNidjcpjpcceCount() {
-          return nidjcpjpcce_.size();
+        public int getBoundsCount() {
+          return bounds_.size();
         }
         /**
-         * <code>repeated int64 nidjcpjpcce = 1;</code>
+         * <code>repeated int64 bounds = 1;</code>
          * @param index The index of the element to return.
-         * @return The nidjcpjpcce at the given index.
+         * @return The bounds at the given index.
          */
-        public long getNidjcpjpcce(int index) {
-          return nidjcpjpcce_.getLong(index);
+        public long getBounds(int index) {
+          return bounds_.getLong(index);
         }
         /**
-         * <code>repeated int64 nidjcpjpcce = 1;</code>
+         * <code>repeated int64 bounds = 1;</code>
          * @param index The index to set the value at.
-         * @param value The nidjcpjpcce to set.
+         * @param value The bounds to set.
          * @return This builder for chaining.
          */
-        public Builder setNidjcpjpcce(
+        public Builder setBounds(
             int index, long value) {
-          ensureNidjcpjpcceIsMutable();
-          nidjcpjpcce_.setLong(index, value);
+          ensureBoundsIsMutable();
+          bounds_.setLong(index, value);
           onChanged();
           return this;
         }
         /**
-         * <code>repeated int64 nidjcpjpcce = 1;</code>
-         * @param value The nidjcpjpcce to add.
+         * <code>repeated int64 bounds = 1;</code>
+         * @param value The bounds to add.
          * @return This builder for chaining.
          */
-        public Builder addNidjcpjpcce(long value) {
-          ensureNidjcpjpcceIsMutable();
-          nidjcpjpcce_.addLong(value);
+        public Builder addBounds(long value) {
+          ensureBoundsIsMutable();
+          bounds_.addLong(value);
           onChanged();
           return this;
         }
         /**
-         * <code>repeated int64 nidjcpjpcce = 1;</code>
-         * @param values The nidjcpjpcce to add.
+         * <code>repeated int64 bounds = 1;</code>
+         * @param values The bounds to add.
          * @return This builder for chaining.
          */
-        public Builder addAllNidjcpjpcce(
+        public Builder addAllBounds(
             java.lang.Iterable<? extends java.lang.Long> values) {
-          ensureNidjcpjpcceIsMutable();
+          ensureBoundsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, nidjcpjpcce_);
+              values, bounds_);
           onChanged();
           return this;
         }
         /**
-         * <code>repeated int64 nidjcpjpcce = 1;</code>
+         * <code>repeated int64 bounds = 1;</code>
          * @return This builder for chaining.
          */
-        public Builder clearNidjcpjpcce() {
-          nidjcpjpcce_ = emptyLongList();
+        public Builder clearBounds() {
+          bounds_ = emptyLongList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
           return this;
@@ -2735,57 +2716,57 @@ private static final long serialVersionUID = 0L;
         }
 
 
-        // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH)
+        // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets)
       }
 
-      // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH)
-      private static final POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets)
+      private static final POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH();
+        DEFAULT_INSTANCE = new POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets();
       }
 
-      public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH getDefaultInstance() {
+      public static POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
-      private static final com.google.protobuf.Parser<PIJGOOJOHFH>
-          PARSER = new com.google.protobuf.AbstractParser<PIJGOOJOHFH>() {
+      private static final com.google.protobuf.Parser<ExplicitBuckets>
+          PARSER = new com.google.protobuf.AbstractParser<ExplicitBuckets>() {
         @java.lang.Override
-        public PIJGOOJOHFH parsePartialFrom(
+        public ExplicitBuckets parsePartialFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new PIJGOOJOHFH(input, extensionRegistry);
+          return new ExplicitBuckets(input, extensionRegistry);
         }
       };
 
-      public static com.google.protobuf.Parser<PIJGOOJOHFH> parser() {
+      public static com.google.protobuf.Parser<ExplicitBuckets> parser() {
         return PARSER;
       }
 
       @java.lang.Override
-      public com.google.protobuf.Parser<PIJGOOJOHFH> getParserForType() {
+      public com.google.protobuf.Parser<ExplicitBuckets> getParserForType() {
         return PARSER;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH getDefaultInstanceForType() {
+      public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
-    private int pHIFNECKMHGCase_ = 0;
-    private java.lang.Object pHIFNECKMHG_;
-    public enum PHIFNECKMHGCase
+    private int bucketTypeCase_ = 0;
+    private java.lang.Object bucketType_;
+    public enum BucketTypeCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
       LINEAR_BUCKETS(1),
       EXPONENTIAL_BUCKETS(2),
       EXPLICIT_BUCKETS(3),
-      PHIFNECKMHG_NOT_SET(0);
+      BUCKETTYPE_NOT_SET(0);
       private final int value;
-      private PHIFNECKMHGCase(int value) {
+      private BucketTypeCase(int value) {
         this.value = value;
       }
       /**
@@ -2794,16 +2775,16 @@ private static final long serialVersionUID = 0L;
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static PHIFNECKMHGCase valueOf(int value) {
+      public static BucketTypeCase valueOf(int value) {
         return forNumber(value);
       }
 
-      public static PHIFNECKMHGCase forNumber(int value) {
+      public static BucketTypeCase forNumber(int value) {
         switch (value) {
           case 1: return LINEAR_BUCKETS;
           case 2: return EXPONENTIAL_BUCKETS;
           case 3: return EXPLICIT_BUCKETS;
-          case 0: return PHIFNECKMHG_NOT_SET;
+          case 0: return BUCKETTYPE_NOT_SET;
           default: return null;
         }
       }
@@ -2812,94 +2793,103 @@ private static final long serialVersionUID = 0L;
       }
     };
 
-    public PHIFNECKMHGCase
-    getPHIFNECKMHGCase() {
-      return PHIFNECKMHGCase.forNumber(
-          pHIFNECKMHGCase_);
+    public BucketTypeCase
+    getBucketTypeCase() {
+      return BucketTypeCase.forNumber(
+          bucketTypeCase_);
     }
 
     public static final int LINEAR_BUCKETS_FIELD_NUMBER = 1;
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
      * @return Whether the linearBuckets field is set.
      */
+    @java.lang.Override
     public boolean hasLinearBuckets() {
-      return pHIFNECKMHGCase_ == 1;
+      return bucketTypeCase_ == 1;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
      * @return The linearBuckets.
      */
-    public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF getLinearBuckets() {
-      if (pHIFNECKMHGCase_ == 1) {
-         return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) pHIFNECKMHG_;
+    @java.lang.Override
+    public POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets getLinearBuckets() {
+      if (bucketTypeCase_ == 1) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_;
       }
-      return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.getDefaultInstance();
+      return POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
      */
-    public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDFOrBuilder getLinearBucketsOrBuilder() {
-      if (pHIFNECKMHGCase_ == 1) {
-         return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) pHIFNECKMHG_;
+    @java.lang.Override
+    public POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder getLinearBucketsOrBuilder() {
+      if (bucketTypeCase_ == 1) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_;
       }
-      return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.getDefaultInstance();
+      return POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
     }
 
     public static final int EXPONENTIAL_BUCKETS_FIELD_NUMBER = 2;
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
      * @return Whether the exponentialBuckets field is set.
      */
+    @java.lang.Override
     public boolean hasExponentialBuckets() {
-      return pHIFNECKMHGCase_ == 2;
+      return bucketTypeCase_ == 2;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
      * @return The exponentialBuckets.
      */
-    public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO getExponentialBuckets() {
-      if (pHIFNECKMHGCase_ == 2) {
-         return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) pHIFNECKMHG_;
+    @java.lang.Override
+    public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets getExponentialBuckets() {
+      if (bucketTypeCase_ == 2) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_;
       }
-      return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.getDefaultInstance();
+      return POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
      */
-    public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKOOrBuilder getExponentialBucketsOrBuilder() {
-      if (pHIFNECKMHGCase_ == 2) {
-         return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) pHIFNECKMHG_;
+    @java.lang.Override
+    public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder getExponentialBucketsOrBuilder() {
+      if (bucketTypeCase_ == 2) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_;
       }
-      return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.getDefaultInstance();
+      return POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
     }
 
     public static final int EXPLICIT_BUCKETS_FIELD_NUMBER = 3;
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
      * @return Whether the explicitBuckets field is set.
      */
+    @java.lang.Override
     public boolean hasExplicitBuckets() {
-      return pHIFNECKMHGCase_ == 3;
+      return bucketTypeCase_ == 3;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
      * @return The explicitBuckets.
      */
-    public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH getExplicitBuckets() {
-      if (pHIFNECKMHGCase_ == 3) {
-         return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) pHIFNECKMHG_;
+    @java.lang.Override
+    public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets getExplicitBuckets() {
+      if (bucketTypeCase_ == 3) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_;
       }
-      return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.getDefaultInstance();
+      return POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
      */
-    public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFHOrBuilder getExplicitBucketsOrBuilder() {
-      if (pHIFNECKMHGCase_ == 3) {
-         return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) pHIFNECKMHG_;
+    @java.lang.Override
+    public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder getExplicitBucketsOrBuilder() {
+      if (bucketTypeCase_ == 3) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_;
       }
-      return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.getDefaultInstance();
+      return POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -2916,14 +2906,14 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pHIFNECKMHGCase_ == 1) {
-        output.writeMessage(1, (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) pHIFNECKMHG_);
+      if (bucketTypeCase_ == 1) {
+        output.writeMessage(1, (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_);
       }
-      if (pHIFNECKMHGCase_ == 2) {
-        output.writeMessage(2, (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) pHIFNECKMHG_);
+      if (bucketTypeCase_ == 2) {
+        output.writeMessage(2, (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_);
       }
-      if (pHIFNECKMHGCase_ == 3) {
-        output.writeMessage(3, (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) pHIFNECKMHG_);
+      if (bucketTypeCase_ == 3) {
+        output.writeMessage(3, (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_);
       }
       unknownFields.writeTo(output);
     }
@@ -2934,17 +2924,17 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (pHIFNECKMHGCase_ == 1) {
+      if (bucketTypeCase_ == 1) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) pHIFNECKMHG_);
+          .computeMessageSize(1, (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_);
       }
-      if (pHIFNECKMHGCase_ == 2) {
+      if (bucketTypeCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) pHIFNECKMHG_);
+          .computeMessageSize(2, (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_);
       }
-      if (pHIFNECKMHGCase_ == 3) {
+      if (bucketTypeCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) pHIFNECKMHG_);
+          .computeMessageSize(3, (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2956,13 +2946,13 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof POGOProtos.Rpc.Distribution.ONAOLNOFLKC)) {
+      if (!(obj instanceof POGOProtos.Rpc.Distribution.BucketOptions)) {
         return super.equals(obj);
       }
-      POGOProtos.Rpc.Distribution.ONAOLNOFLKC other = (POGOProtos.Rpc.Distribution.ONAOLNOFLKC) obj;
+      POGOProtos.Rpc.Distribution.BucketOptions other = (POGOProtos.Rpc.Distribution.BucketOptions) obj;
 
-      if (!getPHIFNECKMHGCase().equals(other.getPHIFNECKMHGCase())) return false;
-      switch (pHIFNECKMHGCase_) {
+      if (!getBucketTypeCase().equals(other.getBucketTypeCase())) return false;
+      switch (bucketTypeCase_) {
         case 1:
           if (!getLinearBuckets()
               .equals(other.getLinearBuckets())) return false;
@@ -2989,7 +2979,7 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      switch (pHIFNECKMHGCase_) {
+      switch (bucketTypeCase_) {
         case 1:
           hash = (37 * hash) + LINEAR_BUCKETS_FIELD_NUMBER;
           hash = (53 * hash) + getLinearBuckets().hashCode();
@@ -3010,69 +3000,69 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseFrom(
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseFrom(
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseFrom(
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseFrom(
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseFrom(byte[] data)
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseFrom(
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseFrom(
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseDelimitedFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseDelimitedFrom(
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseFrom(
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC parseFrom(
+    public static POGOProtos.Rpc.Distribution.BucketOptions parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3085,7 +3075,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(POGOProtos.Rpc.Distribution.ONAOLNOFLKC prototype) {
+    public static Builder newBuilder(POGOProtos.Rpc.Distribution.BucketOptions prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3101,30 +3091,26 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * <pre>
-     * ref: Distribution/JKODMEBEGCJ/ONAOLNOFLKC
-     * </pre>
-     *
-     * Protobuf type {@code POGOProtos.Rpc.Distribution.ONAOLNOFLKC}
+     * Protobuf type {@code POGOProtos.Rpc.Distribution.BucketOptions}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.Distribution.ONAOLNOFLKC)
-        POGOProtos.Rpc.Distribution.ONAOLNOFLKCOrBuilder {
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.Distribution.BucketOptions)
+        POGOProtos.Rpc.Distribution.BucketOptionsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.Distribution.ONAOLNOFLKC.class, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.Builder.class);
+                POGOProtos.Rpc.Distribution.BucketOptions.class, POGOProtos.Rpc.Distribution.BucketOptions.Builder.class);
       }
 
-      // Construct using POGOProtos.Rpc.Distribution.ONAOLNOFLKC.newBuilder()
+      // Construct using POGOProtos.Rpc.Distribution.BucketOptions.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3142,25 +3128,25 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pHIFNECKMHGCase_ = 0;
-        pHIFNECKMHG_ = null;
+        bucketTypeCase_ = 0;
+        bucketType_ = null;
         return this;
       }
 
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_ONAOLNOFLKC_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_Distribution_BucketOptions_descriptor;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC getDefaultInstanceForType() {
-        return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.getDefaultInstance();
+      public POGOProtos.Rpc.Distribution.BucketOptions getDefaultInstanceForType() {
+        return POGOProtos.Rpc.Distribution.BucketOptions.getDefaultInstance();
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC build() {
-        POGOProtos.Rpc.Distribution.ONAOLNOFLKC result = buildPartial();
+      public POGOProtos.Rpc.Distribution.BucketOptions build() {
+        POGOProtos.Rpc.Distribution.BucketOptions result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3168,30 +3154,30 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC buildPartial() {
-        POGOProtos.Rpc.Distribution.ONAOLNOFLKC result = new POGOProtos.Rpc.Distribution.ONAOLNOFLKC(this);
-        if (pHIFNECKMHGCase_ == 1) {
+      public POGOProtos.Rpc.Distribution.BucketOptions buildPartial() {
+        POGOProtos.Rpc.Distribution.BucketOptions result = new POGOProtos.Rpc.Distribution.BucketOptions(this);
+        if (bucketTypeCase_ == 1) {
           if (linearBucketsBuilder_ == null) {
-            result.pHIFNECKMHG_ = pHIFNECKMHG_;
+            result.bucketType_ = bucketType_;
           } else {
-            result.pHIFNECKMHG_ = linearBucketsBuilder_.build();
+            result.bucketType_ = linearBucketsBuilder_.build();
           }
         }
-        if (pHIFNECKMHGCase_ == 2) {
+        if (bucketTypeCase_ == 2) {
           if (exponentialBucketsBuilder_ == null) {
-            result.pHIFNECKMHG_ = pHIFNECKMHG_;
+            result.bucketType_ = bucketType_;
           } else {
-            result.pHIFNECKMHG_ = exponentialBucketsBuilder_.build();
+            result.bucketType_ = exponentialBucketsBuilder_.build();
           }
         }
-        if (pHIFNECKMHGCase_ == 3) {
+        if (bucketTypeCase_ == 3) {
           if (explicitBucketsBuilder_ == null) {
-            result.pHIFNECKMHG_ = pHIFNECKMHG_;
+            result.bucketType_ = bucketType_;
           } else {
-            result.pHIFNECKMHG_ = explicitBucketsBuilder_.build();
+            result.bucketType_ = explicitBucketsBuilder_.build();
           }
         }
-        result.pHIFNECKMHGCase_ = pHIFNECKMHGCase_;
+        result.bucketTypeCase_ = bucketTypeCase_;
         onBuilt();
         return result;
       }
@@ -3230,17 +3216,17 @@ private static final long serialVersionUID = 0L;
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Rpc.Distribution.ONAOLNOFLKC) {
-          return mergeFrom((POGOProtos.Rpc.Distribution.ONAOLNOFLKC)other);
+        if (other instanceof POGOProtos.Rpc.Distribution.BucketOptions) {
+          return mergeFrom((POGOProtos.Rpc.Distribution.BucketOptions)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(POGOProtos.Rpc.Distribution.ONAOLNOFLKC other) {
-        if (other == POGOProtos.Rpc.Distribution.ONAOLNOFLKC.getDefaultInstance()) return this;
-        switch (other.getPHIFNECKMHGCase()) {
+      public Builder mergeFrom(POGOProtos.Rpc.Distribution.BucketOptions other) {
+        if (other == POGOProtos.Rpc.Distribution.BucketOptions.getDefaultInstance()) return this;
+        switch (other.getBucketTypeCase()) {
           case LINEAR_BUCKETS: {
             mergeLinearBuckets(other.getLinearBuckets());
             break;
@@ -3253,7 +3239,7 @@ private static final long serialVersionUID = 0L;
             mergeExplicitBuckets(other.getExplicitBuckets());
             break;
           }
-          case PHIFNECKMHG_NOT_SET: {
+          case BUCKETTYPE_NOT_SET: {
             break;
           }
         }
@@ -3272,11 +3258,11 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        POGOProtos.Rpc.Distribution.ONAOLNOFLKC parsedMessage = null;
+        POGOProtos.Rpc.Distribution.BucketOptions parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Rpc.Distribution.ONAOLNOFLKC) e.getUnfinishedMessage();
+          parsedMessage = (POGOProtos.Rpc.Distribution.BucketOptions) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3285,432 +3271,441 @@ private static final long serialVersionUID = 0L;
         }
         return this;
       }
-      private int pHIFNECKMHGCase_ = 0;
-      private java.lang.Object pHIFNECKMHG_;
-      public PHIFNECKMHGCase
-          getPHIFNECKMHGCase() {
-        return PHIFNECKMHGCase.forNumber(
-            pHIFNECKMHGCase_);
+      private int bucketTypeCase_ = 0;
+      private java.lang.Object bucketType_;
+      public BucketTypeCase
+          getBucketTypeCase() {
+        return BucketTypeCase.forNumber(
+            bucketTypeCase_);
       }
 
-      public Builder clearPHIFNECKMHG() {
-        pHIFNECKMHGCase_ = 0;
-        pHIFNECKMHG_ = null;
+      public Builder clearBucketType() {
+        bucketTypeCase_ = 0;
+        bucketType_ = null;
         onChanged();
         return this;
       }
 
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDFOrBuilder> linearBucketsBuilder_;
+          POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets, POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder> linearBucketsBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
        * @return Whether the linearBuckets field is set.
        */
+      @java.lang.Override
       public boolean hasLinearBuckets() {
-        return pHIFNECKMHGCase_ == 1;
+        return bucketTypeCase_ == 1;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
        * @return The linearBuckets.
        */
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF getLinearBuckets() {
+      @java.lang.Override
+      public POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets getLinearBuckets() {
         if (linearBucketsBuilder_ == null) {
-          if (pHIFNECKMHGCase_ == 1) {
-            return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) pHIFNECKMHG_;
+          if (bucketTypeCase_ == 1) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_;
           }
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.getDefaultInstance();
+          return POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
         } else {
-          if (pHIFNECKMHGCase_ == 1) {
+          if (bucketTypeCase_ == 1) {
             return linearBucketsBuilder_.getMessage();
           }
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.getDefaultInstance();
+          return POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
        */
-      public Builder setLinearBuckets(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF value) {
+      public Builder setLinearBuckets(POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets value) {
         if (linearBucketsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          pHIFNECKMHG_ = value;
+          bucketType_ = value;
           onChanged();
         } else {
           linearBucketsBuilder_.setMessage(value);
         }
-        pHIFNECKMHGCase_ = 1;
+        bucketTypeCase_ = 1;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
        */
       public Builder setLinearBuckets(
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.Builder builderForValue) {
+          POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder builderForValue) {
         if (linearBucketsBuilder_ == null) {
-          pHIFNECKMHG_ = builderForValue.build();
+          bucketType_ = builderForValue.build();
           onChanged();
         } else {
           linearBucketsBuilder_.setMessage(builderForValue.build());
         }
-        pHIFNECKMHGCase_ = 1;
+        bucketTypeCase_ = 1;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
        */
-      public Builder mergeLinearBuckets(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF value) {
+      public Builder mergeLinearBuckets(POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets value) {
         if (linearBucketsBuilder_ == null) {
-          if (pHIFNECKMHGCase_ == 1 &&
-              pHIFNECKMHG_ != POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.getDefaultInstance()) {
-            pHIFNECKMHG_ = POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.newBuilder((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) pHIFNECKMHG_)
+          if (bucketTypeCase_ == 1 &&
+              bucketType_ != POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance()) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.newBuilder((POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_)
                 .mergeFrom(value).buildPartial();
           } else {
-            pHIFNECKMHG_ = value;
+            bucketType_ = value;
           }
           onChanged();
         } else {
-          if (pHIFNECKMHGCase_ == 1) {
+          if (bucketTypeCase_ == 1) {
             linearBucketsBuilder_.mergeFrom(value);
           }
           linearBucketsBuilder_.setMessage(value);
         }
-        pHIFNECKMHGCase_ = 1;
+        bucketTypeCase_ = 1;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
        */
       public Builder clearLinearBuckets() {
         if (linearBucketsBuilder_ == null) {
-          if (pHIFNECKMHGCase_ == 1) {
-            pHIFNECKMHGCase_ = 0;
-            pHIFNECKMHG_ = null;
+          if (bucketTypeCase_ == 1) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
             onChanged();
           }
         } else {
-          if (pHIFNECKMHGCase_ == 1) {
-            pHIFNECKMHGCase_ = 0;
-            pHIFNECKMHG_ = null;
+          if (bucketTypeCase_ == 1) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
           }
           linearBucketsBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
        */
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.Builder getLinearBucketsBuilder() {
+      public POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder getLinearBucketsBuilder() {
         return getLinearBucketsFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
        */
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDFOrBuilder getLinearBucketsOrBuilder() {
-        if ((pHIFNECKMHGCase_ == 1) && (linearBucketsBuilder_ != null)) {
+      @java.lang.Override
+      public POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder getLinearBucketsOrBuilder() {
+        if ((bucketTypeCase_ == 1) && (linearBucketsBuilder_ != null)) {
           return linearBucketsBuilder_.getMessageOrBuilder();
         } else {
-          if (pHIFNECKMHGCase_ == 1) {
-            return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) pHIFNECKMHG_;
+          if (bucketTypeCase_ == 1) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_;
           }
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.getDefaultInstance();
+          return POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF linear_buckets = 1;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDFOrBuilder> 
+          POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets, POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder> 
           getLinearBucketsFieldBuilder() {
         if (linearBucketsBuilder_ == null) {
-          if (!(pHIFNECKMHGCase_ == 1)) {
-            pHIFNECKMHG_ = POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.getDefaultInstance();
+          if (!(bucketTypeCase_ == 1)) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
           }
           linearBucketsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDFOrBuilder>(
-                  (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.ADFLBDHOHDF) pHIFNECKMHG_,
+              POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets, POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder>(
+                  (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_,
                   getParentForChildren(),
                   isClean());
-          pHIFNECKMHG_ = null;
+          bucketType_ = null;
         }
-        pHIFNECKMHGCase_ = 1;
+        bucketTypeCase_ = 1;
         onChanged();;
         return linearBucketsBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKOOrBuilder> exponentialBucketsBuilder_;
+          POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder> exponentialBucketsBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
        * @return Whether the exponentialBuckets field is set.
        */
+      @java.lang.Override
       public boolean hasExponentialBuckets() {
-        return pHIFNECKMHGCase_ == 2;
+        return bucketTypeCase_ == 2;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
        * @return The exponentialBuckets.
        */
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO getExponentialBuckets() {
+      @java.lang.Override
+      public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets getExponentialBuckets() {
         if (exponentialBucketsBuilder_ == null) {
-          if (pHIFNECKMHGCase_ == 2) {
-            return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) pHIFNECKMHG_;
+          if (bucketTypeCase_ == 2) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_;
           }
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.getDefaultInstance();
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
         } else {
-          if (pHIFNECKMHGCase_ == 2) {
+          if (bucketTypeCase_ == 2) {
             return exponentialBucketsBuilder_.getMessage();
           }
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.getDefaultInstance();
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
        */
-      public Builder setExponentialBuckets(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO value) {
+      public Builder setExponentialBuckets(POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets value) {
         if (exponentialBucketsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          pHIFNECKMHG_ = value;
+          bucketType_ = value;
           onChanged();
         } else {
           exponentialBucketsBuilder_.setMessage(value);
         }
-        pHIFNECKMHGCase_ = 2;
+        bucketTypeCase_ = 2;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
        */
       public Builder setExponentialBuckets(
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.Builder builderForValue) {
+          POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder builderForValue) {
         if (exponentialBucketsBuilder_ == null) {
-          pHIFNECKMHG_ = builderForValue.build();
+          bucketType_ = builderForValue.build();
           onChanged();
         } else {
           exponentialBucketsBuilder_.setMessage(builderForValue.build());
         }
-        pHIFNECKMHGCase_ = 2;
+        bucketTypeCase_ = 2;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
        */
-      public Builder mergeExponentialBuckets(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO value) {
+      public Builder mergeExponentialBuckets(POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets value) {
         if (exponentialBucketsBuilder_ == null) {
-          if (pHIFNECKMHGCase_ == 2 &&
-              pHIFNECKMHG_ != POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.getDefaultInstance()) {
-            pHIFNECKMHG_ = POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.newBuilder((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) pHIFNECKMHG_)
+          if (bucketTypeCase_ == 2 &&
+              bucketType_ != POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance()) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.newBuilder((POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_)
                 .mergeFrom(value).buildPartial();
           } else {
-            pHIFNECKMHG_ = value;
+            bucketType_ = value;
           }
           onChanged();
         } else {
-          if (pHIFNECKMHGCase_ == 2) {
+          if (bucketTypeCase_ == 2) {
             exponentialBucketsBuilder_.mergeFrom(value);
           }
           exponentialBucketsBuilder_.setMessage(value);
         }
-        pHIFNECKMHGCase_ = 2;
+        bucketTypeCase_ = 2;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
        */
       public Builder clearExponentialBuckets() {
         if (exponentialBucketsBuilder_ == null) {
-          if (pHIFNECKMHGCase_ == 2) {
-            pHIFNECKMHGCase_ = 0;
-            pHIFNECKMHG_ = null;
+          if (bucketTypeCase_ == 2) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
             onChanged();
           }
         } else {
-          if (pHIFNECKMHGCase_ == 2) {
-            pHIFNECKMHGCase_ = 0;
-            pHIFNECKMHG_ = null;
+          if (bucketTypeCase_ == 2) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
           }
           exponentialBucketsBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
        */
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.Builder getExponentialBucketsBuilder() {
+      public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder getExponentialBucketsBuilder() {
         return getExponentialBucketsFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
        */
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKOOrBuilder getExponentialBucketsOrBuilder() {
-        if ((pHIFNECKMHGCase_ == 2) && (exponentialBucketsBuilder_ != null)) {
+      @java.lang.Override
+      public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder getExponentialBucketsOrBuilder() {
+        if ((bucketTypeCase_ == 2) && (exponentialBucketsBuilder_ != null)) {
           return exponentialBucketsBuilder_.getMessageOrBuilder();
         } else {
-          if (pHIFNECKMHGCase_ == 2) {
-            return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) pHIFNECKMHG_;
+          if (bucketTypeCase_ == 2) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_;
           }
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.getDefaultInstance();
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO exponential_buckets = 2;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKOOrBuilder> 
+          POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder> 
           getExponentialBucketsFieldBuilder() {
         if (exponentialBucketsBuilder_ == null) {
-          if (!(pHIFNECKMHGCase_ == 2)) {
-            pHIFNECKMHG_ = POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.getDefaultInstance();
+          if (!(bucketTypeCase_ == 2)) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
           }
           exponentialBucketsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKOOrBuilder>(
-                  (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PHPLOGGOHKO) pHIFNECKMHG_,
+              POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder>(
+                  (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_,
                   getParentForChildren(),
                   isClean());
-          pHIFNECKMHG_ = null;
+          bucketType_ = null;
         }
-        pHIFNECKMHGCase_ = 2;
+        bucketTypeCase_ = 2;
         onChanged();;
         return exponentialBucketsBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFHOrBuilder> explicitBucketsBuilder_;
+          POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder> explicitBucketsBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
        * @return Whether the explicitBuckets field is set.
        */
+      @java.lang.Override
       public boolean hasExplicitBuckets() {
-        return pHIFNECKMHGCase_ == 3;
+        return bucketTypeCase_ == 3;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
        * @return The explicitBuckets.
        */
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH getExplicitBuckets() {
+      @java.lang.Override
+      public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets getExplicitBuckets() {
         if (explicitBucketsBuilder_ == null) {
-          if (pHIFNECKMHGCase_ == 3) {
-            return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) pHIFNECKMHG_;
+          if (bucketTypeCase_ == 3) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_;
           }
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.getDefaultInstance();
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
         } else {
-          if (pHIFNECKMHGCase_ == 3) {
+          if (bucketTypeCase_ == 3) {
             return explicitBucketsBuilder_.getMessage();
           }
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.getDefaultInstance();
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
        */
-      public Builder setExplicitBuckets(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH value) {
+      public Builder setExplicitBuckets(POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets value) {
         if (explicitBucketsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          pHIFNECKMHG_ = value;
+          bucketType_ = value;
           onChanged();
         } else {
           explicitBucketsBuilder_.setMessage(value);
         }
-        pHIFNECKMHGCase_ = 3;
+        bucketTypeCase_ = 3;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
        */
       public Builder setExplicitBuckets(
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.Builder builderForValue) {
+          POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder builderForValue) {
         if (explicitBucketsBuilder_ == null) {
-          pHIFNECKMHG_ = builderForValue.build();
+          bucketType_ = builderForValue.build();
           onChanged();
         } else {
           explicitBucketsBuilder_.setMessage(builderForValue.build());
         }
-        pHIFNECKMHGCase_ = 3;
+        bucketTypeCase_ = 3;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
        */
-      public Builder mergeExplicitBuckets(POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH value) {
+      public Builder mergeExplicitBuckets(POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets value) {
         if (explicitBucketsBuilder_ == null) {
-          if (pHIFNECKMHGCase_ == 3 &&
-              pHIFNECKMHG_ != POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.getDefaultInstance()) {
-            pHIFNECKMHG_ = POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.newBuilder((POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) pHIFNECKMHG_)
+          if (bucketTypeCase_ == 3 &&
+              bucketType_ != POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance()) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.newBuilder((POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_)
                 .mergeFrom(value).buildPartial();
           } else {
-            pHIFNECKMHG_ = value;
+            bucketType_ = value;
           }
           onChanged();
         } else {
-          if (pHIFNECKMHGCase_ == 3) {
+          if (bucketTypeCase_ == 3) {
             explicitBucketsBuilder_.mergeFrom(value);
           }
           explicitBucketsBuilder_.setMessage(value);
         }
-        pHIFNECKMHGCase_ = 3;
+        bucketTypeCase_ = 3;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
        */
       public Builder clearExplicitBuckets() {
         if (explicitBucketsBuilder_ == null) {
-          if (pHIFNECKMHGCase_ == 3) {
-            pHIFNECKMHGCase_ = 0;
-            pHIFNECKMHG_ = null;
+          if (bucketTypeCase_ == 3) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
             onChanged();
           }
         } else {
-          if (pHIFNECKMHGCase_ == 3) {
-            pHIFNECKMHGCase_ = 0;
-            pHIFNECKMHG_ = null;
+          if (bucketTypeCase_ == 3) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
           }
           explicitBucketsBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
        */
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.Builder getExplicitBucketsBuilder() {
+      public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder getExplicitBucketsBuilder() {
         return getExplicitBucketsFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
        */
-      public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFHOrBuilder getExplicitBucketsOrBuilder() {
-        if ((pHIFNECKMHGCase_ == 3) && (explicitBucketsBuilder_ != null)) {
+      @java.lang.Override
+      public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder getExplicitBucketsOrBuilder() {
+        if ((bucketTypeCase_ == 3) && (explicitBucketsBuilder_ != null)) {
           return explicitBucketsBuilder_.getMessageOrBuilder();
         } else {
-          if (pHIFNECKMHGCase_ == 3) {
-            return (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) pHIFNECKMHG_;
+          if (bucketTypeCase_ == 3) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_;
           }
-          return POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.getDefaultInstance();
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH explicit_buckets = 3;</code>
+       * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFHOrBuilder> 
+          POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder> 
           getExplicitBucketsFieldBuilder() {
         if (explicitBucketsBuilder_ == null) {
-          if (!(pHIFNECKMHGCase_ == 3)) {
-            pHIFNECKMHG_ = POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.getDefaultInstance();
+          if (!(bucketTypeCase_ == 3)) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
           }
           explicitBucketsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFHOrBuilder>(
-                  (POGOProtos.Rpc.Distribution.ONAOLNOFLKC.PIJGOOJOHFH) pHIFNECKMHG_,
+              POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder>(
+                  (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_,
                   getParentForChildren(),
                   isClean());
-          pHIFNECKMHG_ = null;
+          bucketType_ = null;
         }
-        pHIFNECKMHGCase_ = 3;
+        bucketTypeCase_ = 3;
         onChanged();;
         return explicitBucketsBuilder_;
       }
@@ -3727,148 +3722,158 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.Distribution.ONAOLNOFLKC)
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.Distribution.BucketOptions)
     }
 
-    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.Distribution.ONAOLNOFLKC)
-    private static final POGOProtos.Rpc.Distribution.ONAOLNOFLKC DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.Distribution.BucketOptions)
+    private static final POGOProtos.Rpc.Distribution.BucketOptions DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new POGOProtos.Rpc.Distribution.ONAOLNOFLKC();
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.Distribution.BucketOptions();
     }
 
-    public static POGOProtos.Rpc.Distribution.ONAOLNOFLKC getDefaultInstance() {
+    public static POGOProtos.Rpc.Distribution.BucketOptions getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<ONAOLNOFLKC>
-        PARSER = new com.google.protobuf.AbstractParser<ONAOLNOFLKC>() {
+    private static final com.google.protobuf.Parser<BucketOptions>
+        PARSER = new com.google.protobuf.AbstractParser<BucketOptions>() {
       @java.lang.Override
-      public ONAOLNOFLKC parsePartialFrom(
+      public BucketOptions parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ONAOLNOFLKC(input, extensionRegistry);
+        return new BucketOptions(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<ONAOLNOFLKC> parser() {
+    public static com.google.protobuf.Parser<BucketOptions> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<ONAOLNOFLKC> getParserForType() {
+    public com.google.protobuf.Parser<BucketOptions> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.Distribution.ONAOLNOFLKC getDefaultInstanceForType() {
+    public POGOProtos.Rpc.Distribution.BucketOptions getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public static final int AIHJJPHKNOM_FIELD_NUMBER = 1;
-  private long aihjjphknom_;
+  public static final int COUNT_FIELD_NUMBER = 1;
+  private long count_;
   /**
-   * <code>int64 aihjjphknom = 1;</code>
-   * @return The aihjjphknom.
+   * <code>int64 count = 1;</code>
+   * @return The count.
    */
-  public long getAihjjphknom() {
-    return aihjjphknom_;
+  @java.lang.Override
+  public long getCount() {
+    return count_;
   }
 
-  public static final int AOMAHJOHBCK_FIELD_NUMBER = 2;
-  private float aomahjohbck_;
+  public static final int MEAN_FIELD_NUMBER = 2;
+  private float mean_;
   /**
-   * <code>float aomahjohbck = 2;</code>
-   * @return The aomahjohbck.
+   * <code>float mean = 2;</code>
+   * @return The mean.
    */
-  public float getAomahjohbck() {
-    return aomahjohbck_;
+  @java.lang.Override
+  public float getMean() {
+    return mean_;
   }
 
-  public static final int HGMGODOPGGI_FIELD_NUMBER = 3;
-  private double hgmgodopggi_;
+  public static final int SUM_OF_SQUARED_DEVIATION_FIELD_NUMBER = 3;
+  private double sumOfSquaredDeviation_;
   /**
-   * <code>double hgmgodopggi = 3;</code>
-   * @return The hgmgodopggi.
+   * <code>double sum_of_squared_deviation = 3;</code>
+   * @return The sumOfSquaredDeviation.
    */
-  public double getHgmgodopggi() {
-    return hgmgodopggi_;
+  @java.lang.Override
+  public double getSumOfSquaredDeviation() {
+    return sumOfSquaredDeviation_;
   }
 
-  public static final int LPJKBABBPDD_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd_;
+  public static final int RANGE_FIELD_NUMBER = 4;
+  private POGOProtos.Rpc.Distribution.Range range_;
   /**
-   * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
-   * @return Whether the lpjkbabbpdd field is set.
+   * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
+   * @return Whether the range field is set.
    */
-  public boolean hasLpjkbabbpdd() {
-    return lpjkbabbpdd_ != null;
+  @java.lang.Override
+  public boolean hasRange() {
+    return range_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
-   * @return The lpjkbabbpdd.
+   * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
+   * @return The range.
    */
-  public POGOProtos.Rpc.Distribution.KDJNFIHPPHE getLpjkbabbpdd() {
-    return lpjkbabbpdd_ == null ? POGOProtos.Rpc.Distribution.KDJNFIHPPHE.getDefaultInstance() : lpjkbabbpdd_;
+  @java.lang.Override
+  public POGOProtos.Rpc.Distribution.Range getRange() {
+    return range_ == null ? POGOProtos.Rpc.Distribution.Range.getDefaultInstance() : range_;
   }
   /**
-   * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
+   * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
    */
-  public POGOProtos.Rpc.Distribution.KDJNFIHPPHEOrBuilder getLpjkbabbpddOrBuilder() {
-    return getLpjkbabbpdd();
-  }
-
-  public static final int ALJMNFIHOML_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml_;
-  /**
-   * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
-   * @return Whether the aljmnfihoml field is set.
-   */
-  public boolean hasAljmnfihoml() {
-    return aljmnfihoml_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
-   * @return The aljmnfihoml.
-   */
-  public POGOProtos.Rpc.Distribution.ONAOLNOFLKC getAljmnfihoml() {
-    return aljmnfihoml_ == null ? POGOProtos.Rpc.Distribution.ONAOLNOFLKC.getDefaultInstance() : aljmnfihoml_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
-   */
-  public POGOProtos.Rpc.Distribution.ONAOLNOFLKCOrBuilder getAljmnfihomlOrBuilder() {
-    return getAljmnfihoml();
+  @java.lang.Override
+  public POGOProtos.Rpc.Distribution.RangeOrBuilder getRangeOrBuilder() {
+    return getRange();
   }
 
-  public static final int NAOCHKKOCIO_FIELD_NUMBER = 6;
-  private com.google.protobuf.Internal.LongList naochkkocio_;
+  public static final int BUCKET_OPTIONS_FIELD_NUMBER = 5;
+  private POGOProtos.Rpc.Distribution.BucketOptions bucketOptions_;
   /**
-   * <code>repeated int64 naochkkocio = 6;</code>
-   * @return A list containing the naochkkocio.
+   * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
+   * @return Whether the bucketOptions field is set.
    */
+  @java.lang.Override
+  public boolean hasBucketOptions() {
+    return bucketOptions_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
+   * @return The bucketOptions.
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.Distribution.BucketOptions getBucketOptions() {
+    return bucketOptions_ == null ? POGOProtos.Rpc.Distribution.BucketOptions.getDefaultInstance() : bucketOptions_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.Distribution.BucketOptionsOrBuilder getBucketOptionsOrBuilder() {
+    return getBucketOptions();
+  }
+
+  public static final int BUCKET_COUNTS_FIELD_NUMBER = 6;
+  private com.google.protobuf.Internal.LongList bucketCounts_;
+  /**
+   * <code>repeated int64 bucket_counts = 6;</code>
+   * @return A list containing the bucketCounts.
+   */
+  @java.lang.Override
   public java.util.List<java.lang.Long>
-      getNaochkkocioList() {
-    return naochkkocio_;
+      getBucketCountsList() {
+    return bucketCounts_;
   }
   /**
-   * <code>repeated int64 naochkkocio = 6;</code>
-   * @return The count of naochkkocio.
+   * <code>repeated int64 bucket_counts = 6;</code>
+   * @return The count of bucketCounts.
    */
-  public int getNaochkkocioCount() {
-    return naochkkocio_.size();
+  public int getBucketCountsCount() {
+    return bucketCounts_.size();
   }
   /**
-   * <code>repeated int64 naochkkocio = 6;</code>
+   * <code>repeated int64 bucket_counts = 6;</code>
    * @param index The index of the element to return.
-   * @return The naochkkocio at the given index.
+   * @return The bucketCounts at the given index.
    */
-  public long getNaochkkocio(int index) {
-    return naochkkocio_.getLong(index);
+  public long getBucketCounts(int index) {
+    return bucketCounts_.getLong(index);
   }
-  private int naochkkocioMemoizedSerializedSize = -1;
+  private int bucketCountsMemoizedSerializedSize = -1;
 
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
@@ -3885,27 +3890,27 @@ private static final long serialVersionUID = 0L;
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
-    if (aihjjphknom_ != 0L) {
-      output.writeInt64(1, aihjjphknom_);
+    if (count_ != 0L) {
+      output.writeInt64(1, count_);
     }
-    if (aomahjohbck_ != 0F) {
-      output.writeFloat(2, aomahjohbck_);
+    if (mean_ != 0F) {
+      output.writeFloat(2, mean_);
     }
-    if (hgmgodopggi_ != 0D) {
-      output.writeDouble(3, hgmgodopggi_);
+    if (sumOfSquaredDeviation_ != 0D) {
+      output.writeDouble(3, sumOfSquaredDeviation_);
     }
-    if (lpjkbabbpdd_ != null) {
-      output.writeMessage(4, getLpjkbabbpdd());
+    if (range_ != null) {
+      output.writeMessage(4, getRange());
     }
-    if (aljmnfihoml_ != null) {
-      output.writeMessage(5, getAljmnfihoml());
+    if (bucketOptions_ != null) {
+      output.writeMessage(5, getBucketOptions());
     }
-    if (getNaochkkocioList().size() > 0) {
+    if (getBucketCountsList().size() > 0) {
       output.writeUInt32NoTag(50);
-      output.writeUInt32NoTag(naochkkocioMemoizedSerializedSize);
+      output.writeUInt32NoTag(bucketCountsMemoizedSerializedSize);
     }
-    for (int i = 0; i < naochkkocio_.size(); i++) {
-      output.writeInt64NoTag(naochkkocio_.getLong(i));
+    for (int i = 0; i < bucketCounts_.size(); i++) {
+      output.writeInt64NoTag(bucketCounts_.getLong(i));
     }
     unknownFields.writeTo(output);
   }
@@ -3916,39 +3921,39 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (aihjjphknom_ != 0L) {
+    if (count_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(1, aihjjphknom_);
+        .computeInt64Size(1, count_);
     }
-    if (aomahjohbck_ != 0F) {
+    if (mean_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(2, aomahjohbck_);
+        .computeFloatSize(2, mean_);
     }
-    if (hgmgodopggi_ != 0D) {
+    if (sumOfSquaredDeviation_ != 0D) {
       size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(3, hgmgodopggi_);
+        .computeDoubleSize(3, sumOfSquaredDeviation_);
     }
-    if (lpjkbabbpdd_ != null) {
+    if (range_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getLpjkbabbpdd());
+        .computeMessageSize(4, getRange());
     }
-    if (aljmnfihoml_ != null) {
+    if (bucketOptions_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getAljmnfihoml());
+        .computeMessageSize(5, getBucketOptions());
     }
     {
       int dataSize = 0;
-      for (int i = 0; i < naochkkocio_.size(); i++) {
+      for (int i = 0; i < bucketCounts_.size(); i++) {
         dataSize += com.google.protobuf.CodedOutputStream
-          .computeInt64SizeNoTag(naochkkocio_.getLong(i));
+          .computeInt64SizeNoTag(bucketCounts_.getLong(i));
       }
       size += dataSize;
-      if (!getNaochkkocioList().isEmpty()) {
+      if (!getBucketCountsList().isEmpty()) {
         size += 1;
         size += com.google.protobuf.CodedOutputStream
             .computeInt32SizeNoTag(dataSize);
       }
-      naochkkocioMemoizedSerializedSize = dataSize;
+      bucketCountsMemoizedSerializedSize = dataSize;
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -3965,26 +3970,26 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.Distribution other = (POGOProtos.Rpc.Distribution) obj;
 
-    if (getAihjjphknom()
-        != other.getAihjjphknom()) return false;
-    if (java.lang.Float.floatToIntBits(getAomahjohbck())
+    if (getCount()
+        != other.getCount()) return false;
+    if (java.lang.Float.floatToIntBits(getMean())
         != java.lang.Float.floatToIntBits(
-            other.getAomahjohbck())) return false;
-    if (java.lang.Double.doubleToLongBits(getHgmgodopggi())
+            other.getMean())) return false;
+    if (java.lang.Double.doubleToLongBits(getSumOfSquaredDeviation())
         != java.lang.Double.doubleToLongBits(
-            other.getHgmgodopggi())) return false;
-    if (hasLpjkbabbpdd() != other.hasLpjkbabbpdd()) return false;
-    if (hasLpjkbabbpdd()) {
-      if (!getLpjkbabbpdd()
-          .equals(other.getLpjkbabbpdd())) return false;
+            other.getSumOfSquaredDeviation())) return false;
+    if (hasRange() != other.hasRange()) return false;
+    if (hasRange()) {
+      if (!getRange()
+          .equals(other.getRange())) return false;
     }
-    if (hasAljmnfihoml() != other.hasAljmnfihoml()) return false;
-    if (hasAljmnfihoml()) {
-      if (!getAljmnfihoml()
-          .equals(other.getAljmnfihoml())) return false;
+    if (hasBucketOptions() != other.hasBucketOptions()) return false;
+    if (hasBucketOptions()) {
+      if (!getBucketOptions()
+          .equals(other.getBucketOptions())) return false;
     }
-    if (!getNaochkkocioList()
-        .equals(other.getNaochkkocioList())) return false;
+    if (!getBucketCountsList()
+        .equals(other.getBucketCountsList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -3996,26 +4001,26 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + AIHJJPHKNOM_FIELD_NUMBER;
+    hash = (37 * hash) + COUNT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getAihjjphknom());
-    hash = (37 * hash) + AOMAHJOHBCK_FIELD_NUMBER;
+        getCount());
+    hash = (37 * hash) + MEAN_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getAomahjohbck());
-    hash = (37 * hash) + HGMGODOPGGI_FIELD_NUMBER;
+        getMean());
+    hash = (37 * hash) + SUM_OF_SQUARED_DEVIATION_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getHgmgodopggi()));
-    if (hasLpjkbabbpdd()) {
-      hash = (37 * hash) + LPJKBABBPDD_FIELD_NUMBER;
-      hash = (53 * hash) + getLpjkbabbpdd().hashCode();
+        java.lang.Double.doubleToLongBits(getSumOfSquaredDeviation()));
+    if (hasRange()) {
+      hash = (37 * hash) + RANGE_FIELD_NUMBER;
+      hash = (53 * hash) + getRange().hashCode();
     }
-    if (hasAljmnfihoml()) {
-      hash = (37 * hash) + ALJMNFIHOML_FIELD_NUMBER;
-      hash = (53 * hash) + getAljmnfihoml().hashCode();
+    if (hasBucketOptions()) {
+      hash = (37 * hash) + BUCKET_OPTIONS_FIELD_NUMBER;
+      hash = (53 * hash) + getBucketOptions().hashCode();
     }
-    if (getNaochkkocioCount() > 0) {
-      hash = (37 * hash) + NAOCHKKOCIO_FIELD_NUMBER;
-      hash = (53 * hash) + getNaochkkocioList().hashCode();
+    if (getBucketCountsCount() > 0) {
+      hash = (37 * hash) + BUCKET_COUNTS_FIELD_NUMBER;
+      hash = (53 * hash) + getBucketCountsList().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -4150,25 +4155,25 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      aihjjphknom_ = 0L;
+      count_ = 0L;
 
-      aomahjohbck_ = 0F;
+      mean_ = 0F;
 
-      hgmgodopggi_ = 0D;
+      sumOfSquaredDeviation_ = 0D;
 
-      if (lpjkbabbpddBuilder_ == null) {
-        lpjkbabbpdd_ = null;
+      if (rangeBuilder_ == null) {
+        range_ = null;
       } else {
-        lpjkbabbpdd_ = null;
-        lpjkbabbpddBuilder_ = null;
+        range_ = null;
+        rangeBuilder_ = null;
       }
-      if (aljmnfihomlBuilder_ == null) {
-        aljmnfihoml_ = null;
+      if (bucketOptionsBuilder_ == null) {
+        bucketOptions_ = null;
       } else {
-        aljmnfihoml_ = null;
-        aljmnfihomlBuilder_ = null;
+        bucketOptions_ = null;
+        bucketOptionsBuilder_ = null;
       }
-      naochkkocio_ = emptyLongList();
+      bucketCounts_ = emptyLongList();
       bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
@@ -4197,24 +4202,24 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.Distribution buildPartial() {
       POGOProtos.Rpc.Distribution result = new POGOProtos.Rpc.Distribution(this);
       int from_bitField0_ = bitField0_;
-      result.aihjjphknom_ = aihjjphknom_;
-      result.aomahjohbck_ = aomahjohbck_;
-      result.hgmgodopggi_ = hgmgodopggi_;
-      if (lpjkbabbpddBuilder_ == null) {
-        result.lpjkbabbpdd_ = lpjkbabbpdd_;
+      result.count_ = count_;
+      result.mean_ = mean_;
+      result.sumOfSquaredDeviation_ = sumOfSquaredDeviation_;
+      if (rangeBuilder_ == null) {
+        result.range_ = range_;
       } else {
-        result.lpjkbabbpdd_ = lpjkbabbpddBuilder_.build();
+        result.range_ = rangeBuilder_.build();
       }
-      if (aljmnfihomlBuilder_ == null) {
-        result.aljmnfihoml_ = aljmnfihoml_;
+      if (bucketOptionsBuilder_ == null) {
+        result.bucketOptions_ = bucketOptions_;
       } else {
-        result.aljmnfihoml_ = aljmnfihomlBuilder_.build();
+        result.bucketOptions_ = bucketOptionsBuilder_.build();
       }
       if (((bitField0_ & 0x00000001) != 0)) {
-        naochkkocio_.makeImmutable();
+        bucketCounts_.makeImmutable();
         bitField0_ = (bitField0_ & ~0x00000001);
       }
-      result.naochkkocio_ = naochkkocio_;
+      result.bucketCounts_ = bucketCounts_;
       onBuilt();
       return result;
     }
@@ -4263,28 +4268,28 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.Distribution other) {
       if (other == POGOProtos.Rpc.Distribution.getDefaultInstance()) return this;
-      if (other.getAihjjphknom() != 0L) {
-        setAihjjphknom(other.getAihjjphknom());
+      if (other.getCount() != 0L) {
+        setCount(other.getCount());
       }
-      if (other.getAomahjohbck() != 0F) {
-        setAomahjohbck(other.getAomahjohbck());
+      if (other.getMean() != 0F) {
+        setMean(other.getMean());
       }
-      if (other.getHgmgodopggi() != 0D) {
-        setHgmgodopggi(other.getHgmgodopggi());
+      if (other.getSumOfSquaredDeviation() != 0D) {
+        setSumOfSquaredDeviation(other.getSumOfSquaredDeviation());
       }
-      if (other.hasLpjkbabbpdd()) {
-        mergeLpjkbabbpdd(other.getLpjkbabbpdd());
+      if (other.hasRange()) {
+        mergeRange(other.getRange());
       }
-      if (other.hasAljmnfihoml()) {
-        mergeAljmnfihoml(other.getAljmnfihoml());
+      if (other.hasBucketOptions()) {
+        mergeBucketOptions(other.getBucketOptions());
       }
-      if (!other.naochkkocio_.isEmpty()) {
-        if (naochkkocio_.isEmpty()) {
-          naochkkocio_ = other.naochkkocio_;
+      if (!other.bucketCounts_.isEmpty()) {
+        if (bucketCounts_.isEmpty()) {
+          bucketCounts_ = other.bucketCounts_;
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          ensureNaochkkocioIsMutable();
-          naochkkocio_.addAll(other.naochkkocio_);
+          ensureBucketCountsIsMutable();
+          bucketCounts_.addAll(other.bucketCounts_);
         }
         onChanged();
       }
@@ -4318,408 +4323,411 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private long aihjjphknom_ ;
+    private long count_ ;
     /**
-     * <code>int64 aihjjphknom = 1;</code>
-     * @return The aihjjphknom.
+     * <code>int64 count = 1;</code>
+     * @return The count.
      */
-    public long getAihjjphknom() {
-      return aihjjphknom_;
+    @java.lang.Override
+    public long getCount() {
+      return count_;
     }
     /**
-     * <code>int64 aihjjphknom = 1;</code>
-     * @param value The aihjjphknom to set.
+     * <code>int64 count = 1;</code>
+     * @param value The count to set.
      * @return This builder for chaining.
      */
-    public Builder setAihjjphknom(long value) {
+    public Builder setCount(long value) {
       
-      aihjjphknom_ = value;
+      count_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 aihjjphknom = 1;</code>
+     * <code>int64 count = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAihjjphknom() {
+    public Builder clearCount() {
       
-      aihjjphknom_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private float aomahjohbck_ ;
-    /**
-     * <code>float aomahjohbck = 2;</code>
-     * @return The aomahjohbck.
-     */
-    public float getAomahjohbck() {
-      return aomahjohbck_;
-    }
-    /**
-     * <code>float aomahjohbck = 2;</code>
-     * @param value The aomahjohbck to set.
-     * @return This builder for chaining.
-     */
-    public Builder setAomahjohbck(float value) {
-      
-      aomahjohbck_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>float aomahjohbck = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearAomahjohbck() {
-      
-      aomahjohbck_ = 0F;
+      count_ = 0L;
       onChanged();
       return this;
     }
 
-    private double hgmgodopggi_ ;
+    private float mean_ ;
     /**
-     * <code>double hgmgodopggi = 3;</code>
-     * @return The hgmgodopggi.
+     * <code>float mean = 2;</code>
+     * @return The mean.
      */
-    public double getHgmgodopggi() {
-      return hgmgodopggi_;
+    @java.lang.Override
+    public float getMean() {
+      return mean_;
     }
     /**
-     * <code>double hgmgodopggi = 3;</code>
-     * @param value The hgmgodopggi to set.
+     * <code>float mean = 2;</code>
+     * @param value The mean to set.
      * @return This builder for chaining.
      */
-    public Builder setHgmgodopggi(double value) {
+    public Builder setMean(float value) {
       
-      hgmgodopggi_ = value;
+      mean_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>double hgmgodopggi = 3;</code>
+     * <code>float mean = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearHgmgodopggi() {
+    public Builder clearMean() {
       
-      hgmgodopggi_ = 0D;
+      mean_ = 0F;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd_;
+    private double sumOfSquaredDeviation_ ;
+    /**
+     * <code>double sum_of_squared_deviation = 3;</code>
+     * @return The sumOfSquaredDeviation.
+     */
+    @java.lang.Override
+    public double getSumOfSquaredDeviation() {
+      return sumOfSquaredDeviation_;
+    }
+    /**
+     * <code>double sum_of_squared_deviation = 3;</code>
+     * @param value The sumOfSquaredDeviation to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSumOfSquaredDeviation(double value) {
+      
+      sumOfSquaredDeviation_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>double sum_of_squared_deviation = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSumOfSquaredDeviation() {
+      
+      sumOfSquaredDeviation_ = 0D;
+      onChanged();
+      return this;
+    }
+
+    private POGOProtos.Rpc.Distribution.Range range_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.Distribution.KDJNFIHPPHE, POGOProtos.Rpc.Distribution.KDJNFIHPPHE.Builder, POGOProtos.Rpc.Distribution.KDJNFIHPPHEOrBuilder> lpjkbabbpddBuilder_;
+        POGOProtos.Rpc.Distribution.Range, POGOProtos.Rpc.Distribution.Range.Builder, POGOProtos.Rpc.Distribution.RangeOrBuilder> rangeBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
-     * @return Whether the lpjkbabbpdd field is set.
+     * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
+     * @return Whether the range field is set.
      */
-    public boolean hasLpjkbabbpdd() {
-      return lpjkbabbpddBuilder_ != null || lpjkbabbpdd_ != null;
+    public boolean hasRange() {
+      return rangeBuilder_ != null || range_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
-     * @return The lpjkbabbpdd.
+     * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
+     * @return The range.
      */
-    public POGOProtos.Rpc.Distribution.KDJNFIHPPHE getLpjkbabbpdd() {
-      if (lpjkbabbpddBuilder_ == null) {
-        return lpjkbabbpdd_ == null ? POGOProtos.Rpc.Distribution.KDJNFIHPPHE.getDefaultInstance() : lpjkbabbpdd_;
+    public POGOProtos.Rpc.Distribution.Range getRange() {
+      if (rangeBuilder_ == null) {
+        return range_ == null ? POGOProtos.Rpc.Distribution.Range.getDefaultInstance() : range_;
       } else {
-        return lpjkbabbpddBuilder_.getMessage();
+        return rangeBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
+     * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
      */
-    public Builder setLpjkbabbpdd(POGOProtos.Rpc.Distribution.KDJNFIHPPHE value) {
-      if (lpjkbabbpddBuilder_ == null) {
+    public Builder setRange(POGOProtos.Rpc.Distribution.Range value) {
+      if (rangeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        lpjkbabbpdd_ = value;
+        range_ = value;
         onChanged();
       } else {
-        lpjkbabbpddBuilder_.setMessage(value);
+        rangeBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
+     * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
      */
-    public Builder setLpjkbabbpdd(
-        POGOProtos.Rpc.Distribution.KDJNFIHPPHE.Builder builderForValue) {
-      if (lpjkbabbpddBuilder_ == null) {
-        lpjkbabbpdd_ = builderForValue.build();
+    public Builder setRange(
+        POGOProtos.Rpc.Distribution.Range.Builder builderForValue) {
+      if (rangeBuilder_ == null) {
+        range_ = builderForValue.build();
         onChanged();
       } else {
-        lpjkbabbpddBuilder_.setMessage(builderForValue.build());
+        rangeBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
+     * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
      */
-    public Builder mergeLpjkbabbpdd(POGOProtos.Rpc.Distribution.KDJNFIHPPHE value) {
-      if (lpjkbabbpddBuilder_ == null) {
-        if (lpjkbabbpdd_ != null) {
-          lpjkbabbpdd_ =
-            POGOProtos.Rpc.Distribution.KDJNFIHPPHE.newBuilder(lpjkbabbpdd_).mergeFrom(value).buildPartial();
+    public Builder mergeRange(POGOProtos.Rpc.Distribution.Range value) {
+      if (rangeBuilder_ == null) {
+        if (range_ != null) {
+          range_ =
+            POGOProtos.Rpc.Distribution.Range.newBuilder(range_).mergeFrom(value).buildPartial();
         } else {
-          lpjkbabbpdd_ = value;
+          range_ = value;
         }
         onChanged();
       } else {
-        lpjkbabbpddBuilder_.mergeFrom(value);
+        rangeBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
+     * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
      */
-    public Builder clearLpjkbabbpdd() {
-      if (lpjkbabbpddBuilder_ == null) {
-        lpjkbabbpdd_ = null;
+    public Builder clearRange() {
+      if (rangeBuilder_ == null) {
+        range_ = null;
         onChanged();
       } else {
-        lpjkbabbpdd_ = null;
-        lpjkbabbpddBuilder_ = null;
+        range_ = null;
+        rangeBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
+     * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
      */
-    public POGOProtos.Rpc.Distribution.KDJNFIHPPHE.Builder getLpjkbabbpddBuilder() {
+    public POGOProtos.Rpc.Distribution.Range.Builder getRangeBuilder() {
       
       onChanged();
-      return getLpjkbabbpddFieldBuilder().getBuilder();
+      return getRangeFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
+     * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
      */
-    public POGOProtos.Rpc.Distribution.KDJNFIHPPHEOrBuilder getLpjkbabbpddOrBuilder() {
-      if (lpjkbabbpddBuilder_ != null) {
-        return lpjkbabbpddBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.Distribution.RangeOrBuilder getRangeOrBuilder() {
+      if (rangeBuilder_ != null) {
+        return rangeBuilder_.getMessageOrBuilder();
       } else {
-        return lpjkbabbpdd_ == null ?
-            POGOProtos.Rpc.Distribution.KDJNFIHPPHE.getDefaultInstance() : lpjkbabbpdd_;
+        return range_ == null ?
+            POGOProtos.Rpc.Distribution.Range.getDefaultInstance() : range_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
+     * <code>.POGOProtos.Rpc.Distribution.Range range = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.Distribution.KDJNFIHPPHE, POGOProtos.Rpc.Distribution.KDJNFIHPPHE.Builder, POGOProtos.Rpc.Distribution.KDJNFIHPPHEOrBuilder> 
-        getLpjkbabbpddFieldBuilder() {
-      if (lpjkbabbpddBuilder_ == null) {
-        lpjkbabbpddBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.Distribution.KDJNFIHPPHE, POGOProtos.Rpc.Distribution.KDJNFIHPPHE.Builder, POGOProtos.Rpc.Distribution.KDJNFIHPPHEOrBuilder>(
-                getLpjkbabbpdd(),
+        POGOProtos.Rpc.Distribution.Range, POGOProtos.Rpc.Distribution.Range.Builder, POGOProtos.Rpc.Distribution.RangeOrBuilder> 
+        getRangeFieldBuilder() {
+      if (rangeBuilder_ == null) {
+        rangeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.Distribution.Range, POGOProtos.Rpc.Distribution.Range.Builder, POGOProtos.Rpc.Distribution.RangeOrBuilder>(
+                getRange(),
                 getParentForChildren(),
                 isClean());
-        lpjkbabbpdd_ = null;
+        range_ = null;
       }
-      return lpjkbabbpddBuilder_;
+      return rangeBuilder_;
     }
 
-    private POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml_;
+    private POGOProtos.Rpc.Distribution.BucketOptions bucketOptions_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.Distribution.ONAOLNOFLKC, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKCOrBuilder> aljmnfihomlBuilder_;
+        POGOProtos.Rpc.Distribution.BucketOptions, POGOProtos.Rpc.Distribution.BucketOptions.Builder, POGOProtos.Rpc.Distribution.BucketOptionsOrBuilder> bucketOptionsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
-     * @return Whether the aljmnfihoml field is set.
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
+     * @return Whether the bucketOptions field is set.
      */
-    public boolean hasAljmnfihoml() {
-      return aljmnfihomlBuilder_ != null || aljmnfihoml_ != null;
+    public boolean hasBucketOptions() {
+      return bucketOptionsBuilder_ != null || bucketOptions_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
-     * @return The aljmnfihoml.
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
+     * @return The bucketOptions.
      */
-    public POGOProtos.Rpc.Distribution.ONAOLNOFLKC getAljmnfihoml() {
-      if (aljmnfihomlBuilder_ == null) {
-        return aljmnfihoml_ == null ? POGOProtos.Rpc.Distribution.ONAOLNOFLKC.getDefaultInstance() : aljmnfihoml_;
+    public POGOProtos.Rpc.Distribution.BucketOptions getBucketOptions() {
+      if (bucketOptionsBuilder_ == null) {
+        return bucketOptions_ == null ? POGOProtos.Rpc.Distribution.BucketOptions.getDefaultInstance() : bucketOptions_;
       } else {
-        return aljmnfihomlBuilder_.getMessage();
+        return bucketOptionsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
      */
-    public Builder setAljmnfihoml(POGOProtos.Rpc.Distribution.ONAOLNOFLKC value) {
-      if (aljmnfihomlBuilder_ == null) {
+    public Builder setBucketOptions(POGOProtos.Rpc.Distribution.BucketOptions value) {
+      if (bucketOptionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        aljmnfihoml_ = value;
+        bucketOptions_ = value;
         onChanged();
       } else {
-        aljmnfihomlBuilder_.setMessage(value);
+        bucketOptionsBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
      */
-    public Builder setAljmnfihoml(
-        POGOProtos.Rpc.Distribution.ONAOLNOFLKC.Builder builderForValue) {
-      if (aljmnfihomlBuilder_ == null) {
-        aljmnfihoml_ = builderForValue.build();
+    public Builder setBucketOptions(
+        POGOProtos.Rpc.Distribution.BucketOptions.Builder builderForValue) {
+      if (bucketOptionsBuilder_ == null) {
+        bucketOptions_ = builderForValue.build();
         onChanged();
       } else {
-        aljmnfihomlBuilder_.setMessage(builderForValue.build());
+        bucketOptionsBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
      */
-    public Builder mergeAljmnfihoml(POGOProtos.Rpc.Distribution.ONAOLNOFLKC value) {
-      if (aljmnfihomlBuilder_ == null) {
-        if (aljmnfihoml_ != null) {
-          aljmnfihoml_ =
-            POGOProtos.Rpc.Distribution.ONAOLNOFLKC.newBuilder(aljmnfihoml_).mergeFrom(value).buildPartial();
+    public Builder mergeBucketOptions(POGOProtos.Rpc.Distribution.BucketOptions value) {
+      if (bucketOptionsBuilder_ == null) {
+        if (bucketOptions_ != null) {
+          bucketOptions_ =
+            POGOProtos.Rpc.Distribution.BucketOptions.newBuilder(bucketOptions_).mergeFrom(value).buildPartial();
         } else {
-          aljmnfihoml_ = value;
+          bucketOptions_ = value;
         }
         onChanged();
       } else {
-        aljmnfihomlBuilder_.mergeFrom(value);
+        bucketOptionsBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
      */
-    public Builder clearAljmnfihoml() {
-      if (aljmnfihomlBuilder_ == null) {
-        aljmnfihoml_ = null;
+    public Builder clearBucketOptions() {
+      if (bucketOptionsBuilder_ == null) {
+        bucketOptions_ = null;
         onChanged();
       } else {
-        aljmnfihoml_ = null;
-        aljmnfihomlBuilder_ = null;
+        bucketOptions_ = null;
+        bucketOptionsBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
      */
-    public POGOProtos.Rpc.Distribution.ONAOLNOFLKC.Builder getAljmnfihomlBuilder() {
+    public POGOProtos.Rpc.Distribution.BucketOptions.Builder getBucketOptionsBuilder() {
       
       onChanged();
-      return getAljmnfihomlFieldBuilder().getBuilder();
+      return getBucketOptionsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
      */
-    public POGOProtos.Rpc.Distribution.ONAOLNOFLKCOrBuilder getAljmnfihomlOrBuilder() {
-      if (aljmnfihomlBuilder_ != null) {
-        return aljmnfihomlBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.Distribution.BucketOptionsOrBuilder getBucketOptionsOrBuilder() {
+      if (bucketOptionsBuilder_ != null) {
+        return bucketOptionsBuilder_.getMessageOrBuilder();
       } else {
-        return aljmnfihoml_ == null ?
-            POGOProtos.Rpc.Distribution.ONAOLNOFLKC.getDefaultInstance() : aljmnfihoml_;
+        return bucketOptions_ == null ?
+            POGOProtos.Rpc.Distribution.BucketOptions.getDefaultInstance() : bucketOptions_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
+     * <code>.POGOProtos.Rpc.Distribution.BucketOptions bucket_options = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.Distribution.ONAOLNOFLKC, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKCOrBuilder> 
-        getAljmnfihomlFieldBuilder() {
-      if (aljmnfihomlBuilder_ == null) {
-        aljmnfihomlBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.Distribution.ONAOLNOFLKC, POGOProtos.Rpc.Distribution.ONAOLNOFLKC.Builder, POGOProtos.Rpc.Distribution.ONAOLNOFLKCOrBuilder>(
-                getAljmnfihoml(),
+        POGOProtos.Rpc.Distribution.BucketOptions, POGOProtos.Rpc.Distribution.BucketOptions.Builder, POGOProtos.Rpc.Distribution.BucketOptionsOrBuilder> 
+        getBucketOptionsFieldBuilder() {
+      if (bucketOptionsBuilder_ == null) {
+        bucketOptionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.Distribution.BucketOptions, POGOProtos.Rpc.Distribution.BucketOptions.Builder, POGOProtos.Rpc.Distribution.BucketOptionsOrBuilder>(
+                getBucketOptions(),
                 getParentForChildren(),
                 isClean());
-        aljmnfihoml_ = null;
+        bucketOptions_ = null;
       }
-      return aljmnfihomlBuilder_;
+      return bucketOptionsBuilder_;
     }
 
-    private com.google.protobuf.Internal.LongList naochkkocio_ = emptyLongList();
-    private void ensureNaochkkocioIsMutable() {
+    private com.google.protobuf.Internal.LongList bucketCounts_ = emptyLongList();
+    private void ensureBucketCountsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        naochkkocio_ = mutableCopy(naochkkocio_);
+        bucketCounts_ = mutableCopy(bucketCounts_);
         bitField0_ |= 0x00000001;
        }
     }
     /**
-     * <code>repeated int64 naochkkocio = 6;</code>
-     * @return A list containing the naochkkocio.
+     * <code>repeated int64 bucket_counts = 6;</code>
+     * @return A list containing the bucketCounts.
      */
     public java.util.List<java.lang.Long>
-        getNaochkkocioList() {
+        getBucketCountsList() {
       return ((bitField0_ & 0x00000001) != 0) ?
-               java.util.Collections.unmodifiableList(naochkkocio_) : naochkkocio_;
+               java.util.Collections.unmodifiableList(bucketCounts_) : bucketCounts_;
     }
     /**
-     * <code>repeated int64 naochkkocio = 6;</code>
-     * @return The count of naochkkocio.
+     * <code>repeated int64 bucket_counts = 6;</code>
+     * @return The count of bucketCounts.
      */
-    public int getNaochkkocioCount() {
-      return naochkkocio_.size();
+    public int getBucketCountsCount() {
+      return bucketCounts_.size();
     }
     /**
-     * <code>repeated int64 naochkkocio = 6;</code>
+     * <code>repeated int64 bucket_counts = 6;</code>
      * @param index The index of the element to return.
-     * @return The naochkkocio at the given index.
+     * @return The bucketCounts at the given index.
      */
-    public long getNaochkkocio(int index) {
-      return naochkkocio_.getLong(index);
+    public long getBucketCounts(int index) {
+      return bucketCounts_.getLong(index);
     }
     /**
-     * <code>repeated int64 naochkkocio = 6;</code>
+     * <code>repeated int64 bucket_counts = 6;</code>
      * @param index The index to set the value at.
-     * @param value The naochkkocio to set.
+     * @param value The bucketCounts to set.
      * @return This builder for chaining.
      */
-    public Builder setNaochkkocio(
+    public Builder setBucketCounts(
         int index, long value) {
-      ensureNaochkkocioIsMutable();
-      naochkkocio_.setLong(index, value);
+      ensureBucketCountsIsMutable();
+      bucketCounts_.setLong(index, value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated int64 naochkkocio = 6;</code>
-     * @param value The naochkkocio to add.
+     * <code>repeated int64 bucket_counts = 6;</code>
+     * @param value The bucketCounts to add.
      * @return This builder for chaining.
      */
-    public Builder addNaochkkocio(long value) {
-      ensureNaochkkocioIsMutable();
-      naochkkocio_.addLong(value);
+    public Builder addBucketCounts(long value) {
+      ensureBucketCountsIsMutable();
+      bucketCounts_.addLong(value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated int64 naochkkocio = 6;</code>
-     * @param values The naochkkocio to add.
+     * <code>repeated int64 bucket_counts = 6;</code>
+     * @param values The bucketCounts to add.
      * @return This builder for chaining.
      */
-    public Builder addAllNaochkkocio(
+    public Builder addAllBucketCounts(
         java.lang.Iterable<? extends java.lang.Long> values) {
-      ensureNaochkkocioIsMutable();
+      ensureBucketCountsIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-          values, naochkkocio_);
+          values, bucketCounts_);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated int64 naochkkocio = 6;</code>
+     * <code>repeated int64 bucket_counts = 6;</code>
      * @return This builder for chaining.
      */
-    public Builder clearNaochkkocio() {
-      naochkkocio_ = emptyLongList();
+    public Builder clearBucketCounts() {
+      bucketCounts_ = emptyLongList();
       bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;

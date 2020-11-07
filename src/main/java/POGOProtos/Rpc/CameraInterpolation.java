@@ -9,48 +9,48 @@ package POGOProtos.Rpc;
 public enum CameraInterpolation
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>CAM_INTERP_CUT = 0;</code>
+   * <code>CAMERA_INTERPOLATION_CAM_INTERP_CUT = 0;</code>
    */
-  CAM_INTERP_CUT(0),
+  CAMERA_INTERPOLATION_CAM_INTERP_CUT(0),
   /**
-   * <code>CAM_INTERP_LINEAR = 1;</code>
+   * <code>CAMERA_INTERPOLATION_CAM_INTERP_LINEAR = 1;</code>
    */
-  CAM_INTERP_LINEAR(1),
+  CAMERA_INTERPOLATION_CAM_INTERP_LINEAR(1),
   /**
-   * <code>CAM_INTERP_SMOOTH = 2;</code>
+   * <code>CAMERA_INTERPOLATION_CAM_INTERP_SMOOTH = 2;</code>
    */
-  CAM_INTERP_SMOOTH(2),
+  CAMERA_INTERPOLATION_CAM_INTERP_SMOOTH(2),
   /**
-   * <code>CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE = 3;</code>
+   * <code>CAMERA_INTERPOLATION_CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE = 3;</code>
    */
-  CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE(3),
+  CAMERA_INTERPOLATION_CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE(3),
   /**
-   * <code>CAM_INTERP_DEPENDS = 4;</code>
+   * <code>CAMERA_INTERPOLATION_CAM_INTERP_DEPENDS = 4;</code>
    */
-  CAM_INTERP_DEPENDS(4),
+  CAMERA_INTERPOLATION_CAM_INTERP_DEPENDS(4),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>CAM_INTERP_CUT = 0;</code>
+   * <code>CAMERA_INTERPOLATION_CAM_INTERP_CUT = 0;</code>
    */
-  public static final int CAM_INTERP_CUT_VALUE = 0;
+  public static final int CAMERA_INTERPOLATION_CAM_INTERP_CUT_VALUE = 0;
   /**
-   * <code>CAM_INTERP_LINEAR = 1;</code>
+   * <code>CAMERA_INTERPOLATION_CAM_INTERP_LINEAR = 1;</code>
    */
-  public static final int CAM_INTERP_LINEAR_VALUE = 1;
+  public static final int CAMERA_INTERPOLATION_CAM_INTERP_LINEAR_VALUE = 1;
   /**
-   * <code>CAM_INTERP_SMOOTH = 2;</code>
+   * <code>CAMERA_INTERPOLATION_CAM_INTERP_SMOOTH = 2;</code>
    */
-  public static final int CAM_INTERP_SMOOTH_VALUE = 2;
+  public static final int CAMERA_INTERPOLATION_CAM_INTERP_SMOOTH_VALUE = 2;
   /**
-   * <code>CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE = 3;</code>
+   * <code>CAMERA_INTERPOLATION_CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE = 3;</code>
    */
-  public static final int CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE_VALUE = 3;
+  public static final int CAMERA_INTERPOLATION_CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE_VALUE = 3;
   /**
-   * <code>CAM_INTERP_DEPENDS = 4;</code>
+   * <code>CAMERA_INTERPOLATION_CAM_INTERP_DEPENDS = 4;</code>
    */
-  public static final int CAM_INTERP_DEPENDS_VALUE = 4;
+  public static final int CAMERA_INTERPOLATION_CAM_INTERP_DEPENDS_VALUE = 4;
 
 
   public final int getNumber() {
@@ -77,11 +77,11 @@ public enum CameraInterpolation
    */
   public static CameraInterpolation forNumber(int value) {
     switch (value) {
-      case 0: return CAM_INTERP_CUT;
-      case 1: return CAM_INTERP_LINEAR;
-      case 2: return CAM_INTERP_SMOOTH;
-      case 3: return CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE;
-      case 4: return CAM_INTERP_DEPENDS;
+      case 0: return CAMERA_INTERPOLATION_CAM_INTERP_CUT;
+      case 1: return CAMERA_INTERPOLATION_CAM_INTERP_LINEAR;
+      case 2: return CAMERA_INTERPOLATION_CAM_INTERP_SMOOTH;
+      case 3: return CAMERA_INTERPOLATION_CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE;
+      case 4: return CAMERA_INTERPOLATION_CAM_INTERP_DEPENDS;
       default: return null;
     }
   }
@@ -100,6 +100,10 @@ public enum CameraInterpolation
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

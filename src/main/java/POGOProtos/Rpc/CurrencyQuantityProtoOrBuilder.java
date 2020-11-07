@@ -24,4 +24,28 @@ public interface CurrencyQuantityProtoOrBuilder extends
    * @return The quantity.
    */
   int getQuantity();
+
+  /**
+   * <code>int32 fiat_purchased_quantity = 3;</code>
+   * @return The fiatPurchasedQuantity.
+   */
+  int getFiatPurchasedQuantity();
+
+  /**
+   * <code>string fiat_currency_type = 4;</code>
+   * @return The fiatCurrencyType.
+   */
+  java.lang.String getFiatCurrencyType();
+  /**
+   * <code>string fiat_currency_type = 4;</code>
+   * @return The bytes for fiatCurrencyType.
+   */
+  com.google.protobuf.ByteString
+      getFiatCurrencyTypeBytes();
+
+  /**
+   * <code>int64 fiat_currency_cost_e6 = 5;</code>
+   * @return The fiatCurrencyCostE6.
+   */
+  long getFiatCurrencyCostE6();
 }

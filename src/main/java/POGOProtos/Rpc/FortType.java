@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum FortType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>GYM = 0;</code>
+   * <code>FORT_TYPE_GYM = 0;</code>
    */
-  GYM(0),
+  FORT_TYPE_GYM(0),
   /**
-   * <code>CHECKPOINT = 1;</code>
+   * <code>FORT_TYPE_CHECKPOINT = 1;</code>
    */
-  CHECKPOINT(1),
+  FORT_TYPE_CHECKPOINT(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>GYM = 0;</code>
+   * <code>FORT_TYPE_GYM = 0;</code>
    */
-  public static final int GYM_VALUE = 0;
+  public static final int FORT_TYPE_GYM_VALUE = 0;
   /**
-   * <code>CHECKPOINT = 1;</code>
+   * <code>FORT_TYPE_CHECKPOINT = 1;</code>
    */
-  public static final int CHECKPOINT_VALUE = 1;
+  public static final int FORT_TYPE_CHECKPOINT_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum FortType
    */
   public static FortType forNumber(int value) {
     switch (value) {
-      case 0: return GYM;
-      case 1: return CHECKPOINT;
+      case 0: return FORT_TYPE_GYM;
+      case 1: return FORT_TYPE_CHECKPOINT;
       default: return null;
     }
   }
@@ -73,6 +73,10 @@ public enum FortType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

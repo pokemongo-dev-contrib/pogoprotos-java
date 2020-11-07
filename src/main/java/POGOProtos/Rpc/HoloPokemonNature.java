@@ -9,72 +9,72 @@ package POGOProtos.Rpc;
 public enum HoloPokemonNature
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POKEMON_NATURE_UNKNOWN = 0;</code>
+   * <code>HOLO_POKEMON_NATURE_NATURE_UNKNOWN = 0;</code>
    */
-  POKEMON_NATURE_UNKNOWN(0),
+  HOLO_POKEMON_NATURE_NATURE_UNKNOWN(0),
   /**
-   * <code>POKEMON_NATURE_STOIC = 1;</code>
+   * <code>HOLO_POKEMON_NATURE_V0001_POKEMON_NATURE_STOIC = 1;</code>
    */
-  POKEMON_NATURE_STOIC(1),
+  HOLO_POKEMON_NATURE_V0001_POKEMON_NATURE_STOIC(1),
   /**
-   * <code>POKEMON_NATURE_ASSASSIN = 2;</code>
+   * <code>HOLO_POKEMON_NATURE_V0002_POKEMON_NATURE_ASSASSIN = 2;</code>
    */
-  POKEMON_NATURE_ASSASSIN(2),
+  HOLO_POKEMON_NATURE_V0002_POKEMON_NATURE_ASSASSIN(2),
   /**
-   * <code>POKEMON_NATURE_GUARDIAN = 3;</code>
+   * <code>HOLO_POKEMON_NATURE_V0003_POKEMON_NATURE_GUARDIAN = 3;</code>
    */
-  POKEMON_NATURE_GUARDIAN(3),
+  HOLO_POKEMON_NATURE_V0003_POKEMON_NATURE_GUARDIAN(3),
   /**
-   * <code>POKEMON_NATURE_RAIDER = 4;</code>
+   * <code>HOLO_POKEMON_NATURE_V0004_POKEMON_NATURE_RAIDER = 4;</code>
    */
-  POKEMON_NATURE_RAIDER(4),
+  HOLO_POKEMON_NATURE_V0004_POKEMON_NATURE_RAIDER(4),
   /**
-   * <code>POKEMON_NATURE_PROTECTOR = 5;</code>
+   * <code>HOLO_POKEMON_NATURE_V0005_POKEMON_NATURE_PROTECTOR = 5;</code>
    */
-  POKEMON_NATURE_PROTECTOR(5),
+  HOLO_POKEMON_NATURE_V0005_POKEMON_NATURE_PROTECTOR(5),
   /**
-   * <code>POKEMON_NATURE_SENTRY = 6;</code>
+   * <code>HOLO_POKEMON_NATURE_V0006_POKEMON_NATURE_SENTRY = 6;</code>
    */
-  POKEMON_NATURE_SENTRY(6),
+  HOLO_POKEMON_NATURE_V0006_POKEMON_NATURE_SENTRY(6),
   /**
-   * <code>POKEMON_NATURE_CHAMPION = 7;</code>
+   * <code>HOLO_POKEMON_NATURE_V0007_POKEMON_NATURE_CHAMPION = 7;</code>
    */
-  POKEMON_NATURE_CHAMPION(7),
+  HOLO_POKEMON_NATURE_V0007_POKEMON_NATURE_CHAMPION(7),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>POKEMON_NATURE_UNKNOWN = 0;</code>
+   * <code>HOLO_POKEMON_NATURE_NATURE_UNKNOWN = 0;</code>
    */
-  public static final int POKEMON_NATURE_UNKNOWN_VALUE = 0;
+  public static final int HOLO_POKEMON_NATURE_NATURE_UNKNOWN_VALUE = 0;
   /**
-   * <code>POKEMON_NATURE_STOIC = 1;</code>
+   * <code>HOLO_POKEMON_NATURE_V0001_POKEMON_NATURE_STOIC = 1;</code>
    */
-  public static final int POKEMON_NATURE_STOIC_VALUE = 1;
+  public static final int HOLO_POKEMON_NATURE_V0001_POKEMON_NATURE_STOIC_VALUE = 1;
   /**
-   * <code>POKEMON_NATURE_ASSASSIN = 2;</code>
+   * <code>HOLO_POKEMON_NATURE_V0002_POKEMON_NATURE_ASSASSIN = 2;</code>
    */
-  public static final int POKEMON_NATURE_ASSASSIN_VALUE = 2;
+  public static final int HOLO_POKEMON_NATURE_V0002_POKEMON_NATURE_ASSASSIN_VALUE = 2;
   /**
-   * <code>POKEMON_NATURE_GUARDIAN = 3;</code>
+   * <code>HOLO_POKEMON_NATURE_V0003_POKEMON_NATURE_GUARDIAN = 3;</code>
    */
-  public static final int POKEMON_NATURE_GUARDIAN_VALUE = 3;
+  public static final int HOLO_POKEMON_NATURE_V0003_POKEMON_NATURE_GUARDIAN_VALUE = 3;
   /**
-   * <code>POKEMON_NATURE_RAIDER = 4;</code>
+   * <code>HOLO_POKEMON_NATURE_V0004_POKEMON_NATURE_RAIDER = 4;</code>
    */
-  public static final int POKEMON_NATURE_RAIDER_VALUE = 4;
+  public static final int HOLO_POKEMON_NATURE_V0004_POKEMON_NATURE_RAIDER_VALUE = 4;
   /**
-   * <code>POKEMON_NATURE_PROTECTOR = 5;</code>
+   * <code>HOLO_POKEMON_NATURE_V0005_POKEMON_NATURE_PROTECTOR = 5;</code>
    */
-  public static final int POKEMON_NATURE_PROTECTOR_VALUE = 5;
+  public static final int HOLO_POKEMON_NATURE_V0005_POKEMON_NATURE_PROTECTOR_VALUE = 5;
   /**
-   * <code>POKEMON_NATURE_SENTRY = 6;</code>
+   * <code>HOLO_POKEMON_NATURE_V0006_POKEMON_NATURE_SENTRY = 6;</code>
    */
-  public static final int POKEMON_NATURE_SENTRY_VALUE = 6;
+  public static final int HOLO_POKEMON_NATURE_V0006_POKEMON_NATURE_SENTRY_VALUE = 6;
   /**
-   * <code>POKEMON_NATURE_CHAMPION = 7;</code>
+   * <code>HOLO_POKEMON_NATURE_V0007_POKEMON_NATURE_CHAMPION = 7;</code>
    */
-  public static final int POKEMON_NATURE_CHAMPION_VALUE = 7;
+  public static final int HOLO_POKEMON_NATURE_V0007_POKEMON_NATURE_CHAMPION_VALUE = 7;
 
 
   public final int getNumber() {
@@ -101,14 +101,14 @@ public enum HoloPokemonNature
    */
   public static HoloPokemonNature forNumber(int value) {
     switch (value) {
-      case 0: return POKEMON_NATURE_UNKNOWN;
-      case 1: return POKEMON_NATURE_STOIC;
-      case 2: return POKEMON_NATURE_ASSASSIN;
-      case 3: return POKEMON_NATURE_GUARDIAN;
-      case 4: return POKEMON_NATURE_RAIDER;
-      case 5: return POKEMON_NATURE_PROTECTOR;
-      case 6: return POKEMON_NATURE_SENTRY;
-      case 7: return POKEMON_NATURE_CHAMPION;
+      case 0: return HOLO_POKEMON_NATURE_NATURE_UNKNOWN;
+      case 1: return HOLO_POKEMON_NATURE_V0001_POKEMON_NATURE_STOIC;
+      case 2: return HOLO_POKEMON_NATURE_V0002_POKEMON_NATURE_ASSASSIN;
+      case 3: return HOLO_POKEMON_NATURE_V0003_POKEMON_NATURE_GUARDIAN;
+      case 4: return HOLO_POKEMON_NATURE_V0004_POKEMON_NATURE_RAIDER;
+      case 5: return HOLO_POKEMON_NATURE_V0005_POKEMON_NATURE_PROTECTOR;
+      case 6: return HOLO_POKEMON_NATURE_V0006_POKEMON_NATURE_SENTRY;
+      case 7: return HOLO_POKEMON_NATURE_V0007_POKEMON_NATURE_CHAMPION;
       default: return null;
     }
   }
@@ -127,6 +127,10 @@ public enum HoloPokemonNature
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

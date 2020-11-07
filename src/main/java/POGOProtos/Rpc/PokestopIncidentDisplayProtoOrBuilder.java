@@ -8,93 +8,93 @@ public interface PokestopIncidentDisplayProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
    * @return Whether the characterDisplay field is set.
    */
   boolean hasCharacterDisplay();
   /**
-   * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
    * @return The characterDisplay.
    */
-  POGOProtos.Rpc.HDLEOGLECNM getCharacterDisplay();
+  POGOProtos.Rpc.CharacterDisplayProto getCharacterDisplay();
   /**
-   * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
+   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
    */
-  POGOProtos.Rpc.HDLEOGLECNMOrBuilder getCharacterDisplayOrBuilder();
+  POGOProtos.Rpc.CharacterDisplayProtoOrBuilder getCharacterDisplayOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
    * @return Whether the invasionFinished field is set.
    */
   boolean hasInvasionFinished();
   /**
-   * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
    * @return The invasionFinished.
    */
-  POGOProtos.Rpc.LHILOEDGDOB getInvasionFinished();
+  POGOProtos.Rpc.InvasionFinishedDisplayProto getInvasionFinished();
   /**
-   * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
+   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
    */
-  POGOProtos.Rpc.LHILOEDGDOBOrBuilder getInvasionFinishedOrBuilder();
+  POGOProtos.Rpc.InvasionFinishedDisplayProtoOrBuilder getInvasionFinishedOrBuilder();
 
   /**
-   * <code>string cjfmakbjoie = 1;</code>
-   * @return The cjfmakbjoie.
+   * <code>string incident_id = 1;</code>
+   * @return The incidentId.
    */
-  java.lang.String getCjfmakbjoie();
+  java.lang.String getIncidentId();
   /**
-   * <code>string cjfmakbjoie = 1;</code>
-   * @return The bytes for cjfmakbjoie.
+   * <code>string incident_id = 1;</code>
+   * @return The bytes for incidentId.
    */
   com.google.protobuf.ByteString
-      getCjfmakbjoieBytes();
+      getIncidentIdBytes();
 
   /**
-   * <code>int64 infikjlocfb = 2;</code>
-   * @return The infikjlocfb.
+   * <code>int64 incident_start_ms = 2;</code>
+   * @return The incidentStartMs.
    */
-  long getInfikjlocfb();
+  long getIncidentStartMs();
 
   /**
-   * <code>int64 anppdjdmnan = 3;</code>
-   * @return The anppdjdmnan.
+   * <code>int64 incident_expiration_ms = 3;</code>
+   * @return The incidentExpirationMs.
    */
-  long getAnppdjdmnan();
+  long getIncidentExpirationMs();
 
   /**
-   * <code>bool mflkpnpldjl = 4;</code>
-   * @return The mflkpnpldjl.
+   * <code>bool hide_incident = 4;</code>
+   * @return The hideIncident.
    */
-  boolean getMflkpnpldjl();
+  boolean getHideIncident();
 
   /**
-   * <code>bool eblachhpabm = 5;</code>
-   * @return The eblachhpabm.
+   * <code>bool incident_completed = 5;</code>
+   * @return The incidentCompleted.
    */
-  boolean getEblachhpabm();
+  boolean getIncidentCompleted();
 
   /**
-   * <code>.POGOProtos.Rpc.IncidentDisplayType gneepeippkc = 6;</code>
-   * @return The enum numeric value on the wire for gneepeippkc.
+   * <code>.POGOProtos.Rpc.IncidentDisplayType incident_display_type = 6;</code>
+   * @return The enum numeric value on the wire for incidentDisplayType.
    */
-  int getGneepeippkcValue();
+  int getIncidentDisplayTypeValue();
   /**
-   * <code>.POGOProtos.Rpc.IncidentDisplayType gneepeippkc = 6;</code>
-   * @return The gneepeippkc.
+   * <code>.POGOProtos.Rpc.IncidentDisplayType incident_display_type = 6;</code>
+   * @return The incidentDisplayType.
    */
-  POGOProtos.Rpc.IncidentDisplayType getGneepeippkc();
+  POGOProtos.Rpc.IncidentDisplayType getIncidentDisplayType();
 
   /**
-   * <code>int32 jpfekeiimig = 7;</code>
-   * @return The jpfekeiimig.
+   * <code>int32 incident_display_order_priority = 7;</code>
+   * @return The incidentDisplayOrderPriority.
    */
-  int getJpfekeiimig();
+  int getIncidentDisplayOrderPriority();
 
   /**
-   * <code>bool bebcjnakjod = 8;</code>
-   * @return The bebcjnakjod.
+   * <code>bool continue_displaying_incident = 8;</code>
+   * @return The continueDisplayingIncident.
    */
-  boolean getBebcjnakjod();
+  boolean getContinueDisplayingIncident();
 
-  public POGOProtos.Rpc.PokestopIncidentDisplayProto.CCPOJAKMAPCCase getCCPOJAKMAPCCase();
+  public POGOProtos.Rpc.PokestopIncidentDisplayProto.MapDisplayCase getMapDisplayCase();
 }

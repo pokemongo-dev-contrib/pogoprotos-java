@@ -9,9 +9,9 @@ package POGOProtos.Rpc;
 public enum POIDecorationFollowFlags
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POI_DECORATION_FOLLOW_FLAGS_AUTO_INVALID = 0;</code>
+   * <code>POI_DECORATION_FOLLOW_FLAGS_POI_FLAGS_AUTO_INVALID = 0;</code>
    */
-  POI_DECORATION_FOLLOW_FLAGS_AUTO_INVALID(0),
+  POI_DECORATION_FOLLOW_FLAGS_POI_FLAGS_AUTO_INVALID(0),
   /**
    * <code>POI_DECORATION_FOLLOW_FLAGS_FOLLOW_X = 1;</code>
    */
@@ -28,9 +28,9 @@ public enum POIDecorationFollowFlags
   ;
 
   /**
-   * <code>POI_DECORATION_FOLLOW_FLAGS_AUTO_INVALID = 0;</code>
+   * <code>POI_DECORATION_FOLLOW_FLAGS_POI_FLAGS_AUTO_INVALID = 0;</code>
    */
-  public static final int POI_DECORATION_FOLLOW_FLAGS_AUTO_INVALID_VALUE = 0;
+  public static final int POI_DECORATION_FOLLOW_FLAGS_POI_FLAGS_AUTO_INVALID_VALUE = 0;
   /**
    * <code>POI_DECORATION_FOLLOW_FLAGS_FOLLOW_X = 1;</code>
    */
@@ -69,7 +69,7 @@ public enum POIDecorationFollowFlags
    */
   public static POIDecorationFollowFlags forNumber(int value) {
     switch (value) {
-      case 0: return POI_DECORATION_FOLLOW_FLAGS_AUTO_INVALID;
+      case 0: return POI_DECORATION_FOLLOW_FLAGS_POI_FLAGS_AUTO_INVALID;
       case 1: return POI_DECORATION_FOLLOW_FLAGS_FOLLOW_X;
       case 2: return POI_DECORATION_FOLLOW_FLAGS_FOLLOW_Y;
       case 4: return POI_DECORATION_FOLLOW_FLAGS_FOLLOW_Z;
@@ -91,6 +91,10 @@ public enum POIDecorationFollowFlags
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -99,7 +103,7 @@ public enum POIDecorationFollowFlags
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(93);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(91);
   }
 
   private static final POIDecorationFollowFlags[] VALUES = values();

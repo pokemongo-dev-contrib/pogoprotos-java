@@ -8,54 +8,54 @@ public interface OpenBuddyGiftOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.OpenBuddyGiftOutProto.JDBHLDCJFFO jbflkcdndlp = 1;</code>
-   * @return The enum numeric value on the wire for jbflkcdndlp.
+   * <code>.POGOProtos.Rpc.OpenBuddyGiftOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
    */
-  int getJbflkcdndlpValue();
+  int getResultValue();
   /**
-   * <code>.POGOProtos.Rpc.OpenBuddyGiftOutProto.JDBHLDCJFFO jbflkcdndlp = 1;</code>
-   * @return The jbflkcdndlp.
+   * <code>.POGOProtos.Rpc.OpenBuddyGiftOutProto.Result result = 1;</code>
+   * @return The result.
    */
-  POGOProtos.Rpc.OpenBuddyGiftOutProto.JDBHLDCJFFO getJbflkcdndlp();
+  POGOProtos.Rpc.OpenBuddyGiftOutProto.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.AIPPNGJEHMP olkpbafkplf = 2;</code>
-   * @return Whether the olkpbafkplf field is set.
+   * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift = 2;</code>
+   * @return Whether the buddyGift field is set.
    */
-  boolean hasOlkpbafkplf();
+  boolean hasBuddyGift();
   /**
-   * <code>.POGOProtos.Rpc.AIPPNGJEHMP olkpbafkplf = 2;</code>
-   * @return The olkpbafkplf.
+   * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift = 2;</code>
+   * @return The buddyGift.
    */
-  POGOProtos.Rpc.AIPPNGJEHMP getOlkpbafkplf();
+  POGOProtos.Rpc.BuddyGiftProto getBuddyGift();
   /**
-   * <code>.POGOProtos.Rpc.AIPPNGJEHMP olkpbafkplf = 2;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift = 2;</code>
    */
-  POGOProtos.Rpc.AIPPNGJEHMPOrBuilder getOlkpbafkplfOrBuilder();
+  POGOProtos.Rpc.BuddyGiftProtoOrBuilder getBuddyGiftOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.JADCKNICKCA ocjobkiofkc = 4;</code>
-   * @return Whether the ocjobkiofkc field is set.
+   * <code>.POGOProtos.Rpc.BuddyObservedData observed_data = 4;</code>
+   * @return Whether the observedData field is set.
    */
-  boolean hasOcjobkiofkc();
+  boolean hasObservedData();
   /**
-   * <code>.POGOProtos.Rpc.JADCKNICKCA ocjobkiofkc = 4;</code>
-   * @return The ocjobkiofkc.
+   * <code>.POGOProtos.Rpc.BuddyObservedData observed_data = 4;</code>
+   * @return The observedData.
    */
-  POGOProtos.Rpc.JADCKNICKCA getOcjobkiofkc();
+  POGOProtos.Rpc.BuddyObservedData getObservedData();
   /**
-   * <code>.POGOProtos.Rpc.JADCKNICKCA ocjobkiofkc = 4;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData observed_data = 4;</code>
    */
-  POGOProtos.Rpc.JADCKNICKCAOrBuilder getOcjobkiofkcOrBuilder();
+  POGOProtos.Rpc.BuddyObservedDataOrBuilder getObservedDataOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.HCBIJCPINCK.OGLAJMMICIF cjfifeceeje = 5;</code>
-   * @return The enum numeric value on the wire for cjfifeceeje.
+   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType shown_hearts = 5;</code>
+   * @return The enum numeric value on the wire for shownHearts.
    */
-  int getCjfifeceejeValue();
+  int getShownHeartsValue();
   /**
-   * <code>.POGOProtos.Rpc.HCBIJCPINCK.OGLAJMMICIF cjfifeceeje = 5;</code>
-   * @return The cjfifeceeje.
+   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType shown_hearts = 5;</code>
+   * @return The shownHearts.
    */
-  POGOProtos.Rpc.HCBIJCPINCK.OGLAJMMICIF getCjfifeceeje();
+  POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType getShownHearts();
 }

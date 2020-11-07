@@ -9,112 +9,112 @@ package POGOProtos.Rpc;
 public enum IdentityProvider
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER = 0;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER = 0;</code>
    */
-  IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER(0),
+  PLATFORM_IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER(0),
   /**
-   * <code>IDENTITY_PROVIDER_GOOGLE = 1;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_GOOGLE = 1;</code>
    */
-  IDENTITY_PROVIDER_GOOGLE(1),
+  PLATFORM_IDENTITY_PROVIDER_GOOGLE(1),
   /**
-   * <code>IDENTITY_PROVIDER_PTC = 2;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_PTC = 2;</code>
    */
-  IDENTITY_PROVIDER_PTC(2),
+  PLATFORM_IDENTITY_PROVIDER_PTC(2),
   /**
-   * <code>IDENTITY_PROVIDER_FACEBOOK = 3;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_FACEBOOK = 3;</code>
    */
-  IDENTITY_PROVIDER_FACEBOOK(3),
+  PLATFORM_IDENTITY_PROVIDER_FACEBOOK(3),
   /**
-   * <code>IDENTITY_PROVIDER_BACKGROUND = 4;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_BACKGROUND = 4;</code>
    */
-  IDENTITY_PROVIDER_BACKGROUND(4),
+  PLATFORM_IDENTITY_PROVIDER_BACKGROUND(4),
   /**
-   * <code>IDENTITY_PROVIDER_INTERNAL = 5;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_INTERNAL = 5;</code>
    */
-  IDENTITY_PROVIDER_INTERNAL(5),
+  PLATFORM_IDENTITY_PROVIDER_INTERNAL(5),
   /**
-   * <code>IDENTITY_PROVIDER_SFIDA = 6;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_SFIDA = 6;</code>
    */
-  IDENTITY_PROVIDER_SFIDA(6),
+  PLATFORM_IDENTITY_PROVIDER_SFIDA(6),
   /**
-   * <code>IDENTITY_PROVIDER_SUPER_AWESOME = 7;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_SUPER_AWESOME = 7;</code>
    */
-  IDENTITY_PROVIDER_SUPER_AWESOME(7),
+  PLATFORM_IDENTITY_PROVIDER_SUPER_AWESOME(7),
   /**
-   * <code>IDENTITY_PROVIDER_DEVELOPER = 8;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_DEVELOPER = 8;</code>
    */
-  IDENTITY_PROVIDER_DEVELOPER(8),
+  PLATFORM_IDENTITY_PROVIDER_DEVELOPER(8),
   /**
-   * <code>IDENTITY_PROVIDER_SHARED_SECRET = 9;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_SHARED_SECRET = 9;</code>
    */
-  IDENTITY_PROVIDER_SHARED_SECRET(9),
+  PLATFORM_IDENTITY_PROVIDER_SHARED_SECRET(9),
   /**
-   * <code>IDENTITY_PROVIDER_POSEIDON = 10;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_POSEIDON = 10;</code>
    */
-  IDENTITY_PROVIDER_POSEIDON(10),
+  PLATFORM_IDENTITY_PROVIDER_POSEIDON(10),
   /**
-   * <code>IDENTITY_PROVIDER_NINTENDO = 11;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_NINTENDO = 11;</code>
    */
-  IDENTITY_PROVIDER_NINTENDO(11),
+  PLATFORM_IDENTITY_PROVIDER_NINTENDO(11),
   /**
-   * <code>IDENTITY_PROVIDER_APPLE = 12;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_APPLE = 12;</code>
    */
-  IDENTITY_PROVIDER_APPLE(12),
+  PLATFORM_IDENTITY_PROVIDER_APPLE(12),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER = 0;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER = 0;</code>
    */
-  public static final int IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER_VALUE = 0;
+  public static final int PLATFORM_IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER_VALUE = 0;
   /**
-   * <code>IDENTITY_PROVIDER_GOOGLE = 1;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_GOOGLE = 1;</code>
    */
-  public static final int IDENTITY_PROVIDER_GOOGLE_VALUE = 1;
+  public static final int PLATFORM_IDENTITY_PROVIDER_GOOGLE_VALUE = 1;
   /**
-   * <code>IDENTITY_PROVIDER_PTC = 2;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_PTC = 2;</code>
    */
-  public static final int IDENTITY_PROVIDER_PTC_VALUE = 2;
+  public static final int PLATFORM_IDENTITY_PROVIDER_PTC_VALUE = 2;
   /**
-   * <code>IDENTITY_PROVIDER_FACEBOOK = 3;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_FACEBOOK = 3;</code>
    */
-  public static final int IDENTITY_PROVIDER_FACEBOOK_VALUE = 3;
+  public static final int PLATFORM_IDENTITY_PROVIDER_FACEBOOK_VALUE = 3;
   /**
-   * <code>IDENTITY_PROVIDER_BACKGROUND = 4;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_BACKGROUND = 4;</code>
    */
-  public static final int IDENTITY_PROVIDER_BACKGROUND_VALUE = 4;
+  public static final int PLATFORM_IDENTITY_PROVIDER_BACKGROUND_VALUE = 4;
   /**
-   * <code>IDENTITY_PROVIDER_INTERNAL = 5;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_INTERNAL = 5;</code>
    */
-  public static final int IDENTITY_PROVIDER_INTERNAL_VALUE = 5;
+  public static final int PLATFORM_IDENTITY_PROVIDER_INTERNAL_VALUE = 5;
   /**
-   * <code>IDENTITY_PROVIDER_SFIDA = 6;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_SFIDA = 6;</code>
    */
-  public static final int IDENTITY_PROVIDER_SFIDA_VALUE = 6;
+  public static final int PLATFORM_IDENTITY_PROVIDER_SFIDA_VALUE = 6;
   /**
-   * <code>IDENTITY_PROVIDER_SUPER_AWESOME = 7;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_SUPER_AWESOME = 7;</code>
    */
-  public static final int IDENTITY_PROVIDER_SUPER_AWESOME_VALUE = 7;
+  public static final int PLATFORM_IDENTITY_PROVIDER_SUPER_AWESOME_VALUE = 7;
   /**
-   * <code>IDENTITY_PROVIDER_DEVELOPER = 8;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_DEVELOPER = 8;</code>
    */
-  public static final int IDENTITY_PROVIDER_DEVELOPER_VALUE = 8;
+  public static final int PLATFORM_IDENTITY_PROVIDER_DEVELOPER_VALUE = 8;
   /**
-   * <code>IDENTITY_PROVIDER_SHARED_SECRET = 9;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_SHARED_SECRET = 9;</code>
    */
-  public static final int IDENTITY_PROVIDER_SHARED_SECRET_VALUE = 9;
+  public static final int PLATFORM_IDENTITY_PROVIDER_SHARED_SECRET_VALUE = 9;
   /**
-   * <code>IDENTITY_PROVIDER_POSEIDON = 10;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_POSEIDON = 10;</code>
    */
-  public static final int IDENTITY_PROVIDER_POSEIDON_VALUE = 10;
+  public static final int PLATFORM_IDENTITY_PROVIDER_POSEIDON_VALUE = 10;
   /**
-   * <code>IDENTITY_PROVIDER_NINTENDO = 11;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_NINTENDO = 11;</code>
    */
-  public static final int IDENTITY_PROVIDER_NINTENDO_VALUE = 11;
+  public static final int PLATFORM_IDENTITY_PROVIDER_NINTENDO_VALUE = 11;
   /**
-   * <code>IDENTITY_PROVIDER_APPLE = 12;</code>
+   * <code>PLATFORM_IDENTITY_PROVIDER_APPLE = 12;</code>
    */
-  public static final int IDENTITY_PROVIDER_APPLE_VALUE = 12;
+  public static final int PLATFORM_IDENTITY_PROVIDER_APPLE_VALUE = 12;
 
 
   public final int getNumber() {
@@ -141,19 +141,19 @@ public enum IdentityProvider
    */
   public static IdentityProvider forNumber(int value) {
     switch (value) {
-      case 0: return IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER;
-      case 1: return IDENTITY_PROVIDER_GOOGLE;
-      case 2: return IDENTITY_PROVIDER_PTC;
-      case 3: return IDENTITY_PROVIDER_FACEBOOK;
-      case 4: return IDENTITY_PROVIDER_BACKGROUND;
-      case 5: return IDENTITY_PROVIDER_INTERNAL;
-      case 6: return IDENTITY_PROVIDER_SFIDA;
-      case 7: return IDENTITY_PROVIDER_SUPER_AWESOME;
-      case 8: return IDENTITY_PROVIDER_DEVELOPER;
-      case 9: return IDENTITY_PROVIDER_SHARED_SECRET;
-      case 10: return IDENTITY_PROVIDER_POSEIDON;
-      case 11: return IDENTITY_PROVIDER_NINTENDO;
-      case 12: return IDENTITY_PROVIDER_APPLE;
+      case 0: return PLATFORM_IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER;
+      case 1: return PLATFORM_IDENTITY_PROVIDER_GOOGLE;
+      case 2: return PLATFORM_IDENTITY_PROVIDER_PTC;
+      case 3: return PLATFORM_IDENTITY_PROVIDER_FACEBOOK;
+      case 4: return PLATFORM_IDENTITY_PROVIDER_BACKGROUND;
+      case 5: return PLATFORM_IDENTITY_PROVIDER_INTERNAL;
+      case 6: return PLATFORM_IDENTITY_PROVIDER_SFIDA;
+      case 7: return PLATFORM_IDENTITY_PROVIDER_SUPER_AWESOME;
+      case 8: return PLATFORM_IDENTITY_PROVIDER_DEVELOPER;
+      case 9: return PLATFORM_IDENTITY_PROVIDER_SHARED_SECRET;
+      case 10: return PLATFORM_IDENTITY_PROVIDER_POSEIDON;
+      case 11: return PLATFORM_IDENTITY_PROVIDER_NINTENDO;
+      case 12: return PLATFORM_IDENTITY_PROVIDER_APPLE;
       default: return null;
     }
   }
@@ -172,6 +172,10 @@ public enum IdentityProvider
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

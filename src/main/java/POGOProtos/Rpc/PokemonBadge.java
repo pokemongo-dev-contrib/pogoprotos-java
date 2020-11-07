@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum PokemonBadge
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POKEMON_BADGE_UNSET = 0;</code>
+   * <code>POKEMON_BADGE_POKEMON_BADGE_UNSET = 0;</code>
    */
-  POKEMON_BADGE_UNSET(0),
+  POKEMON_BADGE_POKEMON_BADGE_UNSET(0),
   /**
-   * <code>POKEMON_BADGE_BEST_BUDDY = 1;</code>
+   * <code>POKEMON_BADGE_POKEMON_BADGE_BEST_BUDDY = 1;</code>
    */
-  POKEMON_BADGE_BEST_BUDDY(1),
+  POKEMON_BADGE_POKEMON_BADGE_BEST_BUDDY(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>POKEMON_BADGE_UNSET = 0;</code>
+   * <code>POKEMON_BADGE_POKEMON_BADGE_UNSET = 0;</code>
    */
-  public static final int POKEMON_BADGE_UNSET_VALUE = 0;
+  public static final int POKEMON_BADGE_POKEMON_BADGE_UNSET_VALUE = 0;
   /**
-   * <code>POKEMON_BADGE_BEST_BUDDY = 1;</code>
+   * <code>POKEMON_BADGE_POKEMON_BADGE_BEST_BUDDY = 1;</code>
    */
-  public static final int POKEMON_BADGE_BEST_BUDDY_VALUE = 1;
+  public static final int POKEMON_BADGE_POKEMON_BADGE_BEST_BUDDY_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum PokemonBadge
    */
   public static PokemonBadge forNumber(int value) {
     switch (value) {
-      case 0: return POKEMON_BADGE_UNSET;
-      case 1: return POKEMON_BADGE_BEST_BUDDY;
+      case 0: return POKEMON_BADGE_POKEMON_BADGE_UNSET;
+      case 1: return POKEMON_BADGE_POKEMON_BADGE_BEST_BUDDY;
       default: return null;
     }
   }
@@ -73,6 +73,10 @@ public enum PokemonBadge
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -81,7 +85,7 @@ public enum PokemonBadge
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(113);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(109);
   }
 
   private static final PokemonBadge[] VALUES = values();

@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.UpdateAdventureSyncSettingsRequestProto}
  */
-public  final class UpdateAdventureSyncSettingsRequestProto extends
+public final class UpdateAdventureSyncSettingsRequestProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.UpdateAdventureSyncSettingsRequestProto)
     UpdateAdventureSyncSettingsRequestProtoOrBuilder {
@@ -99,6 +99,7 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
    * @return Whether the adventureSyncSettings field is set.
    */
+  @java.lang.Override
   public boolean hasAdventureSyncSettings() {
     return adventureSyncSettings_ != null;
   }
@@ -106,12 +107,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
    * @return The adventureSyncSettings.
    */
+  @java.lang.Override
   public POGOProtos.Rpc.AdventureSyncSettingsProto getAdventureSyncSettings() {
     return adventureSyncSettings_ == null ? POGOProtos.Rpc.AdventureSyncSettingsProto.getDefaultInstance() : adventureSyncSettings_;
   }
   /**
    * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
    */
+  @java.lang.Override
   public POGOProtos.Rpc.AdventureSyncSettingsProtoOrBuilder getAdventureSyncSettingsOrBuilder() {
     return getAdventureSyncSettings();
   }

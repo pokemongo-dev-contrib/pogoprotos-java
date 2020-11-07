@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum GuiTransitionType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>GUI_TRANSITION_TYPE_IN = 0;</code>
+   * <code>PLATFORM_GUI_TRANSITION_TYPE_IN = 0;</code>
    */
-  GUI_TRANSITION_TYPE_IN(0),
+  PLATFORM_GUI_TRANSITION_TYPE_IN(0),
   /**
-   * <code>GUI_TRANSITION_TYPE_OUT = 1;</code>
+   * <code>PLATFORM_GUI_TRANSITION_TYPE_OUT = 1;</code>
    */
-  GUI_TRANSITION_TYPE_OUT(1),
+  PLATFORM_GUI_TRANSITION_TYPE_OUT(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>GUI_TRANSITION_TYPE_IN = 0;</code>
+   * <code>PLATFORM_GUI_TRANSITION_TYPE_IN = 0;</code>
    */
-  public static final int GUI_TRANSITION_TYPE_IN_VALUE = 0;
+  public static final int PLATFORM_GUI_TRANSITION_TYPE_IN_VALUE = 0;
   /**
-   * <code>GUI_TRANSITION_TYPE_OUT = 1;</code>
+   * <code>PLATFORM_GUI_TRANSITION_TYPE_OUT = 1;</code>
    */
-  public static final int GUI_TRANSITION_TYPE_OUT_VALUE = 1;
+  public static final int PLATFORM_GUI_TRANSITION_TYPE_OUT_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum GuiTransitionType
    */
   public static GuiTransitionType forNumber(int value) {
     switch (value) {
-      case 0: return GUI_TRANSITION_TYPE_IN;
-      case 1: return GUI_TRANSITION_TYPE_OUT;
+      case 0: return PLATFORM_GUI_TRANSITION_TYPE_IN;
+      case 1: return PLATFORM_GUI_TRANSITION_TYPE_OUT;
       default: return null;
     }
   }
@@ -73,6 +73,10 @@ public enum GuiTransitionType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

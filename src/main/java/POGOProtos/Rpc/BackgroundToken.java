@@ -6,7 +6,7 @@ package POGOProtos.Rpc;
 /**
  * Protobuf type {@code POGOProtos.Rpc.BackgroundToken}
  */
-public  final class BackgroundToken extends
+public final class BackgroundToken extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.BackgroundToken)
     BackgroundTokenOrBuilder {
@@ -103,6 +103,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes token = 1;</code>
    * @return The token.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getToken() {
     return token_;
   }
@@ -113,6 +114,7 @@ private static final long serialVersionUID = 0L;
    * <code>int64 expiration_time = 2;</code>
    * @return The expirationTime.
    */
+  @java.lang.Override
   public long getExpirationTime() {
     return expirationTime_;
   }
@@ -123,6 +125,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes iv = 3;</code>
    * @return The iv.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getIv() {
     return iv_;
   }
@@ -469,6 +472,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes token = 1;</code>
      * @return The token.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getToken() {
       return token_;
     }
@@ -502,6 +506,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 expiration_time = 2;</code>
      * @return The expirationTime.
      */
+    @java.lang.Override
     public long getExpirationTime() {
       return expirationTime_;
     }
@@ -532,6 +537,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes iv = 3;</code>
      * @return The iv.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getIv() {
       return iv_;
     }
