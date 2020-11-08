@@ -121,7 +121,7 @@ public enum FriendshipLevelMilestone
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(42);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(43);
   }
 
   private static final FriendshipLevelMilestone[] VALUES = values();

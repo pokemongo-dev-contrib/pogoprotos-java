@@ -130,7 +130,7 @@ public enum HoloPokemonMovementType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(58);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(59);
   }
 
   private static final HoloPokemonMovementType[] VALUES = values();

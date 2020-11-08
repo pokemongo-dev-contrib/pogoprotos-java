@@ -61,8 +61,13 @@ public interface CombatActionProtoOrBuilder extends
   float getMinigameScore();
 
   /**
-   * <code>int32 move = 16;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move = 16;</code>
+   * @return The enum numeric value on the wire for move.
+   */
+  int getMoveValue();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move = 16;</code>
    * @return The move.
    */
-  int getMove();
+  POGOProtos.Rpc.HoloPokemonMove getMove();
 }

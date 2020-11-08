@@ -85,7 +85,7 @@ public enum EggIncubatorType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(36);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(37);
   }
 
   private static final EggIncubatorType[] VALUES = values();

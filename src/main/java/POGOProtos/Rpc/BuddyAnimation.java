@@ -94,7 +94,7 @@ public enum BuddyAnimation
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(19);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(20);
   }
 
   private static final BuddyAnimation[] VALUES = values();

@@ -183,14 +183,24 @@ public interface BelugaPokemonProtoOrBuilder extends
   boolean getShiny();
 
   /**
-   * <code>int32 move1 = 24;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move1 = 24;</code>
+   * @return The enum numeric value on the wire for move1.
+   */
+  int getMove1Value();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move1 = 24;</code>
    * @return The move1.
    */
-  int getMove1();
+  POGOProtos.Rpc.HoloPokemonMove getMove1();
 
   /**
-   * <code>int32 move2 = 25;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move2 = 25;</code>
+   * @return The enum numeric value on the wire for move2.
+   */
+  int getMove2Value();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move2 = 25;</code>
    * @return The move2.
    */
-  int getMove2();
+  POGOProtos.Rpc.HoloPokemonMove getMove2();
 }

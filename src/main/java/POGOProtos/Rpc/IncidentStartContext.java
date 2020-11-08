@@ -94,7 +94,7 @@ public enum IncidentStartContext
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(68);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(69);
   }
 
   private static final IncidentStartContext[] VALUES = values();

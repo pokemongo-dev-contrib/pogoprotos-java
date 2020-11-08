@@ -112,7 +112,7 @@ public enum NewsPageTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(80);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(81);
   }
 
   private static final NewsPageTelemetryIds[] VALUES = values();

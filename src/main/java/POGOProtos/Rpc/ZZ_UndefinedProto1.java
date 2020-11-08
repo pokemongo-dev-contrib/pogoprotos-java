@@ -4,25 +4,26 @@
 package POGOProtos.Rpc;
 
 /**
- * Protobuf type {@code POGOProtos.Rpc.BBEHFJEAKNG}
+ * Protobuf type {@code POGOProtos.Rpc.ZZ_UndefinedProto1}
  */
-public final class BBEHFJEAKNG extends
+public final class ZZ_UndefinedProto1 extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.BBEHFJEAKNG)
-    BBEHFJEAKNGOrBuilder {
+    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ZZ_UndefinedProto1)
+    ZZ_UndefinedProto1OrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use BBEHFJEAKNG.newBuilder() to construct.
-  private BBEHFJEAKNG(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use ZZ_UndefinedProto1.newBuilder() to construct.
+  private ZZ_UndefinedProto1(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private BBEHFJEAKNG() {
+  private ZZ_UndefinedProto1() {
+    result_ = 0;
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new BBEHFJEAKNG();
+    return new ZZ_UndefinedProto1();
   }
 
   @java.lang.Override
@@ -30,7 +31,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private BBEHFJEAKNG(
+  private ZZ_UndefinedProto1(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -49,18 +50,9 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 8: {
+            int rawValue = input.readEnum();
 
-            nmciacipohm_ = input.readInt64();
-            break;
-          }
-          case 17: {
-
-            lopeglmjchg_ = input.readDouble();
-            break;
-          }
-          case 25: {
-
-            pkpndimbhpb_ = input.readDouble();
+            result_ = rawValue;
             break;
           }
           default: {
@@ -84,48 +76,142 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BBEHFJEAKNG_descriptor;
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ZZ_UndefinedProto1_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BBEHFJEAKNG_fieldAccessorTable
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ZZ_UndefinedProto1_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            POGOProtos.Rpc.BBEHFJEAKNG.class, POGOProtos.Rpc.BBEHFJEAKNG.Builder.class);
+            POGOProtos.Rpc.ZZ_UndefinedProto1.class, POGOProtos.Rpc.ZZ_UndefinedProto1.Builder.class);
   }
 
-  public static final int NMCIACIPOHM_FIELD_NUMBER = 1;
-  private long nmciacipohm_;
   /**
-   * <code>int64 nmciacipohm = 1;</code>
-   * @return The nmciacipohm.
+   * Protobuf enum {@code POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result}
    */
-  @java.lang.Override
-  public long getNmciacipohm() {
-    return nmciacipohm_;
+  public enum ZZ_1_Result
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>SUCCESS = 0;</code>
+     */
+    SUCCESS(0),
+    /**
+     * <code>ERROR = 1;</code>
+     */
+    ERROR(1),
+    UNRECOGNIZED(-1),
+    ;
+
+    /**
+     * <code>SUCCESS = 0;</code>
+     */
+    public static final int SUCCESS_VALUE = 0;
+    /**
+     * <code>ERROR = 1;</code>
+     */
+    public static final int ERROR_VALUE = 1;
+
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static ZZ_1_Result valueOf(int value) {
+      return forNumber(value);
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static ZZ_1_Result forNumber(int value) {
+      switch (value) {
+        case 0: return SUCCESS;
+        case 1: return ERROR;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<ZZ_1_Result>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+        ZZ_1_Result> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ZZ_1_Result>() {
+            public ZZ_1_Result findValueByNumber(int number) {
+              return ZZ_1_Result.forNumber(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
+      return getDescriptor().getValues().get(ordinal());
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return POGOProtos.Rpc.ZZ_UndefinedProto1.getDescriptor().getEnumTypes().get(0);
+    }
+
+    private static final ZZ_1_Result[] VALUES = values();
+
+    public static ZZ_1_Result valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private ZZ_1_Result(int value) {
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result)
   }
 
-  public static final int LOPEGLMJCHG_FIELD_NUMBER = 2;
-  private double lopeglmjchg_;
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
   /**
-   * <code>double lopeglmjchg = 2;</code>
-   * @return The lopeglmjchg.
+   * <code>.POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override
-  public double getLopeglmjchg() {
-    return lopeglmjchg_;
+  @java.lang.Override public int getResultValue() {
+    return result_;
   }
-
-  public static final int PKPNDIMBHPB_FIELD_NUMBER = 3;
-  private double pkpndimbhpb_;
   /**
-   * <code>double pkpndimbhpb = 3;</code>
-   * @return The pkpndimbhpb.
+   * <code>.POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result result = 1;</code>
+   * @return The result.
    */
-  @java.lang.Override
-  public double getPkpndimbhpb() {
-    return pkpndimbhpb_;
+  @java.lang.Override public POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result getResult() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result result = POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result.UNRECOGNIZED : result;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -142,14 +228,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (nmciacipohm_ != 0L) {
-      output.writeInt64(1, nmciacipohm_);
-    }
-    if (lopeglmjchg_ != 0D) {
-      output.writeDouble(2, lopeglmjchg_);
-    }
-    if (pkpndimbhpb_ != 0D) {
-      output.writeDouble(3, pkpndimbhpb_);
+    if (result_ != POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result.SUCCESS.getNumber()) {
+      output.writeEnum(1, result_);
     }
     unknownFields.writeTo(output);
   }
@@ -160,17 +240,9 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (nmciacipohm_ != 0L) {
+    if (result_ != POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result.SUCCESS.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(1, nmciacipohm_);
-    }
-    if (lopeglmjchg_ != 0D) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(2, lopeglmjchg_);
-    }
-    if (pkpndimbhpb_ != 0D) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(3, pkpndimbhpb_);
+        .computeEnumSize(1, result_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -182,19 +254,12 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof POGOProtos.Rpc.BBEHFJEAKNG)) {
+    if (!(obj instanceof POGOProtos.Rpc.ZZ_UndefinedProto1)) {
       return super.equals(obj);
     }
-    POGOProtos.Rpc.BBEHFJEAKNG other = (POGOProtos.Rpc.BBEHFJEAKNG) obj;
+    POGOProtos.Rpc.ZZ_UndefinedProto1 other = (POGOProtos.Rpc.ZZ_UndefinedProto1) obj;
 
-    if (getNmciacipohm()
-        != other.getNmciacipohm()) return false;
-    if (java.lang.Double.doubleToLongBits(getLopeglmjchg())
-        != java.lang.Double.doubleToLongBits(
-            other.getLopeglmjchg())) return false;
-    if (java.lang.Double.doubleToLongBits(getPkpndimbhpb())
-        != java.lang.Double.doubleToLongBits(
-            other.getPkpndimbhpb())) return false;
+    if (result_ != other.result_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -206,83 +271,76 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + NMCIACIPOHM_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getNmciacipohm());
-    hash = (37 * hash) + LOPEGLMJCHG_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getLopeglmjchg()));
-    hash = (37 * hash) + PKPNDIMBHPB_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getPkpndimbhpb()));
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseFrom(
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseFrom(
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseFrom(
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseFrom(
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseFrom(byte[] data)
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseFrom(
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseFrom(
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseDelimitedFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseDelimitedFrom(
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseFrom(
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.BBEHFJEAKNG parseFrom(
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -295,7 +353,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(POGOProtos.Rpc.BBEHFJEAKNG prototype) {
+  public static Builder newBuilder(POGOProtos.Rpc.ZZ_UndefinedProto1 prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -311,26 +369,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code POGOProtos.Rpc.BBEHFJEAKNG}
+   * Protobuf type {@code POGOProtos.Rpc.ZZ_UndefinedProto1}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.BBEHFJEAKNG)
-      POGOProtos.Rpc.BBEHFJEAKNGOrBuilder {
+      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.ZZ_UndefinedProto1)
+      POGOProtos.Rpc.ZZ_UndefinedProto1OrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BBEHFJEAKNG_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ZZ_UndefinedProto1_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BBEHFJEAKNG_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ZZ_UndefinedProto1_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.BBEHFJEAKNG.class, POGOProtos.Rpc.BBEHFJEAKNG.Builder.class);
+              POGOProtos.Rpc.ZZ_UndefinedProto1.class, POGOProtos.Rpc.ZZ_UndefinedProto1.Builder.class);
     }
 
-    // Construct using POGOProtos.Rpc.BBEHFJEAKNG.newBuilder()
+    // Construct using POGOProtos.Rpc.ZZ_UndefinedProto1.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -348,11 +406,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      nmciacipohm_ = 0L;
-
-      lopeglmjchg_ = 0D;
-
-      pkpndimbhpb_ = 0D;
+      result_ = 0;
 
       return this;
     }
@@ -360,17 +414,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BBEHFJEAKNG_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ZZ_UndefinedProto1_descriptor;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.BBEHFJEAKNG getDefaultInstanceForType() {
-      return POGOProtos.Rpc.BBEHFJEAKNG.getDefaultInstance();
+    public POGOProtos.Rpc.ZZ_UndefinedProto1 getDefaultInstanceForType() {
+      return POGOProtos.Rpc.ZZ_UndefinedProto1.getDefaultInstance();
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.BBEHFJEAKNG build() {
-      POGOProtos.Rpc.BBEHFJEAKNG result = buildPartial();
+    public POGOProtos.Rpc.ZZ_UndefinedProto1 build() {
+      POGOProtos.Rpc.ZZ_UndefinedProto1 result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -378,11 +432,9 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.BBEHFJEAKNG buildPartial() {
-      POGOProtos.Rpc.BBEHFJEAKNG result = new POGOProtos.Rpc.BBEHFJEAKNG(this);
-      result.nmciacipohm_ = nmciacipohm_;
-      result.lopeglmjchg_ = lopeglmjchg_;
-      result.pkpndimbhpb_ = pkpndimbhpb_;
+    public POGOProtos.Rpc.ZZ_UndefinedProto1 buildPartial() {
+      POGOProtos.Rpc.ZZ_UndefinedProto1 result = new POGOProtos.Rpc.ZZ_UndefinedProto1(this);
+      result.result_ = result_;
       onBuilt();
       return result;
     }
@@ -421,24 +473,18 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof POGOProtos.Rpc.BBEHFJEAKNG) {
-        return mergeFrom((POGOProtos.Rpc.BBEHFJEAKNG)other);
+      if (other instanceof POGOProtos.Rpc.ZZ_UndefinedProto1) {
+        return mergeFrom((POGOProtos.Rpc.ZZ_UndefinedProto1)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(POGOProtos.Rpc.BBEHFJEAKNG other) {
-      if (other == POGOProtos.Rpc.BBEHFJEAKNG.getDefaultInstance()) return this;
-      if (other.getNmciacipohm() != 0L) {
-        setNmciacipohm(other.getNmciacipohm());
-      }
-      if (other.getLopeglmjchg() != 0D) {
-        setLopeglmjchg(other.getLopeglmjchg());
-      }
-      if (other.getPkpndimbhpb() != 0D) {
-        setPkpndimbhpb(other.getPkpndimbhpb());
+    public Builder mergeFrom(POGOProtos.Rpc.ZZ_UndefinedProto1 other) {
+      if (other == POGOProtos.Rpc.ZZ_UndefinedProto1.getDefaultInstance()) return this;
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -455,11 +501,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      POGOProtos.Rpc.BBEHFJEAKNG parsedMessage = null;
+      POGOProtos.Rpc.ZZ_UndefinedProto1 parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (POGOProtos.Rpc.BBEHFJEAKNG) e.getUnfinishedMessage();
+        parsedMessage = (POGOProtos.Rpc.ZZ_UndefinedProto1) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -469,95 +515,56 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private long nmciacipohm_ ;
+    private int result_ = 0;
     /**
-     * <code>int64 nmciacipohm = 1;</code>
-     * @return The nmciacipohm.
+     * <code>.POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    @java.lang.Override public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResultValue(int value) {
+      
+      result_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result result = 1;</code>
+     * @return The result.
      */
     @java.lang.Override
-    public long getNmciacipohm() {
-      return nmciacipohm_;
+    public POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result result = POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result.UNRECOGNIZED : result;
     }
     /**
-     * <code>int64 nmciacipohm = 1;</code>
-     * @param value The nmciacipohm to set.
+     * <code>.POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result result = 1;</code>
+     * @param value The result to set.
      * @return This builder for chaining.
      */
-    public Builder setNmciacipohm(long value) {
+    public Builder setResult(POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
       
-      nmciacipohm_ = value;
+      result_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>int64 nmciacipohm = 1;</code>
+     * <code>.POGOProtos.Rpc.ZZ_UndefinedProto1.ZZ_1_Result result = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearNmciacipohm() {
+    public Builder clearResult() {
       
-      nmciacipohm_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private double lopeglmjchg_ ;
-    /**
-     * <code>double lopeglmjchg = 2;</code>
-     * @return The lopeglmjchg.
-     */
-    @java.lang.Override
-    public double getLopeglmjchg() {
-      return lopeglmjchg_;
-    }
-    /**
-     * <code>double lopeglmjchg = 2;</code>
-     * @param value The lopeglmjchg to set.
-     * @return This builder for chaining.
-     */
-    public Builder setLopeglmjchg(double value) {
-      
-      lopeglmjchg_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>double lopeglmjchg = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearLopeglmjchg() {
-      
-      lopeglmjchg_ = 0D;
-      onChanged();
-      return this;
-    }
-
-    private double pkpndimbhpb_ ;
-    /**
-     * <code>double pkpndimbhpb = 3;</code>
-     * @return The pkpndimbhpb.
-     */
-    @java.lang.Override
-    public double getPkpndimbhpb() {
-      return pkpndimbhpb_;
-    }
-    /**
-     * <code>double pkpndimbhpb = 3;</code>
-     * @param value The pkpndimbhpb to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPkpndimbhpb(double value) {
-      
-      pkpndimbhpb_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>double pkpndimbhpb = 3;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPkpndimbhpb() {
-      
-      pkpndimbhpb_ = 0D;
+      result_ = 0;
       onChanged();
       return this;
     }
@@ -574,41 +581,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.BBEHFJEAKNG)
+    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.ZZ_UndefinedProto1)
   }
 
-  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.BBEHFJEAKNG)
-  private static final POGOProtos.Rpc.BBEHFJEAKNG DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.ZZ_UndefinedProto1)
+  private static final POGOProtos.Rpc.ZZ_UndefinedProto1 DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new POGOProtos.Rpc.BBEHFJEAKNG();
+    DEFAULT_INSTANCE = new POGOProtos.Rpc.ZZ_UndefinedProto1();
   }
 
-  public static POGOProtos.Rpc.BBEHFJEAKNG getDefaultInstance() {
+  public static POGOProtos.Rpc.ZZ_UndefinedProto1 getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<BBEHFJEAKNG>
-      PARSER = new com.google.protobuf.AbstractParser<BBEHFJEAKNG>() {
+  private static final com.google.protobuf.Parser<ZZ_UndefinedProto1>
+      PARSER = new com.google.protobuf.AbstractParser<ZZ_UndefinedProto1>() {
     @java.lang.Override
-    public BBEHFJEAKNG parsePartialFrom(
+    public ZZ_UndefinedProto1 parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new BBEHFJEAKNG(input, extensionRegistry);
+      return new ZZ_UndefinedProto1(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<BBEHFJEAKNG> parser() {
+  public static com.google.protobuf.Parser<ZZ_UndefinedProto1> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<BBEHFJEAKNG> getParserForType() {
+  public com.google.protobuf.Parser<ZZ_UndefinedProto1> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public POGOProtos.Rpc.BBEHFJEAKNG getDefaultInstanceForType() {
+  public POGOProtos.Rpc.ZZ_UndefinedProto1 getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

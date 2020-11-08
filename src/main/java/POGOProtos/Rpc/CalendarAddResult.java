@@ -103,7 +103,7 @@ public enum CalendarAddResult
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(22);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(23);
   }
 
   private static final CalendarAddResult[] VALUES = values();

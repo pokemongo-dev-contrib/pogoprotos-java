@@ -38,16 +38,26 @@ public interface PokemonProtoOrBuilder extends
   int getMaxStamina();
 
   /**
-   * <code>int32 move1 = 6;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move1 = 6;</code>
+   * @return The enum numeric value on the wire for move1.
+   */
+  int getMove1Value();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move1 = 6;</code>
    * @return The move1.
    */
-  int getMove1();
+  POGOProtos.Rpc.HoloPokemonMove getMove1();
 
   /**
-   * <code>int32 move2 = 7;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move2 = 7;</code>
+   * @return The enum numeric value on the wire for move2.
+   */
+  int getMove2Value();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move2 = 7;</code>
    * @return The move2.
    */
-  int getMove2();
+  POGOProtos.Rpc.HoloPokemonMove getMove2();
 
   /**
    * <code>string deployed_fort_id = 8;</code>
@@ -327,10 +337,15 @@ public interface PokemonProtoOrBuilder extends
   boolean getIsLucky();
 
   /**
-   * <code>int32 move3 = 47;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move3 = 47;</code>
+   * @return The enum numeric value on the wire for move3.
+   */
+  int getMove3Value();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move3 = 47;</code>
    * @return The move3.
    */
-  int getMove3();
+  POGOProtos.Rpc.HoloPokemonMove getMove3();
 
   /**
    * <code>.POGOProtos.Rpc.PokemonCombatStatsProto pvp_combat_stats = 48;</code>

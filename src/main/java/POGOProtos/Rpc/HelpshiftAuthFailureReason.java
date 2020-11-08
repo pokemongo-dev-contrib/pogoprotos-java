@@ -85,7 +85,7 @@ public enum HelpshiftAuthFailureReason
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(46);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(47);
   }
 
   private static final HelpshiftAuthFailureReason[] VALUES = values();

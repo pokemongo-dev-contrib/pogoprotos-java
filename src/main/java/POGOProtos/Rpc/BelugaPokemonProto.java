@@ -23,6 +23,8 @@ private static final long serialVersionUID = 0L;
     gender_ = 0;
     costume_ = 0;
     form_ = 0;
+    move1_ = 0;
+    move2_ = 0;
   }
 
   @java.lang.Override
@@ -178,13 +180,15 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 192: {
+            int rawValue = input.readEnum();
 
-            move1_ = input.readInt32();
+            move1_ = rawValue;
             break;
           }
           case 200: {
+            int rawValue = input.readEnum();
 
-            move2_ = input.readInt32();
+            move2_ = rawValue;
             break;
           }
           default: {
@@ -1172,23 +1176,39 @@ private static final long serialVersionUID = 0L;
   public static final int MOVE1_FIELD_NUMBER = 24;
   private int move1_;
   /**
-   * <code>int32 move1 = 24;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move1 = 24;</code>
+   * @return The enum numeric value on the wire for move1.
+   */
+  @java.lang.Override public int getMove1Value() {
+    return move1_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move1 = 24;</code>
    * @return The move1.
    */
-  @java.lang.Override
-  public int getMove1() {
-    return move1_;
+  @java.lang.Override public POGOProtos.Rpc.HoloPokemonMove getMove1() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.HoloPokemonMove result = POGOProtos.Rpc.HoloPokemonMove.valueOf(move1_);
+    return result == null ? POGOProtos.Rpc.HoloPokemonMove.UNRECOGNIZED : result;
   }
 
   public static final int MOVE2_FIELD_NUMBER = 25;
   private int move2_;
   /**
-   * <code>int32 move2 = 25;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move2 = 25;</code>
+   * @return The enum numeric value on the wire for move2.
+   */
+  @java.lang.Override public int getMove2Value() {
+    return move2_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonMove move2 = 25;</code>
    * @return The move2.
    */
-  @java.lang.Override
-  public int getMove2() {
-    return move2_;
+  @java.lang.Override public POGOProtos.Rpc.HoloPokemonMove getMove2() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.HoloPokemonMove result = POGOProtos.Rpc.HoloPokemonMove.valueOf(move2_);
+    return result == null ? POGOProtos.Rpc.HoloPokemonMove.UNRECOGNIZED : result;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -1274,11 +1294,11 @@ private static final long serialVersionUID = 0L;
     if (shiny_ != false) {
       output.writeBool(23, shiny_);
     }
-    if (move1_ != 0) {
-      output.writeInt32(24, move1_);
+    if (move1_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+      output.writeEnum(24, move1_);
     }
-    if (move2_ != 0) {
-      output.writeInt32(25, move2_);
+    if (move2_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+      output.writeEnum(25, move2_);
     }
     unknownFields.writeTo(output);
   }
@@ -1379,13 +1399,13 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(23, shiny_);
     }
-    if (move1_ != 0) {
+    if (move1_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(24, move1_);
+        .computeEnumSize(24, move1_);
     }
-    if (move2_ != 0) {
+    if (move2_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(25, move2_);
+        .computeEnumSize(25, move2_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -1448,10 +1468,8 @@ private static final long serialVersionUID = 0L;
     if (form_ != other.form_) return false;
     if (getShiny()
         != other.getShiny()) return false;
-    if (getMove1()
-        != other.getMove1()) return false;
-    if (getMove2()
-        != other.getMove2()) return false;
+    if (move1_ != other.move1_) return false;
+    if (move2_ != other.move2_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -1516,9 +1534,9 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getShiny());
     hash = (37 * hash) + MOVE1_FIELD_NUMBER;
-    hash = (53 * hash) + getMove1();
+    hash = (53 * hash) + move1_;
     hash = (37 * hash) + MOVE2_FIELD_NUMBER;
-    hash = (53 * hash) + getMove2();
+    hash = (53 * hash) + move2_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1872,11 +1890,11 @@ private static final long serialVersionUID = 0L;
       if (other.getShiny() != false) {
         setShiny(other.getShiny());
       }
-      if (other.getMove1() != 0) {
-        setMove1(other.getMove1());
+      if (other.move1_ != 0) {
+        setMove1Value(other.getMove1Value());
       }
-      if (other.getMove2() != 0) {
-        setMove2(other.getMove2());
+      if (other.move2_ != 0) {
+        setMove2Value(other.getMove2Value());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -2825,28 +2843,51 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int move1_ ;
+    private int move1_ = 0;
     /**
-     * <code>int32 move1 = 24;</code>
-     * @return The move1.
+     * <code>.POGOProtos.Rpc.HoloPokemonMove move1 = 24;</code>
+     * @return The enum numeric value on the wire for move1.
      */
-    @java.lang.Override
-    public int getMove1() {
+    @java.lang.Override public int getMove1Value() {
       return move1_;
     }
     /**
-     * <code>int32 move1 = 24;</code>
-     * @param value The move1 to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonMove move1 = 24;</code>
+     * @param value The enum numeric value on the wire for move1 to set.
      * @return This builder for chaining.
      */
-    public Builder setMove1(int value) {
+    public Builder setMove1Value(int value) {
       
       move1_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 move1 = 24;</code>
+     * <code>.POGOProtos.Rpc.HoloPokemonMove move1 = 24;</code>
+     * @return The move1.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.HoloPokemonMove getMove1() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.HoloPokemonMove result = POGOProtos.Rpc.HoloPokemonMove.valueOf(move1_);
+      return result == null ? POGOProtos.Rpc.HoloPokemonMove.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonMove move1 = 24;</code>
+     * @param value The move1 to set.
+     * @return This builder for chaining.
+     */
+    public Builder setMove1(POGOProtos.Rpc.HoloPokemonMove value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      move1_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonMove move1 = 24;</code>
      * @return This builder for chaining.
      */
     public Builder clearMove1() {
@@ -2856,28 +2897,51 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int move2_ ;
+    private int move2_ = 0;
     /**
-     * <code>int32 move2 = 25;</code>
-     * @return The move2.
+     * <code>.POGOProtos.Rpc.HoloPokemonMove move2 = 25;</code>
+     * @return The enum numeric value on the wire for move2.
      */
-    @java.lang.Override
-    public int getMove2() {
+    @java.lang.Override public int getMove2Value() {
       return move2_;
     }
     /**
-     * <code>int32 move2 = 25;</code>
-     * @param value The move2 to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonMove move2 = 25;</code>
+     * @param value The enum numeric value on the wire for move2 to set.
      * @return This builder for chaining.
      */
-    public Builder setMove2(int value) {
+    public Builder setMove2Value(int value) {
       
       move2_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 move2 = 25;</code>
+     * <code>.POGOProtos.Rpc.HoloPokemonMove move2 = 25;</code>
+     * @return The move2.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.HoloPokemonMove getMove2() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.HoloPokemonMove result = POGOProtos.Rpc.HoloPokemonMove.valueOf(move2_);
+      return result == null ? POGOProtos.Rpc.HoloPokemonMove.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonMove move2 = 25;</code>
+     * @param value The move2 to set.
+     * @return This builder for chaining.
+     */
+    public Builder setMove2(POGOProtos.Rpc.HoloPokemonMove value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      move2_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonMove move2 = 25;</code>
      * @return This builder for chaining.
      */
     public Builder clearMove2() {

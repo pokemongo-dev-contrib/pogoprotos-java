@@ -283,7 +283,7 @@ public enum HoloItemCategory
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(50);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(51);
   }
 
   private static final HoloItemCategory[] VALUES = values();

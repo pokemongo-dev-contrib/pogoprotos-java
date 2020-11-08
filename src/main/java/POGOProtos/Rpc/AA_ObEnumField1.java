@@ -4,53 +4,53 @@
 package POGOProtos.Rpc;
 
 /**
- * Protobuf enum {@code POGOProtos.Rpc.ObEnumField}
+ * Protobuf enum {@code POGOProtos.Rpc.AA_ObEnumField1}
  */
-public enum ObEnumField
+public enum AA_ObEnumField1
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>OB_ENUM_FIELD_NONE = 0;</code>
+   * <code>AA_OB_ENUM_FIELD1_NONE = 0;</code>
    */
-  OB_ENUM_FIELD_NONE(0),
+  AA_OB_ENUM_FIELD1_NONE(0),
   /**
-   * <code>OB_ENUM_FIELD_BRONZE = 1;</code>
+   * <code>AA_OB_ENUM_FIELD1_BRONZE = 1;</code>
    */
-  OB_ENUM_FIELD_BRONZE(1),
+  AA_OB_ENUM_FIELD1_BRONZE(1),
   /**
-   * <code>OB_ENUM_FIELD_SILVER = 2;</code>
+   * <code>AA_OB_ENUM_FIELD1_SILVER = 2;</code>
    */
-  OB_ENUM_FIELD_SILVER(2),
+  AA_OB_ENUM_FIELD1_SILVER(2),
   /**
-   * <code>OB_ENUM_FIELD_GOLD = 3;</code>
+   * <code>AA_OB_ENUM_FIELD1_GOLD = 3;</code>
    */
-  OB_ENUM_FIELD_GOLD(3),
+  AA_OB_ENUM_FIELD1_GOLD(3),
   /**
-   * <code>OB_ENUM_FIELD_PLATINUM = 4;</code>
+   * <code>AA_OB_ENUM_FIELD1_PLATINUM = 4;</code>
    */
-  OB_ENUM_FIELD_PLATINUM(4),
+  AA_OB_ENUM_FIELD1_PLATINUM(4),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>OB_ENUM_FIELD_NONE = 0;</code>
+   * <code>AA_OB_ENUM_FIELD1_NONE = 0;</code>
    */
-  public static final int OB_ENUM_FIELD_NONE_VALUE = 0;
+  public static final int AA_OB_ENUM_FIELD1_NONE_VALUE = 0;
   /**
-   * <code>OB_ENUM_FIELD_BRONZE = 1;</code>
+   * <code>AA_OB_ENUM_FIELD1_BRONZE = 1;</code>
    */
-  public static final int OB_ENUM_FIELD_BRONZE_VALUE = 1;
+  public static final int AA_OB_ENUM_FIELD1_BRONZE_VALUE = 1;
   /**
-   * <code>OB_ENUM_FIELD_SILVER = 2;</code>
+   * <code>AA_OB_ENUM_FIELD1_SILVER = 2;</code>
    */
-  public static final int OB_ENUM_FIELD_SILVER_VALUE = 2;
+  public static final int AA_OB_ENUM_FIELD1_SILVER_VALUE = 2;
   /**
-   * <code>OB_ENUM_FIELD_GOLD = 3;</code>
+   * <code>AA_OB_ENUM_FIELD1_GOLD = 3;</code>
    */
-  public static final int OB_ENUM_FIELD_GOLD_VALUE = 3;
+  public static final int AA_OB_ENUM_FIELD1_GOLD_VALUE = 3;
   /**
-   * <code>OB_ENUM_FIELD_PLATINUM = 4;</code>
+   * <code>AA_OB_ENUM_FIELD1_PLATINUM = 4;</code>
    */
-  public static final int OB_ENUM_FIELD_PLATINUM_VALUE = 4;
+  public static final int AA_OB_ENUM_FIELD1_PLATINUM_VALUE = 4;
 
 
   public final int getNumber() {
@@ -67,7 +67,7 @@ public enum ObEnumField
    * @deprecated Use {@link #forNumber(int)} instead.
    */
   @java.lang.Deprecated
-  public static ObEnumField valueOf(int value) {
+  public static AA_ObEnumField1 valueOf(int value) {
     return forNumber(value);
   }
 
@@ -75,26 +75,26 @@ public enum ObEnumField
    * @param value The numeric wire value of the corresponding enum entry.
    * @return The enum associated with the given numeric wire value.
    */
-  public static ObEnumField forNumber(int value) {
+  public static AA_ObEnumField1 forNumber(int value) {
     switch (value) {
-      case 0: return OB_ENUM_FIELD_NONE;
-      case 1: return OB_ENUM_FIELD_BRONZE;
-      case 2: return OB_ENUM_FIELD_SILVER;
-      case 3: return OB_ENUM_FIELD_GOLD;
-      case 4: return OB_ENUM_FIELD_PLATINUM;
+      case 0: return AA_OB_ENUM_FIELD1_NONE;
+      case 1: return AA_OB_ENUM_FIELD1_BRONZE;
+      case 2: return AA_OB_ENUM_FIELD1_SILVER;
+      case 3: return AA_OB_ENUM_FIELD1_GOLD;
+      case 4: return AA_OB_ENUM_FIELD1_PLATINUM;
       default: return null;
     }
   }
 
-  public static com.google.protobuf.Internal.EnumLiteMap<ObEnumField>
+  public static com.google.protobuf.Internal.EnumLiteMap<AA_ObEnumField1>
       internalGetValueMap() {
     return internalValueMap;
   }
   private static final com.google.protobuf.Internal.EnumLiteMap<
-      ObEnumField> internalValueMap =
-        new com.google.protobuf.Internal.EnumLiteMap<ObEnumField>() {
-          public ObEnumField findValueByNumber(int number) {
-            return ObEnumField.forNumber(number);
+      AA_ObEnumField1> internalValueMap =
+        new com.google.protobuf.Internal.EnumLiteMap<AA_ObEnumField1>() {
+          public AA_ObEnumField1 findValueByNumber(int number) {
+            return AA_ObEnumField1.forNumber(number);
           }
         };
 
@@ -112,12 +112,12 @@ public enum ObEnumField
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(84);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(0);
   }
 
-  private static final ObEnumField[] VALUES = values();
+  private static final AA_ObEnumField1[] VALUES = values();
 
-  public static ObEnumField valueOf(
+  public static AA_ObEnumField1 valueOf(
       com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
     if (desc.getType() != getDescriptor()) {
       throw new java.lang.IllegalArgumentException(
@@ -131,10 +131,10 @@ public enum ObEnumField
 
   private final int value;
 
-  private ObEnumField(int value) {
+  private AA_ObEnumField1(int value) {
     this.value = value;
   }
 
-  // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.ObEnumField)
+  // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.AA_ObEnumField1)
 }
 
