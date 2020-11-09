@@ -184,10 +184,10 @@ private static final long serialVersionUID = 0L;
     if (purificationCandyNeeded_ != 0) {
       output.writeUInt32(2, purificationCandyNeeded_);
     }
-    if (purifiedChargeMove_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+    if (purifiedChargeMove_ != POGOProtos.Rpc.HoloPokemonMove.MOVE_UNSET.getNumber()) {
       output.writeEnum(3, purifiedChargeMove_);
     }
-    if (shadowChargeMove_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+    if (shadowChargeMove_ != POGOProtos.Rpc.HoloPokemonMove.MOVE_UNSET.getNumber()) {
       output.writeEnum(4, shadowChargeMove_);
     }
     unknownFields.writeTo(output);
@@ -207,11 +207,11 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeUInt32Size(2, purificationCandyNeeded_);
     }
-    if (purifiedChargeMove_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+    if (purifiedChargeMove_ != POGOProtos.Rpc.HoloPokemonMove.MOVE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, purifiedChargeMove_);
     }
-    if (shadowChargeMove_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+    if (shadowChargeMove_ != POGOProtos.Rpc.HoloPokemonMove.MOVE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(4, shadowChargeMove_);
     }

@@ -85,7 +85,7 @@ public enum VsSeekerRewardTrack
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(143);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(148);
   }
 
   private static final VsSeekerRewardTrack[] VALUES = values();

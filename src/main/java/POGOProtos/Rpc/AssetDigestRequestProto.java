@@ -319,7 +319,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (platform_ != POGOProtos.Rpc.Platform.PLATFORM_PLATFORM_UNSET.getNumber()) {
+    if (platform_ != POGOProtos.Rpc.Platform.PLATFORM_UNSET.getNumber()) {
       output.writeEnum(1, platform_);
     }
     if (!getDeviceManufacturerBytes().isEmpty()) {
@@ -352,7 +352,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (platform_ != POGOProtos.Rpc.Platform.PLATFORM_PLATFORM_UNSET.getNumber()) {
+    if (platform_ != POGOProtos.Rpc.Platform.PLATFORM_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, platform_);
     }

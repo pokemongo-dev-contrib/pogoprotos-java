@@ -168,7 +168,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (distanceCheckOverrideFriendshipLevel_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (distanceCheckOverrideFriendshipLevel_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       output.writeEnum(1, distanceCheckOverrideFriendshipLevel_);
     }
     if (getCombatChallengePollingIntervalSec_ != 0) {
@@ -189,7 +189,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (distanceCheckOverrideFriendshipLevel_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (distanceCheckOverrideFriendshipLevel_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, distanceCheckOverrideFriendshipLevel_);
     }

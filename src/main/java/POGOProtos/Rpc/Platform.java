@@ -9,56 +9,56 @@ package POGOProtos.Rpc;
 public enum Platform
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>PLATFORM_PLATFORM_UNSET = 0;</code>
+   * <code>PLATFORM_UNSET = 0;</code>
    */
-  PLATFORM_PLATFORM_UNSET(0),
+  PLATFORM_UNSET(0),
   /**
-   * <code>PLATFORM_PLATFORM_IOS = 1;</code>
+   * <code>PLATFORM_IOS = 1;</code>
    */
-  PLATFORM_PLATFORM_IOS(1),
+  PLATFORM_IOS(1),
   /**
-   * <code>PLATFORM_PLATFORM_ANDROID = 2;</code>
+   * <code>PLATFORM_ANDROID = 2;</code>
    */
-  PLATFORM_PLATFORM_ANDROID(2),
+  PLATFORM_ANDROID(2),
   /**
-   * <code>PLATFORM_PLATFORM_OSX = 3;</code>
+   * <code>PLATFORM_OSX = 3;</code>
    */
-  PLATFORM_PLATFORM_OSX(3),
+  PLATFORM_OSX(3),
   /**
-   * <code>PLATFORM_PLATFORM_WINDOWS = 4;</code>
+   * <code>PLATFORM_WINDOWS = 4;</code>
    */
-  PLATFORM_PLATFORM_WINDOWS(4),
+  PLATFORM_WINDOWS(4),
   /**
-   * <code>PLATFORM_PLATFORM_APPLE_WATCH = 5;</code>
+   * <code>PLATFORM_APPLE_WATCH = 5;</code>
    */
-  PLATFORM_PLATFORM_APPLE_WATCH(5),
+  PLATFORM_APPLE_WATCH(5),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>PLATFORM_PLATFORM_UNSET = 0;</code>
+   * <code>PLATFORM_UNSET = 0;</code>
    */
-  public static final int PLATFORM_PLATFORM_UNSET_VALUE = 0;
+  public static final int PLATFORM_UNSET_VALUE = 0;
   /**
-   * <code>PLATFORM_PLATFORM_IOS = 1;</code>
+   * <code>PLATFORM_IOS = 1;</code>
    */
-  public static final int PLATFORM_PLATFORM_IOS_VALUE = 1;
+  public static final int PLATFORM_IOS_VALUE = 1;
   /**
-   * <code>PLATFORM_PLATFORM_ANDROID = 2;</code>
+   * <code>PLATFORM_ANDROID = 2;</code>
    */
-  public static final int PLATFORM_PLATFORM_ANDROID_VALUE = 2;
+  public static final int PLATFORM_ANDROID_VALUE = 2;
   /**
-   * <code>PLATFORM_PLATFORM_OSX = 3;</code>
+   * <code>PLATFORM_OSX = 3;</code>
    */
-  public static final int PLATFORM_PLATFORM_OSX_VALUE = 3;
+  public static final int PLATFORM_OSX_VALUE = 3;
   /**
-   * <code>PLATFORM_PLATFORM_WINDOWS = 4;</code>
+   * <code>PLATFORM_WINDOWS = 4;</code>
    */
-  public static final int PLATFORM_PLATFORM_WINDOWS_VALUE = 4;
+  public static final int PLATFORM_WINDOWS_VALUE = 4;
   /**
-   * <code>PLATFORM_PLATFORM_APPLE_WATCH = 5;</code>
+   * <code>PLATFORM_APPLE_WATCH = 5;</code>
    */
-  public static final int PLATFORM_PLATFORM_APPLE_WATCH_VALUE = 5;
+  public static final int PLATFORM_APPLE_WATCH_VALUE = 5;
 
 
   public final int getNumber() {
@@ -85,12 +85,12 @@ public enum Platform
    */
   public static Platform forNumber(int value) {
     switch (value) {
-      case 0: return PLATFORM_PLATFORM_UNSET;
-      case 1: return PLATFORM_PLATFORM_IOS;
-      case 2: return PLATFORM_PLATFORM_ANDROID;
-      case 3: return PLATFORM_PLATFORM_OSX;
-      case 4: return PLATFORM_PLATFORM_WINDOWS;
-      case 5: return PLATFORM_PLATFORM_APPLE_WATCH;
+      case 0: return PLATFORM_UNSET;
+      case 1: return PLATFORM_IOS;
+      case 2: return PLATFORM_ANDROID;
+      case 3: return PLATFORM_OSX;
+      case 4: return PLATFORM_WINDOWS;
+      case 5: return PLATFORM_APPLE_WATCH;
       default: return null;
     }
   }
@@ -121,7 +121,7 @@ public enum Platform
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(96);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(98);
   }
 
   private static final Platform[] VALUES = values();

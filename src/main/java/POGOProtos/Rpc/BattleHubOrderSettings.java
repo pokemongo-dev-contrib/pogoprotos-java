@@ -355,7 +355,7 @@ private static final long serialVersionUID = 0L;
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (mainSection_ != POGOProtos.Rpc.BattleHubSection.BATTLE_HUB_SECTION_SECTION_UNSET.getNumber()) {
+      if (mainSection_ != POGOProtos.Rpc.BattleHubSection.SECTION_UNSET.getNumber()) {
         output.writeEnum(1, mainSection_);
       }
       if (getSubsectionList().size() > 0) {
@@ -374,7 +374,7 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (mainSection_ != POGOProtos.Rpc.BattleHubSection.BATTLE_HUB_SECTION_SECTION_UNSET.getNumber()) {
+      if (mainSection_ != POGOProtos.Rpc.BattleHubSection.SECTION_UNSET.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, mainSection_);
       }

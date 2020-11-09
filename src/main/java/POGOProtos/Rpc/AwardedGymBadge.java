@@ -509,7 +509,7 @@ private static final long serialVersionUID = 0L;
     if (!getFortIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, fortId_);
     }
-    if (gymBadgeType_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_TYPE_GYM_BADGE_UNSET.getNumber()) {
+    if (gymBadgeType_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_UNSET.getNumber()) {
       output.writeEnum(2, gymBadgeType_);
     }
     if (score_ != 0) {
@@ -563,7 +563,7 @@ private static final long serialVersionUID = 0L;
     if (!getFortIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, fortId_);
     }
-    if (gymBadgeType_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_TYPE_GYM_BADGE_UNSET.getNumber()) {
+    if (gymBadgeType_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, gymBadgeType_);
     }

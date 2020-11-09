@@ -181,7 +181,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(1, temporaryEvolutionId_);
     }
     if (assetBundleValue_ != 0) {
@@ -199,7 +199,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, temporaryEvolutionId_);
     }

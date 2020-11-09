@@ -9,200 +9,200 @@ package POGOProtos.Rpc;
 public enum HoloItemType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_NONE = 0;</code>
+   * <code>ITEM_TYPE_NONE = 0;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_NONE(0),
+  ITEM_TYPE_NONE(0),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_POKEBALL = 1;</code>
+   * <code>ITEM_TYPE_POKEBALL = 1;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_POKEBALL(1),
+  ITEM_TYPE_POKEBALL(1),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_POTION = 2;</code>
+   * <code>ITEM_TYPE_POTION = 2;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_POTION(2),
+  ITEM_TYPE_POTION(2),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_REVIVE = 3;</code>
+   * <code>ITEM_TYPE_REVIVE = 3;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_REVIVE(3),
+  ITEM_TYPE_REVIVE(3),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_MAP = 4;</code>
+   * <code>ITEM_TYPE_MAP = 4;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_MAP(4),
+  ITEM_TYPE_MAP(4),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_BATTLE = 5;</code>
+   * <code>ITEM_TYPE_BATTLE = 5;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_BATTLE(5),
+  ITEM_TYPE_BATTLE(5),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_FOOD = 6;</code>
+   * <code>ITEM_TYPE_FOOD = 6;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_FOOD(6),
+  ITEM_TYPE_FOOD(6),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_CAMERA = 7;</code>
+   * <code>ITEM_TYPE_CAMERA = 7;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_CAMERA(7),
+  ITEM_TYPE_CAMERA(7),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_DISK = 8;</code>
+   * <code>ITEM_TYPE_DISK = 8;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_DISK(8),
+  ITEM_TYPE_DISK(8),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_INCUBATOR = 9;</code>
+   * <code>ITEM_TYPE_INCUBATOR = 9;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_INCUBATOR(9),
+  ITEM_TYPE_INCUBATOR(9),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_INCENSE = 10;</code>
+   * <code>ITEM_TYPE_INCENSE = 10;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_INCENSE(10),
+  ITEM_TYPE_INCENSE(10),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_XP_BOOST = 11;</code>
+   * <code>ITEM_TYPE_XP_BOOST = 11;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_XP_BOOST(11),
+  ITEM_TYPE_XP_BOOST(11),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_INVENTORY_UPGRADE = 12;</code>
+   * <code>ITEM_TYPE_INVENTORY_UPGRADE = 12;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_INVENTORY_UPGRADE(12),
+  ITEM_TYPE_INVENTORY_UPGRADE(12),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_EVOLUTION_REQUIREMENT = 13;</code>
+   * <code>ITEM_TYPE_EVOLUTION_REQUIREMENT = 13;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_EVOLUTION_REQUIREMENT(13),
+  ITEM_TYPE_EVOLUTION_REQUIREMENT(13),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_MOVE_REROLL = 14;</code>
+   * <code>ITEM_TYPE_MOVE_REROLL = 14;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_MOVE_REROLL(14),
+  ITEM_TYPE_MOVE_REROLL(14),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_CANDY = 15;</code>
+   * <code>ITEM_TYPE_CANDY = 15;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_CANDY(15),
+  ITEM_TYPE_CANDY(15),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_RAID_TICKET = 16;</code>
+   * <code>ITEM_TYPE_RAID_TICKET = 16;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_RAID_TICKET(16),
+  ITEM_TYPE_RAID_TICKET(16),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_STARDUST_BOOST = 17;</code>
+   * <code>ITEM_TYPE_STARDUST_BOOST = 17;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_STARDUST_BOOST(17),
+  ITEM_TYPE_STARDUST_BOOST(17),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_FRIEND_GIFT_BOX = 18;</code>
+   * <code>ITEM_TYPE_FRIEND_GIFT_BOX = 18;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_FRIEND_GIFT_BOX(18),
+  ITEM_TYPE_FRIEND_GIFT_BOX(18),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_TEAM_CHANGE = 19;</code>
+   * <code>ITEM_TYPE_TEAM_CHANGE = 19;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_TEAM_CHANGE(19),
+  ITEM_TYPE_TEAM_CHANGE(19),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_VS_SEEKER_BATTLE_NOW = 21;</code>
+   * <code>ITEM_TYPE_VS_SEEKER_BATTLE_NOW = 21;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_VS_SEEKER_BATTLE_NOW(21),
+  ITEM_TYPE_VS_SEEKER_BATTLE_NOW(21),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_INCIDENT_TICKET = 22;</code>
+   * <code>ITEM_TYPE_INCIDENT_TICKET = 22;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_INCIDENT_TICKET(22),
+  ITEM_TYPE_INCIDENT_TICKET(22),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_GLOBAL_EVENT_TICKET = 23;</code>
+   * <code>ITEM_TYPE_GLOBAL_EVENT_TICKET = 23;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_GLOBAL_EVENT_TICKET(23),
+  ITEM_TYPE_GLOBAL_EVENT_TICKET(23),
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_STICKER_INVENTORY = 24;</code>
+   * <code>ITEM_TYPE_STICKER_INVENTORY = 24;</code>
    */
-  HOLO_ITEM_TYPE_ITEM_TYPE_STICKER_INVENTORY(24),
+  ITEM_TYPE_STICKER_INVENTORY(24),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_NONE = 0;</code>
+   * <code>ITEM_TYPE_NONE = 0;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_NONE_VALUE = 0;
+  public static final int ITEM_TYPE_NONE_VALUE = 0;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_POKEBALL = 1;</code>
+   * <code>ITEM_TYPE_POKEBALL = 1;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_POKEBALL_VALUE = 1;
+  public static final int ITEM_TYPE_POKEBALL_VALUE = 1;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_POTION = 2;</code>
+   * <code>ITEM_TYPE_POTION = 2;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_POTION_VALUE = 2;
+  public static final int ITEM_TYPE_POTION_VALUE = 2;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_REVIVE = 3;</code>
+   * <code>ITEM_TYPE_REVIVE = 3;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_REVIVE_VALUE = 3;
+  public static final int ITEM_TYPE_REVIVE_VALUE = 3;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_MAP = 4;</code>
+   * <code>ITEM_TYPE_MAP = 4;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_MAP_VALUE = 4;
+  public static final int ITEM_TYPE_MAP_VALUE = 4;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_BATTLE = 5;</code>
+   * <code>ITEM_TYPE_BATTLE = 5;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_BATTLE_VALUE = 5;
+  public static final int ITEM_TYPE_BATTLE_VALUE = 5;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_FOOD = 6;</code>
+   * <code>ITEM_TYPE_FOOD = 6;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_FOOD_VALUE = 6;
+  public static final int ITEM_TYPE_FOOD_VALUE = 6;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_CAMERA = 7;</code>
+   * <code>ITEM_TYPE_CAMERA = 7;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_CAMERA_VALUE = 7;
+  public static final int ITEM_TYPE_CAMERA_VALUE = 7;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_DISK = 8;</code>
+   * <code>ITEM_TYPE_DISK = 8;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_DISK_VALUE = 8;
+  public static final int ITEM_TYPE_DISK_VALUE = 8;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_INCUBATOR = 9;</code>
+   * <code>ITEM_TYPE_INCUBATOR = 9;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_INCUBATOR_VALUE = 9;
+  public static final int ITEM_TYPE_INCUBATOR_VALUE = 9;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_INCENSE = 10;</code>
+   * <code>ITEM_TYPE_INCENSE = 10;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_INCENSE_VALUE = 10;
+  public static final int ITEM_TYPE_INCENSE_VALUE = 10;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_XP_BOOST = 11;</code>
+   * <code>ITEM_TYPE_XP_BOOST = 11;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_XP_BOOST_VALUE = 11;
+  public static final int ITEM_TYPE_XP_BOOST_VALUE = 11;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_INVENTORY_UPGRADE = 12;</code>
+   * <code>ITEM_TYPE_INVENTORY_UPGRADE = 12;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_INVENTORY_UPGRADE_VALUE = 12;
+  public static final int ITEM_TYPE_INVENTORY_UPGRADE_VALUE = 12;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_EVOLUTION_REQUIREMENT = 13;</code>
+   * <code>ITEM_TYPE_EVOLUTION_REQUIREMENT = 13;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_EVOLUTION_REQUIREMENT_VALUE = 13;
+  public static final int ITEM_TYPE_EVOLUTION_REQUIREMENT_VALUE = 13;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_MOVE_REROLL = 14;</code>
+   * <code>ITEM_TYPE_MOVE_REROLL = 14;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_MOVE_REROLL_VALUE = 14;
+  public static final int ITEM_TYPE_MOVE_REROLL_VALUE = 14;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_CANDY = 15;</code>
+   * <code>ITEM_TYPE_CANDY = 15;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_CANDY_VALUE = 15;
+  public static final int ITEM_TYPE_CANDY_VALUE = 15;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_RAID_TICKET = 16;</code>
+   * <code>ITEM_TYPE_RAID_TICKET = 16;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_RAID_TICKET_VALUE = 16;
+  public static final int ITEM_TYPE_RAID_TICKET_VALUE = 16;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_STARDUST_BOOST = 17;</code>
+   * <code>ITEM_TYPE_STARDUST_BOOST = 17;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_STARDUST_BOOST_VALUE = 17;
+  public static final int ITEM_TYPE_STARDUST_BOOST_VALUE = 17;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_FRIEND_GIFT_BOX = 18;</code>
+   * <code>ITEM_TYPE_FRIEND_GIFT_BOX = 18;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_FRIEND_GIFT_BOX_VALUE = 18;
+  public static final int ITEM_TYPE_FRIEND_GIFT_BOX_VALUE = 18;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_TEAM_CHANGE = 19;</code>
+   * <code>ITEM_TYPE_TEAM_CHANGE = 19;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_TEAM_CHANGE_VALUE = 19;
+  public static final int ITEM_TYPE_TEAM_CHANGE_VALUE = 19;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_VS_SEEKER_BATTLE_NOW = 21;</code>
+   * <code>ITEM_TYPE_VS_SEEKER_BATTLE_NOW = 21;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_VS_SEEKER_BATTLE_NOW_VALUE = 21;
+  public static final int ITEM_TYPE_VS_SEEKER_BATTLE_NOW_VALUE = 21;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_INCIDENT_TICKET = 22;</code>
+   * <code>ITEM_TYPE_INCIDENT_TICKET = 22;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_INCIDENT_TICKET_VALUE = 22;
+  public static final int ITEM_TYPE_INCIDENT_TICKET_VALUE = 22;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_GLOBAL_EVENT_TICKET = 23;</code>
+   * <code>ITEM_TYPE_GLOBAL_EVENT_TICKET = 23;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_GLOBAL_EVENT_TICKET_VALUE = 23;
+  public static final int ITEM_TYPE_GLOBAL_EVENT_TICKET_VALUE = 23;
   /**
-   * <code>HOLO_ITEM_TYPE_ITEM_TYPE_STICKER_INVENTORY = 24;</code>
+   * <code>ITEM_TYPE_STICKER_INVENTORY = 24;</code>
    */
-  public static final int HOLO_ITEM_TYPE_ITEM_TYPE_STICKER_INVENTORY_VALUE = 24;
+  public static final int ITEM_TYPE_STICKER_INVENTORY_VALUE = 24;
 
 
   public final int getNumber() {
@@ -229,30 +229,30 @@ public enum HoloItemType
    */
   public static HoloItemType forNumber(int value) {
     switch (value) {
-      case 0: return HOLO_ITEM_TYPE_ITEM_TYPE_NONE;
-      case 1: return HOLO_ITEM_TYPE_ITEM_TYPE_POKEBALL;
-      case 2: return HOLO_ITEM_TYPE_ITEM_TYPE_POTION;
-      case 3: return HOLO_ITEM_TYPE_ITEM_TYPE_REVIVE;
-      case 4: return HOLO_ITEM_TYPE_ITEM_TYPE_MAP;
-      case 5: return HOLO_ITEM_TYPE_ITEM_TYPE_BATTLE;
-      case 6: return HOLO_ITEM_TYPE_ITEM_TYPE_FOOD;
-      case 7: return HOLO_ITEM_TYPE_ITEM_TYPE_CAMERA;
-      case 8: return HOLO_ITEM_TYPE_ITEM_TYPE_DISK;
-      case 9: return HOLO_ITEM_TYPE_ITEM_TYPE_INCUBATOR;
-      case 10: return HOLO_ITEM_TYPE_ITEM_TYPE_INCENSE;
-      case 11: return HOLO_ITEM_TYPE_ITEM_TYPE_XP_BOOST;
-      case 12: return HOLO_ITEM_TYPE_ITEM_TYPE_INVENTORY_UPGRADE;
-      case 13: return HOLO_ITEM_TYPE_ITEM_TYPE_EVOLUTION_REQUIREMENT;
-      case 14: return HOLO_ITEM_TYPE_ITEM_TYPE_MOVE_REROLL;
-      case 15: return HOLO_ITEM_TYPE_ITEM_TYPE_CANDY;
-      case 16: return HOLO_ITEM_TYPE_ITEM_TYPE_RAID_TICKET;
-      case 17: return HOLO_ITEM_TYPE_ITEM_TYPE_STARDUST_BOOST;
-      case 18: return HOLO_ITEM_TYPE_ITEM_TYPE_FRIEND_GIFT_BOX;
-      case 19: return HOLO_ITEM_TYPE_ITEM_TYPE_TEAM_CHANGE;
-      case 21: return HOLO_ITEM_TYPE_ITEM_TYPE_VS_SEEKER_BATTLE_NOW;
-      case 22: return HOLO_ITEM_TYPE_ITEM_TYPE_INCIDENT_TICKET;
-      case 23: return HOLO_ITEM_TYPE_ITEM_TYPE_GLOBAL_EVENT_TICKET;
-      case 24: return HOLO_ITEM_TYPE_ITEM_TYPE_STICKER_INVENTORY;
+      case 0: return ITEM_TYPE_NONE;
+      case 1: return ITEM_TYPE_POKEBALL;
+      case 2: return ITEM_TYPE_POTION;
+      case 3: return ITEM_TYPE_REVIVE;
+      case 4: return ITEM_TYPE_MAP;
+      case 5: return ITEM_TYPE_BATTLE;
+      case 6: return ITEM_TYPE_FOOD;
+      case 7: return ITEM_TYPE_CAMERA;
+      case 8: return ITEM_TYPE_DISK;
+      case 9: return ITEM_TYPE_INCUBATOR;
+      case 10: return ITEM_TYPE_INCENSE;
+      case 11: return ITEM_TYPE_XP_BOOST;
+      case 12: return ITEM_TYPE_INVENTORY_UPGRADE;
+      case 13: return ITEM_TYPE_EVOLUTION_REQUIREMENT;
+      case 14: return ITEM_TYPE_MOVE_REROLL;
+      case 15: return ITEM_TYPE_CANDY;
+      case 16: return ITEM_TYPE_RAID_TICKET;
+      case 17: return ITEM_TYPE_STARDUST_BOOST;
+      case 18: return ITEM_TYPE_FRIEND_GIFT_BOX;
+      case 19: return ITEM_TYPE_TEAM_CHANGE;
+      case 21: return ITEM_TYPE_VS_SEEKER_BATTLE_NOW;
+      case 22: return ITEM_TYPE_INCIDENT_TICKET;
+      case 23: return ITEM_TYPE_GLOBAL_EVENT_TICKET;
+      case 24: return ITEM_TYPE_STICKER_INVENTORY;
       default: return null;
     }
   }

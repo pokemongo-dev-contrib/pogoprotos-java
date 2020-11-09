@@ -159,7 +159,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET.getNumber()) {
+    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_UNSET.getNumber()) {
       output.writeEnum(1, questType_);
     }
     if (dailyQuest_ != null) {
@@ -174,7 +174,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET.getNumber()) {
+    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, questType_);
     }

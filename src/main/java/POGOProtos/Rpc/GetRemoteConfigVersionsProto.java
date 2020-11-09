@@ -342,7 +342,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (platform_ != POGOProtos.Rpc.Platform.PLATFORM_PLATFORM_UNSET.getNumber()) {
+    if (platform_ != POGOProtos.Rpc.Platform.PLATFORM_UNSET.getNumber()) {
       output.writeEnum(1, platform_);
     }
     if (!getDeviceManufacturerBytes().isEmpty()) {
@@ -357,7 +357,7 @@ private static final long serialVersionUID = 0L;
     if (appVersion_ != 0) {
       output.writeUInt32(5, appVersion_);
     }
-    if (store_ != POGOProtos.Rpc.Store.STORE_STORE_UNSET.getNumber()) {
+    if (store_ != POGOProtos.Rpc.Store.STORE_UNSET.getNumber()) {
       output.writeEnum(6, store_);
     }
     if (!getCarrierBytes().isEmpty()) {
@@ -372,7 +372,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (platform_ != POGOProtos.Rpc.Platform.PLATFORM_PLATFORM_UNSET.getNumber()) {
+    if (platform_ != POGOProtos.Rpc.Platform.PLATFORM_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, platform_);
     }
@@ -389,7 +389,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeUInt32Size(5, appVersion_);
     }
-    if (store_ != POGOProtos.Rpc.Store.STORE_STORE_UNSET.getNumber()) {
+    if (store_ != POGOProtos.Rpc.Store.STORE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(6, store_);
     }

@@ -329,7 +329,7 @@ private static final long serialVersionUID = 0L;
     if (error_ != POGOProtos.Rpc.TitanAsyncFileUploadCompleteOutProto.ErrorStatus.UNSET.getNumber()) {
       output.writeEnum(1, error_);
     }
-    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLATFORM_PLAYER_SUBMISSION_TYPE_PROTO_TYPE_UNSPECIFIED.getNumber()) {
+    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLAYER_SUBMISSION_TYPE_PROTO_TYPE_UNSPECIFIED.getNumber()) {
       output.writeEnum(2, submissionType_);
     }
     if (!getPoiIdBytes().isEmpty()) {
@@ -348,7 +348,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, error_);
     }
-    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLATFORM_PLAYER_SUBMISSION_TYPE_PROTO_TYPE_UNSPECIFIED.getNumber()) {
+    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLAYER_SUBMISSION_TYPE_PROTO_TYPE_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, submissionType_);
     }

@@ -9,64 +9,64 @@ package POGOProtos.Rpc;
 public enum BuddyLevel
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_UNSET = 0;</code>
+   * <code>BUDDY_LEVEL_UNSET = 0;</code>
    */
-  BUDDY_LEVEL_BUDDY_LEVEL_UNSET(0),
+  BUDDY_LEVEL_UNSET(0),
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_0 = 1;</code>
+   * <code>BUDDY_LEVEL_0 = 1;</code>
    */
-  BUDDY_LEVEL_BUDDY_LEVEL_0(1),
+  BUDDY_LEVEL_0(1),
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_1 = 2;</code>
+   * <code>BUDDY_LEVEL_1 = 2;</code>
    */
-  BUDDY_LEVEL_BUDDY_LEVEL_1(2),
+  BUDDY_LEVEL_1(2),
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_2 = 3;</code>
+   * <code>BUDDY_LEVEL_2 = 3;</code>
    */
-  BUDDY_LEVEL_BUDDY_LEVEL_2(3),
+  BUDDY_LEVEL_2(3),
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_3 = 4;</code>
+   * <code>BUDDY_LEVEL_3 = 4;</code>
    */
-  BUDDY_LEVEL_BUDDY_LEVEL_3(4),
+  BUDDY_LEVEL_3(4),
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_4 = 5;</code>
+   * <code>BUDDY_LEVEL_4 = 5;</code>
    */
-  BUDDY_LEVEL_BUDDY_LEVEL_4(5),
+  BUDDY_LEVEL_4(5),
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_5 = 6;</code>
+   * <code>BUDDY_LEVEL_5 = 6;</code>
    */
-  BUDDY_LEVEL_BUDDY_LEVEL_5(6),
+  BUDDY_LEVEL_5(6),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_UNSET = 0;</code>
+   * <code>BUDDY_LEVEL_UNSET = 0;</code>
    */
-  public static final int BUDDY_LEVEL_BUDDY_LEVEL_UNSET_VALUE = 0;
+  public static final int BUDDY_LEVEL_UNSET_VALUE = 0;
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_0 = 1;</code>
+   * <code>BUDDY_LEVEL_0 = 1;</code>
    */
-  public static final int BUDDY_LEVEL_BUDDY_LEVEL_0_VALUE = 1;
+  public static final int BUDDY_LEVEL_0_VALUE = 1;
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_1 = 2;</code>
+   * <code>BUDDY_LEVEL_1 = 2;</code>
    */
-  public static final int BUDDY_LEVEL_BUDDY_LEVEL_1_VALUE = 2;
+  public static final int BUDDY_LEVEL_1_VALUE = 2;
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_2 = 3;</code>
+   * <code>BUDDY_LEVEL_2 = 3;</code>
    */
-  public static final int BUDDY_LEVEL_BUDDY_LEVEL_2_VALUE = 3;
+  public static final int BUDDY_LEVEL_2_VALUE = 3;
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_3 = 4;</code>
+   * <code>BUDDY_LEVEL_3 = 4;</code>
    */
-  public static final int BUDDY_LEVEL_BUDDY_LEVEL_3_VALUE = 4;
+  public static final int BUDDY_LEVEL_3_VALUE = 4;
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_4 = 5;</code>
+   * <code>BUDDY_LEVEL_4 = 5;</code>
    */
-  public static final int BUDDY_LEVEL_BUDDY_LEVEL_4_VALUE = 5;
+  public static final int BUDDY_LEVEL_4_VALUE = 5;
   /**
-   * <code>BUDDY_LEVEL_BUDDY_LEVEL_5 = 6;</code>
+   * <code>BUDDY_LEVEL_5 = 6;</code>
    */
-  public static final int BUDDY_LEVEL_BUDDY_LEVEL_5_VALUE = 6;
+  public static final int BUDDY_LEVEL_5_VALUE = 6;
 
 
   public final int getNumber() {
@@ -93,13 +93,13 @@ public enum BuddyLevel
    */
   public static BuddyLevel forNumber(int value) {
     switch (value) {
-      case 0: return BUDDY_LEVEL_BUDDY_LEVEL_UNSET;
-      case 1: return BUDDY_LEVEL_BUDDY_LEVEL_0;
-      case 2: return BUDDY_LEVEL_BUDDY_LEVEL_1;
-      case 3: return BUDDY_LEVEL_BUDDY_LEVEL_2;
-      case 4: return BUDDY_LEVEL_BUDDY_LEVEL_3;
-      case 5: return BUDDY_LEVEL_BUDDY_LEVEL_4;
-      case 6: return BUDDY_LEVEL_BUDDY_LEVEL_5;
+      case 0: return BUDDY_LEVEL_UNSET;
+      case 1: return BUDDY_LEVEL_0;
+      case 2: return BUDDY_LEVEL_1;
+      case 3: return BUDDY_LEVEL_2;
+      case 4: return BUDDY_LEVEL_3;
+      case 5: return BUDDY_LEVEL_4;
+      case 6: return BUDDY_LEVEL_5;
       default: return null;
     }
   }

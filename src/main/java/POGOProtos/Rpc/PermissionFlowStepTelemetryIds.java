@@ -112,7 +112,7 @@ public enum PermissionFlowStepTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(94);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(96);
   }
 
   private static final PermissionFlowStepTelemetryIds[] VALUES = values();

@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum NotificationState
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>PLATFORM_NOTIFICATION_STATE_UNSET_STATE = 0;</code>
+   * <code>NOTIFICATION_STATE_UNSET_STATE = 0;</code>
    */
-  PLATFORM_NOTIFICATION_STATE_UNSET_STATE(0),
+  NOTIFICATION_STATE_UNSET_STATE(0),
   /**
-   * <code>PLATFORM_NOTIFICATION_STATE_VIEWED = 1;</code>
+   * <code>NOTIFICATION_STATE_VIEWED = 1;</code>
    */
-  PLATFORM_NOTIFICATION_STATE_VIEWED(1),
+  NOTIFICATION_STATE_VIEWED(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>PLATFORM_NOTIFICATION_STATE_UNSET_STATE = 0;</code>
+   * <code>NOTIFICATION_STATE_UNSET_STATE = 0;</code>
    */
-  public static final int PLATFORM_NOTIFICATION_STATE_UNSET_STATE_VALUE = 0;
+  public static final int NOTIFICATION_STATE_UNSET_STATE_VALUE = 0;
   /**
-   * <code>PLATFORM_NOTIFICATION_STATE_VIEWED = 1;</code>
+   * <code>NOTIFICATION_STATE_VIEWED = 1;</code>
    */
-  public static final int PLATFORM_NOTIFICATION_STATE_VIEWED_VALUE = 1;
+  public static final int NOTIFICATION_STATE_VIEWED_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum NotificationState
    */
   public static NotificationState forNumber(int value) {
     switch (value) {
-      case 0: return PLATFORM_NOTIFICATION_STATE_UNSET_STATE;
-      case 1: return PLATFORM_NOTIFICATION_STATE_VIEWED;
+      case 0: return NOTIFICATION_STATE_UNSET_STATE;
+      case 1: return NOTIFICATION_STATE_VIEWED;
       default: return null;
     }
   }
@@ -85,7 +85,7 @@ public enum NotificationState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(83);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(85);
   }
 
   private static final NotificationState[] VALUES = values();

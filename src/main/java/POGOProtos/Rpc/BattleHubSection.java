@@ -9,64 +9,64 @@ package POGOProtos.Rpc;
 public enum BattleHubSection
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_UNSET = 0;</code>
+   * <code>SECTION_UNSET = 0;</code>
    */
-  BATTLE_HUB_SECTION_SECTION_UNSET(0),
+  SECTION_UNSET(0),
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_VS_SEEKER = 1;</code>
+   * <code>SECTION_VS_SEEKER = 1;</code>
    */
-  BATTLE_HUB_SECTION_SECTION_VS_SEEKER(1),
+  SECTION_VS_SEEKER(1),
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_CURR_SEASON = 2;</code>
+   * <code>SECTION_CURR_SEASON = 2;</code>
    */
-  BATTLE_HUB_SECTION_SECTION_CURR_SEASON(2),
+  SECTION_CURR_SEASON(2),
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_LAST_SEASON = 3;</code>
+   * <code>SECTION_LAST_SEASON = 3;</code>
    */
-  BATTLE_HUB_SECTION_SECTION_LAST_SEASON(3),
+  SECTION_LAST_SEASON(3),
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_NEARBY = 4;</code>
+   * <code>SECTION_NEARBY = 4;</code>
    */
-  BATTLE_HUB_SECTION_SECTION_NEARBY(4),
+  SECTION_NEARBY(4),
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_TEAM_LEADERS = 5;</code>
+   * <code>SECTION_TEAM_LEADERS = 5;</code>
    */
-  BATTLE_HUB_SECTION_SECTION_TEAM_LEADERS(5),
+  SECTION_TEAM_LEADERS(5),
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_QR_CODE = 6;</code>
+   * <code>SECTION_QR_CODE = 6;</code>
    */
-  BATTLE_HUB_SECTION_SECTION_QR_CODE(6),
+  SECTION_QR_CODE(6),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_UNSET = 0;</code>
+   * <code>SECTION_UNSET = 0;</code>
    */
-  public static final int BATTLE_HUB_SECTION_SECTION_UNSET_VALUE = 0;
+  public static final int SECTION_UNSET_VALUE = 0;
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_VS_SEEKER = 1;</code>
+   * <code>SECTION_VS_SEEKER = 1;</code>
    */
-  public static final int BATTLE_HUB_SECTION_SECTION_VS_SEEKER_VALUE = 1;
+  public static final int SECTION_VS_SEEKER_VALUE = 1;
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_CURR_SEASON = 2;</code>
+   * <code>SECTION_CURR_SEASON = 2;</code>
    */
-  public static final int BATTLE_HUB_SECTION_SECTION_CURR_SEASON_VALUE = 2;
+  public static final int SECTION_CURR_SEASON_VALUE = 2;
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_LAST_SEASON = 3;</code>
+   * <code>SECTION_LAST_SEASON = 3;</code>
    */
-  public static final int BATTLE_HUB_SECTION_SECTION_LAST_SEASON_VALUE = 3;
+  public static final int SECTION_LAST_SEASON_VALUE = 3;
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_NEARBY = 4;</code>
+   * <code>SECTION_NEARBY = 4;</code>
    */
-  public static final int BATTLE_HUB_SECTION_SECTION_NEARBY_VALUE = 4;
+  public static final int SECTION_NEARBY_VALUE = 4;
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_TEAM_LEADERS = 5;</code>
+   * <code>SECTION_TEAM_LEADERS = 5;</code>
    */
-  public static final int BATTLE_HUB_SECTION_SECTION_TEAM_LEADERS_VALUE = 5;
+  public static final int SECTION_TEAM_LEADERS_VALUE = 5;
   /**
-   * <code>BATTLE_HUB_SECTION_SECTION_QR_CODE = 6;</code>
+   * <code>SECTION_QR_CODE = 6;</code>
    */
-  public static final int BATTLE_HUB_SECTION_SECTION_QR_CODE_VALUE = 6;
+  public static final int SECTION_QR_CODE_VALUE = 6;
 
 
   public final int getNumber() {
@@ -93,13 +93,13 @@ public enum BattleHubSection
    */
   public static BattleHubSection forNumber(int value) {
     switch (value) {
-      case 0: return BATTLE_HUB_SECTION_SECTION_UNSET;
-      case 1: return BATTLE_HUB_SECTION_SECTION_VS_SEEKER;
-      case 2: return BATTLE_HUB_SECTION_SECTION_CURR_SEASON;
-      case 3: return BATTLE_HUB_SECTION_SECTION_LAST_SEASON;
-      case 4: return BATTLE_HUB_SECTION_SECTION_NEARBY;
-      case 5: return BATTLE_HUB_SECTION_SECTION_TEAM_LEADERS;
-      case 6: return BATTLE_HUB_SECTION_SECTION_QR_CODE;
+      case 0: return SECTION_UNSET;
+      case 1: return SECTION_VS_SEEKER;
+      case 2: return SECTION_CURR_SEASON;
+      case 3: return SECTION_LAST_SEASON;
+      case 4: return SECTION_NEARBY;
+      case 5: return SECTION_TEAM_LEADERS;
+      case 6: return SECTION_QR_CODE;
       default: return null;
     }
   }

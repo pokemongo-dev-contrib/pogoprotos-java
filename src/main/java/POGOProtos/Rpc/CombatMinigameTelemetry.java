@@ -282,7 +282,7 @@ private static final long serialVersionUID = 0L;
     if (combatType_ != POGOProtos.Rpc.CombatMinigameTelemetry.MinigameCombatType.UNSET.getNumber()) {
       output.writeEnum(1, combatType_);
     }
-    if (moveType_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+    if (moveType_ != POGOProtos.Rpc.HoloPokemonType.POKEMON_TYPE_NONE.getNumber()) {
       output.writeEnum(2, moveType_);
     }
     if (score_ != 0F) {
@@ -301,7 +301,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, combatType_);
     }
-    if (moveType_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+    if (moveType_ != POGOProtos.Rpc.HoloPokemonType.POKEMON_TYPE_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, moveType_);
     }

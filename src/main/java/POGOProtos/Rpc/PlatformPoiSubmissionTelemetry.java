@@ -544,7 +544,7 @@ private static final long serialVersionUID = 0L;
     if (guiEventId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiSubmissionGuiEventId.UNKNOWN.getNumber()) {
       output.writeEnum(1, guiEventId_);
     }
-    if (imageType_ != POGOProtos.Rpc.PoiImageType.PLATFORM_POI_IMAGE_TYPE_UNSET.getNumber()) {
+    if (imageType_ != POGOProtos.Rpc.PoiImageType.POI_IMAGE_TYPE_UNSET.getNumber()) {
       output.writeEnum(2, imageType_);
     }
     if (cameraStepId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiCameraStepIds.UNSET.getNumber()) {
@@ -563,7 +563,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, guiEventId_);
     }
-    if (imageType_ != POGOProtos.Rpc.PoiImageType.PLATFORM_POI_IMAGE_TYPE_UNSET.getNumber()) {
+    if (imageType_ != POGOProtos.Rpc.PoiImageType.POI_IMAGE_TYPE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, imageType_);
     }

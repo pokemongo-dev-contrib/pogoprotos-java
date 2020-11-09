@@ -287,7 +287,7 @@ private static final long serialVersionUID = 0L;
     if (!getQuestTemplateIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, questTemplateId_);
     }
-    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET.getNumber()) {
+    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_UNSET.getNumber()) {
       output.writeEnum(2, questType_);
     }
     for (int i = 0; i < goals_.size(); i++) {
@@ -311,7 +311,7 @@ private static final long serialVersionUID = 0L;
     if (!getQuestTemplateIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, questTemplateId_);
     }
-    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET.getNumber()) {
+    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, questType_);
     }

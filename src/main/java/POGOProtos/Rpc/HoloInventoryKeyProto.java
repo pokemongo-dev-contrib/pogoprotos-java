@@ -317,7 +317,7 @@ private static final long serialVersionUID = 0L;
           (java.lang.Integer) type_);
       return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
     }
-    return POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN;
+    return POGOProtos.Rpc.Item.ITEM_UNKNOWN;
   }
 
   public static final int POKEDEX_ENTRY_ID_FIELD_NUMBER = 3;
@@ -446,7 +446,7 @@ private static final long serialVersionUID = 0L;
           (java.lang.Integer) type_);
       return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
     }
-    return POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET;
+    return POGOProtos.Rpc.QuestType.QUEST_UNSET;
   }
 
   public static final int AVATAR_TEMPLATE_ID_FIELD_NUMBER = 12;
@@ -1616,7 +1616,7 @@ private static final long serialVersionUID = 0L;
             (java.lang.Integer) type_);
         return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
       }
-      return POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN;
+      return POGOProtos.Rpc.Item.ITEM_UNKNOWN;
     }
     /**
      * <code>.POGOProtos.Rpc.Item item = 2;</code>
@@ -1951,7 +1951,7 @@ private static final long serialVersionUID = 0L;
             (java.lang.Integer) type_);
         return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
       }
-      return POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET;
+      return POGOProtos.Rpc.QuestType.QUEST_UNSET;
     }
     /**
      * <code>.POGOProtos.Rpc.QuestType quest_type = 11;</code>

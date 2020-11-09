@@ -336,7 +336,7 @@ private static final long serialVersionUID = 0L;
     if (bonusItemMultiplier_ != 0F) {
       output.writeFloat(8, bonusItemMultiplier_);
     }
-    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       output.writeEnum(9, highestFriendshipMilestone_);
     }
     if (highestFriendshipPokeballs_ != 0) {
@@ -392,7 +392,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFloatSize(8, bonusItemMultiplier_);
     }
-    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(9, highestFriendshipMilestone_);
     }

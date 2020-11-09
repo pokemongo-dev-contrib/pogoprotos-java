@@ -229,7 +229,7 @@ private static final long serialVersionUID = 0L;
     if (success_ != false) {
       output.writeBool(1, success_);
     }
-    if (familyCandyId_ != POGOProtos.Rpc.HoloPokemonFamilyId.HOLO_POKEMON_FAMILY_ID_FAMILY_UNSET.getNumber()) {
+    if (familyCandyId_ != POGOProtos.Rpc.HoloPokemonFamilyId.FAMILY_UNSET.getNumber()) {
       output.writeEnum(2, familyCandyId_);
     }
     if (candyEarnedCount_ != 0) {
@@ -244,7 +244,7 @@ private static final long serialVersionUID = 0L;
     if (megaEnergyEarnedCount_ != 0) {
       output.writeInt32(6, megaEnergyEarnedCount_);
     }
-    if (megaPokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (megaPokemonId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       output.writeEnum(7, megaPokemonId_);
     }
     unknownFields.writeTo(output);
@@ -260,7 +260,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(1, success_);
     }
-    if (familyCandyId_ != POGOProtos.Rpc.HoloPokemonFamilyId.HOLO_POKEMON_FAMILY_ID_FAMILY_UNSET.getNumber()) {
+    if (familyCandyId_ != POGOProtos.Rpc.HoloPokemonFamilyId.FAMILY_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, familyCandyId_);
     }
@@ -280,7 +280,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(6, megaEnergyEarnedCount_);
     }
-    if (megaPokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (megaPokemonId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(7, megaPokemonId_);
     }

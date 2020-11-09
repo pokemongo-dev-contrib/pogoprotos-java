@@ -472,7 +472,7 @@ private static final long serialVersionUID = 0L;
     if (caughtPokemon_ != 0) {
       output.writeInt32(7, caughtPokemon_);
     }
-    if (gymBadgeType_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_TYPE_GYM_BADGE_UNSET.getNumber()) {
+    if (gymBadgeType_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_UNSET.getNumber()) {
       output.writeEnum(8, gymBadgeType_);
     }
     for (int i = 0; i < badges_.size(); i++) {
@@ -529,7 +529,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(7, caughtPokemon_);
     }
-    if (gymBadgeType_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_TYPE_GYM_BADGE_UNSET.getNumber()) {
+    if (gymBadgeType_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(8, gymBadgeType_);
     }

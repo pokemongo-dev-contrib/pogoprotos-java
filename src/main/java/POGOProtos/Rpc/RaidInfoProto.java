@@ -363,7 +363,7 @@ private static final long serialVersionUID = 0L;
     if (raidPokemon_ != null) {
       output.writeMessage(5, getRaidPokemon());
     }
-    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_RAID_LEVEL_UNSET.getNumber()) {
+    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_UNSET.getNumber()) {
       output.writeEnum(6, raidLevel_);
     }
     if (complete_ != false) {
@@ -413,7 +413,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(5, getRaidPokemon());
     }
-    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_RAID_LEVEL_UNSET.getNumber()) {
+    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(6, raidLevel_);
     }

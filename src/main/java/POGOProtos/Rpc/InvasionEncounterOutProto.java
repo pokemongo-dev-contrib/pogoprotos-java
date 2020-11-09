@@ -1047,7 +1047,7 @@ private static final long serialVersionUID = 0L;
     if (captureProbability_ != null) {
       output.writeMessage(3, getCaptureProbability());
     }
-    if (activeItem_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (activeItem_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       output.writeEnum(4, activeItem_);
     }
     if (throwsRemaining_ != 0) {
@@ -1083,7 +1083,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(3, getCaptureProbability());
     }
-    if (activeItem_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (activeItem_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(4, activeItem_);
     }

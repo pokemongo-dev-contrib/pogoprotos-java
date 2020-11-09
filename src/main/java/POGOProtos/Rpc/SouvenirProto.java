@@ -807,7 +807,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (souvenirTypeId_ != POGOProtos.Rpc.SouvenirTypeId.SOUVENIR_TYPE_ID_SOUVENIR_UNSET.getNumber()) {
+    if (souvenirTypeId_ != POGOProtos.Rpc.SouvenirTypeId.SOUVENIR_UNSET.getNumber()) {
       output.writeEnum(1, souvenirTypeId_);
     }
     for (int i = 0; i < souvenirsDetails_.size(); i++) {
@@ -822,7 +822,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (souvenirTypeId_ != POGOProtos.Rpc.SouvenirTypeId.SOUVENIR_TYPE_ID_SOUVENIR_UNSET.getNumber()) {
+    if (souvenirTypeId_ != POGOProtos.Rpc.SouvenirTypeId.SOUVENIR_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, souvenirTypeId_);
     }

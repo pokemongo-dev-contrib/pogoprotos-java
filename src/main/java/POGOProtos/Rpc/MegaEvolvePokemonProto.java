@@ -139,7 +139,7 @@ private static final long serialVersionUID = 0L;
     if (pokemonId_ != 0L) {
       output.writeFixed64(1, pokemonId_);
     }
-    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(2, tempEvoId_);
     }
     unknownFields.writeTo(output);
@@ -155,7 +155,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFixed64Size(1, pokemonId_);
     }
-    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, tempEvoId_);
     }

@@ -623,7 +623,7 @@ private static final long serialVersionUID = 0L;
     if (raidInvitationExpireMs_ != 0L) {
       output.writeInt64(4, raidInvitationExpireMs_);
     }
-    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_RAID_LEVEL_UNSET.getNumber()) {
+    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_UNSET.getNumber()) {
       output.writeEnum(5, raidLevel_);
     }
     if (!getGymNameBytes().isEmpty()) {
@@ -638,7 +638,7 @@ private static final long serialVersionUID = 0L;
     if (longitude_ != 0D) {
       output.writeDouble(9, longitude_);
     }
-    if (raidPokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (raidPokemonId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       output.writeEnum(10, raidPokemonId_);
     }
     if (raidPokemonForm_ != POGOProtos.Rpc.PokemonDisplayProto.Form.FORM_UNSET.getNumber()) {
@@ -656,7 +656,7 @@ private static final long serialVersionUID = 0L;
     if (inviterTeam_ != POGOProtos.Rpc.Team.TEAM_UNSET.getNumber()) {
       output.writeEnum(15, inviterTeam_);
     }
-    if (raidPokemonTempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (raidPokemonTempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(16, raidPokemonTempEvoId_);
     }
     unknownFields.writeTo(output);
@@ -693,7 +693,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(4, raidInvitationExpireMs_);
     }
-    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_RAID_LEVEL_UNSET.getNumber()) {
+    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(5, raidLevel_);
     }
@@ -711,7 +711,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeDoubleSize(9, longitude_);
     }
-    if (raidPokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (raidPokemonId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(10, raidPokemonId_);
     }
@@ -733,7 +733,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(15, inviterTeam_);
     }
-    if (raidPokemonTempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (raidPokemonTempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(16, raidPokemonTempEvoId_);
     }

@@ -367,7 +367,7 @@ private static final long serialVersionUID = 0L;
     if (throwsRemaining_ != 0) {
       output.writeInt32(5, throwsRemaining_);
     }
-    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_RAID_LEVEL_UNSET.getNumber()) {
+    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_UNSET.getNumber()) {
       output.writeEnum(6, raidLevel_);
     }
     if (!getFortIdBytes().isEmpty()) {
@@ -407,7 +407,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(5, throwsRemaining_);
     }
-    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_RAID_LEVEL_UNSET.getNumber()) {
+    if (raidLevel_ != POGOProtos.Rpc.RaidLevel.RAID_LEVEL_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(6, raidLevel_);
     }

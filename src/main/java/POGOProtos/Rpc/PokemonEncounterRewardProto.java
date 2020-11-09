@@ -185,7 +185,7 @@ private static final long serialVersionUID = 0L;
           (java.lang.Integer) type_);
       return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
     }
-    return POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET;
+    return POGOProtos.Rpc.HoloPokemonId.MISSINGNO;
   }
 
   public static final int USE_QUEST_POKEMON_ENCOUNTER_DISTRIBUITION_FIELD_NUMBER = 2;
@@ -740,7 +740,7 @@ private static final long serialVersionUID = 0L;
             (java.lang.Integer) type_);
         return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
       }
-      return POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET;
+      return POGOProtos.Rpc.HoloPokemonId.MISSINGNO;
     }
     /**
      * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 1;</code>

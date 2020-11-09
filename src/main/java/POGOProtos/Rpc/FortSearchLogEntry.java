@@ -702,7 +702,7 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < pokemonEggs_.size(); i++) {
       output.writeMessage(5, pokemonEggs_.get(i));
     }
-    if (fortType_ != POGOProtos.Rpc.FortType.FORT_TYPE_GYM.getNumber()) {
+    if (fortType_ != POGOProtos.Rpc.FortType.GYM.getNumber()) {
       output.writeEnum(6, fortType_);
     }
     for (int i = 0; i < awardedItems_.size(); i++) {
@@ -748,7 +748,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(5, pokemonEggs_.get(i));
     }
-    if (fortType_ != POGOProtos.Rpc.FortType.FORT_TYPE_GYM.getNumber()) {
+    if (fortType_ != POGOProtos.Rpc.FortType.GYM.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(6, fortType_);
     }

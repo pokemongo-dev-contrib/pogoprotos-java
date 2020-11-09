@@ -154,7 +154,7 @@ private static final long serialVersionUID = 0L;
           (java.lang.Integer) throw_);
       return result == null ? POGOProtos.Rpc.HoloActivityType.UNRECOGNIZED : result;
     }
-    return POGOProtos.Rpc.HoloActivityType.HOLO_ACTIVITY_TYPE_ACTIVITY_UNKNOWN;
+    return POGOProtos.Rpc.HoloActivityType.ACTIVITY_UNKNOWN;
   }
 
   public static final int HIT_FIELD_NUMBER = 2;
@@ -568,7 +568,7 @@ private static final long serialVersionUID = 0L;
             (java.lang.Integer) throw_);
         return result == null ? POGOProtos.Rpc.HoloActivityType.UNRECOGNIZED : result;
       }
-      return POGOProtos.Rpc.HoloActivityType.HOLO_ACTIVITY_TYPE_ACTIVITY_UNKNOWN;
+      return POGOProtos.Rpc.HoloActivityType.ACTIVITY_UNKNOWN;
     }
     /**
      * <code>.POGOProtos.Rpc.HoloActivityType throw_type = 1;</code>

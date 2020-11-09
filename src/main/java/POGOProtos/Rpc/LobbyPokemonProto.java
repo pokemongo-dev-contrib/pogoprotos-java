@@ -171,7 +171,7 @@ private static final long serialVersionUID = 0L;
     if (id_ != 0L) {
       output.writeInt64(1, id_);
     }
-    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       output.writeEnum(2, pokedexId_);
     }
     if (cp_ != 0) {
@@ -193,7 +193,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(1, id_);
     }
-    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, pokedexId_);
     }

@@ -120,7 +120,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (pokemonHomeClickIds_ != POGOProtos.Rpc.PokemonHomeTelemetryIds.POKEMON_HOME_TELEMETRY_IDS_UNDEFINED_POKEMON_HOME_EVENT.getNumber()) {
+    if (pokemonHomeClickIds_ != POGOProtos.Rpc.PokemonHomeTelemetryIds.UNDEFINED_POKEMON_HOME_EVENT.getNumber()) {
       output.writeEnum(1, pokemonHomeClickIds_);
     }
     unknownFields.writeTo(output);
@@ -132,7 +132,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (pokemonHomeClickIds_ != POGOProtos.Rpc.PokemonHomeTelemetryIds.POKEMON_HOME_TELEMETRY_IDS_UNDEFINED_POKEMON_HOME_EVENT.getNumber()) {
+    if (pokemonHomeClickIds_ != POGOProtos.Rpc.PokemonHomeTelemetryIds.UNDEFINED_POKEMON_HOME_EVENT.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, pokemonHomeClickIds_);
     }

@@ -546,7 +546,7 @@ private static final long serialVersionUID = 0L;
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
-    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(1, tempEvoId_);
     }
     if (stats_ != null) {
@@ -558,10 +558,10 @@ private static final long serialVersionUID = 0L;
     if (averageWeightKg_ != 0F) {
       output.writeFloat(4, averageWeightKg_);
     }
-    if (typeOverride1_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+    if (typeOverride1_ != POGOProtos.Rpc.HoloPokemonType.POKEMON_TYPE_NONE.getNumber()) {
       output.writeEnum(5, typeOverride1_);
     }
-    if (typeOverride2_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+    if (typeOverride2_ != POGOProtos.Rpc.HoloPokemonType.POKEMON_TYPE_NONE.getNumber()) {
       output.writeEnum(6, typeOverride2_);
     }
     if (cpMultiplierOverride_ != 0F) {
@@ -612,7 +612,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, tempEvoId_);
     }
@@ -628,11 +628,11 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFloatSize(4, averageWeightKg_);
     }
-    if (typeOverride1_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+    if (typeOverride1_ != POGOProtos.Rpc.HoloPokemonType.POKEMON_TYPE_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(5, typeOverride1_);
     }
-    if (typeOverride2_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+    if (typeOverride2_ != POGOProtos.Rpc.HoloPokemonType.POKEMON_TYPE_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(6, typeOverride2_);
     }

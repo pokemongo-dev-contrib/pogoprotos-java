@@ -4,18 +4,18 @@
 package POGOProtos.Rpc;
 
 /**
- * Protobuf type {@code POGOProtos.Rpc.AuthTicket}
+ * Protobuf type {@code POGOProtos.Rpc.PlatformAuthTicket}
  */
-public final class AuthTicket extends
+public final class PlatformAuthTicket extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.AuthTicket)
-    AuthTicketOrBuilder {
+    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PlatformAuthTicket)
+    PlatformAuthTicketOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use AuthTicket.newBuilder() to construct.
-  private AuthTicket(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use PlatformAuthTicket.newBuilder() to construct.
+  private PlatformAuthTicket(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private AuthTicket() {
+  private PlatformAuthTicket() {
     start_ = com.google.protobuf.ByteString.EMPTY;
     end_ = com.google.protobuf.ByteString.EMPTY;
   }
@@ -24,7 +24,7 @@ private static final long serialVersionUID = 0L;
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new AuthTicket();
+    return new PlatformAuthTicket();
   }
 
   @java.lang.Override
@@ -32,7 +32,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private AuthTicket(
+  private PlatformAuthTicket(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -86,15 +86,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthTicket_descriptor;
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthTicket_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthTicket_fieldAccessorTable
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthTicket_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            POGOProtos.Rpc.AuthTicket.class, POGOProtos.Rpc.AuthTicket.Builder.class);
+            POGOProtos.Rpc.PlatformAuthTicket.class, POGOProtos.Rpc.PlatformAuthTicket.Builder.class);
   }
 
   public static final int START_FIELD_NUMBER = 1;
@@ -184,10 +184,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof POGOProtos.Rpc.AuthTicket)) {
+    if (!(obj instanceof POGOProtos.Rpc.PlatformAuthTicket)) {
       return super.equals(obj);
     }
-    POGOProtos.Rpc.AuthTicket other = (POGOProtos.Rpc.AuthTicket) obj;
+    POGOProtos.Rpc.PlatformAuthTicket other = (POGOProtos.Rpc.PlatformAuthTicket) obj;
 
     if (!getStart()
         .equals(other.getStart())) return false;
@@ -218,69 +218,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static POGOProtos.Rpc.AuthTicket parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthTicket parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.AuthTicket parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthTicket parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.AuthTicket parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthTicket parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.AuthTicket parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthTicket parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.AuthTicket parseFrom(byte[] data)
+  public static POGOProtos.Rpc.PlatformAuthTicket parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.AuthTicket parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthTicket parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.AuthTicket parseFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.PlatformAuthTicket parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.AuthTicket parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthTicket parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.AuthTicket parseDelimitedFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.PlatformAuthTicket parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.AuthTicket parseDelimitedFrom(
+  public static POGOProtos.Rpc.PlatformAuthTicket parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.AuthTicket parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthTicket parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.AuthTicket parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthTicket parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -293,7 +293,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(POGOProtos.Rpc.AuthTicket prototype) {
+  public static Builder newBuilder(POGOProtos.Rpc.PlatformAuthTicket prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -309,26 +309,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code POGOProtos.Rpc.AuthTicket}
+   * Protobuf type {@code POGOProtos.Rpc.PlatformAuthTicket}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.AuthTicket)
-      POGOProtos.Rpc.AuthTicketOrBuilder {
+      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.PlatformAuthTicket)
+      POGOProtos.Rpc.PlatformAuthTicketOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthTicket_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthTicket_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthTicket_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthTicket_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.AuthTicket.class, POGOProtos.Rpc.AuthTicket.Builder.class);
+              POGOProtos.Rpc.PlatformAuthTicket.class, POGOProtos.Rpc.PlatformAuthTicket.Builder.class);
     }
 
-    // Construct using POGOProtos.Rpc.AuthTicket.newBuilder()
+    // Construct using POGOProtos.Rpc.PlatformAuthTicket.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -358,17 +358,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthTicket_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthTicket_descriptor;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.AuthTicket getDefaultInstanceForType() {
-      return POGOProtos.Rpc.AuthTicket.getDefaultInstance();
+    public POGOProtos.Rpc.PlatformAuthTicket getDefaultInstanceForType() {
+      return POGOProtos.Rpc.PlatformAuthTicket.getDefaultInstance();
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.AuthTicket build() {
-      POGOProtos.Rpc.AuthTicket result = buildPartial();
+    public POGOProtos.Rpc.PlatformAuthTicket build() {
+      POGOProtos.Rpc.PlatformAuthTicket result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -376,8 +376,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.AuthTicket buildPartial() {
-      POGOProtos.Rpc.AuthTicket result = new POGOProtos.Rpc.AuthTicket(this);
+    public POGOProtos.Rpc.PlatformAuthTicket buildPartial() {
+      POGOProtos.Rpc.PlatformAuthTicket result = new POGOProtos.Rpc.PlatformAuthTicket(this);
       result.start_ = start_;
       result.expireTimestampMs_ = expireTimestampMs_;
       result.end_ = end_;
@@ -419,16 +419,16 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof POGOProtos.Rpc.AuthTicket) {
-        return mergeFrom((POGOProtos.Rpc.AuthTicket)other);
+      if (other instanceof POGOProtos.Rpc.PlatformAuthTicket) {
+        return mergeFrom((POGOProtos.Rpc.PlatformAuthTicket)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(POGOProtos.Rpc.AuthTicket other) {
-      if (other == POGOProtos.Rpc.AuthTicket.getDefaultInstance()) return this;
+    public Builder mergeFrom(POGOProtos.Rpc.PlatformAuthTicket other) {
+      if (other == POGOProtos.Rpc.PlatformAuthTicket.getDefaultInstance()) return this;
       if (other.getStart() != com.google.protobuf.ByteString.EMPTY) {
         setStart(other.getStart());
       }
@@ -453,11 +453,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      POGOProtos.Rpc.AuthTicket parsedMessage = null;
+      POGOProtos.Rpc.PlatformAuthTicket parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (POGOProtos.Rpc.AuthTicket) e.getUnfinishedMessage();
+        parsedMessage = (POGOProtos.Rpc.PlatformAuthTicket) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -578,41 +578,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.AuthTicket)
+    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.PlatformAuthTicket)
   }
 
-  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.AuthTicket)
-  private static final POGOProtos.Rpc.AuthTicket DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.PlatformAuthTicket)
+  private static final POGOProtos.Rpc.PlatformAuthTicket DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new POGOProtos.Rpc.AuthTicket();
+    DEFAULT_INSTANCE = new POGOProtos.Rpc.PlatformAuthTicket();
   }
 
-  public static POGOProtos.Rpc.AuthTicket getDefaultInstance() {
+  public static POGOProtos.Rpc.PlatformAuthTicket getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<AuthTicket>
-      PARSER = new com.google.protobuf.AbstractParser<AuthTicket>() {
+  private static final com.google.protobuf.Parser<PlatformAuthTicket>
+      PARSER = new com.google.protobuf.AbstractParser<PlatformAuthTicket>() {
     @java.lang.Override
-    public AuthTicket parsePartialFrom(
+    public PlatformAuthTicket parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new AuthTicket(input, extensionRegistry);
+      return new PlatformAuthTicket(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<AuthTicket> parser() {
+  public static com.google.protobuf.Parser<PlatformAuthTicket> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<AuthTicket> getParserForType() {
+  public com.google.protobuf.Parser<PlatformAuthTicket> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public POGOProtos.Rpc.AuthTicket getDefaultInstanceForType() {
+  public POGOProtos.Rpc.PlatformAuthTicket getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -152,7 +152,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (incubatorType_ != POGOProtos.Rpc.EggIncubatorType.EGG_INCUBATOR_TYPE_INCUBATOR_UNSET.getNumber()) {
+    if (incubatorType_ != POGOProtos.Rpc.EggIncubatorType.INCUBATOR_UNSET.getNumber()) {
       output.writeEnum(1, incubatorType_);
     }
     if (uses_ != 0) {
@@ -170,7 +170,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (incubatorType_ != POGOProtos.Rpc.EggIncubatorType.EGG_INCUBATOR_TYPE_INCUBATOR_UNSET.getNumber()) {
+    if (incubatorType_ != POGOProtos.Rpc.EggIncubatorType.INCUBATOR_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, incubatorType_);
     }

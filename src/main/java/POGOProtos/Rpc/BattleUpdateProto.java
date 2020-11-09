@@ -294,7 +294,7 @@ private static final long serialVersionUID = 0L;
     if (activeAttacker_ != null) {
       output.writeMessage(4, getActiveAttacker());
     }
-    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       output.writeEnum(5, highestFriendshipMilestone_);
     }
     unknownFields.writeTo(output);
@@ -321,7 +321,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(4, getActiveAttacker());
     }
-    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(5, highestFriendshipMilestone_);
     }

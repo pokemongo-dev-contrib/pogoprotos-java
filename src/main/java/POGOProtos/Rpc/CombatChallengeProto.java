@@ -1795,7 +1795,7 @@ private static final long serialVersionUID = 0L;
     if (!getChallengeIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, challengeId_);
     }
-    if (type_ != POGOProtos.Rpc.CombatType.COMBAT_TYPE_COMBAT_TYPE_UNSET.getNumber()) {
+    if (type_ != POGOProtos.Rpc.CombatType.COMBAT_TYPE_UNSET.getNumber()) {
       output.writeEnum(2, type_);
     }
     if (!getCombatLeagueTemplateIdBytes().isEmpty()) {
@@ -1831,7 +1831,7 @@ private static final long serialVersionUID = 0L;
     if (!getChallengeIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, challengeId_);
     }
-    if (type_ != POGOProtos.Rpc.CombatType.COMBAT_TYPE_COMBAT_TYPE_UNSET.getNumber()) {
+    if (type_ != POGOProtos.Rpc.CombatType.COMBAT_TYPE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, type_);
     }

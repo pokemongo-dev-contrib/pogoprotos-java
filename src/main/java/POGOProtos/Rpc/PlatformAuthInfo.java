@@ -4,18 +4,18 @@
 package POGOProtos.Rpc;
 
 /**
- * Protobuf type {@code POGOProtos.Rpc.AuthInfo}
+ * Protobuf type {@code POGOProtos.Rpc.PlatformAuthInfo}
  */
-public final class AuthInfo extends
+public final class PlatformAuthInfo extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.AuthInfo)
-    AuthInfoOrBuilder {
+    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PlatformAuthInfo)
+    PlatformAuthInfoOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use AuthInfo.newBuilder() to construct.
-  private AuthInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use PlatformAuthInfo.newBuilder() to construct.
+  private PlatformAuthInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private AuthInfo() {
+  private PlatformAuthInfo() {
     provider_ = "";
   }
 
@@ -23,7 +23,7 @@ private static final long serialVersionUID = 0L;
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new AuthInfo();
+    return new PlatformAuthInfo();
   }
 
   @java.lang.Override
@@ -31,7 +31,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private AuthInfo(
+  private PlatformAuthInfo(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -56,11 +56,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.AuthInfo.JWT.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.Builder subBuilder = null;
             if (token_ != null) {
               subBuilder = token_.toBuilder();
             }
-            token_ = input.readMessage(POGOProtos.Rpc.AuthInfo.JWT.parser(), extensionRegistry);
+            token_ = input.readMessage(POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(token_);
               token_ = subBuilder.buildPartial();
@@ -69,11 +69,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 26: {
-            POGOProtos.Rpc.AuthInfo.AuthOptions.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.Builder subBuilder = null;
             if (options_ != null) {
               subBuilder = options_.toBuilder();
             }
-            options_ = input.readMessage(POGOProtos.Rpc.AuthInfo.AuthOptions.parser(), extensionRegistry);
+            options_ = input.readMessage(POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(options_);
               options_ = subBuilder.buildPartial();
@@ -102,19 +102,19 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_descriptor;
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_fieldAccessorTable
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            POGOProtos.Rpc.AuthInfo.class, POGOProtos.Rpc.AuthInfo.Builder.class);
+            POGOProtos.Rpc.PlatformAuthInfo.class, POGOProtos.Rpc.PlatformAuthInfo.Builder.class);
   }
 
-  public interface JWTOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.AuthInfo.JWT)
+  public interface PlatformJWTOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -136,18 +136,18 @@ private static final long serialVersionUID = 0L;
     int getUnknown2();
   }
   /**
-   * Protobuf type {@code POGOProtos.Rpc.AuthInfo.JWT}
+   * Protobuf type {@code POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT}
    */
-  public static final class JWT extends
+  public static final class PlatformJWT extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.AuthInfo.JWT)
-      JWTOrBuilder {
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT)
+      PlatformJWTOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use JWT.newBuilder() to construct.
-    private JWT(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use PlatformJWT.newBuilder() to construct.
+    private PlatformJWT(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private JWT() {
+    private PlatformJWT() {
       contents_ = "";
     }
 
@@ -155,7 +155,7 @@ private static final long serialVersionUID = 0L;
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new JWT();
+      return new PlatformJWT();
     }
 
     @java.lang.Override
@@ -163,7 +163,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields() {
       return this.unknownFields;
     }
-    private JWT(
+    private PlatformJWT(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -213,15 +213,15 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_JWT_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_PlatformJWT_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_JWT_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_PlatformJWT_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.AuthInfo.JWT.class, POGOProtos.Rpc.AuthInfo.JWT.Builder.class);
+              POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.class, POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.Builder.class);
     }
 
     public static final int CONTENTS_FIELD_NUMBER = 1;
@@ -319,10 +319,10 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof POGOProtos.Rpc.AuthInfo.JWT)) {
+      if (!(obj instanceof POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT)) {
         return super.equals(obj);
       }
-      POGOProtos.Rpc.AuthInfo.JWT other = (POGOProtos.Rpc.AuthInfo.JWT) obj;
+      POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT other = (POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT) obj;
 
       if (!getContents()
           .equals(other.getContents())) return false;
@@ -348,69 +348,69 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static POGOProtos.Rpc.AuthInfo.JWT parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.AuthInfo.JWT parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.AuthInfo.JWT parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.AuthInfo.JWT parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.AuthInfo.JWT parseFrom(byte[] data)
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.AuthInfo.JWT parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.AuthInfo.JWT parseFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.AuthInfo.JWT parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.AuthInfo.JWT parseDelimitedFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.AuthInfo.JWT parseDelimitedFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.AuthInfo.JWT parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.AuthInfo.JWT parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -423,7 +423,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(POGOProtos.Rpc.AuthInfo.JWT prototype) {
+    public static Builder newBuilder(POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -439,26 +439,26 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * Protobuf type {@code POGOProtos.Rpc.AuthInfo.JWT}
+     * Protobuf type {@code POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.AuthInfo.JWT)
-        POGOProtos.Rpc.AuthInfo.JWTOrBuilder {
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT)
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformJWTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_JWT_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_PlatformJWT_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_JWT_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_PlatformJWT_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.AuthInfo.JWT.class, POGOProtos.Rpc.AuthInfo.JWT.Builder.class);
+                POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.class, POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.Builder.class);
       }
 
-      // Construct using POGOProtos.Rpc.AuthInfo.JWT.newBuilder()
+      // Construct using POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -486,17 +486,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_JWT_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_PlatformJWT_descriptor;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.AuthInfo.JWT getDefaultInstanceForType() {
-        return POGOProtos.Rpc.AuthInfo.JWT.getDefaultInstance();
+      public POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT getDefaultInstanceForType() {
+        return POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.getDefaultInstance();
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.AuthInfo.JWT build() {
-        POGOProtos.Rpc.AuthInfo.JWT result = buildPartial();
+      public POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT build() {
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -504,8 +504,8 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.AuthInfo.JWT buildPartial() {
-        POGOProtos.Rpc.AuthInfo.JWT result = new POGOProtos.Rpc.AuthInfo.JWT(this);
+      public POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT buildPartial() {
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT result = new POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT(this);
         result.contents_ = contents_;
         result.unknown2_ = unknown2_;
         onBuilt();
@@ -546,16 +546,16 @@ private static final long serialVersionUID = 0L;
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Rpc.AuthInfo.JWT) {
-          return mergeFrom((POGOProtos.Rpc.AuthInfo.JWT)other);
+        if (other instanceof POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT) {
+          return mergeFrom((POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(POGOProtos.Rpc.AuthInfo.JWT other) {
-        if (other == POGOProtos.Rpc.AuthInfo.JWT.getDefaultInstance()) return this;
+      public Builder mergeFrom(POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT other) {
+        if (other == POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.getDefaultInstance()) return this;
         if (!other.getContents().isEmpty()) {
           contents_ = other.contents_;
           onChanged();
@@ -578,11 +578,11 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        POGOProtos.Rpc.AuthInfo.JWT parsedMessage = null;
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Rpc.AuthInfo.JWT) e.getUnfinishedMessage();
+          parsedMessage = (POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -711,48 +711,48 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.AuthInfo.JWT)
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT)
     }
 
-    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.AuthInfo.JWT)
-    private static final POGOProtos.Rpc.AuthInfo.JWT DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT)
+    private static final POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new POGOProtos.Rpc.AuthInfo.JWT();
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT();
     }
 
-    public static POGOProtos.Rpc.AuthInfo.JWT getDefaultInstance() {
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<JWT>
-        PARSER = new com.google.protobuf.AbstractParser<JWT>() {
+    private static final com.google.protobuf.Parser<PlatformJWT>
+        PARSER = new com.google.protobuf.AbstractParser<PlatformJWT>() {
       @java.lang.Override
-      public JWT parsePartialFrom(
+      public PlatformJWT parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new JWT(input, extensionRegistry);
+        return new PlatformJWT(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<JWT> parser() {
+    public static com.google.protobuf.Parser<PlatformJWT> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<JWT> getParserForType() {
+    public com.google.protobuf.Parser<PlatformJWT> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.AuthInfo.JWT getDefaultInstanceForType() {
+    public POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface AuthOptionsOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.AuthInfo.AuthOptions)
+  public interface PlatformAuthOptionsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -762,25 +762,25 @@ private static final long serialVersionUID = 0L;
     boolean getPreventAccountCreation();
   }
   /**
-   * Protobuf type {@code POGOProtos.Rpc.AuthInfo.AuthOptions}
+   * Protobuf type {@code POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions}
    */
-  public static final class AuthOptions extends
+  public static final class PlatformAuthOptions extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.AuthInfo.AuthOptions)
-      AuthOptionsOrBuilder {
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions)
+      PlatformAuthOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use AuthOptions.newBuilder() to construct.
-    private AuthOptions(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use PlatformAuthOptions.newBuilder() to construct.
+    private PlatformAuthOptions(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private AuthOptions() {
+    private PlatformAuthOptions() {
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new AuthOptions();
+      return new PlatformAuthOptions();
     }
 
     @java.lang.Override
@@ -788,7 +788,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields() {
       return this.unknownFields;
     }
-    private AuthOptions(
+    private PlatformAuthOptions(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -832,15 +832,15 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_AuthOptions_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_PlatformAuthOptions_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_AuthOptions_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_PlatformAuthOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.AuthInfo.AuthOptions.class, POGOProtos.Rpc.AuthInfo.AuthOptions.Builder.class);
+              POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.class, POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.Builder.class);
     }
 
     public static final int PREVENT_ACCOUNT_CREATION_FIELD_NUMBER = 1;
@@ -894,10 +894,10 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof POGOProtos.Rpc.AuthInfo.AuthOptions)) {
+      if (!(obj instanceof POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions)) {
         return super.equals(obj);
       }
-      POGOProtos.Rpc.AuthInfo.AuthOptions other = (POGOProtos.Rpc.AuthInfo.AuthOptions) obj;
+      POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions other = (POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions) obj;
 
       if (getPreventAccountCreation()
           != other.getPreventAccountCreation()) return false;
@@ -920,69 +920,69 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseFrom(byte[] data)
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseDelimitedFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseDelimitedFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions parseFrom(
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -995,7 +995,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(POGOProtos.Rpc.AuthInfo.AuthOptions prototype) {
+    public static Builder newBuilder(POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1011,26 +1011,26 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * Protobuf type {@code POGOProtos.Rpc.AuthInfo.AuthOptions}
+     * Protobuf type {@code POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.AuthInfo.AuthOptions)
-        POGOProtos.Rpc.AuthInfo.AuthOptionsOrBuilder {
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions)
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptionsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_AuthOptions_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_PlatformAuthOptions_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_AuthOptions_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_PlatformAuthOptions_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.AuthInfo.AuthOptions.class, POGOProtos.Rpc.AuthInfo.AuthOptions.Builder.class);
+                POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.class, POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.Builder.class);
       }
 
-      // Construct using POGOProtos.Rpc.AuthInfo.AuthOptions.newBuilder()
+      // Construct using POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1056,17 +1056,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_AuthOptions_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_PlatformAuthOptions_descriptor;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.AuthInfo.AuthOptions getDefaultInstanceForType() {
-        return POGOProtos.Rpc.AuthInfo.AuthOptions.getDefaultInstance();
+      public POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions getDefaultInstanceForType() {
+        return POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.getDefaultInstance();
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.AuthInfo.AuthOptions build() {
-        POGOProtos.Rpc.AuthInfo.AuthOptions result = buildPartial();
+      public POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions build() {
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1074,8 +1074,8 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.AuthInfo.AuthOptions buildPartial() {
-        POGOProtos.Rpc.AuthInfo.AuthOptions result = new POGOProtos.Rpc.AuthInfo.AuthOptions(this);
+      public POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions buildPartial() {
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions result = new POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions(this);
         result.preventAccountCreation_ = preventAccountCreation_;
         onBuilt();
         return result;
@@ -1115,16 +1115,16 @@ private static final long serialVersionUID = 0L;
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Rpc.AuthInfo.AuthOptions) {
-          return mergeFrom((POGOProtos.Rpc.AuthInfo.AuthOptions)other);
+        if (other instanceof POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions) {
+          return mergeFrom((POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(POGOProtos.Rpc.AuthInfo.AuthOptions other) {
-        if (other == POGOProtos.Rpc.AuthInfo.AuthOptions.getDefaultInstance()) return this;
+      public Builder mergeFrom(POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions other) {
+        if (other == POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.getDefaultInstance()) return this;
         if (other.getPreventAccountCreation() != false) {
           setPreventAccountCreation(other.getPreventAccountCreation());
         }
@@ -1143,11 +1143,11 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        POGOProtos.Rpc.AuthInfo.AuthOptions parsedMessage = null;
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Rpc.AuthInfo.AuthOptions) e.getUnfinishedMessage();
+          parsedMessage = (POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1200,41 +1200,41 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.AuthInfo.AuthOptions)
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions)
     }
 
-    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.AuthInfo.AuthOptions)
-    private static final POGOProtos.Rpc.AuthInfo.AuthOptions DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions)
+    private static final POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new POGOProtos.Rpc.AuthInfo.AuthOptions();
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions();
     }
 
-    public static POGOProtos.Rpc.AuthInfo.AuthOptions getDefaultInstance() {
+    public static POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<AuthOptions>
-        PARSER = new com.google.protobuf.AbstractParser<AuthOptions>() {
+    private static final com.google.protobuf.Parser<PlatformAuthOptions>
+        PARSER = new com.google.protobuf.AbstractParser<PlatformAuthOptions>() {
       @java.lang.Override
-      public AuthOptions parsePartialFrom(
+      public PlatformAuthOptions parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AuthOptions(input, extensionRegistry);
+        return new PlatformAuthOptions(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<AuthOptions> parser() {
+    public static com.google.protobuf.Parser<PlatformAuthOptions> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<AuthOptions> getParserForType() {
+    public com.google.protobuf.Parser<PlatformAuthOptions> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.AuthInfo.AuthOptions getDefaultInstanceForType() {
+    public POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1279,9 +1279,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TOKEN_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.AuthInfo.JWT token_;
+  private POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token_;
   /**
-   * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
    * @return Whether the token field is set.
    */
   @java.lang.Override
@@ -1289,25 +1289,25 @@ private static final long serialVersionUID = 0L;
     return token_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
    * @return The token.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AuthInfo.JWT getToken() {
-    return token_ == null ? POGOProtos.Rpc.AuthInfo.JWT.getDefaultInstance() : token_;
+  public POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT getToken() {
+    return token_ == null ? POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.getDefaultInstance() : token_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AuthInfo.JWTOrBuilder getTokenOrBuilder() {
+  public POGOProtos.Rpc.PlatformAuthInfo.PlatformJWTOrBuilder getTokenOrBuilder() {
     return getToken();
   }
 
   public static final int OPTIONS_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.AuthInfo.AuthOptions options_;
+  private POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options_;
   /**
-   * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+   * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
    * @return Whether the options field is set.
    */
   @java.lang.Override
@@ -1315,18 +1315,18 @@ private static final long serialVersionUID = 0L;
     return options_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+   * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
    * @return The options.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AuthInfo.AuthOptions getOptions() {
-    return options_ == null ? POGOProtos.Rpc.AuthInfo.AuthOptions.getDefaultInstance() : options_;
+  public POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions getOptions() {
+    return options_ == null ? POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.getDefaultInstance() : options_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+   * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AuthInfo.AuthOptionsOrBuilder getOptionsOrBuilder() {
+  public POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptionsOrBuilder getOptionsOrBuilder() {
     return getOptions();
   }
 
@@ -1383,10 +1383,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof POGOProtos.Rpc.AuthInfo)) {
+    if (!(obj instanceof POGOProtos.Rpc.PlatformAuthInfo)) {
       return super.equals(obj);
     }
-    POGOProtos.Rpc.AuthInfo other = (POGOProtos.Rpc.AuthInfo) obj;
+    POGOProtos.Rpc.PlatformAuthInfo other = (POGOProtos.Rpc.PlatformAuthInfo) obj;
 
     if (!getProvider()
         .equals(other.getProvider())) return false;
@@ -1426,69 +1426,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static POGOProtos.Rpc.AuthInfo parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthInfo parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.AuthInfo parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthInfo parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.AuthInfo parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthInfo parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.AuthInfo parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthInfo parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.AuthInfo parseFrom(byte[] data)
+  public static POGOProtos.Rpc.PlatformAuthInfo parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.AuthInfo parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthInfo parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.AuthInfo parseFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.PlatformAuthInfo parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.AuthInfo parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthInfo parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.AuthInfo parseDelimitedFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.PlatformAuthInfo parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.AuthInfo parseDelimitedFrom(
+  public static POGOProtos.Rpc.PlatformAuthInfo parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.AuthInfo parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthInfo parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.AuthInfo parseFrom(
+  public static POGOProtos.Rpc.PlatformAuthInfo parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -1501,7 +1501,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(POGOProtos.Rpc.AuthInfo prototype) {
+  public static Builder newBuilder(POGOProtos.Rpc.PlatformAuthInfo prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -1517,26 +1517,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code POGOProtos.Rpc.AuthInfo}
+   * Protobuf type {@code POGOProtos.Rpc.PlatformAuthInfo}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.AuthInfo)
-      POGOProtos.Rpc.AuthInfoOrBuilder {
+      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.PlatformAuthInfo)
+      POGOProtos.Rpc.PlatformAuthInfoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.AuthInfo.class, POGOProtos.Rpc.AuthInfo.Builder.class);
+              POGOProtos.Rpc.PlatformAuthInfo.class, POGOProtos.Rpc.PlatformAuthInfo.Builder.class);
     }
 
-    // Construct using POGOProtos.Rpc.AuthInfo.newBuilder()
+    // Construct using POGOProtos.Rpc.PlatformAuthInfo.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -1574,17 +1574,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_AuthInfo_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PlatformAuthInfo_descriptor;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.AuthInfo getDefaultInstanceForType() {
-      return POGOProtos.Rpc.AuthInfo.getDefaultInstance();
+    public POGOProtos.Rpc.PlatformAuthInfo getDefaultInstanceForType() {
+      return POGOProtos.Rpc.PlatformAuthInfo.getDefaultInstance();
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.AuthInfo build() {
-      POGOProtos.Rpc.AuthInfo result = buildPartial();
+    public POGOProtos.Rpc.PlatformAuthInfo build() {
+      POGOProtos.Rpc.PlatformAuthInfo result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -1592,8 +1592,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.AuthInfo buildPartial() {
-      POGOProtos.Rpc.AuthInfo result = new POGOProtos.Rpc.AuthInfo(this);
+    public POGOProtos.Rpc.PlatformAuthInfo buildPartial() {
+      POGOProtos.Rpc.PlatformAuthInfo result = new POGOProtos.Rpc.PlatformAuthInfo(this);
       result.provider_ = provider_;
       if (tokenBuilder_ == null) {
         result.token_ = token_;
@@ -1643,16 +1643,16 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof POGOProtos.Rpc.AuthInfo) {
-        return mergeFrom((POGOProtos.Rpc.AuthInfo)other);
+      if (other instanceof POGOProtos.Rpc.PlatformAuthInfo) {
+        return mergeFrom((POGOProtos.Rpc.PlatformAuthInfo)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(POGOProtos.Rpc.AuthInfo other) {
-      if (other == POGOProtos.Rpc.AuthInfo.getDefaultInstance()) return this;
+    public Builder mergeFrom(POGOProtos.Rpc.PlatformAuthInfo other) {
+      if (other == POGOProtos.Rpc.PlatformAuthInfo.getDefaultInstance()) return this;
       if (!other.getProvider().isEmpty()) {
         provider_ = other.provider_;
         onChanged();
@@ -1678,11 +1678,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      POGOProtos.Rpc.AuthInfo parsedMessage = null;
+      POGOProtos.Rpc.PlatformAuthInfo parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (POGOProtos.Rpc.AuthInfo) e.getUnfinishedMessage();
+        parsedMessage = (POGOProtos.Rpc.PlatformAuthInfo) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -1768,31 +1768,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.AuthInfo.JWT token_;
+    private POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AuthInfo.JWT, POGOProtos.Rpc.AuthInfo.JWT.Builder, POGOProtos.Rpc.AuthInfo.JWTOrBuilder> tokenBuilder_;
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT, POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.Builder, POGOProtos.Rpc.PlatformAuthInfo.PlatformJWTOrBuilder> tokenBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
      * @return Whether the token field is set.
      */
     public boolean hasToken() {
       return tokenBuilder_ != null || token_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
      * @return The token.
      */
-    public POGOProtos.Rpc.AuthInfo.JWT getToken() {
+    public POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT getToken() {
       if (tokenBuilder_ == null) {
-        return token_ == null ? POGOProtos.Rpc.AuthInfo.JWT.getDefaultInstance() : token_;
+        return token_ == null ? POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.getDefaultInstance() : token_;
       } else {
         return tokenBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
      */
-    public Builder setToken(POGOProtos.Rpc.AuthInfo.JWT value) {
+    public Builder setToken(POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT value) {
       if (tokenBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1806,10 +1806,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
      */
     public Builder setToken(
-        POGOProtos.Rpc.AuthInfo.JWT.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.Builder builderForValue) {
       if (tokenBuilder_ == null) {
         token_ = builderForValue.build();
         onChanged();
@@ -1820,13 +1820,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
      */
-    public Builder mergeToken(POGOProtos.Rpc.AuthInfo.JWT value) {
+    public Builder mergeToken(POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT value) {
       if (tokenBuilder_ == null) {
         if (token_ != null) {
           token_ =
-            POGOProtos.Rpc.AuthInfo.JWT.newBuilder(token_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.newBuilder(token_).mergeFrom(value).buildPartial();
         } else {
           token_ = value;
         }
@@ -1838,7 +1838,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
      */
     public Builder clearToken() {
       if (tokenBuilder_ == null) {
@@ -1852,33 +1852,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
      */
-    public POGOProtos.Rpc.AuthInfo.JWT.Builder getTokenBuilder() {
+    public POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.Builder getTokenBuilder() {
       
       onChanged();
       return getTokenFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
      */
-    public POGOProtos.Rpc.AuthInfo.JWTOrBuilder getTokenOrBuilder() {
+    public POGOProtos.Rpc.PlatformAuthInfo.PlatformJWTOrBuilder getTokenOrBuilder() {
       if (tokenBuilder_ != null) {
         return tokenBuilder_.getMessageOrBuilder();
       } else {
         return token_ == null ?
-            POGOProtos.Rpc.AuthInfo.JWT.getDefaultInstance() : token_;
+            POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.getDefaultInstance() : token_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.JWT token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT token = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AuthInfo.JWT, POGOProtos.Rpc.AuthInfo.JWT.Builder, POGOProtos.Rpc.AuthInfo.JWTOrBuilder> 
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT, POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.Builder, POGOProtos.Rpc.PlatformAuthInfo.PlatformJWTOrBuilder> 
         getTokenFieldBuilder() {
       if (tokenBuilder_ == null) {
         tokenBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.AuthInfo.JWT, POGOProtos.Rpc.AuthInfo.JWT.Builder, POGOProtos.Rpc.AuthInfo.JWTOrBuilder>(
+            POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT, POGOProtos.Rpc.PlatformAuthInfo.PlatformJWT.Builder, POGOProtos.Rpc.PlatformAuthInfo.PlatformJWTOrBuilder>(
                 getToken(),
                 getParentForChildren(),
                 isClean());
@@ -1887,31 +1887,31 @@ private static final long serialVersionUID = 0L;
       return tokenBuilder_;
     }
 
-    private POGOProtos.Rpc.AuthInfo.AuthOptions options_;
+    private POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AuthInfo.AuthOptions, POGOProtos.Rpc.AuthInfo.AuthOptions.Builder, POGOProtos.Rpc.AuthInfo.AuthOptionsOrBuilder> optionsBuilder_;
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions, POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.Builder, POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptionsOrBuilder> optionsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
      * @return Whether the options field is set.
      */
     public boolean hasOptions() {
       return optionsBuilder_ != null || options_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
      * @return The options.
      */
-    public POGOProtos.Rpc.AuthInfo.AuthOptions getOptions() {
+    public POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions getOptions() {
       if (optionsBuilder_ == null) {
-        return options_ == null ? POGOProtos.Rpc.AuthInfo.AuthOptions.getDefaultInstance() : options_;
+        return options_ == null ? POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.getDefaultInstance() : options_;
       } else {
         return optionsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
      */
-    public Builder setOptions(POGOProtos.Rpc.AuthInfo.AuthOptions value) {
+    public Builder setOptions(POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions value) {
       if (optionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1925,10 +1925,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
      */
     public Builder setOptions(
-        POGOProtos.Rpc.AuthInfo.AuthOptions.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.Builder builderForValue) {
       if (optionsBuilder_ == null) {
         options_ = builderForValue.build();
         onChanged();
@@ -1939,13 +1939,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
      */
-    public Builder mergeOptions(POGOProtos.Rpc.AuthInfo.AuthOptions value) {
+    public Builder mergeOptions(POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions value) {
       if (optionsBuilder_ == null) {
         if (options_ != null) {
           options_ =
-            POGOProtos.Rpc.AuthInfo.AuthOptions.newBuilder(options_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.newBuilder(options_).mergeFrom(value).buildPartial();
         } else {
           options_ = value;
         }
@@ -1957,7 +1957,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
      */
     public Builder clearOptions() {
       if (optionsBuilder_ == null) {
@@ -1971,33 +1971,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
      */
-    public POGOProtos.Rpc.AuthInfo.AuthOptions.Builder getOptionsBuilder() {
+    public POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.Builder getOptionsBuilder() {
       
       onChanged();
       return getOptionsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
      */
-    public POGOProtos.Rpc.AuthInfo.AuthOptionsOrBuilder getOptionsOrBuilder() {
+    public POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptionsOrBuilder getOptionsOrBuilder() {
       if (optionsBuilder_ != null) {
         return optionsBuilder_.getMessageOrBuilder();
       } else {
         return options_ == null ?
-            POGOProtos.Rpc.AuthInfo.AuthOptions.getDefaultInstance() : options_;
+            POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.getDefaultInstance() : options_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AuthInfo.AuthOptions options = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions options = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AuthInfo.AuthOptions, POGOProtos.Rpc.AuthInfo.AuthOptions.Builder, POGOProtos.Rpc.AuthInfo.AuthOptionsOrBuilder> 
+        POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions, POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.Builder, POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptionsOrBuilder> 
         getOptionsFieldBuilder() {
       if (optionsBuilder_ == null) {
         optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.AuthInfo.AuthOptions, POGOProtos.Rpc.AuthInfo.AuthOptions.Builder, POGOProtos.Rpc.AuthInfo.AuthOptionsOrBuilder>(
+            POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions, POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptions.Builder, POGOProtos.Rpc.PlatformAuthInfo.PlatformAuthOptionsOrBuilder>(
                 getOptions(),
                 getParentForChildren(),
                 isClean());
@@ -2018,41 +2018,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.AuthInfo)
+    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.PlatformAuthInfo)
   }
 
-  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.AuthInfo)
-  private static final POGOProtos.Rpc.AuthInfo DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.PlatformAuthInfo)
+  private static final POGOProtos.Rpc.PlatformAuthInfo DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new POGOProtos.Rpc.AuthInfo();
+    DEFAULT_INSTANCE = new POGOProtos.Rpc.PlatformAuthInfo();
   }
 
-  public static POGOProtos.Rpc.AuthInfo getDefaultInstance() {
+  public static POGOProtos.Rpc.PlatformAuthInfo getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<AuthInfo>
-      PARSER = new com.google.protobuf.AbstractParser<AuthInfo>() {
+  private static final com.google.protobuf.Parser<PlatformAuthInfo>
+      PARSER = new com.google.protobuf.AbstractParser<PlatformAuthInfo>() {
     @java.lang.Override
-    public AuthInfo parsePartialFrom(
+    public PlatformAuthInfo parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new AuthInfo(input, extensionRegistry);
+      return new PlatformAuthInfo(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<AuthInfo> parser() {
+  public static com.google.protobuf.Parser<PlatformAuthInfo> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<AuthInfo> getParserForType() {
+  public com.google.protobuf.Parser<PlatformAuthInfo> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public POGOProtos.Rpc.AuthInfo getDefaultInstanceForType() {
+  public POGOProtos.Rpc.PlatformAuthInfo getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

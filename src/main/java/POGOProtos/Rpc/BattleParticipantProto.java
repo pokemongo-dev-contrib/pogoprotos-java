@@ -558,7 +558,7 @@ private static final long serialVersionUID = 0L;
     if (weatherBoosted_ != false) {
       output.writeBool(8, weatherBoosted_);
     }
-    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       output.writeEnum(9, highestFriendshipMilestone_);
     }
     for (int i = 0; i < friendCodename_.size(); i++) {
@@ -620,7 +620,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(8, weatherBoosted_);
     }
-    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (highestFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(9, highestFriendshipMilestone_);
     }

@@ -1294,10 +1294,10 @@ private static final long serialVersionUID = 0L;
     if (shiny_ != false) {
       output.writeBool(23, shiny_);
     }
-    if (move1_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+    if (move1_ != POGOProtos.Rpc.HoloPokemonMove.MOVE_UNSET.getNumber()) {
       output.writeEnum(24, move1_);
     }
-    if (move2_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+    if (move2_ != POGOProtos.Rpc.HoloPokemonMove.MOVE_UNSET.getNumber()) {
       output.writeEnum(25, move2_);
     }
     unknownFields.writeTo(output);
@@ -1399,11 +1399,11 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(23, shiny_);
     }
-    if (move1_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+    if (move1_ != POGOProtos.Rpc.HoloPokemonMove.MOVE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(24, move1_);
     }
-    if (move2_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+    if (move2_ != POGOProtos.Rpc.HoloPokemonMove.MOVE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(25, move2_);
     }

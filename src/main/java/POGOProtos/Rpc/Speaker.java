@@ -103,7 +103,7 @@ public enum Speaker
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(133);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(138);
   }
 
   private static final Speaker[] VALUES = values();

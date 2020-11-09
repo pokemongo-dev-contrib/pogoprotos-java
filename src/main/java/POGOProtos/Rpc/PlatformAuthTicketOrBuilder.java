@@ -3,8 +3,8 @@
 
 package POGOProtos.Rpc;
 
-public interface AuthTicketOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.AuthTicket)
+public interface PlatformAuthTicketOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.PlatformAuthTicket)
     com.google.protobuf.MessageOrBuilder {
 
   /**

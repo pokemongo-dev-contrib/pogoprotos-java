@@ -216,10 +216,10 @@ private static final long serialVersionUID = 0L;
     if (pointsEarnedToday_ != 0) {
       output.writeInt32(2, pointsEarnedToday_);
     }
-    if (awardedFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (awardedFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       output.writeEnum(3, awardedFriendshipMilestone_);
     }
-    if (currentFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (currentFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       output.writeEnum(4, currentFriendshipMilestone_);
     }
     if (nextFriendshipMilestoneProgressPercentage_ != 0D) {
@@ -245,11 +245,11 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(2, pointsEarnedToday_);
     }
-    if (awardedFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (awardedFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, awardedFriendshipMilestone_);
     }
-    if (currentFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET.getNumber()) {
+    if (currentFriendshipMilestone_ != POGOProtos.Rpc.FriendshipLevelMilestone.FRIENDSHIP_LEVEL_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(4, currentFriendshipMilestone_);
     }

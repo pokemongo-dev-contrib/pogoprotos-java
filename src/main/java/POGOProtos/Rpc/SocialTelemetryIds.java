@@ -139,7 +139,7 @@ public enum SocialTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(131);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(136);
   }
 
   private static final SocialTelemetryIds[] VALUES = values();

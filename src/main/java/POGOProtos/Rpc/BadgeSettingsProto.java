@@ -344,7 +344,7 @@ private static final long serialVersionUID = 0L;
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
-    if (badgeType_ != POGOProtos.Rpc.HoloBadgeType.HOLO_BADGE_TYPE_BADGE_UNSET.getNumber()) {
+    if (badgeType_ != POGOProtos.Rpc.HoloBadgeType.BADGE_UNSET.getNumber()) {
       output.writeEnum(1, badgeType_);
     }
     if (badgeRanks_ != 0) {
@@ -378,7 +378,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (badgeType_ != POGOProtos.Rpc.HoloBadgeType.HOLO_BADGE_TYPE_BADGE_UNSET.getNumber()) {
+    if (badgeType_ != POGOProtos.Rpc.HoloBadgeType.BADGE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, badgeType_);
     }

@@ -727,13 +727,13 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (uniqueId_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (uniqueId_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       output.writeEnum(1, uniqueId_);
     }
-    if (itemType_ != POGOProtos.Rpc.HoloItemType.HOLO_ITEM_TYPE_ITEM_TYPE_NONE.getNumber()) {
+    if (itemType_ != POGOProtos.Rpc.HoloItemType.ITEM_TYPE_NONE.getNumber()) {
       output.writeEnum(2, itemType_);
     }
-    if (category_ != POGOProtos.Rpc.HoloItemCategory.HOLO_ITEM_CATEGORY_ITEM_CATEGORY_NONE.getNumber()) {
+    if (category_ != POGOProtos.Rpc.HoloItemCategory.ITEM_CATEGORY_NONE.getNumber()) {
       output.writeEnum(3, category_);
     }
     if (dropFreq_ != 0F) {
@@ -793,15 +793,15 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (uniqueId_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (uniqueId_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, uniqueId_);
     }
-    if (itemType_ != POGOProtos.Rpc.HoloItemType.HOLO_ITEM_TYPE_ITEM_TYPE_NONE.getNumber()) {
+    if (itemType_ != POGOProtos.Rpc.HoloItemType.ITEM_TYPE_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, itemType_);
     }
-    if (category_ != POGOProtos.Rpc.HoloItemCategory.HOLO_ITEM_CATEGORY_ITEM_CATEGORY_NONE.getNumber()) {
+    if (category_ != POGOProtos.Rpc.HoloItemCategory.ITEM_CATEGORY_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, category_);
     }

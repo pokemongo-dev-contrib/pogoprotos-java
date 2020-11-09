@@ -258,10 +258,10 @@ private static final long serialVersionUID = 0L;
     if (!getItemIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, itemId_);
     }
-    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (item_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       output.writeEnum(2, item_);
     }
-    if (incubatorType_ != POGOProtos.Rpc.EggIncubatorType.EGG_INCUBATOR_TYPE_INCUBATOR_UNSET.getNumber()) {
+    if (incubatorType_ != POGOProtos.Rpc.EggIncubatorType.INCUBATOR_UNSET.getNumber()) {
       output.writeEnum(3, incubatorType_);
     }
     if (usesRemaining_ != 0) {
@@ -288,11 +288,11 @@ private static final long serialVersionUID = 0L;
     if (!getItemIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, itemId_);
     }
-    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (item_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, item_);
     }
-    if (incubatorType_ != POGOProtos.Rpc.EggIncubatorType.EGG_INCUBATOR_TYPE_INCUBATOR_UNSET.getNumber()) {
+    if (incubatorType_ != POGOProtos.Rpc.EggIncubatorType.INCUBATOR_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, incubatorType_);
     }

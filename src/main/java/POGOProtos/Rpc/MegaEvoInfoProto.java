@@ -162,10 +162,10 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       output.writeEnum(1, pokedexId_);
     }
-    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(2, tempEvoId_);
     }
     if (evoExpirationTimeMs_ != 0L) {
@@ -180,11 +180,11 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, pokedexId_);
     }
-    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (tempEvoId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, tempEvoId_);
     }

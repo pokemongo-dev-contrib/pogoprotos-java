@@ -9,40 +9,40 @@ package POGOProtos.Rpc;
 public enum PokemonHomeTelemetryIds
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POKEMON_HOME_TELEMETRY_IDS_UNDEFINED_POKEMON_HOME_EVENT = 0;</code>
+   * <code>UNDEFINED_POKEMON_HOME_EVENT = 0;</code>
    */
-  POKEMON_HOME_TELEMETRY_IDS_UNDEFINED_POKEMON_HOME_EVENT(0),
+  UNDEFINED_POKEMON_HOME_EVENT(0),
   /**
-   * <code>POKEMON_HOME_TELEMETRY_IDS_OPEN_SETTINGS = 1;</code>
+   * <code>OPEN_SETTINGS = 1;</code>
    */
-  POKEMON_HOME_TELEMETRY_IDS_OPEN_SETTINGS(1),
+  OPEN_SETTINGS(1),
   /**
-   * <code>POKEMON_HOME_TELEMETRY_IDS_SIGN_IN = 2;</code>
+   * <code>SIGN_IN = 2;</code>
    */
-  POKEMON_HOME_TELEMETRY_IDS_SIGN_IN(2),
+  SIGN_IN(2),
   /**
-   * <code>POKEMON_HOME_TELEMETRY_IDS_SELECTED_POKEMON = 3;</code>
+   * <code>SELECTED_POKEMON = 3;</code>
    */
-  POKEMON_HOME_TELEMETRY_IDS_SELECTED_POKEMON(3),
+  SELECTED_POKEMON(3),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>POKEMON_HOME_TELEMETRY_IDS_UNDEFINED_POKEMON_HOME_EVENT = 0;</code>
+   * <code>UNDEFINED_POKEMON_HOME_EVENT = 0;</code>
    */
-  public static final int POKEMON_HOME_TELEMETRY_IDS_UNDEFINED_POKEMON_HOME_EVENT_VALUE = 0;
+  public static final int UNDEFINED_POKEMON_HOME_EVENT_VALUE = 0;
   /**
-   * <code>POKEMON_HOME_TELEMETRY_IDS_OPEN_SETTINGS = 1;</code>
+   * <code>OPEN_SETTINGS = 1;</code>
    */
-  public static final int POKEMON_HOME_TELEMETRY_IDS_OPEN_SETTINGS_VALUE = 1;
+  public static final int OPEN_SETTINGS_VALUE = 1;
   /**
-   * <code>POKEMON_HOME_TELEMETRY_IDS_SIGN_IN = 2;</code>
+   * <code>SIGN_IN = 2;</code>
    */
-  public static final int POKEMON_HOME_TELEMETRY_IDS_SIGN_IN_VALUE = 2;
+  public static final int SIGN_IN_VALUE = 2;
   /**
-   * <code>POKEMON_HOME_TELEMETRY_IDS_SELECTED_POKEMON = 3;</code>
+   * <code>SELECTED_POKEMON = 3;</code>
    */
-  public static final int POKEMON_HOME_TELEMETRY_IDS_SELECTED_POKEMON_VALUE = 3;
+  public static final int SELECTED_POKEMON_VALUE = 3;
 
 
   public final int getNumber() {
@@ -69,10 +69,10 @@ public enum PokemonHomeTelemetryIds
    */
   public static PokemonHomeTelemetryIds forNumber(int value) {
     switch (value) {
-      case 0: return POKEMON_HOME_TELEMETRY_IDS_UNDEFINED_POKEMON_HOME_EVENT;
-      case 1: return POKEMON_HOME_TELEMETRY_IDS_OPEN_SETTINGS;
-      case 2: return POKEMON_HOME_TELEMETRY_IDS_SIGN_IN;
-      case 3: return POKEMON_HOME_TELEMETRY_IDS_SELECTED_POKEMON;
+      case 0: return UNDEFINED_POKEMON_HOME_EVENT;
+      case 1: return OPEN_SETTINGS;
+      case 2: return SIGN_IN;
+      case 3: return SELECTED_POKEMON;
       default: return null;
     }
   }
@@ -103,7 +103,7 @@ public enum PokemonHomeTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(112);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(117);
   }
 
   private static final PokemonHomeTelemetryIds[] VALUES = values();

@@ -182,7 +182,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (identityProvider_ != POGOProtos.Rpc.IdentityProvider.PLATFORM_IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER.getNumber()) {
+    if (identityProvider_ != POGOProtos.Rpc.IdentityProvider.IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER.getNumber()) {
       output.writeEnum(1, identityProvider_);
     }
     if (!innerMessage_.isEmpty()) {
@@ -200,7 +200,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (identityProvider_ != POGOProtos.Rpc.IdentityProvider.PLATFORM_IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER.getNumber()) {
+    if (identityProvider_ != POGOProtos.Rpc.IdentityProvider.IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, identityProvider_);
     }

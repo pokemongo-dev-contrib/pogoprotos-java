@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum PoiEditImageEntrySource
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU = 0;</code>
+   * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU = 0;</code>
    */
-  TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU(0),
+  POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU(0),
   /**
-   * <code>TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY = 1;</code>
+   * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY = 1;</code>
    */
-  TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY(1),
+  POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU = 0;</code>
+   * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU = 0;</code>
    */
-  public static final int TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU_VALUE = 0;
+  public static final int POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU_VALUE = 0;
   /**
-   * <code>TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY = 1;</code>
+   * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY = 1;</code>
    */
-  public static final int TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY_VALUE = 1;
+  public static final int POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum PoiEditImageEntrySource
    */
   public static PoiEditImageEntrySource forNumber(int value) {
     switch (value) {
-      case 0: return TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU;
-      case 1: return TITAN_POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY;
+      case 0: return POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU;
+      case 1: return POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY;
       default: return null;
     }
   }
@@ -85,7 +85,7 @@ public enum PoiEditImageEntrySource
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(103);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(107);
   }
 
   private static final PoiEditImageEntrySource[] VALUES = values();

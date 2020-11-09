@@ -233,7 +233,7 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < createTimestampMs_.size(); i++) {
       output.writeInt64NoTag(createTimestampMs_.getLong(i));
     }
-    if (state_ != POGOProtos.Rpc.NotificationState.PLATFORM_NOTIFICATION_STATE_UNSET_STATE.getNumber()) {
+    if (state_ != POGOProtos.Rpc.NotificationState.NOTIFICATION_STATE_UNSET_STATE.getNumber()) {
       output.writeEnum(3, state_);
     }
     unknownFields.writeTo(output);
@@ -267,7 +267,7 @@ private static final long serialVersionUID = 0L;
       }
       createTimestampMsMemoizedSerializedSize = dataSize;
     }
-    if (state_ != POGOProtos.Rpc.NotificationState.PLATFORM_NOTIFICATION_STATE_UNSET_STATE.getNumber()) {
+    if (state_ != POGOProtos.Rpc.NotificationState.NOTIFICATION_STATE_UNSET_STATE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, state_);
     }

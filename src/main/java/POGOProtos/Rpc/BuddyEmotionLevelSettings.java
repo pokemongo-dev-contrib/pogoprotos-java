@@ -178,13 +178,13 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (emotionLevel_ != POGOProtos.Rpc.BuddyEmotionLevel.BUDDY_EMOTION_LEVEL_BUDDY_EMOTION_LEVEL_UNSET.getNumber()) {
+    if (emotionLevel_ != POGOProtos.Rpc.BuddyEmotionLevel.BUDDY_EMOTION_LEVEL_UNSET.getNumber()) {
       output.writeEnum(1, emotionLevel_);
     }
     if (minEmotionPointsRequired_ != 0) {
       output.writeInt32(2, minEmotionPointsRequired_);
     }
-    if (emotionAnimation_ != POGOProtos.Rpc.BuddyAnimation.BUDDY_ANIMATION_BUDDY_ANIMATION_UNSET.getNumber()) {
+    if (emotionAnimation_ != POGOProtos.Rpc.BuddyAnimation.BUDDY_ANIMATION_UNSET.getNumber()) {
       output.writeEnum(3, emotionAnimation_);
     }
     if (decayPreventionDurationMs_ != 0L) {
@@ -199,7 +199,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (emotionLevel_ != POGOProtos.Rpc.BuddyEmotionLevel.BUDDY_EMOTION_LEVEL_BUDDY_EMOTION_LEVEL_UNSET.getNumber()) {
+    if (emotionLevel_ != POGOProtos.Rpc.BuddyEmotionLevel.BUDDY_EMOTION_LEVEL_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, emotionLevel_);
     }
@@ -207,7 +207,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(2, minEmotionPointsRequired_);
     }
-    if (emotionAnimation_ != POGOProtos.Rpc.BuddyAnimation.BUDDY_ANIMATION_BUDDY_ANIMATION_UNSET.getNumber()) {
+    if (emotionAnimation_ != POGOProtos.Rpc.BuddyAnimation.BUDDY_ANIMATION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, emotionAnimation_);
     }

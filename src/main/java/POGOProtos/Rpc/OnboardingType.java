@@ -9,48 +9,48 @@ package POGOProtos.Rpc;
 public enum OnboardingType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>PLATFORM_ONBOARDING_TYPE_UNSET = 0;</code>
+   * <code>ONBOARDING_TYPE_UNSET = 0;</code>
    */
-  PLATFORM_ONBOARDING_TYPE_UNSET(0),
+  ONBOARDING_TYPE_UNSET(0),
   /**
-   * <code>PLATFORM_ONBOARDING_TYPE_PROFILE = 1;</code>
+   * <code>ONBOARDING_TYPE_PROFILE = 1;</code>
    */
-  PLATFORM_ONBOARDING_TYPE_PROFILE(1),
+  ONBOARDING_TYPE_PROFILE(1),
   /**
-   * <code>PLATFORM_ONBOARDING_TYPE_FRIEND_LIST_V2 = 2;</code>
+   * <code>ONBOARDING_TYPE_FRIEND_LIST_V2 = 2;</code>
    */
-  PLATFORM_ONBOARDING_TYPE_FRIEND_LIST_V2(2),
+  ONBOARDING_TYPE_FRIEND_LIST_V2(2),
   /**
-   * <code>PLATFORM_ONBOARDING_TYPE_ONLINE_STATUS_OVERVIEW = 3;</code>
+   * <code>ONBOARDING_TYPE_ONLINE_STATUS_OVERVIEW = 3;</code>
    */
-  PLATFORM_ONBOARDING_TYPE_ONLINE_STATUS_OVERVIEW(3),
+  ONBOARDING_TYPE_ONLINE_STATUS_OVERVIEW(3),
   /**
-   * <code>PLATFORM_ONBOARDING_TYPE_ONLINE_STATUS_TOGGLE = 4;</code>
+   * <code>ONBOARDING_TYPE_ONLINE_STATUS_TOGGLE = 4;</code>
    */
-  PLATFORM_ONBOARDING_TYPE_ONLINE_STATUS_TOGGLE(4),
+  ONBOARDING_TYPE_ONLINE_STATUS_TOGGLE(4),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>PLATFORM_ONBOARDING_TYPE_UNSET = 0;</code>
+   * <code>ONBOARDING_TYPE_UNSET = 0;</code>
    */
-  public static final int PLATFORM_ONBOARDING_TYPE_UNSET_VALUE = 0;
+  public static final int ONBOARDING_TYPE_UNSET_VALUE = 0;
   /**
-   * <code>PLATFORM_ONBOARDING_TYPE_PROFILE = 1;</code>
+   * <code>ONBOARDING_TYPE_PROFILE = 1;</code>
    */
-  public static final int PLATFORM_ONBOARDING_TYPE_PROFILE_VALUE = 1;
+  public static final int ONBOARDING_TYPE_PROFILE_VALUE = 1;
   /**
-   * <code>PLATFORM_ONBOARDING_TYPE_FRIEND_LIST_V2 = 2;</code>
+   * <code>ONBOARDING_TYPE_FRIEND_LIST_V2 = 2;</code>
    */
-  public static final int PLATFORM_ONBOARDING_TYPE_FRIEND_LIST_V2_VALUE = 2;
+  public static final int ONBOARDING_TYPE_FRIEND_LIST_V2_VALUE = 2;
   /**
-   * <code>PLATFORM_ONBOARDING_TYPE_ONLINE_STATUS_OVERVIEW = 3;</code>
+   * <code>ONBOARDING_TYPE_ONLINE_STATUS_OVERVIEW = 3;</code>
    */
-  public static final int PLATFORM_ONBOARDING_TYPE_ONLINE_STATUS_OVERVIEW_VALUE = 3;
+  public static final int ONBOARDING_TYPE_ONLINE_STATUS_OVERVIEW_VALUE = 3;
   /**
-   * <code>PLATFORM_ONBOARDING_TYPE_ONLINE_STATUS_TOGGLE = 4;</code>
+   * <code>ONBOARDING_TYPE_ONLINE_STATUS_TOGGLE = 4;</code>
    */
-  public static final int PLATFORM_ONBOARDING_TYPE_ONLINE_STATUS_TOGGLE_VALUE = 4;
+  public static final int ONBOARDING_TYPE_ONLINE_STATUS_TOGGLE_VALUE = 4;
 
 
   public final int getNumber() {
@@ -77,11 +77,11 @@ public enum OnboardingType
    */
   public static OnboardingType forNumber(int value) {
     switch (value) {
-      case 0: return PLATFORM_ONBOARDING_TYPE_UNSET;
-      case 1: return PLATFORM_ONBOARDING_TYPE_PROFILE;
-      case 2: return PLATFORM_ONBOARDING_TYPE_FRIEND_LIST_V2;
-      case 3: return PLATFORM_ONBOARDING_TYPE_ONLINE_STATUS_OVERVIEW;
-      case 4: return PLATFORM_ONBOARDING_TYPE_ONLINE_STATUS_TOGGLE;
+      case 0: return ONBOARDING_TYPE_UNSET;
+      case 1: return ONBOARDING_TYPE_PROFILE;
+      case 2: return ONBOARDING_TYPE_FRIEND_LIST_V2;
+      case 3: return ONBOARDING_TYPE_ONLINE_STATUS_OVERVIEW;
+      case 4: return ONBOARDING_TYPE_ONLINE_STATUS_TOGGLE;
       default: return null;
     }
   }
@@ -112,7 +112,7 @@ public enum OnboardingType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(89);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(91);
   }
 
   private static final OnboardingType[] VALUES = values();

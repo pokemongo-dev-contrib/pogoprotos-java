@@ -20696,10 +20696,10 @@ private static final long serialVersionUID = 0L;
     if (alignment_ != POGOProtos.Rpc.PokemonDisplayProto.Alignment.ALIGNMENT_UNSET.getNumber()) {
       output.writeEnum(6, alignment_);
     }
-    if (pokemonBadge_ != POGOProtos.Rpc.PokemonBadge.POKEMON_BADGE_POKEMON_BADGE_UNSET.getNumber()) {
+    if (pokemonBadge_ != POGOProtos.Rpc.PokemonBadge.POKEMON_BADGE_UNSET.getNumber()) {
       output.writeEnum(7, pokemonBadge_);
     }
-    if (currentTempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (currentTempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(8, currentTempEvolution_);
     }
     if (temporaryEvolutionFinishMs_ != 0L) {
@@ -20708,7 +20708,7 @@ private static final long serialVersionUID = 0L;
     if (tempEvolutionIsLocked_ != false) {
       output.writeBool(10, tempEvolutionIsLocked_);
     }
-    if (lockedTempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (lockedTempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(11, lockedTempEvolution_);
     }
     if (originalCostume_ != POGOProtos.Rpc.PokemonDisplayProto.Costume.UNSET.getNumber()) {
@@ -20750,11 +20750,11 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(6, alignment_);
     }
-    if (pokemonBadge_ != POGOProtos.Rpc.PokemonBadge.POKEMON_BADGE_POKEMON_BADGE_UNSET.getNumber()) {
+    if (pokemonBadge_ != POGOProtos.Rpc.PokemonBadge.POKEMON_BADGE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(7, pokemonBadge_);
     }
-    if (currentTempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (currentTempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(8, currentTempEvolution_);
     }
@@ -20766,7 +20766,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(10, tempEvolutionIsLocked_);
     }
-    if (lockedTempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (lockedTempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(11, lockedTempEvolution_);
     }

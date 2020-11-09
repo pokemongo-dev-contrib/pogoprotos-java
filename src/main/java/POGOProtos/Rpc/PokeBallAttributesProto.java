@@ -168,7 +168,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (itemEffect_ != POGOProtos.Rpc.HoloItemEffect.HOLO_ITEM_EFFECT_ITEM_EFFECT_NONE.getNumber()) {
+    if (itemEffect_ != POGOProtos.Rpc.HoloItemEffect.ITEM_EFFECT_NONE.getNumber()) {
       output.writeEnum(1, itemEffect_);
     }
     if (captureMulti_ != 0F) {
@@ -189,7 +189,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (itemEffect_ != POGOProtos.Rpc.HoloItemEffect.HOLO_ITEM_EFFECT_ITEM_EFFECT_NONE.getNumber()) {
+    if (itemEffect_ != POGOProtos.Rpc.HoloItemEffect.ITEM_EFFECT_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, itemEffect_);
     }

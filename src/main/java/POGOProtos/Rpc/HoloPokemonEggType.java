@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum HoloPokemonEggType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>HOLO_POKEMON_EGG_TYPE_EGG_TYPE_UNSET = 0;</code>
+   * <code>EGG_TYPE_UNSET = 0;</code>
    */
-  HOLO_POKEMON_EGG_TYPE_EGG_TYPE_UNSET(0),
+  EGG_TYPE_UNSET(0),
   /**
-   * <code>HOLO_POKEMON_EGG_TYPE_EGG_TYPE_SHADOW = 1;</code>
+   * <code>EGG_TYPE_SHADOW = 1;</code>
    */
-  HOLO_POKEMON_EGG_TYPE_EGG_TYPE_SHADOW(1),
+  EGG_TYPE_SHADOW(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>HOLO_POKEMON_EGG_TYPE_EGG_TYPE_UNSET = 0;</code>
+   * <code>EGG_TYPE_UNSET = 0;</code>
    */
-  public static final int HOLO_POKEMON_EGG_TYPE_EGG_TYPE_UNSET_VALUE = 0;
+  public static final int EGG_TYPE_UNSET_VALUE = 0;
   /**
-   * <code>HOLO_POKEMON_EGG_TYPE_EGG_TYPE_SHADOW = 1;</code>
+   * <code>EGG_TYPE_SHADOW = 1;</code>
    */
-  public static final int HOLO_POKEMON_EGG_TYPE_EGG_TYPE_SHADOW_VALUE = 1;
+  public static final int EGG_TYPE_SHADOW_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum HoloPokemonEggType
    */
   public static HoloPokemonEggType forNumber(int value) {
     switch (value) {
-      case 0: return HOLO_POKEMON_EGG_TYPE_EGG_TYPE_UNSET;
-      case 1: return HOLO_POKEMON_EGG_TYPE_EGG_TYPE_SHADOW;
+      case 0: return EGG_TYPE_UNSET;
+      case 1: return EGG_TYPE_SHADOW;
       default: return null;
     }
   }

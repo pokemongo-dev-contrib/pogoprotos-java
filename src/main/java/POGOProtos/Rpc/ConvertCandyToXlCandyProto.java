@@ -136,7 +136,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (family_ != POGOProtos.Rpc.HoloPokemonFamilyId.HOLO_POKEMON_FAMILY_ID_FAMILY_UNSET.getNumber()) {
+    if (family_ != POGOProtos.Rpc.HoloPokemonFamilyId.FAMILY_UNSET.getNumber()) {
       output.writeEnum(1, family_);
     }
     if (numXlCandy_ != 0) {
@@ -151,7 +151,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (family_ != POGOProtos.Rpc.HoloPokemonFamilyId.HOLO_POKEMON_FAMILY_ID_FAMILY_UNSET.getNumber()) {
+    if (family_ != POGOProtos.Rpc.HoloPokemonFamilyId.FAMILY_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, family_);
     }

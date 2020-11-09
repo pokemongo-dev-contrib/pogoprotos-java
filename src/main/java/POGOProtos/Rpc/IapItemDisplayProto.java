@@ -567,7 +567,7 @@ private static final long serialVersionUID = 0L;
     if (!getSkuBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, sku_);
     }
-    if (category_ != POGOProtos.Rpc.HoloIapItemCategory.HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_NONE.getNumber()) {
+    if (category_ != POGOProtos.Rpc.HoloIapItemCategory.IAP_CATEGORY_NONE.getNumber()) {
       output.writeEnum(2, category_);
     }
     if (sortOrder_ != 0) {
@@ -618,7 +618,7 @@ private static final long serialVersionUID = 0L;
     if (!getSkuBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, sku_);
     }
-    if (category_ != POGOProtos.Rpc.HoloIapItemCategory.HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_NONE.getNumber()) {
+    if (category_ != POGOProtos.Rpc.HoloIapItemCategory.IAP_CATEGORY_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, category_);
     }

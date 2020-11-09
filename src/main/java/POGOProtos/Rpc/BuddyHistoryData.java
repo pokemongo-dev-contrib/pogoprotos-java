@@ -600,7 +600,7 @@ private static final long serialVersionUID = 0L;
     if (pokemonId_ != 0L) {
       output.writeFixed64(1, pokemonId_);
     }
-    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       output.writeEnum(2, pokedexId_);
     }
     if (pokemonDisplay_ != null) {
@@ -618,7 +618,7 @@ private static final long serialVersionUID = 0L;
     if (creationTimestampMs_ != 0L) {
       output.writeInt64(7, creationTimestampMs_);
     }
-    if (pokeball_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (pokeball_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       output.writeEnum(8, pokeball_);
     }
     if (totalStats_ != null) {
@@ -667,7 +667,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFixed64Size(1, pokemonId_);
     }
-    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokedexId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, pokedexId_);
     }
@@ -690,7 +690,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(7, creationTimestampMs_);
     }
-    if (pokeball_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (pokeball_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(8, pokeball_);
     }

@@ -9,72 +9,72 @@ package POGOProtos.Rpc;
 public enum BuddyActivityCategory
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_UNSET = 0;</code>
+   * <code>BUDDY_CATEGORY_UNSET = 0;</code>
    */
-  BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_UNSET(0),
+  BUDDY_CATEGORY_UNSET(0),
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_FEED = 1;</code>
+   * <code>BUDDY_CATEGORY_FEED = 1;</code>
    */
-  BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_FEED(1),
+  BUDDY_CATEGORY_FEED(1),
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_CARE = 2;</code>
+   * <code>BUDDY_CATEGORY_CARE = 2;</code>
    */
-  BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_CARE(2),
+  BUDDY_CATEGORY_CARE(2),
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_SNAPSHOT = 3;</code>
+   * <code>BUDDY_CATEGORY_SNAPSHOT = 3;</code>
    */
-  BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_SNAPSHOT(3),
+  BUDDY_CATEGORY_SNAPSHOT(3),
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_WALK = 4;</code>
+   * <code>BUDDY_CATEGORY_WALK = 4;</code>
    */
-  BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_WALK(4),
+  BUDDY_CATEGORY_WALK(4),
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_BATTLE = 5;</code>
+   * <code>BUDDY_CATEGORY_BATTLE = 5;</code>
    */
-  BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_BATTLE(5),
+  BUDDY_CATEGORY_BATTLE(5),
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_EXPLORE = 6;</code>
+   * <code>BUDDY_CATEGORY_EXPLORE = 6;</code>
    */
-  BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_EXPLORE(6),
+  BUDDY_CATEGORY_EXPLORE(6),
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_BONUS = 7;</code>
+   * <code>BUDDY_CATEGORY_BONUS = 7;</code>
    */
-  BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_BONUS(7),
+  BUDDY_CATEGORY_BONUS(7),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_UNSET = 0;</code>
+   * <code>BUDDY_CATEGORY_UNSET = 0;</code>
    */
-  public static final int BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_UNSET_VALUE = 0;
+  public static final int BUDDY_CATEGORY_UNSET_VALUE = 0;
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_FEED = 1;</code>
+   * <code>BUDDY_CATEGORY_FEED = 1;</code>
    */
-  public static final int BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_FEED_VALUE = 1;
+  public static final int BUDDY_CATEGORY_FEED_VALUE = 1;
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_CARE = 2;</code>
+   * <code>BUDDY_CATEGORY_CARE = 2;</code>
    */
-  public static final int BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_CARE_VALUE = 2;
+  public static final int BUDDY_CATEGORY_CARE_VALUE = 2;
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_SNAPSHOT = 3;</code>
+   * <code>BUDDY_CATEGORY_SNAPSHOT = 3;</code>
    */
-  public static final int BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_SNAPSHOT_VALUE = 3;
+  public static final int BUDDY_CATEGORY_SNAPSHOT_VALUE = 3;
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_WALK = 4;</code>
+   * <code>BUDDY_CATEGORY_WALK = 4;</code>
    */
-  public static final int BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_WALK_VALUE = 4;
+  public static final int BUDDY_CATEGORY_WALK_VALUE = 4;
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_BATTLE = 5;</code>
+   * <code>BUDDY_CATEGORY_BATTLE = 5;</code>
    */
-  public static final int BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_BATTLE_VALUE = 5;
+  public static final int BUDDY_CATEGORY_BATTLE_VALUE = 5;
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_EXPLORE = 6;</code>
+   * <code>BUDDY_CATEGORY_EXPLORE = 6;</code>
    */
-  public static final int BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_EXPLORE_VALUE = 6;
+  public static final int BUDDY_CATEGORY_EXPLORE_VALUE = 6;
   /**
-   * <code>BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_BONUS = 7;</code>
+   * <code>BUDDY_CATEGORY_BONUS = 7;</code>
    */
-  public static final int BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_BONUS_VALUE = 7;
+  public static final int BUDDY_CATEGORY_BONUS_VALUE = 7;
 
 
   public final int getNumber() {
@@ -101,14 +101,14 @@ public enum BuddyActivityCategory
    */
   public static BuddyActivityCategory forNumber(int value) {
     switch (value) {
-      case 0: return BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_UNSET;
-      case 1: return BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_FEED;
-      case 2: return BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_CARE;
-      case 3: return BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_SNAPSHOT;
-      case 4: return BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_WALK;
-      case 5: return BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_BATTLE;
-      case 6: return BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_EXPLORE;
-      case 7: return BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_BONUS;
+      case 0: return BUDDY_CATEGORY_UNSET;
+      case 1: return BUDDY_CATEGORY_FEED;
+      case 2: return BUDDY_CATEGORY_CARE;
+      case 3: return BUDDY_CATEGORY_SNAPSHOT;
+      case 4: return BUDDY_CATEGORY_WALK;
+      case 5: return BUDDY_CATEGORY_BATTLE;
+      case 6: return BUDDY_CATEGORY_EXPLORE;
+      case 7: return BUDDY_CATEGORY_BONUS;
       default: return null;
     }
   }

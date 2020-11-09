@@ -9,80 +9,80 @@ package POGOProtos.Rpc;
 public enum PokemonTagColor
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_UNSET = 0;</code>
+   * <code>POKEMON_TAG_COLOR_UNSET = 0;</code>
    */
-  POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_UNSET(0),
+  POKEMON_TAG_COLOR_UNSET(0),
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_BLUE = 1;</code>
+   * <code>POKEMON_TAG_COLOR_BLUE = 1;</code>
    */
-  POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_BLUE(1),
+  POKEMON_TAG_COLOR_BLUE(1),
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_GREEN = 2;</code>
+   * <code>POKEMON_TAG_COLOR_GREEN = 2;</code>
    */
-  POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_GREEN(2),
+  POKEMON_TAG_COLOR_GREEN(2),
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_PURPLE = 3;</code>
+   * <code>POKEMON_TAG_COLOR_PURPLE = 3;</code>
    */
-  POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_PURPLE(3),
+  POKEMON_TAG_COLOR_PURPLE(3),
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_YELLOW = 4;</code>
+   * <code>POKEMON_TAG_COLOR_YELLOW = 4;</code>
    */
-  POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_YELLOW(4),
+  POKEMON_TAG_COLOR_YELLOW(4),
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_RED = 5;</code>
+   * <code>POKEMON_TAG_COLOR_RED = 5;</code>
    */
-  POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_RED(5),
+  POKEMON_TAG_COLOR_RED(5),
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_ORANGE = 6;</code>
+   * <code>POKEMON_TAG_COLOR_ORANGE = 6;</code>
    */
-  POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_ORANGE(6),
+  POKEMON_TAG_COLOR_ORANGE(6),
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_GREY = 7;</code>
+   * <code>POKEMON_TAG_COLOR_GREY = 7;</code>
    */
-  POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_GREY(7),
+  POKEMON_TAG_COLOR_GREY(7),
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_BLACK = 8;</code>
+   * <code>POKEMON_TAG_COLOR_BLACK = 8;</code>
    */
-  POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_BLACK(8),
+  POKEMON_TAG_COLOR_BLACK(8),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_UNSET = 0;</code>
+   * <code>POKEMON_TAG_COLOR_UNSET = 0;</code>
    */
-  public static final int POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_UNSET_VALUE = 0;
+  public static final int POKEMON_TAG_COLOR_UNSET_VALUE = 0;
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_BLUE = 1;</code>
+   * <code>POKEMON_TAG_COLOR_BLUE = 1;</code>
    */
-  public static final int POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_BLUE_VALUE = 1;
+  public static final int POKEMON_TAG_COLOR_BLUE_VALUE = 1;
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_GREEN = 2;</code>
+   * <code>POKEMON_TAG_COLOR_GREEN = 2;</code>
    */
-  public static final int POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_GREEN_VALUE = 2;
+  public static final int POKEMON_TAG_COLOR_GREEN_VALUE = 2;
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_PURPLE = 3;</code>
+   * <code>POKEMON_TAG_COLOR_PURPLE = 3;</code>
    */
-  public static final int POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_PURPLE_VALUE = 3;
+  public static final int POKEMON_TAG_COLOR_PURPLE_VALUE = 3;
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_YELLOW = 4;</code>
+   * <code>POKEMON_TAG_COLOR_YELLOW = 4;</code>
    */
-  public static final int POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_YELLOW_VALUE = 4;
+  public static final int POKEMON_TAG_COLOR_YELLOW_VALUE = 4;
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_RED = 5;</code>
+   * <code>POKEMON_TAG_COLOR_RED = 5;</code>
    */
-  public static final int POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_RED_VALUE = 5;
+  public static final int POKEMON_TAG_COLOR_RED_VALUE = 5;
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_ORANGE = 6;</code>
+   * <code>POKEMON_TAG_COLOR_ORANGE = 6;</code>
    */
-  public static final int POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_ORANGE_VALUE = 6;
+  public static final int POKEMON_TAG_COLOR_ORANGE_VALUE = 6;
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_GREY = 7;</code>
+   * <code>POKEMON_TAG_COLOR_GREY = 7;</code>
    */
-  public static final int POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_GREY_VALUE = 7;
+  public static final int POKEMON_TAG_COLOR_GREY_VALUE = 7;
   /**
-   * <code>POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_BLACK = 8;</code>
+   * <code>POKEMON_TAG_COLOR_BLACK = 8;</code>
    */
-  public static final int POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_BLACK_VALUE = 8;
+  public static final int POKEMON_TAG_COLOR_BLACK_VALUE = 8;
 
 
   public final int getNumber() {
@@ -109,15 +109,15 @@ public enum PokemonTagColor
    */
   public static PokemonTagColor forNumber(int value) {
     switch (value) {
-      case 0: return POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_UNSET;
-      case 1: return POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_BLUE;
-      case 2: return POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_GREEN;
-      case 3: return POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_PURPLE;
-      case 4: return POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_YELLOW;
-      case 5: return POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_RED;
-      case 6: return POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_ORANGE;
-      case 7: return POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_GREY;
-      case 8: return POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_BLACK;
+      case 0: return POKEMON_TAG_COLOR_UNSET;
+      case 1: return POKEMON_TAG_COLOR_BLUE;
+      case 2: return POKEMON_TAG_COLOR_GREEN;
+      case 3: return POKEMON_TAG_COLOR_PURPLE;
+      case 4: return POKEMON_TAG_COLOR_YELLOW;
+      case 5: return POKEMON_TAG_COLOR_RED;
+      case 6: return POKEMON_TAG_COLOR_ORANGE;
+      case 7: return POKEMON_TAG_COLOR_GREY;
+      case 8: return POKEMON_TAG_COLOR_BLACK;
       default: return null;
     }
   }
@@ -148,7 +148,7 @@ public enum PokemonTagColor
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(114);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(119);
   }
 
   private static final PokemonTagColor[] VALUES = values();

@@ -207,7 +207,7 @@ private static final long serialVersionUID = 0L;
     if (!getTicketIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, ticketId_);
     }
-    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (item_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       output.writeEnum(2, item_);
     }
     if (exclusiveInfo_ != null) {
@@ -225,7 +225,7 @@ private static final long serialVersionUID = 0L;
     if (!getTicketIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, ticketId_);
     }
-    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (item_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, item_);
     }

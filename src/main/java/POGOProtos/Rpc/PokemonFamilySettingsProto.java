@@ -162,13 +162,13 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (familyId_ != POGOProtos.Rpc.HoloPokemonFamilyId.HOLO_POKEMON_FAMILY_ID_FAMILY_UNSET.getNumber()) {
+    if (familyId_ != POGOProtos.Rpc.HoloPokemonFamilyId.FAMILY_UNSET.getNumber()) {
       output.writeEnum(1, familyId_);
     }
     if (candyPerXlCandy_ != 0) {
       output.writeInt32(2, candyPerXlCandy_);
     }
-    if (megaEvolvablePokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (megaEvolvablePokemonId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       output.writeEnum(3, megaEvolvablePokemonId_);
     }
     unknownFields.writeTo(output);
@@ -180,7 +180,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (familyId_ != POGOProtos.Rpc.HoloPokemonFamilyId.HOLO_POKEMON_FAMILY_ID_FAMILY_UNSET.getNumber()) {
+    if (familyId_ != POGOProtos.Rpc.HoloPokemonFamilyId.FAMILY_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, familyId_);
     }
@@ -188,7 +188,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(2, candyPerXlCandy_);
     }
-    if (megaEvolvablePokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (megaEvolvablePokemonId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, megaEvolvablePokemonId_);
     }

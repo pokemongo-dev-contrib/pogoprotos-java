@@ -1105,7 +1105,7 @@ private static final long serialVersionUID = 0L;
     if (enabled_ != false) {
       output.writeBool(8, enabled_);
     }
-    if (fortType_ != POGOProtos.Rpc.FortType.FORT_TYPE_GYM.getNumber()) {
+    if (fortType_ != POGOProtos.Rpc.FortType.GYM.getNumber()) {
       output.writeEnum(9, fortType_);
     }
     if (gymPoints_ != 0L) {
@@ -1230,7 +1230,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(8, enabled_);
     }
-    if (fortType_ != POGOProtos.Rpc.FortType.FORT_TYPE_GYM.getNumber()) {
+    if (fortType_ != POGOProtos.Rpc.FortType.GYM.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(9, fortType_);
     }

@@ -191,7 +191,7 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < combatLeagueTemplateId_.size(); i++) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, combatLeagueTemplateId_.getRaw(i));
     }
-    if (combatLeagueBadge_ != POGOProtos.Rpc.HoloBadgeType.HOLO_BADGE_TYPE_BADGE_UNSET.getNumber()) {
+    if (combatLeagueBadge_ != POGOProtos.Rpc.HoloBadgeType.BADGE_UNSET.getNumber()) {
       output.writeEnum(3, combatLeagueBadge_);
     }
     unknownFields.writeTo(output);
@@ -215,7 +215,7 @@ private static final long serialVersionUID = 0L;
       size += dataSize;
       size += 1 * getCombatLeagueTemplateIdList().size();
     }
-    if (combatLeagueBadge_ != POGOProtos.Rpc.HoloBadgeType.HOLO_BADGE_TYPE_BADGE_UNSET.getNumber()) {
+    if (combatLeagueBadge_ != POGOProtos.Rpc.HoloBadgeType.BADGE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, combatLeagueBadge_);
     }

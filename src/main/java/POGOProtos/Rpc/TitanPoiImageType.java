@@ -94,7 +94,7 @@ public enum TitanPoiImageType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(137);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(142);
   }
 
   private static final TitanPoiImageType[] VALUES = values();

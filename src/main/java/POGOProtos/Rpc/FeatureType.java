@@ -9,40 +9,40 @@ package POGOProtos.Rpc;
 public enum FeatureType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>PLATFORM_FEATURE_TYPE_UNSET = 0;</code>
+   * <code>FEATURE_TYPE_UNSET = 0;</code>
    */
-  PLATFORM_FEATURE_TYPE_UNSET(0),
+  FEATURE_TYPE_UNSET(0),
   /**
-   * <code>PLATFORM_FEATURE_TYPE_ONLINE_STATUS = 1;</code>
+   * <code>FEATURE_TYPE_ONLINE_STATUS = 1;</code>
    */
-  PLATFORM_FEATURE_TYPE_ONLINE_STATUS(1),
+  FEATURE_TYPE_ONLINE_STATUS(1),
   /**
-   * <code>PLATFORM_FEATURE_TYPE_NIANTIC_PROFILE = 2;</code>
+   * <code>FEATURE_TYPE_NIANTIC_PROFILE = 2;</code>
    */
-  PLATFORM_FEATURE_TYPE_NIANTIC_PROFILE(2),
+  FEATURE_TYPE_NIANTIC_PROFILE(2),
   /**
-   * <code>PLATFORM_FEATURE_TYPE_FRIENDS_LIST = 3;</code>
+   * <code>FEATURE_TYPE_FRIENDS_LIST = 3;</code>
    */
-  PLATFORM_FEATURE_TYPE_FRIENDS_LIST(3),
+  FEATURE_TYPE_FRIENDS_LIST(3),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>PLATFORM_FEATURE_TYPE_UNSET = 0;</code>
+   * <code>FEATURE_TYPE_UNSET = 0;</code>
    */
-  public static final int PLATFORM_FEATURE_TYPE_UNSET_VALUE = 0;
+  public static final int FEATURE_TYPE_UNSET_VALUE = 0;
   /**
-   * <code>PLATFORM_FEATURE_TYPE_ONLINE_STATUS = 1;</code>
+   * <code>FEATURE_TYPE_ONLINE_STATUS = 1;</code>
    */
-  public static final int PLATFORM_FEATURE_TYPE_ONLINE_STATUS_VALUE = 1;
+  public static final int FEATURE_TYPE_ONLINE_STATUS_VALUE = 1;
   /**
-   * <code>PLATFORM_FEATURE_TYPE_NIANTIC_PROFILE = 2;</code>
+   * <code>FEATURE_TYPE_NIANTIC_PROFILE = 2;</code>
    */
-  public static final int PLATFORM_FEATURE_TYPE_NIANTIC_PROFILE_VALUE = 2;
+  public static final int FEATURE_TYPE_NIANTIC_PROFILE_VALUE = 2;
   /**
-   * <code>PLATFORM_FEATURE_TYPE_FRIENDS_LIST = 3;</code>
+   * <code>FEATURE_TYPE_FRIENDS_LIST = 3;</code>
    */
-  public static final int PLATFORM_FEATURE_TYPE_FRIENDS_LIST_VALUE = 3;
+  public static final int FEATURE_TYPE_FRIENDS_LIST_VALUE = 3;
 
 
   public final int getNumber() {
@@ -69,10 +69,10 @@ public enum FeatureType
    */
   public static FeatureType forNumber(int value) {
     switch (value) {
-      case 0: return PLATFORM_FEATURE_TYPE_UNSET;
-      case 1: return PLATFORM_FEATURE_TYPE_ONLINE_STATUS;
-      case 2: return PLATFORM_FEATURE_TYPE_NIANTIC_PROFILE;
-      case 3: return PLATFORM_FEATURE_TYPE_FRIENDS_LIST;
+      case 0: return FEATURE_TYPE_UNSET;
+      case 1: return FEATURE_TYPE_ONLINE_STATUS;
+      case 2: return FEATURE_TYPE_NIANTIC_PROFILE;
+      case 3: return FEATURE_TYPE_FRIENDS_LIST;
       default: return null;
     }
   }

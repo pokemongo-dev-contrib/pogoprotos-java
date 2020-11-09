@@ -310,7 +310,7 @@ private static final long serialVersionUID = 0L;
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
-    if (type_ != POGOProtos.Rpc.CombatType.COMBAT_TYPE_COMBAT_TYPE_UNSET.getNumber()) {
+    if (type_ != POGOProtos.Rpc.CombatType.COMBAT_TYPE_UNSET.getNumber()) {
       output.writeEnum(1, type_);
     }
     if (!getChallengeIdBytes().isEmpty()) {
@@ -338,7 +338,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (type_ != POGOProtos.Rpc.CombatType.COMBAT_TYPE_COMBAT_TYPE_UNSET.getNumber()) {
+    if (type_ != POGOProtos.Rpc.CombatType.COMBAT_TYPE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, type_);
     }

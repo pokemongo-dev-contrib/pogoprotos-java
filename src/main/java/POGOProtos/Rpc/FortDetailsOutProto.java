@@ -868,7 +868,7 @@ private static final long serialVersionUID = 0L;
     if (maxStamina_ != 0) {
       output.writeInt32(8, maxStamina_);
     }
-    if (fortType_ != POGOProtos.Rpc.FortType.FORT_TYPE_GYM.getNumber()) {
+    if (fortType_ != POGOProtos.Rpc.FortType.GYM.getNumber()) {
       output.writeEnum(9, fortType_);
     }
     if (latitude_ != 0D) {
@@ -953,7 +953,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(8, maxStamina_);
     }
-    if (fortType_ != POGOProtos.Rpc.FortType.FORT_TYPE_GYM.getNumber()) {
+    if (fortType_ != POGOProtos.Rpc.FortType.GYM.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(9, fortType_);
     }

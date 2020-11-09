@@ -8363,7 +8363,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (id_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+      if (id_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
         output.writeEnum(1, id_);
       }
       if (form_ != POGOProtos.Rpc.PokemonDisplayProto.Form.FORM_UNSET.getNumber()) {
@@ -8378,7 +8378,7 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (id_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+      if (id_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, id_);
       }
@@ -9238,7 +9238,7 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < bannedPokemon_.size(); i++) {
       output.writeEnumNoTag(bannedPokemon_.get(i));
     }
-    if (badgeType_ != POGOProtos.Rpc.HoloBadgeType.HOLO_BADGE_TYPE_BADGE_UNSET.getNumber()) {
+    if (badgeType_ != POGOProtos.Rpc.HoloBadgeType.BADGE_UNSET.getNumber()) {
       output.writeEnum(8, badgeType_);
     }
     if (minigameDefenseChanceLimit_ != 0) {
@@ -9299,7 +9299,7 @@ private static final long serialVersionUID = 0L;
           .computeUInt32SizeNoTag(dataSize);
       }bannedPokemonMemoizedSerializedSize = dataSize;
     }
-    if (badgeType_ != POGOProtos.Rpc.HoloBadgeType.HOLO_BADGE_TYPE_BADGE_UNSET.getNumber()) {
+    if (badgeType_ != POGOProtos.Rpc.HoloBadgeType.BADGE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(8, badgeType_);
     }

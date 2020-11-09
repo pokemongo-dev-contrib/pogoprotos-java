@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum FortType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>FORT_TYPE_GYM = 0;</code>
+   * <code>GYM = 0;</code>
    */
-  FORT_TYPE_GYM(0),
+  GYM(0),
   /**
-   * <code>FORT_TYPE_CHECKPOINT = 1;</code>
+   * <code>CHECKPOINT = 1;</code>
    */
-  FORT_TYPE_CHECKPOINT(1),
+  CHECKPOINT(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>FORT_TYPE_GYM = 0;</code>
+   * <code>GYM = 0;</code>
    */
-  public static final int FORT_TYPE_GYM_VALUE = 0;
+  public static final int GYM_VALUE = 0;
   /**
-   * <code>FORT_TYPE_CHECKPOINT = 1;</code>
+   * <code>CHECKPOINT = 1;</code>
    */
-  public static final int FORT_TYPE_CHECKPOINT_VALUE = 1;
+  public static final int CHECKPOINT_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum FortType
    */
   public static FortType forNumber(int value) {
     switch (value) {
-      case 0: return FORT_TYPE_GYM;
-      case 1: return FORT_TYPE_CHECKPOINT;
+      case 0: return GYM;
+      case 1: return CHECKPOINT;
       default: return null;
     }
   }

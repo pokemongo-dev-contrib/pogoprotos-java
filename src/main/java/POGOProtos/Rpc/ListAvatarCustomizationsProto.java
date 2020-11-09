@@ -477,7 +477,7 @@ private static final long serialVersionUID = 0L;
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
-    if (avatarType_ != POGOProtos.Rpc.PlayerAvatarType.PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE.getNumber()) {
+    if (avatarType_ != POGOProtos.Rpc.PlayerAvatarType.PLAYER_AVATAR_MALE.getNumber()) {
       output.writeEnum(1, avatarType_);
     }
     if (getSlotList().size() > 0) {
@@ -509,7 +509,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (avatarType_ != POGOProtos.Rpc.PlayerAvatarType.PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE.getNumber()) {
+    if (avatarType_ != POGOProtos.Rpc.PlayerAvatarType.PLAYER_AVATAR_MALE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, avatarType_);
     }

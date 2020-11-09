@@ -9,32 +9,32 @@ package POGOProtos.Rpc;
 public enum InventoryUpgradeType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>INVENTORY_UPGRADE_TYPE_UPGRADE_UNSET = 0;</code>
+   * <code>UPGRADE_UNSET = 0;</code>
    */
-  INVENTORY_UPGRADE_TYPE_UPGRADE_UNSET(0),
+  UPGRADE_UNSET(0),
   /**
-   * <code>INVENTORY_UPGRADE_TYPE_INCREASE_ITEM_STORAGE = 1;</code>
+   * <code>INCREASE_ITEM_STORAGE = 1;</code>
    */
-  INVENTORY_UPGRADE_TYPE_INCREASE_ITEM_STORAGE(1),
+  INCREASE_ITEM_STORAGE(1),
   /**
-   * <code>INVENTORY_UPGRADE_TYPE_INCREASE_POKEMON_STORAGE = 2;</code>
+   * <code>INCREASE_POKEMON_STORAGE = 2;</code>
    */
-  INVENTORY_UPGRADE_TYPE_INCREASE_POKEMON_STORAGE(2),
+  INCREASE_POKEMON_STORAGE(2),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>INVENTORY_UPGRADE_TYPE_UPGRADE_UNSET = 0;</code>
+   * <code>UPGRADE_UNSET = 0;</code>
    */
-  public static final int INVENTORY_UPGRADE_TYPE_UPGRADE_UNSET_VALUE = 0;
+  public static final int UPGRADE_UNSET_VALUE = 0;
   /**
-   * <code>INVENTORY_UPGRADE_TYPE_INCREASE_ITEM_STORAGE = 1;</code>
+   * <code>INCREASE_ITEM_STORAGE = 1;</code>
    */
-  public static final int INVENTORY_UPGRADE_TYPE_INCREASE_ITEM_STORAGE_VALUE = 1;
+  public static final int INCREASE_ITEM_STORAGE_VALUE = 1;
   /**
-   * <code>INVENTORY_UPGRADE_TYPE_INCREASE_POKEMON_STORAGE = 2;</code>
+   * <code>INCREASE_POKEMON_STORAGE = 2;</code>
    */
-  public static final int INVENTORY_UPGRADE_TYPE_INCREASE_POKEMON_STORAGE_VALUE = 2;
+  public static final int INCREASE_POKEMON_STORAGE_VALUE = 2;
 
 
   public final int getNumber() {
@@ -61,9 +61,9 @@ public enum InventoryUpgradeType
    */
   public static InventoryUpgradeType forNumber(int value) {
     switch (value) {
-      case 0: return INVENTORY_UPGRADE_TYPE_UPGRADE_UNSET;
-      case 1: return INVENTORY_UPGRADE_TYPE_INCREASE_ITEM_STORAGE;
-      case 2: return INVENTORY_UPGRADE_TYPE_INCREASE_POKEMON_STORAGE;
+      case 0: return UPGRADE_UNSET;
+      case 1: return INCREASE_ITEM_STORAGE;
+      case 2: return INCREASE_POKEMON_STORAGE;
       default: return null;
     }
   }

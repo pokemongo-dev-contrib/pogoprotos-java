@@ -175,7 +175,7 @@ public enum PokemonAnim
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(108);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(112);
   }
 
   private static final PokemonAnim[] VALUES = values();

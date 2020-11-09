@@ -182,7 +182,7 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < attackScalar_.size(); i++) {
       output.writeFloatNoTag(attackScalar_.getFloat(i));
     }
-    if (attackType_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+    if (attackType_ != POGOProtos.Rpc.HoloPokemonType.POKEMON_TYPE_NONE.getNumber()) {
       output.writeEnum(2, attackType_);
     }
     unknownFields.writeTo(output);
@@ -205,7 +205,7 @@ private static final long serialVersionUID = 0L;
       }
       attackScalarMemoizedSerializedSize = dataSize;
     }
-    if (attackType_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+    if (attackType_ != POGOProtos.Rpc.HoloPokemonType.POKEMON_TYPE_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, attackType_);
     }

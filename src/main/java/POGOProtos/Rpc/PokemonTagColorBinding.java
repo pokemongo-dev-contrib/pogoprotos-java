@@ -165,7 +165,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (color_ != POGOProtos.Rpc.PokemonTagColor.POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_UNSET.getNumber()) {
+    if (color_ != POGOProtos.Rpc.PokemonTagColor.POKEMON_TAG_COLOR_UNSET.getNumber()) {
       output.writeEnum(1, color_);
     }
     if (!getHexCodeBytes().isEmpty()) {
@@ -180,7 +180,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (color_ != POGOProtos.Rpc.PokemonTagColor.POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_UNSET.getNumber()) {
+    if (color_ != POGOProtos.Rpc.PokemonTagColor.POKEMON_TAG_COLOR_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, color_);
     }

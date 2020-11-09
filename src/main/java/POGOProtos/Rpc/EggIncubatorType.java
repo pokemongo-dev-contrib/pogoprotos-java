@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum EggIncubatorType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>EGG_INCUBATOR_TYPE_INCUBATOR_UNSET = 0;</code>
+   * <code>INCUBATOR_UNSET = 0;</code>
    */
-  EGG_INCUBATOR_TYPE_INCUBATOR_UNSET(0),
+  INCUBATOR_UNSET(0),
   /**
-   * <code>EGG_INCUBATOR_TYPE_INCUBATOR_DISTANCE = 1;</code>
+   * <code>INCUBATOR_DISTANCE = 1;</code>
    */
-  EGG_INCUBATOR_TYPE_INCUBATOR_DISTANCE(1),
+  INCUBATOR_DISTANCE(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>EGG_INCUBATOR_TYPE_INCUBATOR_UNSET = 0;</code>
+   * <code>INCUBATOR_UNSET = 0;</code>
    */
-  public static final int EGG_INCUBATOR_TYPE_INCUBATOR_UNSET_VALUE = 0;
+  public static final int INCUBATOR_UNSET_VALUE = 0;
   /**
-   * <code>EGG_INCUBATOR_TYPE_INCUBATOR_DISTANCE = 1;</code>
+   * <code>INCUBATOR_DISTANCE = 1;</code>
    */
-  public static final int EGG_INCUBATOR_TYPE_INCUBATOR_DISTANCE_VALUE = 1;
+  public static final int INCUBATOR_DISTANCE_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum EggIncubatorType
    */
   public static EggIncubatorType forNumber(int value) {
     switch (value) {
-      case 0: return EGG_INCUBATOR_TYPE_INCUBATOR_UNSET;
-      case 1: return EGG_INCUBATOR_TYPE_INCUBATOR_DISTANCE;
+      case 0: return INCUBATOR_UNSET;
+      case 1: return INCUBATOR_DISTANCE;
       default: return null;
     }
   }

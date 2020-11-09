@@ -409,7 +409,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (category_ != POGOProtos.Rpc.HoloIapItemCategory.HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_NONE.getNumber()) {
+    if (category_ != POGOProtos.Rpc.HoloIapItemCategory.IAP_CATEGORY_NONE.getNumber()) {
       output.writeEnum(1, category_);
     }
     if (!getNameBytes().isEmpty()) {
@@ -448,7 +448,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (category_ != POGOProtos.Rpc.HoloIapItemCategory.HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_NONE.getNumber()) {
+    if (category_ != POGOProtos.Rpc.HoloIapItemCategory.IAP_CATEGORY_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, category_);
     }

@@ -193,7 +193,7 @@ public enum RaidTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(121);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(126);
   }
 
   private static final RaidTelemetryIds[] VALUES = values();

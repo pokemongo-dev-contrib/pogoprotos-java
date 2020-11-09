@@ -9,160 +9,160 @@ package POGOProtos.Rpc;
 public enum HoloPokemonType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE = 0;</code>
+   * <code>POKEMON_TYPE_NONE = 0;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE(0),
+  POKEMON_TYPE_NONE(0),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_NORMAL = 1;</code>
+   * <code>POKEMON_TYPE_NORMAL = 1;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_NORMAL(1),
+  POKEMON_TYPE_NORMAL(1),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_FIGHTING = 2;</code>
+   * <code>POKEMON_TYPE_FIGHTING = 2;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_FIGHTING(2),
+  POKEMON_TYPE_FIGHTING(2),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_FLYING = 3;</code>
+   * <code>POKEMON_TYPE_FLYING = 3;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_FLYING(3),
+  POKEMON_TYPE_FLYING(3),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_POISON = 4;</code>
+   * <code>POKEMON_TYPE_POISON = 4;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_POISON(4),
+  POKEMON_TYPE_POISON(4),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_GROUND = 5;</code>
+   * <code>POKEMON_TYPE_GROUND = 5;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_GROUND(5),
+  POKEMON_TYPE_GROUND(5),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_ROCK = 6;</code>
+   * <code>POKEMON_TYPE_ROCK = 6;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_ROCK(6),
+  POKEMON_TYPE_ROCK(6),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_BUG = 7;</code>
+   * <code>POKEMON_TYPE_BUG = 7;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_BUG(7),
+  POKEMON_TYPE_BUG(7),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_GHOST = 8;</code>
+   * <code>POKEMON_TYPE_GHOST = 8;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_GHOST(8),
+  POKEMON_TYPE_GHOST(8),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_STEEL = 9;</code>
+   * <code>POKEMON_TYPE_STEEL = 9;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_STEEL(9),
+  POKEMON_TYPE_STEEL(9),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_FIRE = 10;</code>
+   * <code>POKEMON_TYPE_FIRE = 10;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_FIRE(10),
+  POKEMON_TYPE_FIRE(10),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_WATER = 11;</code>
+   * <code>POKEMON_TYPE_WATER = 11;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_WATER(11),
+  POKEMON_TYPE_WATER(11),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_GRASS = 12;</code>
+   * <code>POKEMON_TYPE_GRASS = 12;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_GRASS(12),
+  POKEMON_TYPE_GRASS(12),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_ELECTRIC = 13;</code>
+   * <code>POKEMON_TYPE_ELECTRIC = 13;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_ELECTRIC(13),
+  POKEMON_TYPE_ELECTRIC(13),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_PSYCHIC = 14;</code>
+   * <code>POKEMON_TYPE_PSYCHIC = 14;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_PSYCHIC(14),
+  POKEMON_TYPE_PSYCHIC(14),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_ICE = 15;</code>
+   * <code>POKEMON_TYPE_ICE = 15;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_ICE(15),
+  POKEMON_TYPE_ICE(15),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_DRAGON = 16;</code>
+   * <code>POKEMON_TYPE_DRAGON = 16;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_DRAGON(16),
+  POKEMON_TYPE_DRAGON(16),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_DARK = 17;</code>
+   * <code>POKEMON_TYPE_DARK = 17;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_DARK(17),
+  POKEMON_TYPE_DARK(17),
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_FAIRY = 18;</code>
+   * <code>POKEMON_TYPE_FAIRY = 18;</code>
    */
-  HOLO_POKEMON_TYPE_POKEMON_TYPE_FAIRY(18),
+  POKEMON_TYPE_FAIRY(18),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE = 0;</code>
+   * <code>POKEMON_TYPE_NONE = 0;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE_VALUE = 0;
+  public static final int POKEMON_TYPE_NONE_VALUE = 0;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_NORMAL = 1;</code>
+   * <code>POKEMON_TYPE_NORMAL = 1;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_NORMAL_VALUE = 1;
+  public static final int POKEMON_TYPE_NORMAL_VALUE = 1;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_FIGHTING = 2;</code>
+   * <code>POKEMON_TYPE_FIGHTING = 2;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_FIGHTING_VALUE = 2;
+  public static final int POKEMON_TYPE_FIGHTING_VALUE = 2;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_FLYING = 3;</code>
+   * <code>POKEMON_TYPE_FLYING = 3;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_FLYING_VALUE = 3;
+  public static final int POKEMON_TYPE_FLYING_VALUE = 3;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_POISON = 4;</code>
+   * <code>POKEMON_TYPE_POISON = 4;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_POISON_VALUE = 4;
+  public static final int POKEMON_TYPE_POISON_VALUE = 4;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_GROUND = 5;</code>
+   * <code>POKEMON_TYPE_GROUND = 5;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_GROUND_VALUE = 5;
+  public static final int POKEMON_TYPE_GROUND_VALUE = 5;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_ROCK = 6;</code>
+   * <code>POKEMON_TYPE_ROCK = 6;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_ROCK_VALUE = 6;
+  public static final int POKEMON_TYPE_ROCK_VALUE = 6;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_BUG = 7;</code>
+   * <code>POKEMON_TYPE_BUG = 7;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_BUG_VALUE = 7;
+  public static final int POKEMON_TYPE_BUG_VALUE = 7;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_GHOST = 8;</code>
+   * <code>POKEMON_TYPE_GHOST = 8;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_GHOST_VALUE = 8;
+  public static final int POKEMON_TYPE_GHOST_VALUE = 8;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_STEEL = 9;</code>
+   * <code>POKEMON_TYPE_STEEL = 9;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_STEEL_VALUE = 9;
+  public static final int POKEMON_TYPE_STEEL_VALUE = 9;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_FIRE = 10;</code>
+   * <code>POKEMON_TYPE_FIRE = 10;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_FIRE_VALUE = 10;
+  public static final int POKEMON_TYPE_FIRE_VALUE = 10;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_WATER = 11;</code>
+   * <code>POKEMON_TYPE_WATER = 11;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_WATER_VALUE = 11;
+  public static final int POKEMON_TYPE_WATER_VALUE = 11;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_GRASS = 12;</code>
+   * <code>POKEMON_TYPE_GRASS = 12;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_GRASS_VALUE = 12;
+  public static final int POKEMON_TYPE_GRASS_VALUE = 12;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_ELECTRIC = 13;</code>
+   * <code>POKEMON_TYPE_ELECTRIC = 13;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_ELECTRIC_VALUE = 13;
+  public static final int POKEMON_TYPE_ELECTRIC_VALUE = 13;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_PSYCHIC = 14;</code>
+   * <code>POKEMON_TYPE_PSYCHIC = 14;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_PSYCHIC_VALUE = 14;
+  public static final int POKEMON_TYPE_PSYCHIC_VALUE = 14;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_ICE = 15;</code>
+   * <code>POKEMON_TYPE_ICE = 15;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_ICE_VALUE = 15;
+  public static final int POKEMON_TYPE_ICE_VALUE = 15;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_DRAGON = 16;</code>
+   * <code>POKEMON_TYPE_DRAGON = 16;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_DRAGON_VALUE = 16;
+  public static final int POKEMON_TYPE_DRAGON_VALUE = 16;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_DARK = 17;</code>
+   * <code>POKEMON_TYPE_DARK = 17;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_DARK_VALUE = 17;
+  public static final int POKEMON_TYPE_DARK_VALUE = 17;
   /**
-   * <code>HOLO_POKEMON_TYPE_POKEMON_TYPE_FAIRY = 18;</code>
+   * <code>POKEMON_TYPE_FAIRY = 18;</code>
    */
-  public static final int HOLO_POKEMON_TYPE_POKEMON_TYPE_FAIRY_VALUE = 18;
+  public static final int POKEMON_TYPE_FAIRY_VALUE = 18;
 
 
   public final int getNumber() {
@@ -189,25 +189,25 @@ public enum HoloPokemonType
    */
   public static HoloPokemonType forNumber(int value) {
     switch (value) {
-      case 0: return HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE;
-      case 1: return HOLO_POKEMON_TYPE_POKEMON_TYPE_NORMAL;
-      case 2: return HOLO_POKEMON_TYPE_POKEMON_TYPE_FIGHTING;
-      case 3: return HOLO_POKEMON_TYPE_POKEMON_TYPE_FLYING;
-      case 4: return HOLO_POKEMON_TYPE_POKEMON_TYPE_POISON;
-      case 5: return HOLO_POKEMON_TYPE_POKEMON_TYPE_GROUND;
-      case 6: return HOLO_POKEMON_TYPE_POKEMON_TYPE_ROCK;
-      case 7: return HOLO_POKEMON_TYPE_POKEMON_TYPE_BUG;
-      case 8: return HOLO_POKEMON_TYPE_POKEMON_TYPE_GHOST;
-      case 9: return HOLO_POKEMON_TYPE_POKEMON_TYPE_STEEL;
-      case 10: return HOLO_POKEMON_TYPE_POKEMON_TYPE_FIRE;
-      case 11: return HOLO_POKEMON_TYPE_POKEMON_TYPE_WATER;
-      case 12: return HOLO_POKEMON_TYPE_POKEMON_TYPE_GRASS;
-      case 13: return HOLO_POKEMON_TYPE_POKEMON_TYPE_ELECTRIC;
-      case 14: return HOLO_POKEMON_TYPE_POKEMON_TYPE_PSYCHIC;
-      case 15: return HOLO_POKEMON_TYPE_POKEMON_TYPE_ICE;
-      case 16: return HOLO_POKEMON_TYPE_POKEMON_TYPE_DRAGON;
-      case 17: return HOLO_POKEMON_TYPE_POKEMON_TYPE_DARK;
-      case 18: return HOLO_POKEMON_TYPE_POKEMON_TYPE_FAIRY;
+      case 0: return POKEMON_TYPE_NONE;
+      case 1: return POKEMON_TYPE_NORMAL;
+      case 2: return POKEMON_TYPE_FIGHTING;
+      case 3: return POKEMON_TYPE_FLYING;
+      case 4: return POKEMON_TYPE_POISON;
+      case 5: return POKEMON_TYPE_GROUND;
+      case 6: return POKEMON_TYPE_ROCK;
+      case 7: return POKEMON_TYPE_BUG;
+      case 8: return POKEMON_TYPE_GHOST;
+      case 9: return POKEMON_TYPE_STEEL;
+      case 10: return POKEMON_TYPE_FIRE;
+      case 11: return POKEMON_TYPE_WATER;
+      case 12: return POKEMON_TYPE_GRASS;
+      case 13: return POKEMON_TYPE_ELECTRIC;
+      case 14: return POKEMON_TYPE_PSYCHIC;
+      case 15: return POKEMON_TYPE_ICE;
+      case 16: return POKEMON_TYPE_DRAGON;
+      case 17: return POKEMON_TYPE_DARK;
+      case 18: return POKEMON_TYPE_FAIRY;
       default: return null;
     }
   }

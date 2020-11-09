@@ -203,7 +203,7 @@ private static final long serialVersionUID = 0L;
     if (!getNameBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
     }
-    if (color_ != POGOProtos.Rpc.PokemonTagColor.POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_UNSET.getNumber()) {
+    if (color_ != POGOProtos.Rpc.PokemonTagColor.POKEMON_TAG_COLOR_UNSET.getNumber()) {
       output.writeEnum(3, color_);
     }
     if (sortIndex_ != 0) {
@@ -225,7 +225,7 @@ private static final long serialVersionUID = 0L;
     if (!getNameBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
     }
-    if (color_ != POGOProtos.Rpc.PokemonTagColor.POKEMON_TAG_COLOR_POKEMON_TAG_COLOR_UNSET.getNumber()) {
+    if (color_ != POGOProtos.Rpc.PokemonTagColor.POKEMON_TAG_COLOR_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, color_);
     }

@@ -210,10 +210,10 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (activity_ != POGOProtos.Rpc.BuddyActivity.BUDDY_ACTIVITY_BUDDY_ACTIVITY_UNSET.getNumber()) {
+    if (activity_ != POGOProtos.Rpc.BuddyActivity.BUDDY_ACTIVITY_UNSET.getNumber()) {
       output.writeEnum(1, activity_);
     }
-    if (activityCategory_ != POGOProtos.Rpc.BuddyActivityCategory.BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_UNSET.getNumber()) {
+    if (activityCategory_ != POGOProtos.Rpc.BuddyActivityCategory.BUDDY_CATEGORY_UNSET.getNumber()) {
       output.writeEnum(2, activityCategory_);
     }
     if (maxTimesPerDay_ != 0) {
@@ -237,11 +237,11 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (activity_ != POGOProtos.Rpc.BuddyActivity.BUDDY_ACTIVITY_BUDDY_ACTIVITY_UNSET.getNumber()) {
+    if (activity_ != POGOProtos.Rpc.BuddyActivity.BUDDY_ACTIVITY_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, activity_);
     }
-    if (activityCategory_ != POGOProtos.Rpc.BuddyActivityCategory.BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY_UNSET.getNumber()) {
+    if (activityCategory_ != POGOProtos.Rpc.BuddyActivityCategory.BUDDY_CATEGORY_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, activityCategory_);
     }

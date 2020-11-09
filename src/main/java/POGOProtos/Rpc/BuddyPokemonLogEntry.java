@@ -328,7 +328,7 @@ private static final long serialVersionUID = 0L;
     if (result_ != POGOProtos.Rpc.BuddyPokemonLogEntry.Result.UNSET.getNumber()) {
       output.writeEnum(1, result_);
     }
-    if (pokemonType_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokemonType_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       output.writeEnum(2, pokemonType_);
     }
     if (amount_ != 0) {
@@ -353,7 +353,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }
-    if (pokemonType_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokemonType_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, pokemonType_);
     }

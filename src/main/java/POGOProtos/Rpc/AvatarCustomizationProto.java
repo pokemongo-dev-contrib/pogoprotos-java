@@ -1240,7 +1240,7 @@ private static final long serialVersionUID = 0L;
     if (enabled_ != false) {
       output.writeBool(1, enabled_);
     }
-    if (avatarType_ != POGOProtos.Rpc.PlayerAvatarType.PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE.getNumber()) {
+    if (avatarType_ != POGOProtos.Rpc.PlayerAvatarType.PLAYER_AVATAR_MALE.getNumber()) {
       output.writeEnum(2, avatarType_);
     }
     if (getSlotList().size() > 0) {
@@ -1272,7 +1272,7 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < promoType_.size(); i++) {
       output.writeEnumNoTag(promoType_.get(i));
     }
-    if (unlockBadgeType_ != POGOProtos.Rpc.HoloBadgeType.HOLO_BADGE_TYPE_BADGE_UNSET.getNumber()) {
+    if (unlockBadgeType_ != POGOProtos.Rpc.HoloBadgeType.BADGE_UNSET.getNumber()) {
       output.writeEnum(10, unlockBadgeType_);
     }
     if (!getIapSkuBytes().isEmpty()) {
@@ -1309,7 +1309,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(1, enabled_);
     }
-    if (avatarType_ != POGOProtos.Rpc.PlayerAvatarType.PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE.getNumber()) {
+    if (avatarType_ != POGOProtos.Rpc.PlayerAvatarType.PLAYER_AVATAR_MALE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, avatarType_);
     }
@@ -1354,7 +1354,7 @@ private static final long serialVersionUID = 0L;
           .computeUInt32SizeNoTag(dataSize);
       }promoTypeMemoizedSerializedSize = dataSize;
     }
-    if (unlockBadgeType_ != POGOProtos.Rpc.HoloBadgeType.HOLO_BADGE_TYPE_BADGE_UNSET.getNumber()) {
+    if (unlockBadgeType_ != POGOProtos.Rpc.HoloBadgeType.BADGE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(10, unlockBadgeType_);
     }

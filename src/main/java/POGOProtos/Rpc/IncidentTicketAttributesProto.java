@@ -158,7 +158,7 @@ private static final long serialVersionUID = 0L;
     if (upgradeRequirementCount_ != 0) {
       output.writeInt32(2, upgradeRequirementCount_);
     }
-    if (upgradedItem_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (upgradedItem_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       output.writeEnum(3, upgradedItem_);
     }
     unknownFields.writeTo(output);
@@ -178,7 +178,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(2, upgradeRequirementCount_);
     }
-    if (upgradedItem_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (upgradedItem_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, upgradedItem_);
     }

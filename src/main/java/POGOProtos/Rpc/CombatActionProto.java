@@ -462,7 +462,7 @@ private static final long serialVersionUID = 0L;
     if (minigameScore_ != 0F) {
       output.writeFloat(15, minigameScore_);
     }
-    if (move_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+    if (move_ != POGOProtos.Rpc.HoloPokemonMove.MOVE_UNSET.getNumber()) {
       output.writeEnum(16, move_);
     }
     unknownFields.writeTo(output);
@@ -506,7 +506,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFloatSize(15, minigameScore_);
     }
-    if (move_ != POGOProtos.Rpc.HoloPokemonMove.HOLO_POKEMON_MOVE_MOVE_UNSET.getNumber()) {
+    if (move_ != POGOProtos.Rpc.HoloPokemonMove.MOVE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(16, move_);
     }

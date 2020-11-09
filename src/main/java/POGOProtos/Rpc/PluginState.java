@@ -130,7 +130,7 @@ public enum PluginState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(102);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(106);
   }
 
   private static final PluginState[] VALUES = values();

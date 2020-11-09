@@ -9,9 +9,9 @@ package POGOProtos.Rpc;
 public enum VariableName
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>VARIABLE_NAME_unset__variable_name = 0;</code>
+   * <code>VARIABLE_NAME_UNSET = 0;</code>
    */
-  VARIABLE_NAME_unset__variable_name(0),
+  VARIABLE_NAME_UNSET(0),
   /**
    * <code>VARIABLE_NAME_CODE_NAME = 1;</code>
    */
@@ -248,9 +248,9 @@ public enum VariableName
   ;
 
   /**
-   * <code>VARIABLE_NAME_unset__variable_name = 0;</code>
+   * <code>VARIABLE_NAME_UNSET = 0;</code>
    */
-  public static final int VARIABLE_NAME_unset__variable_name_VALUE = 0;
+  public static final int VARIABLE_NAME_UNSET_VALUE = 0;
   /**
    * <code>VARIABLE_NAME_CODE_NAME = 1;</code>
    */
@@ -509,7 +509,7 @@ public enum VariableName
    */
   public static VariableName forNumber(int value) {
     switch (value) {
-      case 0: return VARIABLE_NAME_unset__variable_name;
+      case 0: return VARIABLE_NAME_UNSET;
       case 1: return VARIABLE_NAME_CODE_NAME;
       case 2: return VARIABLE_NAME_TEAM;
       case 3: return VARIABLE_NAME_LEVEL;
@@ -598,7 +598,7 @@ public enum VariableName
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(141);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(146);
   }
 
   private static final VariableName[] VALUES = values();
