@@ -59,11 +59,11 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              photoGalleryPoiImages_ = new java.util.ArrayList<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage>();
+              photoGalleryPoiImages_ = new java.util.ArrayList<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage>();
               mutable_bitField0_ |= 0x00000001;
             }
             photoGalleryPoiImages_.add(
-                input.readMessage(POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -227,8 +227,8 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.Status)
   }
 
-  public interface TitanGameClientPhotoGalleryPoiImageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage)
+  public interface GameClientPhotoGalleryPoiImageOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -298,18 +298,18 @@ private static final long serialVersionUID = 0L;
     int getNumVotesFromGame();
   }
   /**
-   * Protobuf type {@code POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage}
+   * Protobuf type {@code POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage}
    */
-  public static final class TitanGameClientPhotoGalleryPoiImage extends
+  public static final class GameClientPhotoGalleryPoiImage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage)
-      TitanGameClientPhotoGalleryPoiImageOrBuilder {
+      // @@protoc_insertion_point(message_implements:POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage)
+      GameClientPhotoGalleryPoiImageOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use TitanGameClientPhotoGalleryPoiImage.newBuilder() to construct.
-    private TitanGameClientPhotoGalleryPoiImage(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use GameClientPhotoGalleryPoiImage.newBuilder() to construct.
+    private GameClientPhotoGalleryPoiImage(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private TitanGameClientPhotoGalleryPoiImage() {
+    private GameClientPhotoGalleryPoiImage() {
       imageId_ = "";
       poiId_ = "";
       submitterCodename_ = "";
@@ -320,7 +320,7 @@ private static final long serialVersionUID = 0L;
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new TitanGameClientPhotoGalleryPoiImage();
+      return new GameClientPhotoGalleryPoiImage();
     }
 
     @java.lang.Override
@@ -328,7 +328,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields() {
       return this.unknownFields;
     }
-    private TitanGameClientPhotoGalleryPoiImage(
+    private GameClientPhotoGalleryPoiImage(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -406,15 +406,15 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponseOuterClass.internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_TitanGameClientPhotoGalleryPoiImage_descriptor;
+      return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponseOuterClass.internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_GameClientPhotoGalleryPoiImage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponseOuterClass.internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_TitanGameClientPhotoGalleryPoiImage_fieldAccessorTable
+      return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponseOuterClass.internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_GameClientPhotoGalleryPoiImage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.class, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder.class);
+              POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.class, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder.class);
     }
 
     public static final int IMAGE_ID_FIELD_NUMBER = 1;
@@ -680,10 +680,10 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage)) {
+      if (!(obj instanceof POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage)) {
         return super.equals(obj);
       }
-      POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage other = (POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage) obj;
+      POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage other = (POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage) obj;
 
       if (!getImageId()
           .equals(other.getImageId())) return false;
@@ -731,69 +731,69 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseFrom(
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseFrom(
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseFrom(
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseFrom(
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseFrom(byte[] data)
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseFrom(
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseFrom(java.io.InputStream input)
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseFrom(
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseDelimitedFrom(java.io.InputStream input)
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseDelimitedFrom(
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseFrom(
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parseFrom(
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -806,7 +806,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage prototype) {
+    public static Builder newBuilder(POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -822,26 +822,26 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * Protobuf type {@code POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage}
+     * Protobuf type {@code POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage)
-        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImageOrBuilder {
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage)
+        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponseOuterClass.internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_TitanGameClientPhotoGalleryPoiImage_descriptor;
+        return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponseOuterClass.internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_GameClientPhotoGalleryPoiImage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponseOuterClass.internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_TitanGameClientPhotoGalleryPoiImage_fieldAccessorTable
+        return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponseOuterClass.internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_GameClientPhotoGalleryPoiImage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.class, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder.class);
+                POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.class, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder.class);
       }
 
-      // Construct using POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.newBuilder()
+      // Construct using POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -879,17 +879,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponseOuterClass.internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_TitanGameClientPhotoGalleryPoiImage_descriptor;
+        return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponseOuterClass.internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_GameClientPhotoGalleryPoiImage_descriptor;
       }
 
       @java.lang.Override
-      public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage getDefaultInstanceForType() {
-        return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.getDefaultInstance();
+      public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage getDefaultInstanceForType() {
+        return POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.getDefaultInstance();
       }
 
       @java.lang.Override
-      public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage build() {
-        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage result = buildPartial();
+      public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage build() {
+        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -897,8 +897,8 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage buildPartial() {
-        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage result = new POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage(this);
+      public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage buildPartial() {
+        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage result = new POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage(this);
         result.imageId_ = imageId_;
         result.poiId_ = poiId_;
         result.submitterCodename_ = submitterCodename_;
@@ -944,16 +944,16 @@ private static final long serialVersionUID = 0L;
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage) {
-          return mergeFrom((POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage)other);
+        if (other instanceof POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage) {
+          return mergeFrom((POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage other) {
-        if (other == POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.getDefaultInstance()) return this;
+      public Builder mergeFrom(POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage other) {
+        if (other == POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.getDefaultInstance()) return this;
         if (!other.getImageId().isEmpty()) {
           imageId_ = other.imageId_;
           onChanged();
@@ -994,11 +994,11 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage parsedMessage = null;
+        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage) e.getUnfinishedMessage();
+          parsedMessage = (POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1417,41 +1417,41 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage)
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage)
     }
 
-    // @@protoc_insertion_point(class_scope:POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage)
-    private static final POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage)
+    private static final POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage();
+      DEFAULT_INSTANCE = new POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage();
     }
 
-    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage getDefaultInstance() {
+    public static POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<TitanGameClientPhotoGalleryPoiImage>
-        PARSER = new com.google.protobuf.AbstractParser<TitanGameClientPhotoGalleryPoiImage>() {
+    private static final com.google.protobuf.Parser<GameClientPhotoGalleryPoiImage>
+        PARSER = new com.google.protobuf.AbstractParser<GameClientPhotoGalleryPoiImage>() {
       @java.lang.Override
-      public TitanGameClientPhotoGalleryPoiImage parsePartialFrom(
+      public GameClientPhotoGalleryPoiImage parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new TitanGameClientPhotoGalleryPoiImage(input, extensionRegistry);
+        return new GameClientPhotoGalleryPoiImage(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<TitanGameClientPhotoGalleryPoiImage> parser() {
+    public static com.google.protobuf.Parser<GameClientPhotoGalleryPoiImage> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<TitanGameClientPhotoGalleryPoiImage> getParserForType() {
+    public com.google.protobuf.Parser<GameClientPhotoGalleryPoiImage> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage getDefaultInstanceForType() {
+    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1477,41 +1477,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PHOTO_GALLERY_POI_IMAGES_FIELD_NUMBER = 2;
-  private java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage> photoGalleryPoiImages_;
+  private java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage> photoGalleryPoiImages_;
   /**
-   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage> getPhotoGalleryPoiImagesList() {
+  public java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage> getPhotoGalleryPoiImagesList() {
     return photoGalleryPoiImages_;
   }
   /**
-   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImageOrBuilder> 
+  public java.util.List<? extends POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImageOrBuilder> 
       getPhotoGalleryPoiImagesOrBuilderList() {
     return photoGalleryPoiImages_;
   }
   /**
-   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
    */
   @java.lang.Override
   public int getPhotoGalleryPoiImagesCount() {
     return photoGalleryPoiImages_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage getPhotoGalleryPoiImages(int index) {
+  public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage getPhotoGalleryPoiImages(int index) {
     return photoGalleryPoiImages_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImageOrBuilder getPhotoGalleryPoiImagesOrBuilder(
+  public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImageOrBuilder getPhotoGalleryPoiImagesOrBuilder(
       int index) {
     return photoGalleryPoiImages_.get(index);
   }
@@ -1928,22 +1928,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage> photoGalleryPoiImages_ =
+    private java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage> photoGalleryPoiImages_ =
       java.util.Collections.emptyList();
     private void ensurePhotoGalleryPoiImagesIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        photoGalleryPoiImages_ = new java.util.ArrayList<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage>(photoGalleryPoiImages_);
+        photoGalleryPoiImages_ = new java.util.ArrayList<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage>(photoGalleryPoiImages_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImageOrBuilder> photoGalleryPoiImagesBuilder_;
+        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImageOrBuilder> photoGalleryPoiImagesBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
-    public java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage> getPhotoGalleryPoiImagesList() {
+    public java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage> getPhotoGalleryPoiImagesList() {
       if (photoGalleryPoiImagesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(photoGalleryPoiImages_);
       } else {
@@ -1951,7 +1951,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
     public int getPhotoGalleryPoiImagesCount() {
       if (photoGalleryPoiImagesBuilder_ == null) {
@@ -1961,9 +1961,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
-    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage getPhotoGalleryPoiImages(int index) {
+    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage getPhotoGalleryPoiImages(int index) {
       if (photoGalleryPoiImagesBuilder_ == null) {
         return photoGalleryPoiImages_.get(index);
       } else {
@@ -1971,10 +1971,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
     public Builder setPhotoGalleryPoiImages(
-        int index, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage value) {
+        int index, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage value) {
       if (photoGalleryPoiImagesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1988,10 +1988,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
     public Builder setPhotoGalleryPoiImages(
-        int index, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder builderForValue) {
+        int index, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder builderForValue) {
       if (photoGalleryPoiImagesBuilder_ == null) {
         ensurePhotoGalleryPoiImagesIsMutable();
         photoGalleryPoiImages_.set(index, builderForValue.build());
@@ -2002,9 +2002,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
-    public Builder addPhotoGalleryPoiImages(POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage value) {
+    public Builder addPhotoGalleryPoiImages(POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage value) {
       if (photoGalleryPoiImagesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2018,10 +2018,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
     public Builder addPhotoGalleryPoiImages(
-        int index, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage value) {
+        int index, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage value) {
       if (photoGalleryPoiImagesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2035,10 +2035,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
     public Builder addPhotoGalleryPoiImages(
-        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder builderForValue) {
+        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder builderForValue) {
       if (photoGalleryPoiImagesBuilder_ == null) {
         ensurePhotoGalleryPoiImagesIsMutable();
         photoGalleryPoiImages_.add(builderForValue.build());
@@ -2049,10 +2049,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
     public Builder addPhotoGalleryPoiImages(
-        int index, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder builderForValue) {
+        int index, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder builderForValue) {
       if (photoGalleryPoiImagesBuilder_ == null) {
         ensurePhotoGalleryPoiImagesIsMutable();
         photoGalleryPoiImages_.add(index, builderForValue.build());
@@ -2063,10 +2063,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
     public Builder addAllPhotoGalleryPoiImages(
-        java.lang.Iterable<? extends POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage> values) {
+        java.lang.Iterable<? extends POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage> values) {
       if (photoGalleryPoiImagesBuilder_ == null) {
         ensurePhotoGalleryPoiImagesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2078,7 +2078,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
     public Builder clearPhotoGalleryPoiImages() {
       if (photoGalleryPoiImagesBuilder_ == null) {
@@ -2091,7 +2091,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
     public Builder removePhotoGalleryPoiImages(int index) {
       if (photoGalleryPoiImagesBuilder_ == null) {
@@ -2104,16 +2104,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
-    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder getPhotoGalleryPoiImagesBuilder(
+    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder getPhotoGalleryPoiImagesBuilder(
         int index) {
       return getPhotoGalleryPoiImagesFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
-    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImageOrBuilder getPhotoGalleryPoiImagesOrBuilder(
+    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImageOrBuilder getPhotoGalleryPoiImagesOrBuilder(
         int index) {
       if (photoGalleryPoiImagesBuilder_ == null) {
         return photoGalleryPoiImages_.get(index);  } else {
@@ -2121,9 +2121,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
-    public java.util.List<? extends POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImageOrBuilder> 
+    public java.util.List<? extends POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImageOrBuilder> 
          getPhotoGalleryPoiImagesOrBuilderList() {
       if (photoGalleryPoiImagesBuilder_ != null) {
         return photoGalleryPoiImagesBuilder_.getMessageOrBuilderList();
@@ -2132,33 +2132,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
-    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder addPhotoGalleryPoiImagesBuilder() {
+    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder addPhotoGalleryPoiImagesBuilder() {
       return getPhotoGalleryPoiImagesFieldBuilder().addBuilder(
-          POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.getDefaultInstance());
+          POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
-    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder addPhotoGalleryPoiImagesBuilder(
+    public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder addPhotoGalleryPoiImagesBuilder(
         int index) {
       return getPhotoGalleryPoiImagesFieldBuilder().addBuilder(
-          index, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.getDefaultInstance());
+          index, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+     * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
      */
-    public java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder> 
+    public java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder> 
          getPhotoGalleryPoiImagesBuilderList() {
       return getPhotoGalleryPoiImagesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImageOrBuilder> 
+        POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImageOrBuilder> 
         getPhotoGalleryPoiImagesFieldBuilder() {
       if (photoGalleryPoiImagesBuilder_ == null) {
         photoGalleryPoiImagesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage.Builder, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImageOrBuilder>(
+            POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage.Builder, POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImageOrBuilder>(
                 photoGalleryPoiImages_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

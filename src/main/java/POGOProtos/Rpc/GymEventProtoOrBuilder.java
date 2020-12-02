@@ -37,10 +37,15 @@ public interface GymEventProtoOrBuilder extends
   POGOProtos.Rpc.GymEventProto.Event getEvent();
 
   /**
-   * <code>int32 pokedex_id = 4;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_id = 4;</code>
+   * @return The enum numeric value on the wire for pokedexId.
+   */
+  int getPokedexIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_id = 4;</code>
    * @return The pokedexId.
    */
-  int getPokedexId();
+  POGOProtos.Rpc.HoloPokemonId getPokedexId();
 
   /**
    * <code>fixed64 pokemon_id = 5;</code>

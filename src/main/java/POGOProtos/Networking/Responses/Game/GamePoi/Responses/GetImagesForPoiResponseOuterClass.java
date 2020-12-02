@@ -20,10 +20,10 @@ public final class GetImagesForPoiResponseOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_TitanGameClientPhotoGalleryPoiImage_descriptor;
+    internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_GameClientPhotoGalleryPoiImage_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_TitanGameClientPhotoGalleryPoiImage_fieldAccessorTable;
+      internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_GameClientPhotoGalleryPoiImage_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -36,21 +36,21 @@ public final class GetImagesForPoiResponseOuterClass {
       "\nTPOGOProtos/Networking/Responses/Game/G" +
       "amePoi/Responses/GetImagesForPoiResponse" +
       ".proto\0226POGOProtos.Networking.Responses." +
-      "Game.GamePoi.Responses\"\262\004\n\027GetImagesForP" +
+      "Game.GamePoi.Responses\"\250\004\n\027GetImagesForP" +
       "oiResponse\022f\n\006status\030\001 \001(\0162V.POGOProtos." +
       "Networking.Responses.Game.GamePoi.Respon" +
-      "ses.GetImagesForPoiResponse.Status\022\225\001\n\030p" +
-      "hoto_gallery_poi_images\030\002 \003(\0132s.POGOProt" +
+      "ses.GetImagesForPoiResponse.Status\022\220\001\n\030p" +
+      "hoto_gallery_poi_images\030\002 \003(\0132n.POGOProt" +
       "os.Networking.Responses.Game.GamePoi.Res" +
-      "ponses.GetImagesForPoiResponse.TitanGame" +
-      "ClientPhotoGalleryPoiImage\032\314\001\n#TitanGame" +
-      "ClientPhotoGalleryPoiImage\022\020\n\010image_id\030\001" +
-      " \001(\t\022\016\n\006poi_id\030\002 \001(\t\022\032\n\022submitter_codena" +
-      "me\030\003 \001(\t\022\021\n\timage_url\030\004 \001(\t\022\035\n\025creation_" +
-      "timestamp_ms\030\005 \001(\003\022\030\n\020has_player_voted\030\006" +
-      " \001(\010\022\033\n\023num_votes_from_game\030\007 \001(\005\"H\n\006Sta" +
-      "tus\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rPOI_NOT_F" +
-      "OUND\020\002\022\023\n\017INVALID_REQUEST\020\003B\002P\001b\006proto3"
+      "ponses.GetImagesForPoiResponse.GameClien" +
+      "tPhotoGalleryPoiImage\032\307\001\n\036GameClientPhot" +
+      "oGalleryPoiImage\022\020\n\010image_id\030\001 \001(\t\022\016\n\006po" +
+      "i_id\030\002 \001(\t\022\032\n\022submitter_codename\030\003 \001(\t\022\021" +
+      "\n\timage_url\030\004 \001(\t\022\035\n\025creation_timestamp_" +
+      "ms\030\005 \001(\003\022\030\n\020has_player_voted\030\006 \001(\010\022\033\n\023nu" +
+      "m_votes_from_game\030\007 \001(\005\"H\n\006Status\022\t\n\005UNS" +
+      "ET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rPOI_NOT_FOUND\020\002\022\023\n\017" +
+      "INVALID_REQUEST\020\003B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -62,11 +62,11 @@ public final class GetImagesForPoiResponseOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_descriptor,
         new java.lang.String[] { "Status", "PhotoGalleryPoiImages", });
-    internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_TitanGameClientPhotoGalleryPoiImage_descriptor =
+    internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_GameClientPhotoGalleryPoiImage_descriptor =
       internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_descriptor.getNestedTypes().get(0);
-    internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_TitanGameClientPhotoGalleryPoiImage_fieldAccessorTable = new
+    internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_GameClientPhotoGalleryPoiImage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_TitanGameClientPhotoGalleryPoiImage_descriptor,
+        internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetImagesForPoiResponse_GameClientPhotoGalleryPoiImage_descriptor,
         new java.lang.String[] { "ImageId", "PoiId", "SubmitterCodename", "ImageUrl", "CreationTimestampMs", "HasPlayerVoted", "NumVotesFromGame", });
   }
 

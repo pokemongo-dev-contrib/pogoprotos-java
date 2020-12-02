@@ -16,6 +16,10 @@ public enum PoiEditImageEntrySource
    * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY = 1;</code>
    */
   POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY(1),
+  /**
+   * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_OTHER = 2;</code>
+   */
+  POI_EDIT_IMAGE_ENTRY_SOURCE_OTHER(2),
   UNRECOGNIZED(-1),
   ;
 
@@ -27,6 +31,10 @@ public enum PoiEditImageEntrySource
    * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY = 1;</code>
    */
   public static final int POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY_VALUE = 1;
+  /**
+   * <code>POI_EDIT_IMAGE_ENTRY_SOURCE_OTHER = 2;</code>
+   */
+  public static final int POI_EDIT_IMAGE_ENTRY_SOURCE_OTHER_VALUE = 2;
 
 
   public final int getNumber() {
@@ -55,6 +63,7 @@ public enum PoiEditImageEntrySource
     switch (value) {
       case 0: return POI_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU;
       case 1: return POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLERY;
+      case 2: return POI_EDIT_IMAGE_ENTRY_SOURCE_OTHER;
       default: return null;
     }
   }

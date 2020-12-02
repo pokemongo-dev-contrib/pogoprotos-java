@@ -2917,6 +2917,10 @@ public enum HoloPokemonId
    */
   SIRFETCHD(865),
   /**
+   * <code>MR_RIME = 866;</code>
+   */
+  MR_RIME(866),
+  /**
    * <code>RUNERIGUS = 867;</code>
    */
   RUNERIGUS(867),
@@ -5832,6 +5836,10 @@ public enum HoloPokemonId
    */
   public static final int SIRFETCHD_VALUE = 865;
   /**
+   * <code>MR_RIME = 866;</code>
+   */
+  public static final int MR_RIME_VALUE = 866;
+  /**
    * <code>RUNERIGUS = 867;</code>
    */
   public static final int RUNERIGUS_VALUE = 867;
@@ -6588,6 +6596,7 @@ public enum HoloPokemonId
       case 862: return OBSTAGOON;
       case 863: return PERRSERKER;
       case 865: return SIRFETCHD;
+      case 866: return MR_RIME;
       case 867: return RUNERIGUS;
       default: return null;
     }

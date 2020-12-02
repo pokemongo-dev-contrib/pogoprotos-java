@@ -7,7 +7,7 @@ import org.junit.*;
 import java.io.*;
 
 public class GameMasterDecodeTest {
-	//0.191.2 binary
+	//0.193.2 binary
 	@Test
 	public void TestFirmwareGameMasterDecode() throws Exception {
 		try (InputStream is = getClass().getResourceAsStream("/v2_GAME_MASTER")) {

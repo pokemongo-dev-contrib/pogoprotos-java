@@ -93,6 +93,21 @@ private static final long serialVersionUID = 0L;
             defaultStickerMaxCount_ = input.readInt32();
             break;
           }
+          case 80: {
+
+            enableEggsNotInventory_ = input.readBool();
+            break;
+          }
+          case 88: {
+
+            specialEggOverflowSpots_ = input.readInt32();
+            break;
+          }
+          case 96: {
+
+            enableOverflowSpotSliding_ = input.readBool();
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -224,6 +239,39 @@ private static final long serialVersionUID = 0L;
     return defaultStickerMaxCount_;
   }
 
+  public static final int ENABLE_EGGS_NOT_INVENTORY_FIELD_NUMBER = 10;
+  private boolean enableEggsNotInventory_;
+  /**
+   * <code>bool enable_eggs_not_inventory = 10;</code>
+   * @return The enableEggsNotInventory.
+   */
+  @java.lang.Override
+  public boolean getEnableEggsNotInventory() {
+    return enableEggsNotInventory_;
+  }
+
+  public static final int SPECIAL_EGG_OVERFLOW_SPOTS_FIELD_NUMBER = 11;
+  private int specialEggOverflowSpots_;
+  /**
+   * <code>int32 special_egg_overflow_spots = 11;</code>
+   * @return The specialEggOverflowSpots.
+   */
+  @java.lang.Override
+  public int getSpecialEggOverflowSpots() {
+    return specialEggOverflowSpots_;
+  }
+
+  public static final int ENABLE_OVERFLOW_SPOT_SLIDING_FIELD_NUMBER = 12;
+  private boolean enableOverflowSpotSliding_;
+  /**
+   * <code>bool enable_overflow_spot_sliding = 12;</code>
+   * @return The enableOverflowSpotSliding.
+   */
+  @java.lang.Override
+  public boolean getEnableOverflowSpotSliding() {
+    return enableOverflowSpotSliding_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -264,6 +312,15 @@ private static final long serialVersionUID = 0L;
     }
     if (defaultStickerMaxCount_ != 0) {
       output.writeInt32(9, defaultStickerMaxCount_);
+    }
+    if (enableEggsNotInventory_ != false) {
+      output.writeBool(10, enableEggsNotInventory_);
+    }
+    if (specialEggOverflowSpots_ != 0) {
+      output.writeInt32(11, specialEggOverflowSpots_);
+    }
+    if (enableOverflowSpotSliding_ != false) {
+      output.writeBool(12, enableOverflowSpotSliding_);
     }
     unknownFields.writeTo(output);
   }
@@ -310,6 +367,18 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(9, defaultStickerMaxCount_);
     }
+    if (enableEggsNotInventory_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(10, enableEggsNotInventory_);
+    }
+    if (specialEggOverflowSpots_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(11, specialEggOverflowSpots_);
+    }
+    if (enableOverflowSpotSliding_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(12, enableOverflowSpotSliding_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -343,6 +412,12 @@ private static final long serialVersionUID = 0L;
         != other.getMaxItemBoostDurationMs()) return false;
     if (getDefaultStickerMaxCount()
         != other.getDefaultStickerMaxCount()) return false;
+    if (getEnableEggsNotInventory()
+        != other.getEnableEggsNotInventory()) return false;
+    if (getSpecialEggOverflowSpots()
+        != other.getSpecialEggOverflowSpots()) return false;
+    if (getEnableOverflowSpotSliding()
+        != other.getEnableOverflowSpotSliding()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -374,6 +449,14 @@ private static final long serialVersionUID = 0L;
         getMaxItemBoostDurationMs());
     hash = (37 * hash) + DEFAULT_STICKER_MAX_COUNT_FIELD_NUMBER;
     hash = (53 * hash) + getDefaultStickerMaxCount();
+    hash = (37 * hash) + ENABLE_EGGS_NOT_INVENTORY_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getEnableEggsNotInventory());
+    hash = (37 * hash) + SPECIAL_EGG_OVERFLOW_SPOTS_FIELD_NUMBER;
+    hash = (53 * hash) + getSpecialEggOverflowSpots();
+    hash = (37 * hash) + ENABLE_OVERFLOW_SPOT_SLIDING_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getEnableOverflowSpotSliding());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -525,6 +608,12 @@ private static final long serialVersionUID = 0L;
 
       defaultStickerMaxCount_ = 0;
 
+      enableEggsNotInventory_ = false;
+
+      specialEggOverflowSpots_ = 0;
+
+      enableOverflowSpotSliding_ = false;
+
       return this;
     }
 
@@ -560,6 +649,9 @@ private static final long serialVersionUID = 0L;
       result.teamChangeItemResetPeriodInDays_ = teamChangeItemResetPeriodInDays_;
       result.maxItemBoostDurationMs_ = maxItemBoostDurationMs_;
       result.defaultStickerMaxCount_ = defaultStickerMaxCount_;
+      result.enableEggsNotInventory_ = enableEggsNotInventory_;
+      result.specialEggOverflowSpots_ = specialEggOverflowSpots_;
+      result.enableOverflowSpotSliding_ = enableOverflowSpotSliding_;
       onBuilt();
       return result;
     }
@@ -634,6 +726,15 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getDefaultStickerMaxCount() != 0) {
         setDefaultStickerMaxCount(other.getDefaultStickerMaxCount());
+      }
+      if (other.getEnableEggsNotInventory() != false) {
+        setEnableEggsNotInventory(other.getEnableEggsNotInventory());
+      }
+      if (other.getSpecialEggOverflowSpots() != 0) {
+        setSpecialEggOverflowSpots(other.getSpecialEggOverflowSpots());
+      }
+      if (other.getEnableOverflowSpotSliding() != false) {
+        setEnableOverflowSpotSliding(other.getEnableOverflowSpotSliding());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -939,6 +1040,99 @@ private static final long serialVersionUID = 0L;
     public Builder clearDefaultStickerMaxCount() {
       
       defaultStickerMaxCount_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private boolean enableEggsNotInventory_ ;
+    /**
+     * <code>bool enable_eggs_not_inventory = 10;</code>
+     * @return The enableEggsNotInventory.
+     */
+    @java.lang.Override
+    public boolean getEnableEggsNotInventory() {
+      return enableEggsNotInventory_;
+    }
+    /**
+     * <code>bool enable_eggs_not_inventory = 10;</code>
+     * @param value The enableEggsNotInventory to set.
+     * @return This builder for chaining.
+     */
+    public Builder setEnableEggsNotInventory(boolean value) {
+      
+      enableEggsNotInventory_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool enable_eggs_not_inventory = 10;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearEnableEggsNotInventory() {
+      
+      enableEggsNotInventory_ = false;
+      onChanged();
+      return this;
+    }
+
+    private int specialEggOverflowSpots_ ;
+    /**
+     * <code>int32 special_egg_overflow_spots = 11;</code>
+     * @return The specialEggOverflowSpots.
+     */
+    @java.lang.Override
+    public int getSpecialEggOverflowSpots() {
+      return specialEggOverflowSpots_;
+    }
+    /**
+     * <code>int32 special_egg_overflow_spots = 11;</code>
+     * @param value The specialEggOverflowSpots to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSpecialEggOverflowSpots(int value) {
+      
+      specialEggOverflowSpots_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 special_egg_overflow_spots = 11;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSpecialEggOverflowSpots() {
+      
+      specialEggOverflowSpots_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private boolean enableOverflowSpotSliding_ ;
+    /**
+     * <code>bool enable_overflow_spot_sliding = 12;</code>
+     * @return The enableOverflowSpotSliding.
+     */
+    @java.lang.Override
+    public boolean getEnableOverflowSpotSliding() {
+      return enableOverflowSpotSliding_;
+    }
+    /**
+     * <code>bool enable_overflow_spot_sliding = 12;</code>
+     * @param value The enableOverflowSpotSliding to set.
+     * @return This builder for chaining.
+     */
+    public Builder setEnableOverflowSpotSliding(boolean value) {
+      
+      enableOverflowSpotSliding_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool enable_overflow_spot_sliding = 12;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearEnableOverflowSpotSliding() {
+      
+      enableOverflowSpotSliding_ = false;
       onChanged();
       return this;
     }

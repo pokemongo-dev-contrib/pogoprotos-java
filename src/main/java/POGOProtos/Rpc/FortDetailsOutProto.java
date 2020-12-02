@@ -17,6 +17,7 @@ private static final long serialVersionUID = 0L;
   }
   private FortDetailsOutProto() {
     id_ = "";
+    team_ = 0;
     pokemon_ = java.util.Collections.emptyList();
     name_ = "";
     imageUrl_ = com.google.protobuf.LazyStringArrayList.EMPTY;
@@ -68,8 +69,9 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 16: {
+            int rawValue = input.readEnum();
 
-            team_ = input.readInt32();
+            team_ = rawValue;
             break;
           }
           case 26: {
@@ -296,12 +298,20 @@ private static final long serialVersionUID = 0L;
   public static final int TEAM_FIELD_NUMBER = 2;
   private int team_;
   /**
-   * <code>int32 team = 2;</code>
+   * <code>.POGOProtos.Rpc.Team team = 2;</code>
+   * @return The enum numeric value on the wire for team.
+   */
+  @java.lang.Override public int getTeamValue() {
+    return team_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.Team team = 2;</code>
    * @return The team.
    */
-  @java.lang.Override
-  public int getTeam() {
-    return team_;
+  @java.lang.Override public POGOProtos.Rpc.Team getTeam() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.Team result = POGOProtos.Rpc.Team.valueOf(team_);
+    return result == null ? POGOProtos.Rpc.Team.UNRECOGNIZED : result;
   }
 
   public static final int POKEMON_FIELD_NUMBER = 3;
@@ -847,8 +857,8 @@ private static final long serialVersionUID = 0L;
     if (!getIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
     }
-    if (team_ != 0) {
-      output.writeInt32(2, team_);
+    if (team_ != POGOProtos.Rpc.Team.TEAM_UNSET.getNumber()) {
+      output.writeEnum(2, team_);
     }
     for (int i = 0; i < pokemon_.size(); i++) {
       output.writeMessage(3, pokemon_.get(i));
@@ -922,9 +932,9 @@ private static final long serialVersionUID = 0L;
     if (!getIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
     }
-    if (team_ != 0) {
+    if (team_ != POGOProtos.Rpc.Team.TEAM_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, team_);
+        .computeEnumSize(2, team_);
     }
     for (int i = 0; i < pokemon_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
@@ -1025,8 +1035,7 @@ private static final long serialVersionUID = 0L;
 
     if (!getId()
         .equals(other.getId())) return false;
-    if (getTeam()
-        != other.getTeam()) return false;
+    if (team_ != other.team_) return false;
     if (!getPokemonList()
         .equals(other.getPokemonList())) return false;
     if (!getName()
@@ -1088,7 +1097,7 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + ID_FIELD_NUMBER;
     hash = (53 * hash) + getId().hashCode();
     hash = (37 * hash) + TEAM_FIELD_NUMBER;
-    hash = (53 * hash) + getTeam();
+    hash = (53 * hash) + team_;
     if (getPokemonCount() > 0) {
       hash = (37 * hash) + POKEMON_FIELD_NUMBER;
       hash = (53 * hash) + getPokemonList().hashCode();
@@ -1472,8 +1481,8 @@ private static final long serialVersionUID = 0L;
         id_ = other.id_;
         onChanged();
       }
-      if (other.getTeam() != 0) {
-        setTeam(other.getTeam());
+      if (other.team_ != 0) {
+        setTeamValue(other.getTeamValue());
       }
       if (pokemonBuilder_ == null) {
         if (!other.pokemon_.isEmpty()) {
@@ -1707,28 +1716,51 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int team_ ;
+    private int team_ = 0;
     /**
-     * <code>int32 team = 2;</code>
-     * @return The team.
+     * <code>.POGOProtos.Rpc.Team team = 2;</code>
+     * @return The enum numeric value on the wire for team.
      */
-    @java.lang.Override
-    public int getTeam() {
+    @java.lang.Override public int getTeamValue() {
       return team_;
     }
     /**
-     * <code>int32 team = 2;</code>
-     * @param value The team to set.
+     * <code>.POGOProtos.Rpc.Team team = 2;</code>
+     * @param value The enum numeric value on the wire for team to set.
      * @return This builder for chaining.
      */
-    public Builder setTeam(int value) {
+    public Builder setTeamValue(int value) {
       
       team_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 team = 2;</code>
+     * <code>.POGOProtos.Rpc.Team team = 2;</code>
+     * @return The team.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.Team getTeam() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.Team result = POGOProtos.Rpc.Team.valueOf(team_);
+      return result == null ? POGOProtos.Rpc.Team.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Team team = 2;</code>
+     * @param value The team to set.
+     * @return This builder for chaining.
+     */
+    public Builder setTeam(POGOProtos.Rpc.Team value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      team_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Team team = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearTeam() {

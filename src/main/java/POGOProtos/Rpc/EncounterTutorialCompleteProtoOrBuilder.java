@@ -8,8 +8,13 @@ public interface EncounterTutorialCompleteProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int32 pokedex_id = 1;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_id = 1;</code>
+   * @return The enum numeric value on the wire for pokedexId.
+   */
+  int getPokedexIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_id = 1;</code>
    * @return The pokedexId.
    */
-  int getPokedexId();
+  POGOProtos.Rpc.HoloPokemonId getPokedexId();
 }

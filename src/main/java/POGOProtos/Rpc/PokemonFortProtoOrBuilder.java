@@ -38,16 +38,26 @@ public interface PokemonFortProtoOrBuilder extends
   double getLongitude();
 
   /**
-   * <code>int32 team = 5;</code>
+   * <code>.POGOProtos.Rpc.Team team = 5;</code>
+   * @return The enum numeric value on the wire for team.
+   */
+  int getTeamValue();
+  /**
+   * <code>.POGOProtos.Rpc.Team team = 5;</code>
    * @return The team.
    */
-  int getTeam();
+  POGOProtos.Rpc.Team getTeam();
 
   /**
-   * <code>int32 guard_pokemon_id = 6;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonId guard_pokemon_id = 6;</code>
+   * @return The enum numeric value on the wire for guardPokemonId.
+   */
+  int getGuardPokemonIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId guard_pokemon_id = 6;</code>
    * @return The guardPokemonId.
    */
-  int getGuardPokemonId();
+  POGOProtos.Rpc.HoloPokemonId getGuardPokemonId();
 
   /**
    * <code>int32 guard_pokemon_level = 7;</code>

@@ -88,9 +88,9 @@ private static final long serialVersionUID = 0L;
   }
 
   /**
-   * Protobuf enum {@code POGOProtos.Rpc.NianticProfileTelemetry.ProfileId}
+   * Protobuf enum {@code POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId}
    */
-  public enum ProfileId
+  public enum NianticProfileTelemetryId
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNDEFINED = 0;</code>
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static ProfileId valueOf(int value) {
+    public static NianticProfileTelemetryId valueOf(int value) {
       return forNumber(value);
     }
 
@@ -143,7 +143,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static ProfileId forNumber(int value) {
+    public static NianticProfileTelemetryId forNumber(int value) {
       switch (value) {
         case 0: return UNDEFINED;
         case 1: return OPEN_MY_PROFILE;
@@ -152,15 +152,15 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<ProfileId>
+    public static com.google.protobuf.Internal.EnumLiteMap<NianticProfileTelemetryId>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        ProfileId> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<ProfileId>() {
-            public ProfileId findValueByNumber(int number) {
-              return ProfileId.forNumber(number);
+        NianticProfileTelemetryId> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<NianticProfileTelemetryId>() {
+            public NianticProfileTelemetryId findValueByNumber(int number) {
+              return NianticProfileTelemetryId.forNumber(number);
             }
           };
 
@@ -181,9 +181,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.NianticProfileTelemetry.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final ProfileId[] VALUES = values();
+    private static final NianticProfileTelemetryId[] VALUES = values();
 
-    public static ProfileId valueOf(
+    public static NianticProfileTelemetryId valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -197,30 +197,30 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private ProfileId(int value) {
+    private NianticProfileTelemetryId(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.NianticProfileTelemetry.ProfileId)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId)
   }
 
   public static final int NIANTIC_PROFILE_TELEMETRY_ID_FIELD_NUMBER = 1;
   private int nianticProfileTelemetryId_;
   /**
-   * <code>.POGOProtos.Rpc.NianticProfileTelemetry.ProfileId niantic_profile_telemetry_id = 1;</code>
+   * <code>.POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId niantic_profile_telemetry_id = 1;</code>
    * @return The enum numeric value on the wire for nianticProfileTelemetryId.
    */
   @java.lang.Override public int getNianticProfileTelemetryIdValue() {
     return nianticProfileTelemetryId_;
   }
   /**
-   * <code>.POGOProtos.Rpc.NianticProfileTelemetry.ProfileId niantic_profile_telemetry_id = 1;</code>
+   * <code>.POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId niantic_profile_telemetry_id = 1;</code>
    * @return The nianticProfileTelemetryId.
    */
-  @java.lang.Override public POGOProtos.Rpc.NianticProfileTelemetry.ProfileId getNianticProfileTelemetryId() {
+  @java.lang.Override public POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId getNianticProfileTelemetryId() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.NianticProfileTelemetry.ProfileId result = POGOProtos.Rpc.NianticProfileTelemetry.ProfileId.valueOf(nianticProfileTelemetryId_);
-    return result == null ? POGOProtos.Rpc.NianticProfileTelemetry.ProfileId.UNRECOGNIZED : result;
+    POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId result = POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId.valueOf(nianticProfileTelemetryId_);
+    return result == null ? POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId.UNRECOGNIZED : result;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -237,7 +237,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (nianticProfileTelemetryId_ != POGOProtos.Rpc.NianticProfileTelemetry.ProfileId.UNDEFINED.getNumber()) {
+    if (nianticProfileTelemetryId_ != POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId.UNDEFINED.getNumber()) {
       output.writeEnum(1, nianticProfileTelemetryId_);
     }
     unknownFields.writeTo(output);
@@ -249,7 +249,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (nianticProfileTelemetryId_ != POGOProtos.Rpc.NianticProfileTelemetry.ProfileId.UNDEFINED.getNumber()) {
+    if (nianticProfileTelemetryId_ != POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId.UNDEFINED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, nianticProfileTelemetryId_);
     }
@@ -526,14 +526,14 @@ private static final long serialVersionUID = 0L;
 
     private int nianticProfileTelemetryId_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.NianticProfileTelemetry.ProfileId niantic_profile_telemetry_id = 1;</code>
+     * <code>.POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId niantic_profile_telemetry_id = 1;</code>
      * @return The enum numeric value on the wire for nianticProfileTelemetryId.
      */
     @java.lang.Override public int getNianticProfileTelemetryIdValue() {
       return nianticProfileTelemetryId_;
     }
     /**
-     * <code>.POGOProtos.Rpc.NianticProfileTelemetry.ProfileId niantic_profile_telemetry_id = 1;</code>
+     * <code>.POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId niantic_profile_telemetry_id = 1;</code>
      * @param value The enum numeric value on the wire for nianticProfileTelemetryId to set.
      * @return This builder for chaining.
      */
@@ -544,21 +544,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NianticProfileTelemetry.ProfileId niantic_profile_telemetry_id = 1;</code>
+     * <code>.POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId niantic_profile_telemetry_id = 1;</code>
      * @return The nianticProfileTelemetryId.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.NianticProfileTelemetry.ProfileId getNianticProfileTelemetryId() {
+    public POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId getNianticProfileTelemetryId() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.NianticProfileTelemetry.ProfileId result = POGOProtos.Rpc.NianticProfileTelemetry.ProfileId.valueOf(nianticProfileTelemetryId_);
-      return result == null ? POGOProtos.Rpc.NianticProfileTelemetry.ProfileId.UNRECOGNIZED : result;
+      POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId result = POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId.valueOf(nianticProfileTelemetryId_);
+      return result == null ? POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.NianticProfileTelemetry.ProfileId niantic_profile_telemetry_id = 1;</code>
+     * <code>.POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId niantic_profile_telemetry_id = 1;</code>
      * @param value The nianticProfileTelemetryId to set.
      * @return This builder for chaining.
      */
-    public Builder setNianticProfileTelemetryId(POGOProtos.Rpc.NianticProfileTelemetry.ProfileId value) {
+    public Builder setNianticProfileTelemetryId(POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -568,7 +568,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NianticProfileTelemetry.ProfileId niantic_profile_telemetry_id = 1;</code>
+     * <code>.POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId niantic_profile_telemetry_id = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearNianticProfileTelemetryId() {

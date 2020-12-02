@@ -60,4 +60,22 @@ public interface InventorySettingsProtoOrBuilder extends
    * @return The defaultStickerMaxCount.
    */
   int getDefaultStickerMaxCount();
+
+  /**
+   * <code>bool enable_eggs_not_inventory = 10;</code>
+   * @return The enableEggsNotInventory.
+   */
+  boolean getEnableEggsNotInventory();
+
+  /**
+   * <code>int32 special_egg_overflow_spots = 11;</code>
+   * @return The specialEggOverflowSpots.
+   */
+  int getSpecialEggOverflowSpots();
+
+  /**
+   * <code>bool enable_overflow_spot_sliding = 12;</code>
+   * @return The enableOverflowSpotSliding.
+   */
+  boolean getEnableOverflowSpotSliding();
 }

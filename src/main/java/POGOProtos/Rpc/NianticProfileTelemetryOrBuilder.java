@@ -8,13 +8,13 @@ public interface NianticProfileTelemetryOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.NianticProfileTelemetry.ProfileId niantic_profile_telemetry_id = 1;</code>
+   * <code>.POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId niantic_profile_telemetry_id = 1;</code>
    * @return The enum numeric value on the wire for nianticProfileTelemetryId.
    */
   int getNianticProfileTelemetryIdValue();
   /**
-   * <code>.POGOProtos.Rpc.NianticProfileTelemetry.ProfileId niantic_profile_telemetry_id = 1;</code>
+   * <code>.POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId niantic_profile_telemetry_id = 1;</code>
    * @return The nianticProfileTelemetryId.
    */
-  POGOProtos.Rpc.NianticProfileTelemetry.ProfileId getNianticProfileTelemetryId();
+  POGOProtos.Rpc.NianticProfileTelemetry.NianticProfileTelemetryId getNianticProfileTelemetryId();
 }

@@ -19,19 +19,19 @@ public interface QuestEncounterResponseOrBuilder extends
   POGOProtos.Networking.Responses.QuestEncounterResponse.Result getResult();
 
   /**
-   * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+   * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
    * @return Whether the pokemon field is set.
    */
   boolean hasPokemon();
   /**
-   * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+   * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
    * @return The pokemon.
    */
-  POGOProtos.Map.Pokemon.WildPokemon getPokemon();
+  POGOProtos.Data.PokemonData getPokemon();
   /**
-   * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+   * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
    */
-  POGOProtos.Map.Pokemon.WildPokemonOrBuilder getPokemonOrBuilder();
+  POGOProtos.Data.PokemonDataOrBuilder getPokemonOrBuilder();
 
   /**
    * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>

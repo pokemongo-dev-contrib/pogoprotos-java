@@ -19,10 +19,15 @@ public interface GetIncensePokemonOutProtoOrBuilder extends
   POGOProtos.Rpc.GetIncensePokemonOutProto.Result getResult();
 
   /**
-   * <code>int32 pokemon_type_id = 2;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_type_id = 2;</code>
+   * @return The enum numeric value on the wire for pokemonTypeId.
+   */
+  int getPokemonTypeIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_type_id = 2;</code>
    * @return The pokemonTypeId.
    */
-  int getPokemonTypeId();
+  POGOProtos.Rpc.HoloPokemonId getPokemonTypeId();
 
   /**
    * <code>double lat = 3;</code>

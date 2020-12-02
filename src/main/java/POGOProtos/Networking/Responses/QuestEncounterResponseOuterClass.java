@@ -32,27 +32,27 @@ public final class QuestEncounterResponseOuterClass {
       "ncounterResponse.proto\022\037POGOProtos.Netwo" +
       "rking.Responses\0320POGOProtos/Data/Capture" +
       "/CaptureProbability.proto\032&POGOProtos/In" +
-      "ventory/Item/ItemId.proto\032(POGOProtos/Ma" +
-      "p/Pokemon/WildPokemon.proto\"\312\003\n\026QuestEnc" +
-      "ounterResponse\022N\n\006result\030\001 \001(\0162>.POGOPro" +
-      "tos.Networking.Responses.QuestEncounterR" +
-      "esponse.Result\0224\n\007pokemon\030\002 \001(\0132#.POGOPr" +
-      "otos.Map.Pokemon.WildPokemon\022H\n\023capture_" +
-      "probability\030\003 \001(\0132+.POGOProtos.Data.Capt" +
-      "ure.CaptureProbability\0226\n\013active_item\030\004 " +
-      "\001(\0162!.POGOProtos.Inventory.Item.ItemId\"\247" +
-      "\001\n\006Result\022\033\n\027QUEST_ENCOUNTER_UNKNOWN\020\000\022\033" +
-      "\n\027QUEST_ENCOUNTER_SUCCESS\020\001\022!\n\035QUEST_ENC" +
-      "OUNTER_NOT_AVAILABLE\020\002\022$\n QUEST_ENCOUNTE" +
-      "R_ALREADY_FINISHED\020\003\022\032\n\026POKEMON_INVENTOR" +
-      "Y_FULL\020\004B\002P\001b\006proto3"
+      "ventory/Item/ItemId.proto\032!POGOProtos/Da" +
+      "ta/PokemonData.proto\"\303\003\n\026QuestEncounterR" +
+      "esponse\022N\n\006result\030\001 \001(\0162>.POGOProtos.Net" +
+      "working.Responses.QuestEncounterResponse" +
+      ".Result\022-\n\007pokemon\030\002 \001(\0132\034.POGOProtos.Da" +
+      "ta.PokemonData\022H\n\023capture_probability\030\003 " +
+      "\001(\0132+.POGOProtos.Data.Capture.CapturePro" +
+      "bability\0226\n\013active_item\030\004 \001(\0162!.POGOProt" +
+      "os.Inventory.Item.ItemId\"\247\001\n\006Result\022\033\n\027Q" +
+      "UEST_ENCOUNTER_UNKNOWN\020\000\022\033\n\027QUEST_ENCOUN" +
+      "TER_SUCCESS\020\001\022!\n\035QUEST_ENCOUNTER_NOT_AVA" +
+      "ILABLE\020\002\022$\n QUEST_ENCOUNTER_ALREADY_FINI" +
+      "SHED\020\003\022\032\n\026POKEMON_INVENTORY_FULL\020\004B\002P\001b\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           POGOProtos.Data.Capture.CaptureProbabilityOuterClass.getDescriptor(),
           POGOProtos.Inventory.Item.ItemIdOuterClass.getDescriptor(),
-          POGOProtos.Map.Pokemon.WildPokemonOuterClass.getDescriptor(),
+          POGOProtos.Data.PokemonDataOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Networking_Responses_QuestEncounterResponse_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -62,7 +62,7 @@ public final class QuestEncounterResponseOuterClass {
         new java.lang.String[] { "Result", "Pokemon", "CaptureProbability", "ActiveItem", });
     POGOProtos.Data.Capture.CaptureProbabilityOuterClass.getDescriptor();
     POGOProtos.Inventory.Item.ItemIdOuterClass.getDescriptor();
-    POGOProtos.Map.Pokemon.WildPokemonOuterClass.getDescriptor();
+    POGOProtos.Data.PokemonDataOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

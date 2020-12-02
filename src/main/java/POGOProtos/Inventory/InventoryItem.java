@@ -54,14 +54,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Inventory.InventoryItem.DeletedItem.Builder subBuilder = null;
+            POGOProtos.Inventory.InventoryKey.Builder subBuilder = null;
             if (inventoryItemCase_ == 2) {
-              subBuilder = ((POGOProtos.Inventory.InventoryItem.DeletedItem) inventoryItem_).toBuilder();
+              subBuilder = ((POGOProtos.Inventory.InventoryKey) inventoryItem_).toBuilder();
             }
             inventoryItem_ =
-                input.readMessage(POGOProtos.Inventory.InventoryItem.DeletedItem.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Inventory.InventoryKey.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Inventory.InventoryItem.DeletedItem) inventoryItem_);
+              subBuilder.mergeFrom((POGOProtos.Inventory.InventoryKey) inventoryItem_);
               inventoryItem_ = subBuilder.buildPartial();
             }
             inventoryItemCase_ = 2;
@@ -111,495 +111,6 @@ private static final long serialVersionUID = 0L;
     return POGOProtos.Inventory.InventoryItemOuterClass.internal_static_POGOProtos_Inventory_InventoryItem_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             POGOProtos.Inventory.InventoryItem.class, POGOProtos.Inventory.InventoryItem.Builder.class);
-  }
-
-  public interface DeletedItemOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Inventory.InventoryItem.DeletedItem)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>fixed64 pokemon_id = 1;</code>
-     * @return The pokemonId.
-     */
-    long getPokemonId();
-  }
-  /**
-   * Protobuf type {@code POGOProtos.Inventory.InventoryItem.DeletedItem}
-   */
-  public static final class DeletedItem extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Inventory.InventoryItem.DeletedItem)
-      DeletedItemOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use DeletedItem.newBuilder() to construct.
-    private DeletedItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private DeletedItem() {
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new DeletedItem();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private DeletedItem(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 9: {
-
-              pokemonId_ = input.readFixed64();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return POGOProtos.Inventory.InventoryItemOuterClass.internal_static_POGOProtos_Inventory_InventoryItem_DeletedItem_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return POGOProtos.Inventory.InventoryItemOuterClass.internal_static_POGOProtos_Inventory_InventoryItem_DeletedItem_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              POGOProtos.Inventory.InventoryItem.DeletedItem.class, POGOProtos.Inventory.InventoryItem.DeletedItem.Builder.class);
-    }
-
-    public static final int POKEMON_ID_FIELD_NUMBER = 1;
-    private long pokemonId_;
-    /**
-     * <code>fixed64 pokemon_id = 1;</code>
-     * @return The pokemonId.
-     */
-    @java.lang.Override
-    public long getPokemonId() {
-      return pokemonId_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (pokemonId_ != 0L) {
-        output.writeFixed64(1, pokemonId_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (pokemonId_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFixed64Size(1, pokemonId_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof POGOProtos.Inventory.InventoryItem.DeletedItem)) {
-        return super.equals(obj);
-      }
-      POGOProtos.Inventory.InventoryItem.DeletedItem other = (POGOProtos.Inventory.InventoryItem.DeletedItem) obj;
-
-      if (getPokemonId()
-          != other.getPokemonId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + POKEMON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getPokemonId());
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(POGOProtos.Inventory.InventoryItem.DeletedItem prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code POGOProtos.Inventory.InventoryItem.DeletedItem}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Inventory.InventoryItem.DeletedItem)
-        POGOProtos.Inventory.InventoryItem.DeletedItemOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return POGOProtos.Inventory.InventoryItemOuterClass.internal_static_POGOProtos_Inventory_InventoryItem_DeletedItem_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return POGOProtos.Inventory.InventoryItemOuterClass.internal_static_POGOProtos_Inventory_InventoryItem_DeletedItem_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                POGOProtos.Inventory.InventoryItem.DeletedItem.class, POGOProtos.Inventory.InventoryItem.DeletedItem.Builder.class);
-      }
-
-      // Construct using POGOProtos.Inventory.InventoryItem.DeletedItem.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        pokemonId_ = 0L;
-
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return POGOProtos.Inventory.InventoryItemOuterClass.internal_static_POGOProtos_Inventory_InventoryItem_DeletedItem_descriptor;
-      }
-
-      @java.lang.Override
-      public POGOProtos.Inventory.InventoryItem.DeletedItem getDefaultInstanceForType() {
-        return POGOProtos.Inventory.InventoryItem.DeletedItem.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public POGOProtos.Inventory.InventoryItem.DeletedItem build() {
-        POGOProtos.Inventory.InventoryItem.DeletedItem result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public POGOProtos.Inventory.InventoryItem.DeletedItem buildPartial() {
-        POGOProtos.Inventory.InventoryItem.DeletedItem result = new POGOProtos.Inventory.InventoryItem.DeletedItem(this);
-        result.pokemonId_ = pokemonId_;
-        onBuilt();
-        return result;
-      }
-
-      @java.lang.Override
-      public Builder clone() {
-        return super.clone();
-      }
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.setField(field, value);
-      }
-      @java.lang.Override
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return super.clearField(field);
-      }
-      @java.lang.Override
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return super.clearOneof(oneof);
-      }
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return super.setRepeatedField(field, index, value);
-      }
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.addRepeatedField(field, value);
-      }
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Inventory.InventoryItem.DeletedItem) {
-          return mergeFrom((POGOProtos.Inventory.InventoryItem.DeletedItem)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(POGOProtos.Inventory.InventoryItem.DeletedItem other) {
-        if (other == POGOProtos.Inventory.InventoryItem.DeletedItem.getDefaultInstance()) return this;
-        if (other.getPokemonId() != 0L) {
-          setPokemonId(other.getPokemonId());
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        POGOProtos.Inventory.InventoryItem.DeletedItem parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Inventory.InventoryItem.DeletedItem) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private long pokemonId_ ;
-      /**
-       * <code>fixed64 pokemon_id = 1;</code>
-       * @return The pokemonId.
-       */
-      @java.lang.Override
-      public long getPokemonId() {
-        return pokemonId_;
-      }
-      /**
-       * <code>fixed64 pokemon_id = 1;</code>
-       * @param value The pokemonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPokemonId(long value) {
-        
-        pokemonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>fixed64 pokemon_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPokemonId() {
-        
-        pokemonId_ = 0L;
-        onChanged();
-        return this;
-      }
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
-
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Inventory.InventoryItem.DeletedItem)
-    }
-
-    // @@protoc_insertion_point(class_scope:POGOProtos.Inventory.InventoryItem.DeletedItem)
-    private static final POGOProtos.Inventory.InventoryItem.DeletedItem DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new POGOProtos.Inventory.InventoryItem.DeletedItem();
-    }
-
-    public static POGOProtos.Inventory.InventoryItem.DeletedItem getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<DeletedItem>
-        PARSER = new com.google.protobuf.AbstractParser<DeletedItem>() {
-      @java.lang.Override
-      public DeletedItem parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new DeletedItem(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<DeletedItem> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<DeletedItem> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public POGOProtos.Inventory.InventoryItem.DeletedItem getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
   }
 
   private int inventoryItemCase_ = 0;
@@ -656,7 +167,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int DELETED_ITEM_FIELD_NUMBER = 2;
   /**
-   * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+   * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
    * @return Whether the deletedItem field is set.
    */
   @java.lang.Override
@@ -664,25 +175,25 @@ private static final long serialVersionUID = 0L;
     return inventoryItemCase_ == 2;
   }
   /**
-   * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+   * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
    * @return The deletedItem.
    */
   @java.lang.Override
-  public POGOProtos.Inventory.InventoryItem.DeletedItem getDeletedItem() {
+  public POGOProtos.Inventory.InventoryKey getDeletedItem() {
     if (inventoryItemCase_ == 2) {
-       return (POGOProtos.Inventory.InventoryItem.DeletedItem) inventoryItem_;
+       return (POGOProtos.Inventory.InventoryKey) inventoryItem_;
     }
-    return POGOProtos.Inventory.InventoryItem.DeletedItem.getDefaultInstance();
+    return POGOProtos.Inventory.InventoryKey.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+   * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Inventory.InventoryItem.DeletedItemOrBuilder getDeletedItemOrBuilder() {
+  public POGOProtos.Inventory.InventoryKeyOrBuilder getDeletedItemOrBuilder() {
     if (inventoryItemCase_ == 2) {
-       return (POGOProtos.Inventory.InventoryItem.DeletedItem) inventoryItem_;
+       return (POGOProtos.Inventory.InventoryKey) inventoryItem_;
     }
-    return POGOProtos.Inventory.InventoryItem.DeletedItem.getDefaultInstance();
+    return POGOProtos.Inventory.InventoryKey.getDefaultInstance();
   }
 
   public static final int INVENTORY_ITEM_DATA_FIELD_NUMBER = 3;
@@ -734,7 +245,7 @@ private static final long serialVersionUID = 0L;
       output.writeInt64(1, modifiedTimestampMs_);
     }
     if (inventoryItemCase_ == 2) {
-      output.writeMessage(2, (POGOProtos.Inventory.InventoryItem.DeletedItem) inventoryItem_);
+      output.writeMessage(2, (POGOProtos.Inventory.InventoryKey) inventoryItem_);
     }
     if (inventoryItemCase_ == 3) {
       output.writeMessage(3, (POGOProtos.Inventory.InventoryItemData) inventoryItem_);
@@ -754,7 +265,7 @@ private static final long serialVersionUID = 0L;
     }
     if (inventoryItemCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, (POGOProtos.Inventory.InventoryItem.DeletedItem) inventoryItem_);
+        .computeMessageSize(2, (POGOProtos.Inventory.InventoryKey) inventoryItem_);
     }
     if (inventoryItemCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
@@ -1135,9 +646,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Inventory.InventoryItem.DeletedItem, POGOProtos.Inventory.InventoryItem.DeletedItem.Builder, POGOProtos.Inventory.InventoryItem.DeletedItemOrBuilder> deletedItemBuilder_;
+        POGOProtos.Inventory.InventoryKey, POGOProtos.Inventory.InventoryKey.Builder, POGOProtos.Inventory.InventoryKeyOrBuilder> deletedItemBuilder_;
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
      * @return Whether the deletedItem field is set.
      */
     @java.lang.Override
@@ -1145,27 +656,27 @@ private static final long serialVersionUID = 0L;
       return inventoryItemCase_ == 2;
     }
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
      * @return The deletedItem.
      */
     @java.lang.Override
-    public POGOProtos.Inventory.InventoryItem.DeletedItem getDeletedItem() {
+    public POGOProtos.Inventory.InventoryKey getDeletedItem() {
       if (deletedItemBuilder_ == null) {
         if (inventoryItemCase_ == 2) {
-          return (POGOProtos.Inventory.InventoryItem.DeletedItem) inventoryItem_;
+          return (POGOProtos.Inventory.InventoryKey) inventoryItem_;
         }
-        return POGOProtos.Inventory.InventoryItem.DeletedItem.getDefaultInstance();
+        return POGOProtos.Inventory.InventoryKey.getDefaultInstance();
       } else {
         if (inventoryItemCase_ == 2) {
           return deletedItemBuilder_.getMessage();
         }
-        return POGOProtos.Inventory.InventoryItem.DeletedItem.getDefaultInstance();
+        return POGOProtos.Inventory.InventoryKey.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
      */
-    public Builder setDeletedItem(POGOProtos.Inventory.InventoryItem.DeletedItem value) {
+    public Builder setDeletedItem(POGOProtos.Inventory.InventoryKey value) {
       if (deletedItemBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1179,10 +690,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
      */
     public Builder setDeletedItem(
-        POGOProtos.Inventory.InventoryItem.DeletedItem.Builder builderForValue) {
+        POGOProtos.Inventory.InventoryKey.Builder builderForValue) {
       if (deletedItemBuilder_ == null) {
         inventoryItem_ = builderForValue.build();
         onChanged();
@@ -1193,13 +704,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
      */
-    public Builder mergeDeletedItem(POGOProtos.Inventory.InventoryItem.DeletedItem value) {
+    public Builder mergeDeletedItem(POGOProtos.Inventory.InventoryKey value) {
       if (deletedItemBuilder_ == null) {
         if (inventoryItemCase_ == 2 &&
-            inventoryItem_ != POGOProtos.Inventory.InventoryItem.DeletedItem.getDefaultInstance()) {
-          inventoryItem_ = POGOProtos.Inventory.InventoryItem.DeletedItem.newBuilder((POGOProtos.Inventory.InventoryItem.DeletedItem) inventoryItem_)
+            inventoryItem_ != POGOProtos.Inventory.InventoryKey.getDefaultInstance()) {
+          inventoryItem_ = POGOProtos.Inventory.InventoryKey.newBuilder((POGOProtos.Inventory.InventoryKey) inventoryItem_)
               .mergeFrom(value).buildPartial();
         } else {
           inventoryItem_ = value;
@@ -1215,7 +726,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
      */
     public Builder clearDeletedItem() {
       if (deletedItemBuilder_ == null) {
@@ -1234,38 +745,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
      */
-    public POGOProtos.Inventory.InventoryItem.DeletedItem.Builder getDeletedItemBuilder() {
+    public POGOProtos.Inventory.InventoryKey.Builder getDeletedItemBuilder() {
       return getDeletedItemFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
      */
     @java.lang.Override
-    public POGOProtos.Inventory.InventoryItem.DeletedItemOrBuilder getDeletedItemOrBuilder() {
+    public POGOProtos.Inventory.InventoryKeyOrBuilder getDeletedItemOrBuilder() {
       if ((inventoryItemCase_ == 2) && (deletedItemBuilder_ != null)) {
         return deletedItemBuilder_.getMessageOrBuilder();
       } else {
         if (inventoryItemCase_ == 2) {
-          return (POGOProtos.Inventory.InventoryItem.DeletedItem) inventoryItem_;
+          return (POGOProtos.Inventory.InventoryKey) inventoryItem_;
         }
-        return POGOProtos.Inventory.InventoryItem.DeletedItem.getDefaultInstance();
+        return POGOProtos.Inventory.InventoryKey.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Inventory.InventoryItem.DeletedItem, POGOProtos.Inventory.InventoryItem.DeletedItem.Builder, POGOProtos.Inventory.InventoryItem.DeletedItemOrBuilder> 
+        POGOProtos.Inventory.InventoryKey, POGOProtos.Inventory.InventoryKey.Builder, POGOProtos.Inventory.InventoryKeyOrBuilder> 
         getDeletedItemFieldBuilder() {
       if (deletedItemBuilder_ == null) {
         if (!(inventoryItemCase_ == 2)) {
-          inventoryItem_ = POGOProtos.Inventory.InventoryItem.DeletedItem.getDefaultInstance();
+          inventoryItem_ = POGOProtos.Inventory.InventoryKey.getDefaultInstance();
         }
         deletedItemBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Inventory.InventoryItem.DeletedItem, POGOProtos.Inventory.InventoryItem.DeletedItem.Builder, POGOProtos.Inventory.InventoryItem.DeletedItemOrBuilder>(
-                (POGOProtos.Inventory.InventoryItem.DeletedItem) inventoryItem_,
+            POGOProtos.Inventory.InventoryKey, POGOProtos.Inventory.InventoryKey.Builder, POGOProtos.Inventory.InventoryKeyOrBuilder>(
+                (POGOProtos.Inventory.InventoryKey) inventoryItem_,
                 getParentForChildren(),
                 isClean());
         inventoryItem_ = null;

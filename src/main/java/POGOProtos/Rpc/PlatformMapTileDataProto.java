@@ -16,8 +16,6 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformMapTileDataProto() {
-    tileData_ = com.google.protobuf.ByteString.EMPTY;
-    labelData_ = com.google.protobuf.ByteString.EMPTY;
   }
 
   @java.lang.Override
@@ -64,13 +62,29 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
+            POGOProtos.Rpc.PlatformLabelTile.Builder subBuilder = null;
+            if (tileData_ != null) {
+              subBuilder = tileData_.toBuilder();
+            }
+            tileData_ = input.readMessage(POGOProtos.Rpc.PlatformLabelTile.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(tileData_);
+              tileData_ = subBuilder.buildPartial();
+            }
 
-            tileData_ = input.readBytes();
             break;
           }
           case 26: {
+            POGOProtos.Rpc.PlatformMapCompositionRoot.Builder subBuilder = null;
+            if (labelData_ != null) {
+              subBuilder = labelData_.toBuilder();
+            }
+            labelData_ = input.readMessage(POGOProtos.Rpc.PlatformMapCompositionRoot.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(labelData_);
+              labelData_ = subBuilder.buildPartial();
+            }
 
-            labelData_ = input.readBytes();
             break;
           }
           default: {
@@ -132,25 +146,55 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TILE_DATA_FIELD_NUMBER = 2;
-  private com.google.protobuf.ByteString tileData_;
+  private POGOProtos.Rpc.PlatformLabelTile tileData_;
   /**
-   * <code>bytes tile_data = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
+   * @return Whether the tileData field is set.
+   */
+  @java.lang.Override
+  public boolean hasTileData() {
+    return tileData_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
    * @return The tileData.
    */
   @java.lang.Override
-  public com.google.protobuf.ByteString getTileData() {
-    return tileData_;
+  public POGOProtos.Rpc.PlatformLabelTile getTileData() {
+    return tileData_ == null ? POGOProtos.Rpc.PlatformLabelTile.getDefaultInstance() : tileData_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.PlatformLabelTileOrBuilder getTileDataOrBuilder() {
+    return getTileData();
   }
 
   public static final int LABEL_DATA_FIELD_NUMBER = 3;
-  private com.google.protobuf.ByteString labelData_;
+  private POGOProtos.Rpc.PlatformMapCompositionRoot labelData_;
   /**
-   * <code>bytes label_data = 3;</code>
+   * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
+   * @return Whether the labelData field is set.
+   */
+  @java.lang.Override
+  public boolean hasLabelData() {
+    return labelData_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
    * @return The labelData.
    */
   @java.lang.Override
-  public com.google.protobuf.ByteString getLabelData() {
-    return labelData_;
+  public POGOProtos.Rpc.PlatformMapCompositionRoot getLabelData() {
+    return labelData_ == null ? POGOProtos.Rpc.PlatformMapCompositionRoot.getDefaultInstance() : labelData_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.PlatformMapCompositionRootOrBuilder getLabelDataOrBuilder() {
+    return getLabelData();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -170,11 +214,11 @@ private static final long serialVersionUID = 0L;
     if (mapTile_ != null) {
       output.writeMessage(1, getMapTile());
     }
-    if (!tileData_.isEmpty()) {
-      output.writeBytes(2, tileData_);
+    if (tileData_ != null) {
+      output.writeMessage(2, getTileData());
     }
-    if (!labelData_.isEmpty()) {
-      output.writeBytes(3, labelData_);
+    if (labelData_ != null) {
+      output.writeMessage(3, getLabelData());
     }
     unknownFields.writeTo(output);
   }
@@ -189,13 +233,13 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(1, getMapTile());
     }
-    if (!tileData_.isEmpty()) {
+    if (tileData_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(2, tileData_);
+        .computeMessageSize(2, getTileData());
     }
-    if (!labelData_.isEmpty()) {
+    if (labelData_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(3, labelData_);
+        .computeMessageSize(3, getLabelData());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -217,10 +261,16 @@ private static final long serialVersionUID = 0L;
       if (!getMapTile()
           .equals(other.getMapTile())) return false;
     }
-    if (!getTileData()
-        .equals(other.getTileData())) return false;
-    if (!getLabelData()
-        .equals(other.getLabelData())) return false;
+    if (hasTileData() != other.hasTileData()) return false;
+    if (hasTileData()) {
+      if (!getTileData()
+          .equals(other.getTileData())) return false;
+    }
+    if (hasLabelData() != other.hasLabelData()) return false;
+    if (hasLabelData()) {
+      if (!getLabelData()
+          .equals(other.getLabelData())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -236,10 +286,14 @@ private static final long serialVersionUID = 0L;
       hash = (37 * hash) + MAP_TILE_FIELD_NUMBER;
       hash = (53 * hash) + getMapTile().hashCode();
     }
-    hash = (37 * hash) + TILE_DATA_FIELD_NUMBER;
-    hash = (53 * hash) + getTileData().hashCode();
-    hash = (37 * hash) + LABEL_DATA_FIELD_NUMBER;
-    hash = (53 * hash) + getLabelData().hashCode();
+    if (hasTileData()) {
+      hash = (37 * hash) + TILE_DATA_FIELD_NUMBER;
+      hash = (53 * hash) + getTileData().hashCode();
+    }
+    if (hasLabelData()) {
+      hash = (37 * hash) + LABEL_DATA_FIELD_NUMBER;
+      hash = (53 * hash) + getLabelData().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -379,10 +433,18 @@ private static final long serialVersionUID = 0L;
         mapTile_ = null;
         mapTileBuilder_ = null;
       }
-      tileData_ = com.google.protobuf.ByteString.EMPTY;
-
-      labelData_ = com.google.protobuf.ByteString.EMPTY;
-
+      if (tileDataBuilder_ == null) {
+        tileData_ = null;
+      } else {
+        tileData_ = null;
+        tileDataBuilder_ = null;
+      }
+      if (labelDataBuilder_ == null) {
+        labelData_ = null;
+      } else {
+        labelData_ = null;
+        labelDataBuilder_ = null;
+      }
       return this;
     }
 
@@ -414,8 +476,16 @@ private static final long serialVersionUID = 0L;
       } else {
         result.mapTile_ = mapTileBuilder_.build();
       }
-      result.tileData_ = tileData_;
-      result.labelData_ = labelData_;
+      if (tileDataBuilder_ == null) {
+        result.tileData_ = tileData_;
+      } else {
+        result.tileData_ = tileDataBuilder_.build();
+      }
+      if (labelDataBuilder_ == null) {
+        result.labelData_ = labelData_;
+      } else {
+        result.labelData_ = labelDataBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -467,11 +537,11 @@ private static final long serialVersionUID = 0L;
       if (other.hasMapTile()) {
         mergeMapTile(other.getMapTile());
       }
-      if (other.getTileData() != com.google.protobuf.ByteString.EMPTY) {
-        setTileData(other.getTileData());
+      if (other.hasTileData()) {
+        mergeTileData(other.getTileData());
       }
-      if (other.getLabelData() != com.google.protobuf.ByteString.EMPTY) {
-        setLabelData(other.getLabelData());
+      if (other.hasLabelData()) {
+        mergeLabelData(other.getLabelData());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -621,72 +691,242 @@ private static final long serialVersionUID = 0L;
       return mapTileBuilder_;
     }
 
-    private com.google.protobuf.ByteString tileData_ = com.google.protobuf.ByteString.EMPTY;
+    private POGOProtos.Rpc.PlatformLabelTile tileData_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PlatformLabelTile, POGOProtos.Rpc.PlatformLabelTile.Builder, POGOProtos.Rpc.PlatformLabelTileOrBuilder> tileDataBuilder_;
     /**
-     * <code>bytes tile_data = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
+     * @return Whether the tileData field is set.
+     */
+    public boolean hasTileData() {
+      return tileDataBuilder_ != null || tileData_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
      * @return The tileData.
      */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getTileData() {
-      return tileData_;
+    public POGOProtos.Rpc.PlatformLabelTile getTileData() {
+      if (tileDataBuilder_ == null) {
+        return tileData_ == null ? POGOProtos.Rpc.PlatformLabelTile.getDefaultInstance() : tileData_;
+      } else {
+        return tileDataBuilder_.getMessage();
+      }
     }
     /**
-     * <code>bytes tile_data = 2;</code>
-     * @param value The tileData to set.
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
      */
-    public Builder setTileData(com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      tileData_ = value;
-      onChanged();
+    public Builder setTileData(POGOProtos.Rpc.PlatformLabelTile value) {
+      if (tileDataBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        tileData_ = value;
+        onChanged();
+      } else {
+        tileDataBuilder_.setMessage(value);
+      }
+
       return this;
     }
     /**
-     * <code>bytes tile_data = 2;</code>
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
+     */
+    public Builder setTileData(
+        POGOProtos.Rpc.PlatformLabelTile.Builder builderForValue) {
+      if (tileDataBuilder_ == null) {
+        tileData_ = builderForValue.build();
+        onChanged();
+      } else {
+        tileDataBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
+     */
+    public Builder mergeTileData(POGOProtos.Rpc.PlatformLabelTile value) {
+      if (tileDataBuilder_ == null) {
+        if (tileData_ != null) {
+          tileData_ =
+            POGOProtos.Rpc.PlatformLabelTile.newBuilder(tileData_).mergeFrom(value).buildPartial();
+        } else {
+          tileData_ = value;
+        }
+        onChanged();
+      } else {
+        tileDataBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
      */
     public Builder clearTileData() {
-      
-      tileData_ = getDefaultInstance().getTileData();
-      onChanged();
+      if (tileDataBuilder_ == null) {
+        tileData_ = null;
+        onChanged();
+      } else {
+        tileData_ = null;
+        tileDataBuilder_ = null;
+      }
+
       return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
+     */
+    public POGOProtos.Rpc.PlatformLabelTile.Builder getTileDataBuilder() {
+      
+      onChanged();
+      return getTileDataFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
+     */
+    public POGOProtos.Rpc.PlatformLabelTileOrBuilder getTileDataOrBuilder() {
+      if (tileDataBuilder_ != null) {
+        return tileDataBuilder_.getMessageOrBuilder();
+      } else {
+        return tileData_ == null ?
+            POGOProtos.Rpc.PlatformLabelTile.getDefaultInstance() : tileData_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PlatformLabelTile, POGOProtos.Rpc.PlatformLabelTile.Builder, POGOProtos.Rpc.PlatformLabelTileOrBuilder> 
+        getTileDataFieldBuilder() {
+      if (tileDataBuilder_ == null) {
+        tileDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.PlatformLabelTile, POGOProtos.Rpc.PlatformLabelTile.Builder, POGOProtos.Rpc.PlatformLabelTileOrBuilder>(
+                getTileData(),
+                getParentForChildren(),
+                isClean());
+        tileData_ = null;
+      }
+      return tileDataBuilder_;
     }
 
-    private com.google.protobuf.ByteString labelData_ = com.google.protobuf.ByteString.EMPTY;
+    private POGOProtos.Rpc.PlatformMapCompositionRoot labelData_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PlatformMapCompositionRoot, POGOProtos.Rpc.PlatformMapCompositionRoot.Builder, POGOProtos.Rpc.PlatformMapCompositionRootOrBuilder> labelDataBuilder_;
     /**
-     * <code>bytes label_data = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
+     * @return Whether the labelData field is set.
+     */
+    public boolean hasLabelData() {
+      return labelDataBuilder_ != null || labelData_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
      * @return The labelData.
      */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getLabelData() {
-      return labelData_;
+    public POGOProtos.Rpc.PlatformMapCompositionRoot getLabelData() {
+      if (labelDataBuilder_ == null) {
+        return labelData_ == null ? POGOProtos.Rpc.PlatformMapCompositionRoot.getDefaultInstance() : labelData_;
+      } else {
+        return labelDataBuilder_.getMessage();
+      }
     }
     /**
-     * <code>bytes label_data = 3;</code>
-     * @param value The labelData to set.
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
      */
-    public Builder setLabelData(com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      labelData_ = value;
-      onChanged();
+    public Builder setLabelData(POGOProtos.Rpc.PlatformMapCompositionRoot value) {
+      if (labelDataBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        labelData_ = value;
+        onChanged();
+      } else {
+        labelDataBuilder_.setMessage(value);
+      }
+
       return this;
     }
     /**
-     * <code>bytes label_data = 3;</code>
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
+     */
+    public Builder setLabelData(
+        POGOProtos.Rpc.PlatformMapCompositionRoot.Builder builderForValue) {
+      if (labelDataBuilder_ == null) {
+        labelData_ = builderForValue.build();
+        onChanged();
+      } else {
+        labelDataBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
+     */
+    public Builder mergeLabelData(POGOProtos.Rpc.PlatformMapCompositionRoot value) {
+      if (labelDataBuilder_ == null) {
+        if (labelData_ != null) {
+          labelData_ =
+            POGOProtos.Rpc.PlatformMapCompositionRoot.newBuilder(labelData_).mergeFrom(value).buildPartial();
+        } else {
+          labelData_ = value;
+        }
+        onChanged();
+      } else {
+        labelDataBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
      */
     public Builder clearLabelData() {
-      
-      labelData_ = getDefaultInstance().getLabelData();
-      onChanged();
+      if (labelDataBuilder_ == null) {
+        labelData_ = null;
+        onChanged();
+      } else {
+        labelData_ = null;
+        labelDataBuilder_ = null;
+      }
+
       return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
+     */
+    public POGOProtos.Rpc.PlatformMapCompositionRoot.Builder getLabelDataBuilder() {
+      
+      onChanged();
+      return getLabelDataFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
+     */
+    public POGOProtos.Rpc.PlatformMapCompositionRootOrBuilder getLabelDataOrBuilder() {
+      if (labelDataBuilder_ != null) {
+        return labelDataBuilder_.getMessageOrBuilder();
+      } else {
+        return labelData_ == null ?
+            POGOProtos.Rpc.PlatformMapCompositionRoot.getDefaultInstance() : labelData_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PlatformMapCompositionRoot, POGOProtos.Rpc.PlatformMapCompositionRoot.Builder, POGOProtos.Rpc.PlatformMapCompositionRootOrBuilder> 
+        getLabelDataFieldBuilder() {
+      if (labelDataBuilder_ == null) {
+        labelDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.PlatformMapCompositionRoot, POGOProtos.Rpc.PlatformMapCompositionRoot.Builder, POGOProtos.Rpc.PlatformMapCompositionRootOrBuilder>(
+                getLabelData(),
+                getParentForChildren(),
+                isClean());
+        labelData_ = null;
+      }
+      return labelDataBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

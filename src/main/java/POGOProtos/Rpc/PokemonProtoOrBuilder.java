@@ -14,10 +14,15 @@ public interface PokemonProtoOrBuilder extends
   long getId();
 
   /**
-   * <code>int32 pokemon_id = 2;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 2;</code>
+   * @return The enum numeric value on the wire for pokemonId.
+   */
+  int getPokemonIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 2;</code>
    * @return The pokemonId.
    */
-  int getPokemonId();
+  POGOProtos.Rpc.HoloPokemonId getPokemonId();
 
   /**
    * <code>int32 cp = 3;</code>

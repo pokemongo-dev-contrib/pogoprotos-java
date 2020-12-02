@@ -17,6 +17,8 @@ private static final long serialVersionUID = 0L;
   }
   private PokemonFortProto() {
     fortId_ = "";
+    team_ = 0;
+    guardPokemonId_ = 0;
     fortType_ = 0;
     activeFortModifier_ = java.util.Collections.emptyList();
     sponsor_ = 0;
@@ -82,13 +84,15 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 40: {
+            int rawValue = input.readEnum();
 
-            team_ = input.readInt32();
+            team_ = rawValue;
             break;
           }
           case 48: {
+            int rawValue = input.readEnum();
 
-            guardPokemonId_ = input.readInt32();
+            guardPokemonId_ = rawValue;
             break;
           }
           case 56: {
@@ -418,23 +422,39 @@ private static final long serialVersionUID = 0L;
   public static final int TEAM_FIELD_NUMBER = 5;
   private int team_;
   /**
-   * <code>int32 team = 5;</code>
+   * <code>.POGOProtos.Rpc.Team team = 5;</code>
+   * @return The enum numeric value on the wire for team.
+   */
+  @java.lang.Override public int getTeamValue() {
+    return team_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.Team team = 5;</code>
    * @return The team.
    */
-  @java.lang.Override
-  public int getTeam() {
-    return team_;
+  @java.lang.Override public POGOProtos.Rpc.Team getTeam() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.Team result = POGOProtos.Rpc.Team.valueOf(team_);
+    return result == null ? POGOProtos.Rpc.Team.UNRECOGNIZED : result;
   }
 
   public static final int GUARD_POKEMON_ID_FIELD_NUMBER = 6;
   private int guardPokemonId_;
   /**
-   * <code>int32 guard_pokemon_id = 6;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonId guard_pokemon_id = 6;</code>
+   * @return The enum numeric value on the wire for guardPokemonId.
+   */
+  @java.lang.Override public int getGuardPokemonIdValue() {
+    return guardPokemonId_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId guard_pokemon_id = 6;</code>
    * @return The guardPokemonId.
    */
-  @java.lang.Override
-  public int getGuardPokemonId() {
-    return guardPokemonId_;
+  @java.lang.Override public POGOProtos.Rpc.HoloPokemonId getGuardPokemonId() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(guardPokemonId_);
+    return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
   }
 
   public static final int GUARD_POKEMON_LEVEL_FIELD_NUMBER = 7;
@@ -1093,11 +1113,11 @@ private static final long serialVersionUID = 0L;
     if (longitude_ != 0D) {
       output.writeDouble(4, longitude_);
     }
-    if (team_ != 0) {
-      output.writeInt32(5, team_);
+    if (team_ != POGOProtos.Rpc.Team.TEAM_UNSET.getNumber()) {
+      output.writeEnum(5, team_);
     }
-    if (guardPokemonId_ != 0) {
-      output.writeInt32(6, guardPokemonId_);
+    if (guardPokemonId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
+      output.writeEnum(6, guardPokemonId_);
     }
     if (guardPokemonLevel_ != 0) {
       output.writeInt32(7, guardPokemonLevel_);
@@ -1214,13 +1234,13 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeDoubleSize(4, longitude_);
     }
-    if (team_ != 0) {
+    if (team_ != POGOProtos.Rpc.Team.TEAM_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(5, team_);
+        .computeEnumSize(5, team_);
     }
-    if (guardPokemonId_ != 0) {
+    if (guardPokemonId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(6, guardPokemonId_);
+        .computeEnumSize(6, guardPokemonId_);
     }
     if (guardPokemonLevel_ != 0) {
       size += com.google.protobuf.CodedOutputStream
@@ -1366,10 +1386,8 @@ private static final long serialVersionUID = 0L;
     if (java.lang.Double.doubleToLongBits(getLongitude())
         != java.lang.Double.doubleToLongBits(
             other.getLongitude())) return false;
-    if (getTeam()
-        != other.getTeam()) return false;
-    if (getGuardPokemonId()
-        != other.getGuardPokemonId()) return false;
+    if (team_ != other.team_) return false;
+    if (guardPokemonId_ != other.guardPokemonId_) return false;
     if (getGuardPokemonLevel()
         != other.getGuardPokemonLevel()) return false;
     if (getEnabled()
@@ -1462,9 +1480,9 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         java.lang.Double.doubleToLongBits(getLongitude()));
     hash = (37 * hash) + TEAM_FIELD_NUMBER;
-    hash = (53 * hash) + getTeam();
+    hash = (53 * hash) + team_;
     hash = (37 * hash) + GUARD_POKEMON_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getGuardPokemonId();
+    hash = (53 * hash) + guardPokemonId_;
     hash = (37 * hash) + GUARD_POKEMON_LEVEL_FIELD_NUMBER;
     hash = (53 * hash) + getGuardPokemonLevel();
     hash = (37 * hash) + ENABLED_FIELD_NUMBER;
@@ -1933,11 +1951,11 @@ private static final long serialVersionUID = 0L;
       if (other.getLongitude() != 0D) {
         setLongitude(other.getLongitude());
       }
-      if (other.getTeam() != 0) {
-        setTeam(other.getTeam());
+      if (other.team_ != 0) {
+        setTeamValue(other.getTeamValue());
       }
-      if (other.getGuardPokemonId() != 0) {
-        setGuardPokemonId(other.getGuardPokemonId());
+      if (other.guardPokemonId_ != 0) {
+        setGuardPokemonIdValue(other.getGuardPokemonIdValue());
       }
       if (other.getGuardPokemonLevel() != 0) {
         setGuardPokemonLevel(other.getGuardPokemonLevel());
@@ -2260,28 +2278,51 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int team_ ;
+    private int team_ = 0;
     /**
-     * <code>int32 team = 5;</code>
-     * @return The team.
+     * <code>.POGOProtos.Rpc.Team team = 5;</code>
+     * @return The enum numeric value on the wire for team.
      */
-    @java.lang.Override
-    public int getTeam() {
+    @java.lang.Override public int getTeamValue() {
       return team_;
     }
     /**
-     * <code>int32 team = 5;</code>
-     * @param value The team to set.
+     * <code>.POGOProtos.Rpc.Team team = 5;</code>
+     * @param value The enum numeric value on the wire for team to set.
      * @return This builder for chaining.
      */
-    public Builder setTeam(int value) {
+    public Builder setTeamValue(int value) {
       
       team_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 team = 5;</code>
+     * <code>.POGOProtos.Rpc.Team team = 5;</code>
+     * @return The team.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.Team getTeam() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.Team result = POGOProtos.Rpc.Team.valueOf(team_);
+      return result == null ? POGOProtos.Rpc.Team.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Team team = 5;</code>
+     * @param value The team to set.
+     * @return This builder for chaining.
+     */
+    public Builder setTeam(POGOProtos.Rpc.Team value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      team_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Team team = 5;</code>
      * @return This builder for chaining.
      */
     public Builder clearTeam() {
@@ -2291,28 +2332,51 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int guardPokemonId_ ;
+    private int guardPokemonId_ = 0;
     /**
-     * <code>int32 guard_pokemon_id = 6;</code>
-     * @return The guardPokemonId.
+     * <code>.POGOProtos.Rpc.HoloPokemonId guard_pokemon_id = 6;</code>
+     * @return The enum numeric value on the wire for guardPokemonId.
      */
-    @java.lang.Override
-    public int getGuardPokemonId() {
+    @java.lang.Override public int getGuardPokemonIdValue() {
       return guardPokemonId_;
     }
     /**
-     * <code>int32 guard_pokemon_id = 6;</code>
-     * @param value The guardPokemonId to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonId guard_pokemon_id = 6;</code>
+     * @param value The enum numeric value on the wire for guardPokemonId to set.
      * @return This builder for chaining.
      */
-    public Builder setGuardPokemonId(int value) {
+    public Builder setGuardPokemonIdValue(int value) {
       
       guardPokemonId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 guard_pokemon_id = 6;</code>
+     * <code>.POGOProtos.Rpc.HoloPokemonId guard_pokemon_id = 6;</code>
+     * @return The guardPokemonId.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.HoloPokemonId getGuardPokemonId() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(guardPokemonId_);
+      return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId guard_pokemon_id = 6;</code>
+     * @param value The guardPokemonId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setGuardPokemonId(POGOProtos.Rpc.HoloPokemonId value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      guardPokemonId_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId guard_pokemon_id = 6;</code>
      * @return This builder for chaining.
      */
     public Builder clearGuardPokemonId() {

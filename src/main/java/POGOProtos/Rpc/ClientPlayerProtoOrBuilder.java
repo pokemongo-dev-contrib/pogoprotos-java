@@ -26,10 +26,15 @@ public interface ClientPlayerProtoOrBuilder extends
       getNameBytes();
 
   /**
-   * <code>int32 team = 5;</code>
+   * <code>.POGOProtos.Rpc.Team team = 5;</code>
+   * @return The enum numeric value on the wire for team.
+   */
+  int getTeamValue();
+  /**
+   * <code>.POGOProtos.Rpc.Team team = 5;</code>
    * @return The team.
    */
-  int getTeam();
+  POGOProtos.Rpc.Team getTeam();
 
   /**
    * <code>repeated .POGOProtos.Rpc.TutorialCompletion tutorial_complete = 7;</code>

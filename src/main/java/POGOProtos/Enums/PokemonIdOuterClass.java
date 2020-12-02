@@ -24,7 +24,7 @@ public final class PokemonIdOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n POGOProtos/Enums/PokemonId.proto\022\020POGO" +
-      "Protos.Enums*\221Q\n\tPokemonId\022\r\n\tMISSINGNO\020" +
+      "Protos.Enums*\237Q\n\tPokemonId\022\r\n\tMISSINGNO\020" +
       "\000\022\r\n\tBULBASAUR\020\001\022\013\n\007IVYSAUR\020\002\022\014\n\010VENUSAU" +
       "R\020\003\022\016\n\nCHARMANDER\020\004\022\016\n\nCHARMELEON\020\005\022\r\n\tC" +
       "HARIZARD\020\006\022\014\n\010SQUIRTLE\020\007\022\r\n\tWARTORTLE\020\010\022" +
@@ -283,8 +283,8 @@ public final class PokemonIdOuterClass {
       "\007YVELTAL\020\315\005\022\014\n\007ZYGARDE\020\316\005\022\014\n\007DIANCIE\020\317\005\022" +
       "\n\n\005HOOPA\020\320\005\022\016\n\tVOLCANION\020\321\005\022\013\n\006MELTAN\020\250\006" +
       "\022\r\n\010MELMETAL\020\251\006\022\016\n\tOBSTAGOON\020\336\006\022\017\n\nPERRS" +
-      "ERKER\020\337\006\022\016\n\tSIRFETCHD\020\341\006\022\016\n\tRUNERIGUS\020\343\006" +
-      "B\002P\001b\006proto3"
+      "ERKER\020\337\006\022\016\n\tSIRFETCHD\020\341\006\022\014\n\007MR_RIME\020\342\006\022\016" +
+      "\n\tRUNERIGUS\020\343\006B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

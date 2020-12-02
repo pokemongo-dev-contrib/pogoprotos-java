@@ -19,26 +19,26 @@ public interface GetImagesForPoiResponseOrBuilder extends
   POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.Status getStatus();
 
   /**
-   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
    */
-  java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage> 
+  java.util.List<POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage> 
       getPhotoGalleryPoiImagesList();
   /**
-   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
    */
-  POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage getPhotoGalleryPoiImages(int index);
+  POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage getPhotoGalleryPoiImages(int index);
   /**
-   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
    */
   int getPhotoGalleryPoiImagesCount();
   /**
-   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImageOrBuilder> 
+  java.util.List<? extends POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImageOrBuilder> 
       getPhotoGalleryPoiImagesOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
+   * <code>repeated .POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImage photo_gallery_poi_images = 2;</code>
    */
-  POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.TitanGameClientPhotoGalleryPoiImageOrBuilder getPhotoGalleryPoiImagesOrBuilder(
+  POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetImagesForPoiResponse.GameClientPhotoGalleryPoiImageOrBuilder getPhotoGalleryPoiImagesOrBuilder(
       int index);
 }

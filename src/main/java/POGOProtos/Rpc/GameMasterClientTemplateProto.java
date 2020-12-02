@@ -1238,6 +1238,19 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
+          case 826: {
+            POGOProtos.Rpc.InventorySettingsProto.Builder subBuilder = null;
+            if (inventorySettings_ != null) {
+              subBuilder = inventorySettings_.toBuilder();
+            }
+            inventorySettings_ = input.readMessage(POGOProtos.Rpc.InventorySettingsProto.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(inventorySettings_);
+              inventorySettings_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -3674,6 +3687,32 @@ private static final long serialVersionUID = 0L;
     return getRecommendedSearchProto();
   }
 
+  public static final int INVENTORY_SETTINGS_FIELD_NUMBER = 103;
+  private POGOProtos.Rpc.InventorySettingsProto inventorySettings_;
+  /**
+   * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+   * @return Whether the inventorySettings field is set.
+   */
+  @java.lang.Override
+  public boolean hasInventorySettings() {
+    return inventorySettings_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+   * @return The inventorySettings.
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.InventorySettingsProto getInventorySettings() {
+    return inventorySettings_ == null ? POGOProtos.Rpc.InventorySettingsProto.getDefaultInstance() : inventorySettings_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.InventorySettingsProtoOrBuilder getInventorySettingsOrBuilder() {
+    return getInventorySettings();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -3963,6 +4002,9 @@ private static final long serialVersionUID = 0L;
     }
     if (recommendedSearchProto_ != null) {
       output.writeMessage(102, getRecommendedSearchProto());
+    }
+    if (inventorySettings_ != null) {
+      output.writeMessage(103, getInventorySettings());
     }
     unknownFields.writeTo(output);
   }
@@ -4339,6 +4381,10 @@ private static final long serialVersionUID = 0L;
     if (recommendedSearchProto_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(102, getRecommendedSearchProto());
+    }
+    if (inventorySettings_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(103, getInventorySettings());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -4812,6 +4858,11 @@ private static final long serialVersionUID = 0L;
       if (!getRecommendedSearchProto()
           .equals(other.getRecommendedSearchProto())) return false;
     }
+    if (hasInventorySettings() != other.hasInventorySettings()) return false;
+    if (hasInventorySettings()) {
+      if (!getInventorySettings()
+          .equals(other.getInventorySettings())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -5188,6 +5239,10 @@ private static final long serialVersionUID = 0L;
     if (hasRecommendedSearchProto()) {
       hash = (37 * hash) + RECOMMENDED_SEARCH_PROTO_FIELD_NUMBER;
       hash = (53 * hash) + getRecommendedSearchProto().hashCode();
+    }
+    if (hasInventorySettings()) {
+      hash = (37 * hash) + INVENTORY_SETTINGS_FIELD_NUMBER;
+      hash = (53 * hash) + getInventorySettings().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -5870,6 +5925,12 @@ private static final long serialVersionUID = 0L;
         recommendedSearchProto_ = null;
         recommendedSearchProtoBuilder_ = null;
       }
+      if (inventorySettingsBuilder_ == null) {
+        inventorySettings_ = null;
+      } else {
+        inventorySettings_ = null;
+        inventorySettingsBuilder_ = null;
+      }
       return this;
     }
 
@@ -6352,6 +6413,11 @@ private static final long serialVersionUID = 0L;
       } else {
         result.recommendedSearchProto_ = recommendedSearchProtoBuilder_.build();
       }
+      if (inventorySettingsBuilder_ == null) {
+        result.inventorySettings_ = inventorySettings_;
+      } else {
+        result.inventorySettings_ = inventorySettingsBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -6676,6 +6742,9 @@ private static final long serialVersionUID = 0L;
       }
       if (other.hasRecommendedSearchProto()) {
         mergeRecommendedSearchProto(other.getRecommendedSearchProto());
+      }
+      if (other.hasInventorySettings()) {
+        mergeInventorySettings(other.getInventorySettings());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -17609,6 +17678,125 @@ private static final long serialVersionUID = 0L;
         recommendedSearchProto_ = null;
       }
       return recommendedSearchProtoBuilder_;
+    }
+
+    private POGOProtos.Rpc.InventorySettingsProto inventorySettings_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.InventorySettingsProto, POGOProtos.Rpc.InventorySettingsProto.Builder, POGOProtos.Rpc.InventorySettingsProtoOrBuilder> inventorySettingsBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+     * @return Whether the inventorySettings field is set.
+     */
+    public boolean hasInventorySettings() {
+      return inventorySettingsBuilder_ != null || inventorySettings_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+     * @return The inventorySettings.
+     */
+    public POGOProtos.Rpc.InventorySettingsProto getInventorySettings() {
+      if (inventorySettingsBuilder_ == null) {
+        return inventorySettings_ == null ? POGOProtos.Rpc.InventorySettingsProto.getDefaultInstance() : inventorySettings_;
+      } else {
+        return inventorySettingsBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+     */
+    public Builder setInventorySettings(POGOProtos.Rpc.InventorySettingsProto value) {
+      if (inventorySettingsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        inventorySettings_ = value;
+        onChanged();
+      } else {
+        inventorySettingsBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+     */
+    public Builder setInventorySettings(
+        POGOProtos.Rpc.InventorySettingsProto.Builder builderForValue) {
+      if (inventorySettingsBuilder_ == null) {
+        inventorySettings_ = builderForValue.build();
+        onChanged();
+      } else {
+        inventorySettingsBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+     */
+    public Builder mergeInventorySettings(POGOProtos.Rpc.InventorySettingsProto value) {
+      if (inventorySettingsBuilder_ == null) {
+        if (inventorySettings_ != null) {
+          inventorySettings_ =
+            POGOProtos.Rpc.InventorySettingsProto.newBuilder(inventorySettings_).mergeFrom(value).buildPartial();
+        } else {
+          inventorySettings_ = value;
+        }
+        onChanged();
+      } else {
+        inventorySettingsBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+     */
+    public Builder clearInventorySettings() {
+      if (inventorySettingsBuilder_ == null) {
+        inventorySettings_ = null;
+        onChanged();
+      } else {
+        inventorySettings_ = null;
+        inventorySettingsBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+     */
+    public POGOProtos.Rpc.InventorySettingsProto.Builder getInventorySettingsBuilder() {
+      
+      onChanged();
+      return getInventorySettingsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+     */
+    public POGOProtos.Rpc.InventorySettingsProtoOrBuilder getInventorySettingsOrBuilder() {
+      if (inventorySettingsBuilder_ != null) {
+        return inventorySettingsBuilder_.getMessageOrBuilder();
+      } else {
+        return inventorySettings_ == null ?
+            POGOProtos.Rpc.InventorySettingsProto.getDefaultInstance() : inventorySettings_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.InventorySettingsProto, POGOProtos.Rpc.InventorySettingsProto.Builder, POGOProtos.Rpc.InventorySettingsProtoOrBuilder> 
+        getInventorySettingsFieldBuilder() {
+      if (inventorySettingsBuilder_ == null) {
+        inventorySettingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.InventorySettingsProto, POGOProtos.Rpc.InventorySettingsProto.Builder, POGOProtos.Rpc.InventorySettingsProtoOrBuilder>(
+                getInventorySettings(),
+                getParentForChildren(),
+                isClean());
+        inventorySettings_ = null;
+      }
+      return inventorySettingsBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

@@ -57,11 +57,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Map.Pokemon.WildPokemon.Builder subBuilder = null;
+            POGOProtos.Data.PokemonData.Builder subBuilder = null;
             if (pokemon_ != null) {
               subBuilder = pokemon_.toBuilder();
             }
-            pokemon_ = input.readMessage(POGOProtos.Map.Pokemon.WildPokemon.parser(), extensionRegistry);
+            pokemon_ = input.readMessage(POGOProtos.Data.PokemonData.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(pokemon_);
               pokemon_ = subBuilder.buildPartial();
@@ -275,9 +275,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int POKEMON_FIELD_NUMBER = 2;
-  private POGOProtos.Map.Pokemon.WildPokemon pokemon_;
+  private POGOProtos.Data.PokemonData pokemon_;
   /**
-   * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+   * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
    * @return Whether the pokemon field is set.
    */
   @java.lang.Override
@@ -285,18 +285,18 @@ private static final long serialVersionUID = 0L;
     return pokemon_ != null;
   }
   /**
-   * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+   * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
    * @return The pokemon.
    */
   @java.lang.Override
-  public POGOProtos.Map.Pokemon.WildPokemon getPokemon() {
-    return pokemon_ == null ? POGOProtos.Map.Pokemon.WildPokemon.getDefaultInstance() : pokemon_;
+  public POGOProtos.Data.PokemonData getPokemon() {
+    return pokemon_ == null ? POGOProtos.Data.PokemonData.getDefaultInstance() : pokemon_;
   }
   /**
-   * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+   * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Map.Pokemon.WildPokemonOrBuilder getPokemonOrBuilder() {
+  public POGOProtos.Data.PokemonDataOrBuilder getPokemonOrBuilder() {
     return getPokemon();
   }
 
@@ -776,31 +776,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Map.Pokemon.WildPokemon pokemon_;
+    private POGOProtos.Data.PokemonData pokemon_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Map.Pokemon.WildPokemon, POGOProtos.Map.Pokemon.WildPokemon.Builder, POGOProtos.Map.Pokemon.WildPokemonOrBuilder> pokemonBuilder_;
+        POGOProtos.Data.PokemonData, POGOProtos.Data.PokemonData.Builder, POGOProtos.Data.PokemonDataOrBuilder> pokemonBuilder_;
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
      * @return Whether the pokemon field is set.
      */
     public boolean hasPokemon() {
       return pokemonBuilder_ != null || pokemon_ != null;
     }
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
      * @return The pokemon.
      */
-    public POGOProtos.Map.Pokemon.WildPokemon getPokemon() {
+    public POGOProtos.Data.PokemonData getPokemon() {
       if (pokemonBuilder_ == null) {
-        return pokemon_ == null ? POGOProtos.Map.Pokemon.WildPokemon.getDefaultInstance() : pokemon_;
+        return pokemon_ == null ? POGOProtos.Data.PokemonData.getDefaultInstance() : pokemon_;
       } else {
         return pokemonBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
      */
-    public Builder setPokemon(POGOProtos.Map.Pokemon.WildPokemon value) {
+    public Builder setPokemon(POGOProtos.Data.PokemonData value) {
       if (pokemonBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -814,10 +814,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
      */
     public Builder setPokemon(
-        POGOProtos.Map.Pokemon.WildPokemon.Builder builderForValue) {
+        POGOProtos.Data.PokemonData.Builder builderForValue) {
       if (pokemonBuilder_ == null) {
         pokemon_ = builderForValue.build();
         onChanged();
@@ -828,13 +828,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
      */
-    public Builder mergePokemon(POGOProtos.Map.Pokemon.WildPokemon value) {
+    public Builder mergePokemon(POGOProtos.Data.PokemonData value) {
       if (pokemonBuilder_ == null) {
         if (pokemon_ != null) {
           pokemon_ =
-            POGOProtos.Map.Pokemon.WildPokemon.newBuilder(pokemon_).mergeFrom(value).buildPartial();
+            POGOProtos.Data.PokemonData.newBuilder(pokemon_).mergeFrom(value).buildPartial();
         } else {
           pokemon_ = value;
         }
@@ -846,7 +846,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
      */
     public Builder clearPokemon() {
       if (pokemonBuilder_ == null) {
@@ -860,33 +860,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
      */
-    public POGOProtos.Map.Pokemon.WildPokemon.Builder getPokemonBuilder() {
+    public POGOProtos.Data.PokemonData.Builder getPokemonBuilder() {
       
       onChanged();
       return getPokemonFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
      */
-    public POGOProtos.Map.Pokemon.WildPokemonOrBuilder getPokemonOrBuilder() {
+    public POGOProtos.Data.PokemonDataOrBuilder getPokemonOrBuilder() {
       if (pokemonBuilder_ != null) {
         return pokemonBuilder_.getMessageOrBuilder();
       } else {
         return pokemon_ == null ?
-            POGOProtos.Map.Pokemon.WildPokemon.getDefaultInstance() : pokemon_;
+            POGOProtos.Data.PokemonData.getDefaultInstance() : pokemon_;
       }
     }
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * <code>.POGOProtos.Data.PokemonData pokemon = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Map.Pokemon.WildPokemon, POGOProtos.Map.Pokemon.WildPokemon.Builder, POGOProtos.Map.Pokemon.WildPokemonOrBuilder> 
+        POGOProtos.Data.PokemonData, POGOProtos.Data.PokemonData.Builder, POGOProtos.Data.PokemonDataOrBuilder> 
         getPokemonFieldBuilder() {
       if (pokemonBuilder_ == null) {
         pokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Map.Pokemon.WildPokemon, POGOProtos.Map.Pokemon.WildPokemon.Builder, POGOProtos.Map.Pokemon.WildPokemonOrBuilder>(
+            POGOProtos.Data.PokemonData, POGOProtos.Data.PokemonData.Builder, POGOProtos.Data.PokemonDataOrBuilder>(
                 getPokemon(),
                 getParentForChildren(),
                 isClean());

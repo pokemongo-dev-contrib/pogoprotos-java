@@ -9564,6 +9564,30 @@ private static final long serialVersionUID = 0L;
      * <code>SABLEYE_COSTUME_2020 = 2668;</code>
      */
     SABLEYE_COSTUME_2020(2668),
+    /**
+     * <code>PIKACHU_ADVENTURE_HAT_2020 = 2669;</code>
+     */
+    PIKACHU_ADVENTURE_HAT_2020(2669),
+    /**
+     * <code>PIKACHU_WINTER_2020 = 2670;</code>
+     */
+    PIKACHU_WINTER_2020(2670),
+    /**
+     * <code>DELIBIRD_WINTER_2020 = 2671;</code>
+     */
+    DELIBIRD_WINTER_2020(2671),
+    /**
+     * <code>CUBCHOO_WINTER_2020 = 2672;</code>
+     */
+    CUBCHOO_WINTER_2020(2672),
+    /**
+     * <code>SLOWPOKE_2020 = 2673;</code>
+     */
+    SLOWPOKE_2020(2673),
+    /**
+     * <code>SLOWBRO_2021 = 2674;</code>
+     */
+    SLOWBRO_2021(2674),
     UNRECOGNIZED(-1),
     ;
 
@@ -18207,6 +18231,30 @@ private static final long serialVersionUID = 0L;
      * <code>SABLEYE_COSTUME_2020 = 2668;</code>
      */
     public static final int SABLEYE_COSTUME_2020_VALUE = 2668;
+    /**
+     * <code>PIKACHU_ADVENTURE_HAT_2020 = 2669;</code>
+     */
+    public static final int PIKACHU_ADVENTURE_HAT_2020_VALUE = 2669;
+    /**
+     * <code>PIKACHU_WINTER_2020 = 2670;</code>
+     */
+    public static final int PIKACHU_WINTER_2020_VALUE = 2670;
+    /**
+     * <code>DELIBIRD_WINTER_2020 = 2671;</code>
+     */
+    public static final int DELIBIRD_WINTER_2020_VALUE = 2671;
+    /**
+     * <code>CUBCHOO_WINTER_2020 = 2672;</code>
+     */
+    public static final int CUBCHOO_WINTER_2020_VALUE = 2672;
+    /**
+     * <code>SLOWPOKE_2020 = 2673;</code>
+     */
+    public static final int SLOWPOKE_2020_VALUE = 2673;
+    /**
+     * <code>SLOWBRO_2021 = 2674;</code>
+     */
+    public static final int SLOWBRO_2021_VALUE = 2674;
 
 
     public final int getNumber() {
@@ -20393,6 +20441,12 @@ private static final long serialVersionUID = 0L;
         case 2652: return HOOPA_UNBOUND;
         case 2666: return SABLEYE_COSTUME_2020_DEPRECATED;
         case 2668: return SABLEYE_COSTUME_2020;
+        case 2669: return PIKACHU_ADVENTURE_HAT_2020;
+        case 2670: return PIKACHU_WINTER_2020;
+        case 2671: return DELIBIRD_WINTER_2020;
+        case 2672: return CUBCHOO_WINTER_2020;
+        case 2673: return SLOWPOKE_2020;
+        case 2674: return SLOWBRO_2021;
         default: return null;
       }
     }

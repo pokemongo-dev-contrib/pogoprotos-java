@@ -40,6 +40,10 @@ public enum ArMappingEntrySource
    * <code>AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS = 7;</code>
    */
   AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS(7),
+  /**
+   * <code>AR_MAPPING_ENTRY_SOURCE_OTHER = 8;</code>
+   */
+  AR_MAPPING_ENTRY_SOURCE_OTHER(8),
   UNRECOGNIZED(-1),
   ;
 
@@ -75,6 +79,10 @@ public enum ArMappingEntrySource
    * <code>AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS = 7;</code>
    */
   public static final int AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS_VALUE = 7;
+  /**
+   * <code>AR_MAPPING_ENTRY_SOURCE_OTHER = 8;</code>
+   */
+  public static final int AR_MAPPING_ENTRY_SOURCE_OTHER_VALUE = 8;
 
 
   public final int getNumber() {
@@ -109,6 +117,7 @@ public enum ArMappingEntrySource
       case 5: return AR_MAPPING_ENTRY_SOURCE_POI_SUBMISSION;
       case 6: return AR_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_INSPECTION;
       case 7: return AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_QUESTS;
+      case 8: return AR_MAPPING_ENTRY_SOURCE_OTHER;
       default: return null;
     }
   }

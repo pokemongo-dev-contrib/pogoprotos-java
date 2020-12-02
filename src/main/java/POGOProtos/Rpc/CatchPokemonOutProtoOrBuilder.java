@@ -57,10 +57,15 @@ public interface CatchPokemonOutProtoOrBuilder extends
   POGOProtos.Rpc.CatchPokemonOutProto.CaptureReason getCaptureReason();
 
   /**
-   * <code>int32 display_pokedex_id = 6;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonId display_pokedex_id = 6;</code>
+   * @return The enum numeric value on the wire for displayPokedexId.
+   */
+  int getDisplayPokedexIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId display_pokedex_id = 6;</code>
    * @return The displayPokedexId.
    */
-  int getDisplayPokedexId();
+  POGOProtos.Rpc.HoloPokemonId getDisplayPokedexId();
 
   /**
    * <code>int32 throws_remaining = 7;</code>

@@ -26,10 +26,15 @@ public interface UserAttributesProtoOrBuilder extends
   long getPokecoinCount();
 
   /**
-   * <code>int32 team = 4;</code>
+   * <code>.POGOProtos.Rpc.Team team = 4;</code>
+   * @return The enum numeric value on the wire for team.
+   */
+  int getTeamValue();
+  /**
+   * <code>.POGOProtos.Rpc.Team team = 4;</code>
    * @return The team.
    */
-  int getTeam();
+  POGOProtos.Rpc.Team getTeam();
 
   /**
    * <code>int32 catch_streak = 5;</code>

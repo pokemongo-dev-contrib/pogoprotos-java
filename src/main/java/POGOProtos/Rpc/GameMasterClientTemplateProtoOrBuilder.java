@@ -1383,4 +1383,19 @@ public interface GameMasterClientTemplateProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.RecommendedSearchProto recommended_search_proto = 102;</code>
    */
   POGOProtos.Rpc.RecommendedSearchProtoOrBuilder getRecommendedSearchProtoOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+   * @return Whether the inventorySettings field is set.
+   */
+  boolean hasInventorySettings();
+  /**
+   * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+   * @return The inventorySettings.
+   */
+  POGOProtos.Rpc.InventorySettingsProto getInventorySettings();
+  /**
+   * <code>.POGOProtos.Rpc.InventorySettingsProto inventory_settings = 103;</code>
+   */
+  POGOProtos.Rpc.InventorySettingsProtoOrBuilder getInventorySettingsOrBuilder();
 }

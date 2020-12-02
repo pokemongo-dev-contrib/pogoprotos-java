@@ -14,19 +14,19 @@ public interface InventoryItemOrBuilder extends
   long getModifiedTimestampMs();
 
   /**
-   * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+   * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
    * @return Whether the deletedItem field is set.
    */
   boolean hasDeletedItem();
   /**
-   * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+   * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
    * @return The deletedItem.
    */
-  POGOProtos.Inventory.InventoryItem.DeletedItem getDeletedItem();
+  POGOProtos.Inventory.InventoryKey getDeletedItem();
   /**
-   * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+   * <code>.POGOProtos.Inventory.InventoryKey deleted_item = 2;</code>
    */
-  POGOProtos.Inventory.InventoryItem.DeletedItemOrBuilder getDeletedItemOrBuilder();
+  POGOProtos.Inventory.InventoryKeyOrBuilder getDeletedItemOrBuilder();
 
   /**
    * <code>.POGOProtos.Inventory.InventoryItemData inventory_item_data = 3;</code>

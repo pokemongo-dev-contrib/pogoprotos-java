@@ -25,10 +25,15 @@ public interface HoloInventoryKeyProtoOrBuilder extends
   POGOProtos.Rpc.Item getItem();
 
   /**
-   * <code>int32 pokedex_entry_id = 3;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_entry_id = 3;</code>
+   * @return The enum numeric value on the wire for pokedexEntryId.
+   */
+  int getPokedexEntryIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_entry_id = 3;</code>
    * @return The pokedexEntryId.
    */
-  int getPokedexEntryId();
+  POGOProtos.Rpc.HoloPokemonId getPokedexEntryId();
 
   /**
    * <code>bool player_stats = 4;</code>
@@ -67,10 +72,15 @@ public interface HoloInventoryKeyProtoOrBuilder extends
   boolean getEggIncubators();
 
   /**
-   * <code>int32 pokemon_family_id = 10;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonFamilyId pokemon_family_id = 10;</code>
+   * @return The enum numeric value on the wire for pokemonFamilyId.
+   */
+  int getPokemonFamilyIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonFamilyId pokemon_family_id = 10;</code>
    * @return The pokemonFamilyId.
    */
-  int getPokemonFamilyId();
+  POGOProtos.Rpc.HoloPokemonFamilyId getPokemonFamilyId();
 
   /**
    * <code>.POGOProtos.Rpc.QuestType quest_type = 11;</code>

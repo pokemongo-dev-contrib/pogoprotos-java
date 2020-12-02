@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PokemonProto() {
+    pokemonId_ = 0;
     move1_ = 0;
     move2_ = 0;
     deployedFortId_ = "";
@@ -71,8 +72,9 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 16: {
+            int rawValue = input.readEnum();
 
-            pokemonId_ = input.readInt32();
+            pokemonId_ = rawValue;
             break;
           }
           case 24: {
@@ -529,12 +531,20 @@ private static final long serialVersionUID = 0L;
   public static final int POKEMON_ID_FIELD_NUMBER = 2;
   private int pokemonId_;
   /**
-   * <code>int32 pokemon_id = 2;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 2;</code>
+   * @return The enum numeric value on the wire for pokemonId.
+   */
+  @java.lang.Override public int getPokemonIdValue() {
+    return pokemonId_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 2;</code>
    * @return The pokemonId.
    */
-  @java.lang.Override
-  public int getPokemonId() {
-    return pokemonId_;
+  @java.lang.Override public POGOProtos.Rpc.HoloPokemonId getPokemonId() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(pokemonId_);
+    return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
   }
 
   public static final int CP_FIELD_NUMBER = 3;
@@ -1624,8 +1634,8 @@ private static final long serialVersionUID = 0L;
     if (id_ != 0L) {
       output.writeFixed64(1, id_);
     }
-    if (pokemonId_ != 0) {
-      output.writeInt32(2, pokemonId_);
+    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
+      output.writeEnum(2, pokemonId_);
     }
     if (cp_ != 0) {
       output.writeInt32(3, cp_);
@@ -1834,9 +1844,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFixed64Size(1, id_);
     }
-    if (pokemonId_ != 0) {
+    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.MISSINGNO.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, pokemonId_);
+        .computeEnumSize(2, pokemonId_);
     }
     if (cp_ != 0) {
       size += com.google.protobuf.CodedOutputStream
@@ -2116,8 +2126,7 @@ private static final long serialVersionUID = 0L;
 
     if (getId()
         != other.getId()) return false;
-    if (getPokemonId()
-        != other.getPokemonId()) return false;
+    if (pokemonId_ != other.pokemonId_) return false;
     if (getCp()
         != other.getCp()) return false;
     if (getStamina()
@@ -2275,7 +2284,7 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         getId());
     hash = (37 * hash) + POKEMON_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getPokemonId();
+    hash = (53 * hash) + pokemonId_;
     hash = (37 * hash) + CP_FIELD_NUMBER;
     hash = (53 * hash) + getCp();
     hash = (37 * hash) + STAMINA_FIELD_NUMBER;
@@ -2902,8 +2911,8 @@ private static final long serialVersionUID = 0L;
       if (other.getId() != 0L) {
         setId(other.getId());
       }
-      if (other.getPokemonId() != 0) {
-        setPokemonId(other.getPokemonId());
+      if (other.pokemonId_ != 0) {
+        setPokemonIdValue(other.getPokemonIdValue());
       }
       if (other.getCp() != 0) {
         setCp(other.getCp());
@@ -3202,28 +3211,51 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int pokemonId_ ;
+    private int pokemonId_ = 0;
     /**
-     * <code>int32 pokemon_id = 2;</code>
-     * @return The pokemonId.
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 2;</code>
+     * @return The enum numeric value on the wire for pokemonId.
      */
-    @java.lang.Override
-    public int getPokemonId() {
+    @java.lang.Override public int getPokemonIdValue() {
       return pokemonId_;
     }
     /**
-     * <code>int32 pokemon_id = 2;</code>
-     * @param value The pokemonId to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 2;</code>
+     * @param value The enum numeric value on the wire for pokemonId to set.
      * @return This builder for chaining.
      */
-    public Builder setPokemonId(int value) {
+    public Builder setPokemonIdValue(int value) {
       
       pokemonId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 pokemon_id = 2;</code>
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 2;</code>
+     * @return The pokemonId.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.HoloPokemonId getPokemonId() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(pokemonId_);
+      return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 2;</code>
+     * @param value The pokemonId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPokemonId(POGOProtos.Rpc.HoloPokemonId value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      pokemonId_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearPokemonId() {

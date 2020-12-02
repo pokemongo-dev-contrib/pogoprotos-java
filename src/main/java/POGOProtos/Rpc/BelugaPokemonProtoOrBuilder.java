@@ -48,10 +48,15 @@ public interface BelugaPokemonProtoOrBuilder extends
   int getTrainerLevel();
 
   /**
-   * <code>int32 pokedex_id = 5;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_id = 5;</code>
+   * @return The enum numeric value on the wire for pokedexId.
+   */
+  int getPokedexIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_id = 5;</code>
    * @return The pokedexId.
    */
-  int getPokedexId();
+  POGOProtos.Rpc.HoloPokemonId getPokedexId();
 
   /**
    * <code>int32 cp = 6;</code>

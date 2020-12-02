@@ -8,10 +8,15 @@ public interface PokemonTelemetryOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int32 pokemon_id = 1;</code>
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 1;</code>
+   * @return The enum numeric value on the wire for pokemonId.
+   */
+  int getPokemonIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 1;</code>
    * @return The pokemonId.
    */
-  int getPokemonId();
+  POGOProtos.Rpc.HoloPokemonId getPokemonId();
 
   /**
    * <code>int32 cp = 2;</code>

@@ -23,14 +23,32 @@ public interface PlatformMapTileDataProtoOrBuilder extends
   POGOProtos.Rpc.PlatformMapTileProtoOrBuilder getMapTileOrBuilder();
 
   /**
-   * <code>bytes tile_data = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
+   * @return Whether the tileData field is set.
+   */
+  boolean hasTileData();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
    * @return The tileData.
    */
-  com.google.protobuf.ByteString getTileData();
+  POGOProtos.Rpc.PlatformLabelTile getTileData();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformLabelTile tile_data = 2;</code>
+   */
+  POGOProtos.Rpc.PlatformLabelTileOrBuilder getTileDataOrBuilder();
 
   /**
-   * <code>bytes label_data = 3;</code>
+   * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
+   * @return Whether the labelData field is set.
+   */
+  boolean hasLabelData();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
    * @return The labelData.
    */
-  com.google.protobuf.ByteString getLabelData();
+  POGOProtos.Rpc.PlatformMapCompositionRoot getLabelData();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformMapCompositionRoot label_data = 3;</code>
+   */
+  POGOProtos.Rpc.PlatformMapCompositionRootOrBuilder getLabelDataOrBuilder();
 }

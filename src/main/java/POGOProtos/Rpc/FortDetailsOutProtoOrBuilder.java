@@ -20,10 +20,15 @@ public interface FortDetailsOutProtoOrBuilder extends
       getIdBytes();
 
   /**
-   * <code>int32 team = 2;</code>
+   * <code>.POGOProtos.Rpc.Team team = 2;</code>
+   * @return The enum numeric value on the wire for team.
+   */
+  int getTeamValue();
+  /**
+   * <code>.POGOProtos.Rpc.Team team = 2;</code>
    * @return The team.
    */
-  int getTeam();
+  POGOProtos.Rpc.Team getTeam();
 
   /**
    * <code>repeated .POGOProtos.Rpc.PokemonProto pokemon = 3;</code>

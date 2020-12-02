@@ -60,8 +60,9 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 24: {
+            int rawValue = input.readEnum();
             typeCase_ = 3;
-            type_ = input.readInt32();
+            type_ = rawValue;
             break;
           }
           case 32: {
@@ -95,8 +96,9 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 80: {
+            int rawValue = input.readEnum();
             typeCase_ = 10;
-            type_ = input.readInt32();
+            type_ = rawValue;
             break;
           }
           case 88: {
@@ -322,15 +324,27 @@ private static final long serialVersionUID = 0L;
 
   public static final int POKEDEX_ENTRY_ID_FIELD_NUMBER = 3;
   /**
-   * <code>int32 pokedex_entry_id = 3;</code>
-   * @return The pokedexEntryId.
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_entry_id = 3;</code>
+   * @return The enum numeric value on the wire for pokedexEntryId.
    */
-  @java.lang.Override
-  public int getPokedexEntryId() {
+  public int getPokedexEntryIdValue() {
     if (typeCase_ == 3) {
       return (java.lang.Integer) type_;
     }
     return 0;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_entry_id = 3;</code>
+   * @return The pokedexEntryId.
+   */
+  public POGOProtos.Rpc.HoloPokemonId getPokedexEntryId() {
+    if (typeCase_ == 3) {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
+          (java.lang.Integer) type_);
+      return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+    }
+    return POGOProtos.Rpc.HoloPokemonId.MISSINGNO;
   }
 
   public static final int PLAYER_STATS_FIELD_NUMBER = 4;
@@ -413,15 +427,27 @@ private static final long serialVersionUID = 0L;
 
   public static final int POKEMON_FAMILY_ID_FIELD_NUMBER = 10;
   /**
-   * <code>int32 pokemon_family_id = 10;</code>
-   * @return The pokemonFamilyId.
+   * <code>.POGOProtos.Rpc.HoloPokemonFamilyId pokemon_family_id = 10;</code>
+   * @return The enum numeric value on the wire for pokemonFamilyId.
    */
-  @java.lang.Override
-  public int getPokemonFamilyId() {
+  public int getPokemonFamilyIdValue() {
     if (typeCase_ == 10) {
       return (java.lang.Integer) type_;
     }
     return 0;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonFamilyId pokemon_family_id = 10;</code>
+   * @return The pokemonFamilyId.
+   */
+  public POGOProtos.Rpc.HoloPokemonFamilyId getPokemonFamilyId() {
+    if (typeCase_ == 10) {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.HoloPokemonFamilyId result = POGOProtos.Rpc.HoloPokemonFamilyId.valueOf(
+          (java.lang.Integer) type_);
+      return result == null ? POGOProtos.Rpc.HoloPokemonFamilyId.UNRECOGNIZED : result;
+    }
+    return POGOProtos.Rpc.HoloPokemonFamilyId.FAMILY_UNSET;
   }
 
   public static final int QUEST_TYPE_FIELD_NUMBER = 11;
@@ -691,8 +717,7 @@ private static final long serialVersionUID = 0L;
       output.writeEnum(2, ((java.lang.Integer) type_));
     }
     if (typeCase_ == 3) {
-      output.writeInt32(
-          3, (int)((java.lang.Integer) type_));
+      output.writeEnum(3, ((java.lang.Integer) type_));
     }
     if (typeCase_ == 4) {
       output.writeBool(
@@ -719,8 +744,7 @@ private static final long serialVersionUID = 0L;
           9, (boolean)((java.lang.Boolean) type_));
     }
     if (typeCase_ == 10) {
-      output.writeInt32(
-          10, (int)((java.lang.Integer) type_));
+      output.writeEnum(10, ((java.lang.Integer) type_));
     }
     if (typeCase_ == 11) {
       output.writeEnum(11, ((java.lang.Integer) type_));
@@ -791,8 +815,7 @@ private static final long serialVersionUID = 0L;
     }
     if (typeCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(
-            3, (int)((java.lang.Integer) type_));
+        .computeEnumSize(3, ((java.lang.Integer) type_));
     }
     if (typeCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
@@ -826,8 +849,7 @@ private static final long serialVersionUID = 0L;
     }
     if (typeCase_ == 10) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(
-            10, (int)((java.lang.Integer) type_));
+        .computeEnumSize(10, ((java.lang.Integer) type_));
     }
     if (typeCase_ == 11) {
       size += com.google.protobuf.CodedOutputStream
@@ -915,8 +937,8 @@ private static final long serialVersionUID = 0L;
             != other.getItemValue()) return false;
         break;
       case 3:
-        if (getPokedexEntryId()
-            != other.getPokedexEntryId()) return false;
+        if (getPokedexEntryIdValue()
+            != other.getPokedexEntryIdValue()) return false;
         break;
       case 4:
         if (getPlayerStats()
@@ -943,8 +965,8 @@ private static final long serialVersionUID = 0L;
             != other.getEggIncubators()) return false;
         break;
       case 10:
-        if (getPokemonFamilyId()
-            != other.getPokemonFamilyId()) return false;
+        if (getPokemonFamilyIdValue()
+            != other.getPokemonFamilyIdValue()) return false;
         break;
       case 11:
         if (getQuestTypeValue()
@@ -1024,7 +1046,7 @@ private static final long serialVersionUID = 0L;
         break;
       case 3:
         hash = (37 * hash) + POKEDEX_ENTRY_ID_FIELD_NUMBER;
-        hash = (53 * hash) + getPokedexEntryId();
+        hash = (53 * hash) + getPokedexEntryIdValue();
         break;
       case 4:
         hash = (37 * hash) + PLAYER_STATS_FIELD_NUMBER;
@@ -1058,7 +1080,7 @@ private static final long serialVersionUID = 0L;
         break;
       case 10:
         hash = (37 * hash) + POKEMON_FAMILY_ID_FIELD_NUMBER;
-        hash = (53 * hash) + getPokemonFamilyId();
+        hash = (53 * hash) + getPokemonFamilyIdValue();
         break;
       case 11:
         hash = (37 * hash) + QUEST_TYPE_FIELD_NUMBER;
@@ -1413,7 +1435,7 @@ private static final long serialVersionUID = 0L;
           break;
         }
         case POKEDEX_ENTRY_ID: {
-          setPokedexEntryId(other.getPokedexEntryId());
+          setPokedexEntryIdValue(other.getPokedexEntryIdValue());
           break;
         }
         case PLAYER_STATS: {
@@ -1441,7 +1463,7 @@ private static final long serialVersionUID = 0L;
           break;
         }
         case POKEMON_FAMILY_ID: {
-          setPokemonFamilyId(other.getPokemonFamilyId());
+          setPokemonFamilyIdValue(other.getPokemonFamilyIdValue());
           break;
         }
         case QUEST_TYPE: {
@@ -1646,28 +1668,57 @@ private static final long serialVersionUID = 0L;
     }
 
     /**
-     * <code>int32 pokedex_entry_id = 3;</code>
-     * @return The pokedexEntryId.
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_entry_id = 3;</code>
+     * @return The enum numeric value on the wire for pokedexEntryId.
      */
-    public int getPokedexEntryId() {
+    @java.lang.Override
+    public int getPokedexEntryIdValue() {
       if (typeCase_ == 3) {
-        return (java.lang.Integer) type_;
+        return ((java.lang.Integer) type_).intValue();
       }
       return 0;
     }
     /**
-     * <code>int32 pokedex_entry_id = 3;</code>
-     * @param value The pokedexEntryId to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_entry_id = 3;</code>
+     * @param value The enum numeric value on the wire for pokedexEntryId to set.
      * @return This builder for chaining.
      */
-    public Builder setPokedexEntryId(int value) {
+    public Builder setPokedexEntryIdValue(int value) {
       typeCase_ = 3;
       type_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 pokedex_entry_id = 3;</code>
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_entry_id = 3;</code>
+     * @return The pokedexEntryId.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.HoloPokemonId getPokedexEntryId() {
+      if (typeCase_ == 3) {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
+            (java.lang.Integer) type_);
+        return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+      }
+      return POGOProtos.Rpc.HoloPokemonId.MISSINGNO;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_entry_id = 3;</code>
+     * @param value The pokedexEntryId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPokedexEntryId(POGOProtos.Rpc.HoloPokemonId value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      typeCase_ = 3;
+      type_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_entry_id = 3;</code>
      * @return This builder for chaining.
      */
     public Builder clearPokedexEntryId() {
@@ -1884,28 +1935,57 @@ private static final long serialVersionUID = 0L;
     }
 
     /**
-     * <code>int32 pokemon_family_id = 10;</code>
-     * @return The pokemonFamilyId.
+     * <code>.POGOProtos.Rpc.HoloPokemonFamilyId pokemon_family_id = 10;</code>
+     * @return The enum numeric value on the wire for pokemonFamilyId.
      */
-    public int getPokemonFamilyId() {
+    @java.lang.Override
+    public int getPokemonFamilyIdValue() {
       if (typeCase_ == 10) {
-        return (java.lang.Integer) type_;
+        return ((java.lang.Integer) type_).intValue();
       }
       return 0;
     }
     /**
-     * <code>int32 pokemon_family_id = 10;</code>
-     * @param value The pokemonFamilyId to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonFamilyId pokemon_family_id = 10;</code>
+     * @param value The enum numeric value on the wire for pokemonFamilyId to set.
      * @return This builder for chaining.
      */
-    public Builder setPokemonFamilyId(int value) {
+    public Builder setPokemonFamilyIdValue(int value) {
       typeCase_ = 10;
       type_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 pokemon_family_id = 10;</code>
+     * <code>.POGOProtos.Rpc.HoloPokemonFamilyId pokemon_family_id = 10;</code>
+     * @return The pokemonFamilyId.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.HoloPokemonFamilyId getPokemonFamilyId() {
+      if (typeCase_ == 10) {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.HoloPokemonFamilyId result = POGOProtos.Rpc.HoloPokemonFamilyId.valueOf(
+            (java.lang.Integer) type_);
+        return result == null ? POGOProtos.Rpc.HoloPokemonFamilyId.UNRECOGNIZED : result;
+      }
+      return POGOProtos.Rpc.HoloPokemonFamilyId.FAMILY_UNSET;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonFamilyId pokemon_family_id = 10;</code>
+     * @param value The pokemonFamilyId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPokemonFamilyId(POGOProtos.Rpc.HoloPokemonFamilyId value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      typeCase_ = 10;
+      type_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonFamilyId pokemon_family_id = 10;</code>
      * @return This builder for chaining.
      */
     public Builder clearPokemonFamilyId() {
