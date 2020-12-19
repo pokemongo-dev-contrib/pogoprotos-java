@@ -112,7 +112,7 @@ public enum OnboardingType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(92);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(93);
   }
 
   private static final OnboardingType[] VALUES = values();

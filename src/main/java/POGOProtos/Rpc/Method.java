@@ -1867,7 +1867,7 @@ public enum Method
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(83);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(84);
   }
 
   private static final Method[] VALUES = values();

@@ -54,11 +54,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.PlatformInventoryDeltaProto.Builder subBuilder = null;
+            POGOProtos.Rpc.InventoryDeltaProto.Builder subBuilder = null;
             if (inventoryDelta_ != null) {
               subBuilder = inventoryDelta_.toBuilder();
             }
-            inventoryDelta_ = input.readMessage(POGOProtos.Rpc.PlatformInventoryDeltaProto.parser(), extensionRegistry);
+            inventoryDelta_ = input.readMessage(POGOProtos.Rpc.InventoryDeltaProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(inventoryDelta_);
               inventoryDelta_ = subBuilder.buildPartial();
@@ -110,9 +110,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int INVENTORY_DELTA_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.PlatformInventoryDeltaProto inventoryDelta_;
+  private POGOProtos.Rpc.InventoryDeltaProto inventoryDelta_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+   * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
    * @return Whether the inventoryDelta field is set.
    */
   @java.lang.Override
@@ -120,18 +120,18 @@ private static final long serialVersionUID = 0L;
     return inventoryDelta_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+   * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
    * @return The inventoryDelta.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformInventoryDeltaProto getInventoryDelta() {
-    return inventoryDelta_ == null ? POGOProtos.Rpc.PlatformInventoryDeltaProto.getDefaultInstance() : inventoryDelta_;
+  public POGOProtos.Rpc.InventoryDeltaProto getInventoryDelta() {
+    return inventoryDelta_ == null ? POGOProtos.Rpc.InventoryDeltaProto.getDefaultInstance() : inventoryDelta_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+   * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformInventoryDeltaProtoOrBuilder getInventoryDeltaOrBuilder() {
+  public POGOProtos.Rpc.InventoryDeltaProtoOrBuilder getInventoryDeltaOrBuilder() {
     return getInventoryDelta();
   }
 
@@ -499,31 +499,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.PlatformInventoryDeltaProto inventoryDelta_;
+    private POGOProtos.Rpc.InventoryDeltaProto inventoryDelta_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformInventoryDeltaProto, POGOProtos.Rpc.PlatformInventoryDeltaProto.Builder, POGOProtos.Rpc.PlatformInventoryDeltaProtoOrBuilder> inventoryDeltaBuilder_;
+        POGOProtos.Rpc.InventoryDeltaProto, POGOProtos.Rpc.InventoryDeltaProto.Builder, POGOProtos.Rpc.InventoryDeltaProtoOrBuilder> inventoryDeltaBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+     * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
      * @return Whether the inventoryDelta field is set.
      */
     public boolean hasInventoryDelta() {
       return inventoryDeltaBuilder_ != null || inventoryDelta_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+     * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
      * @return The inventoryDelta.
      */
-    public POGOProtos.Rpc.PlatformInventoryDeltaProto getInventoryDelta() {
+    public POGOProtos.Rpc.InventoryDeltaProto getInventoryDelta() {
       if (inventoryDeltaBuilder_ == null) {
-        return inventoryDelta_ == null ? POGOProtos.Rpc.PlatformInventoryDeltaProto.getDefaultInstance() : inventoryDelta_;
+        return inventoryDelta_ == null ? POGOProtos.Rpc.InventoryDeltaProto.getDefaultInstance() : inventoryDelta_;
       } else {
         return inventoryDeltaBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+     * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
      */
-    public Builder setInventoryDelta(POGOProtos.Rpc.PlatformInventoryDeltaProto value) {
+    public Builder setInventoryDelta(POGOProtos.Rpc.InventoryDeltaProto value) {
       if (inventoryDeltaBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -537,10 +537,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+     * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
      */
     public Builder setInventoryDelta(
-        POGOProtos.Rpc.PlatformInventoryDeltaProto.Builder builderForValue) {
+        POGOProtos.Rpc.InventoryDeltaProto.Builder builderForValue) {
       if (inventoryDeltaBuilder_ == null) {
         inventoryDelta_ = builderForValue.build();
         onChanged();
@@ -551,13 +551,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+     * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
      */
-    public Builder mergeInventoryDelta(POGOProtos.Rpc.PlatformInventoryDeltaProto value) {
+    public Builder mergeInventoryDelta(POGOProtos.Rpc.InventoryDeltaProto value) {
       if (inventoryDeltaBuilder_ == null) {
         if (inventoryDelta_ != null) {
           inventoryDelta_ =
-            POGOProtos.Rpc.PlatformInventoryDeltaProto.newBuilder(inventoryDelta_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.InventoryDeltaProto.newBuilder(inventoryDelta_).mergeFrom(value).buildPartial();
         } else {
           inventoryDelta_ = value;
         }
@@ -569,7 +569,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+     * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
      */
     public Builder clearInventoryDelta() {
       if (inventoryDeltaBuilder_ == null) {
@@ -583,33 +583,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+     * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformInventoryDeltaProto.Builder getInventoryDeltaBuilder() {
+    public POGOProtos.Rpc.InventoryDeltaProto.Builder getInventoryDeltaBuilder() {
       
       onChanged();
       return getInventoryDeltaFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+     * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformInventoryDeltaProtoOrBuilder getInventoryDeltaOrBuilder() {
+    public POGOProtos.Rpc.InventoryDeltaProtoOrBuilder getInventoryDeltaOrBuilder() {
       if (inventoryDeltaBuilder_ != null) {
         return inventoryDeltaBuilder_.getMessageOrBuilder();
       } else {
         return inventoryDelta_ == null ?
-            POGOProtos.Rpc.PlatformInventoryDeltaProto.getDefaultInstance() : inventoryDelta_;
+            POGOProtos.Rpc.InventoryDeltaProto.getDefaultInstance() : inventoryDelta_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+     * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformInventoryDeltaProto, POGOProtos.Rpc.PlatformInventoryDeltaProto.Builder, POGOProtos.Rpc.PlatformInventoryDeltaProtoOrBuilder> 
+        POGOProtos.Rpc.InventoryDeltaProto, POGOProtos.Rpc.InventoryDeltaProto.Builder, POGOProtos.Rpc.InventoryDeltaProtoOrBuilder> 
         getInventoryDeltaFieldBuilder() {
       if (inventoryDeltaBuilder_ == null) {
         inventoryDeltaBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlatformInventoryDeltaProto, POGOProtos.Rpc.PlatformInventoryDeltaProto.Builder, POGOProtos.Rpc.PlatformInventoryDeltaProtoOrBuilder>(
+            POGOProtos.Rpc.InventoryDeltaProto, POGOProtos.Rpc.InventoryDeltaProto.Builder, POGOProtos.Rpc.InventoryDeltaProtoOrBuilder>(
                 getInventoryDelta(),
                 getParentForChildren(),
                 isClean());

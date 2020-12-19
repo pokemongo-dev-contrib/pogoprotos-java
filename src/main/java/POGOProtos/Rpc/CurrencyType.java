@@ -94,7 +94,7 @@ public enum CurrencyType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(34);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(35);
   }
 
   private static final CurrencyType[] VALUES = values();

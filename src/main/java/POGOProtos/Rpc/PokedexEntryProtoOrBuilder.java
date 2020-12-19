@@ -8,15 +8,10 @@ public interface PokedexEntryProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_entry_number = 1;</code>
-   * @return The enum numeric value on the wire for pokedexEntryNumber.
-   */
-  int getPokedexEntryNumberValue();
-  /**
-   * <code>.POGOProtos.Rpc.HoloPokemonId pokedex_entry_number = 1;</code>
+   * <code>int32 pokedex_entry_number = 1;</code>
    * @return The pokedexEntryNumber.
    */
-  POGOProtos.Rpc.HoloPokemonId getPokedexEntryNumber();
+  int getPokedexEntryNumber();
 
   /**
    * <code>int32 times_encountered = 2;</code>

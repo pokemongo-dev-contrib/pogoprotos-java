@@ -94,7 +94,7 @@ public enum IapLibraryVersion
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(66);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(67);
   }
 
   private static final IapLibraryVersion[] VALUES = values();

@@ -138,27 +138,27 @@ public interface ClientPlayerProtoOrBuilder extends
   POGOProtos.Rpc.ContactSettingsProtoOrBuilder getContactSettingsProtoOrBuilder();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
    */
-  java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> 
+  java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> 
       getCurrencyBalanceList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
    */
-  POGOProtos.Rpc.PlatformCurrencyQuantityProto getCurrencyBalance(int index);
+  POGOProtos.Rpc.CurrencyQuantityProto getCurrencyBalance(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
    */
   int getCurrencyBalanceCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> 
       getCurrencyBalanceOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
    */
-  POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getCurrencyBalanceOrBuilder(
+  POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder getCurrencyBalanceOrBuilder(
       int index);
 
   /**

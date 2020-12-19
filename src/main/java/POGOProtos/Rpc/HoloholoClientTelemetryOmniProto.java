@@ -1029,11 +1029,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 8010: {
-            POGOProtos.Rpc.PlatformPlatformServerData.Builder subBuilder = null;
+            POGOProtos.Rpc.ServerData.Builder subBuilder = null;
             if (serverData_ != null) {
               subBuilder = serverData_.toBuilder();
             }
-            serverData_ = input.readMessage(POGOProtos.Rpc.PlatformPlatformServerData.parser(), extensionRegistry);
+            serverData_ = input.readMessage(POGOProtos.Rpc.ServerData.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(serverData_);
               serverData_ = subBuilder.buildPartial();
@@ -1042,11 +1042,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 8018: {
-            POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder subBuilder = null;
+            POGOProtos.Rpc.CommonFilterProto.Builder subBuilder = null;
             if (commonFilters_ != null) {
               subBuilder = commonFilters_.toBuilder();
             }
-            commonFilters_ = input.readMessage(POGOProtos.Rpc.PlatformPlatformCommonFilterProto.parser(), extensionRegistry);
+            commonFilters_ = input.readMessage(POGOProtos.Rpc.CommonFilterProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(commonFilters_);
               commonFilters_ = subBuilder.buildPartial();
@@ -3434,9 +3434,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SERVER_DATA_FIELD_NUMBER = 1001;
-  private POGOProtos.Rpc.PlatformPlatformServerData serverData_;
+  private POGOProtos.Rpc.ServerData serverData_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
    * @return Whether the serverData field is set.
    */
   @java.lang.Override
@@ -3444,25 +3444,25 @@ private static final long serialVersionUID = 0L;
     return serverData_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
    * @return The serverData.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformPlatformServerData getServerData() {
-    return serverData_ == null ? POGOProtos.Rpc.PlatformPlatformServerData.getDefaultInstance() : serverData_;
+  public POGOProtos.Rpc.ServerData getServerData() {
+    return serverData_ == null ? POGOProtos.Rpc.ServerData.getDefaultInstance() : serverData_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder getServerDataOrBuilder() {
+  public POGOProtos.Rpc.ServerDataOrBuilder getServerDataOrBuilder() {
     return getServerData();
   }
 
   public static final int COMMON_FILTERS_FIELD_NUMBER = 1002;
-  private POGOProtos.Rpc.PlatformPlatformCommonFilterProto commonFilters_;
+  private POGOProtos.Rpc.CommonFilterProto commonFilters_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
    * @return Whether the commonFilters field is set.
    */
   @java.lang.Override
@@ -3470,18 +3470,18 @@ private static final long serialVersionUID = 0L;
     return commonFilters_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
    * @return The commonFilters.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformPlatformCommonFilterProto getCommonFilters() {
-    return commonFilters_ == null ? POGOProtos.Rpc.PlatformPlatformCommonFilterProto.getDefaultInstance() : commonFilters_;
+  public POGOProtos.Rpc.CommonFilterProto getCommonFilters() {
+    return commonFilters_ == null ? POGOProtos.Rpc.CommonFilterProto.getDefaultInstance() : commonFilters_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder getCommonFiltersOrBuilder() {
+  public POGOProtos.Rpc.CommonFilterProtoOrBuilder getCommonFiltersOrBuilder() {
     return getCommonFilters();
   }
 
@@ -15552,31 +15552,31 @@ private static final long serialVersionUID = 0L;
       return pokemonSearchTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.PlatformPlatformServerData serverData_;
+    private POGOProtos.Rpc.ServerData serverData_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformPlatformServerData, POGOProtos.Rpc.PlatformPlatformServerData.Builder, POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder> serverDataBuilder_;
+        POGOProtos.Rpc.ServerData, POGOProtos.Rpc.ServerData.Builder, POGOProtos.Rpc.ServerDataOrBuilder> serverDataBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
      * @return Whether the serverData field is set.
      */
     public boolean hasServerData() {
       return serverDataBuilder_ != null || serverData_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
      * @return The serverData.
      */
-    public POGOProtos.Rpc.PlatformPlatformServerData getServerData() {
+    public POGOProtos.Rpc.ServerData getServerData() {
       if (serverDataBuilder_ == null) {
-        return serverData_ == null ? POGOProtos.Rpc.PlatformPlatformServerData.getDefaultInstance() : serverData_;
+        return serverData_ == null ? POGOProtos.Rpc.ServerData.getDefaultInstance() : serverData_;
       } else {
         return serverDataBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
      */
-    public Builder setServerData(POGOProtos.Rpc.PlatformPlatformServerData value) {
+    public Builder setServerData(POGOProtos.Rpc.ServerData value) {
       if (serverDataBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -15590,10 +15590,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
      */
     public Builder setServerData(
-        POGOProtos.Rpc.PlatformPlatformServerData.Builder builderForValue) {
+        POGOProtos.Rpc.ServerData.Builder builderForValue) {
       if (serverDataBuilder_ == null) {
         serverData_ = builderForValue.build();
         onChanged();
@@ -15604,13 +15604,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
      */
-    public Builder mergeServerData(POGOProtos.Rpc.PlatformPlatformServerData value) {
+    public Builder mergeServerData(POGOProtos.Rpc.ServerData value) {
       if (serverDataBuilder_ == null) {
         if (serverData_ != null) {
           serverData_ =
-            POGOProtos.Rpc.PlatformPlatformServerData.newBuilder(serverData_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.ServerData.newBuilder(serverData_).mergeFrom(value).buildPartial();
         } else {
           serverData_ = value;
         }
@@ -15622,7 +15622,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
      */
     public Builder clearServerData() {
       if (serverDataBuilder_ == null) {
@@ -15636,33 +15636,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
      */
-    public POGOProtos.Rpc.PlatformPlatformServerData.Builder getServerDataBuilder() {
+    public POGOProtos.Rpc.ServerData.Builder getServerDataBuilder() {
       
       onChanged();
       return getServerDataFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
      */
-    public POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder getServerDataOrBuilder() {
+    public POGOProtos.Rpc.ServerDataOrBuilder getServerDataOrBuilder() {
       if (serverDataBuilder_ != null) {
         return serverDataBuilder_.getMessageOrBuilder();
       } else {
         return serverData_ == null ?
-            POGOProtos.Rpc.PlatformPlatformServerData.getDefaultInstance() : serverData_;
+            POGOProtos.Rpc.ServerData.getDefaultInstance() : serverData_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformPlatformServerData, POGOProtos.Rpc.PlatformPlatformServerData.Builder, POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder> 
+        POGOProtos.Rpc.ServerData, POGOProtos.Rpc.ServerData.Builder, POGOProtos.Rpc.ServerDataOrBuilder> 
         getServerDataFieldBuilder() {
       if (serverDataBuilder_ == null) {
         serverDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlatformPlatformServerData, POGOProtos.Rpc.PlatformPlatformServerData.Builder, POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder>(
+            POGOProtos.Rpc.ServerData, POGOProtos.Rpc.ServerData.Builder, POGOProtos.Rpc.ServerDataOrBuilder>(
                 getServerData(),
                 getParentForChildren(),
                 isClean());
@@ -15671,31 +15671,31 @@ private static final long serialVersionUID = 0L;
       return serverDataBuilder_;
     }
 
-    private POGOProtos.Rpc.PlatformPlatformCommonFilterProto commonFilters_;
+    private POGOProtos.Rpc.CommonFilterProto commonFilters_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformPlatformCommonFilterProto, POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder, POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder> commonFiltersBuilder_;
+        POGOProtos.Rpc.CommonFilterProto, POGOProtos.Rpc.CommonFilterProto.Builder, POGOProtos.Rpc.CommonFilterProtoOrBuilder> commonFiltersBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
      * @return Whether the commonFilters field is set.
      */
     public boolean hasCommonFilters() {
       return commonFiltersBuilder_ != null || commonFilters_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
      * @return The commonFilters.
      */
-    public POGOProtos.Rpc.PlatformPlatformCommonFilterProto getCommonFilters() {
+    public POGOProtos.Rpc.CommonFilterProto getCommonFilters() {
       if (commonFiltersBuilder_ == null) {
-        return commonFilters_ == null ? POGOProtos.Rpc.PlatformPlatformCommonFilterProto.getDefaultInstance() : commonFilters_;
+        return commonFilters_ == null ? POGOProtos.Rpc.CommonFilterProto.getDefaultInstance() : commonFilters_;
       } else {
         return commonFiltersBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
      */
-    public Builder setCommonFilters(POGOProtos.Rpc.PlatformPlatformCommonFilterProto value) {
+    public Builder setCommonFilters(POGOProtos.Rpc.CommonFilterProto value) {
       if (commonFiltersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -15709,10 +15709,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
      */
     public Builder setCommonFilters(
-        POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder builderForValue) {
+        POGOProtos.Rpc.CommonFilterProto.Builder builderForValue) {
       if (commonFiltersBuilder_ == null) {
         commonFilters_ = builderForValue.build();
         onChanged();
@@ -15723,13 +15723,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
      */
-    public Builder mergeCommonFilters(POGOProtos.Rpc.PlatformPlatformCommonFilterProto value) {
+    public Builder mergeCommonFilters(POGOProtos.Rpc.CommonFilterProto value) {
       if (commonFiltersBuilder_ == null) {
         if (commonFilters_ != null) {
           commonFilters_ =
-            POGOProtos.Rpc.PlatformPlatformCommonFilterProto.newBuilder(commonFilters_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.CommonFilterProto.newBuilder(commonFilters_).mergeFrom(value).buildPartial();
         } else {
           commonFilters_ = value;
         }
@@ -15741,7 +15741,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
      */
     public Builder clearCommonFilters() {
       if (commonFiltersBuilder_ == null) {
@@ -15755,33 +15755,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
      */
-    public POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder getCommonFiltersBuilder() {
+    public POGOProtos.Rpc.CommonFilterProto.Builder getCommonFiltersBuilder() {
       
       onChanged();
       return getCommonFiltersFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
      */
-    public POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder getCommonFiltersOrBuilder() {
+    public POGOProtos.Rpc.CommonFilterProtoOrBuilder getCommonFiltersOrBuilder() {
       if (commonFiltersBuilder_ != null) {
         return commonFiltersBuilder_.getMessageOrBuilder();
       } else {
         return commonFilters_ == null ?
-            POGOProtos.Rpc.PlatformPlatformCommonFilterProto.getDefaultInstance() : commonFilters_;
+            POGOProtos.Rpc.CommonFilterProto.getDefaultInstance() : commonFilters_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformPlatformCommonFilterProto, POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder, POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder> 
+        POGOProtos.Rpc.CommonFilterProto, POGOProtos.Rpc.CommonFilterProto.Builder, POGOProtos.Rpc.CommonFilterProtoOrBuilder> 
         getCommonFiltersFieldBuilder() {
       if (commonFiltersBuilder_ == null) {
         commonFiltersBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlatformPlatformCommonFilterProto, POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder, POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder>(
+            POGOProtos.Rpc.CommonFilterProto, POGOProtos.Rpc.CommonFilterProto.Builder, POGOProtos.Rpc.CommonFilterProtoOrBuilder>(
                 getCommonFilters(),
                 getParentForChildren(),
                 isClean());

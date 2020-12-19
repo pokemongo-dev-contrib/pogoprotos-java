@@ -161,11 +161,11 @@ private static final long serialVersionUID = 0L;
           }
           case 114: {
             if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-              currencyBalance_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformCurrencyQuantityProto>();
+              currencyBalance_ = new java.util.ArrayList<POGOProtos.Rpc.CurrencyQuantityProto>();
               mutable_bitField0_ |= 0x00000002;
             }
             currencyBalance_.add(
-                input.readMessage(POGOProtos.Rpc.PlatformCurrencyQuantityProto.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.CurrencyQuantityProto.parser(), extensionRegistry));
             break;
           }
           case 120: {
@@ -633,41 +633,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CURRENCY_BALANCE_FIELD_NUMBER = 14;
-  private java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> currencyBalance_;
+  private java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> currencyBalance_;
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> getCurrencyBalanceList() {
+  public java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> getCurrencyBalanceList() {
     return currencyBalance_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> 
       getCurrencyBalanceOrBuilderList() {
     return currencyBalance_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
    */
   @java.lang.Override
   public int getCurrencyBalanceCount() {
     return currencyBalance_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformCurrencyQuantityProto getCurrencyBalance(int index) {
+  public POGOProtos.Rpc.CurrencyQuantityProto getCurrencyBalance(int index) {
     return currencyBalance_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getCurrencyBalanceOrBuilder(
+  public POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder getCurrencyBalanceOrBuilder(
       int index) {
     return currencyBalance_.get(index);
   }
@@ -2967,22 +2967,22 @@ private static final long serialVersionUID = 0L;
       return contactSettingsProtoBuilder_;
     }
 
-    private java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> currencyBalance_ =
+    private java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> currencyBalance_ =
       java.util.Collections.emptyList();
     private void ensureCurrencyBalanceIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        currencyBalance_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformCurrencyQuantityProto>(currencyBalance_);
+        currencyBalance_ = new java.util.ArrayList<POGOProtos.Rpc.CurrencyQuantityProto>(currencyBalance_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.PlatformCurrencyQuantityProto, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder, POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> currencyBalanceBuilder_;
+        POGOProtos.Rpc.CurrencyQuantityProto, POGOProtos.Rpc.CurrencyQuantityProto.Builder, POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> currencyBalanceBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
-    public java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> getCurrencyBalanceList() {
+    public java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> getCurrencyBalanceList() {
       if (currencyBalanceBuilder_ == null) {
         return java.util.Collections.unmodifiableList(currencyBalance_);
       } else {
@@ -2990,7 +2990,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
     public int getCurrencyBalanceCount() {
       if (currencyBalanceBuilder_ == null) {
@@ -3000,9 +3000,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
-    public POGOProtos.Rpc.PlatformCurrencyQuantityProto getCurrencyBalance(int index) {
+    public POGOProtos.Rpc.CurrencyQuantityProto getCurrencyBalance(int index) {
       if (currencyBalanceBuilder_ == null) {
         return currencyBalance_.get(index);
       } else {
@@ -3010,10 +3010,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
     public Builder setCurrencyBalance(
-        int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto value) {
+        int index, POGOProtos.Rpc.CurrencyQuantityProto value) {
       if (currencyBalanceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3027,10 +3027,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
     public Builder setCurrencyBalance(
-        int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder builderForValue) {
+        int index, POGOProtos.Rpc.CurrencyQuantityProto.Builder builderForValue) {
       if (currencyBalanceBuilder_ == null) {
         ensureCurrencyBalanceIsMutable();
         currencyBalance_.set(index, builderForValue.build());
@@ -3041,9 +3041,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
-    public Builder addCurrencyBalance(POGOProtos.Rpc.PlatformCurrencyQuantityProto value) {
+    public Builder addCurrencyBalance(POGOProtos.Rpc.CurrencyQuantityProto value) {
       if (currencyBalanceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3057,10 +3057,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
     public Builder addCurrencyBalance(
-        int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto value) {
+        int index, POGOProtos.Rpc.CurrencyQuantityProto value) {
       if (currencyBalanceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3074,10 +3074,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
     public Builder addCurrencyBalance(
-        POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder builderForValue) {
+        POGOProtos.Rpc.CurrencyQuantityProto.Builder builderForValue) {
       if (currencyBalanceBuilder_ == null) {
         ensureCurrencyBalanceIsMutable();
         currencyBalance_.add(builderForValue.build());
@@ -3088,10 +3088,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
     public Builder addCurrencyBalance(
-        int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder builderForValue) {
+        int index, POGOProtos.Rpc.CurrencyQuantityProto.Builder builderForValue) {
       if (currencyBalanceBuilder_ == null) {
         ensureCurrencyBalanceIsMutable();
         currencyBalance_.add(index, builderForValue.build());
@@ -3102,10 +3102,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
     public Builder addAllCurrencyBalance(
-        java.lang.Iterable<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProto> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.CurrencyQuantityProto> values) {
       if (currencyBalanceBuilder_ == null) {
         ensureCurrencyBalanceIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3117,7 +3117,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
     public Builder clearCurrencyBalance() {
       if (currencyBalanceBuilder_ == null) {
@@ -3130,7 +3130,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
     public Builder removeCurrencyBalance(int index) {
       if (currencyBalanceBuilder_ == null) {
@@ -3143,16 +3143,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
-    public POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder getCurrencyBalanceBuilder(
+    public POGOProtos.Rpc.CurrencyQuantityProto.Builder getCurrencyBalanceBuilder(
         int index) {
       return getCurrencyBalanceFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
-    public POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getCurrencyBalanceOrBuilder(
+    public POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder getCurrencyBalanceOrBuilder(
         int index) {
       if (currencyBalanceBuilder_ == null) {
         return currencyBalance_.get(index);  } else {
@@ -3160,9 +3160,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> 
          getCurrencyBalanceOrBuilderList() {
       if (currencyBalanceBuilder_ != null) {
         return currencyBalanceBuilder_.getMessageOrBuilderList();
@@ -3171,33 +3171,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
-    public POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder addCurrencyBalanceBuilder() {
+    public POGOProtos.Rpc.CurrencyQuantityProto.Builder addCurrencyBalanceBuilder() {
       return getCurrencyBalanceFieldBuilder().addBuilder(
-          POGOProtos.Rpc.PlatformCurrencyQuantityProto.getDefaultInstance());
+          POGOProtos.Rpc.CurrencyQuantityProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
-    public POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder addCurrencyBalanceBuilder(
+    public POGOProtos.Rpc.CurrencyQuantityProto.Builder addCurrencyBalanceBuilder(
         int index) {
       return getCurrencyBalanceFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.PlatformCurrencyQuantityProto.getDefaultInstance());
+          index, POGOProtos.Rpc.CurrencyQuantityProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
+     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_balance = 14;</code>
      */
-    public java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder> 
+    public java.util.List<POGOProtos.Rpc.CurrencyQuantityProto.Builder> 
          getCurrencyBalanceBuilderList() {
       return getCurrencyBalanceFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.PlatformCurrencyQuantityProto, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder, POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
+        POGOProtos.Rpc.CurrencyQuantityProto, POGOProtos.Rpc.CurrencyQuantityProto.Builder, POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> 
         getCurrencyBalanceFieldBuilder() {
       if (currencyBalanceBuilder_ == null) {
         currencyBalanceBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.PlatformCurrencyQuantityProto, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder, POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder>(
+            POGOProtos.Rpc.CurrencyQuantityProto, POGOProtos.Rpc.CurrencyQuantityProto.Builder, POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder>(
                 currencyBalance_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),

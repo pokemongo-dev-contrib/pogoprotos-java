@@ -8,19 +8,19 @@ public interface BootTimeOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
    * @return Whether the duration field is set.
    */
   boolean hasDuration();
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
    * @return The duration.
    */
-  POGOProtos.Rpc.PlatformMetricData getDuration();
+  POGOProtos.Rpc.MetricData getDuration();
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
    */
-  POGOProtos.Rpc.PlatformMetricDataOrBuilder getDurationOrBuilder();
+  POGOProtos.Rpc.MetricDataOrBuilder getDurationOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.BootTime.BootPhase boot_phase = 2;</code>

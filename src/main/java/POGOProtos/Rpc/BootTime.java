@@ -50,11 +50,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.PlatformMetricData.Builder subBuilder = null;
+            POGOProtos.Rpc.MetricData.Builder subBuilder = null;
             if (duration_ != null) {
               subBuilder = duration_.toBuilder();
             }
-            duration_ = input.readMessage(POGOProtos.Rpc.PlatformMetricData.parser(), extensionRegistry);
+            duration_ = input.readMessage(POGOProtos.Rpc.MetricData.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(duration_);
               duration_ = subBuilder.buildPartial();
@@ -380,9 +380,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int DURATION_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.PlatformMetricData duration_;
+  private POGOProtos.Rpc.MetricData duration_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
    * @return Whether the duration field is set.
    */
   @java.lang.Override
@@ -390,18 +390,18 @@ private static final long serialVersionUID = 0L;
     return duration_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
    * @return The duration.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformMetricData getDuration() {
-    return duration_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : duration_;
+  public POGOProtos.Rpc.MetricData getDuration() {
+    return duration_ == null ? POGOProtos.Rpc.MetricData.getDefaultInstance() : duration_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformMetricDataOrBuilder getDurationOrBuilder() {
+  public POGOProtos.Rpc.MetricDataOrBuilder getDurationOrBuilder() {
     return getDuration();
   }
 
@@ -755,31 +755,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.PlatformMetricData duration_;
+    private POGOProtos.Rpc.MetricData duration_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder> durationBuilder_;
+        POGOProtos.Rpc.MetricData, POGOProtos.Rpc.MetricData.Builder, POGOProtos.Rpc.MetricDataOrBuilder> durationBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
      * @return Whether the duration field is set.
      */
     public boolean hasDuration() {
       return durationBuilder_ != null || duration_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
      * @return The duration.
      */
-    public POGOProtos.Rpc.PlatformMetricData getDuration() {
+    public POGOProtos.Rpc.MetricData getDuration() {
       if (durationBuilder_ == null) {
-        return duration_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : duration_;
+        return duration_ == null ? POGOProtos.Rpc.MetricData.getDefaultInstance() : duration_;
       } else {
         return durationBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
      */
-    public Builder setDuration(POGOProtos.Rpc.PlatformMetricData value) {
+    public Builder setDuration(POGOProtos.Rpc.MetricData value) {
       if (durationBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -793,10 +793,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
      */
     public Builder setDuration(
-        POGOProtos.Rpc.PlatformMetricData.Builder builderForValue) {
+        POGOProtos.Rpc.MetricData.Builder builderForValue) {
       if (durationBuilder_ == null) {
         duration_ = builderForValue.build();
         onChanged();
@@ -807,13 +807,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
      */
-    public Builder mergeDuration(POGOProtos.Rpc.PlatformMetricData value) {
+    public Builder mergeDuration(POGOProtos.Rpc.MetricData value) {
       if (durationBuilder_ == null) {
         if (duration_ != null) {
           duration_ =
-            POGOProtos.Rpc.PlatformMetricData.newBuilder(duration_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.MetricData.newBuilder(duration_).mergeFrom(value).buildPartial();
         } else {
           duration_ = value;
         }
@@ -825,7 +825,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
      */
     public Builder clearDuration() {
       if (durationBuilder_ == null) {
@@ -839,33 +839,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
      */
-    public POGOProtos.Rpc.PlatformMetricData.Builder getDurationBuilder() {
+    public POGOProtos.Rpc.MetricData.Builder getDurationBuilder() {
       
       onChanged();
       return getDurationFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
      */
-    public POGOProtos.Rpc.PlatformMetricDataOrBuilder getDurationOrBuilder() {
+    public POGOProtos.Rpc.MetricDataOrBuilder getDurationOrBuilder() {
       if (durationBuilder_ != null) {
         return durationBuilder_.getMessageOrBuilder();
       } else {
         return duration_ == null ?
-            POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : duration_;
+            POGOProtos.Rpc.MetricData.getDefaultInstance() : duration_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData duration = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder> 
+        POGOProtos.Rpc.MetricData, POGOProtos.Rpc.MetricData.Builder, POGOProtos.Rpc.MetricDataOrBuilder> 
         getDurationFieldBuilder() {
       if (durationBuilder_ == null) {
         durationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder>(
+            POGOProtos.Rpc.MetricData, POGOProtos.Rpc.MetricData.Builder, POGOProtos.Rpc.MetricDataOrBuilder>(
                 getDuration(),
                 getParentForChildren(),
                 isClean());

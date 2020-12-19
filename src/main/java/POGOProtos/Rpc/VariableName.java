@@ -598,7 +598,7 @@ public enum VariableName
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(145);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(144);
   }
 
   private static final VariableName[] VALUES = values();

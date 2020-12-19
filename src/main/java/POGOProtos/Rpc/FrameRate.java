@@ -49,11 +49,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.PlatformMetricData.Builder subBuilder = null;
+            POGOProtos.Rpc.MetricData.Builder subBuilder = null;
             if (sampledFrameRate_ != null) {
               subBuilder = sampledFrameRate_.toBuilder();
             }
-            sampledFrameRate_ = input.readMessage(POGOProtos.Rpc.PlatformMetricData.parser(), extensionRegistry);
+            sampledFrameRate_ = input.readMessage(POGOProtos.Rpc.MetricData.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(sampledFrameRate_);
               sampledFrameRate_ = subBuilder.buildPartial();
@@ -94,9 +94,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SAMPLED_FRAME_RATE_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.PlatformMetricData sampledFrameRate_;
+  private POGOProtos.Rpc.MetricData sampledFrameRate_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
    * @return Whether the sampledFrameRate field is set.
    */
   @java.lang.Override
@@ -104,18 +104,18 @@ private static final long serialVersionUID = 0L;
     return sampledFrameRate_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
    * @return The sampledFrameRate.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformMetricData getSampledFrameRate() {
-    return sampledFrameRate_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : sampledFrameRate_;
+  public POGOProtos.Rpc.MetricData getSampledFrameRate() {
+    return sampledFrameRate_ == null ? POGOProtos.Rpc.MetricData.getDefaultInstance() : sampledFrameRate_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformMetricDataOrBuilder getSampledFrameRateOrBuilder() {
+  public POGOProtos.Rpc.MetricDataOrBuilder getSampledFrameRateOrBuilder() {
     return getSampledFrameRate();
   }
 
@@ -434,31 +434,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.PlatformMetricData sampledFrameRate_;
+    private POGOProtos.Rpc.MetricData sampledFrameRate_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder> sampledFrameRateBuilder_;
+        POGOProtos.Rpc.MetricData, POGOProtos.Rpc.MetricData.Builder, POGOProtos.Rpc.MetricDataOrBuilder> sampledFrameRateBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
      * @return Whether the sampledFrameRate field is set.
      */
     public boolean hasSampledFrameRate() {
       return sampledFrameRateBuilder_ != null || sampledFrameRate_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
      * @return The sampledFrameRate.
      */
-    public POGOProtos.Rpc.PlatformMetricData getSampledFrameRate() {
+    public POGOProtos.Rpc.MetricData getSampledFrameRate() {
       if (sampledFrameRateBuilder_ == null) {
-        return sampledFrameRate_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : sampledFrameRate_;
+        return sampledFrameRate_ == null ? POGOProtos.Rpc.MetricData.getDefaultInstance() : sampledFrameRate_;
       } else {
         return sampledFrameRateBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
      */
-    public Builder setSampledFrameRate(POGOProtos.Rpc.PlatformMetricData value) {
+    public Builder setSampledFrameRate(POGOProtos.Rpc.MetricData value) {
       if (sampledFrameRateBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -472,10 +472,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
      */
     public Builder setSampledFrameRate(
-        POGOProtos.Rpc.PlatformMetricData.Builder builderForValue) {
+        POGOProtos.Rpc.MetricData.Builder builderForValue) {
       if (sampledFrameRateBuilder_ == null) {
         sampledFrameRate_ = builderForValue.build();
         onChanged();
@@ -486,13 +486,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
      */
-    public Builder mergeSampledFrameRate(POGOProtos.Rpc.PlatformMetricData value) {
+    public Builder mergeSampledFrameRate(POGOProtos.Rpc.MetricData value) {
       if (sampledFrameRateBuilder_ == null) {
         if (sampledFrameRate_ != null) {
           sampledFrameRate_ =
-            POGOProtos.Rpc.PlatformMetricData.newBuilder(sampledFrameRate_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.MetricData.newBuilder(sampledFrameRate_).mergeFrom(value).buildPartial();
         } else {
           sampledFrameRate_ = value;
         }
@@ -504,7 +504,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
      */
     public Builder clearSampledFrameRate() {
       if (sampledFrameRateBuilder_ == null) {
@@ -518,33 +518,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
      */
-    public POGOProtos.Rpc.PlatformMetricData.Builder getSampledFrameRateBuilder() {
+    public POGOProtos.Rpc.MetricData.Builder getSampledFrameRateBuilder() {
       
       onChanged();
       return getSampledFrameRateFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
      */
-    public POGOProtos.Rpc.PlatformMetricDataOrBuilder getSampledFrameRateOrBuilder() {
+    public POGOProtos.Rpc.MetricDataOrBuilder getSampledFrameRateOrBuilder() {
       if (sampledFrameRateBuilder_ != null) {
         return sampledFrameRateBuilder_.getMessageOrBuilder();
       } else {
         return sampledFrameRate_ == null ?
-            POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : sampledFrameRate_;
+            POGOProtos.Rpc.MetricData.getDefaultInstance() : sampledFrameRate_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+     * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder> 
+        POGOProtos.Rpc.MetricData, POGOProtos.Rpc.MetricData.Builder, POGOProtos.Rpc.MetricDataOrBuilder> 
         getSampledFrameRateFieldBuilder() {
       if (sampledFrameRateBuilder_ == null) {
         sampledFrameRateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder>(
+            POGOProtos.Rpc.MetricData, POGOProtos.Rpc.MetricData.Builder, POGOProtos.Rpc.MetricDataOrBuilder>(
                 getSampledFrameRate(),
                 getParentForChildren(),
                 isClean());

@@ -1058,34 +1058,34 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
   POGOProtos.Rpc.PokemonSearchTelemetryOrBuilder getPokemonSearchTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
    * @return Whether the serverData field is set.
    */
   boolean hasServerData();
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
    * @return The serverData.
    */
-  POGOProtos.Rpc.PlatformPlatformServerData getServerData();
+  POGOProtos.Rpc.ServerData getServerData();
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.ServerData server_data = 1001;</code>
    */
-  POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder getServerDataOrBuilder();
+  POGOProtos.Rpc.ServerDataOrBuilder getServerDataOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
    * @return Whether the commonFilters field is set.
    */
   boolean hasCommonFilters();
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
    * @return The commonFilters.
    */
-  POGOProtos.Rpc.PlatformPlatformCommonFilterProto getCommonFilters();
+  POGOProtos.Rpc.CommonFilterProto getCommonFilters();
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.CommonFilterProto common_filters = 1002;</code>
    */
-  POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder getCommonFiltersOrBuilder();
+  POGOProtos.Rpc.CommonFilterProtoOrBuilder getCommonFiltersOrBuilder();
 
   public POGOProtos.Rpc.HoloholoClientTelemetryOmniProto.TelemetryDataCase getTelemetryDataCase();
 }

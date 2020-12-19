@@ -130,7 +130,7 @@ public enum UpdateType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(144);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(143);
   }
 
   private static final UpdateType[] VALUES = values();

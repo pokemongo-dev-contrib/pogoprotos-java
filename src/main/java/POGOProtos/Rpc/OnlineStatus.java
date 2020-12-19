@@ -94,7 +94,7 @@ public enum OnlineStatus
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(93);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(94);
   }
 
   private static final OnlineStatus[] VALUES = values();

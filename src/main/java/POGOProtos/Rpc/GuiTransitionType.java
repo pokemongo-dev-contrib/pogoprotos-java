@@ -85,7 +85,7 @@ public enum GuiTransitionType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(47);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(48);
   }
 
   private static final GuiTransitionType[] VALUES = values();

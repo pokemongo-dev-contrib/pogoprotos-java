@@ -8,17 +8,17 @@ public interface FrameRateOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
    * @return Whether the sampledFrameRate field is set.
    */
   boolean hasSampledFrameRate();
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
    * @return The sampledFrameRate.
    */
-  POGOProtos.Rpc.PlatformMetricData getSampledFrameRate();
+  POGOProtos.Rpc.MetricData getSampledFrameRate();
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData sampled_frame_rate = 1;</code>
+   * <code>.POGOProtos.Rpc.MetricData sampled_frame_rate = 1;</code>
    */
-  POGOProtos.Rpc.PlatformMetricDataOrBuilder getSampledFrameRateOrBuilder();
+  POGOProtos.Rpc.MetricDataOrBuilder getSampledFrameRateOrBuilder();
 }

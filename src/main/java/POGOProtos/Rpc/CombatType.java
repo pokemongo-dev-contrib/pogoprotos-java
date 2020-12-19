@@ -130,7 +130,7 @@ public enum CombatType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(33);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(34);
   }
 
   private static final CombatType[] VALUES = values();

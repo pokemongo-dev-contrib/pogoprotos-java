@@ -14,17 +14,17 @@ public interface GetHoloholoInventoryOutProtoOrBuilder extends
   boolean getSuccess();
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+   * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
    * @return Whether the inventoryDelta field is set.
    */
   boolean hasInventoryDelta();
   /**
-   * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+   * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
    * @return The inventoryDelta.
    */
-  POGOProtos.Rpc.PlatformInventoryDeltaProto getInventoryDelta();
+  POGOProtos.Rpc.InventoryDeltaProto getInventoryDelta();
   /**
-   * <code>.POGOProtos.Rpc.PlatformInventoryDeltaProto inventory_delta = 2;</code>
+   * <code>.POGOProtos.Rpc.InventoryDeltaProto inventory_delta = 2;</code>
    */
-  POGOProtos.Rpc.PlatformInventoryDeltaProtoOrBuilder getInventoryDeltaOrBuilder();
+  POGOProtos.Rpc.InventoryDeltaProtoOrBuilder getInventoryDeltaOrBuilder();
 }

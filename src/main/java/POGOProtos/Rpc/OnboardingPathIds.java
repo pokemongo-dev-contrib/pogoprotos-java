@@ -85,7 +85,7 @@ public enum OnboardingPathIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(91);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(92);
   }
 
   private static final OnboardingPathIds[] VALUES = values();

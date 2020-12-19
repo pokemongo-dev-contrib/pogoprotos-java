@@ -85,7 +85,7 @@ public enum WarnedPlayerReason
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(148);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(147);
   }
 
   private static final WarnedPlayerReason[] VALUES = values();

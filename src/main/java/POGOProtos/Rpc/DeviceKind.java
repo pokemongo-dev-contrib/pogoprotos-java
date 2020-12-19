@@ -85,7 +85,7 @@ public enum DeviceKind
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(35);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(36);
   }
 
   private static final DeviceKind[] VALUES = values();

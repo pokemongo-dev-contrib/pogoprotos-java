@@ -6628,7 +6628,7 @@ public enum HoloPokemonId
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(59);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(60);
   }
 
   private static final HoloPokemonId[] VALUES = values();

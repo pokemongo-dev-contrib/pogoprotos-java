@@ -85,7 +85,7 @@ public enum FortType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(43);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(44);
   }
 
   private static final FortType[] VALUES = values();

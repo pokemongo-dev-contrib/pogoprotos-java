@@ -103,7 +103,7 @@ public enum OnboardingArStatus
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(89);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(90);
   }
 
   private static final OnboardingArStatus[] VALUES = values();

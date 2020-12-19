@@ -103,7 +103,7 @@ public enum HoloTemporaryEvolutionId
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(64);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(65);
   }
 
   private static final HoloTemporaryEvolutionId[] VALUES = values();

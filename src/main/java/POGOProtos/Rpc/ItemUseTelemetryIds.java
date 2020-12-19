@@ -103,7 +103,7 @@ public enum ItemUseTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(79);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(80);
   }
 
   private static final ItemUseTelemetryIds[] VALUES = values();
