@@ -319,7 +319,7 @@ public enum OnboardingEventIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(91);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(93);
   }
 
   private static final OnboardingEventIds[] VALUES = values();

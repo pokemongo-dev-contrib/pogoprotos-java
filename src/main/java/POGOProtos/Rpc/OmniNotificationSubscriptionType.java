@@ -94,7 +94,7 @@ public enum OmniNotificationSubscriptionType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(89);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(91);
   }
 
   private static final OmniNotificationSubscriptionType[] VALUES = values();

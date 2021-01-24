@@ -175,7 +175,7 @@ public enum EncounterType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(40);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(42);
   }
 
   private static final EncounterType[] VALUES = values();

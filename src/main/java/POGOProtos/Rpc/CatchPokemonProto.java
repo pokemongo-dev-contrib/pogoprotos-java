@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private CatchPokemonProto() {
+    pokeball_ = 0;
     spawnPointGuid_ = "";
   }
 
@@ -55,8 +56,9 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 16: {
+            int rawValue = input.readEnum();
 
-            pokeball_ = input.readInt32();
+            pokeball_ = rawValue;
             break;
           }
           case 25: {
@@ -144,12 +146,20 @@ private static final long serialVersionUID = 0L;
   public static final int POKEBALL_FIELD_NUMBER = 2;
   private int pokeball_;
   /**
-   * <code>int32 pokeball = 2;</code>
+   * <code>.POGOProtos.Rpc.Item pokeball = 2;</code>
+   * @return The enum numeric value on the wire for pokeball.
+   */
+  @java.lang.Override public int getPokeballValue() {
+    return pokeball_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.Item pokeball = 2;</code>
    * @return The pokeball.
    */
-  @java.lang.Override
-  public int getPokeball() {
-    return pokeball_;
+  @java.lang.Override public POGOProtos.Rpc.Item getPokeball() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(pokeball_);
+    return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
   }
 
   public static final int NORMALIZED_RETICLE_SIZE_FIELD_NUMBER = 3;
@@ -277,8 +287,8 @@ private static final long serialVersionUID = 0L;
     if (encounterId_ != 0L) {
       output.writeFixed64(1, encounterId_);
     }
-    if (pokeball_ != 0) {
-      output.writeInt32(2, pokeball_);
+    if (pokeball_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
+      output.writeEnum(2, pokeball_);
     }
     if (normalizedReticleSize_ != 0D) {
       output.writeDouble(3, normalizedReticleSize_);
@@ -311,9 +321,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFixed64Size(1, encounterId_);
     }
-    if (pokeball_ != 0) {
+    if (pokeball_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, pokeball_);
+        .computeEnumSize(2, pokeball_);
     }
     if (normalizedReticleSize_ != 0D) {
       size += com.google.protobuf.CodedOutputStream
@@ -355,8 +365,7 @@ private static final long serialVersionUID = 0L;
 
     if (getEncounterId()
         != other.getEncounterId()) return false;
-    if (getPokeball()
-        != other.getPokeball()) return false;
+    if (pokeball_ != other.pokeball_) return false;
     if (java.lang.Double.doubleToLongBits(getNormalizedReticleSize())
         != java.lang.Double.doubleToLongBits(
             other.getNormalizedReticleSize())) return false;
@@ -390,7 +399,7 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         getEncounterId());
     hash = (37 * hash) + POKEBALL_FIELD_NUMBER;
-    hash = (53 * hash) + getPokeball();
+    hash = (53 * hash) + pokeball_;
     hash = (37 * hash) + NORMALIZED_RETICLE_SIZE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         java.lang.Double.doubleToLongBits(getNormalizedReticleSize()));
@@ -651,8 +660,8 @@ private static final long serialVersionUID = 0L;
       if (other.getEncounterId() != 0L) {
         setEncounterId(other.getEncounterId());
       }
-      if (other.getPokeball() != 0) {
-        setPokeball(other.getPokeball());
+      if (other.pokeball_ != 0) {
+        setPokeballValue(other.getPokeballValue());
       }
       if (other.getNormalizedReticleSize() != 0D) {
         setNormalizedReticleSize(other.getNormalizedReticleSize());
@@ -733,28 +742,51 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int pokeball_ ;
+    private int pokeball_ = 0;
     /**
-     * <code>int32 pokeball = 2;</code>
-     * @return The pokeball.
+     * <code>.POGOProtos.Rpc.Item pokeball = 2;</code>
+     * @return The enum numeric value on the wire for pokeball.
      */
-    @java.lang.Override
-    public int getPokeball() {
+    @java.lang.Override public int getPokeballValue() {
       return pokeball_;
     }
     /**
-     * <code>int32 pokeball = 2;</code>
-     * @param value The pokeball to set.
+     * <code>.POGOProtos.Rpc.Item pokeball = 2;</code>
+     * @param value The enum numeric value on the wire for pokeball to set.
      * @return This builder for chaining.
      */
-    public Builder setPokeball(int value) {
+    public Builder setPokeballValue(int value) {
       
       pokeball_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 pokeball = 2;</code>
+     * <code>.POGOProtos.Rpc.Item pokeball = 2;</code>
+     * @return The pokeball.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.Item getPokeball() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(pokeball_);
+      return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Item pokeball = 2;</code>
+     * @param value The pokeball to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPokeball(POGOProtos.Rpc.Item value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      pokeball_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Item pokeball = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearPokeball() {

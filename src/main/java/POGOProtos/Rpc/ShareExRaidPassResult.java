@@ -175,7 +175,7 @@ public enum ShareExRaidPassResult
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(130);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(134);
   }
 
   private static final ShareExRaidPassResult[] VALUES = values();

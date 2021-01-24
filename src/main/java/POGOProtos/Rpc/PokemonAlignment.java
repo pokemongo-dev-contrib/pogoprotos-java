@@ -4,37 +4,37 @@
 package POGOProtos.Rpc;
 
 /**
- * Protobuf enum {@code POGOProtos.Rpc.CombatPlayerFinishState}
+ * Protobuf enum {@code POGOProtos.Rpc.PokemonAlignment}
  */
-public enum CombatPlayerFinishState
+public enum PokemonAlignment
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_WINNER = 0;</code>
+   * <code>POKEMON_ALIGNMENT_UNSET = 0;</code>
    */
-  COMBAT_PLAYER_FINISH_STATE_WINNER(0),
+  POKEMON_ALIGNMENT_UNSET(0),
   /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_LOSER = 1;</code>
+   * <code>POKEMON_ALIGNMENT_SHADOW = 1;</code>
    */
-  COMBAT_PLAYER_FINISH_STATE_LOSER(1),
+  POKEMON_ALIGNMENT_SHADOW(1),
   /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_DRAW = 2;</code>
+   * <code>POKEMON_ALIGNMENT_PURIFIED = 2;</code>
    */
-  COMBAT_PLAYER_FINISH_STATE_DRAW(2),
+  POKEMON_ALIGNMENT_PURIFIED(2),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_WINNER = 0;</code>
+   * <code>POKEMON_ALIGNMENT_UNSET = 0;</code>
    */
-  public static final int COMBAT_PLAYER_FINISH_STATE_WINNER_VALUE = 0;
+  public static final int POKEMON_ALIGNMENT_UNSET_VALUE = 0;
   /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_LOSER = 1;</code>
+   * <code>POKEMON_ALIGNMENT_SHADOW = 1;</code>
    */
-  public static final int COMBAT_PLAYER_FINISH_STATE_LOSER_VALUE = 1;
+  public static final int POKEMON_ALIGNMENT_SHADOW_VALUE = 1;
   /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_DRAW = 2;</code>
+   * <code>POKEMON_ALIGNMENT_PURIFIED = 2;</code>
    */
-  public static final int COMBAT_PLAYER_FINISH_STATE_DRAW_VALUE = 2;
+  public static final int POKEMON_ALIGNMENT_PURIFIED_VALUE = 2;
 
 
   public final int getNumber() {
@@ -51,7 +51,7 @@ public enum CombatPlayerFinishState
    * @deprecated Use {@link #forNumber(int)} instead.
    */
   @java.lang.Deprecated
-  public static CombatPlayerFinishState valueOf(int value) {
+  public static PokemonAlignment valueOf(int value) {
     return forNumber(value);
   }
 
@@ -59,24 +59,24 @@ public enum CombatPlayerFinishState
    * @param value The numeric wire value of the corresponding enum entry.
    * @return The enum associated with the given numeric wire value.
    */
-  public static CombatPlayerFinishState forNumber(int value) {
+  public static PokemonAlignment forNumber(int value) {
     switch (value) {
-      case 0: return COMBAT_PLAYER_FINISH_STATE_WINNER;
-      case 1: return COMBAT_PLAYER_FINISH_STATE_LOSER;
-      case 2: return COMBAT_PLAYER_FINISH_STATE_DRAW;
+      case 0: return POKEMON_ALIGNMENT_UNSET;
+      case 1: return POKEMON_ALIGNMENT_SHADOW;
+      case 2: return POKEMON_ALIGNMENT_PURIFIED;
       default: return null;
     }
   }
 
-  public static com.google.protobuf.Internal.EnumLiteMap<CombatPlayerFinishState>
+  public static com.google.protobuf.Internal.EnumLiteMap<PokemonAlignment>
       internalGetValueMap() {
     return internalValueMap;
   }
   private static final com.google.protobuf.Internal.EnumLiteMap<
-      CombatPlayerFinishState> internalValueMap =
-        new com.google.protobuf.Internal.EnumLiteMap<CombatPlayerFinishState>() {
-          public CombatPlayerFinishState findValueByNumber(int number) {
-            return CombatPlayerFinishState.forNumber(number);
+      PokemonAlignment> internalValueMap =
+        new com.google.protobuf.Internal.EnumLiteMap<PokemonAlignment>() {
+          public PokemonAlignment findValueByNumber(int number) {
+            return PokemonAlignment.forNumber(number);
           }
         };
 
@@ -94,12 +94,12 @@ public enum CombatPlayerFinishState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(34);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(113);
   }
 
-  private static final CombatPlayerFinishState[] VALUES = values();
+  private static final PokemonAlignment[] VALUES = values();
 
-  public static CombatPlayerFinishState valueOf(
+  public static PokemonAlignment valueOf(
       com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
     if (desc.getType() != getDescriptor()) {
       throw new java.lang.IllegalArgumentException(
@@ -113,10 +113,10 @@ public enum CombatPlayerFinishState
 
   private final int value;
 
-  private CombatPlayerFinishState(int value) {
+  private PokemonAlignment(int value) {
     this.value = value;
   }
 
-  // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.CombatPlayerFinishState)
+  // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PokemonAlignment)
 }
 

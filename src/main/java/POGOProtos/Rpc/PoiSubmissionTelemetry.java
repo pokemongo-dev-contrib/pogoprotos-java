@@ -102,6 +102,231 @@ private static final long serialVersionUID = 0L;
   }
 
   /**
+   * Protobuf enum {@code POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId}
+   */
+  public enum PoiSubmissionGuiEventId
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>UNKNOWN = 0;</code>
+     */
+    UNKNOWN(0),
+    /**
+     * <code>POI_NOMINATION_ENTER = 1;</code>
+     */
+    POI_NOMINATION_ENTER(1),
+    /**
+     * <code>POI_TUTORIAL_COMPLETE = 2;</code>
+     */
+    POI_TUTORIAL_COMPLETE(2),
+    /**
+     * <code>POI_MAP_CHANGEDVIEW_MAP = 3;</code>
+     */
+    POI_MAP_CHANGEDVIEW_MAP(3),
+    /**
+     * <code>POI_MAP_CHANGEDVIEW_SATELLITE = 4;</code>
+     */
+    POI_MAP_CHANGEDVIEW_SATELLITE(4),
+    /**
+     * <code>POI_MAP_CENTER_LOCATION = 5;</code>
+     */
+    POI_MAP_CENTER_LOCATION(5),
+    /**
+     * <code>POI_LOCATION_SET = 6;</code>
+     */
+    POI_LOCATION_SET(6),
+    /**
+     * <code>POI_PHOTO_CAMERA_ENTER = 7;</code>
+     */
+    POI_PHOTO_CAMERA_ENTER(7),
+    /**
+     * <code>POI_PHOTO_CAMERA_EXIT = 8;</code>
+     */
+    POI_PHOTO_CAMERA_EXIT(8),
+    /**
+     * <code>POI_TITLE_ENTERED = 9;</code>
+     */
+    POI_TITLE_ENTERED(9),
+    /**
+     * <code>POI_DESCRIPTION_ENTER = 10;</code>
+     */
+    POI_DESCRIPTION_ENTER(10),
+    /**
+     * <code>POI_DETAILS_CONFIRM = 11;</code>
+     */
+    POI_DETAILS_CONFIRM(11),
+    /**
+     * <code>POI_SUPPORTINGINFO_ENTER = 12;</code>
+     */
+    POI_SUPPORTINGINFO_ENTER(12),
+    /**
+     * <code>POI_SUBMIT_BUTTON_HIT = 13;</code>
+     */
+    POI_SUBMIT_BUTTON_HIT(13),
+    /**
+     * <code>POI_EXIT_BUTTON_HIT = 14;</code>
+     */
+    POI_EXIT_BUTTON_HIT(14),
+    UNRECOGNIZED(-1),
+    ;
+
+    /**
+     * <code>UNKNOWN = 0;</code>
+     */
+    public static final int UNKNOWN_VALUE = 0;
+    /**
+     * <code>POI_NOMINATION_ENTER = 1;</code>
+     */
+    public static final int POI_NOMINATION_ENTER_VALUE = 1;
+    /**
+     * <code>POI_TUTORIAL_COMPLETE = 2;</code>
+     */
+    public static final int POI_TUTORIAL_COMPLETE_VALUE = 2;
+    /**
+     * <code>POI_MAP_CHANGEDVIEW_MAP = 3;</code>
+     */
+    public static final int POI_MAP_CHANGEDVIEW_MAP_VALUE = 3;
+    /**
+     * <code>POI_MAP_CHANGEDVIEW_SATELLITE = 4;</code>
+     */
+    public static final int POI_MAP_CHANGEDVIEW_SATELLITE_VALUE = 4;
+    /**
+     * <code>POI_MAP_CENTER_LOCATION = 5;</code>
+     */
+    public static final int POI_MAP_CENTER_LOCATION_VALUE = 5;
+    /**
+     * <code>POI_LOCATION_SET = 6;</code>
+     */
+    public static final int POI_LOCATION_SET_VALUE = 6;
+    /**
+     * <code>POI_PHOTO_CAMERA_ENTER = 7;</code>
+     */
+    public static final int POI_PHOTO_CAMERA_ENTER_VALUE = 7;
+    /**
+     * <code>POI_PHOTO_CAMERA_EXIT = 8;</code>
+     */
+    public static final int POI_PHOTO_CAMERA_EXIT_VALUE = 8;
+    /**
+     * <code>POI_TITLE_ENTERED = 9;</code>
+     */
+    public static final int POI_TITLE_ENTERED_VALUE = 9;
+    /**
+     * <code>POI_DESCRIPTION_ENTER = 10;</code>
+     */
+    public static final int POI_DESCRIPTION_ENTER_VALUE = 10;
+    /**
+     * <code>POI_DETAILS_CONFIRM = 11;</code>
+     */
+    public static final int POI_DETAILS_CONFIRM_VALUE = 11;
+    /**
+     * <code>POI_SUPPORTINGINFO_ENTER = 12;</code>
+     */
+    public static final int POI_SUPPORTINGINFO_ENTER_VALUE = 12;
+    /**
+     * <code>POI_SUBMIT_BUTTON_HIT = 13;</code>
+     */
+    public static final int POI_SUBMIT_BUTTON_HIT_VALUE = 13;
+    /**
+     * <code>POI_EXIT_BUTTON_HIT = 14;</code>
+     */
+    public static final int POI_EXIT_BUTTON_HIT_VALUE = 14;
+
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static PoiSubmissionGuiEventId valueOf(int value) {
+      return forNumber(value);
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static PoiSubmissionGuiEventId forNumber(int value) {
+      switch (value) {
+        case 0: return UNKNOWN;
+        case 1: return POI_NOMINATION_ENTER;
+        case 2: return POI_TUTORIAL_COMPLETE;
+        case 3: return POI_MAP_CHANGEDVIEW_MAP;
+        case 4: return POI_MAP_CHANGEDVIEW_SATELLITE;
+        case 5: return POI_MAP_CENTER_LOCATION;
+        case 6: return POI_LOCATION_SET;
+        case 7: return POI_PHOTO_CAMERA_ENTER;
+        case 8: return POI_PHOTO_CAMERA_EXIT;
+        case 9: return POI_TITLE_ENTERED;
+        case 10: return POI_DESCRIPTION_ENTER;
+        case 11: return POI_DETAILS_CONFIRM;
+        case 12: return POI_SUPPORTINGINFO_ENTER;
+        case 13: return POI_SUBMIT_BUTTON_HIT;
+        case 14: return POI_EXIT_BUTTON_HIT;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<PoiSubmissionGuiEventId>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+        PoiSubmissionGuiEventId> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<PoiSubmissionGuiEventId>() {
+            public PoiSubmissionGuiEventId findValueByNumber(int number) {
+              return PoiSubmissionGuiEventId.forNumber(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
+      return getDescriptor().getValues().get(ordinal());
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return POGOProtos.Rpc.PoiSubmissionTelemetry.getDescriptor().getEnumTypes().get(0);
+    }
+
+    private static final PoiSubmissionGuiEventId[] VALUES = values();
+
+    public static PoiSubmissionGuiEventId valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private PoiSubmissionGuiEventId(int value) {
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId)
+  }
+
+  /**
    * Protobuf enum {@code POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds}
    */
   public enum PoiCameraStepIds
@@ -210,7 +435,7 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return POGOProtos.Rpc.PoiSubmissionTelemetry.getDescriptor().getEnumTypes().get(0);
+      return POGOProtos.Rpc.PoiSubmissionTelemetry.getDescriptor().getEnumTypes().get(1);
     }
 
     private static final PoiCameraStepIds[] VALUES = values();
@@ -234,240 +459,6 @@ private static final long serialVersionUID = 0L;
     }
 
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds)
-  }
-
-  /**
-   * Protobuf enum {@code POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId}
-   */
-  public enum PoiSubmissionGuiEventId
-      implements com.google.protobuf.ProtocolMessageEnum {
-    /**
-     * <code>UNKNOWN = 0;</code>
-     */
-    UNKNOWN(0),
-    /**
-     * <code>POI_NOMINATION_ENTER = 1;</code>
-     */
-    POI_NOMINATION_ENTER(1),
-    /**
-     * <code>POI_TUTORIAL_COMPLETE = 2;</code>
-     */
-    POI_TUTORIAL_COMPLETE(2),
-    /**
-     * <code>POI_MAP_CHANGEDVIEW_MAP = 3;</code>
-     */
-    POI_MAP_CHANGEDVIEW_MAP(3),
-    /**
-     * <code>POI_MAP_CHANGEDVIEW_SATELLITE = 4;</code>
-     */
-    POI_MAP_CHANGEDVIEW_SATELLITE(4),
-    /**
-     * <code>POI_MAP_CENTER_LOCATION = 5;</code>
-     */
-    POI_MAP_CENTER_LOCATION(5),
-    /**
-     * <code>POI_LOCATION_SET = 6;</code>
-     */
-    POI_LOCATION_SET(6),
-    /**
-     * <code>POI_PHOTO_CAMERA_ENTER = 7;</code>
-     */
-    POI_PHOTO_CAMERA_ENTER(7),
-    /**
-     * <code>POI_PHOTO_CAMERA_EXIT = 8;</code>
-     */
-    POI_PHOTO_CAMERA_EXIT(8),
-    /**
-     * <code>POI_TITLE_ENTERED = 9;</code>
-     */
-    POI_TITLE_ENTERED(9),
-    /**
-     * <code>POI_DESCRIPTION_ENTER = 10;</code>
-     */
-    POI_DESCRIPTION_ENTER(10),
-    /**
-     * <code>POI_DETAILS_CONFIRM = 11;</code>
-     */
-    POI_DETAILS_CONFIRM(11),
-    /**
-     * <code>POI_SUPPORTINGINFO_ENTER = 12;</code>
-     */
-    POI_SUPPORTINGINFO_ENTER(12),
-    /**
-     * <code>POI_SUBMIT_BUTTON_HIT = 13;</code>
-     */
-    POI_SUBMIT_BUTTON_HIT(13),
-    /**
-     * <code>POI_EXIT_BUTTON_HIT = 14;</code>
-     */
-    POI_EXIT_BUTTON_HIT(14),
-    /**
-     * <code>POI_NOMINATION_GUIDELINES_HIT = 15;</code>
-     */
-    POI_NOMINATION_GUIDELINES_HIT(15),
-    UNRECOGNIZED(-1),
-    ;
-
-    /**
-     * <code>UNKNOWN = 0;</code>
-     */
-    public static final int UNKNOWN_VALUE = 0;
-    /**
-     * <code>POI_NOMINATION_ENTER = 1;</code>
-     */
-    public static final int POI_NOMINATION_ENTER_VALUE = 1;
-    /**
-     * <code>POI_TUTORIAL_COMPLETE = 2;</code>
-     */
-    public static final int POI_TUTORIAL_COMPLETE_VALUE = 2;
-    /**
-     * <code>POI_MAP_CHANGEDVIEW_MAP = 3;</code>
-     */
-    public static final int POI_MAP_CHANGEDVIEW_MAP_VALUE = 3;
-    /**
-     * <code>POI_MAP_CHANGEDVIEW_SATELLITE = 4;</code>
-     */
-    public static final int POI_MAP_CHANGEDVIEW_SATELLITE_VALUE = 4;
-    /**
-     * <code>POI_MAP_CENTER_LOCATION = 5;</code>
-     */
-    public static final int POI_MAP_CENTER_LOCATION_VALUE = 5;
-    /**
-     * <code>POI_LOCATION_SET = 6;</code>
-     */
-    public static final int POI_LOCATION_SET_VALUE = 6;
-    /**
-     * <code>POI_PHOTO_CAMERA_ENTER = 7;</code>
-     */
-    public static final int POI_PHOTO_CAMERA_ENTER_VALUE = 7;
-    /**
-     * <code>POI_PHOTO_CAMERA_EXIT = 8;</code>
-     */
-    public static final int POI_PHOTO_CAMERA_EXIT_VALUE = 8;
-    /**
-     * <code>POI_TITLE_ENTERED = 9;</code>
-     */
-    public static final int POI_TITLE_ENTERED_VALUE = 9;
-    /**
-     * <code>POI_DESCRIPTION_ENTER = 10;</code>
-     */
-    public static final int POI_DESCRIPTION_ENTER_VALUE = 10;
-    /**
-     * <code>POI_DETAILS_CONFIRM = 11;</code>
-     */
-    public static final int POI_DETAILS_CONFIRM_VALUE = 11;
-    /**
-     * <code>POI_SUPPORTINGINFO_ENTER = 12;</code>
-     */
-    public static final int POI_SUPPORTINGINFO_ENTER_VALUE = 12;
-    /**
-     * <code>POI_SUBMIT_BUTTON_HIT = 13;</code>
-     */
-    public static final int POI_SUBMIT_BUTTON_HIT_VALUE = 13;
-    /**
-     * <code>POI_EXIT_BUTTON_HIT = 14;</code>
-     */
-    public static final int POI_EXIT_BUTTON_HIT_VALUE = 14;
-    /**
-     * <code>POI_NOMINATION_GUIDELINES_HIT = 15;</code>
-     */
-    public static final int POI_NOMINATION_GUIDELINES_HIT_VALUE = 15;
-
-
-    public final int getNumber() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-            "Can't get the number of an unknown enum value.");
-      }
-      return value;
-    }
-
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     * @deprecated Use {@link #forNumber(int)} instead.
-     */
-    @java.lang.Deprecated
-    public static PoiSubmissionGuiEventId valueOf(int value) {
-      return forNumber(value);
-    }
-
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     */
-    public static PoiSubmissionGuiEventId forNumber(int value) {
-      switch (value) {
-        case 0: return UNKNOWN;
-        case 1: return POI_NOMINATION_ENTER;
-        case 2: return POI_TUTORIAL_COMPLETE;
-        case 3: return POI_MAP_CHANGEDVIEW_MAP;
-        case 4: return POI_MAP_CHANGEDVIEW_SATELLITE;
-        case 5: return POI_MAP_CENTER_LOCATION;
-        case 6: return POI_LOCATION_SET;
-        case 7: return POI_PHOTO_CAMERA_ENTER;
-        case 8: return POI_PHOTO_CAMERA_EXIT;
-        case 9: return POI_TITLE_ENTERED;
-        case 10: return POI_DESCRIPTION_ENTER;
-        case 11: return POI_DETAILS_CONFIRM;
-        case 12: return POI_SUPPORTINGINFO_ENTER;
-        case 13: return POI_SUBMIT_BUTTON_HIT;
-        case 14: return POI_EXIT_BUTTON_HIT;
-        case 15: return POI_NOMINATION_GUIDELINES_HIT;
-        default: return null;
-      }
-    }
-
-    public static com.google.protobuf.Internal.EnumLiteMap<PoiSubmissionGuiEventId>
-        internalGetValueMap() {
-      return internalValueMap;
-    }
-    private static final com.google.protobuf.Internal.EnumLiteMap<
-        PoiSubmissionGuiEventId> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<PoiSubmissionGuiEventId>() {
-            public PoiSubmissionGuiEventId findValueByNumber(int number) {
-              return PoiSubmissionGuiEventId.forNumber(number);
-            }
-          };
-
-    public final com.google.protobuf.Descriptors.EnumValueDescriptor
-        getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
-      return getDescriptor().getValues().get(ordinal());
-    }
-    public final com.google.protobuf.Descriptors.EnumDescriptor
-        getDescriptorForType() {
-      return getDescriptor();
-    }
-    public static final com.google.protobuf.Descriptors.EnumDescriptor
-        getDescriptor() {
-      return POGOProtos.Rpc.PoiSubmissionTelemetry.getDescriptor().getEnumTypes().get(1);
-    }
-
-    private static final PoiSubmissionGuiEventId[] VALUES = values();
-
-    public static PoiSubmissionGuiEventId valueOf(
-        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-      if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException(
-          "EnumValueDescriptor is not for this type.");
-      }
-      if (desc.getIndex() == -1) {
-        return UNRECOGNIZED;
-      }
-      return VALUES[desc.getIndex()];
-    }
-
-    private final int value;
-
-    private PoiSubmissionGuiEventId(int value) {
-      this.value = value;
-    }
-
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId)
   }
 
   public static final int GUI_EVENT_ID_FIELD_NUMBER = 1;

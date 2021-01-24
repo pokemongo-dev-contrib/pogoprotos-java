@@ -508,7 +508,7 @@ public enum QuestType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(122);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(126);
   }
 
   private static final QuestType[] VALUES = values();

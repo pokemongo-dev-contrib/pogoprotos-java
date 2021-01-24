@@ -148,7 +148,7 @@ public enum PokemonTagColor
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(117);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(121);
   }
 
   private static final PokemonTagColor[] VALUES = values();

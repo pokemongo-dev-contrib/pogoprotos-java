@@ -508,7 +508,7 @@ public enum ClientInboxServiceNotificationCategory
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(30);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(32);
   }
 
   private static final ClientInboxServiceNotificationCategory[] VALUES = values();

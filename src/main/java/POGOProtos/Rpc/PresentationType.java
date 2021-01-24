@@ -130,7 +130,7 @@ public enum PresentationType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(118);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(122);
   }
 
   private static final PresentationType[] VALUES = values();

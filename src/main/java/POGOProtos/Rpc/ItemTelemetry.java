@@ -17,6 +17,7 @@ private static final long serialVersionUID = 0L;
   }
   private ItemTelemetry() {
     itemUseClickId_ = 0;
+    itemId_ = 0;
     itemIdString_ = "";
   }
 
@@ -57,8 +58,9 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 16: {
+            int rawValue = input.readEnum();
 
-            itemId_ = input.readInt32();
+            itemId_ = rawValue;
             break;
           }
           case 24: {
@@ -131,12 +133,20 @@ private static final long serialVersionUID = 0L;
   public static final int ITEM_ID_FIELD_NUMBER = 2;
   private int itemId_;
   /**
-   * <code>int32 item_id = 2;</code>
+   * <code>.POGOProtos.Rpc.Item item_id = 2;</code>
+   * @return The enum numeric value on the wire for itemId.
+   */
+  @java.lang.Override public int getItemIdValue() {
+    return itemId_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.Item item_id = 2;</code>
    * @return The itemId.
    */
-  @java.lang.Override
-  public int getItemId() {
-    return itemId_;
+  @java.lang.Override public POGOProtos.Rpc.Item getItemId() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(itemId_);
+    return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
   }
 
   public static final int EQUIPPED_FIELD_NUMBER = 3;
@@ -216,8 +226,8 @@ private static final long serialVersionUID = 0L;
     if (itemUseClickId_ != POGOProtos.Rpc.ItemUseTelemetryIds.ITEM_USE_TELEMETRY_IDS_UNDEFINED_ITEM_EVENT.getNumber()) {
       output.writeEnum(1, itemUseClickId_);
     }
-    if (itemId_ != 0) {
-      output.writeInt32(2, itemId_);
+    if (itemId_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
+      output.writeEnum(2, itemId_);
     }
     if (equipped_ != false) {
       output.writeBool(3, equipped_);
@@ -241,9 +251,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, itemUseClickId_);
     }
-    if (itemId_ != 0) {
+    if (itemId_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, itemId_);
+        .computeEnumSize(2, itemId_);
     }
     if (equipped_ != false) {
       size += com.google.protobuf.CodedOutputStream
@@ -272,8 +282,7 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.ItemTelemetry other = (POGOProtos.Rpc.ItemTelemetry) obj;
 
     if (itemUseClickId_ != other.itemUseClickId_) return false;
-    if (getItemId()
-        != other.getItemId()) return false;
+    if (itemId_ != other.itemId_) return false;
     if (getEquipped()
         != other.getEquipped()) return false;
     if (getFromInventory()
@@ -294,7 +303,7 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + ITEM_USE_CLICK_ID_FIELD_NUMBER;
     hash = (53 * hash) + itemUseClickId_;
     hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getItemId();
+    hash = (53 * hash) + itemId_;
     hash = (37 * hash) + EQUIPPED_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getEquipped());
@@ -528,8 +537,8 @@ private static final long serialVersionUID = 0L;
       if (other.itemUseClickId_ != 0) {
         setItemUseClickIdValue(other.getItemUseClickIdValue());
       }
-      if (other.getItemId() != 0) {
-        setItemId(other.getItemId());
+      if (other.itemId_ != 0) {
+        setItemIdValue(other.getItemIdValue());
       }
       if (other.getEquipped() != false) {
         setEquipped(other.getEquipped());
@@ -624,28 +633,51 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int itemId_ ;
+    private int itemId_ = 0;
     /**
-     * <code>int32 item_id = 2;</code>
-     * @return The itemId.
+     * <code>.POGOProtos.Rpc.Item item_id = 2;</code>
+     * @return The enum numeric value on the wire for itemId.
      */
-    @java.lang.Override
-    public int getItemId() {
+    @java.lang.Override public int getItemIdValue() {
       return itemId_;
     }
     /**
-     * <code>int32 item_id = 2;</code>
-     * @param value The itemId to set.
+     * <code>.POGOProtos.Rpc.Item item_id = 2;</code>
+     * @param value The enum numeric value on the wire for itemId to set.
      * @return This builder for chaining.
      */
-    public Builder setItemId(int value) {
+    public Builder setItemIdValue(int value) {
       
       itemId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 item_id = 2;</code>
+     * <code>.POGOProtos.Rpc.Item item_id = 2;</code>
+     * @return The itemId.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.Item getItemId() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(itemId_);
+      return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Item item_id = 2;</code>
+     * @param value The itemId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setItemId(POGOProtos.Rpc.Item value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      itemId_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Item item_id = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearItemId() {

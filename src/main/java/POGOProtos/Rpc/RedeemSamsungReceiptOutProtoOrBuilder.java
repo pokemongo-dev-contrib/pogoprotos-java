@@ -8,12 +8,23 @@ public interface RedeemSamsungReceiptOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string purchase_id = 1;</code>
+   * <code>.POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  int getStatusValue();
+  /**
+   * <code>.POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status status = 1;</code>
+   * @return The status.
+   */
+  POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status getStatus();
+
+  /**
+   * <code>string purchase_id = 2;</code>
    * @return The purchaseId.
    */
   java.lang.String getPurchaseId();
   /**
-   * <code>string purchase_id = 1;</code>
+   * <code>string purchase_id = 2;</code>
    * @return The bytes for purchaseId.
    */
   com.google.protobuf.ByteString

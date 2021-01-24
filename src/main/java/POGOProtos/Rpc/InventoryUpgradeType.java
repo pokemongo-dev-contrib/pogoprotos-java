@@ -94,7 +94,7 @@ public enum InventoryUpgradeType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(77);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(79);
   }
 
   private static final InventoryUpgradeType[] VALUES = values();

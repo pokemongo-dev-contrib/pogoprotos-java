@@ -19,10 +19,15 @@ public interface ItemTelemetryOrBuilder extends
   POGOProtos.Rpc.ItemUseTelemetryIds getItemUseClickId();
 
   /**
-   * <code>int32 item_id = 2;</code>
+   * <code>.POGOProtos.Rpc.Item item_id = 2;</code>
+   * @return The enum numeric value on the wire for itemId.
+   */
+  int getItemIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.Item item_id = 2;</code>
    * @return The itemId.
    */
-  int getItemId();
+  POGOProtos.Rpc.Item getItemId();
 
   /**
    * <code>bool equipped = 3;</code>

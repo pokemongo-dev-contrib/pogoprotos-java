@@ -444,12 +444,12 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
-          case 537: {
+          case 536: {
             if (!((mutable_bitField0_ & 0x00000004) != 0)) {
               pokemonTagIds_ = newLongList();
               mutable_bitField0_ |= 0x00000004;
             }
-            pokemonTagIds_.addLong(input.readFixed64());
+            pokemonTagIds_.addLong(input.readUInt64());
             break;
           }
           case 538: {
@@ -460,7 +460,7 @@ private static final long serialVersionUID = 0L;
               mutable_bitField0_ |= 0x00000004;
             }
             while (input.getBytesUntilLimit() > 0) {
-              pokemonTagIds_.addLong(input.readFixed64());
+              pokemonTagIds_.addLong(input.readUInt64());
             }
             input.popLimit(limit);
             break;
@@ -1589,7 +1589,7 @@ private static final long serialVersionUID = 0L;
   public static final int POKEMON_TAG_IDS_FIELD_NUMBER = 67;
   private com.google.protobuf.Internal.LongList pokemonTagIds_;
   /**
-   * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+   * <code>repeated uint64 pokemon_tag_ids = 67;</code>
    * @return A list containing the pokemonTagIds.
    */
   @java.lang.Override
@@ -1598,14 +1598,14 @@ private static final long serialVersionUID = 0L;
     return pokemonTagIds_;
   }
   /**
-   * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+   * <code>repeated uint64 pokemon_tag_ids = 67;</code>
    * @return The count of pokemonTagIds.
    */
   public int getPokemonTagIdsCount() {
     return pokemonTagIds_.size();
   }
   /**
-   * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+   * <code>repeated uint64 pokemon_tag_ids = 67;</code>
    * @param index The index of the element to return.
    * @return The pokemonTagIds at the given index.
    */
@@ -1930,7 +1930,7 @@ private static final long serialVersionUID = 0L;
       output.writeUInt32NoTag(pokemonTagIdsMemoizedSerializedSize);
     }
     for (int i = 0; i < pokemonTagIds_.size(); i++) {
-      output.writeFixed64NoTag(pokemonTagIds_.getLong(i));
+      output.writeUInt64NoTag(pokemonTagIds_.getLong(i));
     }
     for (int i = 0; i < originEvents_.size(); i++) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 68, originEvents_.getRaw(i));
@@ -2205,7 +2205,10 @@ private static final long serialVersionUID = 0L;
     }
     {
       int dataSize = 0;
-      dataSize = 8 * getPokemonTagIdsList().size();
+      for (int i = 0; i < pokemonTagIds_.size(); i++) {
+        dataSize += com.google.protobuf.CodedOutputStream
+          .computeUInt64SizeNoTag(pokemonTagIds_.getLong(i));
+      }
       size += dataSize;
       if (!getPokemonTagIdsList().isEmpty()) {
         size += 2;
@@ -6391,7 +6394,7 @@ private static final long serialVersionUID = 0L;
        }
     }
     /**
-     * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+     * <code>repeated uint64 pokemon_tag_ids = 67;</code>
      * @return A list containing the pokemonTagIds.
      */
     public java.util.List<java.lang.Long>
@@ -6400,14 +6403,14 @@ private static final long serialVersionUID = 0L;
                java.util.Collections.unmodifiableList(pokemonTagIds_) : pokemonTagIds_;
     }
     /**
-     * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+     * <code>repeated uint64 pokemon_tag_ids = 67;</code>
      * @return The count of pokemonTagIds.
      */
     public int getPokemonTagIdsCount() {
       return pokemonTagIds_.size();
     }
     /**
-     * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+     * <code>repeated uint64 pokemon_tag_ids = 67;</code>
      * @param index The index of the element to return.
      * @return The pokemonTagIds at the given index.
      */
@@ -6415,7 +6418,7 @@ private static final long serialVersionUID = 0L;
       return pokemonTagIds_.getLong(index);
     }
     /**
-     * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+     * <code>repeated uint64 pokemon_tag_ids = 67;</code>
      * @param index The index to set the value at.
      * @param value The pokemonTagIds to set.
      * @return This builder for chaining.
@@ -6428,7 +6431,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+     * <code>repeated uint64 pokemon_tag_ids = 67;</code>
      * @param value The pokemonTagIds to add.
      * @return This builder for chaining.
      */
@@ -6439,7 +6442,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+     * <code>repeated uint64 pokemon_tag_ids = 67;</code>
      * @param values The pokemonTagIds to add.
      * @return This builder for chaining.
      */
@@ -6452,7 +6455,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+     * <code>repeated uint64 pokemon_tag_ids = 67;</code>
      * @return This builder for chaining.
      */
     public Builder clearPokemonTagIds() {

@@ -526,7 +526,7 @@ public enum NotificationCategory
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(86);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(88);
   }
 
   private static final NotificationCategory[] VALUES = values();

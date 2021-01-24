@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum GameChatActions
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>GAME_CHAT_ACTIONS_UNKNOWN_GAME_CHAT_ACTION = 0;</code>
+   * <code>UNKNOWN_GAME_CHAT_ACTION = 0;</code>
    */
-  GAME_CHAT_ACTIONS_UNKNOWN_GAME_CHAT_ACTION(0),
+  UNKNOWN_GAME_CHAT_ACTION(0),
   /**
-   * <code>GAME_CHAT_ACTIONS_PROXY_CHAT_ACTION = 660000;</code>
+   * <code>PROXY_CHAT_ACTION = 660000;</code>
    */
-  GAME_CHAT_ACTIONS_PROXY_CHAT_ACTION(660000),
+  PROXY_CHAT_ACTION(660000),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>GAME_CHAT_ACTIONS_UNKNOWN_GAME_CHAT_ACTION = 0;</code>
+   * <code>UNKNOWN_GAME_CHAT_ACTION = 0;</code>
    */
-  public static final int GAME_CHAT_ACTIONS_UNKNOWN_GAME_CHAT_ACTION_VALUE = 0;
+  public static final int UNKNOWN_GAME_CHAT_ACTION_VALUE = 0;
   /**
-   * <code>GAME_CHAT_ACTIONS_PROXY_CHAT_ACTION = 660000;</code>
+   * <code>PROXY_CHAT_ACTION = 660000;</code>
    */
-  public static final int GAME_CHAT_ACTIONS_PROXY_CHAT_ACTION_VALUE = 660000;
+  public static final int PROXY_CHAT_ACTION_VALUE = 660000;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum GameChatActions
    */
   public static GameChatActions forNumber(int value) {
     switch (value) {
-      case 0: return GAME_CHAT_ACTIONS_UNKNOWN_GAME_CHAT_ACTION;
-      case 660000: return GAME_CHAT_ACTIONS_PROXY_CHAT_ACTION;
+      case 0: return UNKNOWN_GAME_CHAT_ACTION;
+      case 660000: return PROXY_CHAT_ACTION;
       default: return null;
     }
   }
@@ -85,7 +85,7 @@ public enum GameChatActions
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(46);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(48);
   }
 
   private static final GameChatActions[] VALUES = values();

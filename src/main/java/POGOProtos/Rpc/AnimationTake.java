@@ -94,7 +94,7 @@ public enum AnimationTake
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(3);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(5);
   }
 
   private static final AnimationTake[] VALUES = values();

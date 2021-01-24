@@ -35,10 +35,15 @@ public interface CatchPokemonTelemetryOrBuilder extends
   POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder getEncounterPokemonTelemetryOrBuilder();
 
   /**
-   * <code>int32 balltype = 3;</code>
+   * <code>.POGOProtos.Rpc.Item balltype = 3;</code>
+   * @return The enum numeric value on the wire for balltype.
+   */
+  int getBalltypeValue();
+  /**
+   * <code>.POGOProtos.Rpc.Item balltype = 3;</code>
    * @return The balltype.
    */
-  int getBalltype();
+  POGOProtos.Rpc.Item getBalltype();
 
   /**
    * <code>int32 hit_grade = 4;</code>

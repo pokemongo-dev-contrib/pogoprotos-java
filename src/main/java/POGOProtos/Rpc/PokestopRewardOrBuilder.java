@@ -8,10 +8,15 @@ public interface PokestopRewardOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int32 item_id = 1;</code>
+   * <code>.POGOProtos.Rpc.Item item_id = 1;</code>
+   * @return The enum numeric value on the wire for itemId.
+   */
+  int getItemIdValue();
+  /**
+   * <code>.POGOProtos.Rpc.Item item_id = 1;</code>
    * @return The itemId.
    */
-  int getItemId();
+  POGOProtos.Rpc.Item getItemId();
 
   /**
    * <code>int32 item_count = 2;</code>

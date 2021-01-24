@@ -103,7 +103,7 @@ public enum ProviderType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(120);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(124);
   }
 
   private static final ProviderType[] VALUES = values();

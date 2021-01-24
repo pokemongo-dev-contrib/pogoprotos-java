@@ -528,17 +528,17 @@ public interface PokemonProtoOrBuilder extends
   POGOProtos.Rpc.PokemonCreateDetailOrBuilder getOriginDetailOrBuilder();
 
   /**
-   * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+   * <code>repeated uint64 pokemon_tag_ids = 67;</code>
    * @return A list containing the pokemonTagIds.
    */
   java.util.List<java.lang.Long> getPokemonTagIdsList();
   /**
-   * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+   * <code>repeated uint64 pokemon_tag_ids = 67;</code>
    * @return The count of pokemonTagIds.
    */
   int getPokemonTagIdsCount();
   /**
-   * <code>repeated fixed64 pokemon_tag_ids = 67;</code>
+   * <code>repeated uint64 pokemon_tag_ids = 67;</code>
    * @param index The index of the element to return.
    * @return The pokemonTagIds at the given index.
    */

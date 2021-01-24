@@ -14,10 +14,15 @@ public interface CatchPokemonProtoOrBuilder extends
   long getEncounterId();
 
   /**
-   * <code>int32 pokeball = 2;</code>
+   * <code>.POGOProtos.Rpc.Item pokeball = 2;</code>
+   * @return The enum numeric value on the wire for pokeball.
+   */
+  int getPokeballValue();
+  /**
+   * <code>.POGOProtos.Rpc.Item pokeball = 2;</code>
    * @return The pokeball.
    */
-  int getPokeball();
+  POGOProtos.Rpc.Item getPokeball();
 
   /**
    * <code>double normalized_reticle_size = 3;</code>

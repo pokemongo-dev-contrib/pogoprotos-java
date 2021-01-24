@@ -211,7 +211,7 @@ public enum BuddyActivity
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(18);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(20);
   }
 
   private static final BuddyActivity[] VALUES = values();

@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private RedeemSamsungReceiptOutProto() {
+    status_ = 0;
     purchaseId_ = "";
   }
 
@@ -49,7 +50,13 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            status_ = rawValue;
+            break;
+          }
+          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
             purchaseId_ = s;
@@ -204,10 +211,29 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status)
   }
 
-  public static final int PURCHASE_ID_FIELD_NUMBER = 1;
+  public static final int STATUS_FIELD_NUMBER = 1;
+  private int status_;
+  /**
+   * <code>.POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  @java.lang.Override public int getStatusValue() {
+    return status_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status status = 1;</code>
+   * @return The status.
+   */
+  @java.lang.Override public POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status getStatus() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status result = POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status.valueOf(status_);
+    return result == null ? POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status.UNRECOGNIZED : result;
+  }
+
+  public static final int PURCHASE_ID_FIELD_NUMBER = 2;
   private volatile java.lang.Object purchaseId_;
   /**
-   * <code>string purchase_id = 1;</code>
+   * <code>string purchase_id = 2;</code>
    * @return The purchaseId.
    */
   @java.lang.Override
@@ -224,7 +250,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string purchase_id = 1;</code>
+   * <code>string purchase_id = 2;</code>
    * @return The bytes for purchaseId.
    */
   @java.lang.Override
@@ -256,8 +282,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (status_ != POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status.UNSET.getNumber()) {
+      output.writeEnum(1, status_);
+    }
     if (!getPurchaseIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, purchaseId_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, purchaseId_);
     }
     unknownFields.writeTo(output);
   }
@@ -268,8 +297,12 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (status_ != POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, status_);
+    }
     if (!getPurchaseIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, purchaseId_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, purchaseId_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -286,6 +319,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.RedeemSamsungReceiptOutProto other = (POGOProtos.Rpc.RedeemSamsungReceiptOutProto) obj;
 
+    if (status_ != other.status_) return false;
     if (!getPurchaseId()
         .equals(other.getPurchaseId())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
@@ -299,6 +333,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + status_;
     hash = (37 * hash) + PURCHASE_ID_FIELD_NUMBER;
     hash = (53 * hash) + getPurchaseId().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -434,6 +470,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      status_ = 0;
+
       purchaseId_ = "";
 
       return this;
@@ -462,6 +500,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.RedeemSamsungReceiptOutProto buildPartial() {
       POGOProtos.Rpc.RedeemSamsungReceiptOutProto result = new POGOProtos.Rpc.RedeemSamsungReceiptOutProto(this);
+      result.status_ = status_;
       result.purchaseId_ = purchaseId_;
       onBuilt();
       return result;
@@ -511,6 +550,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.RedeemSamsungReceiptOutProto other) {
       if (other == POGOProtos.Rpc.RedeemSamsungReceiptOutProto.getDefaultInstance()) return this;
+      if (other.status_ != 0) {
+        setStatusValue(other.getStatusValue());
+      }
       if (!other.getPurchaseId().isEmpty()) {
         purchaseId_ = other.purchaseId_;
         onChanged();
@@ -544,9 +586,63 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private int status_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    @java.lang.Override public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status status = 1;</code>
+     * @param value The enum numeric value on the wire for status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatusValue(int value) {
+      
+      status_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status status = 1;</code>
+     * @return The status.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status getStatus() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status result = POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status.valueOf(status_);
+      return result == null ? POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status status = 1;</code>
+     * @param value The status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatus(POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      status_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RedeemSamsungReceiptOutProto.Status status = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStatus() {
+      
+      status_ = 0;
+      onChanged();
+      return this;
+    }
+
     private java.lang.Object purchaseId_ = "";
     /**
-     * <code>string purchase_id = 1;</code>
+     * <code>string purchase_id = 2;</code>
      * @return The purchaseId.
      */
     public java.lang.String getPurchaseId() {
@@ -562,7 +658,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string purchase_id = 1;</code>
+     * <code>string purchase_id = 2;</code>
      * @return The bytes for purchaseId.
      */
     public com.google.protobuf.ByteString
@@ -579,7 +675,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string purchase_id = 1;</code>
+     * <code>string purchase_id = 2;</code>
      * @param value The purchaseId to set.
      * @return This builder for chaining.
      */
@@ -594,7 +690,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string purchase_id = 1;</code>
+     * <code>string purchase_id = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearPurchaseId() {
@@ -604,7 +700,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string purchase_id = 1;</code>
+     * <code>string purchase_id = 2;</code>
      * @param value The bytes for purchaseId to set.
      * @return This builder for chaining.
      */

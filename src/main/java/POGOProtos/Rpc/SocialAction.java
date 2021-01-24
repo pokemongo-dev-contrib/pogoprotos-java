@@ -427,7 +427,7 @@ public enum SocialAction
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(134);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(138);
   }
 
   private static final SocialAction[] VALUES = values();

@@ -94,7 +94,7 @@ public enum ShoppingPageScrollIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(131);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(135);
   }
 
   private static final ShoppingPageScrollIds[] VALUES = values();

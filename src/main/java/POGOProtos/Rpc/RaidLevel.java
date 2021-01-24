@@ -130,7 +130,7 @@ public enum RaidLevel
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(123);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(127);
   }
 
   private static final RaidLevel[] VALUES = values();

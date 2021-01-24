@@ -94,7 +94,7 @@ public enum PokemonCreateContext
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(113);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(116);
   }
 
   private static final PokemonCreateContext[] VALUES = values();

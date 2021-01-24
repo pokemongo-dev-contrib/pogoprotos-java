@@ -4,37 +4,29 @@
 package POGOProtos.Rpc;
 
 /**
- * Protobuf enum {@code POGOProtos.Rpc.CombatPlayerFinishState}
+ * Protobuf enum {@code POGOProtos.Rpc.AA_NEW_ENUM_0}
  */
-public enum CombatPlayerFinishState
+public enum AA_NEW_ENUM_0
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_WINNER = 0;</code>
+   * <code>AA_NEW_ENUM_0_NORMAL = 0;</code>
    */
-  COMBAT_PLAYER_FINISH_STATE_WINNER(0),
+  AA_NEW_ENUM_0_NORMAL(0),
   /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_LOSER = 1;</code>
+   * <code>AA_NEW_ENUM_0_CALL_TO_ACTION = 1;</code>
    */
-  COMBAT_PLAYER_FINISH_STATE_LOSER(1),
-  /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_DRAW = 2;</code>
-   */
-  COMBAT_PLAYER_FINISH_STATE_DRAW(2),
+  AA_NEW_ENUM_0_CALL_TO_ACTION(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_WINNER = 0;</code>
+   * <code>AA_NEW_ENUM_0_NORMAL = 0;</code>
    */
-  public static final int COMBAT_PLAYER_FINISH_STATE_WINNER_VALUE = 0;
+  public static final int AA_NEW_ENUM_0_NORMAL_VALUE = 0;
   /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_LOSER = 1;</code>
+   * <code>AA_NEW_ENUM_0_CALL_TO_ACTION = 1;</code>
    */
-  public static final int COMBAT_PLAYER_FINISH_STATE_LOSER_VALUE = 1;
-  /**
-   * <code>COMBAT_PLAYER_FINISH_STATE_DRAW = 2;</code>
-   */
-  public static final int COMBAT_PLAYER_FINISH_STATE_DRAW_VALUE = 2;
+  public static final int AA_NEW_ENUM_0_CALL_TO_ACTION_VALUE = 1;
 
 
   public final int getNumber() {
@@ -51,7 +43,7 @@ public enum CombatPlayerFinishState
    * @deprecated Use {@link #forNumber(int)} instead.
    */
   @java.lang.Deprecated
-  public static CombatPlayerFinishState valueOf(int value) {
+  public static AA_NEW_ENUM_0 valueOf(int value) {
     return forNumber(value);
   }
 
@@ -59,24 +51,23 @@ public enum CombatPlayerFinishState
    * @param value The numeric wire value of the corresponding enum entry.
    * @return The enum associated with the given numeric wire value.
    */
-  public static CombatPlayerFinishState forNumber(int value) {
+  public static AA_NEW_ENUM_0 forNumber(int value) {
     switch (value) {
-      case 0: return COMBAT_PLAYER_FINISH_STATE_WINNER;
-      case 1: return COMBAT_PLAYER_FINISH_STATE_LOSER;
-      case 2: return COMBAT_PLAYER_FINISH_STATE_DRAW;
+      case 0: return AA_NEW_ENUM_0_NORMAL;
+      case 1: return AA_NEW_ENUM_0_CALL_TO_ACTION;
       default: return null;
     }
   }
 
-  public static com.google.protobuf.Internal.EnumLiteMap<CombatPlayerFinishState>
+  public static com.google.protobuf.Internal.EnumLiteMap<AA_NEW_ENUM_0>
       internalGetValueMap() {
     return internalValueMap;
   }
   private static final com.google.protobuf.Internal.EnumLiteMap<
-      CombatPlayerFinishState> internalValueMap =
-        new com.google.protobuf.Internal.EnumLiteMap<CombatPlayerFinishState>() {
-          public CombatPlayerFinishState findValueByNumber(int number) {
-            return CombatPlayerFinishState.forNumber(number);
+      AA_NEW_ENUM_0> internalValueMap =
+        new com.google.protobuf.Internal.EnumLiteMap<AA_NEW_ENUM_0>() {
+          public AA_NEW_ENUM_0 findValueByNumber(int number) {
+            return AA_NEW_ENUM_0.forNumber(number);
           }
         };
 
@@ -94,12 +85,12 @@ public enum CombatPlayerFinishState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(34);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(0);
   }
 
-  private static final CombatPlayerFinishState[] VALUES = values();
+  private static final AA_NEW_ENUM_0[] VALUES = values();
 
-  public static CombatPlayerFinishState valueOf(
+  public static AA_NEW_ENUM_0 valueOf(
       com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
     if (desc.getType() != getDescriptor()) {
       throw new java.lang.IllegalArgumentException(
@@ -113,10 +104,10 @@ public enum CombatPlayerFinishState
 
   private final int value;
 
-  private CombatPlayerFinishState(int value) {
+  private AA_NEW_ENUM_0(int value) {
     this.value = value;
   }
 
-  // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.CombatPlayerFinishState)
+  // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.AA_NEW_ENUM_0)
 }
 

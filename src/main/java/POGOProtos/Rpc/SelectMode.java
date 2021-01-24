@@ -85,7 +85,7 @@ public enum SelectMode
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(128);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(132);
   }
 
   private static final SelectMode[] VALUES = values();

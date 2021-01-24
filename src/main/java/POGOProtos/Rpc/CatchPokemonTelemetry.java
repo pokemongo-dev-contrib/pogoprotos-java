@@ -17,6 +17,7 @@ private static final long serialVersionUID = 0L;
   }
   private CatchPokemonTelemetry() {
     status_ = "";
+    balltype_ = 0;
   }
 
   @java.lang.Override
@@ -69,8 +70,9 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 24: {
+            int rawValue = input.readEnum();
 
-            balltype_ = input.readInt32();
+            balltype_ = rawValue;
             break;
           }
           case 32: {
@@ -187,12 +189,20 @@ private static final long serialVersionUID = 0L;
   public static final int BALLTYPE_FIELD_NUMBER = 3;
   private int balltype_;
   /**
-   * <code>int32 balltype = 3;</code>
+   * <code>.POGOProtos.Rpc.Item balltype = 3;</code>
+   * @return The enum numeric value on the wire for balltype.
+   */
+  @java.lang.Override public int getBalltypeValue() {
+    return balltype_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.Item balltype = 3;</code>
    * @return The balltype.
    */
-  @java.lang.Override
-  public int getBalltype() {
-    return balltype_;
+  @java.lang.Override public POGOProtos.Rpc.Item getBalltype() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(balltype_);
+    return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
   }
 
   public static final int HIT_GRADE_FIELD_NUMBER = 4;
@@ -248,8 +258,8 @@ private static final long serialVersionUID = 0L;
     if (encounterPokemonTelemetry_ != null) {
       output.writeMessage(2, getEncounterPokemonTelemetry());
     }
-    if (balltype_ != 0) {
-      output.writeInt32(3, balltype_);
+    if (balltype_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
+      output.writeEnum(3, balltype_);
     }
     if (hitGrade_ != 0) {
       output.writeInt32(4, hitGrade_);
@@ -276,9 +286,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getEncounterPokemonTelemetry());
     }
-    if (balltype_ != 0) {
+    if (balltype_ != POGOProtos.Rpc.Item.ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(3, balltype_);
+        .computeEnumSize(3, balltype_);
     }
     if (hitGrade_ != 0) {
       size += com.google.protobuf.CodedOutputStream
@@ -314,8 +324,7 @@ private static final long serialVersionUID = 0L;
       if (!getEncounterPokemonTelemetry()
           .equals(other.getEncounterPokemonTelemetry())) return false;
     }
-    if (getBalltype()
-        != other.getBalltype()) return false;
+    if (balltype_ != other.balltype_) return false;
     if (getHitGrade()
         != other.getHitGrade()) return false;
     if (getCurveBall()
@@ -341,7 +350,7 @@ private static final long serialVersionUID = 0L;
       hash = (53 * hash) + getEncounterPokemonTelemetry().hashCode();
     }
     hash = (37 * hash) + BALLTYPE_FIELD_NUMBER;
-    hash = (53 * hash) + getBalltype();
+    hash = (53 * hash) + balltype_;
     hash = (37 * hash) + HIT_GRADE_FIELD_NUMBER;
     hash = (53 * hash) + getHitGrade();
     hash = (37 * hash) + CURVE_BALL_FIELD_NUMBER;
@@ -590,8 +599,8 @@ private static final long serialVersionUID = 0L;
       if (other.hasEncounterPokemonTelemetry()) {
         mergeEncounterPokemonTelemetry(other.getEncounterPokemonTelemetry());
       }
-      if (other.getBalltype() != 0) {
-        setBalltype(other.getBalltype());
+      if (other.balltype_ != 0) {
+        setBalltypeValue(other.getBalltypeValue());
       }
       if (other.getHitGrade() != 0) {
         setHitGrade(other.getHitGrade());
@@ -826,28 +835,51 @@ private static final long serialVersionUID = 0L;
       return encounterPokemonTelemetryBuilder_;
     }
 
-    private int balltype_ ;
+    private int balltype_ = 0;
     /**
-     * <code>int32 balltype = 3;</code>
-     * @return The balltype.
+     * <code>.POGOProtos.Rpc.Item balltype = 3;</code>
+     * @return The enum numeric value on the wire for balltype.
      */
-    @java.lang.Override
-    public int getBalltype() {
+    @java.lang.Override public int getBalltypeValue() {
       return balltype_;
     }
     /**
-     * <code>int32 balltype = 3;</code>
-     * @param value The balltype to set.
+     * <code>.POGOProtos.Rpc.Item balltype = 3;</code>
+     * @param value The enum numeric value on the wire for balltype to set.
      * @return This builder for chaining.
      */
-    public Builder setBalltype(int value) {
+    public Builder setBalltypeValue(int value) {
       
       balltype_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 balltype = 3;</code>
+     * <code>.POGOProtos.Rpc.Item balltype = 3;</code>
+     * @return The balltype.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.Item getBalltype() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(balltype_);
+      return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Item balltype = 3;</code>
+     * @param value The balltype to set.
+     * @return This builder for chaining.
+     */
+    public Builder setBalltype(POGOProtos.Rpc.Item value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      balltype_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Item balltype = 3;</code>
      * @return This builder for chaining.
      */
     public Builder clearBalltype() {

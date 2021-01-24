@@ -553,7 +553,7 @@ public enum HoloActivityType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(51);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(53);
   }
 
   private static final HoloActivityType[] VALUES = values();

@@ -157,7 +157,7 @@ public enum PlayerSubmissionTypeProto
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(104);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(106);
   }
 
   private static final PlayerSubmissionTypeProto[] VALUES = values();
